@@ -20,6 +20,10 @@ Proposals advance through **Draft**, **Candidate**, **Stable**, and **Deprecated
 
 Publication in this repository does not by itself make a proposal a Foundation standard.
 
+## Credentialed agent operations
+
+[M5Agent Credentialed Operations](M5AGENT_OPERATIONS.md) defines the proposed OSHINA contribution-steward role, scoped authority levels, credential requirements, human accountability and privacy limits. Named agents are not represented as deployed or authorized until their credentials and accountable stewards are established.
+
 ## Implementation and pilots
 
 ICSN standards are implementation-neutral. M5 is one implementation and activation pathway helping validate the architecture in practice, including developer participation and the 100K Women-Led Ventures initiative.
