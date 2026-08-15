@@ -9,6 +9,14 @@ Thank you for helping build open, human-rooted standards for identity and sovere
 - **Proposed standards changes:** open an RFC pull request.
 - **Security vulnerabilities:** report them privately as described in [SECURITY.md](SECURITY.md).
 
+## M5Agent credentialed operations
+
+ICSN may use credentialed M5Agents to provide non-binding contribution guidance and workflow support. **OSHINA** is the planned contribution-steward role for intake, routing and RFC-completeness review.
+
+OSHINA does not replace human governance and may not approve standards, issue credentials, certify implementations or make consequential decisions. OSHINA must not be represented as active or authorized until its credential, accountable human steward and verification record are established.
+
+See [M5AGENT_OPERATIONS.md](M5AGENT_OPERATIONS.md) for permitted roles, prohibited actions, authority levels, credential requirements, privacy limits and human escalation.
+
 ## RFC process
 
 1. Start a Discussion to test the problem and gather stakeholders.
