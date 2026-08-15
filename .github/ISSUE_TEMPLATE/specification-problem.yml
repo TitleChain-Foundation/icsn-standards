@@ -1,0 +1,49 @@
+name: Specification problem
+description: Report an actionable defect, ambiguity or interoperability problem in an ICSN specification.
+title: "[Specification]: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the standards. Use Discussions for general questions and early ideas.
+  - type: input
+    id: specification
+    attributes:
+      label: Specification or RFC
+      description: Identify the document, version and section.
+      placeholder: RFC 0001, section 4.2
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the defect, ambiguity or interoperability failure.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Affected communities and impact
+      description: Who is affected and what happens if this remains unresolved?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or example
+      description: Include a minimal example, implementation experience or supporting source.
+  - type: textarea
+    id: resolution
+    attributes:
+      label: Suggested resolution
+      description: Propose wording or behavior if you have a recommendation.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: This report does not contain credentials, private keys, personal records or confidential security details.
+          required: true
