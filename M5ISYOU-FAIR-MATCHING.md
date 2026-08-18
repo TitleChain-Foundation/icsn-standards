@@ -6,6 +6,8 @@
 
 M5isYOU exists to reveal contribution, demonstration and learning pathways that conventional résumé screening may miss. It must not recreate an applicant-tracking system under a different name.
 
+The person owns and controls their profile. No Foundation operator, instructor, reviewer, employer or agent may create, complete, approve, disclose or materially update it for the person. Assistance must remain visible, optional and subject to the person's affirmative approval.
+
 ## 2. No invisible score
 
 The system must not produce or expose a single candidate score, ranking, employability rating, personality score, culture-fit score or permanent suitability label.
@@ -101,6 +103,8 @@ Accommodation information remains outside the matching record.
 
 Self-description, submitted evidence, reviewer attestation and verified credential are distinct states.
 
+A credential verifies only the claims, issuer, evidence policy, validity period and status it expressly covers. Credential verification must not be interpreted as approval of the full profile, transfer ownership or control, or justify inference about unrelated capabilities.
+
 The system must not:
 
 - convert a self-description into a verified claim;
@@ -174,4 +178,3 @@ The responsible operator should publish, without exposing individuals:
 Employment, contractor, education, grant, privacy and accessibility requirements differ across jurisdictions. Operational use requires qualified review for the specific program and location.
 
 Following this draft does not by itself establish legal compliance.
-
