@@ -1,8 +1,12 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Questions, introductions and early ideas
-    url: https://github.com/TitleChain-Foundation/icsn-standards/discussions/new/choose
-    about: Start in Discussions unless you are reporting an actionable specification problem.
-  - name: Security vulnerability
-    url: https://github.com/TitleChain-Foundation/icsn-standards/security
-    about: Review the private security reporting guidance. Do not disclose vulnerabilities publicly.
+  - name: Ask a question or introduce yourself
+    url: https://github.com/TitleChain-Foundation/icsn-standards/discussions
+    about: Use Discussions for questions, early ideas and community introductions.
+  - name: Report a security vulnerability privately
+    url: https://github.com/TitleChain-Foundation/icsn-standards/security/advisories/new
+    about: Never report vulnerabilities or sensitive findings in a public issue.
+  - name: M5 implementation and IAM pathway
+    url: https://m5bank.app/m5-build.html
+    about: M5 onboarding is separate from public Foundation participation.
+
