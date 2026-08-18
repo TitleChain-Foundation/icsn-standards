@@ -9,12 +9,25 @@ The Foundation's first curriculum task is to organize people who can teach, ment
 ## Instructor pathway
 
 1. **Follow the work.** Star the repository, watch releases and join public discussion.
-2. **Create an M5isYOU profile.** Select only the information the person wants to share.
-3. **Choose role relationships.** Mark roles as practiced, learning, demonstrated, credentialed, able to teach, able to mentor or able to review.
-4. **Add evidence selectively.** Reference a course, credential, work sample, publication, community result or peer attestation.
-5. **Propose a class.** State audience, outcomes, prerequisites, delivery mode, accessibility needs and assessment method.
-6. **Receive human review.** Domain stewards review fit, conflicts, safety and learning quality.
-7. **Pilot and improve.** Run a small cohort, collect participant feedback and version the curriculum.
+2. **Begin IAM activation.** Teachers and attendees must first enter the separate IAM activation process. Repository activity or class registration does not itself activate IAM.
+3. **Join the BOM waitlist.** After beginning IAM activation, the person may join the waitlist for a BOM member account. A waitlist position is not an activated financial account.
+4. **Create an M5isYOU profile.** Select only the information the person wants to share.
+5. **Choose role relationships.** Mark roles as practiced, learning, demonstrated, credentialed, able to teach, able to mentor or able to review.
+6. **Add evidence selectively.** Reference a course, credential, work sample, publication, community result or peer attestation.
+7. **Propose or attend a class.** State audience, outcomes, prerequisites, delivery mode, accessibility needs and assessment method.
+8. **Receive human review.** Domain stewards review fit, conflicts, safety and learning quality.
+9. **Pilot and improve.** Run a small cohort, collect participant feedback and version the curriculum.
+
+## Account sequence
+
+For the initial activation phase, the sequence is:
+
+1. `IAM` — identity and access activation is the first required step;
+2. `BOM waitlist` — the member may request a future BOM account after beginning IAM activation;
+3. `BOM activation` — only an activated account may receive supported payments through that account; and
+4. optional later pathways — the member may join an eligible BOU or connect an existing business to, or register a new business for, a BOB pathway under separate terms and review.
+
+Teaching, attending, following the repository or completing an M5isYOU profile does not guarantee IAM approval, BOM activation, a BOU relationship, business registration, a BOB account, payment, employment, grant funding or Foundation membership.
 
 ## M5isYOU teaching extension
 
@@ -62,3 +75,4 @@ Every proposed module should include:
 - Accommodations are handled separately and are not ranking inputs.
 - Teaching interest does not guarantee selection, payment or Foundation status.
 - Compensated work requires a separate signed agreement.
+- Compensation through M5 requires the appropriate activated account and a supported payment route. A BOM waitlist entry cannot receive payments.
