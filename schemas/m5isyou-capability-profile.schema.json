@@ -7,6 +7,289 @@
   "additionalProperties": false,
   "required": [
     "profileVersion",
+    "holderControl",
+    "contributionStatement",
+    "capabilities",
+    "sharing"
+  ],
+  "properties": {
+    "profileVersion": {
+      "const": "0.1-public-review"
+    },
+    "profileId": {
+      "type": "string",
+      "format": "uri",
+      "description": "An optional person-controlled profile identifier."
+    },
+    "holderControl": {
+      "$ref": "#/$defs/holderControl"
+    },
+    "preferredName": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "contributionStatement": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 400
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 7,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/capability"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "problemsISolve": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "workPreferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "availability": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "locationLimits": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "languagesOrCommunication": {
+          "type": "array",
+          "maxItems": 10,
+          "items": {
+            "type": "string",
+            "maxLength": 80
+          }
+        }
+      }
+    },
+    "learningGoals": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "maxLength": 160
+      }
+    },
+    "learningPathways": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["mentor", "cohort", "work-sample", "course", "other"]
+      }
+    },
+    "roleInterests": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^m5isyou:role-family:[a-z0-9-]+$"
+      }
+    },
+    "financeExperience": {
+      "enum": ["traditional-finance", "digital-assets-defi", "both", "learning", "not-stated"]
+    },
+    "financeSpecialties": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "accounting-ledgers",
+          "payments-settlement",
+          "treasury",
+          "trading-execution",
+          "market-research",
+          "liquidity-market-making",
+          "commercial-paper-notes-bonds",
+          "real-world-tokenized-assets",
+          "wallets-custody",
+          "smart-contracts-protocols",
+          "risk-insurance-bonding",
+          "compliance-market-integrity"
+        ]
+      }
+    },
+    "legalExperience": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "legal-research",
+          "contract-document-operations",
+          "entity-formation",
+          "registry-title",
+          "financial-regulation",
+          "comparative-cross-border-law",
+          "arbitration-dispute-resolution",
+          "public-policy",
+          "qualified-legal-practice",
+          "learning"
+        ]
+      }
+    },
+    "personConfirmedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sharing": {
+      "$ref": "#/$defs/sharing"
+    }
+  },
+  "$defs": {
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement", "confirmationStatus"],
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^m5isyou:capability:[a-z0-9-]+$"
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "proofSentence": {
+          "type": "string",
+          "maxLength": 400
+        },
+        "evidenceRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "confirmationStatus": {
+          "enum": ["person-entered", "person-confirmed", "agent-proposed-unconfirmed"]
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "myContribution", "sharingLevel"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "myContribution": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "reference": {
+          "type": "string",
+          "maxLength": 500
+        },
+        "sharingLevel": {
+          "enum": ["profile-reviewers", "discuss-privately", "public"]
+        },
+        "verificationStatus": {
+          "enum": ["self-described", "submitted", "reviewed", "verified"]
+        },
+        "verifiedCredentialRefs": {
+          "type": "array",
+          "uniqueItems": true,
+          "description": "Holder-selected references to credentials that validate particular claims in this evidence record.",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "holderControl": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profileApproved", "disclosureRequiresApproval", "controller"],
+      "properties": {
+        "profileApproved": {
+          "const": true,
+          "description": "The holder affirmatively approved this profile version."
+        },
+        "approvedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "disclosureRequiresApproval": {
+          "const": true
+        },
+        "controller": {
+          "const": "profile-subject"
+        },
+        "assistanceDisclosed": {
+          "type": "boolean",
+          "description": "Whether assistance from another person or agent is disclosed to the holder."
+        }
+      }
+    },
+    "sharing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matchingAuthorized", "approvedAudiences", "retainUntil"],
+      "properties": {
+        "matchingAuthorized": {
+          "type": "boolean"
+        },
+        "approvedAudiences": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "foundation-contribution-reviewers",
+              "cohort-reviewers",
+              "compensated-opportunity-reviewers",
+              "named-external-organization"
+            ]
+          }
+        },
+        "compensatedOpportunitiesAuthorized": {
+          "type": "boolean"
+        },
+        "externalSharingRequiresContact": {
+          "type": "boolean"
+        },
+        "retainUntil": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.titlechain.org/schemas/m5isyou-capability-profile-v0.1.schema.json",
+  "title": "M5isYOU Capability Profile Public Review Draft",
+  "description": "A person-confirmed, purpose-limited capability profile. This schema does not define a credential or automated decision score.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profileVersion",
     "contributionStatement",
     "capabilities",
     "sharing"
