@@ -84,7 +84,7 @@ Publication in this repository does not by itself make a proposal a Foundation s
 
 Apache 2.0 and CC BY 4.0 apply only to materials expressly designated for those licenses. The Cyrus Purpose-Bound Constitutional Commons License 1.0 remains a **Public Review Draft for the people's review** and applies only where expressly designated. All other rights remain reserved unless stated otherwise.
 
-See [LICENSE.md](LICENSE.md), the [license matrix](LICENSES/LICENSE-MATRIX.md) and the [Cyrus Commons Register](LICENSES/CYRUS-COMMONS-REGISTER.md).
+See [LICENSE.md](LICENSE.md), the [license matrix](LICENSES/LICENSE-MATRIX.md) and the [Cyrus Commons Register](LICENSES/CYRUS-COMMONS-REGISTER.csv).
 
 ## Optional M5 implementation and onboarding pathway
 
