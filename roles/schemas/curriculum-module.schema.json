@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titlechain-foundation.github.io/icsn-standards/schemas/curriculum-module.schema.json",
+  "title": "Sophia Curriculum Module",
+  "type": "object",
+  "required": ["id", "version", "status", "title", "supportsRoles", "learningOutcomes", "deliveryModes", "assessment"],
+  "properties": {
+    "id": {"type": "string", "format": "uri"},
+    "version": {"type": "string"},
+    "status": {"enum": ["proposed", "public-review-draft", "pilot", "candidate", "stable", "deprecated"]},
+    "title": {"type": "string", "minLength": 1},
+    "description": {"type": "string"},
+    "supportsRoles": {"type": "array", "items": {"type": "string", "format": "uri"}},
+    "capabilities": {"type": "array", "items": {"type": "string"}},
+    "prerequisites": {"type": "array", "items": {"type": "string"}},
+    "learningOutcomes": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "deliveryModes": {"type": "array", "minItems": 1, "items": {"enum": ["self-paced", "cohort", "workshop", "mentor-led", "apprenticeship", "hybrid"]}},
+    "instructorRequirements": {"type": "array", "items": {"type": "string"}},
+    "assessment": {"type": "object"},
+    "credentialType": {"type": ["string", "null"]},
+    "license": {"type": ["string", "null"]}
+  }
+}

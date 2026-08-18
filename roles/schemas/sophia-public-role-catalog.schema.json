@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titlechain-foundation.github.io/icsn-standards/schemas/sophia-public-role-catalog.schema.json",
+  "title": "Sophia Public Role Catalog",
+  "type": "object",
+  "required": ["id", "version", "status", "counts", "roles"],
+  "properties": {
+    "id": {"type": "string", "format": "uri"},
+    "version": {"type": "string"},
+    "status": {"const": "public-review-draft"},
+    "counts": {
+      "type": "object",
+      "required": ["roles", "tracks"],
+      "properties": {
+        "roles": {"type": "integer", "minimum": 0},
+        "tracks": {"type": "integer", "minimum": 0}
+      }
+    },
+    "roles": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/role"}
+    }
+  },
+  "$defs": {
+    "role": {
+      "type": "object",
+      "required": ["id", "status", "title", "roleCode", "track", "capabilities", "learningPathways", "teachingPathways", "serviceTemplates", "review"],
+      "properties": {
+        "id": {"type": "string", "format": "uri"},
+        "status": {"enum": ["proposed", "public-review-draft", "candidate", "stable", "deprecated"]},
+        "title": {"type": "string", "minLength": 1},
+        "legacyTitle": {"type": ["string", "null"]},
+        "roleCode": {"type": "string", "minLength": 1},
+        "track": {"type": "string", "minLength": 1},
+        "sophia": {"type": "object"},
+        "m5": {"type": "object"},
+        "capabilities": {"type": "array", "items": {"type": "string"}},
+        "learningPathways": {"type": "array", "items": {"type": "string", "format": "uri-reference"}},
+        "teachingPathways": {"type": "array", "items": {"type": "string", "format": "uri-reference"}},
+        "serviceTemplates": {"type": "array", "items": {"type": "string", "format": "uri-reference"}},
+        "review": {"type": "object"}
+      }
+    }
+  }
+}
