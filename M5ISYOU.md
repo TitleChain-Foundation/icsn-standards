@@ -23,6 +23,14 @@ A person creates one legible page describing:
 
 M5isYOU is designed to help a person discover possible pathways into public contribution, cohorts, learning, grants, work samples and separately authorized operating roles. It must not silently decide a person's worth or future.
 
+## Holder ownership and approval
+
+The M5isYOU profile belongs to and is controlled by the person it describes. The Foundation, M5, a reviewer, an instructor and an agent may provide a blank template, suggest fields or help the person use the interface, but must not create, complete, approve, publish or materially update the profile on the person's behalf.
+
+Every stored version and every disclosure must be affirmatively approved by the holder. Silence, repository participation, class attendance, IAM activation, a waitlist entry or possession of a credential is not approval to create or share a profile. The holder may correct, export, withdraw or delete the profile subject only to clearly disclosed legal retention duties.
+
+Verified credentials validate particular claims made by an identified issuer under a stated policy. They do not transfer control of the profile to the issuer, validate unrelated statements, or certify the person's entire identity, worth, suitability or future potential. Self-description, issuer verification and verifier acceptance remain separate events.
+
 ## Two synchronized forms
 
 Each profile has:
@@ -32,7 +40,7 @@ Each profile has:
 
 The person-readable page is the primary experience. Structured data exists to improve portability and transparent matching, not to replace the person's voice.
 
-The proposed [one-page template](templates/M5ISYOU-ONE-PAGE.md) can be completed in plain text or through an accessible interface. The [capability-profile schema](schemas/m5isyou-capability-profile.schema.json) defines a portable record. Neither format is a verifiable credential until a separately authorized issuer verifies a specific claim and creates a credential for that limited purpose.
+The proposed [one-page template](templates/M5ISYOU-ONE-PAGE.md) can be completed in plain text or through an accessible interface. The [capability-profile schema](schemas/m5isyou-capability-profile.schema.json) defines a portable record. Neither format is itself a verifiable credential. A separately authorized issuer may issue a credential that validates a specific claim for a limited purpose, and the holder decides whether to link or present that credential.
 
 ## The M5isYOU page
 
@@ -191,4 +199,3 @@ Before operational use, M5isYOU requires:
 - qualified employment and data-protection counsel in each applicable jurisdiction.
 
 The Foundation should publish versioned methodology, change records and aggregated evaluation results without exposing applicants or members.
-
