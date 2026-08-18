@@ -43,6 +43,7 @@ See the complete [participation and focus-area map](PARTICIPATE.md).
 - [Join the public discussion](https://github.com/TitleChain-Foundation/icsn-standards/discussions)
 - [Read the contribution pathway](CONTRIBUTING.md)
 - [Understand repository roles and membership](MEMBERSHIP-AND-ROLES.md)
+- [Review cohort eligibility, grants and contributor rewards](COHORT-FUNDING-AND-CONTRIBUTOR-REWARDS.md)
 - [Report an actionable specification problem](https://github.com/TitleChain-Foundation/icsn-standards/issues/new/choose)
 - [Draft an RFC](rfcs/0000-template.md)
 

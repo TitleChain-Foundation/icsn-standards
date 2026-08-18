@@ -36,6 +36,14 @@ Starring, watching, participating, contributing or receiving a GitHub organizati
 
 Any such status requires its own documented, consent-based and authorized process.
 
+## Cohort, funding and compensated work
+
+Organization members who maintain a constructive contribution record may be eligible to apply for separately announced M5Bank contributor cohorts, mission grants or compensated assignments. Eligibility creates an opportunity to apply—not an account, award, token allocation or payment entitlement.
+
+Selection and payment must follow documented criteria, conflicts review and the appropriate grant, employment, contractor, bounty or procurement process. A person must not participate in approving their own award. Foundation authority, repository permissions and standards decisions must remain independent of financial support and compensation.
+
+See the [Cohort, Funding and Contributor Rewards Framework](COHORT-FUNDING-AND-CONTRIBUTOR-REWARDS.md) for the proposed pathway, digital-asset controls, DUNA formation boundary and M5OpenAPI marketplace responsibilities.
+
 ## Public and private information boundary
 
 The public repository may contain standards proposals, public governance records, implementation-neutral examples and contribution history.
