@@ -9,13 +9,16 @@ The Sophia Public Role Registry is the TitleChain Foundation's proposed open voc
 The first activation priority is to invite instructors, practitioners, mentors and curriculum builders to:
 
 1. star and follow the Foundation's public repository;
-2. complete a person-controlled M5isYOU one-page profile;
-3. select the roles, domains and capabilities they can teach or review;
-4. identify classes they can lead, co-design or support;
-5. propose missing roles, capabilities and curriculum modules; and
-6. join a public working area without receiving automatic membership, employment or compensation status.
+2. begin the separate IAM activation process and, when eligible, join the BOM account waitlist;
+3. complete a person-controlled M5isYOU one-page profile;
+4. select the roles, domains and capabilities they can teach or review;
+5. identify classes they can lead, co-design or support;
+6. propose missing roles, capabilities and curriculum modules; and
+7. join a public working area without receiving automatic membership, employment or compensation status.
 
 Repository engagement and an M5isYOU submission are separate consent steps. Neither creates an employment relationship, Foundation membership, wallet, credential, grant or paid assignment.
+
+For the initial program, IAM activation is the first account step for teachers and attendees. A person may then join the BOM waitlist. Payments require an activated, supported account; a waitlist entry is not a payment account. Eligible members may later choose a BOU pathway or connect an existing business to, or register a new business for, a BOB pathway under separate terms and review.
 
 ## Registry contents
 
