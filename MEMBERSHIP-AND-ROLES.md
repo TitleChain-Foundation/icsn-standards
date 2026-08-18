@@ -44,6 +44,8 @@ Selection and payment must follow documented criteria, conflicts review and the 
 
 See the [Cohort, Funding and Contributor Rewards Framework](COHORT-FUNDING-AND-CONTRIBUTOR-REWARDS.md) for the proposed pathway, digital-asset controls, DUNA formation boundary and M5OpenAPI marketplace responsibilities.
 
+The [Founding Roles and Activation Pathway](FOUNDING-ROLES-AND-ACTIVATION.md) describes anticipated operating capabilities as cohorts, registries and products develop. Publication in that map does not mean a role is funded, open or appointed.
+
 ## Public and private information boundary
 
 The public repository may contain standards proposals, public governance records, implementation-neutral examples and contribution history.
