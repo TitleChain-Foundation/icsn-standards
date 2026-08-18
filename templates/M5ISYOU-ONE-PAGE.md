@@ -120,17 +120,19 @@ I would benefit from: [ ] mentor [ ] cohort [ ] work sample [ ] course
 
 ## My sharing choices
 
+- [ ] I created or personally approved this profile and control its use.
 - [ ] Use this page to suggest contribution and learning pathways.
 - [ ] Approved Foundation reviewers may see the fields I submitted.
 - [ ] Consider me for separately announced compensated opportunities.
 - [ ] Retain this profile for future opportunities until: ______________
 - [ ] Contact me before sharing it with another organization.
 
+Credentials I choose to link or present validate only their stated claims. They do not give an issuer, reviewer, Foundation or agent ownership of this profile.
+
 Preferred name or private profile identifier: _________________________
 
 Contact method, if I choose to provide one: ___________________________
 
-I confirm that I chose what to submit and may request correction, export or deletion.
+I confirm that I chose and approved what to submit, control this profile and its disclosures, and may request correction, export, withdrawal or deletion.
 
 Date: ______________________
-
