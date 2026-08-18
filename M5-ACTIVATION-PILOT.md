@@ -19,6 +19,8 @@ The pilot should validate one complete reference journey across TitleChain Found
 9. receipt or settlement through a supported route; and
 10. launch of a member-controlled AI-native, on-chain business.
 
+The M5isYOU profile is created or affirmatively approved by the person and remains under that person's control. The pilot may provide tools, prompts and assistance, but must not generate or publish a profile as though the Foundation created it for the member. Verified credentials validate only specified claims; they do not replace holder approval or transfer control of the profile.
+
 ## First reference implementation
 
 Pamela may serve as the first named reference participant only to the extent she expressly consents. Public documentation may describe the sequence, decisions, templates and redacted evidence. It must not publish identity documents, authentication factors, wallet addresses, private account identifiers, credentials, POD contents, contracts, invoices or transaction data without separate, specific disclosure approval.
