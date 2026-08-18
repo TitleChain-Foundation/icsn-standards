@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.titlechain.org/schemas/m5isyou-role-capability-map-v0.1.schema.json",
+  "title": "M5isYOU Role Capability Map Public Review Draft",
+  "description": "A transparent role-side contract for pathway suggestions. It does not authorize automated selection or rejection.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "mapVersion",
+    "roleId",
+    "title",
+    "outcomes",
+    "capabilityRequirements",
+    "acceptableEvidence",
+    "prohibitedInputs",
+    "humanReviewRequired"
+  ],
+  "properties": {
+    "mapVersion": {
+      "type": "string"
+    },
+    "roleId": {
+      "type": "string",
+      "pattern": "^m5isyou:role:[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 180
+    },
+    "status": {
+      "enum": ["research", "contributor-pathway", "planned", "open", "paused", "closed"]
+    },
+    "outcomes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "maxLength": 300
+      }
+    },
+    "capabilityRequirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["capability", "level", "reason"],
+        "properties": {
+          "capability": {
+            "type": "string",
+            "pattern": "^m5isyou:capability:[a-z0-9-]+$"
+          },
+          "level": {
+            "enum": ["essential", "developable", "beneficial"]
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 300
+          },
+          "accessibleDemonstrationAvailable": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "acceptableEvidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "maxLength": 200
+      }
+    },
+    "prohibitedInputs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "pathways": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["contribute-now", "demonstrate", "develop", "no-current-pathway"]
+      }
+    },
+    "humanReviewRequired": {
+      "const": true
+    },
+    "accommodationProcess": {
+      "type": "string",
+      "format": "uri"
+    },
+    "effectiveFrom": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reviewBy": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
