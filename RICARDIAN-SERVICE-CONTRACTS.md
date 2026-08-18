@@ -23,6 +23,12 @@ All representations must carry the same contract identifier, version and content
 
 No wallet may issue binding terms or move funds merely because someone viewed or selected a profile.
 
+## Account and payment readiness
+
+IAM activation is the first account step for teachers, attendees and prospective service providers in the initial program. A person may then join the BOM waitlist. A BOM waitlist entry is not an activated account and cannot receive payments.
+
+Before a contract selects an M5 payment route, the execution layer must verify that the required account is active and supported without publishing account identifiers. Depending on the person's separately approved pathway, settlement may use an activated BOM account, an eligible BOU relationship, or an existing or newly registered entity using a BOB pathway. These choices do not arise automatically from a class, profile or service request.
+
 ## Required service terms
 
 - parties or pairwise identifiers;
@@ -37,6 +43,7 @@ No wallet may issue binding terms or move funds merely because someone viewed or
 - governing law or agreed dispute process where applicable;
 - invoice and payment route;
 - agent authority limits; and
+- the activated account type or external payment route required for settlement, without exposing private account identifiers; and
 - signatures, timestamps, version and content digest.
 
 ## Execution permissions
