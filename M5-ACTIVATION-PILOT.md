@@ -6,6 +6,8 @@
 
 The first curriculum pilot exists to activate the people, roles and workflows required to operate the M5Ecosystem and then teach the same consent-based pathway to other members. It is an implementation pilot before it is a broad course catalog.
 
+This pilot is the prioritized implementation subset of the broader [Founding Roles and Activation Pathway](FOUNDING-ROLES-AND-ACTIVATION.md). The founding-role map describes long-term strategic capabilities and independent control functions; this pilot sequences the roles needed first to reproduce and teach one complete member activation journey. Where titles differ, the workstream and accountable authority matter more than the title.
+
 The pilot should validate one complete reference journey across TitleChain Foundation, M5Capital and the member-controlled M5 stack:
 
 1. IAM activation;
@@ -28,6 +30,8 @@ Pamela may serve as the first named reference participant only to the extent she
 No account or credential should be described as activated, issued or verified until the accountable issuer or operator has recorded the supporting evidence. The public pilot should distinguish `planned`, `in progress`, `activated`, `verified`, `suspended` and `revoked` states.
 
 ## Activation job groups
+
+The job groups below organize the initial implementation work. They do not replace the detailed founding-role descriptions or the searchable Sophia catalog. One qualified person may support more than one early workstream only when conflicts are disclosed and required independent approvals remain separated.
 
 ### 1. Canon and architecture
 
