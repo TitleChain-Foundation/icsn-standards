@@ -4,6 +4,8 @@
 
 The Sophia Public Role Registry is the TitleChain Foundation's proposed open vocabulary for existing, emerging and experimental work. It allows people to find roles, describe capabilities, discover learning pathways, volunteer to teach or mentor, and offer services without turning the registry into an employment gatekeeper.
 
+The registry complements two narrower documents: the [Founding Roles and Activation Pathway](FOUNDING-ROLES-AND-ACTIVATION.md) defines strategic operating capabilities and independent controls, while the [M5 Activation Pilot](M5-ACTIVATION-PILOT.md) identifies the first implementation workstreams. The 636-role registry is a discovery and curriculum taxonomy; it is not a claim that 636 positions are open, funded or appointed.
+
 ## Start with instructors and domain stewards
 
 The first activation priority is to invite instructors, practitioners, mentors and curriculum builders to:
