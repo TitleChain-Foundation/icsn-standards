@@ -74,6 +74,8 @@ Participants who establish a sustained, constructive contribution record may bec
 
 The Foundation may also announce mission grants or paid assignments for defined research, development, review, testing and community work. Membership or cohort status does not guarantee an award. Grants, compensation and any digital-asset payment must follow the separate [Cohort, Funding and Contributor Rewards Framework](COHORT-FUNDING-AND-CONTRIBUTOR-REWARDS.md).
 
+The anticipated operating capabilities are organized in the [Founding Roles and Activation Pathway](FOUNDING-ROLES-AND-ACTIVATION.md). That map is an invitation to identify skills and contribute; it is not a representation that every role is funded or open for immediate appointment.
+
 M5 onboarding is consent-based and separate from GitHub participation. A GitHub handle is a service address, not a sovereign identity root. Repository activity must not be used to issue an account, credential, proof-of-humanity determination or governance authority without the required separate process and consent.
 
 ## Becoming an organization member
