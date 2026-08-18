@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use or review this work, please cite the TitleChain Foundation and the specific version or commit."
+title: "ICSN Standards"
+type: software
+authors:
+  - name: "TitleChain Foundation contributors"
+repository-code: "https://github.com/TitleChain-Foundation/icsn-standards"
+url: "https://www.titlechainfoundation.org"
+version: 0.1.0
+date-released: 2026-08-18
+license: "LicenseRef-ICSN-Asset-Level-Licensing"
+

@@ -1,0 +1,12 @@
+# Initial accountable review while Foundation teams are formed.
+* @satonakaoshimoto
+
+# Sensitive and governance-critical surfaces.
+/SECURITY.md @satonakaoshimoto
+/GOVERNANCE.md @satonakaoshimoto
+/LICENSE.md @satonakaoshimoto
+/LICENSES/ @satonakaoshimoto
+/governance/ @satonakaoshimoto
+/contracts/ @satonakaoshimoto
+/schemas/ @satonakaoshimoto
+
