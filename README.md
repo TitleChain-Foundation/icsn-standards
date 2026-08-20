@@ -1,109 +1,90 @@
 # ICSN Standards
 
-Open specifications, RFCs and conformance work for human-rooted identity and sovereign networks.
+**Open specifications, RFCs, schemas, and conformance work for human-rooted identity and accountable digital systems.**
 
-This repository is the public standards workspace of the [TitleChain Foundation](https://github.com/TitleChain-Foundation). It supports interoperable systems for people, sole proprietors, ventures, cooperatives, institutions, governments and sovereign communities.
+[![Release](https://img.shields.io/github/v/release/TitleChain-Foundation/icsn-standards?display_name=tag)](https://github.com/TitleChain-Foundation/icsn-standards/releases)
+[![License](https://img.shields.io/badge/license-asset--level-blue)](LICENSE.md)
+[![Discussions](https://img.shields.io/github/discussions/TitleChain-Foundation/icsn-standards)](https://github.com/TitleChain-Foundation/icsn-standards/discussions)
 
-> ⭐ **Support the work:** [Follow TitleChain Foundation](https://github.com/TitleChain-Foundation) · [Star this repository](https://github.com/TitleChain-Foundation/icsn-standards) · [Get involved](https://github.com/TitleChain-Foundation/icsn-standards/issues/new?template=get-involved.yml) · [Join the discussion](https://github.com/TitleChain-Foundation/icsn-standards/discussions)
+ICSN is the public standards program of the [TitleChain Foundation](https://github.com/TitleChain-Foundation). It develops implementation-neutral ways to preserve human authority, limit delegated machine authority, and make identity, credentials, and provenance portable and reviewable.
 
-## Start here
+## Get involved
 
-You do not need a GitHub account to read the public repository. A free GitHub account is required to follow, star, watch, open an issue or participate in Discussions.
+- Read [current priorities](ROADMAP.md).
+- Review [open issues](https://github.com/TitleChain-Foundation/icsn-standards/issues), including `good first issue` and `help wanted` work.
+- Ask questions or propose early ideas in [Discussions](https://github.com/TitleChain-Foundation/icsn-standards/discussions).
+- Follow the [participation pathway](PARTICIPATE.md) and [contribution guide](CONTRIBUTING.md).
+- Review the [RFC index](rfcs/README.md) or start with the [RFC template](rfcs/0000-template.md).
 
-### I am new to GitHub or simply want to support the work
+Do not place private identity data, credentials, personal contact details, wallet information, private keys, or confidential business information in a public issue, discussion, or pull request.
 
-1. [Create a free GitHub account](https://github.com/signup) and verify your email.
-2. [Follow TitleChain Foundation](https://github.com/TitleChain-Foundation) for public organization activity.
-3. [Star this repository](https://github.com/TitleChain-Foundation/icsn-standards) to signal support.
-4. Complete the public [Get Involved form](https://github.com/TitleChain-Foundation/icsn-standards/issues/new?template=get-involved.yml) when you want to identify how you can help.
+## Standards scope
 
-### I want to contribute actively
+Current work includes:
 
-Complete the steps above, then:
+- **Human authority** — proof of life, presence, intent, and authority connected to defined digital actions.
+- **Accountable agents** — narrow, purpose-bound, auditable, time-limited, and revocable delegation.
+- **Portable identity and credentials** — selective disclosure, recovery, provenance, and the right to exit.
+- **Sovereign networks** — interoperable registries and coordination without surrendering local authority.
+- **Security and privacy** — threat analysis, data minimization, synchronization safety, and resilient recovery.
+- **Conformance** — schemas, test vectors, implementation guidance, and reference implementations.
 
-1. **Watch** the repository and choose the notifications you want.
-2. [Introduce yourself in Discussions](https://github.com/TitleChain-Foundation/icsn-standards/discussions).
-3. Read [how to participate](PARTICIPATE.md) and [how to contribute](CONTRIBUTING.md).
-4. Choose a labeled starter issue or propose an idea in Discussions before opening broad implementation work.
-
-Never place private identity data, credentials, wallet addresses, personal contact details or confidential business information in a GitHub issue or Discussion. M5isYOU profiles and credential disclosures are holder-controlled and must be approved by the person.
-
-## Activation and curriculum
-
-The public activation package separates the strategic capability map, the first implementation pilot, role discovery and holder-controlled participation:
-
-- [Founding Roles and Activation Pathway](FOUNDING-ROLES-AND-ACTIVATION.md) — the strategic capability and independent-control map.
-- [M5 Activation Pilot](M5-ACTIVATION-PILOT.md) — the prioritized roles and train-the-onboarder sequence for the first complete member journey.
-- [Sophia Public Role Registry](SOPHIA-PUBLIC-ROLE-REGISTRY.md) — a searchable 636-role discovery and curriculum taxonomy, not a claim that 636 positions are open or funded.
-- [M5isYOU](M5ISYOU.md) — the person-owned, person-approved profile and selective credential presentation model.
-- [Instructor and Curriculum Activation](INSTRUCTOR-AND-CURRICULUM-ACTIVATION.md) — how instructors, practitioners, mentors and stewards can help organize learning.
-- [Ricardian Service Contracts](RICARDIAN-SERVICE-CONTRACTS.md) — synchronized human-readable, machine-readable and executable service terms.
-
-The immediate goal is to attract instructors and experts who can follow and star the work, activate IAM through the separate M5 consent pathway, join the BOM waitlist, create a holder-controlled M5isYOU profile, identify what they can teach or mentor, and help reproduce the first complete activation journey.
-
-## What we are building
-
-ICSN explores a neutral, human-rooted public coordination layer across the full technology and institutional stack—from silicon and devices to identity, payments, law and governance.
-
-The public principle is simple: each person should own and control their sovereign self, while credentials can validate specific claims, capabilities and proof-of-humanity signals without transferring ownership of the person to a platform or institution.
-
-We are seeking contributors in:
-
-- open data standards, interoperability, conformance and open-source governance;
-- Linux, operating systems, secure hardware, handsets and edge infrastructure;
-- identity, credentials, privacy, applied cryptography, security and recovery;
-- software, protocols, graph-powered agents, memory systems and developer tooling;
-- wallets, payments, financial infrastructure, institutions and risk management;
-- law, public policy, jurisdiction, rights and cross-border coordination;
-- registries, Ricardian contracts, tokenized assets and accountable market infrastructure;
-- subsidiarity, cooperatives and community-governed economic or payment pools; and
-- decentralized edge economics, asset valuation, indexes and new measures of productive value.
-
-These are research and standards directions. They do not imply affiliation with, endorsement by or authority from any government, international organization, standards body, company or community.
-
-## Participate in standards work
-
-- [Join the public discussion](https://github.com/TitleChain-Foundation/icsn-standards/discussions)
-- [Submit the Get Involved form](https://github.com/TitleChain-Foundation/icsn-standards/issues/new?template=get-involved.yml)
-- [Read the contribution pathway](CONTRIBUTING.md)
-- [Understand repository roles and membership](MEMBERSHIP-AND-ROLES.md)
-- [Review cohort eligibility, grants and contributor rewards](COHORT-FUNDING-AND-CONTRIBUTOR-REWARDS.md)
-- [Report an actionable specification problem](https://github.com/TitleChain-Foundation/icsn-standards/issues/new/choose)
-- [Draft an RFC](rfcs/0000-template.md)
-- [Review the RFC index](rfcs/README.md)
-
-Questions and early ideas belong in Discussions. Issues are for actionable defects and specification work. Security vulnerabilities must be reported privately through the repository Security tab.
+These are research and standards directions. They do not imply endorsement by a government, regulator, international organization, standards body, company, or community.
 
 ## Standards process
 
-Proposals advance through **Draft**, **Candidate**, **Stable**, and **Deprecated** stages under [open governance](GOVERNANCE.md). Material standards changes require public review, documented decisions, security and privacy analysis, conformance criteria, and implementation evidence.
+Proposals advance through **Draft**, **Candidate**, **Stable**, and **Deprecated** stages under [open governance](GOVERNANCE.md).
+
+Material changes begin with public discussion and an RFC. Stable status requires documented review, security and privacy analysis, conformance criteria, implementation evidence, and an affirmative decision by authorized standards stewards.
 
 Publication in this repository does not by itself make a proposal a Foundation standard.
 
+## Repository map
+
+| Area | Start here |
+| --- | --- |
+| RFCs and specifications | [`rfcs/`](rfcs/README.md) |
+| Schemas and validation | [`schemas/`](schemas/) and [`scripts/validate_repository.py`](scripts/validate_repository.py) |
+| Governance | [GOVERNANCE.md](GOVERNANCE.md) |
+| Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Participation | [PARTICIPATE.md](PARTICIPATE.md) |
+| Security reporting | [SECURITY.md](SECURITY.md) |
+| Licensing | [LICENSE.md](LICENSE.md) and [license matrix](LICENSES/LICENSE-MATRIX.md) |
+| Releases | [CHANGELOG.md](CHANGELOG.md) and [release checklist](RELEASE-CHECKLIST.md) |
+| Sponsorship | [SPONSORS.md](SPONSORS.md) and [SPONSOR-IMPACT.md](SPONSOR-IMPACT.md) |
+
+## Implementation neutrality
+
+M5 is one implementation and activation environment that may help test the architecture. It is not required for participation, and it does not define the standard by itself.
+
+GitHub participation, Foundation governance, commercial services, account onboarding, employment, credentials, and investment are separate relationships governed by their own processes and terms.
+
+## Support the work
+
+Sponsorship helps fund:
+
+- independent development and maintenance of public specifications and RFCs;
+- security and privacy review;
+- documentation, conformance criteria, test vectors, and reference implementations;
+- release engineering and public infrastructure; and
+- contributor coordination that keeps the work accessible.
+
+Sponsorship does **not** purchase influence over standards decisions, governance authority, conformance status, or access to private participant information.
+
+Everyday supporters will be able to participate through public GitHub Sponsors tiers after approval. Organizations seeking a larger standards, security, reference-implementation, release, or infrastructure partnership can **[connect with the Foundation](mailto:hello@titlechainfoundation.org)** to discuss scope and public impact reporting. Higher partnership pricing is intentionally not published as self-service pricing.
+
+See [SPONSORS.md](SPONSORS.md) for the complete policy.
+
 ## Licensing
 
-Apache 2.0 and CC BY 4.0 apply only to materials expressly designated for those licenses. The Cyrus Purpose-Bound Constitutional Commons License 1.0 remains a **Public Review Draft for the people's review** and applies only where expressly designated. All other rights remain reserved unless stated otherwise.
+This repository uses explicit asset-level licensing. Apache 2.0 and CC BY 4.0 apply only to materials expressly carrying those designations. The Cyrus Purpose-Bound Constitutional Commons License 1.0 is a public-review draft and applies only where expressly designated. Other material remains reserved unless stated otherwise.
 
-See [LICENSE.md](LICENSE.md), the [license matrix](LICENSES/LICENSE-MATRIX.md) and the [Cyrus Commons Register](LICENSES/CYRUS-COMMONS-REGISTER.csv).
+Review [LICENSE.md](LICENSE.md), the [license matrix](LICENSES/LICENSE-MATRIX.md), and the designation attached to an asset before reuse.
 
-## Optional M5 implementation and onboarding pathway
-
-ICSN standards are implementation-neutral. M5 is one implementation and activation pathway helping validate the architecture in practice.
-
-1. [Review M5Bank](https://m5bank.app/) and the [M5 Build activation deck](https://m5activate.netlify.app/m5build%20-%20activation%20deck).
-2. Join the separate [M5 Build and IAM pathway](https://m5bank.app/m5-build.html). IAM is the first activation step.
-3. Join the BOM account waitlist when offered through the consent-based onboarding flow.
-4. A participant may later join a BOU or activate a BOB for an existing or newly registered venture, subject to the applicable pathway and terms.
-5. [Explore cohort sponsorship](https://m5bank.app/m5-circle.html) to support defined activation outcomes. Sponsorship does not purchase standards authority or access to participant data.
-
-GitHub participation and M5 onboarding are separate. Following, starring, watching, discussing or contributing does not automatically create an account, credential, membership, compensation entitlement, proof-of-humanity status, governance authority or legal relationship.
-
-## Community and project records
+## Project records
 
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 - [Security Policy](SECURITY.md)
 - [Governance](GOVERNANCE.md)
 - [Changelog](CHANGELOG.md)
-- [How to cite this work](CITATION.cff)
-- [Release checklist](RELEASE-CHECKLIST.md)
-
+- [Citation](CITATION.cff)
