@@ -28,6 +28,14 @@ Complete the steps above, then:
 
 Never place private identity data, credentials, wallet addresses, personal contact details or confidential business information in a GitHub issue or Discussion. M5isYOU profiles and credential disclosures are holder-controlled and must be approved by the person.
 
+## Create your M5isYOU profile
+
+M5isYOU is a holder-controlled capability passport and M5-CV—not an automated employment score. Start with the [public application architecture and privacy boundary](M5ISYOU-APPLICATION-ARCHITECTURE.md), review the [blank and fictional examples](examples/m5isyou/README.md), then use the private M5 Member Activation application when the pilot opens.
+
+Completed profiles, credentials, contact details and applicant records must never be posted to GitHub. A profile begins privately, becomes shareable only after the holder previews and approves an exact version, and can later be revoked.
+
+The activation sequence is IAM first, then the BOM waitlist, with optional BOU or BOB pathways. Matrix is the Foundation's default pilot communication channel after consent; it is not the IAM identity authority or member registry.
+
 ## Activation and curriculum
 
 The public activation package separates the strategic capability map, the first implementation pilot, role discovery and holder-controlled participation:
@@ -106,4 +114,3 @@ GitHub participation and M5 onboarding are separate. Following, starring, watchi
 - [Changelog](CHANGELOG.md)
 - [How to cite this work](CITATION.cff)
 - [Release checklist](RELEASE-CHECKLIST.md)
-
