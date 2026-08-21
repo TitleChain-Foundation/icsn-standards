@@ -33,6 +33,8 @@ Meeting notes, decisions, RFC history and declared conflicts should be public un
 
 M5 products may implement and help validate these standards, but no single vendor or implementation defines the standard. Conformance claims must be based on published criteria.
 
+Sponsorship, grants, partnerships, marketplace recognition and other financial support do not purchase standards authority, votes, conformance status, adoption, preferential review or guaranteed acceptance of a proposal. Editors and stewards must disclose material conflicts and recuse themselves when they cannot act impartially. Funding may support a public workstream or milestone, but the resulting work remains subject to the ordinary review and maturity process.
+
 ## Amendments
 
 This policy may be amended through the same RFC and public-review process. Material governance changes should receive longer review than routine editorial changes.
