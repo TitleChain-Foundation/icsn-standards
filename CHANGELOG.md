@@ -4,6 +4,17 @@ This file records material public changes to the ICSN standards workspace. Stand
 
 ## [Unreleased]
 
+### Added
+
+- Public roadmap for near-term standards, security, conformance and reference-implementation work.
+- Sponsorship policy, workstream-allocation model and public impact-reporting template.
+
+### Changed
+
+- Simplified the repository front page around open standards, contribution and review.
+- Clarified that larger organizational partnerships are by application and do not purchase standards influence.
+- Strengthened governance language covering sponsorship independence and conflicts.
+
 ### Planned
 
 - Public review of the activation, curriculum, role-registry and Ricardian service-contract materials.
@@ -24,4 +35,3 @@ This file records material public changes to the ICSN standards workspace. Stand
 
 [Unreleased]: https://github.com/TitleChain-Foundation/icsn-standards/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/TitleChain-Foundation/icsn-standards/releases/tag/v0.1.0
-
