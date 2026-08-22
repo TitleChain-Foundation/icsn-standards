@@ -12,13 +12,16 @@ The Foundation's immediate public priority is to build visibility, gather inform
 
 You do not need to understand every layer of the architecture before participating. The human-rooted foundation is that people should own and control their sovereign selves, while credentials validate limited claims or capabilities without making a platform the owner of the person.
 
+**GitHub participation does not require an IAM account, M5 account, cohort place, investment, or commercial relationship.**
+
 ## Areas where contributors are needed
 
 ### Open standards and public infrastructure
 
 - open data models, schemas, portability and interoperability;
 - conformance, testing, certification boundaries and reference implementations;
-- Linux, open-source ecosystems, operating systems and edge infrastructure; and
+- Linux, open-source ecosystems, operating systems and edge infrastructure;
+- public-interest identity and IAM infrastructure; and
 - security, privacy, post-quantum readiness and resilient networking.
 
 ### Silicon, devices and software
@@ -62,13 +65,22 @@ You do not need to understand every layer of the architecture before participati
 
 These areas describe an open research and standards agenda. They do not constitute legal, regulatory, tax or investment advice; an offer, solicitation or recommendation; the issuance or listing of an asset; or the operation of an exchange, broker, custodian, bank, clearinghouse or adjudicatory body. They do not claim that any named government, regulator, international organization, standards body, company or community has endorsed or joined the work. References to the SEC, CFTC or other authorities identify areas of law and regulatory research only. References to future global or adjudication architectures do not imply United Nations affiliation or authority.
 
-## Optional M5BankOfMe pathway
+## Optional public-infrastructure and M5 activation pathway
 
-M5 is one implementation and activation pathway; it is not a requirement for contributing to ICSN standards.
+ICSN is open whether or not you use M5. The optional activation path exists so contributors and builders can test the principles in a real operating environment.
 
-1. Review the public onboarding path at [m5bank.app](https://m5bank.app/).
-2. Use the [M5 Build pathway](https://m5bank.app/m5-build.html) to join the IAM/M5BankOfMe waitlist when you are ready for the separate onboarding process.
-3. Organizations and supporters may review the [Founding Cohort sponsor invitation](https://m5bank.app/m5-circle.html). Sponsorship helps fund developers, programmers and launch work; it does not purchase standards authority or conformance status.
+1. **Establish the free IAM identity origin, if you choose.** The foundational IAM account is offered at no charge at [m5bank.app](https://m5bank.app/).
+2. **Enroll in the M5 program separately, if you choose.** [m5member.netlify.app](https://m5member.netlify.app/) is the M5Member enrollment/activation pathway through which an eligible participant progresses toward her **M5BankofMe account** and applicable program experience.
+3. **Build a member-controlled capability passport, if useful.** The Passport can organize learning, credentials, skills and proof using the `I AM → I KNOW → I CAN → I DID → I CAN TEACH → I CAN EARN` sequence.
+4. **Choose an implementation path.** M5BankofMe, M5 Build, M5POD, M5Shell and other M5 services may be used to test the architecture, but they do not define the standard and are not required.
+5. **Build and test.** Use the environment to test portability, accountable agents, privacy, recovery, provider substitution, conformance and real workflows.
+6. **Return evidence to the commons.** Where appropriate and permitted, contribute RFC feedback, schemas, test cases, interoperability findings, open tooling or security lessons back to the public standards process.
+
+Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md) for the privacy, sponsor and separation rules.
+
+The first major cohort goal is the [100K Women-Led Venture Activation](initiatives/100K-WOMEN-LED-VENTURES.md). Participation is subject to capacity and the applicable program terms; the number is a goal, not a representation that 100,000 ventures have already been admitted or funded.
+
+Organizations and supporters should use [SPONSORS.md](SPONSORS.md) to understand the distinction between GitHub sponsorship, public workstreams and separately documented cohort or activation sponsorship.
 
 Participants who establish a sustained, constructive contribution record may become eligible to apply for an announced contributor place in an M5Bank cohort series. Eligibility is not admission: account activation remains subject to a separate application, informed consent, capacity, program criteria and applicable onboarding requirements.
 
@@ -77,6 +89,10 @@ The Foundation may also announce mission grants or paid assignments for defined 
 The anticipated operating capabilities are organized in the [Founding Roles and Activation Pathway](FOUNDING-ROLES-AND-ACTIVATION.md). That map is an invitation to identify skills and contribute; it is not a representation that every role is funded or open for immediate appointment.
 
 M5 onboarding is consent-based and separate from GitHub participation. A GitHub handle is a service address, not a sovereign identity root. Repository activity must not be used to issue an account, credential, proof-of-humanity determination or governance authority without the required separate process and consent.
+
+## People and ecosystem
+
+See [TEAM-AND-ECOSYSTEM.md](TEAM-AND-ECOSYSTEM.md) for current program leadership and a carefully separated list of extended experts, mentors, educators and industry references. Inclusion in the extended list does not by itself imply endorsement, employment, board appointment, partnership, or a formal advisory relationship.
 
 ## Becoming an organization member
 
