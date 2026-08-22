@@ -1,19 +1,27 @@
 # Sponsoring ICSN Standards
 
-TitleChain Foundation welcomes individuals and organizations that want to help keep human-rooted identity and accountable technology open, reviewable, and implementation-neutral.
+TitleChain Foundation welcomes individuals and organizations that want to help keep human-rooted identity and accountable technology open, reviewable, implementation-neutral, and resistant to capture.
 
 GitHub Sponsors approval is pending. This page documents the intended program and does not represent that sponsorship checkout is currently active.
 
-## What sponsorship funds
+## The funding firewall
 
-Sponsorship is allocated across six public workstreams:
+TitleChain Foundation's constitutional model is designed so funding supports the work without purchasing the mission.
+
+Sponsors do not acquire ownership of the commons, rights in the TitleChain Sovereign Purpose Trust, standards authority, private member data, or unilateral control through funding.
+
+Read [Trust Stewardship and the Non-Capture Principle](TRUST-AND-NON-CAPTURE.md).
+
+## What GitHub sponsorship funds
+
+GitHub sponsorship is allocated across six public workstreams:
 
 | Workstream | Public purpose |
 | --- | --- |
 | **Standards** | Specifications, RFCs, governance, editorial work, and public review. |
 | **Security** | Threat modeling, privacy analysis, secure design, and independent review. |
 | **Reference implementation** | Public reference code, test vectors, examples, and conformance materials. |
-| **Infrastructure** | Public tooling, continuous integration, documentation, and repository operations. |
+| **Infrastructure** | Open tooling, public IAM/onboarding components where appropriate, continuous integration, documentation, and repository operations. |
 | **Release** | Packaging, release engineering, changelogs, and formal publication. |
 | **General open source** | Flexible support for work spanning more than one public workstream. |
 
@@ -22,6 +30,35 @@ The tracking model is:
 ```text
 payment → sponsorship record → workstream allocation → milestone → public impact note
 ```
+
+## Public infrastructure and cohort sponsorship
+
+The Foundation also expects to seek larger, separately documented sponsorships that can underwrite public-interest activation: no-charge IAM capacity, developer build environments, education, security review, compute, accessibility, and cohort support.
+
+The first scaled activation goal is to support [up to 100,000 women-led ventures](initiatives/100K-WOMEN-LED-VENTURES.md).
+
+These activation sponsorships are not a purchase of standards influence and are not automatically the same funding rail as GitHub Sponsors. Scope, beneficiary criteria, deliverables, conflicts, recognition, privacy boundaries, and impact reporting should be documented for each program.
+
+A sponsor may fund access. It may not own the person receiving it.
+
+## Sponsor outcome graph
+
+Activation sponsorship should be measured by outcomes rather than attendance alone.
+
+A sponsor may fund a defined number of activation opportunities and receive an aggregate report showing movement through states such as:
+
+```text
+sponsored → activated → completed → credentialed → earning
+          → trainer / activator → businesses activated → workflows completed
+```
+
+For example, a sponsor could be told:
+
+> **Your support funded 100 activation opportunities. X members activated the defined environment, Y completed, Z earned approved capability evidence, A reached verified economic outcomes, B qualified as trainers/activators, C businesses were activated, and D scoped workflows were completed.**
+
+Individual member evidence remains member-controlled. Sponsor reporting must not expose private M5Brain contents, Passport records, M5-CV evidence, agent conversations, wallet histories, or unnecessary personal data.
+
+Read the full [M5 Activation Outcome Graph](initiatives/M5ACTIVATION-OUTCOME-GRAPH.md).
 
 ## Public supporter levels
 
@@ -35,11 +72,11 @@ After GitHub approves the organization, the intended self-service levels are:
 
 Final benefits and availability are controlled by the live GitHub Sponsors profile. Recognition is always subject to the sponsor's visibility choice and the Foundation's recognition policy.
 
-Benefits may include acknowledgment in periodic sponsor lists, the repository, release notes, or Foundation updates. They do not include technical approval, roadmap control, governance votes, conformance status, or access to confidential systems or participant information.
+Benefits may include acknowledgment in periodic sponsor lists, the repository, release notes, or Foundation updates. They do not include technical approval, roadmap control, governance votes, conformance status, access to confidential systems or participant information, or rights in the Trust.
 
 ## Organizational partnerships
 
-Organizations may support defined security, standards, reference-implementation, release, or infrastructure work at higher levels.
+Organizations may support defined security, standards, reference-implementation, release, infrastructure, education, or activation work at higher levels.
 
 These relationships are **by application**, not public self-service products. Pricing is intentionally discussed privately so scope, deliverables, recognition, independence, conflicts, and impact reporting can be documented before acceptance.
 
@@ -54,8 +91,10 @@ Sponsorship does not purchase:
 - influence over standards decisions or governance outcomes;
 - adoption of a proposal, implementation, vendor, or product;
 - certification, conformance, security approval, or marketplace endorsement;
-- access to private repositories, personal data, credentials, or participant records;
-- employment, procurement, investment, ownership, or financial-return rights; or
+- access to private repositories, personal data, credentials, IAM records, or participant records;
+- employment, procurement, investment, ownership, beneficiary, or financial-return rights;
+- exclusive access to cohort members or contributors;
+- a requirement that a participant use the sponsor's cloud, model, wallet, bank, service, or product; or
 - a guarantee that a proposed milestone will be accepted as a standard.
 
 Editors and stewards must disclose material conflicts. Standards decisions follow [GOVERNANCE.md](GOVERNANCE.md), regardless of sponsor status.
@@ -71,3 +110,7 @@ Editors and stewards must disclose material conflicts. Standards decisions follo
 ## Reporting impact
 
 The Foundation will publish concise records linking allocated support to public work when feasible. See [SPONSOR-IMPACT.md](SPONSOR-IMPACT.md) for the reporting format and current log.
+
+For the no-charge identity commitment and member-control boundaries, see [PUBLIC-INFRASTRUCTURE-COMMITMENT.md](PUBLIC-INFRASTRUCTURE-COMMITMENT.md).
+
+**Fund the commons. Never own the commons.**

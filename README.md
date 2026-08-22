@@ -1,12 +1,30 @@
 # ICSN Standards
 
-**Open specifications, RFCs, schemas, and conformance work for human-rooted identity and accountable digital systems.**
+**Open specifications, RFCs, schemas, conformance work, and public infrastructure for human-rooted identity and accountable digital systems.**
 
 [![Release](https://img.shields.io/github/v/release/TitleChain-Foundation/icsn-standards?display_name=tag)](https://github.com/TitleChain-Foundation/icsn-standards/releases)
 [![License](https://img.shields.io/badge/license-asset--level-blue)](LICENSE.md)
 [![Discussions](https://img.shields.io/github/discussions/TitleChain-Foundation/icsn-standards)](https://github.com/TitleChain-Foundation/icsn-standards/discussions)
 
-ICSN is the public standards program of the [TitleChain Foundation](https://github.com/TitleChain-Foundation). It develops implementation-neutral ways to preserve human authority, limit delegated machine authority, and make identity, credentials, and provenance portable and reviewable.
+ICSN is the public standards program of the [TitleChain Foundation](https://github.com/TitleChain-Foundation). It develops implementation-neutral ways to preserve human authority, limit delegated machine authority, and make identity, credentials, provenance, and digital systems portable and reviewable.
+
+## Constitutional stewardship
+
+TitleChain Foundation is designed for stewardship, not acquisition.
+
+Its constitutional model is anchored by the **TitleChain Sovereign Purpose Trust**, a Wyoming purpose-trust structure designed under its governing framework for a maximum term of one thousand years. The purpose is to preserve a human-first digital framework across generations while separating constitutional stewardship from commercial operation.
+
+The public commitments include:
+
+- human authority remains the root of consequential digital authority;
+- privacy, meaningful consent, portability, recovery, and the right to exit;
+- no sponsor, donor, vendor, implementation, or founder buys unilateral standards control through funding or adoption;
+- no forced vendor lock-in or coercive surveillance as a condition of ordinary participation; and
+- M5 and other implementations remain separate from the standards process.
+
+Read [Trust Stewardship and the Non-Capture Principle](TRUST-AND-NON-CAPTURE.md). The public summary does not replace the Trust instrument, Foundation governing documents, or applicable law.
+
+**Fund the commons. Never own the commons.**
 
 ## Get involved
 
@@ -39,12 +57,34 @@ Material changes begin with public discussion and an RFC. Stable status requires
 
 Publication in this repository does not by itself make a proposal a Foundation standard.
 
+## Public infrastructure: IAM at no charge to the individual
+
+The Foundation's first activation commitment is a human-controlled IAM identity origin offered at no charge to the individual and designed to preserve that no-charge foundational access over time.
+
+IAM is **optional** for standards participation. You do not need an IAM account to read, review, contribute to, fork, or independently implement ICSN work.
+
+The two public entry points are deliberately separate:
+
+1. **Free IAM:** [m5bank.app](https://m5bank.app/) — the no-charge foundational identity-origin account.
+2. **Program enrollment:** [m5member.netlify.app](https://m5member.netlify.app/) — the separate M5Member enrollment/activation pathway through which an eligible participant progresses toward her **M5BankofMe account** and the applicable M5 program experience.
+
+Free IAM does not require program enrollment, and neither IAM nor M5 enrollment is required to participate in ICSN standards.
+
+Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md) and the first scaled activation initiative for [up to 100,000 women-led ventures](initiatives/100K-WOMEN-LED-VENTURES.md).
+
 ## Repository map
 
 | Area | Start here |
 | --- | --- |
 | RFCs and specifications | [`rfcs/`](rfcs/README.md) |
 | Schemas and validation | [`schemas/`](schemas/) and [`scripts/validate_repository.py`](scripts/validate_repository.py) |
+| Constitutional stewardship | [TRUST-AND-NON-CAPTURE.md](TRUST-AND-NON-CAPTURE.md) and [`constitutional/mission-lock.yaml`](constitutional/mission-lock.yaml) |
+| Public infrastructure | [PUBLIC-INFRASTRUCTURE-COMMITMENT.md](PUBLIC-INFRASTRUCTURE-COMMITMENT.md) |
+| 100K women-led venture initiative | [`initiatives/100K-WOMEN-LED-VENTURES.md`](initiatives/100K-WOMEN-LED-VENTURES.md) |
+| M5AgentClub first-100 activation | [`initiatives/M5AGENTCLUB-FIRST-100-ACTIVATION.md`](initiatives/M5AGENTCLUB-FIRST-100-ACTIVATION.md) |
+| M5Brain reference architecture | [`initiatives/M5BRAIN-REFERENCE-ARCHITECTURE.md`](initiatives/M5BRAIN-REFERENCE-ARCHITECTURE.md) |
+| Activation outcome graph | [`initiatives/M5ACTIVATION-OUTCOME-GRAPH.md`](initiatives/M5ACTIVATION-OUTCOME-GRAPH.md) |
+| Team and extended ecosystem | [TEAM-AND-ECOSYSTEM.md](TEAM-AND-ECOSYSTEM.md) |
 | Governance | [GOVERNANCE.md](GOVERNANCE.md) |
 | Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Participation | [PARTICIPATE.md](PARTICIPATE.md) |
@@ -53,11 +93,21 @@ Publication in this repository does not by itself make a proposal a Foundation s
 | Releases | [CHANGELOG.md](CHANGELOG.md) and [release checklist](RELEASE-CHECKLIST.md) |
 | Sponsorship | [SPONSORS.md](SPONSORS.md) and [SPONSOR-IMPACT.md](SPONSOR-IMPACT.md) |
 
+## First-100 reference activation
+
+The first-100 M5AgentClub program is a reference activation environment, not a requirement for ICSN participation.
+
+**M5Brain** is the member-controlled knowledge, memory, relationship, and context layer used by the M5 Freedom Office and authorized native M5Agents. **Pamela is Reference Member 0001** for extracting a portable Freedom Office Core, and the first 100 test whether that reference pattern is repeatable.
+
+Skool is used as a classroom/community interface for M5AgentClub. It is intentionally not the member's IAM, Passport, M5Brain, credential store, or economic record.
+
+Sponsors may support activations and receive aggregate impact measures while individual evidence remains controlled by the member.
+
 ## Implementation neutrality
 
 M5 is one implementation and activation environment that may help test the architecture. It is not required for participation, and it does not define the standard by itself.
 
-GitHub participation, Foundation governance, commercial services, account onboarding, employment, credentials, and investment are separate relationships governed by their own processes and terms.
+GitHub participation, Foundation governance, commercial services, account onboarding, employment, credentials, cohort participation, and investment are separate relationships governed by their own processes and terms.
 
 ## Support the work
 
@@ -66,18 +116,21 @@ Sponsorship helps fund:
 - independent development and maintenance of public specifications and RFCs;
 - security and privacy review;
 - documentation, conformance criteria, test vectors, and reference implementations;
-- release engineering and public infrastructure; and
+- open-source tooling and public infrastructure;
+- release engineering; and
 - contributor coordination that keeps the work accessible.
 
-Sponsorship does **not** purchase influence over standards decisions, governance authority, conformance status, or access to private participant information.
+Sponsorship does **not** purchase influence over standards decisions, governance authority, conformance status, ownership of the commons, or access to private participant information.
 
-Everyday supporters will be able to participate through public GitHub Sponsors tiers after approval. Organizations seeking a larger standards, security, reference-implementation, release, or infrastructure partnership can **[connect with the Foundation](mailto:hello@titlechainfoundation.org)** to discuss scope and public impact reporting. Higher partnership pricing is intentionally not published as self-service pricing.
+Everyday supporters will be able to participate through public GitHub Sponsors tiers after approval. Organizations seeking a larger standards, security, reference-implementation, release, public-infrastructure, or activation partnership can **[connect with the Foundation](mailto:hello@titlechainfoundation.org)** to discuss scope and public impact reporting. Higher partnership pricing is intentionally not published as self-service pricing.
 
 See [SPONSORS.md](SPONSORS.md) for the complete policy.
 
 ## Licensing
 
 This repository uses explicit asset-level licensing. Apache 2.0 and CC BY 4.0 apply only to materials expressly carrying those designations. The Cyrus Purpose-Bound Constitutional Commons License 1.0 is a public-review draft and applies only where expressly designated. Other material remains reserved unless stated otherwise.
+
+The repository validation utility at [`scripts/validate_repository.py`](scripts/validate_repository.py) is expressly designated **Apache-2.0** so the public workspace contains an unambiguous open-source software contribution.
 
 Review [LICENSE.md](LICENSE.md), the [license matrix](LICENSES/LICENSE-MATRIX.md), and the designation attached to an asset before reuse.
 

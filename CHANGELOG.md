@@ -6,20 +6,37 @@ This file records material public changes to the ICSN standards workspace. Stand
 
 ### Added
 
+- M5Brain reference architecture for member-controlled knowledge, memory, graph, permissions, and agent context.
+- M5AgentClub first-100 activation model using Chase Aldridge and Kem Tousson as the activation pair.
+- Reference Member 0001 methodology for extracting a portable Freedom Office Core.
+- Privacy-preserving M5 Activation Outcome Graph for sponsor-funded activation reporting.
+
 - Public roadmap for near-term standards, security, conformance and reference-implementation work.
 - Sponsorship policy, workstream-allocation model and public impact-reporting template.
+- Public explanation of the TitleChain Sovereign Purpose Trust, constitutional stewardship and the Non-Capture Principle.
+- Public-infrastructure commitment for no-charge foundational IAM access and member-controlled activation.
+- Public initiative page for the goal of activating up to 100,000 women-led ventures.
+- Team and extended-ecosystem page that separates confirmed program roles from unconfirmed external relationships.
+- Machine-readable constitutional mission-lock manifest for public review.
+- Explicit Apache-2.0 designation for the repository validation utility.
 
 ### Changed
 
-- Simplified the repository front page around open standards, contribution and review.
+- Separated the free IAM entry point at `m5bank.app` from M5Member program enrollment at `m5member.netlify.app`, which progresses eligible participants toward an M5BankofMe account.
+
+- Expanded the repository front page to connect constitutional stewardship, open standards, public infrastructure and implementation neutrality.
 - Clarified that larger organizational partnerships are by application and do not purchase standards influence.
-- Strengthened governance language covering sponsorship independence and conflicts.
+- Strengthened governance language covering the Trust boundary, sponsorship independence, conflicts and optional account activation.
+- Clarified that GitHub participation does not require IAM or M5 activation.
+- Separated GitHub Sponsors funding from separately documented cohort and activation sponsorships.
 
 ### Planned
 
 - Public review of the activation, curriculum, role-registry and Ricardian service-contract materials.
 - Initial curriculum and instructor mapping for the Sophia public role registry.
 - Conformance criteria and reference implementations for selected RFCs.
+- Legal and governance review of public Trust-summary language before release.
+- Public review of the proposed sovereign-systems graph initiative and reference-implementation model.
 
 ## [0.1.0] - 2026-08-18
 

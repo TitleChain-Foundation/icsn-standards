@@ -1,0 +1,67 @@
+# SPDX-License-Identifier: LicenseRef-CYRUS-PCCL-1.0
+schema_version: "0.1"
+status: public-review-policy-manifest
+name: TitleChain Foundation Constitutional Mission Lock
+
+legal_effect:
+  type: informational
+  statement: >
+    This manifest is a machine-readable statement of public policy invariants.
+    It does not replace the TitleChain Sovereign Purpose Trust instrument,
+    Foundation governing documents, applicable law, or a valid standards decision.
+
+constitutional_stewardship:
+  long_duration_purpose: true
+  trust_operates_commercial_business: false
+  trust_customer_assets: false
+  funder_control_of_protected_purpose: false
+
+human_authority:
+  human_root_of_consequential_authority: required
+  delegated_agent_authority:
+    bounded: true
+    attributable: true
+    auditable: true
+    revocable: true
+  ai_inherent_sovereign_authority: false
+
+privacy:
+  unnecessary_surveillance: prohibited
+  behavioral_extraction_as_participation_condition: prohibited
+  data_minimization: required
+  meaningful_consent: required
+  selective_disclosure: preferred
+  member_data_sale_by_public_infrastructure: prohibited
+
+portability_and_exit:
+  vendor_lock_in_as_requirement: prohibited
+  right_to_export: protected
+  right_to_exit: protected
+  provider_substitution: supported
+  cryptographic_agility: supported
+
+funding:
+  sponsor_governance_rights: none
+  sponsor_standards_control: none
+  sponsor_member_data_rights: none
+  sponsor_exclusive_implementation_rights: none
+  sponsor_guaranteed_adoption: none
+
+public_infrastructure:
+  iam:
+    foundational_access:
+      no_charge_to_individual: true
+    github_participation_requires_iam: false
+    commercial_relationship_required_for_standards_participation: false
+    sponsor_ownership_of_identity: false
+
+implementation_neutrality:
+  m5_required_for_icsn_participation: false
+  independent_implementations_permitted: true
+  implementation_adoption_creates_standards_authority: false
+
+accountability:
+  public_governance_history: expected
+  public_sponsor_impact_reporting: expected
+  conformance_evidence: expected
+  private_personal_data_in_public_repo: prohibited
