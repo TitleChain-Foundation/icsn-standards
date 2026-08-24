@@ -122,7 +122,7 @@ Sponsorship helps fund:
 
 Sponsorship does **not** purchase influence over standards decisions, governance authority, conformance status, ownership of the commons, or access to private participant information.
 
-Everyday supporters will be able to participate through public GitHub Sponsors tiers after approval. Organizations seeking a larger standards, security, reference-implementation, release, public-infrastructure, or activation partnership can **[connect with the Foundation](mailto:hello@titlechainfoundation.org)** to discuss scope and public impact reporting. Higher partnership pricing is intentionally not published as self-service pricing.
+Everyday supporters can **[sponsor the TitleChain Foundation through GitHub](https://github.com/sponsors/TitleChain-Foundation)** with a monthly or one-time payment. Organizations seeking a larger standards, security, reference-implementation, release, public-infrastructure, or activation partnership can **[connect with the Foundation](mailto:hello@titlechainfoundation.org)** to discuss scope and public impact reporting. Higher partnership pricing is intentionally not published as self-service pricing.
 
 See [SPONSORS.md](SPONSORS.md) for the complete policy.
 
