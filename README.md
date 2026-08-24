@@ -5,6 +5,9 @@
 [![Release](https://img.shields.io/github/v/release/TitleChain-Foundation/icsn-standards?display_name=tag)](https://github.com/TitleChain-Foundation/icsn-standards/releases)
 [![License](https://img.shields.io/badge/license-asset--level-blue)](LICENSE.md)
 [![Discussions](https://img.shields.io/github/discussions/TitleChain-Foundation/icsn-standards)](https://github.com/TitleChain-Foundation/icsn-standards/discussions)
+[![Sponsor](https://img.shields.io/badge/Sponsor-Support_the_public_work-ea4aaa?logo=githubsponsors)](https://github.com/sponsors/TitleChain-Foundation)
+
+> **Help accelerate the public work.** [Sponsor the TitleChain Foundation](https://github.com/sponsors/TitleChain-Foundation) with a monthly or one-time contribution, or [explore a custom organizational sponsorship](SPONSORS.md#custom-organizational-sponsorships).
 
 ICSN is the public standards program of the [TitleChain Foundation](https://github.com/TitleChain-Foundation). It develops implementation-neutral ways to preserve human authority, limit delegated machine authority, and make identity, credentials, provenance, and digital systems portable and reviewable.
 

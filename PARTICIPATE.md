@@ -8,7 +8,8 @@ The Foundation's immediate public priority is to build visibility, gather inform
 2. **Watch** the repository for releases, RFCs and discussions.
 3. **Introduce yourself** in Discussions and name the area where you can help.
 4. **Review or contribute** through an Issue, RFC, implementation, conformance test, documentation change or community translation.
-5. **Consider organization membership** after sustained, constructive participation.
+5. **[Sponsor the public work](https://github.com/sponsors/TitleChain-Foundation)** with a monthly or one-time contribution, or [explore a custom organizational sponsorship](SPONSORS.md#custom-organizational-sponsorships).
+6. **Consider organization membership** after sustained, constructive participation.
 
 You do not need to understand every layer of the architecture before participating. The human-rooted foundation is that people should own and control their sovereign selves, while credentials validate limited claims or capabilities without making a platform the owner of the person.
 
