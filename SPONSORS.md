@@ -69,22 +69,45 @@ The agreed self-service monthly levels are:
 - **Standards Supporter — $100 monthly**
 - **Launch Supporter — $250 monthly**
 - **Institutional Supporter — $500 monthly**
+- **Infrastructure Sponsor — $1,000 monthly**
+- **Development Accelerator — $2,500 monthly**
+- **Strategic Infrastructure Sponsor — $5,000 monthly**
 
 Final benefits and availability are controlled by the live GitHub Sponsors profile. Recognition is always subject to the sponsor's visibility choice and the Foundation's recognition policy.
 
-GitHub also permits a custom monthly or one-time sponsorship amount. The GitHub Sponsors platform limit is **US$12,000 per sponsorship payment**. Larger or separately scoped organizational partnerships should use the application pathway below rather than a public self-service payment.
+GitHub also permits a custom monthly or one-time sponsorship amount. The GitHub Sponsors platform limit is **US$12,000 per sponsorship payment**. A sponsor may choose a custom amount without requesting a separately scoped program. Larger, multi-period, or deliverable-specific relationships should use the organizational pathway below.
 
 Benefits may include acknowledgment in periodic sponsor lists, the repository, release notes, or Foundation updates. They do not include technical approval, roadmap control, governance votes, conformance status, access to confidential systems or participant information, or rights in the Trust.
 
-## Organizational partnerships
+## Custom organizational sponsorships
 
-Organizations may support defined security, standards, reference-implementation, release, infrastructure, education, or activation work at higher levels.
+Organizations may sponsor a named area of public-interest work and help the Foundation accelerate a defined development or activation objective. Available sponsorship areas include:
 
-These relationships are **by application**, not public self-service products. Pricing is intentionally discussed privately so scope, deliverables, recognition, independence, conflicts, and impact reporting can be documented before acceptance.
+| Sponsorship area | What support may accelerate |
+| --- | --- |
+| **Standards and Interoperability** | Specifications, RFCs, implementation guidance, test vectors, and cross-system compatibility work. |
+| **Security and Privacy** | Threat modeling, privacy analysis, audits, secure design, remediation, and independent review. |
+| **Reference Implementation** | Public reference code, developer tools, examples, integration adapters, and conformance materials. |
+| **Developer Infrastructure** | Build environments, continuous integration, testing capacity, repositories, and contributor tooling. |
+| **Release and Documentation** | Publication, release engineering, technical writing, translation, tutorials, and maintainability. |
+| **Education and Curriculum** | Learning modules, instructor enablement, workshops, public materials, and credentialing criteria. |
+| **Cohort Activation** | Defined access opportunities, onboarding, accessibility, participant support, and aggregate outcome reporting. |
+| **Accessibility** | Inclusive research, testing, remediation, assistive-technology support, and accessible documentation. |
+| **Compute and AI Infrastructure** | Purpose-bound compute, model evaluation, agent safety, data stewardship, and reproducible development environments. |
+| **Public and Sovereign Infrastructure** | Public-interest deployment, jurisdictional readiness, resilient infrastructure, and implementation-neutral coordination. |
+| **Ecosystem Integration** | Open integrations, interoperability demonstrations, implementation support, and reusable public artifacts. |
 
-Potential recognition may include an approved organization name or logo and, where appropriate, an optional ecosystem or M5-OpenAPI marketplace feature. Marketplace inclusion is recognition only: it does not imply certification, endorsement, standards authority, guaranteed distribution, or preferential technical treatment.
+These relationships are **by application**, not public self-service products. Pricing is intentionally discussed privately and is based on scope, duration, deliverables, reporting, recognition, risk, and any infrastructure or support required. Each accepted sponsorship should have a written scope defining the funded objective, responsible parties, payment pathway, conflicts, independence requirements, privacy boundaries, recognition, and public impact reporting.
 
-To explore an organizational partnership, **[connect with the Foundation](mailto:hello@titlechainfoundation.org)**.
+Funding may accelerate the agreed work, but acceptance of a sponsorship does not guarantee that a particular technical proposal, implementation, vendor, product, or milestone will be adopted as an ICSN standard.
+
+### Ecosystem partners
+
+The Foundation may also recognize organizations that provide technology, services, infrastructure, implementation capacity, distribution, research, or in-kind support. An organization may be both a sponsor and an ecosystem partner, but the relationships should be recorded separately so financial support is not confused with technical standing.
+
+Potential recognition may include an approved organization name or logo, the supported workstream, an aggregate impact statement, and, where appropriate, an optional ecosystem or M5-OpenAPI marketplace feature. Recognition or marketplace inclusion does not imply certification, endorsement, standards authority, exclusivity, procurement preference, guaranteed distribution, or preferential technical treatment.
+
+To discuss a custom organizational sponsorship or ecosystem partnership, **[contact the Foundation](mailto:hello@titlechainfoundation.org?subject=ICSN%20Organizational%20Sponsorship)**. Include the area you would like to accelerate, the intended duration, and whether the proposed support is financial, in kind, or both. Do not send confidential information in the initial email.
 
 ## Independence and boundaries
 

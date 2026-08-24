@@ -122,7 +122,9 @@ Sponsorship helps fund:
 
 Sponsorship does **not** purchase influence over standards decisions, governance authority, conformance status, ownership of the commons, or access to private participant information.
 
-Everyday supporters can **[sponsor the TitleChain Foundation through GitHub](https://github.com/sponsors/TitleChain-Foundation)** with a monthly or one-time payment. Organizations seeking a larger standards, security, reference-implementation, release, public-infrastructure, or activation partnership can **[connect with the Foundation](mailto:hello@titlechainfoundation.org)** to discuss scope and public impact reporting. Higher partnership pricing is intentionally not published as self-service pricing.
+Everyday supporters can **[sponsor the TitleChain Foundation through GitHub](https://github.com/sponsors/TitleChain-Foundation)** with a monthly or one-time payment. Public monthly levels range from individual support through institutional, infrastructure, development-acceleration, and strategic-infrastructure sponsorship.
+
+Organizations may also apply to sponsor a named area such as standards, security, reference implementations, developer infrastructure, releases, education, cohort activation, accessibility, compute, public infrastructure, or ecosystem integration. Custom organizational pricing is discussed privately and documented according to scope, duration, deliverables, reporting, recognition, independence, and privacy boundaries. **[Discuss an organizational sponsorship](mailto:hello@titlechainfoundation.org?subject=ICSN%20Organizational%20Sponsorship)**.
 
 See [SPONSORS.md](SPONSORS.md) for the complete policy.
 
