@@ -109,6 +109,8 @@ M5 is one implementation and activation environment that may help test the archi
 
 GitHub participation, Foundation governance, commercial services, account onboarding, employment, credentials, cohort participation, and investment are separate relationships governed by their own processes and terms.
 
+Read [M5Ecosystem Approval Boundary](M5ECOSYSTEM-APPROVAL-BOUNDARY.md) for the separate approval and licensing rules for restricted implementations, production systems, credentials, and private member or partner material.
+
 ## Support the work
 
 Sponsorship helps fund:
