@@ -4,6 +4,10 @@ This repository is the public TitleChain Foundation commons. It contains public 
 
 M5Ecosystem is a separate implementation and approval authority. It controls access to private or restricted M5 systems and determines whether special licensing is available for proprietary implementations, production services, commercial deployments, restricted APIs, credentials, member systems, and private partner or investor material.
 
+## Summary
+
+The Foundation commons is the public layer: standards, governance, schemas, RFCs, conformance material, and explicitly designated open-build references. M5Ecosystem is the separate approval layer for restricted implementations, production systems, private member or partner services, and special commercial licenses. Reading or contributing here does not grant M5 access, credentials, production rights, employment, membership, or a special license. Developers should use this repository for public commons work and request M5Ecosystem approval separately when their work requires restricted materials or systems.
+
 ## Public Commons Access
 
 Anyone may read, review, discuss, fork, or contribute to material according to the designation in [LICENSE.md](LICENSE.md) and [LICENSES/LICENSE-MATRIX.md](LICENSES/LICENSE-MATRIX.md). Public GitHub participation does not create an M5 account, credential, employment relationship, production entitlement, or special license.
