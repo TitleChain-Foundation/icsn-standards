@@ -23,4 +23,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate JSON and internal Markdown links
         run: python3 scripts/validate_repository.py
-
+      - name: Validate adopted M5 governance publication
+        run: python3 scripts/validate_m5_governance.py
