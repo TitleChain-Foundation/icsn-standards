@@ -58,3 +58,8 @@ Legal effect depends on applicable law, governing agreements, competent authorit
 ## Foundation commons and M5Stack boundary
 
 Publication of these standards does not grant access to restricted M5Stack implementations, production systems, private member or partner services, credentials, or special commercial licenses. See the [M5Ecosystem Approval Boundary](../M5ECOSYSTEM-APPROVAL-BOUNDARY.md).
+
+## Publication record and rights
+
+- [Version 1.0 publication and adoption record](publication-records/TCF-GOV-M5-2026-08-28-01.md)
+- These governance materials are expressly designated **All Rights Reserved** in the [repository license matrix](../LICENSES/LICENSE-MATRIX.md).

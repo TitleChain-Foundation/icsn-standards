@@ -17,8 +17,18 @@ The following public assets are expressly licensed as stated:
 | --- | --- |
 | `scripts/validate_repository.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 | `constitutional/mission-lock.yaml` | Cyrus Purpose-Bound Constitutional Commons License 1.0 — Public Review Draft (`LicenseRef-CYRUS-PCCL-1.0`) |
+| `docs/governance/*.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
+| `docs/index.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
+| `docs/changelog-m5-governance-v1.0.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
+| `docs/publication-records/*.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
+| `wiki-source/*.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
 
 The SPDX identifier in each expressly designated file is the controlling asset-level notice for that file.
+
+For directory patterns designated `LicenseRef-All-Rights-Reserved`, the matrix
+entry is the controlling asset-level notice. Public availability permits
+reading and linking but does not grant permission to reproduce, modify,
+distribute, deploy, sublicense, certify, or commercially use the material.
 
 ## License texts
 

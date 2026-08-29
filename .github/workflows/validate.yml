@@ -20,7 +20,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Validate JSON and internal Markdown links
         run: python3 scripts/validate_repository.py
       - name: Validate adopted M5 governance publication

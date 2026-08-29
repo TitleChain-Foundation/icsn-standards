@@ -2,6 +2,10 @@
 
 ## Version 1.0 — 2026-08-28
 
+**Publication record:** [TCF-GOV-M5-2026-08-28-01](publication-records/TCF-GOV-M5-2026-08-28-01.md)
+
+**Rights designation:** All Rights Reserved (`LicenseRef-All-Rights-Reserved`)
+
 ### Published documents
 
 - Foundation and ICSN Non-Custody and Data Non-Access Policy

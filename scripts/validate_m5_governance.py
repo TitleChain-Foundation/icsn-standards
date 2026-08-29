@@ -11,6 +11,7 @@ STATUS = "> **Publication status:** Adopted Version 1.0"
 DATE = "> **Effective date:** 2026-08-28"
 AUTHORITY = "> **Adopted by:** TitleChain Foundation authorized governance body"
 REVIEW = "> **Legal review:** Approved for publication by authorized counsel on 2026-08-28."
+RECORD_ID = "TCF-GOV-M5-2026-08-28-01"
 
 errors: list[str] = []
 
@@ -78,6 +79,22 @@ for secret_pattern in (
 ):
     if re.search(secret_pattern, combined, re.I):
         errors.append(f"possible secret matched pattern: {secret_pattern}")
+
+license_matrix = (ROOT / "LICENSES" / "LICENSE-MATRIX.md").read_text()
+for designation in (
+    "`docs/governance/*.md` | All Rights Reserved",
+    "`wiki-source/*.md` | All Rights Reserved",
+):
+    if designation not in license_matrix:
+        errors.append(f"license matrix missing designation: {designation}")
+
+publication_record = (
+    ROOT / "docs" / "publication-records" / f"{RECORD_ID}.md"
+)
+if not publication_record.exists():
+    errors.append(f"missing publication record: {RECORD_ID}")
+elif "a4e6e95844b133780952d2543b38400bde5796c7" not in publication_record.read_text():
+    errors.append("publication record does not identify the verified v1.0 commit")
 
 if errors:
     raise SystemExit("\n".join(f"ERROR: {item}" for item in errors))
