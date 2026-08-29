@@ -86,6 +86,7 @@ Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md)
 | Activation outcome graph | [`initiatives/M5ACTIVATION-OUTCOME-GRAPH.md`](initiatives/M5ACTIVATION-OUTCOME-GRAPH.md) |
 | Team and extended ecosystem | [TEAM-AND-ECOSYSTEM.md](TEAM-AND-ECOSYSTEM.md) |
 | Governance | [GOVERNANCE.md](GOVERNANCE.md) |
+| Adopted M5 member-authority governance | [docs/index.md](docs/index.md) |
 | Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Participation | [PARTICIPATE.md](PARTICIPATE.md) |
 | Security reporting | [SECURITY.md](SECURITY.md) |
