@@ -41,6 +41,8 @@ def validate_markdown_links() -> list[str]:
             if not target:
                 continue
             resolved = (path.parent / target).resolve()
+            if "wiki-source" in path.parts and not resolved.suffix:
+                resolved = resolved.with_suffix(".md")
             try:
                 resolved.relative_to(ROOT)
             except ValueError:
