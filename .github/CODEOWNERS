@@ -1,5 +1,9 @@
-# Initial accountable review while Foundation teams are formed.
-* @satonakaoshimoto
+# Ordinary standards, RFC, documentation and participation review.
+* @TitlechainSupport
+
+# Repository administration and automation.
+/.github/ @TitlechainAdmin
+/.github/workflows/ @satonakaoshimoto @TitlechainAdmin
 
 # Sensitive and governance-critical surfaces.
 /SECURITY.md @satonakaoshimoto
@@ -13,6 +17,5 @@
 /docs/publication-records/ @satonakaoshimoto
 /wiki-source/ @satonakaoshimoto
 /scripts/validate_m5_governance.py @satonakaoshimoto
-/.github/workflows/ @satonakaoshimoto
-/contracts/ @satonakaoshimoto
-/schemas/ @satonakaoshimoto
+/contracts/ @satonakaoshimoto @TitlechainAdmin
+/schemas/ @satonakaoshimoto @TitlechainAdmin
