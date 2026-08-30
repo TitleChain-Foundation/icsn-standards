@@ -5,6 +5,7 @@ RFCs are public proposals. Their presence in this repository does not make them 
 | RFC | Title | Status | Discussion | Implementation evidence |
 | --- | --- | --- | --- | --- |
 | [0000](0000-template.md) | RFC template | Template | — | — |
+| [0001](0001-hardware-onboarding-standard.md) | Hardware Onboarding Standard — Device Title & Fleet Provisioning | Draft | — | — |
 
 ## Status vocabulary
 
