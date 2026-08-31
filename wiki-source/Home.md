@@ -28,6 +28,7 @@ Technology serves the human being. A platform, algorithm, AI agent, device, wall
 ## Start here
 
 - [What Is M5Bank?](What-Is-M5Bank)
+- [M5 Economic Architecture and Roadmap](M5-Economic-Architecture-and-Roadmap) — non-normative overview of the M5 economic model, M1–M5 structure, M5Capital boundary, M5POD activation, and longer-term enterprise, NationChain, TribalChain and USC roadmap.
 - [Human-First Technology and Due Process](Human-First-Technology-and-Due-Process)
 - [M5 Participation Profile](M5-Participation-Profile)
 - [Foundation and ICSN Non-Custody and Data Non-Access Policy](Foundation-and-ICSN-Non-Custody-and-Data-Non-Access-Policy)
