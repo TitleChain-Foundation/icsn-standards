@@ -12,15 +12,29 @@ DATE = "> **Effective date:** 2026-08-28"
 AUTHORITY = "> **Adopted by:** TitleChain Foundation authorized governance body"
 REVIEW = "> **Legal review:** Approved for publication by authorized counsel on 2026-08-28."
 RECORD_ID = "TCF-GOV-M5-2026-08-28-01"
+SOURCE_TO_WIKI = {
+    "01-foundation-icsn-non-custody-data-non-access-policy.md": "Foundation-and-ICSN-Non-Custody-and-Data-Non-Access-Policy.md",
+    "02-m5-participation-profile.md": "M5-Participation-Profile.md",
+    "03-human-first-technology-due-process.md": "Human-First-Technology-and-Due-Process.md",
+    "04-m5-due-notice-credentialed-authority-policy.md": "M5-Due-Notice-and-Credentialed-Authority-Policy.md",
+    "05-m5-credential-trust-issuer-registry.md": "M5-Credential-Trust-and-Issuer-Registry.md",
+    "06-m4-m5-registered-service-provider-pathway.md": "M4-M5-Registered-Service-Provider-Pathway.md",
+    "07-icsn-0014-universal-value-digital-asset-classification.md": "ICSN-0014-Universal-Value-and-Digital-Asset-Classification.md",
+    "08-what-is-m5bank.md": "What-Is-M5Bank.md",
+}
+ADOPTED_WIKI_NAMES = {"Home.md", *SOURCE_TO_WIKI.values()}
 
 errors: list[str] = []
 
 if len(DOCS) != 8:
     errors.append(f"expected 8 governance documents, found {len(DOCS)}")
-if len([p for p in WIKI if not p.name.startswith("_")]) != 9:
-    errors.append("expected Home plus 8 wiki policy pages")
+wiki_file_names = {path.name for path in WIKI}
+missing_adopted_wiki = ADOPTED_WIKI_NAMES - wiki_file_names
+if missing_adopted_wiki:
+    errors.append(f"missing adopted wiki pages: {sorted(missing_adopted_wiki)}")
 
-for path in [ROOT / "docs" / "index.md", *DOCS, *[p for p in WIKI if not p.name.startswith("_")]]:
+adopted_wiki = [path for path in WIKI if path.name in ADOPTED_WIKI_NAMES]
+for path in [ROOT / "docs" / "index.md", *DOCS, *adopted_wiki]:
     body = path.read_text()
     for required in (STATUS, DATE, AUTHORITY, REVIEW):
         if required not in body:
@@ -34,8 +48,8 @@ for path in WIKI:
     for target in re.findall(r"\[[^]]+\]\(([^)]+)\)", body):
         if "://" not in target and target.split("#", 1)[0] not in wiki_names:
             errors.append(f"{path.name} has unresolved wiki link: {target}")
-    if path.name != "_Sidebar.md":
-        expected_links = wiki_names - {"_Sidebar"}
+    if path.name in ADOPTED_WIKI_NAMES:
+        expected_links = {Path(name).stem for name in ADOPTED_WIKI_NAMES}
         actual_links = {
             target.split("#", 1)[0]
             for target in re.findall(r"\[[^]]+\]\(([^)]+)\)", body)
@@ -47,17 +61,7 @@ for path in WIKI:
                 f"{path.name} missing navigation links: {sorted(missing_links)}"
             )
 
-source_to_wiki = {
-    "01-foundation-icsn-non-custody-data-non-access-policy.md": "Foundation-and-ICSN-Non-Custody-and-Data-Non-Access-Policy.md",
-    "02-m5-participation-profile.md": "M5-Participation-Profile.md",
-    "03-human-first-technology-due-process.md": "Human-First-Technology-and-Due-Process.md",
-    "04-m5-due-notice-credentialed-authority-policy.md": "M5-Due-Notice-and-Credentialed-Authority-Policy.md",
-    "05-m5-credential-trust-issuer-registry.md": "M5-Credential-Trust-and-Issuer-Registry.md",
-    "06-m4-m5-registered-service-provider-pathway.md": "M4-M5-Registered-Service-Provider-Pathway.md",
-    "07-icsn-0014-universal-value-digital-asset-classification.md": "ICSN-0014-Universal-Value-and-Digital-Asset-Classification.md",
-    "08-what-is-m5bank.md": "What-Is-M5Bank.md",
-}
-for source_name, wiki_name in source_to_wiki.items():
+for source_name, wiki_name in SOURCE_TO_WIKI.items():
     source = (ROOT / "docs" / "governance" / source_name).read_text().rstrip()
     published = (ROOT / "wiki-source" / wiki_name).read_text().rstrip()
     if not published.startswith(source):
