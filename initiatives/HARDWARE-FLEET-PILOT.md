@@ -46,4 +46,13 @@ Illustrative budget: roughly $45,000–$60,000 before tax, shipping, accessories
 
 No pilot has been deployed against this illustration. It is published to make RFC 0001 concrete for review, not as evidence that the RFC is implemented. See RFC 0001's [Conformance](../rfcs/0001-hardware-onboarding-standard.md#conformance) section for what an actual reference implementation would need to demonstrate.
 
-Feedback belongs on [RFC 0001's PR](https://github.com/TitleChain-Foundation/icsn-standards/pull/32) or its [companion Discussion](https://github.com/TitleChain-Foundation/icsn-standards/discussions/33) — particularly whether this illustration undersells non-Framework, non-Apple, non-NVIDIA options that could conform equally well.
+## Review and sponsorship
+
+This is a proposed public-interest pilot seeking technical review, implementation partners, and funding. The equipment mix and budget are planning assumptions for review; no purchase, vendor selection, deployment, or sponsorship is represented as complete.
+
+- Read [RFC 0001](../rfcs/0001-hardware-onboarding-standard.md) before reviewing the pilot.
+- Share general feedback in the [Hardware Onboarding Standard Discussion](https://github.com/TitleChain-Foundation/icsn-standards/discussions/33), including repairable alternatives to the named example systems.
+- Contribute to the open [hardware and infrastructure issues](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue+is%3Aopen+label%3A%22skill%3A+hardware-infrastructure%22) covering privacy, recovery, conformance evidence, and partner credentialing.
+- Review the Foundation's [sponsorship policy](../SPONSORS.md). Organizations interested in underwriting equipment, accessibility, security review, testing, or pilot operations can [contact the Foundation](mailto:hello@titlechainfoundation.org) to define scope, independence, deliverables, conflicts, and public impact reporting.
+
+Sponsorship does not purchase standards influence, vendor endorsement, conformance status, access to participant data, or control over pilot participants.
