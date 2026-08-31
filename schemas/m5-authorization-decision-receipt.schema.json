@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "M5 Authorization Decision Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "receipt_id",
+    "timestamp",
+    "requesting_principal_type",
+    "requesting_principal_pseudonymous_ref",
+    "agent_ref",
+    "task_ref",
+    "account_context",
+    "operation",
+    "resource_class",
+    "resource_pseudonymous_ref",
+    "purpose",
+    "jurisdiction",
+    "policy_version",
+    "canon_version",
+    "semantic_graph_version",
+    "lina_manifest_version",
+    "authorization_model_version",
+    "decision",
+    "decision_reason_code",
+    "human_approval_required",
+    "human_approval_present",
+    "expires_at",
+    "provenance_ref"
+  ],
+  "properties": {
+    "receipt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "requesting_principal_type": {
+      "enum": [
+        "human",
+        "agent",
+        "service",
+        "organization"
+      ]
+    },
+    "requesting_principal_pseudonymous_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "task_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "account_context": {
+      "enum": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5"
+      ]
+    },
+    "operation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_class": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_pseudonymous_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canon_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "semantic_graph_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lina_manifest_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authorization_model_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "enum": [
+        "allow",
+        "deny"
+      ]
+    },
+    "decision_reason_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "human_approval_required": {
+      "type": "boolean"
+    },
+    "human_approval_present": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "provenance_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
