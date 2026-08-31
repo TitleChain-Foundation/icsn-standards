@@ -64,7 +64,7 @@ Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md)
 | Security reporting | [SECURITY.md](SECURITY.md) |
 | Licensing | [LICENSE.md](LICENSE.md) and [license matrix](LICENSES/LICENSE-MATRIX.md) |
 | Releases | [CHANGELOG.md](CHANGELOG.md) and [release checklist](RELEASE-CHECKLIST.md) |
-| Sponsorship | [SPONSORS.md](SPONSORS.md) and [SPONSOR-IMPACT.md](SPONSOR-IMPACT.md) |
+| Sponsorship and sharing | [SPONSORS.md](SPONSORS.md), [SPONSOR-IMPACT.md](SPONSOR-IMPACT.md), and the [social share kit](campaigns/SOCIAL-SHARE-KIT.md) |
 
 ## Implementation neutrality
 
