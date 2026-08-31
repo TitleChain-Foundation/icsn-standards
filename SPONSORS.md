@@ -2,7 +2,7 @@
 
 TitleChain Foundation welcomes individuals and organizations that want to help keep human-rooted identity and accountable technology open, reviewable, implementation-neutral, and resistant to capture.
 
-GitHub Sponsors approval is pending. This page documents the intended program and does not represent that sponsorship checkout is currently active.
+The Foundation's [GitHub Sponsors page](https://github.com/sponsors/TitleChain-Foundation) is active. Live tiers and availability are controlled by that page.
 
 ## The funding firewall
 
@@ -62,7 +62,7 @@ Read the full [M5 Activation Outcome Graph](initiatives/M5ACTIVATION-OUTCOME-GRA
 
 ## Public supporter levels
 
-After GitHub approves the organization, the intended self-service levels are:
+The current self-service framework is:
 
 - **Individual Supporter — $5 monthly**
 - **Community Supporter — $25 monthly**

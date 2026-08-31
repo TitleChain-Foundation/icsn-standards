@@ -16,7 +16,7 @@ This roadmap describes near-term public work. It is directional, may change thro
 - Create a small, license-designated reference implementation or validation utility.
 - Document interoperability and recovery scenarios.
 - Invite independent security and privacy review.
-- Publish the first sponsor-impact note after GitHub Sponsors approval and delivery of supported work.
+- Publish the first sponsor-impact note after sponsored public work is delivered.
 
 ## Later
 
@@ -26,4 +26,4 @@ This roadmap describes near-term public work. It is directional, may change thro
 
 ## Contribute
 
-Start in [Discussions](https://github.com/TitleChain-Foundation/icsn-standards/discussions) for early proposals. Use [Issues](https://github.com/TitleChain-Foundation/icsn-standards/issues) for actionable work and follow [CONTRIBUTING.md](CONTRIBUTING.md) for RFC or pull-request changes.
+Start in [Foundation Discussions](https://github.com/orgs/TitleChain-Foundation/discussions) for questions, feedback and early proposals. Use [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md) to find scoped work, then follow [CONTRIBUTING.md](CONTRIBUTING.md) for RFC or pull-request changes.

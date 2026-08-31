@@ -8,7 +8,8 @@ If you support the mission but are not ready to contribute code or standards tex
 
 ## Choose the right pathway
 
-- **Questions, introductions and early ideas:** use [Discussions](https://github.com/TitleChain-Foundation/icsn-standards/discussions).
+- **Questions, introductions, demo feedback and early ideas:** use the one public [Foundation Discussions space](https://github.com/orgs/TitleChain-Foundation/discussions).
+- **A bounded first contribution:** choose a task in [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md).
 - **Specification defects or clearly actionable work:** open an Issue.
 - **Proposed standards changes:** open an RFC pull request.
 - **Security vulnerabilities:** report them privately as described in [SECURITY.md](SECURITY.md).
