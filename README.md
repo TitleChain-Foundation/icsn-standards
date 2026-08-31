@@ -4,34 +4,14 @@
 
 [![Release](https://img.shields.io/github/v/release/TitleChain-Foundation/icsn-standards?display_name=tag)](https://github.com/TitleChain-Foundation/icsn-standards/releases)
 [![License](https://img.shields.io/badge/license-asset--level-blue)](LICENSE.md)
-[![Discussions](https://img.shields.io/github/discussions/TitleChain-Foundation/icsn-standards)](https://github.com/TitleChain-Foundation/icsn-standards/discussions)
 
 ICSN is the public standards program of the [TitleChain Foundation](https://github.com/TitleChain-Foundation). It develops implementation-neutral ways to preserve human authority, limit delegated machine authority, and make identity, credentials, provenance, and digital systems portable and reviewable.
 
-## Constitutional stewardship
-
-TitleChain Foundation is designed for stewardship, not acquisition.
-
-Its constitutional model is anchored by the **TitleChain Sovereign Purpose Trust**, a Wyoming purpose-trust structure designed under its governing framework for a maximum term of one thousand years. The purpose is to preserve a human-first digital framework across generations while separating constitutional stewardship from commercial operation.
-
-The public commitments include:
-
-- human authority remains the root of consequential digital authority;
-- privacy, meaningful consent, portability, recovery, and the right to exit;
-- no sponsor, donor, vendor, implementation, or founder buys unilateral standards control through funding or adoption;
-- no forced vendor lock-in or coercive surveillance as a condition of ordinary participation; and
-- M5 and other implementations remain separate from the standards process.
-
-Read [Trust Stewardship and the Non-Capture Principle](TRUST-AND-NON-CAPTURE.md). The public summary does not replace the Trust instrument, Foundation governing documents, or applicable law.
-
-**Fund the commons. Never own the commons.**
-
 ## Get involved
 
-- Read [current priorities](ROADMAP.md).
-- Review [open issues](https://github.com/TitleChain-Foundation/icsn-standards/issues), including `good first issue` and `help wanted` work.
-- Ask questions or propose early ideas in [Discussions](https://github.com/TitleChain-Foundation/icsn-standards/discussions).
-- Follow the [participation pathway](PARTICIPATE.md) and [contribution guide](CONTRIBUTING.md).
+- Ask questions, review the demo, introduce yourself or propose an idea in the one public [Foundation Discussions space](https://github.com/orgs/TitleChain-Foundation/discussions).
+- [Choose scoped work by skill](CONTRIBUTOR-PATHWAYS.md).
+- Follow the [contribution guide](CONTRIBUTING.md) for Issues, RFCs and pull requests.
 - Review the [RFC index](rfcs/README.md) or start with the [RFC template](rfcs/0000-template.md).
 
 Do not place private identity data, credentials, personal contact details, wallet information, private keys, or confidential business information in a public issue, discussion, or pull request.
@@ -57,20 +37,11 @@ Material changes begin with public discussion and an RFC. Stable status requires
 
 Publication in this repository does not by itself make a proposal a Foundation standard.
 
-## Public infrastructure: IAM at no charge to the individual
+## Public standards and optional activation
 
-The Foundation's first activation commitment is a human-controlled IAM identity origin offered at no charge to the individual and designed to preserve that no-charge foundational access over time.
+ICSN participation does not require IAM, an M5 account, waitlist enrollment or organization membership. The optional [M5 member pathway](https://m5member.netlify.app/) allows eligible participants to test onboarding and implementation in practice.
 
-IAM is **optional** for standards participation. You do not need an IAM account to read, review, contribute to, fork, or independently implement ICSN work.
-
-The two public entry points are deliberately separate:
-
-1. **Free IAM:** [m5bank.app](https://m5bank.app/) — the no-charge foundational identity-origin account.
-2. **Program enrollment:** [m5member.netlify.app](https://m5member.netlify.app/) — the separate M5Member enrollment/activation pathway through which an eligible participant progresses toward her **M5BankofMe account** and the applicable M5 program experience.
-
-Free IAM does not require program enrollment, and neither IAM nor M5 enrollment is required to participate in ICSN standards.
-
-Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md) and the first scaled activation initiative for [up to 100,000 women-led ventures](initiatives/100K-WOMEN-LED-VENTURES.md).
+Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md) and the activation goal for [up to 100,000 women-led ventures](initiatives/100K-WOMEN-LED-VENTURES.md).
 
 ## Repository map
 
@@ -88,21 +59,12 @@ Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md)
 | Governance | [GOVERNANCE.md](GOVERNANCE.md) |
 | Adopted M5 member-authority governance | [docs/index.md](docs/index.md) |
 | Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Work by skill | [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md) |
 | Participation | [PARTICIPATE.md](PARTICIPATE.md) |
 | Security reporting | [SECURITY.md](SECURITY.md) |
 | Licensing | [LICENSE.md](LICENSE.md) and [license matrix](LICENSES/LICENSE-MATRIX.md) |
 | Releases | [CHANGELOG.md](CHANGELOG.md) and [release checklist](RELEASE-CHECKLIST.md) |
 | Sponsorship | [SPONSORS.md](SPONSORS.md) and [SPONSOR-IMPACT.md](SPONSOR-IMPACT.md) |
-
-## First-100 reference activation
-
-The first-100 M5AgentClub program is a reference activation environment, not a requirement for ICSN participation.
-
-**M5Brain** is the member-controlled knowledge, memory, relationship, and context layer used by the M5 Freedom Office and authorized native M5Agents. **Pamela is Reference Member 0001** for extracting a portable Freedom Office Core, and the first 100 test whether that reference pattern is repeatable.
-
-Skool is used as a classroom/community interface for M5AgentClub. It is intentionally not the member's IAM, Passport, M5Brain, credential store, or economic record.
-
-Sponsors may support activations and receive aggregate impact measures while individual evidence remains controlled by the member.
 
 ## Implementation neutrality
 
@@ -125,7 +87,7 @@ Sponsorship helps fund:
 
 Sponsorship does **not** purchase influence over standards decisions, governance authority, conformance status, ownership of the commons, or access to private participant information.
 
-Everyday supporters will be able to participate through public GitHub Sponsors tiers after approval. Organizations seeking a larger standards, security, reference-implementation, release, public-infrastructure, or activation partnership can **[connect with the Foundation](mailto:hello@titlechainfoundation.org)** to discuss scope and public impact reporting. Higher partnership pricing is intentionally not published as self-service pricing.
+[Sponsor active public work](https://github.com/sponsors/TitleChain-Foundation). Organizations seeking a larger standards, security, public-infrastructure, or activation partnership can **[connect with the Foundation](mailto:hello@titlechainfoundation.org)**.
 
 See [SPONSORS.md](SPONSORS.md) for the complete policy.
 

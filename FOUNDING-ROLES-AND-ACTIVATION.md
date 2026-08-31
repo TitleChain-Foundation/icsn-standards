@@ -215,7 +215,7 @@ People do not need to wait for a formal title to contribute to public standards 
 
 1. Star and watch the repository.
 2. Read [PARTICIPATE.md](PARTICIPATE.md) and the repository policies.
-3. Introduce yourself in [Discussions](https://github.com/TitleChain-Foundation/icsn-standards/discussions) with the role area or working group you can support.
+3. Introduce yourself in [Foundation Discussions](https://github.com/orgs/TitleChain-Foundation/discussions) with the skill area you can support.
 4. Identify a bounded public contribution: research, RFC review, threat model, methodology critique, test, schema, documentation or implementation evidence.
 5. Build a constructive contribution record.
 6. Apply through a separately announced cohort, grant, advisory, contractor or operating-role pathway when available.

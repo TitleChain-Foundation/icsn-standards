@@ -1,6 +1,6 @@
 # Sponsor Impact
 
-This page will record public outcomes supported through the TitleChain Foundation's GitHub Sponsors program after the program becomes active.
+This page records public outcomes supported through the active TitleChain Foundation [GitHub Sponsors program](https://github.com/sponsors/TitleChain-Foundation).
 
 ## Reporting principles
 
@@ -23,4 +23,4 @@ This page will record public outcomes supported through the TitleChain Foundatio
 
 ## Published impact
 
-No GitHub Sponsors impact entries have been recorded yet. The first entry will be added after approval, receipt, allocation, and delivery of supported public work.
+No delivered GitHub Sponsors impact entries have been recorded yet. The first entry will be added after support is received, allocated, and connected to delivered public work.
