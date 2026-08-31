@@ -41,6 +41,14 @@ These activation sponsorships are not a purchase of standards influence and are 
 
 A sponsor may fund access. It may not own the person receiving it.
 
+### Hardware fleet pilot
+
+The Foundation is seeking review and separately documented support for an illustrative [10-person Hardware Fleet Pilot](initiatives/HARDWARE-FLEET-PILOT.md). The current planning range is approximately **$45,000–$60,000** before tax, shipping, accessories, and support, subject to technical review, current pricing, procurement controls, and an approved final scope.
+
+Potential support may include repairable contributor systems, local AI and RAG capacity, a shared CUDA validation lane, accessibility adaptations, security review, conformance testing, and pilot operations. Named systems are examples for public review, not exclusive selections or endorsements.
+
+Technical feedback belongs in the linked public discussion and scoped hardware issues. Organizations interested in funding or in-kind support should [contact the Foundation](mailto:hello@titlechainfoundation.org) so independence, deliverables, conflicts, participant privacy, recognition, and impact reporting can be documented before acceptance.
+
 ## Sponsor outcome graph
 
 Activation sponsorship should be measured by outcomes rather than attendance alone.
