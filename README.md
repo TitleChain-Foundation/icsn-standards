@@ -57,6 +57,7 @@ Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md)
 | Activation outcome graph | [`initiatives/M5ACTIVATION-OUTCOME-GRAPH.md`](initiatives/M5ACTIVATION-OUTCOME-GRAPH.md) |
 | M5POD activation architecture | [`docs/M5POD-MEMBER-ACTIVATION-ARCHITECTURE.md`](docs/M5POD-MEMBER-ACTIVATION-ARCHITECTURE.md) and [`architecture/`](architecture/) |
 | Consent and authorization review drafts | [`docs/M5-ACTIVATION-CONSENT-AUTHORIZATION-MAP.md`](docs/M5-ACTIVATION-CONSENT-AUTHORIZATION-MAP.md) |
+| Hardware fleet pilot seeking review and sponsorship | [`initiatives/HARDWARE-FLEET-PILOT.md`](initiatives/HARDWARE-FLEET-PILOT.md) |
 | Team and extended ecosystem | [TEAM-AND-ECOSYSTEM.md](TEAM-AND-ECOSYSTEM.md) |
 | Governance | [GOVERNANCE.md](GOVERNANCE.md) |
 | Adopted M5 member-authority governance | [docs/index.md](docs/index.md) |
