@@ -55,6 +55,8 @@ Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md)
 | M5AgentClub first-100 activation | [`initiatives/M5AGENTCLUB-FIRST-100-ACTIVATION.md`](initiatives/M5AGENTCLUB-FIRST-100-ACTIVATION.md) |
 | M5Brain reference architecture | [`initiatives/M5BRAIN-REFERENCE-ARCHITECTURE.md`](initiatives/M5BRAIN-REFERENCE-ARCHITECTURE.md) |
 | Activation outcome graph | [`initiatives/M5ACTIVATION-OUTCOME-GRAPH.md`](initiatives/M5ACTIVATION-OUTCOME-GRAPH.md) |
+| M5POD activation architecture | [`docs/M5POD-MEMBER-ACTIVATION-ARCHITECTURE.md`](docs/M5POD-MEMBER-ACTIVATION-ARCHITECTURE.md) and [`architecture/`](architecture/) |
+| Consent and authorization review drafts | [`docs/M5-ACTIVATION-CONSENT-AUTHORIZATION-MAP.md`](docs/M5-ACTIVATION-CONSENT-AUTHORIZATION-MAP.md) |
 | Team and extended ecosystem | [TEAM-AND-ECOSYSTEM.md](TEAM-AND-ECOSYSTEM.md) |
 | Governance | [GOVERNANCE.md](GOVERNANCE.md) |
 | Adopted M5 member-authority governance | [docs/index.md](docs/index.md) |

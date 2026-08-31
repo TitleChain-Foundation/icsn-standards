@@ -1,0 +1,129 @@
+flowchart TB
+
+subgraph COMMONS["THE COMMONS — public · inspectable · governed"]
+  direction LR
+  ICSN["<b>ICSN</b><br/>open standards<br/><i>public governance of standards</i>"]
+  CANON["<b>M5CANON</b><br/>ontology + state rules<br/><i>machine-readable rules</i>"]
+  TITLE["<b>TITLECHAIN</b><br/>title + provenance<br/><i>registry &amp; evidence</i>"]
+end
+
+subgraph ROOT["HUMAN ROOT — a human roots authority"]
+  direction LR
+  IAM["<b>IAM</b><br/>human-rooted identity<br/><i>credentials · recovery · proof of life</i>"]
+  BOM["<b>BANK OF ME</b><br/>consent + authority<br/><i>rights · custody · delegation</i>"]
+end
+
+subgraph POD["M5POD — private continuity boundary · life · work · identity · data"]
+
+  VAULT["<b>M5VAULT</b><br/>encrypted storage · continuity · recovery<br/><i>local-first files, credentials, evidence,<br/>memory, approved agent context<br/>member-held keys · portable exports</i>"]
+
+  PODATA["<b>M5POD · PERSONAL OPERATING DATA</b><br/>the member's M5Vault account<br/><i>balances · records · credentials · proofs<br/>deposits and withdrawals under member authority</i>"]
+
+  BRAIN["<b>M5BRAIN</b><br/>member-owned private agent<br/><i>local or member-authorized private runtime<br/>reasons only over approved context<br/>no external action without consent</i>"]
+
+  SHELL["<b>M5SHELL</b><br/>cross-platform personal operating shell · Tauri"]
+
+  APP["<b>M5APP / FREEDOM OFFICE</b><br/>Wallet · Ledger · M5-OpenAPI · private workflows"]
+
+  OBS["<b>OBSIDIAN</b><br/>human-readable knowledge vault<br/><i>notes · markdown · folders · files · images · PDFs</i>"]
+
+  MATRIX["<b>MATRIX</b><br/>sovereign communication<br/><i>private rooms · messages · calls · shared files</i>"]
+
+  subgraph NETWORK["PRIVATE NETWORK BOUNDARY"]
+    WG["<b>WIREGUARD</b><br/>encrypted, authenticated paths<br/><i>approved peers · devices · vault replicas<br/>member-authorized servers</i>"]
+  end
+
+  subgraph STORE["M5VAULT STORAGE — your storage, your choice"]
+    direction LR
+    S1["Personal device"]
+    S2["DigitalOcean<br/>Spaces · Volumes · Droplets"]
+    S3["AWS<br/>S3 / EBS"]
+    S4["Google Cloud<br/>Storage"]
+    S5["Apple device<br/>storage"]
+    S6["Home server<br/>/ NAS"]
+  end
+
+  subgraph PLAT["M5SHELL PLATFORMS"]
+    direction LR
+    P1["Mac · macOS"]
+    P2["Framework · Linux"]
+    P3["PC · Windows"]
+    P4["iPhone · iOS"]
+    P5["Google devices"]
+  end
+
+  EMERGING["<div style='width:420px'><b>EMERGING NON-HUMAN INTELLIGENCE</b><br/>AI-native autonomous entities · embodied agents<br/>neuromorphic, biological and wetware computing<br/>spatial and preconscious interfaces<br/><br/><b>HUMAN SOVEREIGNTY GATE</b><br/><i>Bound to a named Bank of Me human principal<br/>No blanket non-human, agency or institutional authority<br/>Every deployment requires ledger validation,<br/>current human proof of life, consent,<br/>and attested roles and skills</i></div>"]
+end
+
+subgraph INTEL[" "]
+  direction TB
+  INTEL_TITLE["<div style='width:420px; text-align:center'><b>SOVEREIGN SYSTEMS INTELLIGENCE</b><br/><i>standards-as-code</i></div>"]
+  subgraph INTEL_DETAIL[" "]
+    direction LR
+    GRAPH["<b>M5 CANON GRAPH</b><br/><i>people · projects · assets · rooms<br/>agents · permissions · state</i>"]
+    ONTO["<b>M5BANK MEMBER ONTOLOGY</b><br/><i>Personal · Business · Government<br/>Cooperative · Agency</i>"]
+    CONF["<b>SEMANTIC REASONING</b><br/><i>conformance · exposures · proof</i>"]
+  end
+end
+
+subgraph LEGAL["LEGAL + GOVERNANCE — human-accountable · jurisdiction-aware"]
+  direction LR
+  LEGAL_BOUNDARY["<div style='width:420px; text-align:center'><b>LEGAL &amp; GOVERNANCE BOUNDARY</b><br/>Foundation + ICSN: standards and governance only<br/><i>no custody or access to member-private data or value<br/>no implied legal, regulatory, licensing or endorsement authority</i></div>"]
+  LEGAL_OPS["<div style='width:420px; text-align:center'><b>LEGAL OPERATING FUNCTION</b><br/>credentialed authority · jurisdiction · due notice<br/>review · correction · arbitration · audit trail<br/><i>agents are bounded delegates<br/>providers remain independently responsible</i></div>"]
+end
+
+ICSN -.->|standards| CANON
+CANON -.->|state rules| TITLE
+COMMONS -.->|standards &amp; provenance| ROOT
+IAM --> BOM
+ROOT ==>|authority delegated inward| POD
+
+VAULT ==> PODATA
+VAULT ==>|approved context only| BRAIN
+VAULT --- STORE
+SHELL --- PLAT
+SHELL --> APP
+SHELL --> OBS
+SHELL --> MATRIX
+BRAIN --> APP
+OBS -.->|member saves| VAULT
+MATRIX -.->|only if member intentionally shares| VAULT
+
+MATRIX ==>|encrypted communication| WG
+WG ==>|member-authorized replicas &amp; peers| STORE
+PLAT ==>|human-authorized runtime| EMERGING
+BOM ==>|named human principal · per-deployment authority| EMERGING
+EMERGING -.->|proof of life · role and skill attestations| PODATA
+
+CANON -.-> GRAPH
+GRAPH -.-> ONTO
+ONTO -.-> CONF
+TITLE -.->|evidence| CONF
+POD -.->|proofs only, never private data| CONF
+
+ICSN -.->|adopted policy| LEGAL_BOUNDARY
+LEGAL_BOUNDARY -.->|governance constraints| LEGAL_OPS
+BOM -.->|human authority| LEGAL_OPS
+TITLE -.->|provenance + evidence| LEGAL_OPS
+LEGAL_OPS -.->|authenticated notice + evidence only| PODATA
+
+classDef commons fill:#EFE7D8,stroke:#A8801F,stroke-width:3px,color:#140D1D
+classDef root fill:#EFE7D8,stroke:#7B2BC7,stroke-width:3px,color:#140D1D
+classDef sealed fill:#2A1B4D,color:#FFFFFF,stroke:#7B2BC7,stroke-width:2px
+classDef choice fill:#EFE7D8,stroke:#A8801F,stroke-width:1px,color:#140D1D
+classDef net fill:#7B2BC7,color:#FFFFFF,stroke:#2A1B4D,stroke-width:2px
+classDef emerging fill:#EFE7D8,stroke:#7B2BC7,stroke-width:4px,color:#140D1D
+classDef sectionTitle fill:transparent,stroke:transparent,color:#140D1D
+classDef legal fill:#EFE7D8,stroke:#7B2BC7,stroke-width:3px,color:#140D1D
+
+class ICSN,CANON,TITLE commons
+class IAM,BOM root
+class VAULT,PODATA,BRAIN,SHELL,APP,OBS,MATRIX sealed
+class S1,S2,S3,S4,S5,S6,P1,P2,P3,P4,P5 choice
+class WG net
+class EMERGING emerging
+class INTEL_TITLE sectionTitle
+class GRAPH,ONTO,CONF commons
+class LEGAL_BOUNDARY,LEGAL_OPS legal
+
+style INTEL_DETAIL fill:transparent,stroke:transparent
