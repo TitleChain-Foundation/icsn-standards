@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "M5 Consent Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "event_type",
+    "timestamp",
+    "actor_ref",
+    "holder_ref",
+    "issuer_ref",
+    "verifier_ref",
+    "purpose",
+    "scope",
+    "operation",
+    "jurisdiction",
+    "effective_at",
+    "expires_at",
+    "delegation_allowed",
+    "human_approval_required",
+    "correction_ref",
+    "appeal_available",
+    "retention_policy_ref",
+    "revocation_ref",
+    "deletion_ref",
+    "evidence_ref",
+    "status"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_type": {
+      "enum": [
+        "grant",
+        "approve",
+        "correct",
+        "withdraw",
+        "revoke",
+        "expire",
+        "delete",
+        "appeal",
+        "recover"
+      ]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actor_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "holder_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "issuer_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verifier_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "jurisdiction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "operation": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "effective_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "delegation_allowed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "human_approval_required": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "appeal_available": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "correction_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retention_policy_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revocation_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "deletion_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "active",
+        "withdrawn",
+        "revoked",
+        "expired",
+        "deleted",
+        "under_appeal",
+        "recovered"
+      ]
+    }
+  }
+}
