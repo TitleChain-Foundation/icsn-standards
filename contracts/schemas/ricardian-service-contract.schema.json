@@ -1,34 +1,122 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://titlechain-foundation.github.io/icsn-standards/schemas/ricardian-service-contract.schema.json",
-  "title": "M5isYOU Ricardian Service Contract",
+  "$id": "https://titlechain-foundation.github.io/icsn-standards/contracts/schemas/ricardian-service-contract.schema.json",
+  "title": "ICSN Ricardian Service Contract",
+  "description": "Human-readable, machine-readable, execution-bounded service agreement that may reference holder-selected M5-CV/SOPHIA evidence.",
   "type": "object",
-  "required": ["id", "version", "status", "representations", "service", "consideration", "executionPolicy", "signatures"],
+  "required": [
+    "id",
+    "version",
+    "status",
+    "representations",
+    "service",
+    "consideration",
+    "executionPolicy",
+    "signatures"
+  ],
   "properties": {
-    "id": {"type": "string", "format": "uri"},
-    "version": {"type": "string"},
-    "status": {"enum": ["draft", "offered", "accepted", "active", "completed", "cancelled", "disputed"]},
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "offered",
+        "accepted",
+        "active",
+        "completed",
+        "cancelled",
+        "disputed"
+      ]
+    },
+    "capabilityEvidenceRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sophiaRoleRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "representations": {
       "type": "object",
-      "required": ["human", "machine", "execution", "contentDigest"],
+      "required": [
+        "human",
+        "machine",
+        "execution",
+        "contentDigest"
+      ],
       "properties": {
-        "human": {"type": "string", "format": "uri-reference"},
-        "machine": {"type": "string", "format": "uri-reference"},
-        "execution": {"type": "string", "format": "uri-reference"},
-        "contentDigest": {"type": "string"}
+        "human": {
+          "type": "string"
+        },
+        "machine": {
+          "type": "string"
+        },
+        "execution": {
+          "type": "string"
+        },
+        "contentDigest": {
+          "type": "string"
+        }
       }
     },
-    "service": {"type": "object"},
-    "consideration": {"type": "object"},
-    "paymentAdapter": {"type": "object"},
+    "service": {
+      "type": "object"
+    },
+    "consideration": {
+      "type": "object"
+    },
+    "paymentAdapter": {
+      "type": "object"
+    },
     "executionPolicy": {
       "type": "object",
-      "required": ["automaticActions", "approvalRequired"],
+      "required": [
+        "automaticActions",
+        "approvalRequired"
+      ],
       "properties": {
-        "automaticActions": {"type": "array", "items": {"type": "string"}},
-        "approvalRequired": {"type": "array", "items": {"type": "string"}}
+        "automaticActions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "approvalRequired": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "accountablePrincipalRef": {
+          "type": "string"
+        },
+        "agentRef": {
+          "type": "string"
+        },
+        "jurisdictionRef": {
+          "type": "string"
+        },
+        "expiresAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
-    "signatures": {"type": "array", "items": {"type": "object"}}
+    "signatures": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
   }
 }

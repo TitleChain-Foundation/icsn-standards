@@ -1,0 +1,544 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.titlechain.org/schemas/certificate-of-title-v1.schema.json",
+  "title": "TitleChain Certificate of Title / Right Record",
+  "description": "State-aware title/right record separating the underlying asset, human/entity authority, M5 account context, jurisdiction, regulated roles, digital representations, and append-only lifecycle state.",
+  "type": "object",
+  "required": [
+    "certificateId",
+    "titleContainerRef",
+    "subject",
+    "currentState",
+    "accountContexts",
+    "principals",
+    "jurisdictions",
+    "provenance",
+    "stateHistory"
+  ],
+  "properties": {
+    "certificateId": {
+      "type": "string"
+    },
+    "titleContainerRef": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "object",
+      "required": [
+        "assetRef",
+        "assetType",
+        "underlyingM5Class"
+      ],
+      "properties": {
+        "assetRef": {
+          "type": "string"
+        },
+        "assetType": {
+          "type": "string"
+        },
+        "underlyingM5Class": {
+          "enum": [
+            "M1",
+            "M2",
+            "M3"
+          ]
+        },
+        "financialWrapperState": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "jurisdictionalSecurityState": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "legalInstrumentType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "externalLegalStatusRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "authoritativeRecordRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "currentState": {
+      "type": "object",
+      "required": [
+        "status",
+        "effectiveAt"
+      ],
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "effectiveAt": {
+          "type": "string"
+        },
+        "restrictionState": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transferState": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recordkeeperRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "supersedesStateEventRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "accountContexts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "entityRef",
+          "m5AccountContext",
+          "relationship"
+        ],
+        "properties": {
+          "entityRef": {
+            "type": "string"
+          },
+          "m5AccountContext": {
+            "enum": [
+              "M1-BOM",
+              "M2-BOU",
+              "M3-BOB",
+              "M4-BOI",
+              "M5-BOG"
+            ]
+          },
+          "relationship": {
+            "type": "string"
+          },
+          "jurisdictionChainRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "officialRegistryRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "standingState": {
+            "enum": [
+              "unknown",
+              "pending",
+              "good-standing",
+              "not-in-good-standing",
+              "suspended",
+              "revoked",
+              "expired"
+            ]
+          },
+          "standingEvidenceRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "effectiveAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "expiresAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "principals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "principalRef",
+          "principalType",
+          "relationship",
+          "identityState",
+          "authorityState"
+        ],
+        "properties": {
+          "principalRef": {
+            "type": "string"
+          },
+          "principalType": {
+            "enum": [
+              "M5HUM",
+              "legal-entity"
+            ]
+          },
+          "tcidRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "publicOrPairwiseTcidRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "relationship": {
+            "type": "string"
+          },
+          "identityState": {
+            "enum": [
+              "active",
+              "suspended",
+              "recovered",
+              "retired"
+            ]
+          },
+          "authorityState": {
+            "enum": [
+              "active",
+              "limited",
+              "suspended",
+              "expired",
+              "revoked"
+            ]
+          },
+          "credentialRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "delegationRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "agentRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "regulatedParticipants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "entityRef",
+          "role",
+          "m5AccountContext",
+          "status"
+        ],
+        "properties": {
+          "entityRef": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "m5AccountContext": {
+            "enum": [
+              "M2-BOU",
+              "M3-BOB",
+              "M4-BOI",
+              "M5-BOG"
+            ]
+          },
+          "regulatorOrAuthorityRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "registrationOrExemptionRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "jurisdictionChainRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "officialJurisdictionRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "enum": [
+              "active",
+              "pending",
+              "suspended",
+              "expired",
+              "revoked",
+              "illustrative"
+            ]
+          },
+          "authorityCapabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidenceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "jurisdictionRef",
+          "relationship"
+        ],
+        "properties": {
+          "jurisdictionRef": {
+            "type": "string"
+          },
+          "jurisdictionChainRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "relationship": {
+            "type": "string"
+          },
+          "officialAuthorityRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidenceRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "m5mstOrigin": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "eventRef": {
+          "type": "string"
+        },
+        "originatorRef": {
+          "type": "string"
+        },
+        "authorizedAgentRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sovereignRegistrationRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mintAuthorityRef": {
+          "type": "string"
+        },
+        "authorizedSupplyOrUniquenessRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "m5canonDecisionRef": {
+          "type": "string"
+        },
+        "resultingM5astRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "transferPolicy": {
+      "type": "object",
+      "properties": {
+        "proposeAuthorityRefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "approveAuthorityRefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "executeAuthorityRefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "legendPolicyRefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "holderEligibilityPolicyRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "venueEligibilityPolicyRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "registrationOrExemptionRef": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "stateHistory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "eventRef",
+          "eventType",
+          "effectiveAt"
+        ],
+        "properties": {
+          "eventRef": {
+            "type": "string"
+          },
+          "eventType": {
+            "type": "string"
+          },
+          "effectiveAt": {
+            "type": "string"
+          },
+          "principalRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "agentRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "entityRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "jurisdictionRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "authorityDecisionRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fromStateRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "toStateRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "authoritativeRecordRef": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidenceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

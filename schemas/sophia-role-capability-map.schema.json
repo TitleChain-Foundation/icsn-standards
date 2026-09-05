@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.titlechain.org/schemas/sophia-role-capability-map-v1.schema.json",
+  "title": "SOPHIA Role Capability Map",
+  "type": "object",
+  "required": [
+    "roleId",
+    "version",
+    "capabilityRequirements"
+  ],
+  "properties": {
+    "roleId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "public-review-draft",
+        "candidate",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "capabilityRequirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capability": {
+            "type": "string"
+          },
+          "minimumEvidenceState": {
+            "type": "string"
+          },
+          "credentialRequirement": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "jurisdictionRequirement": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "operatingAuthorityRequired": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

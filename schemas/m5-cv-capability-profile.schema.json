@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.titlechain.org/schemas/m5-cv-capability-profile-v1.schema.json",
+  "title": "M5-CV Capability Profile",
+  "description": "Holder-controlled projection of capability, contribution, learning, and evidence. It is not an identity credential or authority grant.",
+  "type": "object",
+  "required": [
+    "profileId",
+    "holderRef",
+    "version",
+    "capabilities",
+    "sharingPolicy"
+  ],
+  "properties": {
+    "profileId": {
+      "type": "string"
+    },
+    "holderRef": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "capability",
+          "state"
+        ],
+        "properties": {
+          "capability": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "self-declared",
+              "evidence-backed",
+              "credential-backed",
+              "peer-attested",
+              "sophia-verified",
+              "current",
+              "lapsed",
+              "revoked"
+            ]
+          },
+          "evidenceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "sophiaRoleRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "sharingPolicy": {
+      "type": "object",
+      "properties": {
+        "purpose": {
+          "type": "string"
+        },
+        "viewerGroups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expiresAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

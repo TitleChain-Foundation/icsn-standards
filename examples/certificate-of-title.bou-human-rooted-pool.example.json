@@ -1,0 +1,113 @@
+{
+  "certificateId": "urn:titlechain:certificate:bou-community-pool-example",
+  "titleContainerRef": "urn:titlechain:container:community-pool-example",
+  "subject": {
+    "assetRef": "urn:pool:community-pool-example",
+    "assetType": "member-governed-pool-record",
+    "underlyingM5Class": "M1",
+    "financialWrapperState": "M4-if-financial-instrument-created",
+    "jurisdictionalSecurityState": "external-legal-analysis-required",
+    "legalInstrumentType": "illustrative-pool-or-vehicle",
+    "externalLegalStatusRef": "urn:legal-status:must-be-established",
+    "authoritativeRecordRef": "urn:record:legal-vehicle-or-admin:required"
+  },
+  "currentState": {
+    "status": "member-governed",
+    "effectiveAt": "2026-09-05T00:00:00Z",
+    "transferState": "human-rooted-and-policy-gated"
+  },
+  "accountContexts": [
+    {
+      "entityRef": "urn:collective:example-bou",
+      "m5AccountContext": "M2-BOU",
+      "relationship": "member-collective",
+      "jurisdictionChainRef": "wyomingchain.eth",
+      "standingState": "unknown"
+    },
+    {
+      "entityRef": "urn:entity:formed-legal-vehicle-example",
+      "m5AccountContext": "M3-BOB",
+      "relationship": "legal-entity-vehicle-if-formed",
+      "jurisdictionChainRef": "wyomingchain.eth",
+      "standingState": "pending"
+    },
+    {
+      "entityRef": "urn:entity:regulated-admin-or-broker-example",
+      "m5AccountContext": "M4-BOI",
+      "relationship": "regulated-institution-if-required",
+      "jurisdictionChainRef": "unitedstateschain.eth",
+      "standingState": "pending"
+    }
+  ],
+  "principals": [
+    {
+      "principalRef": "urn:principal:community-sponsor",
+      "principalType": "M5HUM",
+      "tcidRef": "urn:tcid:private:community-sponsor",
+      "publicOrPairwiseTcidRef": "urn:tcid:pairwise:community-sponsor:pool",
+      "relationship": "human-requestor-and-accountable-organizer",
+      "identityState": "active",
+      "authorityState": "active",
+      "credentialRefs": [],
+      "delegationRefs": [],
+      "agentRefs": [
+        "urn:m5agt:pool-administration:example"
+      ]
+    }
+  ],
+  "regulatedParticipants": [],
+  "jurisdictions": [
+    {
+      "jurisdictionRef": "urn:jurisdiction:wyoming",
+      "jurisdictionChainRef": "wyomingchain.eth",
+      "relationship": "illustrative-entity-or-governance-jurisdiction",
+      "officialAuthorityRef": "urn:authority:wyoming:applicable-official-source"
+    }
+  ],
+  "m5mstOrigin": {
+    "eventRef": "urn:m5mst:community-pool-origin",
+    "originatorRef": "urn:principal:community-sponsor",
+    "authorizedAgentRef": null,
+    "sovereignRegistrationRef": "urn:registry:titlechain:wyomingchain:community-pool",
+    "mintAuthorityRef": "urn:authority:member-and-legal-vehicle:required",
+    "authorizedSupplyOrUniquenessRef": null,
+    "m5canonDecisionRef": "urn:m5canon:decision:pending-required-legal-state",
+    "resultingM5astRef": null
+  },
+  "transferPolicy": {
+    "proposeAuthorityRefs": [
+      "urn:authority:eligible-member-human"
+    ],
+    "approveAuthorityRefs": [
+      "urn:authority:required-human-or-legal-entity-approver"
+    ],
+    "executeAuthorityRefs": [
+      "urn:authority:regulated-operator-if-required"
+    ],
+    "legendPolicyRefs": [],
+    "holderEligibilityPolicyRef": "urn:policy:pool-eligibility:example",
+    "venueEligibilityPolicyRef": null,
+    "registrationOrExemptionRef": "urn:legal:must-be-established-before-regulated-activity"
+  },
+  "provenance": [
+    {
+      "event": "human-requested-pool-registration"
+    },
+    {
+      "event": "collective-governance-record-created"
+    },
+    {
+      "event": "legal-entity-or-regulated-operator-required-before-regulated-function"
+    }
+  ],
+  "stateHistory": [
+    {
+      "eventRef": "urn:event:pool-1",
+      "eventType": "M5HUM_REQUESTED_REGISTRATION",
+      "effectiveAt": "2026-09-05T00:00:00Z",
+      "principalRef": "urn:principal:community-sponsor",
+      "authorityDecisionRef": "urn:m5canon:decision:request-recorded",
+      "evidenceRefs": []
+    }
+  ]
+}
