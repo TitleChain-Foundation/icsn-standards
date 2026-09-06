@@ -41,7 +41,7 @@ Before a consequential action is permitted, a system should be able to verify th
 
 ## Public review
 
-- [SEC S7-2026-30 public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2)
+- [SEC S7-2026-30 public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2/views/2)
 - [SEC deadline-progress milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2)
 - [Appendix B public artifacts and recommendation map](../../../docs/PUBLIC-REFERENCE-ARTIFACTS.md)
 - [Visual architecture overview](../../../architecture/rendered/m5-sovereign-stack.svg) ([accessible description](../../../architecture/M5POD-MEMBER-ACTIVATION-ALT-TEXT.md)) — broader Public Review Draft context, not an exhibit to the filing
