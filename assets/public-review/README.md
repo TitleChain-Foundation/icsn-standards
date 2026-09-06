@@ -33,6 +33,7 @@ Review the maintained [M5POD member activation architecture](../../docs/M5POD-ME
 ## Join the public commons review
 
 - [Choose a provider, data, product, workforce, training, or assurance contribution track](../../COMMONS-CONTRIBUTION-TRACKS.md).
+- [Introduce a commons proposal in Discussion 22](https://github.com/orgs/TitleChain-Foundation/discussions/22).
 - [Introduce yourself or ask a cross-cutting question in Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19).
 - [Track the seven SEC transfer-agent review topics](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2).
 - [Choose a contribution by skill](../../CONTRIBUTOR-PATHWAYS.md).

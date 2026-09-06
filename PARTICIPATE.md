@@ -8,7 +8,7 @@ The Foundation's immediate public priority is to build visibility, gather inform
 2. **Watch** the repository for releases, RFCs and discussions.
 3. **Introduce yourself** in [Foundation Discussions](https://github.com/orgs/TitleChain-Foundation/discussions) and name the area where you can help.
 4. **Choose work by skill** in [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md).
-5. **Offer a provider, data, product, workforce, or training contribution** through [Build the Public Economic Data Commons](COMMONS-CONTRIBUTION-TRACKS.md).
+5. **Offer a provider, data, product, workforce, or training contribution** through [Build the Public Economic Data Commons](COMMONS-CONTRIBUTION-TRACKS.md) and [Discussion 22](https://github.com/orgs/TitleChain-Foundation/discussions/22).
 6. **Consider organization membership** after sustained, constructive participation.
 
 You do not need to understand every layer of the architecture before participating. The human-rooted foundation is that people should own and control their sovereign selves, while credentials validate limited claims or capabilities without making a platform the owner of the person.

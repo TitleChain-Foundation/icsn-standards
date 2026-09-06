@@ -87,7 +87,7 @@ Training interest, a suggested match, or a public contribution does not create e
 
 ## How a proposal advances
 
-1. **Introduce the contribution.** Post a bounded proposal in the [Public Infrastructure & Activation Discussions](https://github.com/orgs/TitleChain-Foundation/discussions/categories/public-infrastructure-activation).
+1. **Introduce the contribution.** Use [Discussion 22 — Providers, Economic Data, Workforce & Training](https://github.com/orgs/TitleChain-Foundation/discussions/22) for an introduction or short proposal. For a substantial proposal, open a separate post in the [Public Infrastructure & Activation category](https://github.com/orgs/TitleChain-Foundation/discussions/categories/public-infrastructure-activation) and link it from Discussion 22.
 2. **Route it transparently.** A maintainer identifies the relevant track, architecture layer, artifact, and review needs.
 3. **Scope reviewable work.** If the idea is actionable, open or link an Issue with a defined output, responsible steward, evidence requirements, and status.
 4. **Contribute an artifact.** Submit methodology, schema, mapping, test, documentation, reference code, curriculum, or other material under an explicit license.
@@ -95,4 +95,3 @@ Training interest, a suggested match, or a public contribution does not create e
 6. **Record disposition.** Link accepted revisions, deferred questions, objections, independent implementations, and reasons. Publication alone is not adoption.
 
 Security vulnerabilities and confidential implementation details must follow [SECURITY.md](SECURITY.md), not the public intake. All participation follows [CONTRIBUTING.md](CONTRIBUTING.md), [GOVERNANCE.md](GOVERNANCE.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and the applicable [license designations](LICENSES/LICENSE-MATRIX.md).
-
