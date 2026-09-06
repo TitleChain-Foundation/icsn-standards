@@ -71,6 +71,7 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 | **M4** | Financial Wrapper |
 | **M5** | Jurisdictional Security-State Profile |
 | Regulatory public records | [SEC Transfer Agent Rules — File No. S7-2026-30](regulatory/sec/s7-2026-30/README.md) |
+| Public reference artifacts | [Appendix B artifacts and recommendation map](docs/PUBLIC-REFERENCE-ARTIFACTS.md) |
 | RFCs and specifications | [`rfcs/`](rfcs/README.md) |
 | Schemas and validation | [`schemas/`](schemas/) and [`scripts/validate_repository.py`](scripts/validate_repository.py) |
 | Constitutional stewardship | [TRUST-AND-NON-CAPTURE.md](TRUST-AND-NON-CAPTURE.md) and [`constitutional/mission-lock.yaml`](constitutional/mission-lock.yaml) |

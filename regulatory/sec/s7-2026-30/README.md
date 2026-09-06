@@ -25,6 +25,7 @@ TitleChain Foundation recommends voluntary, implementation-neutral open standard
 
 ## Public review
 
+- [Appendix B public artifacts and recommendation map](../../../docs/PUBLIC-REFERENCE-ARTIFACTS.md)
 - [Public-review process and privacy boundaries](PUBLIC-REVIEW.md)
 - [Open-standards alignment](OPEN-STANDARDS-ALIGNMENT.md)
 - [Recommendation-specific Issue drafts](review-issues/)
