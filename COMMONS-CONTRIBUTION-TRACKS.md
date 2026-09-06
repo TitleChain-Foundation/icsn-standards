@@ -106,6 +106,10 @@ Do not post a private CV, home address, identity document, member record, nonpub
 
 Training interest, a suggested match, or a public contribution does not create employment, compensation, appointment, a credential, professional authority, agent delegation, or admission to a program. Any funded role, credential, or training place requires a separate, explicit process.
 
+**[Explore the M5POD-to-M5-CV demo journey](https://m5podactivationdemo.netlify.app/demo)** · **[Join the waitlist and share your skills](https://m5podactivationdemo.netlify.app/)**
+
+These are optional M5 activation pathways, not prerequisites for contributing to the public commons. The demo is illustrative, and a waitlist reservation does not guarantee activation, training, employment, funding, matching, or admission to a cohort.
+
 ## How a proposal advances
 
 1. **Introduce the contribution.** Use [Discussion 22 — Providers, Economic Data, Workforce & Training](https://github.com/orgs/TitleChain-Foundation/discussions/22) for an introduction or short proposal. For a substantial proposal, open a separate post in the [Public Infrastructure & Activation category](https://github.com/orgs/TitleChain-Foundation/discussions/categories/public-infrastructure-activation) and link it from Discussion 22.
