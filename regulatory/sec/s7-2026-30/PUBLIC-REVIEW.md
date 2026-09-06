@@ -13,7 +13,7 @@ Unless an artifact expressly states otherwise, material labeled **Public Review 
 
 ## GitHub Discussion
 
-Use [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19) for the accessible overview, introductions, general questions, and comments that span more than one recommendation.
+Use [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19) for the accessible overview, introductions, general questions, and comments that span more than one recommendation. The [featured public-review visuals](../../../assets/public-review/README.md) provide illustrated entry points into wallet authority, the economic stack, and the private M5POD boundary.
 
 ## GitHub Issues
 

@@ -4,6 +4,12 @@
 
 ICSN is the public standards program of the TitleChain Foundation. It publishes implementation-neutral standards and clearly labeled M5 reference architectures so governments, transfer agents, financial institutions, engineers, statisticians, economists, researchers, and other reviewers can inspect how identity, authority, title, transfer, and machine action can remain attributable and auditable as records move from paper to digital systems.
 
+## See the public architecture
+
+[![M5POD private member stack rooted in ICSN open standards, human identity, and member authority](assets/public-review/m5pod-stack.png)](assets/public-review/README.md)
+
+**Help build the public commons for the digital-asset edge economy.** Review the [featured architecture visuals](assets/public-review/README.md), join [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19), or track the [SEC Transfer Agent Rules public-review milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2). The public economic-data work concerns privacy-preserving, provenance-aware indicators and methodologies under open review; it is not represented as an official statistic, regulated benchmark, or deployed service.
+
 ## Canonical public architecture
 
 The public M5 reference path is:
