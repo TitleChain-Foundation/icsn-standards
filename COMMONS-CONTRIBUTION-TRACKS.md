@@ -17,6 +17,12 @@ The goal is not to place every service inside one proprietary platform. It is to
 | Training and curriculum | Courses, mentoring, assessment, simulations, apprenticeships, and role-transition pathways | Learning outcomes, prerequisites, accessibility, instructor qualifications, assessment method, and credential issuer |
 | Independent assurance and governance | Legal, security, privacy, accessibility, conformance, audit, public-interest, and anti-capture review | Review criteria, conflicts of interest, test plans, findings, proposed safeguards, and accountable reviewers |
 
+## Public commons board — forming now
+
+**Intake is open now in [Discussion 22](https://github.com/orgs/TitleChain-Foundation/discussions/22).** A separate Public Economic Data Commons project board is planned once bounded proposals are ready to track. The future board will organize work by contribution track, stack layer, responsible steward, evidence status, and public disposition.
+
+Until that board is published, Discussion 22 is the authoritative public intake. The existing [SEC S7-2026-30 board](https://github.com/orgs/TitleChain-Foundation/projects/2/views/2) remains limited to the seven transfer-agent rule recommendations and should not be used as the general provider or workforce queue.
+
 ## Where a provider can fit in the stack
 
 The [L0-L8 + ZK reference architecture](architecture/M5-L0-L8-ZK-REFERENCE-ARCHITECTURE.md) is a dependency map, not a required vendor stack. Providers may propose one bounded component, an adapter between layers, a test harness, or an independently operated implementation.
