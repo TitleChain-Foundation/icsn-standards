@@ -17,7 +17,7 @@ Use [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/dis
 
 ## GitHub Issues
 
-Use the [SEC recommendation review queue](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue%20state%3Aopen%20label%3Aregulatory-review%20label%3Asec) for focused review. There is one issue for each recommendation:
+Use the [SEC S7-2026-30 public-review milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2) for a single progress view of all seven recommendations. The [filtered SEC review queue](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue%20state%3Aopen%20label%3Aregulatory-review%20label%3Asec) provides the same issues with their review-type labels. There is one issue for each recommendation:
 
 1. [Voluntary open standards](https://github.com/TitleChain-Foundation/icsn-standards/issues/56)
 2. [Credential-bound participant identifiers](https://github.com/TitleChain-Foundation/icsn-standards/issues/57)
