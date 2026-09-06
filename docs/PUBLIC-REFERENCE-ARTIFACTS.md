@@ -4,7 +4,7 @@ This page is the direct index for the public artifacts referenced by the TitleCh
 
 ## Start here
 
-The filed comment is a fixed public record. The artifacts below are separate, evolving materials that participants may review and improve through the Foundation's public process.
+The artifacts below are separate, evolving materials that participants may review and improve through the Foundation's public process.
 
 | Label | Meaning |
 |---|---|
