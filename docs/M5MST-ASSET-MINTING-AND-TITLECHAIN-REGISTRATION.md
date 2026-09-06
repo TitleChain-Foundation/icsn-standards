@@ -2,7 +2,7 @@
 
 > **Status:** Public reference architecture.
 
-**M5MST — Asset Minting** is an asset-minting event or TitleChain registration on WyomingChain.eth. It records **who had authority to mint or register an M5AST**, under which source right, issuer/owner authority, jurisdiction, policy, and approvals.
+**M5MST — Asset Minting** — Origination, Minting, Sovereign Registration, and Transfer Authority is the controlled origination and lifecycle-authority record for an M5AST. It anchors the asset to the legal entity M5credentialed private ledger that originated it, the jurisdiction in which that entity is organized, the authoritative formation and regulatory records supporting its status, and the current credentials, policies, approvals, and restrictions governing subsequent actions. WyomingChain.eth, for example, is the M5member technical jurisdiction reference for TitleChain Foundation; it does not replace the official Wyoming state record (SOS) or any applicable SEC, CFTC, or other regulatory registration.
 
 ```text
 ACCOUNTABLE M5HUM / LEGAL ENTITY
@@ -15,9 +15,9 @@ M5Canon Six-Gate check
         ↓
 source asset / instrument + Title Container
         ↓
-M5MST asset-minting or TitleChain-registration event
+M5MST asset-minting or TitleChain-registration jurisdictional event
         ↓
-resulting M5AST on WyomingChain.eth
+resulting M5AST on WyomingChain.eth or designated origination chain of M5 classification type
 ```
 
 ## Mint authority is not transfer authority
