@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "record_status": "filed-as-submitted",
+  "immutable_record_policy": "filing-as-submitted.pdf is immutable. Corrections must be published as dated errata and must not overwrite the filed record.",
+  "agency": "U.S. Securities and Exchange Commission",
+  "matter_name": "Transfer Agent Rules",
+  "file_number": "S7-2026-30",
+  "release_number": "34-106246",
+  "rin": "3235-AL55",
+  "submission_date": "2026-09-05",
+  "submission_method": "email",
+  "submission_recipient": "rule-comments@sec.gov",
+  "submission_receipt_identifier": null,
+  "sec_hosted_comment_letter_url": null,
+  "official_sec_matter_url": "https://www.sec.gov/rules-regulations/2026/09/s7-2026-30",
+  "official_sec_comment_form_url": "https://www.sec.gov/comments/s7-2026-30/transfer-agent-rules",
+  "comment_deadline": "2026-11-03",
+  "public_release_approved": true,
+  "privacy_review": {
+    "handwritten_signature_images_removed": true,
+    "personal_street_addresses_removed": true,
+    "official_agency_address_retained": true,
+    "embedded_signature_media_removed": true,
+    "public_organizational_contact_retained": true
+  },
+  "records": [
+    {
+      "path": "documents/filing-as-submitted.pdf",
+      "role": "authoritative-filed-record",
+      "pages": 21,
+      "sha256": "421d8e6ec59f8732e608f3fbce5872f403c07ff8875d2317e5ef91004308c40b",
+      "bytes": 367351,
+      "media_type": "application/pdf",
+      "immutable": true
+    },
+    {
+      "path": "accessible-text/filing-as-submitted.txt",
+      "role": "accessible-text-derivative",
+      "derived_from": "documents/filing-as-submitted.pdf",
+      "sha256": "888668bd78d355a83f8fd1c080b9146ec03bd36a550d40c07325e59cb2c6e136",
+      "bytes": 47583,
+      "media_type": "text/plain",
+      "immutable": false
+    },
+    {
+      "path": "documents/cover-letter.pdf",
+      "role": "non-authoritative-cover-letter-extract",
+      "derived_from": "documents/filing-as-submitted.pdf",
+      "sha256": "2de5dd130e36efb2457187b2071a0d6a9d1a08b2469da40ad6b5ac0c8c8155ba",
+      "bytes": 120386,
+      "media_type": "application/pdf",
+      "immutable": false
+    },
+    {
+      "path": "documents/substantive-comment.pdf",
+      "role": "non-authoritative-substantive-comment-extract",
+      "derived_from": "documents/filing-as-submitted.pdf",
+      "sha256": "72b274d804bdcaa5788eeddaca617a34d73189a29668983393faeeef108e5626",
+      "bytes": 206014,
+      "media_type": "application/pdf",
+      "immutable": false
+    }
+  ],
+  "corrections_policy": {
+    "method": "dated-erratum",
+    "filename_pattern": "erratum-YYYY-MM-DD.md",
+    "silent_replacement_prohibited": true
+  }
+}

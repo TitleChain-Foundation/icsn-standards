@@ -47,6 +47,7 @@ Read the [Public Infrastructure Commitment](PUBLIC-INFRASTRUCTURE-COMMITMENT.md)
 
 | Area | Start here |
 | --- | --- |
+| Regulatory public records | [SEC Transfer Agent Rules — File No. S7-2026-30](regulatory/sec/s7-2026-30/README.md) |
 | RFCs and specifications | [`rfcs/`](rfcs/README.md) |
 | Schemas and validation | [`schemas/`](schemas/) and [`scripts/validate_repository.py`](scripts/validate_repository.py) |
 | Constitutional stewardship | [TRUST-AND-NON-CAPTURE.md](TRUST-AND-NON-CAPTURE.md) and [`constitutional/mission-lock.yaml`](constitutional/mission-lock.yaml) |
