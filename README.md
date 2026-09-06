@@ -42,6 +42,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 | --- | --- |
 | Human identity and authority | [`docs/M5IAM-M5HUM-AUTHORITY-ARCHITECTURE.md`](docs/M5IAM-M5HUM-AUTHORITY-ARCHITECTURE.md) |
 | M5-CV / SOPHIA capability graph | [`docs/M5-CV-SOPHIA-CAPABILITY-ARCHITECTURE.md`](docs/M5-CV-SOPHIA-CAPABILITY-ARCHITECTURE.md) |
+| SOPHIA 37-track participation map | [`docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md`](docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md) |
 | Six-Gate authority control | [`docs/M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md`](docs/M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md) |
 | M5MST asset minting + TitleChain registration | [`docs/M5MST-ASSET-MINTING-AND-TITLECHAIN-REGISTRATION.md`](docs/M5MST-ASSET-MINTING-AND-TITLECHAIN-REGISTRATION.md) |
 | Transfer-agent reference architecture | [`docs/TRANSFER-AGENT-DIGITAL-ASSET-REFERENCE-ARCHITECTURE.md`](docs/TRANSFER-AGENT-DIGITAL-ASSET-REFERENCE-ARCHITECTURE.md) |
@@ -104,6 +105,7 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 | Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Work by skill | [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md) |
 | Commons contribution tracks | [Providers, economic data, products, workforce, training, and assurance](COMMONS-CONTRIBUTION-TRACKS.md) |
+| SOPHIA roles and learning pathways | [All 37 tracks organized into eight participation families](docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md) |
 | Participation | [PARTICIPATE.md](PARTICIPATE.md) |
 | Security reporting | [SECURITY.md](SECURITY.md) |
 | Licensing | [LICENSE.md](LICENSE.md) and [license matrix](LICENSES/LICENSE-MATRIX.md) |

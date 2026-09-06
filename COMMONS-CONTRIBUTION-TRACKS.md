@@ -17,6 +17,21 @@ The goal is not to place every service inside one proprietary platform. It is to
 | Training and curriculum | Courses, mentoring, assessment, simulations, apprenticeships, and role-transition pathways | Learning outcomes, prerequisites, accessibility, instructor qualifications, assessment method, and credential issuer |
 | Independent assurance and governance | Legal, security, privacy, accessibility, conformance, audit, public-interest, and anti-capture review | Review criteria, conflicts of interest, test plans, findings, proposed safeguards, and accountable reviewers |
 
+## Organize by the 37 SOPHIA tracks
+
+The six contribution tracks above describe **how** someone can contribute. The [SOPHIA 37-Track Participation Map](docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md) describes **where** expertise, learning, products, and evidence may fit. It preserves all 37 canonical track names and organizes them into eight public navigation families:
+
+1. Markets, finance, and assets
+2. Data, AI, and software
+3. Infrastructure, hardware, and security
+4. Identity, health, workforce, and learning
+5. Governance, legal, and public sector
+6. Trade, cooperatives, and supply networks
+7. Communications and adoption
+8. M5 activation and operations
+
+Participants can select one contribution mode and one SOPHIA track without being limited to either. Cross-disciplinary proposals may reference multiple tracks, and people remain free to propose missing or emerging roles.
+
 ## Public commons board — forming now
 
 **Intake is open now in [Discussion 22](https://github.com/orgs/TitleChain-Foundation/discussions/22).** A separate Public Economic Data Commons project board is planned once bounded proposals are ready to track. The future board will organize work by contribution track, stack layer, responsible steward, evidence status, and public disposition.
