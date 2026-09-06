@@ -8,7 +8,8 @@ The Foundation's immediate public priority is to build visibility, gather inform
 2. **Watch** the repository for releases, RFCs and discussions.
 3. **Introduce yourself** in [Foundation Discussions](https://github.com/orgs/TitleChain-Foundation/discussions) and name the area where you can help.
 4. **Choose work by skill** in [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md).
-5. **Consider organization membership** after sustained, constructive participation.
+5. **Offer a provider, data, product, workforce, or training contribution** through [Build the Public Economic Data Commons](COMMONS-CONTRIBUTION-TRACKS.md) and [Discussion 22](https://github.com/orgs/TitleChain-Foundation/discussions/22).
+6. **Consider organization membership** after sustained, constructive participation.
 
 You do not need to understand every layer of the architecture before participating. The human-rooted foundation is that people should own and control their sovereign selves, while credentials validate limited claims or capabilities without making a platform the owner of the person.
 
@@ -52,6 +53,17 @@ You do not need to understand every layer of the architecture before participati
 - M5 Money and decentralized edge-economy research;
 - market data, price discovery, benchmarks, indexes and indices, CPI, GDP and new measures of productive or community value; and
 - pathways from debt-led systems toward transparent, asset-driven economic models.
+
+### Providers, products, workforce and training
+
+- independently operated products and providers that can implement one bounded layer or open interface;
+- datasets, statistical methods, data dictionaries, provenance, revisions and reproducible public-indicator research;
+- product and pilot proposals with measurable public-interest outcomes and clear limitations;
+- public-safe expertise summaries, work samples and holder-selected M5-CV capability evidence;
+- role-transition needs, transparent requirements, skills gaps and human-reviewed matching; and
+- curriculum, mentoring, assessment and instructor pathways that prepare people to contribute safely.
+
+Use [Build the Public Economic Data Commons](COMMONS-CONTRIBUTION-TRACKS.md) for the six contribution tracks, stack-layer map, proposal questions, economic-data safeguards, and privacy boundaries. A provider may contribute one component or adapter; participation does not require adoption of the full M5 implementation.
 
 ### Law, institutions and governance
 

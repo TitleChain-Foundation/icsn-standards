@@ -24,6 +24,16 @@ A public SOPHIA role never grants authority by itself. Consequential roles requi
 
 The current public-review export contains **636 role records across 37 tracks**. It is a discovery and curriculum taxonomy; it is not a claim that 636 positions are open, funded, appointed, licensed, or approved.
 
+Use the [SOPHIA 37-Track Participation Map](docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md) to browse every canonical track through eight public navigation families and connect a track to provider, data, product, workforce, training, or assurance contributions.
+
+## Explore the M5-CV pathway
+
+**[Explore the M5POD-to-M5-CV demo journey](https://m5podactivationdemo.netlify.app/demo)** · **[Join the waitlist and share your skills](https://m5podactivationdemo.netlify.app/)**
+
+The full demo walks through the illustrative M5POD activation journey and explains where M5-CV follows. The separate waitlist is open to everyone and provides the optional activation path toward sharing skills in M5-CV. Neither is required to review or contribute to ICSN standards.
+
+The demo does not create a credential, role, appointment, account, or authority. A waitlist reservation remains pending until an applicable pilot opens and does not guarantee activation, training, employment, funding, matching, or admission to a cohort.
+
 A person may use a SOPHIA role as something they perform, are learning toward, can demonstrate, can teach/mentor/review, or may offer as a service subject to applicable authority and law. People may propose roles that are not yet in the registry.
 
 Public role definitions, schemas, curriculum, and conformance rules may live in this repository. Private identity, credentials, wallet/account data, evidence, contracts, and availability remain private unless deliberately disclosed by the holder.

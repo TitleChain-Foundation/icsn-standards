@@ -13,11 +13,11 @@ Unless an artifact expressly states otherwise, material labeled **Public Review 
 
 ## GitHub Discussion
 
-Use [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19) for the accessible overview, introductions, general questions, and comments that span more than one recommendation.
+Use [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19) for the accessible overview, introductions, general questions, and comments that span more than one recommendation. The [featured public-review visuals](../../../assets/public-review/README.md) provide illustrated entry points into wallet authority, the economic stack, and the private M5POD boundary.
 
 ## GitHub Issues
 
-Use the [SEC recommendation review queue](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue%20state%3Aopen%20label%3Aregulatory-review%20label%3Asec) for focused review. There is one issue for each recommendation:
+Use the [SEC S7-2026-30 public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2/views/2) to follow all seven recommendations through Todo, In Progress, and Done, with each card showing its review focus, Foundation response stage, labels, milestone, and SEC deadline. The [SEC milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2) provides the deadline-progress summary, while the [filtered SEC review queue](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue%20state%3Aopen%20label%3Aregulatory-review%20label%3Asec) provides the same issues with their review-type labels. There is one issue for each recommendation:
 
 1. [Voluntary open standards](https://github.com/TitleChain-Foundation/icsn-standards/issues/56)
 2. [Credential-bound participant identifiers](https://github.com/TitleChain-Foundation/icsn-standards/issues/57)

@@ -15,6 +15,10 @@ The artifacts below are separate, evolving materials that participants may revie
 
 ## Visual overview
 
+[![From a bare wallet address to a layered, human-authorized foundation](../assets/public-review/m5-wallet-layer-stack.png)](../assets/public-review/README.md)
+
+The featured wallet visual contrasts identifier-only operation with credential-bound, human-gated authority and evidence. See all three [featured public-review visuals and accessible descriptions](../assets/public-review/README.md).
+
 [![Sovereign M5POD system diagram showing the public commons, human authority root, private M5POD boundary, intelligence layer, and legal/governance boundary](../architecture/rendered/m5-sovereign-stack.svg)](../architecture/rendered/m5-sovereign-stack.svg)
 
 This **Public Review Draft** diagram provides a broad system context for several artifacts below. It is not an exhibit to the SEC filing and does not represent deployment, certification, regulatory approval, or production readiness. Review the [accessible description](../architecture/M5POD-MEMBER-ACTIVATION-ALT-TEXT.md), [maintained Mermaid source](../architecture/m5-sovereign-stack.mmd), or alternate [PNG](../architecture/rendered/m5-sovereign-stack.png) and [PDF](../architecture/rendered/m5-sovereign-stack.pdf) formats.
@@ -83,6 +87,8 @@ The following are public Draft artifacts in the ICSN standards repository. Each 
 - [M5Ecosystem Approval Boundary](../M5ECOSYSTEM-APPROVAL-BOUNDARY.md)
 
 ## Public review
+
+Use the [SEC S7-2026-30 public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2/views/2) to follow each recommendation through the Foundation response stages. Track deadline progress in the [SEC public-review milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2).
 
 Choose the narrowest suitable channel:
 

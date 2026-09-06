@@ -4,6 +4,14 @@
 
 ICSN is the public standards program of the TitleChain Foundation. It publishes implementation-neutral standards and clearly labeled M5 reference architectures so governments, transfer agents, financial institutions, engineers, statisticians, economists, researchers, and other reviewers can inspect how identity, authority, title, transfer, and machine action can remain attributable and auditable as records move from paper to digital systems.
 
+## See the public architecture
+
+[![M5POD private member stack rooted in ICSN open standards, human identity, and member authority](assets/public-review/m5pod-stack.png)](assets/public-review/README.md)
+
+**Help build the public commons for the digital-asset edge economy.** Companies, data providers, researchers, educators, workforce experts, and builders can [choose a commons contribution track](COMMONS-CONTRIBUTION-TRACKS.md) and introduce a proposal in [Discussion 22](https://github.com/orgs/TitleChain-Foundation/discussions/22). You can also open the [SEC public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2/views/2), review the [featured architecture visuals](assets/public-review/README.md), or join the [SEC artifact discussion](https://github.com/orgs/TitleChain-Foundation/discussions/19). The public economic-data work concerns privacy-preserving, provenance-aware indicators and methodologies under open review; it is not represented as an official statistic, regulated benchmark, or deployed service.
+
+> **The M5 architecture makes AI operationally useful without allowing AI, credentials, wallets, employees, contractors, APIs, or third-party systems to become unaccountable sources of authority.**
+
 ## Canonical public architecture
 
 The public M5 reference path is:
@@ -34,6 +42,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 | --- | --- |
 | Human identity and authority | [`docs/M5IAM-M5HUM-AUTHORITY-ARCHITECTURE.md`](docs/M5IAM-M5HUM-AUTHORITY-ARCHITECTURE.md) |
 | M5-CV / SOPHIA capability graph | [`docs/M5-CV-SOPHIA-CAPABILITY-ARCHITECTURE.md`](docs/M5-CV-SOPHIA-CAPABILITY-ARCHITECTURE.md) |
+| SOPHIA 37-track participation map | [`docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md`](docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md) |
 | Six-Gate authority control | [`docs/M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md`](docs/M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md) |
 | M5MST asset minting + TitleChain registration | [`docs/M5MST-ASSET-MINTING-AND-TITLECHAIN-REGISTRATION.md`](docs/M5MST-ASSET-MINTING-AND-TITLECHAIN-REGISTRATION.md) |
 | Transfer-agent reference architecture | [`docs/TRANSFER-AGENT-DIGITAL-ASSET-REFERENCE-ARCHITECTURE.md`](docs/TRANSFER-AGENT-DIGITAL-ASSET-REFERENCE-ARCHITECTURE.md) |
@@ -47,6 +56,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 | Ricardian three-part standard | [`docs/RICARDIAN-THREE-PART-AGREEMENT-STANDARD.md`](docs/RICARDIAN-THREE-PART-AGREEMENT-STANDARD.md) |
 | Credentialed authority registry | [`docs/CREDENTIALED-AUTHORITY-REGISTRY.md`](docs/CREDENTIALED-AUTHORITY-REGISTRY.md) |
 | Economic architecture | [`wiki-source/M5-Economic-Architecture-and-Roadmap.md`](wiki-source/M5-Economic-Architecture-and-Roadmap.md) |
+| Provider, data, workforce, and training contributions | [Build the Public Economic Data Commons](COMMONS-CONTRIBUTION-TRACKS.md) |
 | RFCs | [`rfcs/`](rfcs/) |
 | Schemas | [`schemas/`](schemas/) |
 
@@ -94,6 +104,8 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 | Adopted M5 member-authority governance | [docs/index.md](docs/index.md) |
 | Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Work by skill | [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md) |
+| Commons contribution tracks | [Providers, economic data, products, workforce, training, and assurance](COMMONS-CONTRIBUTION-TRACKS.md) |
+| SOPHIA roles and learning pathways | [All 37 tracks organized into eight participation families](docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md) |
 | Participation | [PARTICIPATE.md](PARTICIPATE.md) |
 | Security reporting | [SECURITY.md](SECURITY.md) |
 | Licensing | [LICENSE.md](LICENSE.md) and [license matrix](LICENSES/LICENSE-MATRIX.md) |
