@@ -6418,7 +6418,7 @@
       "id": "urn:m5:role:m5-dev-026:0242:v1",
       "catalogVersion": "0.1.0-public-review",
       "status": "public-review-draft",
-      "title": "Sovereign MGAST Consensus Protocol Developer",
+      "title": "Sovereign M5AST Asset Token Protocol Developer",
       "legacyTitle": null,
       "roleCode": "M5-DEV-026",
       "track": "Developer / Technical",
@@ -8683,12 +8683,12 @@
       }
     },
     {
-      "id": "urn:m5:role:m5ast:0326:v1",
+      "id": "urn:m5:role:m5astm:0326:v1",
       "catalogVersion": "0.1.0-public-review",
       "status": "public-review-draft",
       "title": "M5 Agentic Supply Trust Manager",
       "legacyTitle": "New Role — no legacy equivalent",
-      "roleCode": "M5AST",
+      "roleCode": "M5ASTM",
       "track": "Agentic Finance",
       "sophia": {
         "code": null,

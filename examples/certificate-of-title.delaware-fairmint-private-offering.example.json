@@ -1,0 +1,193 @@
+{
+  "certificateId": "urn:titlechain:certificate:delaware-private-issuer-example",
+  "titleContainerRef": "urn:titlechain:container:acme-delaware-common",
+  "subject": {
+    "assetRef": "urn:issuer:acme-delaware:common-equity",
+    "assetType": "private-company-equity",
+    "underlyingM5Class": "M3",
+    "financialWrapperState": "M4",
+    "jurisdictionalSecurityState": "security-status-recorded-from-applicable-authority",
+    "legalInstrumentType": "common-stock",
+    "externalLegalStatusRef": "urn:legal-status:illustrative-private-security",
+    "authoritativeRecordRef": "urn:record:fairmint-ta:issuer-register-example"
+  },
+  "currentState": {
+    "status": "active-private-equity-record",
+    "effectiveAt": "2026-09-05T00:00:00Z",
+    "restrictionState": "private-offering-transfer-restrictions-active",
+    "transferState": "permissioned",
+    "recordkeeperRef": "urn:entity:fairmint-ta"
+  },
+  "accountContexts": [
+    {
+      "entityRef": "urn:entity:acme-delaware-inc",
+      "m5AccountContext": "M3-BOB",
+      "relationship": "issuer-company",
+      "jurisdictionChainRef": "delawarechain.eth",
+      "officialRegistryRef": "urn:official-registry:delaware-sos:example",
+      "standingState": "good-standing",
+      "standingEvidenceRef": "urn:evidence:delaware-good-standing:example"
+    },
+    {
+      "entityRef": "urn:entity:fairmint-ta",
+      "m5AccountContext": "M4-BOI",
+      "relationship": "sec-registered-transfer-agent",
+      "jurisdictionChainRef": "californiachain.eth",
+      "officialRegistryRef": "urn:sec:transfer-agent-registration:fairmint-ta",
+      "standingState": "good-standing",
+      "standingEvidenceRef": "https://www.fairmint.com/"
+    }
+  ],
+  "principals": [
+    {
+      "principalRef": "urn:principal:issuer-authorized-officer",
+      "principalType": "M5HUM",
+      "tcidRef": "urn:tcid:private:issuer-officer",
+      "publicOrPairwiseTcidRef": "urn:tcid:pairwise:issuer-officer:transfer-agent",
+      "relationship": "issuer-authorized-officer",
+      "identityState": "active",
+      "authorityState": "active",
+      "credentialRefs": [
+        "urn:credential:corporate-authority:example"
+      ],
+      "delegationRefs": [
+        "urn:delegation:issuer-to-transfer-agent:example"
+      ],
+      "agentRefs": [
+        "urn:m5agt:issuer-operations:example"
+      ]
+    }
+  ],
+  "regulatedParticipants": [
+    {
+      "entityRef": "urn:entity:fairmint-ta",
+      "role": "registered-transfer-agent",
+      "m5AccountContext": "M4-BOI",
+      "regulatorOrAuthorityRef": "https://www.sec.gov/",
+      "registrationOrExemptionRef": "urn:sec:transfer-agent-registration:fairmint-ta",
+      "jurisdictionChainRef": "californiachain.eth",
+      "officialJurisdictionRef": "urn:jurisdiction:united-states-federal-securities",
+      "status": "active",
+      "authorityCapabilities": [
+        "maintain-authoritative-shareholder-register",
+        "record-issuance",
+        "record-transfer",
+        "apply-transfer-restrictions",
+        "record-corrections"
+      ],
+      "evidenceRefs": [
+        "https://www.fairmint.com/"
+      ]
+    },
+    {
+      "entityRef": "urn:entity:securities-broker-or-ats:example",
+      "role": "broker-dealer-or-ats-for-eligible-secondary-transaction",
+      "m5AccountContext": "M4-BOI",
+      "regulatorOrAuthorityRef": "urn:authority:sec-finra",
+      "registrationOrExemptionRef": "urn:registration:broker-dealer-or-ats:required",
+      "jurisdictionChainRef": "texaschain.eth",
+      "officialJurisdictionRef": "urn:jurisdiction:example-texas-operations",
+      "status": "illustrative",
+      "authorityCapabilities": [
+        "receive-eligible-order",
+        "route-or-match-subject-to-venue-rules"
+      ],
+      "evidenceRefs": []
+    }
+  ],
+  "jurisdictions": [
+    {
+      "jurisdictionRef": "urn:jurisdiction:delaware",
+      "jurisdictionChainRef": "delawarechain.eth",
+      "relationship": "entity-formation-and-good-standing",
+      "officialAuthorityRef": "urn:authority:delaware-secretary-of-state",
+      "evidenceRef": "urn:evidence:delaware-good-standing:example"
+    },
+    {
+      "jurisdictionRef": "urn:jurisdiction:united-states-federal-securities",
+      "jurisdictionChainRef": "unitedstateschain.eth",
+      "relationship": "securities-and-transfer-agent-regulatory-context",
+      "officialAuthorityRef": "https://www.sec.gov/"
+    },
+    {
+      "jurisdictionRef": "urn:jurisdiction:texas",
+      "jurisdictionChainRef": "texaschain.eth",
+      "relationship": "illustrative-broker-or-operations-jurisdiction",
+      "officialAuthorityRef": "urn:authority:texas:applicable-official-source"
+    }
+  ],
+  "m5mstOrigin": {
+    "eventRef": "urn:m5mst:acme-common-origin",
+    "originatorRef": "urn:principal:issuer-authorized-officer",
+    "authorizedAgentRef": "urn:m5agt:issuer-operations:example",
+    "sovereignRegistrationRef": "urn:registry:titlechain:delawarechain:acme",
+    "mintAuthorityRef": "urn:authority:board-and-issuer:example",
+    "authorizedSupplyOrUniquenessRef": "urn:evidence:authorized-shares:example",
+    "m5canonDecisionRef": "urn:m5canon:decision:origin-approved",
+    "resultingM5astRef": "urn:m5ast:acme-common-digital-representation"
+  },
+  "transferPolicy": {
+    "proposeAuthorityRefs": [
+      "urn:authority:eligible-holder-instruction"
+    ],
+    "approveAuthorityRefs": [
+      "urn:authority:transfer-agent-and-required-issuer-approval"
+    ],
+    "executeAuthorityRefs": [
+      "urn:authority:regulated-broker-or-venue-if-used"
+    ],
+    "legendPolicyRefs": [
+      "urn:policy:private-security-restrictions:example"
+    ],
+    "holderEligibilityPolicyRef": "urn:policy:eligible-private-offering-holder:example",
+    "venueEligibilityPolicyRef": "urn:policy:approved-regulated-securities-venue:example",
+    "registrationOrExemptionRef": "urn:legal:registration-or-exemption:must-be-supplied"
+  },
+  "provenance": [
+    {
+      "event": "entity-good-standing-confirmed",
+      "jurisdiction": "Delaware"
+    },
+    {
+      "event": "private-ledger-imported",
+      "to": "registered-transfer-agent-record"
+    },
+    {
+      "event": "m5mst-sovereign-registration",
+      "result": "M5AST linked to Title Container"
+    }
+  ],
+  "stateHistory": [
+    {
+      "eventRef": "urn:event:1",
+      "eventType": "ENTITY_GOOD_STANDING_VERIFIED",
+      "effectiveAt": "2026-09-01T00:00:00Z",
+      "entityRef": "urn:entity:acme-delaware-inc",
+      "jurisdictionRef": "urn:jurisdiction:delaware",
+      "evidenceRefs": [
+        "urn:evidence:delaware-good-standing:example"
+      ]
+    },
+    {
+      "eventRef": "urn:event:2",
+      "eventType": "CAPTABLE_RECORD_MIGRATED_TO_TRANSFER_AGENT",
+      "effectiveAt": "2026-09-02T00:00:00Z",
+      "principalRef": "urn:principal:issuer-authorized-officer",
+      "entityRef": "urn:entity:fairmint-ta",
+      "authorityDecisionRef": "urn:m5canon:decision:ta-migration-approved",
+      "authoritativeRecordRef": "urn:record:fairmint-ta:issuer-register-example",
+      "evidenceRefs": [
+        "urn:evidence:issuer-ta-agreement:example"
+      ]
+    },
+    {
+      "eventRef": "urn:event:3",
+      "eventType": "PRIVATE_OFFERING_POOL_ENABLED",
+      "effectiveAt": "2026-09-03T00:00:00Z",
+      "authorityDecisionRef": "urn:m5canon:decision:offering-pool-authorized",
+      "evidenceRefs": [
+        "urn:legal:registration-or-exemption:must-be-supplied"
+      ]
+    }
+  ]
+}

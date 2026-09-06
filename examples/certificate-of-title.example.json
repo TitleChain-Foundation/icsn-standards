@@ -1,0 +1,26 @@
+{
+  "certificateId": "urn:titlechain:certificate:example-001",
+  "titleContainerRef": "urn:titlechain:container:example-asset-001",
+  "assetRef": "urn:asset:example-001",
+  "assetType": "titled-rwa",
+  "m5Class": "M3",
+  "status": "active",
+  "issuedAt": "2026-09-05T00:00:00Z",
+  "issuerAuthorityRef": "urn:authority:example-issuer",
+  "m5mstOriginRef": "urn:m5mst:example-origin-event",
+  "authoritativeRecordRef": "urn:authoritative-record:example",
+  "holderOrControllerRef": "urn:holder:example-pairwise-ref",
+  "jurisdictionRefs": [
+    "urn:jurisdiction:example"
+  ],
+  "restrictionRefs": [],
+  "provenance": [
+    {
+      "event": "origin-registered",
+      "eventRef": "urn:event:example-origin"
+    }
+  ],
+  "auditRefs": [
+    "urn:audit:example-receipt"
+  ]
+}

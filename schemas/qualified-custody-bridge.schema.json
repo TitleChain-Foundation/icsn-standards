@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.titlechain.org/schemas/qualified-custody-bridge-v1.schema.json",
+  "title": "Qualified Custody Bridge",
+  "description": "Vendor-neutral public schema for custody qualification, reserve/asset evidence, authorization, reconciliation, and failover references.",
+  "type": "object",
+  "required": [
+    "custodyBridgeId",
+    "custodianRef",
+    "jurisdictionRefs",
+    "authorityRefs",
+    "assetScope",
+    "evidencePolicy"
+  ],
+  "properties": {
+    "custodyBridgeId": {
+      "type": "string"
+    },
+    "custodianRef": {
+      "type": "string"
+    },
+    "jurisdictionRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authorityRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assetScope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "segregationPolicyRef": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reserveOrAssetEvidenceRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approvalPolicyRef": {
+      "type": "string"
+    },
+    "reconciliationPolicyRef": {
+      "type": "string"
+    },
+    "failoverPolicyRef": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidencePolicy": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "active",
+        "suspended",
+        "retired"
+      ]
+    }
+  }
+}

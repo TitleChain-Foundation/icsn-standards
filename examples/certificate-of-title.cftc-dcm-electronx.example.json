@@ -1,0 +1,97 @@
+{
+  "certificateId": "urn:titlechain:certificate:cftc-dcm-energy-derivative-example",
+  "titleContainerRef": "urn:titlechain:container:energy-derivative-example",
+  "subject": {
+    "assetRef": "urn:contract:electricity-derivative-example",
+    "assetType": "regulated-derivative-contract-record",
+    "underlyingM5Class": "M2",
+    "financialWrapperState": "M4",
+    "jurisdictionalSecurityState": null,
+    "legalInstrumentType": "electricity-derivative",
+    "externalLegalStatusRef": "urn:cftc:derivatives-status:example",
+    "authoritativeRecordRef": "urn:record:dcm-clearing:example"
+  },
+  "currentState": {
+    "status": "venue-eligible-if-contract-and-participants-permitted",
+    "effectiveAt": "2026-09-05T00:00:00Z",
+    "transferState": "regulated-derivatives-market-path"
+  },
+  "accountContexts": [
+    {
+      "entityRef": "urn:entity:electron-exchange-dcm",
+      "m5AccountContext": "M4-BOI",
+      "relationship": "cftc-designated-contract-market",
+      "jurisdictionChainRef": "unitedstateschain.eth",
+      "officialRegistryRef": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizations",
+      "standingState": "good-standing",
+      "standingEvidenceRef": "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizations"
+    }
+  ],
+  "principals": [
+    {
+      "principalRef": "urn:principal:authorized-market-participant",
+      "principalType": "M5HUM",
+      "tcidRef": "urn:tcid:private:market-participant",
+      "publicOrPairwiseTcidRef": "urn:tcid:pairwise:participant:dcm",
+      "relationship": "authorized-trader-or-principal",
+      "identityState": "active",
+      "authorityState": "active",
+      "credentialRefs": [
+        "urn:credential:fcm-or-direct-access:as-applicable"
+      ],
+      "delegationRefs": [],
+      "agentRefs": [
+        "urn:m5agt:trading-operations:example"
+      ]
+    }
+  ],
+  "regulatedParticipants": [
+    {
+      "entityRef": "urn:entity:electron-exchange-dcm",
+      "role": "cftc-designated-contract-market",
+      "m5AccountContext": "M4-BOI",
+      "regulatorOrAuthorityRef": "https://www.cftc.gov/",
+      "registrationOrExemptionRef": "urn:cftc:dcm-designation:electron-exchange",
+      "jurisdictionChainRef": "unitedstateschain.eth",
+      "officialJurisdictionRef": "urn:jurisdiction:united-states-commodity-derivatives",
+      "status": "active",
+      "authorityCapabilities": [
+        "operate-designated-contract-market-subject-to-cftc-order-and-rules"
+      ],
+      "evidenceRefs": [
+        "https://www.cftc.gov/IndustryOversight/IndustryFilings/TradingOrganizations",
+        "https://www.electronx.com/news-insights-collections/electronx-receives-cftc-approval-for-intermediated-market-access"
+      ]
+    }
+  ],
+  "jurisdictions": [
+    {
+      "jurisdictionRef": "urn:jurisdiction:united-states-commodity-derivatives",
+      "jurisdictionChainRef": "unitedstateschain.eth",
+      "relationship": "cftc-regulatory-context",
+      "officialAuthorityRef": "https://www.cftc.gov/"
+    }
+  ],
+  "m5mstOrigin": null,
+  "transferPolicy": {
+    "proposeAuthorityRefs": [
+      "urn:authority:authorized-market-participant"
+    ],
+    "approveAuthorityRefs": [
+      "urn:authority:venue-and-intermediary-rules-as-applicable"
+    ],
+    "executeAuthorityRefs": [
+      "urn:authority:dcm-or-fcm-path-as-applicable"
+    ],
+    "legendPolicyRefs": [],
+    "holderEligibilityPolicyRef": "urn:policy:market-access-and-participant-eligibility",
+    "venueEligibilityPolicyRef": "urn:policy:electronx-contract-and-access-rules",
+    "registrationOrExemptionRef": "urn:cftc:dcm-designation:electron-exchange"
+  },
+  "provenance": [
+    {
+      "event": "regulated-venue-status-resolved-from-cftc-source"
+    }
+  ],
+  "stateHistory": []
+}
