@@ -1,5 +1,9 @@
 # TitleChain Foundation Public Record for SEC Transfer Agent Rules
 
+This repository contains TitleChain Foundation's filed public comment, supporting materials, evolving public-review artifacts, and request for feedback regarding the SEC's proposed modernization of rules and forms for registered transfer agents, File No. **S7-2026-30**. The proposal addresses an increasingly electronic, distributed-ledger-enabled, and automated environment for transfer-agent operations.
+
+> **The M5 architecture makes AI operationally useful without allowing AI, credentials, wallets, employees, contractors, APIs, or third-party systems to become unaccountable sources of authority.**
+
 - **Agency and matter:** U.S. Securities and Exchange Commission — Transfer Agent Rules
 - **Filing date:** September 5, 2026
 - **File number:** S7-2026-30
@@ -22,6 +26,18 @@ For accessibility and navigation, the repository also provides non-authoritative
 ## Plain-language recommendation summary
 
 TitleChain Foundation recommends voluntary, implementation-neutral open standards for interoperable transfer-agent records; credential-bound participant identifiers that distinguish wallets from accountable authority; technology-neutral disclosures on Forms TA-1 and TA-2; machine-readable restrictive legends and transfer rights; pre-activation controls for automated agents; separation of origination authority from later transfer authority; and a reference state model that preserves the underlying right as wrappers and regulatory states change.
+
+### Our position
+
+TitleChain Foundation supports modernization of transfer-agent regulation while preserving the legal accountability, official recordkeeping responsibility, and supervisory role of registered transfer agents. As securities records, investor identifiers, restrictive legends, and transfer workflows become digital and programmable, the market needs voluntary, open, interoperable, and auditable standards—not a new generation of closed, incompatible proprietary ledgers.
+
+The Foundation offers the TitleChain and M5Canon architecture solely as an **optional public reference model** for discussion, critique, and voluntary implementation. It does not ask the Commission to designate a Foundation architecture or registry as required infrastructure, appoint the Foundation to a regulated role, replace a registered transfer agent's official books and records, or treat a wallet, credential, token, smart contract, AI agent, or digital identifier as an independent source of legal authority.
+
+### Human authority controls automation
+
+> **Humans and accountable institutions authorize; AI agents and automated systems act only within explicit, verifiable, and revocable limits.**
+
+Before a consequential action is permitted, a system should be able to verify the accountable principal, current role and delegated authority, jurisdiction and governing policy, permitted purpose and scope, required approvals, revocation status, and tamper-evident evidence of the authorization decision. If those conditions are incomplete, expired, revoked, altered, or outside the authorized scope, the system should fail closed.
 
 ## Public review
 

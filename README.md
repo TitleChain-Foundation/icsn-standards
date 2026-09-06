@@ -10,6 +10,8 @@ ICSN is the public standards program of the TitleChain Foundation. It publishes 
 
 **Help build the public commons for the digital-asset edge economy.** Review the [featured architecture visuals](assets/public-review/README.md), join [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19), or track the [SEC Transfer Agent Rules public-review milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2). The public economic-data work concerns privacy-preserving, provenance-aware indicators and methodologies under open review; it is not represented as an official statistic, regulated benchmark, or deployed service.
 
+> **The M5 architecture makes AI operationally useful without allowing AI, credentials, wallets, employees, contractors, APIs, or third-party systems to become unaccountable sources of authority.**
+
 ## Canonical public architecture
 
 The public M5 reference path is:
