@@ -1,0 +1,785 @@
+TitleChain Foundation SEC S7-2026-30 Substantive Public Comment
+Accessible-text derivative of the public-release PDF. The PDF is authoritative.
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 3 of 21
+Distribution copy — prepared September 5, 2026
+Proposed Rule: Transfer Agent Rules (17 CFR Parts 240 and 249b; Division of Trading
+and Markets)
+RIN: 3235-AL55
+SEC issue date: September 1, 2026
+Federal Register publication date: September 4, 2026 (Vol. 91, No. 171)
+Comment deadline: November 3, 2026
+Commenter: TitleChain Foundation, through Pamela Norton, Founder & Executive Director
+and Sovereign Chief Architect of the TitleChain Registry.
+Filing capacity: Foundation-authorized signatory
+Contact: Pamela Norton, Founder & Executive Director, TitleChain Foundation; Sovereign
+Chief Architect, TitleChain Registry
+Email: p_norton@titlechain.world
+Website: https://titlechainfoundation.org
+Public standards: https://github.com/TitleChain-Foundation/icsn-standards
+Interest of the commenter. TitleChain Foundation develops and publishes open, interoperable
+reference architectures for title, identity, authority, and auditability in tokenized and distributed-
+ledger-based securities recordkeeping through its public website (titlechainfoundation.org) and
+its public ICSN standards repository (TitleChain-Foundation/icsn-standards). The Foundation
+does not seek to operate, and does not propose that it operate, as a transfer agent, broker-dealer,
+alternative trading system, clearing agency, exchange, custodian, securities depository, transfer-
+agent service provider, or pricing, listing, or liquidity venue. The Foundation's submission is
+offered solely as public-interest technical input on the infrastructure the proposed rulemaking
+presupposes but does not yet specify.
+Public review status of referenced artifacts. The reference models discussed in this comment
+are not merely conceptual: the Foundation publishes them as public Draft RFCs and JSON
+Schemas under open review (status vocabulary: Draft, Candidate, Stable, Deprecated) (ICSN
+RFC index). They are offered as examples of what interoperable, auditable, human-approval-
+gated infrastructure could look like, not as adopted standards or mandated designs. Appendix B
+lists the specific artifacts.
+I. Core thesis
+The Commission's proposal appropriately modernizes transfer-agent rules and forms for "the
+technological environment in which transfer agents operate, including the widespread use of
+electronic record-keeping and communications, and the services they provide to issuers,
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 4 of 21
+investors, and other market intermediaries" (Federal Register). The proposal amends a broad set
+of existing transfer-agent rules (including Rules 17ad-1, 17ad-2, 17ad-3, 17ad-6, 17ad-7, 17ad-9,
+17ad-10, 17ad-12, 17ad-13, and 17ad-17), rescinds Rule 17ad-4, adopts two new rules (Rule
+17ad-30, Compliance, and Rule 17ad-31, Restrictive legends), and amends Forms TA-1 and
+TA-2 and the registration rules 17ac2-1 and 17ac2-2. The proposal reflects that a registered
+transfer agent may, under existing staff guidance, use distributed-ledger technology as its official
+Master Security holder File while remaining subject to federal securities-law requirements
+concerning record-keeping, reporting, examinations, and operational obligations (Federal
+Register).
+The Foundation respectfully submits that this modernization is necessary but incomplete in one
+respect: it presupposes a neutral public reference architecture for title, identity, authority,
+jurisdiction, credentialing, and auditability that the rule text does not yet provide. Without
+such a reference architecture, the proposal leaves each transfer agent to construct its own
+proprietary approach to DLT-based Master Security holder Files, wallet-based investor
+identifiers, machine-readable restrictive legends, and automated processing. The result would be
+fragmentation, inconsistent investor protection, and reduced interoperability — the very harms
+the proposal seeks to remedy.
+The Foundation therefore recommends that the Commission include in the adopting release, or in
+supplementary guidance, a request for comment and a direction toward open, interoperable,
+credential-bound, jurisdiction-aware DLT record-keeping standards for transfer agents. The
+remainder of this comment identifies the specific elements such a reference architecture should
+contain and ties each to the provisions of the proposal.
+II. Open standards, public-commons infrastructure, and interoperability
+TitleChain Foundation is a public-commons foundation committed to developing and
+maintaining an open-source, decentralized reference architecture for title, provenance,
+authority, and ownership records. The Foundation's M5Canon framework provides a
+standards-based governance and policy layer intended to support infrastructure that is
+interoperable, auditable, portable, resilient, and capable of being implemented by many
+independent organizations rather than controlled by a single platform.
+The Foundation's public materials describe a long-term stewardship and non-capture model
+anchored by the TitleChain Sovereign Purpose Trust, designed for long-duration public
+stewardship and intended to reduce the risk that foundational infrastructure becomes controlled
+by any single company, government, institution, vendor, or private interest (TitleChain
+Foundation).
+The Foundation submits this architecture solely as an optional, publicly reviewable reference
+model. We do not ask the Commission to designate TitleChain, M5Canon, or any other registry
+as a required system; to appoint the Foundation as an operator or administrator of regulated
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 5 of 21
+records; or to permit any public or decentralized registry to supersede the official books and
+records that applicable law assigns to a registered transfer agent, issuer, or other regulated entity.
+Instead, we recommend that the Commission encourage the development and voluntary adoption
+of open, interoperable, machine-readable standards for distributed-ledger and digital-asset
+record-keeping. Such standards could allow transfer agents, issuers, custodians, broker-dealers,
+regulated trading venues, financial institutions, and other authorized service providers to
+exchange verifiable information concerning identity, authority, title, provenance, restrictions,
+ownership state, and permitted transfers without requiring every participant to operate within the
+same proprietary system.
+Under this model, each regulated entity would continue to control and remain responsible for its
+own legally authoritative records, compliance obligations, supervisory procedures, security
+controls, governance, and regulated functions. Open standards would provide the
+interoperability layer between those systems, not replace the institutions or legal
+responsibilities that govern them.
+This distinction becomes increasingly important as markets move from paper and institution-
+specific databases toward programmable records, distributed ledgers, digital assets, and AI-
+assisted operations. Without common standards, the market risks replacing today's fragmented
+databases with a new generation of incompatible proprietary ledgers and platform-controlled
+digital records.
+The Foundation therefore proposes a different path: a durable public technical commons in
+which independent registries and regulated systems can interoperate while authority remains
+distributed among the legally responsible parties.
+In practical terms, the reference model is designed to allow:
+> one issuer to use one system, a registered transfer agent another, a custodian another,
+and a broker or regulated venue another—while each can verify the same underlying title,
+provenance, authority, restrictions, and state-transition evidence without surrendering
+control of its own authoritative records.
+Planned decentralized commons governance
+The Foundation's present legal and operating entities will remain responsible for their existing
+obligations while the public-commons infrastructure is being built. Upon funding of the team
+required to support the standards program, activation of the required member base, adoption of
+governing principles, and completion of appropriate legal, tax, and regulatory review, the
+Foundation intends to organize a separate Wyoming Decentralized Unincorporated
+Nonprofit Association (DUNA) for the decentralized stewardship and member governance of
+eligible TitleChain/ICSN public-commons activities.
+Wyoming's DUNA framework requires at least 100 members joined by mutual consent for a
+common nonprofit purpose and permits governing principles to include agreements, consensus
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 6 of 21
+mechanisms, smart contracts, and enacted governance proposals. The contemplated DUNA
+would provide a member-governed vehicle for eligible commons activities; it would not cause
+software or autonomous agents to become legal decision-makers, eliminate accountable human
+authority, alter the duties of regulated participants, or automatically absorb existing TitleChain or
+M5Labs entities.
+Consistent with the M5HUM/M5AGT authority model, membership alone would not confer
+operational authority. Administrator powers, regulated roles, credentials, delegated agent
+permissions, and executable actions would remain separately defined, scoped, revocable, and
+auditable under the governing principles, applicable law, and M5Canon controls. TitleChain
+Foundation Labs (M5Labs), operating from Beverly Hills, California, is intended to support
+engineering, research, standards implementation, and program operations while remaining
+responsible for its own legal and operating obligations unless a later restructuring is separately
+approved and completed.
+The DUNA roadmap is a future governance plan and is not represented in this comment as
+already formed or activated.
+The objective is not to centralize authority or remove regulated intermediaries. It is to provide a
+shared public language for trustworthy digital records so that the transition from paper to
+digital assets strengthens, rather than weakens, provenance, accountability, portability,
+competition, and regulatory visibility.
+For public and regulatory materials, this comment uses Title Rights & Provenance Record as
+the plain-language name for the structured TitleChain record that preserves the underlying right,
+provenance, authority, restrictions, lifecycle, and linked evidence. The internal M5/TitleChain
+architecture may refer to the same construct as the Title Container.
+III. M5IAM / M5HUM and credential-bound participant identifiers
+Commissioner Peirce has specifically asked whether transfer-agent rules should continue to
+require names and physical addresses or allow "other identifiers, such as email and digital
+wallet addresses" as securities move onchain (SEC statement, Sept. 1, 2026).
+The Foundation respectfully submits that a bare wallet address is an identifier, not authority.
+A wallet address alone does not establish the accountable person or legal entity, the person's
+current role, jurisdiction, authority scope, professional or organizational standing, revocation
+status, or the evidence supporting a transfer instruction.
+The M5 reference architecture separates these functions:
+M5IAM
+  ↓
+TCID / M5HUM — accountable human principal
+  ↓
+M5POD — holder-controlled private identity / credential evidence
+  ↓
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 7 of 21
+M5-CV / SOPHIA — selected capability, role, and credential state
+  ↓
+credential-bound wallet / delegated M5AGT
+  ↓
+M5Canon authority evaluation
+M5IAM is the identity-and-access floor. M5HUM identifies the accountable human principal.
+M5-CV/SOPHIA may describe current capability and role evidence, while any delegated
+M5AGT remains subordinate to the current authority of its accountable M5HUM or legal entity.
+No capability profile, credential, wallet, or agent becomes an independent source of legal
+authority.
+This model does not replace customer-identification, transfer-agent registration, issuer records,
+sanctions controls, professional licensing, or any securities-law obligation. It provides a
+standards-based way to bind a digital identifier to purpose-limited, current, revocable authority
+without requiring the wallet address itself to carry legal meaning.
+Specific recommendation: The Commission should invite comment on whether a credential-
+bound participant-identifier model; including accountable-principal identity, current
+role/credential state, jurisdiction, revocation, and evidence would improve the reliability of DLT-
+based transfer-agent record-keeping alongside existing investor-identification obligations.
+IV. Known entity, current human authority, and jurisdiction; Forms TA-1
+and TA-2
+The proposal would amend Forms TA-1 and TA-2; amend Rule 17ac2-1 to change the
+registration effectiveness period; and amend Rule 17ac2-2 to require correction of materially
+inaccurate, misleading, or incomplete Form TA-2 information within the proposed period after
+discovery (Federal Register).
+For modern digital workflows, the Foundation recommends separating entity resolution from
+human/agent authority. A transfer-agent system should be able to establish the legal entity or
+institution first, then determine which person currently has authority to act for it, and only then
+determine whether an automated agent is permitted to perform the exact requested function.
+The public reference architecture expresses this as:
+KNOWN LEGAL ENTITY / INSTITUTION
+  official identifiers + registry references
+            ↓
+ACCOUNTABLE M5HUM / LAWFUL PRINCIPAL
+            ↓
+CURRENT ROLE / APPOINTMENT / CREDENTIAL
+            ↓
+JURISDICTION + SCOPE + RESTRICTIONS
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 8 of 21
+            ↓
+BOUNDED M5AGT, IF ANY
+The broader M5 reference implementation includes JNR for jurisdiction resolution and
+SwiftBRIDGE for cross-referencing legacy institutional identifiers and account/routing
+relationships to M5 entity/account references. Those layers do not create governmental or
+regulatory authority and do not replace the authoritative issuer of a BIC, LEI, government
+identifier, professional license, or transfer-agent registration.
+The significance for Forms TA-1 and TA-2 is practical: changes in registration, employment,
+appointment, role, jurisdiction, or good standing can be recorded as current-state changes
+without erasing the identity of the person or the historical evidence of prior authorized actions.
+Specific recommendation: The Commission should invite comment on whether Forms TA-1
+and TA-2 should elicit, in a technology-neutral manner, information about DLT Master
+Securityholder Files, credential-bound identifiers, delegated/automated agents, jurisdictional
+controls, and revocation/correction governance.
+V. Machine-readable restrictive legends and transfer rights
+The proposal would adopt new Rule 17ad-31 concerning restrictive legends, including
+maintenance of a current list of issuer employees authorized to instruct a transfer agent regarding
+placement and removal of legends and controls against acting on unauthorized instructions
+(Federal Register).
+The Foundation recommends that restrictive legends and transfer conditions be representable as
+machine-readable policy objects bound to the underlying Title Rights & Provenance
+Record, rather than existing only as text attached to one token representation. Where those
+conditions are expressed through an executable agreement, the Foundation further recommends a
+Ricardian three-part representation consisting of: (1) human-readable legal terms, (2)
+machine-readable structured meaning, and (3) separately bounded executable code or
+instructions. All three representations should share the same agreement identifier, version, and
+content digest, with an explicit conflict rule providing that executable code may not silently alter
+the controlling human-readable legal terms or the legally authoritative transfer-agent record.
+A machine-readable restriction should be able to identify its legal/source authority, jurisdiction,
+affected asset or issue, current status, permitted actors, placement/removal authority, effective
+period, required approvals, and evidence. When a wrapper, bridge, wallet, or execution rail
+changes, the restriction should remain attached to the underlying right and authoritative record
+relationship.
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 9 of 21
+This is also where authority must be granular. Permission to originate or mint a representation
+does not automatically confer permission to transfer it, approve a transfer, remove a legend,
+correct a record, freeze/hold the asset, or terminate the representation.
+The M5 reference architecture uses M5MST — Origination, Minting, Sovereign Registration,
+and Transfer Authority for the controlled origination/mint/registration state-event: the event
+records who had authority to originate the M5AST representation and the evidence supporting
+that authority. Subsequent transfer capabilities are separately scoped and revocable.
+Specific recommendation: The Commission should invite comment on whether a standards-
+based, machine-readable restrictive-legend and transfer-right format, bound to the Title Rights &
+Provenance Record rather than to a token alone, would improve transfer restriction enforcement
+and examination evidence.
+VI. M5Canon Six-Gate control for automated and AI-assisted transfer-agent
+workflows
+The proposal would adopt new Rule 17ad-30, requiring registered transfer agents to establish,
+maintain, and enforce written compliance policies and procedures, and would replace Rule
+17ad-12 with a broader risk-management framework addressing theft, loss, misuse, unauthorized
+access, and business continuity (Federal Register).
+As transfer-agent workflows become more automated, the Foundation recommends a pre-
+execution control model in which an automated agent cannot become the source of its own
+authority.
+The M5 reference implementation expresses the control as six ordered gates:
+Gate Requirement M5 reference implementation
+1 Accountable principal identity M5IAM / TCID / M5HUM
+2 Current role / credential /
+appointment
+SOPHIA + credential/authority
+registry
+3 Jurisdiction and authoritative legal
+context
+JNR / USC + external authoritative
+sources
+4 Deterministic policy and
+restrictions M5Canon
+5 Required accountable
+human/entity approval
+recorded approval / delegation
+policy
+6 Tamper-evident evidence and
+audit anchor authorization receipt / audit anchor
+If a required identity, credential, standing, jurisdiction, restriction, approval, or audit condition is
+missing, stale, expired, revoked, or outside scope, the requested capability should fail closed.
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 10 of 21
+This model can be applied before an M5AGT is activated for a transfer-agent function, not
+merely after the action for surveillance. The agent's permitted authority is the intersection of the
+principal's current authority, delegated scope, current credentials, jurisdiction, asset/issue policy,
+restrictions, approval state, and valid time window.
+The architecture is designed to reduce rogue-agent exposure by preventing a wallet, model, or
+API key from conferring authority by itself. It does not eliminate the transfer agent's
+responsibility for its regulated functions; it makes the source, scope, approval, and evidence of
+machine action explicit and reconstructable.
+The Foundation's public authorization-decision-receipt schema illustrates this pattern through
+structured fields for principal, agent, operation, purpose, jurisdiction, policy version, decision,
+human-approval requirements, expiry, and provenance. The Foundation's M5AGT operating
+policy likewise requires a named accountable human/entity and prohibits the agent from
+independently creating or extending authority.
+Specific recommendation: The Commission should invite comment on whether the transfer-
+agent compliance and risk-management framework should contemplate pre-activation controls
+for automated agents covering accountable principal identity, current credential/appointment,
+jurisdiction, deterministic policy, required approval, revocation, and auditable evidence.
+VII. Preserving the underlying right while wrappers and legal/regulatory
+state change
+The Foundation's technical state model distinguishes the underlying asset/right from later
+financial-wrapper and jurisdictional/security-state information.
+For public reference purposes, the internal M5 model uses:
+· M1 — Money + Utility;
+· M2 — Commodities;
+· M3 — Titled / Unique / Collectible RWA;
+· M4 — Financial Wrapper; and
+· M5 — Jurisdictional Security-State Profile.
+The important transfer-agent point is not the labels themselves. It is the persistence rule: later
+wrapper, restriction, credential, correction, settlement, or legal/regulatory state must not
+erase the underlying Title Rights & Provenance Record or its history.
+External legal/regulatory classification remains separate and authoritative. M5Canon may
+evaluate and enforce the resulting state and restrictions; an internal M5 label does not determine
+whether an instrument or transaction is legally a security, commodity, investment contract, or
+other regulated arrangement.
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 11 of 21
+This separation allows a transfer agent to preserve provenance and authoritative-record linkage
+while recording changes in legends, holder eligibility, financial representation, settlement rail,
+and regulatory state over time.
+The broader M5Global architecture also includes a proposed M5 Global Index and Exchange
+public economic-intelligence layer for privacy-preserving, provenance-aware indicators and
+methodologies. That layer is an economic data/index exchange and is not a securities trading
+venue and is not necessary to the transfer-agent functions requested in this comment.
+Specific recommendation: The Commission should invite comment on whether a reference
+state model that separates the underlying right from wrapper and legal/regulatory state would
+improve provenance, restriction, correction, and settlement-state preservation across technology
+changes.
+VIII. Requested outcome
+The Foundation respectfully requests that the Commission, in the adopting release or in
+supplementary guidance:
+1. Invite comment on voluntary open-standards reference architectures for DLT-based
+Master Security holder Files (proposed Rules 17ad-9, 17ad-6, 17ad-7), including an underlying
+Title Rights & Provenance Record with append-only lifecycle history and explicit linkage to the
+legally authoritative record.
+2. Recognize, for comment, a credential-bound participant-identifier model in which a wallet
+address is bound to an accountable principal, current role/credential, jurisdiction, scope,
+revocation state, and evidence — alongside, not in lieu of, existing obligations.
+3. Consider whether Forms TA-1 and TA-2 should elicit technology-neutral information about
+DLT Master Security holder Files, credentialed identifiers, delegated/automated agents,
+jurisdictional controls, and revocation/correction governance.
+4. Consider machine-readable restrictive legends and transfer-right objects bound to the
+underlying Title Rights & Provenance Record rather than to a token alone.
+5. Consider, within proposed Rules 17ad-30 and 17ad-12, a pre-activation automated-agent
+control model covering accountable principal identity, current role/credential, jurisdiction,
+deterministic policy, required human/entity approval, revocation, and tamper-evident evidence.
+6. Invite comment on an origination-versus-transfer authority model, so the person/entity
+authorized to create or register a digital representation is not presumed to possess every later
+transfer, legend, correction, or cancellation capability.
+7. Invite comment on a reference state model that separates the underlying right from financial
+wrappers and transaction-specific legal/regulatory state for provenance and record preservation.
+The Foundation does not request that any specific standard, registry, or provider be mandated or
+designated, and does not seek to perform any regulated transfer-agent function itself. The
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 12 of 21
+Foundation maintains a documented boundary between its public commons (open standards,
+RFCs, schemas, governance, and conformance material, all publicly reviewable) and a separate
+approval authority for any restricted, production, or commercial implementation; contributing
+to or reading the public commons does not confer credentials, production rights, membership, or
+a license to perform any regulated function (M5Ecosystem Approval Boundary). This separation
+is offered to make clear that the Foundation's public-standards role is distinct from, and does not
+entail, the operation of any transfer-agent, custody, clearing, or exchange function.
+Appendix A — Glossary of commenter terms (proposed, not authoritative)
+These are the Foundation's reference-architecture terms, not established legal categories and not
+substitutes for applicable law.
+· Title Rights & Provenance Record (internal architecture term: Title Container) —
+structured record of the underlying right/asset, provenance, lifecycle, restrictions, authority,
+and related evidence; it does not displace the legally authoritative transfer-agent record where
+applicable.
+· Ricardian three-part representation — synchronized human-readable legal terms,
+machine-readable structured meaning, and separately bounded executable code/instructions
+sharing a common identifier, version, and digest; executable code does not silently override
+the controlling legal text or authoritative record.
+· Planned DUNA commons governance — contemplated future Wyoming member-governed
+vehicle for eligible public-commons activities after funding, membership, governing-
+principles, and legal/tax/regulatory requirements are satisfied; not represented as currently
+formed or activated.
+· M5IAM — identity-and-access floor of the M5 reference implementation.
+· M5HUM — accountable human principal type in the M5 reference implementation.
+· M5AGT — bounded autonomous/software agent acting under delegated authority and never
+exceeding the current authority of its accountable principal.
+· M5AST — digital asset/token representation associated with an underlying TitleChain
+record; not presumed to be the underlying legal asset or authoritative ownership record.
+· M5MST — Origination, Minting, Sovereign Registration, and Transfer Authority; records
+who had authority at origination and which later transfer, restriction, legend, correction, or
+termination capabilities are separately permitted.
+· M5Canon Six Gates — principal identity, current role/credential, jurisdiction, deterministic
+policy, required accountable approval, and evidence/audit anchoring.
+· JNR — jurisdiction naming/resolution layer that maps technical namespace references to
+authoritative external jurisdictional sources; it does not create governmental authority.
+· SwiftBRIDGE — legacy financial-institution identifier/account crosswalk to M5
+jurisdiction/account references; it is not the SWIFT network.
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 13 of 21
+· M5 Global Index and Exchange — proposed public economic data/index/methodology
+exchange; not a securities trading venue.
+· M1–M5 state model — internal technical state model separating underlying asset/right,
+financial wrapper, and jurisdictional security-state profile; it does not make a legal
+classification.
+Appendix B — Public artifacts referenced
+The following are public Draft artifacts in the ICSN standards repository. Each is under public
+review and is cited as an example of a reviewable, interoperable reference artifact — not as an
+adopted standard or a mandated design. Inclusion here does not represent that any artifact is
+deployed, credentialed, or authorized for production use.
+Artifact Type Status Relevance to this
+comment
+Transfer-Agent Digital-
+Asset Reference
+Architecture
+Reference architecture Public review
+End-to-end TA
+authority/title/evidence
+flow.
+M5IAM → M5HUM
+Human Authority
+Architecture
+Reference architecture Public review Accountable principal /
+identity root (Section III).
+M5Canon Six-Gate
+Authority and Transfer
+Control
+Control model Public review
+Pre-activation
+agent/transfer controls
+(Section VI).
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 14 of 21
+Artifact Type Status Relevance to this
+comment
+M5MST Origination and
+Transfer Authority Reference architecture Public review
+Separates
+mint/origination authority
+from transfer rights
+(Section V).
+Credentialed Authority
+Registry Reference model Public review
+Current role,
+appointment, standing,
+delegation, and
+revocation (Sections III–
+VI).
+M5-CV Capability
+Profile schema JSON Schema Public review
+Holder-controlled
+capability evidence; not
+identity or authority by
+itself.
+m5-consent-event
+schema JSON Schema Public review Permission/restriction
+lifecycle (Section V).
+m5-authorization-
+decision-receipt schema JSON Schema Public review
+Per-action
+principal/agent/purpose/j
+urisdiction/approval/evid
+ence receipt (Section VI).
+M5AGT Credentialed
+Operations Operating policy Public review
+Bounded delegated
+machine authority
+(Section VI).
+RFC 0001 — Hardware Draft RFC Draft Illustrative Title Rights &
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 15 of 21
+Artifact Type Status Relevance to this
+comment
+Onboarding Standard
+Provenance Record /
+lifecycle model (Section
+II).
+M5Ecosystem Approval
+Boundary Boundary statement Published
+Public commons vs.
+restricted/production
+implementation.
+Exhibits. The following figures accompany this comment as illustrative context; they depict
+open reference standards the Foundation publishes and do not assert that the Foundation operates
+any regulated function.
+Exhibit Title Refers to
+Exhibit 1 Open-Standards Commons
+(Context Diagram)
+The layered commons the
+comment recommends (Sections I
+–VIII).
+Exhibit 2 From Bare Wallet Address to a
+Layered Foundation
+The credential-to-enforcement
+chain and why a bare wallet
+address is insufficient (Section
+III).
+Verified rule map (proposed Transfer Agent Rules, 17 CFR Parts 240 and 249b). All
+citations verified against 91 Fed. Reg. 56946 (Sept. 4, 2026) (Federal Register):
+Proposed action Rule (17 CFR) Relevance to this comment
+Amends — defines "master
+securityholder file" Rule 17ad-9 Title container / open-standards
+MSF (Section II)
+Amends — recordkeeping incl.
+MSF, control books, transfer
+journals
+Rule 17ad-6 Append-only lifecycle /
+provenance (Section II)
+Amends — electronic
+recordkeeping, 6-yr retention Rule 17ad-7 Audit-log retention (Sections II,
+VI)
+Amends — registration
+effectiveness 30→45 days Rule 17ac2-1 Registered-agent jurisdiction
+(Section IV)
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 16 of 21
+Proposed action Rule (17 CFR) Relevance to this comment
+Amends — Form TA-2 correction
+within 60 days Rule 17ac2-2 Credential-revocation correction
+(Section IV)
+Amends Forms TA-1 / TA-2 Forms TA-1, TA-2 Disclosure of DLT/wallets/agents
+(Section IV)
+Adopts — Compliance (policies &
+procedures, board review) Rule 17ad-30 (new) Credentialed/auditable AI agents
+(Section VI)
+Replaces safeguarding with risk-
+management rule Rule 17ad-12 AI-agent controls / BCP (Section
+VI)
+Adopts — Restrictive legends Rule 17ad-31 (new) Machine-readable legends
+(Section V)
+Rescinds Rule 17ad-4 Removed exemptions
+Reference (T+1 settlement) Rule 15c6-1(a) "Promptly" / turnaround timing
+Wyoming DUNA statutory reference: Wyoming Decentralized Unincorporated Nonprofit
+Association Act, Wyo. Stat. ch. 17-32, including current 2026 amendments; official Wyoming
+Legislature materials: https://wyoleg.gov/statutes/compress/title17.pdf and
+https://wyoleg.gov/2026/SessionLaws.pdf.
+Appendix C — Source verification and public references
+Verification date: September 5, 2026.
+This comment distinguishes between primary legal/regulatory authorities and Foundation-
+authored public reference materials. Foundation materials support statements about the
+Foundation's own standards program and architecture; they are not offered as independent
+evidence of governmental endorsement, regulatory status, legal classification, or production
+certification.
+C.1 Primary legal and regulatory authorities
+Topic verified Primary source What the source supports
+SEC rulemaking identity and
+status
+SEC — Transfer Agent Rules, File
+No. S7-2026-30
+Proposed rule; Release No. 34-
+106246; SEC issue date Sept. 1,
+2026; comments due 60 days after
+Federal Register publication.
+Official proposed-rule text and
+filing instructions
+SEC Issued Version — Release
+No. 34-106246
+Rules/forms proposed for
+amendment; new Rules 17ad-30
+and 17ad-31; Form TA-1/TA-2
+changes; filing methods;
+Commission contact information.
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 17 of 21
+Topic verified Primary source What the source supports
+Federal Register publication and
+deadline
+91 Fed. Reg. 56946, Document
+No. 2026-18190
+Publication Sept. 4, 2026;
+comments close Nov. 3, 2026;
+pages 56946–57061; File No. S7-
+2026-30; Release No. 34-106246.
+DLT as official Master
+Securityholder File
+SEC Division of Trading and
+Markets FAQ — Q11
+Staff view that a registered transfer
+agent may use DLT as its official
+Master Securityholder File or a
+component thereof if all applicable
+federal securities-law requirements
+are satisfied.
+Wallet / digital identifiers in
+transfer-agent modernization
+Commissioner Hester M. Peirce —
+Sept. 1, 2026 statement
+Commissioner Peirce's request for
+comment on whether identifiers
+such as email and digital wallet
+addresses should be permitted as
+securities move onchain.
+Restrictive legends, compliance,
+and risk-management proposals
+SEC Issued Version — Release
+No. 34-106246
+Proposed Rule 17ad-31
+authorized-issuer-representative/re
+strictive-legend controls; proposed
+Rule 17ad-30 compliance policies;
+proposed amendments to Rule
+17ad-12 and related
+recordkeeping/forms.
+Wyoming DUNA statutory basis Wyoming Statutes, Title 17, Ch.
+32 and 2026 Session Laws, Ch. 25
+DUNA structure; 100-member
+threshold; common nonprofit
+purpose; governing principles;
+2026 amendments effective July 1,
+2026.
+C.2 Foundation-authored public references
+Public reference Purpose in this comment
+TitleChain Foundation
+Public description of the Foundation, ICSN standards
+program, stewardship/non-capture model, M5
+reference implementation, and public-commons
+mission.
+TitleChain Foundation / ICSN Standards on GitHub
+Public RFCs, schemas, governance, conformance
+material, reference architectures, and
+implementation-neutral standards work.
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 18 of 21
+C.3 Verification boundary
+The Foundation's technical terms — including Title Rights & Provenance Record, M5IAM,
+M5HUM, M5AGT, M5AST, M5MST, M5Canon Six Gates, JNR, SwiftBRIDGE, and M5
+Global Index and Exchange — are Foundation-defined reference-architecture terms unless an
+external source is expressly cited.
+The Foundation does not rely on a private repository as legal authority. Private implementation
+material may inform the design of public reference schemas and examples, but the legal and
+regulatory propositions in this comment are grounded in the primary public authorities listed
+above.
+Appendix D — Technical Definitions, Standards Alignment, and Minimum
+Conformance Objects
+Purpose and boundary. This appendix supplies enough technical detail to evaluate the
+Foundation’s recommendations without requiring a reviewer to follow external links. It describes
+an implementation-neutral reference model. It does not claim that any M5 component is
+registered, licensed, certified, endorsed, integrated, deployed, audited, or legally sufficient for a
+regulated activity.
+Meaning of standards alignment. In this comment, “aligned,” “compatible,” and “supported”
+mean that the architecture is designed to map to, transport, reference, or validate data expressed
+through an external specification. Those terms do not assert full conformance, certification,
+formal partnership, trademark permission, or endorsement. Applicable law, official registries,
+regulated entities, and authoritative records remain controlling.
+D.1 Authority is not execution
+A cryptographic key, wallet address, account identifier, API credential, software agent, or model
+endpoint can identify or authenticate a technical actor, but it does not by itself establish current
+legal authority. Authority must be derived from an accountable human or legal entity and
+evaluated against current role, credential, jurisdiction, purpose, scope, restrictions, approvals,
+expiry, suspension, and revocation state.
+An automated agent may prepare, route, or execute an instruction only within delegated authority
+already established by an accountable principal. The agent may not issue its own credential,
+expand its own scope, waive an approval, select a different jurisdiction, or treat successful
+technical execution as proof of legal authorization. This separation reduces rogue-agent exposure
+by preventing the agent from becoming the source of its own authority.
+D.2 Credential-bound participant and authority tuple
+A transfer instruction should resolve, directly or by authoritative reference, the following
+minimum tuple: principal identifier; represented entity; current role or appointment; credential
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 19 of 21
+issuer and status source; jurisdiction; authorized purpose and action; asset or issue scope;
+permitted counterparties or destinations; monetary or quantity limits; required approvals;
+effective time and expiry; revocation or suspension state; policy version; and evidence digest.
+Identity may persist while authority changes or ends.
+D.3 Minimum conformance objects
+Object Minimum content Regulatory purpose
+Authority proof
+Principal, represented entity, role,
+credential/status source, jurisdiction,
+scope, expiry, revocation state,
+policy version, evidence digest.
+Shows why the actor was authorized
+at the relevant time.
+Transfer-event receipt
+Issue and asset identifiers, prior and
+resulting authoritative state,
+instruction, approvals, restrictions
+evaluated, timestamps, responsible
+systems, signatures/digests,
+exceptions.
+Supports reproducible transfer-
+journal and examination evidence.
+Restriction/legend policy object
+Legal or issuer source, human-
+readable term, machine-readable
+condition, affected security,
+jurisdiction, effective period,
+permitted actions, removal
+authority, conflict rule,
+version/digest.
+Keeps restrictions attributable,
+reviewable, and bound to the
+underlying record.
+Automated-agent action receipt
+Accountable principal, agent
+identifier, delegated purpose and
+scope, model/tool version where
+material, inputs referenced, policy
+gates, human/entity approval,
+action, output, timestamp,
+revocation check, evidence anchor.
+Shows that automation operated
+within current bounded authority.
+Correction and cancellation
+record
+Original event, error or authority
+basis, authorized corrector,
+approvals, before/after state,
+preserved history, notification
+status, timestamp, evidence digest.
+Prevents silent rewriting of
+regulated history.
+Successor-transfer package
+Current authoritative state, complete
+event history, open restrictions,
+credentials/status references,
+reconciliations, unresolved
+exceptions, schemas, checksums,
+signatures, export date.
+Supports portability, continuity,
+recovery, and migration between
+providers.
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 20 of 21
+D.4 M5Pay and payment-rail neutrality
+M5Pay is an implementation component beneath the M5-OMI interoperability boundary and the
+M5Canon authority layer. It is intended to be rail-, asset-, provider-, ledger-, wallet-, and
+protocol-agnostic. It may translate and route an already-authorized payment or settlement
+instruction to an eligible external rail, but it does not create the principal’s authority, determine
+legal classification, become the authoritative securities record, or displace the regulated
+institution responsible for custody, money movement, settlement, recordkeeping, or compliance.
+Depending on the transaction and responsible provider, an adapter could support bank and
+payment messaging, card or account-to-account rails, approved digital-asset settlement, or
+HTTP-native machine-payment protocols. Each adapter must declare its provider, jurisdiction,
+asset and account classifications, credentials, limits, finality semantics, error handling,
+reconciliation method, and evidence output. Support for an adapter or message format does not
+imply that every instrument or rail is legally available in every context.
+D.5 External standards and interoperability references
+External specification or system Illustrative M5 mapping Public reference
+W3C Verifiable Credentials Data
+Model 2.0
+Credential representation and status
+evidence Official specification
+W3C Decentralized Identifiers
+(DID) Core
+Portable identifier references where
+appropriate Official specification
+OAuth 2.0 and OpenID
+Connect/Federation
+Delegated access, authentication,
+metadata, and multilateral trust Official specification
+Web Authentication
+(WebAuthn) / FIDO
+Phishing-resistant human
+authentication and hardware-backed
+credentials
+Official specification
+ISO 20022 Structured financial messaging and
+regulated-rail adapters Official specification
+Global Legal Entity Identifier
+System
+Authoritative legal-entity identifier
+cross-references Official specification
+OpenAPI Specification Portable, reviewable service-
+interface descriptions Official specification
+Model Context Protocol Tool and context interoperability for
+bounded agents Official specification
+x402 Optional HTTP-native payment
+adapter for machine commerce Official specification
+Solid Portable personal-data stores and
+member-controlled data boundaries Official specification
+The Foundation’s broader public standards-corridor map also identifies open-source, data, compute, privacy,
+hardware, climate, public-good, and regulated-finance reference corridors. Names shown there are standards,
+
+TITLECHAIN FOUNDATION  |  SEC FILE NO. S7-2026-30 Page 21 of 21
+ecosystem, or candidate-corridor references unless a formal relationship is separately announced: M5 Sovereign
+Web Map.
+D.6 Examination, portability, and fail-closed behavior
+A conforming implementation should permit an examiner or authorized reviewer to reconstruct
+why an action was allowed, who approved it, which policy and credential versions controlled,
+what authoritative state changed, and how the result reconciled to required books and records.
+Evidence access should be role-appropriate and should not require indiscriminate publication of
+personal, privileged, confidential, or security-sensitive information.
+Portability requires open, documented exports and independently verifiable checksums,
+signatures, schema versions, restriction state, credential/status references, and unresolved
+exceptions. If an identity, credential, jurisdiction, policy, approval, or authoritative-state
+dependency is unavailable, inconsistent, expired, revoked, or outside scope, consequential
+execution should fail closed or route to accountable review rather than allowing an agent or
+adapter to infer its own authority.
+Commenter and signature
+/s/ Pamela Norton
+Founder & Executive Director, TitleChain Foundation
+Sovereign Chief Architect, TitleChain Registry
+Public email: p_norton@titlechain.world
+Website: https://titlechainfoundation.org
+Public standards: https://github.com/TitleChain-Foundation/icsn-standards
+Submitted on behalf of TitleChain Foundation.

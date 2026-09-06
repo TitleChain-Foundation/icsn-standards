@@ -70,6 +70,36 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 | **M3** | Titled / Unique / Collectible RWA |
 | **M4** | Financial Wrapper |
 | **M5** | Jurisdictional Security-State Profile |
+| Regulatory public records | [SEC Transfer Agent Rules — File No. S7-2026-30](regulatory/sec/s7-2026-30/README.md) |
+| RFCs and specifications | [`rfcs/`](rfcs/README.md) |
+| Schemas and validation | [`schemas/`](schemas/) and [`scripts/validate_repository.py`](scripts/validate_repository.py) |
+| Constitutional stewardship | [TRUST-AND-NON-CAPTURE.md](TRUST-AND-NON-CAPTURE.md) and [`constitutional/mission-lock.yaml`](constitutional/mission-lock.yaml) |
+| Public infrastructure | [PUBLIC-INFRASTRUCTURE-COMMITMENT.md](PUBLIC-INFRASTRUCTURE-COMMITMENT.md) |
+| 100K women-led venture initiative | [`initiatives/100K-WOMEN-LED-VENTURES.md`](initiatives/100K-WOMEN-LED-VENTURES.md) |
+| M5AgentClub first-100 activation | [`initiatives/M5AGENTCLUB-FIRST-100-ACTIVATION.md`](initiatives/M5AGENTCLUB-FIRST-100-ACTIVATION.md) |
+| M5Brain reference architecture | [`initiatives/M5BRAIN-REFERENCE-ARCHITECTURE.md`](initiatives/M5BRAIN-REFERENCE-ARCHITECTURE.md) |
+| Activation outcome graph | [`initiatives/M5ACTIVATION-OUTCOME-GRAPH.md`](initiatives/M5ACTIVATION-OUTCOME-GRAPH.md) |
+| M5POD activation architecture | [`docs/M5POD-MEMBER-ACTIVATION-ARCHITECTURE.md`](docs/M5POD-MEMBER-ACTIVATION-ARCHITECTURE.md) and [`architecture/`](architecture/) |
+| Consent and authorization review drafts | [`docs/M5-ACTIVATION-CONSENT-AUTHORIZATION-MAP.md`](docs/M5-ACTIVATION-CONSENT-AUTHORIZATION-MAP.md) |
+| Hardware fleet pilot seeking review and sponsorship | [`initiatives/HARDWARE-FLEET-PILOT.md`](initiatives/HARDWARE-FLEET-PILOT.md) |
+| Team and extended ecosystem | [TEAM-AND-ECOSYSTEM.md](TEAM-AND-ECOSYSTEM.md) |
+| Governance | [GOVERNANCE.md](GOVERNANCE.md) |
+| Adopted M5 member-authority governance | [docs/index.md](docs/index.md) |
+| Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Work by skill | [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md) |
+| Participation | [PARTICIPATE.md](PARTICIPATE.md) |
+| Security reporting | [SECURITY.md](SECURITY.md) |
+| Licensing | [LICENSE.md](LICENSE.md) and [license matrix](LICENSES/LICENSE-MATRIX.md) |
+| Releases | [CHANGELOG.md](CHANGELOG.md) and [release checklist](RELEASE-CHECKLIST.md) |
+| Sponsorship and sharing | [SPONSORS.md](SPONSORS.md), [SPONSOR-IMPACT.md](SPONSOR-IMPACT.md), and the [social share kit](campaigns/SOCIAL-SHARE-KIT.md) |
+
+## Implementation neutrality
+
+M5 is one implementation and activation environment that may help test the architecture. It is not required for participation, and it does not define the standard by itself.
+
+GitHub participation, Foundation governance, commercial services, account onboarding, employment, credentials, cohort participation, and investment are separate relationships governed by their own processes and terms.
+
+Read [M5Ecosystem Approval Boundary](M5ECOSYSTEM-APPROVAL-BOUNDARY.md) for the separate approval and licensing rules for restricted implementations, production systems, credentials, and private member or partner material.
 
 M4/M5 state does not erase the underlying M1/M2/M3 title/right record. M5 labels do not create a legal conclusion; applicable law and authoritative legal/regulatory determinations remain controlling.
 
