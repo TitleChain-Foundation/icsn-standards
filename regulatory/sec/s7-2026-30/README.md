@@ -25,11 +25,13 @@ TitleChain Foundation recommends voluntary, implementation-neutral open standard
 
 ## Public review
 
+- [Appendix B public artifacts and recommendation map](../../../docs/PUBLIC-REFERENCE-ARTIFACTS.md)
+- [Visual architecture overview](../../../architecture/rendered/m5-sovereign-stack.svg) ([accessible description](../../../architecture/M5POD-MEMBER-ACTIVATION-ALT-TEXT.md)) — broader Public Review Draft context, not an exhibit to the filing
 - [Public-review process and privacy boundaries](PUBLIC-REVIEW.md)
 - [Open-standards alignment](OPEN-STANDARDS-ALIGNMENT.md)
 - [Recommendation-specific Issue drafts](review-issues/)
 
-GitHub comments support the Foundation’s public-review process but do not replace comments submitted through the SEC’s official process. Anyone who wants a comment considered by the SEC must also submit it through the official SEC channel before the deadline.
+GitHub comments support the Foundation’s public-review process but do not replace comments submitted through the SEC’s official process. The [public-review process](PUBLIC-REVIEW.md) explains where participants should comment and how the Foundation will acknowledge, evaluate, and disposition that input. Anyone who wants a comment considered by the SEC must also submit it through the official SEC channel before the deadline.
 
 ## Record integrity
 
