@@ -12,6 +12,8 @@ public contribution.
 4. Submit evidence, recommendations, documentation, tests, or a pull request.
 5. A responsible reviewer evaluates the contribution before acceptance.
 
+Companies, data providers, educators, employers, workforce organizations, and product teams can use [Build the Public Economic Data Commons](COMMONS-CONTRIBUTION-TRACKS.md) to map a bounded proposal to an architecture layer, contribution track, evidence requirement, and public-review pathway.
+
 Public demo and onboarding feedback belongs in
 [Questions & Help](https://github.com/orgs/TitleChain-Foundation/discussions/categories/questions-help).
 Private identity, account, business, or security details must not be posted.
@@ -34,6 +36,9 @@ Private identity, account, business, or security details must not be posted.
 | Finance and economics | Payments, settlement, accounting, markets, statistics | [Finance issues](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue+is%3Aopen+label%3A%22skill%3A+finance-economics%22) |
 | Research | Prior art, comparative analysis, evidence | [Research issues](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue+is%3Aopen+label%3A%22skill%3A+research%22) |
 | Community and partnerships | Contributor support, outreach, funding, sales development | [Community issues](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue+is%3Aopen+label%3A%22skill%3A+community-partnerships%22) |
+| Data and index methodology | Provenance, statistics, sampling, weighting, revisions, uncertainty | [Commons contribution tracks](COMMONS-CONTRIBUTION-TRACKS.md) |
+| Product and provider interoperability | Interfaces, adapters, portability, substitution, implementation evidence | [Commons contribution tracks](COMMONS-CONTRIBUTION-TRACKS.md) |
+| Workforce and role transition | Public-safe capability summaries, skills gaps, role requirements, fair matching | [Commons contribution tracks](COMMONS-CONTRIBUTION-TRACKS.md) |
 
 Issues marked [`good first issue`](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 are designed for a bounded first contribution. Issues marked

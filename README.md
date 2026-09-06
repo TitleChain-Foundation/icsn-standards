@@ -8,7 +8,7 @@ ICSN is the public standards program of the TitleChain Foundation. It publishes 
 
 [![M5POD private member stack rooted in ICSN open standards, human identity, and member authority](assets/public-review/m5pod-stack.png)](assets/public-review/README.md)
 
-**Help build the public commons for the digital-asset edge economy.** Open the [SEC public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2/views/2), review the [featured architecture visuals](assets/public-review/README.md), join [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19), or track deadline progress in the [SEC public-review milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2). The public economic-data work concerns privacy-preserving, provenance-aware indicators and methodologies under open review; it is not represented as an official statistic, regulated benchmark, or deployed service.
+**Help build the public commons for the digital-asset edge economy.** Companies, data providers, researchers, educators, workforce experts, and builders can [choose a commons contribution track](COMMONS-CONTRIBUTION-TRACKS.md) and show how one product, interface, dataset, methodology, skill, or training pathway could support the stack. You can also open the [SEC public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2/views/2), review the [featured architecture visuals](assets/public-review/README.md), or join [Foundation Discussion 19](https://github.com/orgs/TitleChain-Foundation/discussions/19). The public economic-data work concerns privacy-preserving, provenance-aware indicators and methodologies under open review; it is not represented as an official statistic, regulated benchmark, or deployed service.
 
 > **The M5 architecture makes AI operationally useful without allowing AI, credentials, wallets, employees, contractors, APIs, or third-party systems to become unaccountable sources of authority.**
 
@@ -55,6 +55,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 | Ricardian three-part standard | [`docs/RICARDIAN-THREE-PART-AGREEMENT-STANDARD.md`](docs/RICARDIAN-THREE-PART-AGREEMENT-STANDARD.md) |
 | Credentialed authority registry | [`docs/CREDENTIALED-AUTHORITY-REGISTRY.md`](docs/CREDENTIALED-AUTHORITY-REGISTRY.md) |
 | Economic architecture | [`wiki-source/M5-Economic-Architecture-and-Roadmap.md`](wiki-source/M5-Economic-Architecture-and-Roadmap.md) |
+| Provider, data, workforce, and training contributions | [Build the Public Economic Data Commons](COMMONS-CONTRIBUTION-TRACKS.md) |
 | RFCs | [`rfcs/`](rfcs/) |
 | Schemas | [`schemas/`](schemas/) |
 
@@ -102,6 +103,7 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 | Adopted M5 member-authority governance | [docs/index.md](docs/index.md) |
 | Contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Work by skill | [CONTRIBUTOR-PATHWAYS.md](CONTRIBUTOR-PATHWAYS.md) |
+| Commons contribution tracks | [Providers, economic data, products, workforce, training, and assurance](COMMONS-CONTRIBUTION-TRACKS.md) |
 | Participation | [PARTICIPATE.md](PARTICIPATE.md) |
 | Security reporting | [SECURITY.md](SECURITY.md) |
 | Licensing | [LICENSE.md](LICENSE.md) and [license matrix](LICENSES/LICENSE-MATRIX.md) |
