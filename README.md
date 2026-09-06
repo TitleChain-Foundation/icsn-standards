@@ -70,8 +70,14 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 | **M3** | Titled / Unique / Collectible RWA |
 | **M4** | Financial Wrapper |
 | **M5** | Jurisdictional Security-State Profile |
+
+## Repository map
+
+| Area | Public reference |
+| --- | --- |
 | Regulatory public records | [SEC Transfer Agent Rules — File No. S7-2026-30](regulatory/sec/s7-2026-30/README.md) |
 | Public reference artifacts | [Appendix B artifacts and recommendation map](docs/PUBLIC-REFERENCE-ARTIFACTS.md) |
+| Visual architecture overview | [Sovereign M5POD system diagram](architecture/rendered/m5-sovereign-stack.svg) and [accessible description](architecture/M5POD-MEMBER-ACTIVATION-ALT-TEXT.md) |
 | RFCs and specifications | [`rfcs/`](rfcs/README.md) |
 | Schemas and validation | [`schemas/`](schemas/) and [`scripts/validate_repository.py`](scripts/validate_repository.py) |
 | Constitutional stewardship | [TRUST-AND-NON-CAPTURE.md](TRUST-AND-NON-CAPTURE.md) and [`constitutional/mission-lock.yaml`](constitutional/mission-lock.yaml) |
@@ -120,4 +126,6 @@ This repository uses asset-level licensing. Review [`LICENSE.md`](LICENSE.md) an
 
 ## Get involved
 
-Use the Foundation's public Discussions, Issues, RFC process, and contributor pathways to review the work. Do not post private identity data, credentials, account information, keys, or confidential evidence in public channels.
+Start with [PARTICIPATE.md](PARTICIPATE.md) for an introduction to the Foundation and ways to help. Use the Foundation's public Discussions, Issues, RFC process, and [contributor pathways](CONTRIBUTOR-PATHWAYS.md) to review the work. For the SEC transfer-agent comment, use the [public artifact and recommendation map](docs/PUBLIC-REFERENCE-ARTIFACTS.md) to choose the relevant review thread.
+
+Every public artifact identifies its maturity. **Public Review Draft** and **Draft RFC** material is open for review; it is not an adopted standard, production deployment, credential, authorization, or representation of regulatory approval. Do not post private identity data, credentials, account information, keys, or confidential evidence in public channels.

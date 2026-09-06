@@ -2,6 +2,23 @@
 
 This page is the direct index for the public artifacts referenced by the TitleChain Foundation comment on SEC File No. S7-2026-30.
 
+## Start here
+
+The filed comment is a fixed public record. The artifacts below are separate, evolving materials that participants may review and improve through the Foundation's public process.
+
+| Label | Meaning |
+|---|---|
+| **Public Review** | Draft material open for evidence, objections, implementation analysis, and proposed revisions. It has not been adopted as a Stable standard. |
+| **Draft RFC** | A proposal moving through the RFC process. Publication does not imply acceptance. |
+| **Published** | A current repository statement or boundary document. It does not certify an implementation or confer authority. |
+| **Filed record** | The immutable document submitted to the SEC. Repository discussion does not modify the filed record or count as an SEC comment. |
+
+## Visual overview
+
+[![Sovereign M5POD system diagram showing the public commons, human authority root, private M5POD boundary, intelligence layer, and legal/governance boundary](../architecture/rendered/m5-sovereign-stack.svg)](../architecture/rendered/m5-sovereign-stack.svg)
+
+This **Public Review Draft** diagram provides a broad system context for several artifacts below. It is not an exhibit to the SEC filing and does not represent deployment, certification, regulatory approval, or production readiness. Review the [accessible description](../architecture/M5POD-MEMBER-ACTIVATION-ALT-TEXT.md), [maintained Mermaid source](../architecture/m5-sovereign-stack.mmd), or alternate [PNG](../architecture/rendered/m5-sovereign-stack.png) and [PDF](../architecture/rendered/m5-sovereign-stack.pdf) formats.
+
 ## Appendix B — Public artifacts referenced
 
 The following are public Draft artifacts in the ICSN standards repository. Each is under public review and is cited as an example of a reviewable, interoperable reference artifact — not as an adopted standard or a mandated design. Inclusion here does not represent that any artifact is deployed, credentialed, or authorized for production use.
@@ -67,4 +84,21 @@ The following are public Draft artifacts in the ICSN standards repository. Each 
 
 ## Public review
 
-Use the [SEC recommendation review queue](https://github.com/TitleChain-Foundation/icsn-standards/issues?q=is%3Aissue%20state%3Aopen%20label%3Aregulatory-review%20label%3Asec) to submit evidence, objections, implementation analysis, or proposed revisions. GitHub participation supports the Foundation public-review process but does not replace comments submitted through the [official SEC comment form](https://www.sec.gov/comments/s7-2026-30/transfer-agent-rules).
+Choose the narrowest suitable channel:
+
+| What you want to do | Where to participate |
+|---|---|
+| Understand the filing and ask a cross-cutting question | [Foundation Discussion 19 — public artifact directory](https://github.com/orgs/TitleChain-Foundation/discussions/19) |
+| Review voluntary open standards | [Issue 56](https://github.com/TitleChain-Foundation/icsn-standards/issues/56) |
+| Review credential-bound participant identifiers | [Issue 57](https://github.com/TitleChain-Foundation/icsn-standards/issues/57) |
+| Review Forms TA-1 and TA-2 disclosures | [Issue 58](https://github.com/TitleChain-Foundation/icsn-standards/issues/58) |
+| Review machine-readable legends and transfer rights | [Issue 59](https://github.com/TitleChain-Foundation/icsn-standards/issues/59) |
+| Review automated-agent pre-activation controls | [Issue 60](https://github.com/TitleChain-Foundation/icsn-standards/issues/60) |
+| Review origination versus transfer authority | [Issue 61](https://github.com/TitleChain-Foundation/icsn-standards/issues/61) |
+| Review the reference state model | [Issue 62](https://github.com/TitleChain-Foundation/icsn-standards/issues/62) |
+| Propose a concrete standards-text change | Follow [CONTRIBUTING.md](../CONTRIBUTING.md) and open an RFC pull request |
+| Report a vulnerability | Follow the private process in [SECURITY.md](../SECURITY.md) |
+
+Before contributing, read the [public-review process](../regulatory/sec/s7-2026-30/PUBLIC-REVIEW.md), [participant pathway](../PARTICIPATE.md), and [contribution guide](../CONTRIBUTING.md). The Foundation will handle public input through the response lifecycle described in the public-review process.
+
+GitHub participation supports the Foundation public-review process but does not replace comments submitted through the [official SEC comment form](https://www.sec.gov/comments/s7-2026-30/transfer-agent-rules).
