@@ -88,7 +88,7 @@ The following are public Draft artifacts in the ICSN standards repository. Each 
 
 ## Public review
 
-Track the complete review and its progress in the [SEC Transfer Agent Rules — S7-2026-30 Public Review milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2).
+Use the [SEC S7-2026-30 public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2) to follow each recommendation through the Foundation response stages. Track deadline progress in the [SEC public-review milestone](https://github.com/TitleChain-Foundation/icsn-standards/milestone/2).
 
 Choose the narrowest suitable channel:
 
