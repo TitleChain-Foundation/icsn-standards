@@ -4,6 +4,19 @@
 
 The maintained repository text, schemas, RFCs, and governance records control wherever a diagram uses simplified or earlier terminology. Participants are encouraged to identify inconsistencies, accessibility issues, missing evidence, and proposed corrections in the linked public-review threads.
 
+## Hardware endpoint trust
+
+![From device identity and state to privacy-filtered evidence and independent reproduction](hardware-endpoint-trust.svg)
+
+The Hardware Endpoint Trust & Telemetry Audit asks whether an authorized owner
+can reproduce observable differences across consent, active, standby,
+offline/reconnect, and firmware states. The visual separates device identity,
+declared state, observed behavior, evidence, and reproduction.
+
+Start with the [visual project hub](../../initiatives/hardware-endpoint-trust/README.md).
+This is a Public Review Draft, not a product blacklist, certification,
+manufacturer-wide conclusion, or deployed test lab.
+
 ## M5 wallet layer stack
 
 ![From a bare wallet address to a layered, human-authorized foundation](m5-wallet-layer-stack.png)

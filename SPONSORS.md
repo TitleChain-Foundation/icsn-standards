@@ -49,6 +49,19 @@ Potential support may include repairable contributor systems, local AI and RAG c
 
 Technical feedback belongs in the linked public discussion and scoped hardware issues. Organizations interested in funding or in-kind support should [contact the Foundation](mailto:hello@titlechainfoundation.org) so independence, deliverables, conflicts, participant privacy, recognition, and impact reporting can be documented before acceptance.
 
+### Hardware endpoint trust and telemetry
+
+The [Hardware Endpoint Trust & Telemetry Audit](initiatives/hardware-endpoint-trust/README.md)
+is a separate public-review workstream seeking reproducible evidence rather than
+a predetermined product conclusion. Potential support may fund a multi-vendor
+test lab, independent replication, privacy and security review, statistical
+methods, public documentation, and privacy-filtered datasets.
+
+A sponsor cannot select the answer, suppress a reproducible result, purchase a
+ranking, or receive standards authority. Device selection, methods, conflicts,
+vendor-response opportunities, evidence controls, and publication decisions
+must remain documented and independently reviewable.
+
 ## Sponsor outcome graph
 
 Activation sponsorship should be measured by outcomes rather than attendance alone.

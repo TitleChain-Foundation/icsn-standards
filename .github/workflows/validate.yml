@@ -21,7 +21,11 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install validation dependencies
+        run: python3 -m pip install --requirement requirements-validation.txt
       - name: Validate JSON and internal Markdown links
         run: python3 scripts/validate_repository.py
       - name: Validate adopted M5 governance publication
         run: python3 scripts/validate_m5_governance.py
+      - name: Validate hardware endpoint schemas and examples
+        run: python3 tests/validate_hardware_endpoint_package.py

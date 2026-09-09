@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "scenario": "hardware_endpoint_capture",
+  "score_id": "score-demo-001",
+  "subject": {
+    "manufacturer": "Example Manufacturer",
+    "model": "Example Smart Display",
+    "firmware_version": "1.2.3"
+  },
+  "method_version": "0.1.0",
+  "dimensions": {
+    "ownership_control_gap": 2,
+    "consent_asymmetry": 1,
+    "data_extraction": 1,
+    "cross_device_reach": 2,
+    "monetization_linkage": 0,
+    "offline_persistence": 0,
+    "disclosure_divergence": 1,
+    "revocability": 2,
+    "update_drift": 0,
+    "replicability": 1
+  },
+  "dimension_notes": {
+    "cross_device_reach": "Synthetic score based only on the synthetic local-discovery example.",
+    "replicability": "No independent reproduction; synthetic demonstration only."
+  },
+  "evidence_refs": [
+    "obs-demo-001"
+  ],
+  "status": [
+    "unresolved"
+  ],
+  "comparative_ready": false,
+  "overall_score": 1.0,
+  "aggregation_method": "Synthetic demonstration only: unweighted arithmetic mean of the nine capture-signal dimensions; replicability is excluded and displayed separately.",
+  "limitations": [
+    "Synthetic example. Do not compare or publish as a real product score."
+  ],
+  "reviewed_at": "2026-09-09T19:00:00Z"
+}

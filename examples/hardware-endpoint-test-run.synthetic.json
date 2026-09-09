@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "test_run_id": "run-demo-001",
+  "method_version": "0.1.0",
+  "tester": {
+    "pseudonymous_id": "lab-demo",
+    "independent": true,
+    "conflicts_disclosed": true
+  },
+  "device": {
+    "manufacturer": "Example Manufacturer",
+    "model": "Example Smart Display",
+    "device_class": "tv",
+    "firmware_version": "1.2.3",
+    "jurisdiction": "US"
+  },
+  "started_at": "2026-09-09T17:30:00Z",
+  "ended_at": "2026-09-09T18:30:00Z",
+  "states_tested": [
+    "consent_off",
+    "standby"
+  ],
+  "authorization": {
+    "device_authorized": true,
+    "network_authorized": true,
+    "authorization_note": "Synthetic authorized-lab example."
+  },
+  "environment": {
+    "isolated_test_network": true,
+    "synthetic_test_data": true,
+    "time_source": "UTC",
+    "notes": "No unrelated household devices present."
+  },
+  "privacy": {
+    "pii_removed": true,
+    "third_party_content_removed": true,
+    "private_conversations_removed": true,
+    "redaction_reviewed": true,
+    "redaction_notes": "Synthetic example."
+  },
+  "observations": [
+    "obs-demo-001"
+  ],
+  "limitations": [
+    "Synthetic example only."
+  ],
+  "evidence_bundle_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+}

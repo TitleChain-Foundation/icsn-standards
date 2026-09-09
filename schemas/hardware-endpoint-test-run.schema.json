@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titlechain-foundation.github.io/icsn-standards/schemas/hardware-endpoint-test-run.schema.json",
+  "$comment": "SPDX-License-Identifier: Apache-2.0",
+  "title": "Hardware Endpoint Test Run",
+  "description": "One authorized test run across declared hardware endpoint states.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "test_run_id",
+    "method_version",
+    "tester",
+    "device",
+    "started_at",
+    "states_tested",
+    "authorization",
+    "privacy",
+    "observations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "test_run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]{6,128}$"
+    },
+    "method_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "tester": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pseudonymous_id",
+        "independent"
+      ],
+      "properties": {
+        "pseudonymous_id": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 120
+        },
+        "independent": {
+          "type": "boolean"
+        },
+        "organization": {
+          "type": "string",
+          "maxLength": 160
+        },
+        "conflicts_disclosed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "device": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manufacturer",
+        "model",
+        "device_class",
+        "firmware_version"
+      ],
+      "properties": {
+        "manufacturer": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "device_class": {
+          "type": "string",
+          "enum": [
+            "tv",
+            "monitor",
+            "router",
+            "speaker",
+            "camera",
+            "appliance",
+            "vehicle",
+            "wearable",
+            "laptop",
+            "desktop",
+            "phone",
+            "tablet",
+            "other"
+          ]
+        },
+        "firmware_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "jurisdiction": {
+          "type": "string",
+          "maxLength": 120
+        }
+      }
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ended_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "states_tested": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "fresh_setup",
+          "consent_on",
+          "consent_off",
+          "active",
+          "idle",
+          "standby",
+          "display_off",
+          "wan_disconnected",
+          "wan_reconnected",
+          "post_update",
+          "factory_reset",
+          "other"
+        ]
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "device_authorized",
+        "network_authorized"
+      ],
+      "properties": {
+        "device_authorized": {
+          "const": true
+        },
+        "network_authorized": {
+          "const": true
+        },
+        "authorization_note": {
+          "type": "string",
+          "maxLength": 500
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "isolated_test_network": {
+          "type": "boolean"
+        },
+        "synthetic_test_data": {
+          "type": "boolean"
+        },
+        "time_source": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 800
+        }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pii_removed",
+        "third_party_content_removed",
+        "private_conversations_removed"
+      ],
+      "properties": {
+        "pii_removed": {
+          "const": true
+        },
+        "third_party_content_removed": {
+          "const": true
+        },
+        "private_conversations_removed": {
+          "const": true
+        },
+        "redaction_reviewed": {
+          "type": "boolean"
+        },
+        "redaction_notes": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9._:-]{6,128}$"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      }
+    },
+    "evidence_bundle_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titlechain-foundation.github.io/icsn-standards/schemas/hardware-endpoint-observation.schema.json",
+  "$comment": "SPDX-License-Identifier: Apache-2.0",
+  "title": "Hardware Endpoint Observation",
+  "description": "Privacy-preserving record of one authorized, observable hardware endpoint behavior.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "observation_id",
+    "test_run_id",
+    "device",
+    "state",
+    "observed_at",
+    "evidence_status",
+    "behavior",
+    "vendor_response",
+    "privacy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "observation_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]{6,128}$"
+    },
+    "test_run_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]{6,128}$"
+    },
+    "device": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manufacturer",
+        "model",
+        "device_class",
+        "firmware_version"
+      ],
+      "properties": {
+        "manufacturer": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "device_class": {
+          "type": "string",
+          "enum": [
+            "tv",
+            "monitor",
+            "router",
+            "speaker",
+            "camera",
+            "appliance",
+            "vehicle",
+            "wearable",
+            "laptop",
+            "desktop",
+            "phone",
+            "tablet",
+            "other"
+          ]
+        },
+        "firmware_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "jurisdiction": {
+          "type": "string",
+          "maxLength": 120
+        }
+      }
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "consent",
+        "operating",
+        "wan_connectivity"
+      ],
+      "properties": {
+        "consent": {
+          "type": "string",
+          "enum": [
+            "not_presented",
+            "not_set",
+            "on",
+            "off",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "operating": {
+          "type": "string",
+          "enum": [
+            "fresh_setup",
+            "active",
+            "idle",
+            "standby",
+            "display_off",
+            "restarting",
+            "post_update",
+            "factory_reset",
+            "other"
+          ]
+        },
+        "wan_connectivity": {
+          "type": "string",
+          "enum": [
+            "connected",
+            "disconnected",
+            "reconnected",
+            "unknown"
+          ]
+        },
+        "test_profile": {
+          "type": "string",
+          "maxLength": 120
+        }
+      }
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "evidence_status": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "observed",
+          "inferred",
+          "vendor_stated",
+          "regulator_stated",
+          "independently_reproduced",
+          "disputed",
+          "unresolved"
+        ]
+      }
+    },
+    "behavior": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "category",
+        "summary"
+      ],
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "dns",
+            "outbound_network",
+            "local_discovery",
+            "telemetry_timing",
+            "sensor_indicator",
+            "local_artifact",
+            "advertising_analytics",
+            "update_behavior",
+            "consent_effect",
+            "other"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1200
+        },
+        "protocols": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "maxLength": 80
+          }
+        },
+        "destination_categories": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": [
+              "vendor_core",
+              "update",
+              "content_delivery",
+              "diagnostics",
+              "advertising",
+              "analytics",
+              "voice_cloud",
+              "smart_home",
+              "third_party",
+              "unknown"
+            ]
+          }
+        },
+        "event_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "comparison_observation_id": {
+          "type": "string",
+          "maxLength": 128
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "sha256"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "dns_log",
+              "flow_metadata",
+              "packet_capture_redacted",
+              "screenshot",
+              "device_log_redacted",
+              "firmware_record",
+              "vendor_document",
+              "regulator_document",
+              "research_note",
+              "other"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "public_path": {
+            "type": "string",
+            "maxLength": 500
+          },
+          "notes": {
+            "type": "string",
+            "maxLength": 600
+          }
+        }
+      }
+    },
+    "vendor_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_requested",
+            "requested",
+            "received",
+            "public_response_available",
+            "declined",
+            "unknown"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 1200
+        },
+        "source": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "replication": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "reproduction_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "independent_reproduction_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 800
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authorized_test",
+        "pii_removed",
+        "third_party_content_removed",
+        "private_conversations_removed"
+      ],
+      "properties": {
+        "authorized_test": {
+          "const": true
+        },
+        "pii_removed": {
+          "const": true
+        },
+        "third_party_content_removed": {
+          "const": true
+        },
+        "private_conversations_removed": {
+          "const": true
+        },
+        "redaction_notes": {
+          "type": "string",
+          "maxLength": 1000
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "evidence_status": {
+            "contains": {
+              "const": "independently_reproduced"
+            }
+          }
+        },
+        "required": [
+          "evidence_status"
+        ]
+      },
+      "then": {
+        "required": [
+          "replication"
+        ],
+        "properties": {
+          "replication": {
+            "required": [
+              "independent_reproduction_count"
+            ],
+            "properties": {
+              "independent_reproduction_count": {
+                "minimum": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

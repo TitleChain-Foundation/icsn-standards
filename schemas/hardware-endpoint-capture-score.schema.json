@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titlechain-foundation.github.io/icsn-standards/schemas/hardware-endpoint-capture-score.schema.json",
+  "$comment": "SPDX-License-Identifier: Apache-2.0. Draft ICSN evidence-exchange schema; the canonical Economic Capture Eval scoring model has not yet been assigned to a public repository.",
+  "title": "Hardware Endpoint Capture Score",
+  "description": "Research indicator for the Economic Capture Eval hardware_endpoint_capture scenario. Not a legal, regulatory, or product-certification conclusion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scenario",
+    "score_id",
+    "subject",
+    "method_version",
+    "dimensions",
+    "evidence_refs",
+    "status",
+    "comparative_ready"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "scenario": {
+      "const": "hardware_endpoint_capture"
+    },
+    "score_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]{6,128}$"
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "manufacturer",
+        "model",
+        "firmware_version"
+      ],
+      "properties": {
+        "manufacturer": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "firmware_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        }
+      }
+    },
+    "method_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "dimensions": {
+      "type": "object",
+      "description": "Nine capture-signal dimensions use higher values for stronger measured asymmetry. Replicability uses higher values for stronger evidence quality and must be displayed separately.",
+      "additionalProperties": false,
+      "required": [
+        "ownership_control_gap",
+        "consent_asymmetry",
+        "data_extraction",
+        "cross_device_reach",
+        "monetization_linkage",
+        "offline_persistence",
+        "disclosure_divergence",
+        "revocability",
+        "update_drift",
+        "replicability"
+      ],
+      "properties": {
+        "ownership_control_gap": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "consent_asymmetry": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "data_extraction": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "cross_device_reach": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "monetization_linkage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "offline_persistence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "disclosure_divergence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "revocability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "update_drift": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "replicability": {
+          "type": "number",
+          "description": "Evidence-quality dimension: higher means stronger independent reproduction, not greater capture severity.",
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    },
+    "dimension_notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ownership_control_gap": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "consent_asymmetry": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "data_extraction": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "cross_device_reach": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "monetization_linkage": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "offline_persistence": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "disclosure_divergence": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "revocability": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "update_drift": {
+          "type": "string",
+          "maxLength": 700
+        },
+        "replicability": {
+          "type": "string",
+          "maxLength": 700
+        }
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "maxLength": 200
+      }
+    },
+    "status": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "observed",
+          "inferred",
+          "vendor_stated",
+          "regulator_stated",
+          "independently_reproduced",
+          "disputed",
+          "unresolved"
+        ]
+      }
+    },
+    "comparative_ready": {
+      "type": "boolean",
+      "description": "True only when the comparative_basis requirements are documented."
+    },
+    "comparative_basis": {
+      "type": "object",
+      "description": "Evidence that the public comparative-readiness threshold has been met.",
+      "additionalProperties": false,
+      "required": [
+        "device_models_or_vendors",
+        "same_method_version",
+        "comparable_state_definitions",
+        "limitations_published",
+        "vendor_response_opportunity",
+        "material_observation_independently_reproduced"
+      ],
+      "properties": {
+        "device_models_or_vendors": {
+          "type": "integer",
+          "minimum": 3
+        },
+        "same_method_version": {
+          "const": true
+        },
+        "comparable_state_definitions": {
+          "const": true
+        },
+        "limitations_published": {
+          "const": true
+        },
+        "vendor_response_opportunity": {
+          "const": true
+        },
+        "material_observation_independently_reproduced": {
+          "const": true
+        }
+      }
+    },
+    "overall_score": {
+      "type": "number",
+      "description": "Optional experimental aggregate. It is not an official index and must not silently combine replicability with capture-severity dimensions.",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "aggregation_method": {
+      "type": "string",
+      "description": "Required whenever overall_score is present. State the exact formula and whether the oppositely directed replicability dimension is excluded or separately displayed.",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 500
+      }
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "dependentRequired": {
+    "overall_score": [
+      "aggregation_method"
+    ]
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "comparative_ready": {
+            "const": true
+          }
+        },
+        "required": [
+          "comparative_ready"
+        ]
+      },
+      "then": {
+        "required": [
+          "comparative_basis"
+        ]
+      }
+    }
+  ]
+}
