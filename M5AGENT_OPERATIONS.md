@@ -37,3 +37,7 @@ Operational credentials/delegations should identify the accountable principal, r
 ## Public standards use
 
 M5AGTs may assist standards contributors with routing, drafting, testing, documentation, and conformance work, but they do not independently adopt or certify an ICSN standard.
+
+## Join the public review
+
+Start with [Native M5 Agents in a Member-Controlled M5POD](https://github.com/orgs/TitleChain-Foundation/discussions/23), then choose a focused thread covering account contexts, M5Canon controls, sovereign graphs, threat vectors, communications, classification, jurisdiction, external models, SOPHIA roles and training, or lifecycle verification.

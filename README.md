@@ -43,6 +43,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 | Human identity and authority | [`docs/M5IAM-M5HUM-AUTHORITY-ARCHITECTURE.md`](docs/M5IAM-M5HUM-AUTHORITY-ARCHITECTURE.md) |
 | M5-CV / SOPHIA capability graph | [`docs/M5-CV-SOPHIA-CAPABILITY-ARCHITECTURE.md`](docs/M5-CV-SOPHIA-CAPABILITY-ARCHITECTURE.md) |
 | SOPHIA 37-track participation map | [`docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md`](docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md) |
+| Native M5Agent public review | [Start with the agent architecture and review series](https://github.com/orgs/TitleChain-Foundation/discussions/23) |
 | Six-Gate authority control | [`docs/M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md`](docs/M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md) |
 | M5MST asset minting + TitleChain registration | [`docs/M5MST-ASSET-MINTING-AND-TITLECHAIN-REGISTRATION.md`](docs/M5MST-ASSET-MINTING-AND-TITLECHAIN-REGISTRATION.md) |
 | Transfer-agent reference architecture | [`docs/TRANSFER-AGENT-DIGITAL-ASSET-REFERENCE-ARCHITECTURE.md`](docs/TRANSFER-AGENT-DIGITAL-ASSET-REFERENCE-ARCHITECTURE.md) |
