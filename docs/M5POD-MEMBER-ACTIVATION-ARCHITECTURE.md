@@ -38,7 +38,9 @@ Foundation participation, M5Bank membership, IAM activation, M5POD pairing, devi
 
 ## Public preview
 
-`titlechainfoundation.org` → public information → `m5podactivationdemo.netlify.app` → scan-only walkthrough → later controlled application/cohort workflow.
+`titlechainfoundation.org` → public information → optional IAM account at
+`m5bank.app` and M5POD waitlist at `m5podactivationdemo.netlify.app` → later
+controlled application/cohort workflow when announced.
 
 The walkthrough must not imply activation of a member account, IAM credential, M5POD, wallet, passport or cohort place merely because the user viewed or completed the demo.
 

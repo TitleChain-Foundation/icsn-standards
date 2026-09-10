@@ -121,7 +121,9 @@ The durable member path remains:
 ```text
 FREE IAM — m5bank.app
   ↓
-M5Member program enrollment — m5member.netlify.app
+M5POD waitlist — m5podactivationdemo.netlify.app
+  ↓
+future controlled program enrollment
   ↓
 M5BankofMe account
   ↓
@@ -338,7 +340,9 @@ I AM
 ↓
 FREE IAM at m5bank.app
 ↓
-M5Member enrollment at m5member.netlify.app
+M5POD waitlist at m5podactivationdemo.netlify.app
+↓
+future controlled program enrollment
 ↓
 M5BankofMe + Passport
 ↓

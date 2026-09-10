@@ -28,9 +28,12 @@ Use the [SOPHIA 37-Track Participation Map](docs/SOPHIA-37-TRACK-PARTICIPATION-M
 
 ## Explore the M5-CV pathway
 
-**[Explore the M5POD-to-M5-CV demo journey](https://m5podactivationdemo.netlify.app/demo)** · **[Join the waitlist and share your skills](https://m5podactivationdemo.netlify.app/)**
+**[Set up your IAM account](https://m5bank.app/)** · **[Reserve your M5POD place and share your skills](https://m5podactivationdemo.netlify.app/)**
 
-The full demo walks through the illustrative M5POD activation journey and explains where M5-CV follows. The separate waitlist is open to everyone and provides the optional activation path toward sharing skills in M5-CV. Neither is required to review or contribute to ICSN standards.
+The free IAM account and public M5POD waitlist are the only live public starting
+actions. A waitlist reservation is not controlled enrollment, activation,
+credential issuance, or cohort admission. Neither action is required to review
+or contribute to ICSN standards.
 
 The demo does not create a credential, role, appointment, account, or authority. A waitlist reservation remains pending until an applicable pilot opens and does not guarantee activation, training, employment, funding, matching, or admission to a cohort.
 

@@ -82,8 +82,8 @@ These areas describe an open research and standards agenda. They do not constitu
 ICSN is open whether or not you use M5. The optional activation path exists so contributors and builders can test the principles in a real operating environment.
 
 1. **Establish the free IAM identity origin, if you choose.** The foundational IAM account is offered at no charge at [m5bank.app](https://m5bank.app/).
-2. **Enroll in the M5 program separately, if you choose.** [m5member.netlify.app](https://m5member.netlify.app/) is the M5Member enrollment/activation pathway through which an eligible participant progresses toward her **M5BankofMe account** and applicable program experience.
-3. **Build a member-controlled capability passport, if useful.** The Passport can organize learning, credentials, skills and proof using the `I AM → I KNOW → I CAN → I DID → I CAN TEACH → I CAN EARN` sequence.
+2. **Reserve an M5POD place, if you choose.** The public waitlist is at [m5podactivationdemo.netlify.app](https://m5podactivationdemo.netlify.app/). A reservation is not enrollment, cohort admission, account activation, or credential issuance.
+3. **Enter a controlled program only when one is announced and you are accepted.** Any later enrollment, M5BankofMe activation, capability passport, or cohort experience requires separate notice, consent, eligibility, capacity, and approval. No other public enrollment URL is currently open.
 4. **Choose an implementation path.** M5BankofMe, M5 Build, M5POD, M5Shell and other M5 services may be used to test the architecture, but they do not define the standard and are not required.
 5. **Build and test.** Use the environment to test portability, accountable agents, privacy, recovery, provider substitution, conformance and real workflows.
 6. **Return evidence to the commons.** Where appropriate and permitted, contribute RFC feedback, schemas, test cases, interoperability findings, open tooling or security lessons back to the public standards process.
