@@ -106,9 +106,12 @@ Do not post a private CV, home address, identity document, member record, nonpub
 
 Training interest, a suggested match, or a public contribution does not create employment, compensation, appointment, a credential, professional authority, agent delegation, or admission to a program. Any funded role, credential, or training place requires a separate, explicit process.
 
-**[Explore the M5POD-to-M5-CV demo journey](https://m5podactivationdemo.netlify.app/demo)** · **[Join the waitlist and share your skills](https://m5podactivationdemo.netlify.app/)**
+**[Set up your IAM account](https://m5bank.app/)** · **[Reserve your M5POD place and share your skills](https://m5podactivationdemo.netlify.app/)**
 
-These are optional M5 activation pathways, not prerequisites for contributing to the public commons. The demo is illustrative, and a waitlist reservation does not guarantee activation, training, employment, funding, matching, or admission to a cohort.
+These are optional M5 starting actions, not prerequisites for contributing to
+the public commons. A waitlist reservation does not guarantee activation,
+training, employment, funding, matching, or admission to a cohort. No other
+public enrollment or activation URL is currently open.
 
 ## How a proposal advances
 

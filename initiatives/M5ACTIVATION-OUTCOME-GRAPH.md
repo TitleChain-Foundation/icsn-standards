@@ -48,7 +48,12 @@ A funded seat or activation allocation was made available under the applicable p
 ### Activated
 The member completed the defined minimum technical/member activation for the reporting period.
 
-The definition should distinguish **free IAM activation at m5bank.app** from **M5Member program enrollment at m5member.netlify.app**. For a program cohort, an activated state may include completed enrollment, M5BankofMe activation, Passport, and the applicable M5 Freedom Office baseline, according to the published metric definition.
+The definition should distinguish **free IAM account setup at m5bank.app** and
+**an M5POD waitlist reservation at m5podactivationdemo.netlify.app** from future
+controlled program enrollment. For a program cohort, an activated state may
+include completed enrollment, M5BankofMe activation, Passport, and the
+applicable M5 Freedom Office baseline, according to the published metric
+definition. A waitlist reservation alone is not an activated state.
 
 ### Completed
 The member completed the defined cohort or activation requirements.

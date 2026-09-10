@@ -20,9 +20,10 @@ The public activation model uses the sequence:
 
 The sequence is designed to let a person build evidence of identity, learning, capability, work, teaching, and economic participation without reducing the person to a résumé, platform score, or sponsor-owned profile.
 
-## Two separate entry points: free IAM and program enrollment
+## Two live public starting actions: free IAM and the M5POD waitlist
 
-The public pathway intentionally separates **foundational identity access** from **program enrollment**.
+The public pathway intentionally separates **foundational identity access** from
+**reserving a place for future M5POD activation**.
 
 ### 1. Free IAM — `m5bank.app`
 
@@ -30,13 +31,16 @@ The foundational IAM identity-origin account is available at **[m5bank.app](http
 
 This is the no-charge identity starting point. A person may establish the foundational IAM without first enrolling in M5AgentClub, a cohort, a paid service, or another M5 program.
 
-### 2. M5Member enrollment — `m5member.netlify.app`
+### 2. Reserve an M5POD place — `m5podactivationdemo.netlify.app`
 
-The program enrollment and activation experience is available at **[m5member.netlify.app](https://m5member.netlify.app/)**.
+The public waitlist is available at
+**[m5podactivationdemo.netlify.app](https://m5podactivationdemo.netlify.app/)**.
 
-M5Member is the separate enrollment pathway through which an eligible participant joins the activation program and progresses toward her **M5BankofMe account**, Passport/capability evidence, and the applicable M5 program experience.
+The waitlist reserves a place in the pending activation pathway. It is not
+controlled enrollment, cohort admission, M5BankofMe activation, credential
+issuance, or activation of an M5POD.
 
-The M5Member enrollment experience is designed around member control:
+The public waitlist is designed around member control:
 
 - the member chooses what to submit;
 - the member can leave information blank or mark it for private discussion;
@@ -51,13 +55,15 @@ The distinction is deliberate:
 FREE IAM
 m5bank.app
     ↓
-separate, affirmative program enrollment
-m5member.netlify.app
+M5POD WAITLIST
+m5podactivationdemo.netlify.app
     ↓
-M5BankofMe account + applicable member activation
+future controlled enrollment + applicable member activation
 ```
 
-Implementation details and privacy terms may evolve. The live service terms and privacy notice control the operation of each service.
+No other public enrollment or activation URL is currently open. Implementation
+details and privacy terms may evolve. The live service terms and privacy notice
+control the operation of each service.
 
 ## GitHub participation never requires IAM
 
@@ -98,7 +104,14 @@ GitHub Sponsors funding is directed to public open-source and public-interest wo
 
 ## First scaled activation: women-led ventures
 
-The first major activation goal is to support **up to 100,000 women-led ventures** beginning with the no-charge IAM identity origin at **[m5bank.app](https://m5bank.app/)** and then, by separate choice, enrolling through **[m5member.netlify.app](https://m5member.netlify.app/)** to progress toward an M5BankofMe account, capability proof, education, agents, business infrastructure, and independent economic activity.
+The first major activation goal is to support **up to 100,000 women-led
+ventures** beginning with the no-charge IAM identity origin at
+**[m5bank.app](https://m5bank.app/)** and, by separate choice, reserving an
+M5POD place through
+**[m5podactivationdemo.netlify.app](https://m5podactivationdemo.netlify.app/)**.
+Any later enrollment, M5BankofMe activation, capability proof, education,
+agents, business infrastructure, or economic activity requires its own
+announced process, consent, eligibility, capacity, and approval.
 
 The goal is not to make 100,000 women dependent on M5. It is to demonstrate that a large population can begin with portable identity and build with a right to choose providers, tools, models, and implementation paths.
 

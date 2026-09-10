@@ -116,6 +116,10 @@ When introducing yourself or a proposal, identify:
 
 Start in [Discussion 22 — Providers, Economic Data, Workforce & Training](https://github.com/orgs/TitleChain-Foundation/discussions/22). Follow the privacy, status, evidence, licensing, and non-endorsement boundaries in [Build the Public Economic Data Commons](../COMMONS-CONTRIBUTION-TRACKS.md).
 
-To see how holder-selected capability information could connect to an optional activation journey, [explore the M5POD-to-M5-CV demo](https://m5podactivationdemo.netlify.app/demo). To reserve a place and proceed toward sharing skills in M5-CV, [join the M5POD waitlist](https://m5podactivationdemo.netlify.app/). The demo and waitlist are optional M5 implementation pathways and are not required for public standards participation.
+The two live optional starting actions are to
+[set up an IAM account](https://m5bank.app/) and
+[reserve an M5POD place](https://m5podactivationdemo.netlify.app/). A waitlist
+reservation does not create enrollment, activation, a credential, or cohort
+admission. Neither action is required for public standards participation.
 
 The taxonomy should follow people and the changing economy. People do not exist to fit the taxonomy, and participants may propose roles or tracks that are not yet represented.

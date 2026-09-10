@@ -37,11 +37,14 @@ The participant may create a no-charge foundational IAM account at **[m5bank.app
 
 This free IAM step is separate from program enrollment.
 
-### 2. ENROLL — activate M5 membership
+### 2. RESERVE — join the M5POD waitlist
 
-A participant who chooses the M5 activation program enrolls separately through **[m5member.netlify.app](https://m5member.netlify.app/)**.
+A participant may reserve an M5POD place through
+**[m5podactivationdemo.netlify.app](https://m5podactivationdemo.netlify.app/)**.
 
-M5Member is the enrollment/activation pathway through which an eligible participant progresses toward her **M5BankofMe account** and the applicable member experience.
+The waitlist is not enrollment, cohort admission, M5BankofMe activation, or
+credential issuance. Any later controlled program requires its own announced
+process, consent, eligibility, capacity, and approval.
 
 ### 3. I KNOW / I CAN — build capability evidence
 
@@ -104,7 +107,9 @@ FOUNDATION / ICSN PRINCIPLES
         ↓
 FREE IAM / I AM — m5bank.app
         ↓
-M5MEMBER ENROLLMENT — m5member.netlify.app
+M5POD WAITLIST — m5podactivationdemo.netlify.app
+        ↓
+FUTURE CONTROLLED ENROLLMENT
         ↓
 M5BANKOFME ACCOUNT
         ↓
