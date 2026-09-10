@@ -22,6 +22,16 @@ The following public assets are expressly licensed as stated:
 | `docs/changelog-m5-governance-v1.0.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
 | `docs/publication-records/*.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
 | `wiki-source/*.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
+| `initiatives/README.md` and `initiatives/hardware-endpoint-trust/*.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
+| `initiatives/HARDWARE-ENDPOINT-TRUST-AUDIT.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
+| `methodology/*.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
+| `datasets/*.md` and `datasets/hardware-endpoint-trust/*.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
+| `assets/public-review/hardware-endpoint-trust.svg` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
+| `schemas/README.md`, `examples/README.md`, and `tests/README.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
+| `schemas/hardware-endpoint-*.schema.json` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `examples/hardware-endpoint-*.synthetic.json` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `tests/validate_hardware_endpoint_package.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `requirements-validation.txt` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 
 The SPDX identifier in each expressly designated file is the controlling asset-level notice for that file.
 

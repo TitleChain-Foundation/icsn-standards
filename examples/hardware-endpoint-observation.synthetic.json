@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "observation_id": "obs-demo-001",
+  "test_run_id": "run-demo-001",
+  "device": {
+    "manufacturer": "Example Manufacturer",
+    "model": "Example Smart Display",
+    "device_class": "tv",
+    "firmware_version": "1.2.3",
+    "jurisdiction": "US"
+  },
+  "state": {
+    "consent": "off",
+    "operating": "standby",
+    "wan_connectivity": "connected",
+    "test_profile": "baseline-v0.1"
+  },
+  "observed_at": "2026-09-09T18:00:00Z",
+  "evidence_status": [
+    "observed",
+    "unresolved"
+  ],
+  "behavior": {
+    "category": "local_discovery",
+    "summary": "Synthetic example: local discovery protocol activity was observed during the declared standby window. No claim is made about purpose or manufacturer-wide behavior.",
+    "protocols": [
+      "example-discovery"
+    ],
+    "destination_categories": [
+      "smart_home"
+    ],
+    "event_count": 3
+  },
+  "evidence": [
+    {
+      "type": "flow_metadata",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "notes": "Synthetic placeholder only; no raw traffic is included."
+    }
+  ],
+  "vendor_response": {
+    "status": "not_requested"
+  },
+  "replication": {
+    "reproduction_count": 1,
+    "independent_reproduction_count": 0,
+    "notes": "Synthetic example; not a real test."
+  },
+  "limitations": [
+    "Synthetic example only; no real device was measured."
+  ],
+  "privacy": {
+    "authorized_test": true,
+    "pii_removed": true,
+    "third_party_content_removed": true,
+    "private_conversations_removed": true,
+    "redaction_notes": "Synthetic data only."
+  }
+}

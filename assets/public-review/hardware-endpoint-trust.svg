@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Hardware Endpoint Trust and Telemetry Audit</title>
+  <desc id="desc">A device moves from identity and provenance through declared consent and operating state to observable behavior, privacy-filtered evidence, and independent reproduction.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#211627"/>
+      <stop offset="1" stop-color="#321b38"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d53679"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" rx="28" fill="url(#bg)"/>
+  <text x="64" y="70" fill="#fffdf9" font-family="Georgia, serif" font-size="35" font-weight="700">You bought the hardware. Can you verify what it does?</text>
+  <text x="64" y="108" fill="#d8cbd8" font-family="Arial, sans-serif" font-size="20">Owner-controlled measurement · privacy-safe evidence · independent reproduction</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="55" y="170" width="190" height="170" rx="18" fill="#fffdf9"/>
+    <text x="150" y="215" fill="#211627" font-size="18" font-weight="700">IDENTITY</text>
+    <text x="150" y="252" fill="#4c4650" font-size="15">device · firmware</text>
+    <text x="150" y="278" fill="#4c4650" font-size="15">owner authority</text>
+
+    <rect x="280" y="170" width="190" height="170" rx="18" fill="#c7a552"/>
+    <text x="375" y="215" fill="#211627" font-size="18" font-weight="700">STATE</text>
+    <text x="375" y="252" fill="#211627" font-size="15">consent · active</text>
+    <text x="375" y="278" fill="#211627" font-size="15">standby · offline</text>
+
+    <rect x="505" y="170" width="190" height="170" rx="18" fill="#f7f4ee"/>
+    <text x="600" y="215" fill="#211627" font-size="18" font-weight="700">BEHAVIOR</text>
+    <text x="600" y="252" fill="#4c4650" font-size="15">discovery · telemetry</text>
+    <text x="600" y="278" fill="#4c4650" font-size="15">updates · reconnect</text>
+
+    <rect x="730" y="170" width="190" height="170" rx="18" fill="#fffdf9"/>
+    <text x="825" y="215" fill="#211627" font-size="18" font-weight="700">EVIDENCE</text>
+    <text x="825" y="252" fill="#4c4650" font-size="15">minimal · hashed</text>
+    <text x="825" y="278" fill="#4c4650" font-size="15">privacy filtered</text>
+
+    <rect x="955" y="170" width="190" height="170" rx="18" fill="#c7a552"/>
+    <text x="1050" y="215" fill="#211627" font-size="18" font-weight="700">REPRODUCE</text>
+    <text x="1050" y="252" fill="#211627" font-size="15">same method</text>
+    <text x="1050" y="278" fill="#211627" font-size="15">independent result</text>
+
+    <path d="M245 255 H270 M470 255 H495 M695 255 H720 M920 255 H945" stroke="#d53679" stroke-width="5" marker-end="url(#arrow)"/>
+  </g>
+  <rect x="120" y="402" width="960" height="86" rx="16" fill="#4a1f3d"/>
+  <text x="600" y="437" text-anchor="middle" fill="#fffdf9" font-family="Arial, sans-serif" font-size="17">OBSERVED ≠ INFERRED · one device ≠ one manufacturer · public research ≠ certification</text>
+  <text x="600" y="466" text-anchor="middle" fill="#d8cbd8" font-family="Arial, sans-serif" font-size="16">Fresh setup → Consent ON/OFF → Active → Idle → Standby → Offline → Reconnect → Update</text>
+</svg>

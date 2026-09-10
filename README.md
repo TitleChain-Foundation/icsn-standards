@@ -10,6 +10,8 @@ ICSN is the public standards program of the TitleChain Foundation. It publishes 
 
 **Help build the public commons for the digital-asset edge economy.** Companies, data providers, researchers, educators, workforce experts, and builders can [choose a commons contribution track](COMMONS-CONTRIBUTION-TRACKS.md) and introduce a proposal in [Discussion 22](https://github.com/orgs/TitleChain-Foundation/discussions/22). You can also open the [SEC public-review board](https://github.com/orgs/TitleChain-Foundation/projects/2/views/2), review the [featured architecture visuals](assets/public-review/README.md), or join the [SEC artifact discussion](https://github.com/orgs/TitleChain-Foundation/discussions/19). The public economic-data work concerns privacy-preserving, provenance-aware indicators and methodologies under open review; it is not represented as an official statistic, regulated benchmark, or deployed service.
 
+A complementary [hardware endpoint trust workstream](initiatives/hardware-endpoint-trust/README.md) invites independent, privacy-preserving replication of observable device behavior across consent, standby, offline/reconnect, and firmware states. It is public research, not a product blacklist or certification program.
+
 > **The M5 architecture makes AI operationally useful without allowing AI, credentials, wallets, employees, contractors, APIs, or third-party systems to become unaccountable sources of authority.**
 
 ## Canonical public architecture
@@ -50,6 +52,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 | Jurisdiction naming + resolution | [`docs/JURISDICTION-NAMING-RESOLUTION.md`](docs/JURISDICTION-NAMING-RESOLUTION.md) |
 | SwiftBRIDGE interoperability | [`docs/SWIFTBRIDGE-INTEROPERABILITY.md`](docs/SWIFTBRIDGE-INTEROPERABILITY.md) |
 | M5 Global Index and Exchange | [`docs/M5-GLOBAL-INDEX-AND-EXCHANGE.md`](docs/M5-GLOBAL-INDEX-AND-EXCHANGE.md) |
+| Hardware endpoint trust and telemetry | [Visual project hub](initiatives/hardware-endpoint-trust/README.md) |
 | L0–L8 + ZK dependencies | [`architecture/M5-L0-L8-ZK-REFERENCE-ARCHITECTURE.md`](architecture/M5-L0-L8-ZK-REFERENCE-ARCHITECTURE.md) |
 | Bridge proof requirements | [`docs/M5-BRIDGE-PROOF-REQUIREMENTS.md`](docs/M5-BRIDGE-PROOF-REQUIREMENTS.md) |
 | Certificate-of-title examples | [`docs/CERTIFICATE-OF-TITLE-MULTI-PARTY-EXAMPLES.md`](docs/CERTIFICATE-OF-TITLE-MULTI-PARTY-EXAMPLES.md) |
@@ -59,7 +62,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 | Economic architecture | [`wiki-source/M5-Economic-Architecture-and-Roadmap.md`](wiki-source/M5-Economic-Architecture-and-Roadmap.md) |
 | Provider, data, workforce, and training contributions | [Build the Public Economic Data Commons](COMMONS-CONTRIBUTION-TRACKS.md) |
 | RFCs | [`rfcs/`](rfcs/) |
-| Schemas | [`schemas/`](schemas/) |
+| Schemas | [`schemas/README.md`](schemas/README.md) |
 
 ## M5 actor, asset, and origination codes
 
@@ -90,7 +93,11 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 | Public reference artifacts | [Appendix B artifacts and recommendation map](docs/PUBLIC-REFERENCE-ARTIFACTS.md) |
 | Visual architecture overview | [Sovereign M5POD system diagram](architecture/rendered/m5-sovereign-stack.svg) and [accessible description](architecture/M5POD-MEMBER-ACTIVATION-ALT-TEXT.md) |
 | RFCs and specifications | [`rfcs/`](rfcs/README.md) |
-| Schemas and validation | [`schemas/`](schemas/) and [`scripts/validate_repository.py`](scripts/validate_repository.py) |
+| Public-review initiatives | [Initiatives guide](initiatives/README.md) |
+| Measurement methods | [Methodology guide](methodology/README.md) |
+| Schemas and examples | [Schemas guide](schemas/README.md) and [examples guide](examples/README.md) |
+| Dataset publication | [Datasets guide](datasets/README.md) |
+| Validation | [Tests guide](tests/README.md) and [`scripts/validate_repository.py`](scripts/validate_repository.py) |
 | Constitutional stewardship | [TRUST-AND-NON-CAPTURE.md](TRUST-AND-NON-CAPTURE.md) and [`constitutional/mission-lock.yaml`](constitutional/mission-lock.yaml) |
 | Public infrastructure | [PUBLIC-INFRASTRUCTURE-COMMITMENT.md](PUBLIC-INFRASTRUCTURE-COMMITMENT.md) |
 | 100K women-led venture initiative | [`initiatives/100K-WOMEN-LED-VENTURES.md`](initiatives/100K-WOMEN-LED-VENTURES.md) |
@@ -100,6 +107,7 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 | M5POD activation architecture | [`docs/M5POD-MEMBER-ACTIVATION-ARCHITECTURE.md`](docs/M5POD-MEMBER-ACTIVATION-ARCHITECTURE.md) and [`architecture/`](architecture/) |
 | Consent and authorization review drafts | [`docs/M5-ACTIVATION-CONSENT-AUTHORIZATION-MAP.md`](docs/M5-ACTIVATION-CONSENT-AUTHORIZATION-MAP.md) |
 | Hardware fleet pilot seeking review and sponsorship | [`initiatives/HARDWARE-FLEET-PILOT.md`](initiatives/HARDWARE-FLEET-PILOT.md) |
+| Hardware endpoint trust and telemetry audit | [Visual project hub](initiatives/hardware-endpoint-trust/README.md) |
 | Team and extended ecosystem | [TEAM-AND-ECOSYSTEM.md](TEAM-AND-ECOSYSTEM.md) |
 | Governance | [GOVERNANCE.md](GOVERNANCE.md) |
 | Adopted M5 member-authority governance | [docs/index.md](docs/index.md) |
