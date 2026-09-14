@@ -6,6 +6,7 @@ This file records material public releases of the ICSN standards workspace. Stan
 
 ### Added
 
+- Sovereign Compute Access Act Draft v1 model-legislation package for public review and comment.
 - Planned DUNA commons-governance roadmap, clearly marked as future/not yet activated.
 - Ricardian three-part agreement standard separating human terms, machine-readable meaning, and bounded execution.
 

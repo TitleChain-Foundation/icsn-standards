@@ -9,6 +9,10 @@ public workstreams. They are proposals, pilots, or implementation
 illustrations—not adopted standards or evidence of deployment unless a page
 explicitly says otherwise.
 
+## Model legislation
+
+- [Sovereign Compute Access Act - Draft v1](../legislation/sovereign-compute-access-act/README.md)
+
 ## Hardware and endpoint trust
 
 - [Hardware Endpoint Trust & Telemetry Audit](hardware-endpoint-trust/README.md)

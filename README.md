@@ -12,6 +12,8 @@ ICSN is the public standards program of the TitleChain Foundation. It publishes 
 
 A complementary [hardware endpoint trust workstream](initiatives/hardware-endpoint-trust/README.md) invites independent, privacy-preserving replication of observable device behavior across consent, standby, offline/reconnect, and firmware states. It is public research, not a product blacklist or certification program.
 
+**Review the Sovereign Compute Access Act.** [Draft v1 model legislation](legislation/sovereign-compute-access-act/README.md) proposes free, private access to open-weight AI for individuals, cooperatives, and small businesses. The text, transmittal sheet, technical companion, addendum, and visual appendices are published for public review and comment; the proposal has not been enacted or adopted as an ICSN standard.
+
 > **The M5 architecture makes AI operationally useful without allowing AI, credentials, wallets, employees, contractors, APIs, or third-party systems to become unaccountable sources of authority.**
 
 ## Canonical public architecture
@@ -89,6 +91,7 @@ The internal M5 asset/economic state model is separate from the M5Bank account s
 
 | Area | Public reference |
 | --- | --- |
+| Model legislation | [Sovereign Compute Access Act - Draft v1](legislation/sovereign-compute-access-act/README.md) |
 | Regulatory public records | [SEC Transfer Agent Rules — File No. S7-2026-30](regulatory/sec/s7-2026-30/README.md) |
 | Public reference artifacts | [Appendix B artifacts and recommendation map](docs/PUBLIC-REFERENCE-ARTIFACTS.md) |
 | Visual architecture overview | [Sovereign M5POD system diagram](architecture/rendered/m5-sovereign-stack.svg) and [accessible description](architecture/M5POD-MEMBER-ACTIVATION-ALT-TEXT.md) |
