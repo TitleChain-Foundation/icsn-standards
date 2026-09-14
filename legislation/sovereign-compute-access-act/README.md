@@ -29,10 +29,10 @@ counsel. It is not an adopted ICSN standard.
 
 ## Public review
 
-Comments, corrections, legal analysis, implementation critiques, and
-legislative-office inquiries are welcome through the
-[TitleChain Foundation Discussions](https://github.com/orgs/TitleChain-Foundation/discussions)
-or by email at [support@titlechainfoundation.org](mailto:support@titlechainfoundation.org).
+Read the [public-review hub](PUBLIC-REVIEW.md) for the review scope, comment
+channels, participation boundaries, and response lifecycle. Comments,
+corrections, legal analysis, implementation critiques, and legislative-office
+inquiries are welcome.
 
 Legislative sponsorship is distinct from financial or project sponsorship of
 the Foundation. A legislative office interested in introduction or
