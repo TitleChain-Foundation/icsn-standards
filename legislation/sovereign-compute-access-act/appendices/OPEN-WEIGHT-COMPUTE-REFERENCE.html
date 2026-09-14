@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Sovereign Compute Access Act — Reference Standard</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root{
+    --ink:#101820;
+    --sub:#4B5560;
+    --line:#E1E5E9;
+    --bg:#FFFFFF;
+    --panel:#F7F8FA;
+    --tier1:#2E7D5B;
+    --tier1-bg:#EEF6F1;
+    --tier2:#1C5FA8;
+    --tier2-bg:#EAF2FB;
+    --tier3:#6B3FA0;
+    --tier3-bg:#F1EBF8;
+    --free:#1C7A4A;
+    --paid:#8A6116;
+    --gap:#B33A3A;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{ max-width:1180px; margin:0 auto; padding:56px 64px 64px; }
+
+  .kicker{
+    font-size:12.5px; font-weight:600; color:var(--sub);
+    letter-spacing:.02em; margin-bottom:10px;
+  }
+  h1{
+    font-family:'Source Serif 4', serif;
+    font-weight:700; font-size:38px; line-height:1.14;
+    margin:0 0 8px; letter-spacing:-.01em;
+    max-width:820px;
+  }
+  .h1-sub{
+    font-family:'Source Serif 4', serif; font-style:italic; font-weight:400;
+    font-size:19px; color:var(--sub); margin:0 0 14px;
+  }
+  .dek{
+    font-size:16px; color:var(--sub); line-height:1.55;
+    max-width:700px; margin:0 0 6px;
+  }
+  .status-row{
+    display:flex; gap:22px; margin-top:22px; padding-top:20px;
+    border-top:1px solid var(--line); flex-wrap:wrap;
+  }
+  .status-item .label{ font-size:11.5px; color:var(--sub); margin-bottom:3px;}
+  .status-item .val{ font-size:13.5px; font-weight:600; }
+
+  .mandate-strip{
+    margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:0;
+    border:1.5px solid var(--ink); border-radius:12px; overflow:hidden;
+  }
+  .mandate-strip > div{ padding:20px 26px; }
+  .mandate-strip > div:first-child{ border-right:1px solid var(--line); background:var(--tier1-bg); }
+  .mandate-strip h3{ font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin:0 0 6px; }
+  .mandate-strip .m-title{ font-size:15.5px; font-weight:700; margin-bottom:6px; }
+  .mandate-strip p{ font-size:13px; color:#2B333B; line-height:1.55; margin:0; }
+  .mandate-strip .free-tag{ color:var(--free); }
+  .mandate-strip .paid-tag{ color:var(--paid); }
+
+  .principles{
+    margin-top:26px; padding:22px 26px; background:var(--panel);
+    border-radius:10px; border:1px solid var(--line);
+  }
+  .principles .ptitle{ font-size:13px; font-weight:700; margin-bottom:10px; }
+  .principles ul{ margin:0; padding-left:18px; }
+  .principles li{
+    font-size:13.5px; line-height:1.6; color:#2B333B;
+    margin-bottom:5px;
+  }
+  .principles li:last-child{ margin-bottom:0; }
+
+  .tiers{ margin-top:46px; }
+  .section-label{
+    font-size:12px; font-weight:600; color:var(--sub);
+    text-transform:uppercase; letter-spacing:.06em; margin-bottom:18px;
+  }
+  .tier{
+    border:1px solid var(--line); border-radius:12px;
+    margin-bottom:22px; overflow:hidden;
+  }
+  .tier-head{
+    display:flex; align-items:baseline; gap:14px;
+    padding:18px 26px; border-bottom:1px solid var(--line);
+  }
+  .tier-num{
+    font-family:'Source Serif 4', serif; font-weight:700; font-size:22px;
+    width:30px; flex-shrink:0;
+  }
+  .tier-name{ font-size:19px; font-weight:700; }
+  .access-badge{
+    font-size:11px; font-weight:700; letter-spacing:.03em;
+    padding:3px 10px; border-radius:999px; margin-left:4px;
+  }
+  .badge-free{ background:#DCF0E4; color:var(--free); }
+  .badge-paid{ background:#F5E9CE; color:var(--paid); }
+  .tier-who{ font-size:13px; color:var(--sub); margin-left:auto; text-align:right; }
+  .tier1 .tier-head{ background:var(--tier1-bg); }
+  .tier2 .tier-head{ background:var(--tier2-bg); }
+  .tier3 .tier-head{ background:var(--tier3-bg); }
+  .tier1 .tier-num{ color:var(--tier1); }
+  .tier2 .tier-num{ color:var(--tier2); }
+  .tier3 .tier-num{ color:var(--tier3); }
+
+  .tier-body{ padding:20px 26px 22px; }
+  .spec-row{
+    display:grid; grid-template-columns:170px 1fr 1fr; gap:18px;
+    font-size:13.5px; margin-bottom:14px;
+  }
+  .spec-row .k{ color:var(--sub); font-weight:500; }
+  .spec-row .v{ font-weight:600; }
+  .spec-row .v .sub{ font-weight:400; color:var(--sub); font-size:12.5px; display:block; margin-top:2px;}
+
+  .example-list{
+    display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;
+  }
+  .chip{
+    font-size:12.5px; font-weight:500; padding:6px 12px;
+    background:#fff; border:1px solid var(--line); border-radius:999px;
+    color:var(--ink);
+  }
+  .chip .p{ color:var(--sub); font-weight:400; }
+  .chip .co{
+    font-weight:600; font-size:10.5px; text-transform:uppercase; letter-spacing:.03em;
+    color:#fff; background:var(--ink); padding:1.5px 6px; border-radius:5px; margin-right:6px;
+  }
+  .chip.flag{ border-color:var(--gap); background:#FBEFEF; }
+  .chip.flag .co{ background:var(--gap); }
+  .tier1 .chip{ border-color:#CFE6D9; }
+  .tier2 .chip{ border-color:#CBDFF3; }
+  .tier3 .chip{ border-color:#DDCDEF; }
+
+  .note{
+    margin-top:12px; font-size:12.5px; color:var(--sub);
+    line-height:1.5; font-style:italic;
+  }
+  .note.gap{ color:var(--gap); font-style:normal; font-weight:500; }
+
+  .hw-section{ margin-top:40px; }
+  .hw-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  .hw-card{
+    border:1px solid var(--line); border-radius:10px; padding:18px 20px;
+  }
+  .hw-card .hw-name{ font-size:15px; font-weight:700; margin-bottom:4px; }
+  .hw-card .hw-models{ font-size:12px; color:var(--sub); margin-bottom:10px; }
+  .hw-card .hw-note{ font-size:12px; line-height:1.5; color:#2B333B; }
+  .hw-card .hw-flag{ display:inline-block; margin-top:8px; font-size:11px; font-weight:600; color:var(--gap); }
+
+  .purpose{
+    margin-top:34px; display:grid; grid-template-columns:1fr 1fr; gap:0;
+    border:1px solid var(--line); border-radius:12px; overflow:hidden;
+  }
+  .purpose > div{ padding:24px 26px; }
+  .purpose > div:first-child{ border-right:1px solid var(--line); }
+  .purpose h3{ font-size:14px; font-weight:700; margin:0 0 8px; }
+  .purpose p{ font-size:13.5px; color:#2B333B; line-height:1.6; margin:0; }
+
+  .foot{
+    margin-top:36px; padding-top:20px; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:flex-end;
+    font-size:11.5px; color:var(--sub);
+  }
+  .foot .refs{ max-width:660px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="kicker">TITLECHAIN FOUNDATION · ICSN · MODEL LEGISLATION · DRAFT V1</div>
+  <h1>The Sovereign Compute Access Act</h1>
+  <div class="h1-sub">&ldquo;Americans should not be required to rent intelligence they can lawfully possess and operate for themselves.&rdquo;</div>
+  <p class="dek">Reference standard for Title I (Sovereign Compute Access) of the Act. Every Personal, Cooperative, and Small Business account is entitled to free, unmetered, private access to any open-weight model a compute provider publishes — including on hardware they already own. Pooled and frontier compute stay paid and opt-in. Titles II and III (Human Agency &amp; Privacy; Federated Jurisdiction &amp; Anti-Capture) are covered in the full Act text.</p>
+
+  <div class="status-row">
+    <div class="status-item">
+      <div class="label">Status</div>
+      <div class="val">Draft for legislative introduction</div>
+    </div>
+    <div class="status-item">
+      <div class="label">Scope</div>
+      <div class="val">Open-weight / open-source models only</div>
+    </div>
+    <div class="status-item">
+      <div class="label">Snapshot verified</div>
+      <div class="val">Sept 13, 2026</div>
+    </div>
+  </div>
+
+  <div class="mandate-strip">
+    <div>
+      <h3 class="free-tag">Free · Mandatory</h3>
+      <div class="m-title">Tier I — Personal, Cooperative &amp; Small Business</div>
+      <p>Bank of Me (BOM) and Bank of Us (BOU) accounts, plus small business, get unmetered access to every open-weight model on the registry, run inside their own Sovereign Pod. No telemetry requirement. No API lock-in.</p>
+    </div>
+    <div>
+      <h3 class="paid-tag">Opt-in · Paid</h3>
+      <div class="m-title">Tiers II &amp; III — Pooled &amp; Frontier</div>
+      <p>Anything beyond local hardware — pooled GPUs, hosted inference, frontier-scale models — stays a commercial service, priced by each vendor. The Act doesn't force these open; it only guarantees Tier I stays free.</p>
+    </div>
+  </div>
+
+  <div class="hw-section" style="margin-top:0;">
+    <div class="section-label">The full Act at a glance — three titles</div>
+    <div class="hw-grid">
+      <div class="hw-card" style="border-color:var(--tier1);">
+        <div class="hw-name">Title I &mdash; Sovereign Compute Access</div>
+        <div class="hw-models">Sections 101&ndash;105 &middot; detailed below</div>
+        <div class="hw-note">Free Tier I baseline, opt-in paid Tiers II/III, vendor and chip neutrality, the Registered Sovereign Node (BYOD) program, and the public disclosure registry.</div>
+      </div>
+      <div class="hw-card" style="border-color:var(--tier2);">
+        <div class="hw-name">Title II &mdash; Human Agency &amp; Privacy</div>
+        <div class="hw-models">Sections 201&ndash;204</div>
+        <div class="hw-note">The right to possess and run open-weight AI privately; no compelled routing through centralized cloud; an AI agent can never exceed the authority its human principal delegated; essential government services must offer an open, locally deployable option.</div>
+      </div>
+      <div class="hw-card" style="border-color:var(--tier3);">
+        <div class="hw-name">Title III &mdash; Federated Jurisdiction &amp; Anti-Capture</div>
+        <div class="hw-models">Sections 301&ndash;305</div>
+        <div class="hw-note">States drive enforcement via UCC Article 12 (CER); no new federal agency &mdash; existing regulators apply their existing authority; evaluator independence and antitrust guardrails against frontier-lab safety-coordination waivers.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="principles">
+    <div class="ptitle">Registry principles</div>
+    <ul>
+      <li>Tiers are defined by capability, authority, and compute footprint — not by brand or a single parameter number.</li>
+      <li>Total parameters and activated parameters are recorded separately for mixture-of-experts models.</li>
+      <li>Cross-ownership between a model publisher and a chip manufacturer is disclosed, not penalized — see Hardware Neutrality below.</li>
+      <li>Inclusion in a tier is informative, not an endorsement or certification. Re-verify before production or legislative use.</li>
+    </ul>
+  </div>
+
+  <div class="tiers">
+    <div class="section-label">Compute tiers</div>
+
+    <!-- TIER 1 -->
+    <div class="tier tier1">
+      <div class="tier-head">
+        <div class="tier-num">I</div>
+        <div class="tier-name">Personal &amp; Cooperative</div>
+        <span class="access-badge badge-free">FREE · MANDATORY</span>
+        <div class="tier-who">BOM / BOU accounts · small business</div>
+      </div>
+      <div class="tier-body">
+        <div class="spec-row">
+          <div class="k">Hardware class</div>
+          <div class="v">Laptop, desktop, edge, phone<span class="sub">Runs inside a private M5POD, fully under the holder's control</span></div>
+          <div class="v">0.3B – 32B parameters<span class="sub">Dense or quantized; MoE evaluated by activated params</span></div>
+        </div>
+        <div class="example-list">
+          <span class="chip"><span class="co">Alibaba</span>Qwen3-0.6B <span class="p">· edge</span></span>
+          <span class="chip"><span class="co">Alibaba</span>Qwen3-4B / 8B <span class="p">· personal</span></span>
+          <span class="chip"><span class="co">Alibaba</span>Qwen3-14B / 32B <span class="p">· small business</span></span>
+          <span class="chip"><span class="co">OpenAI</span>gpt-oss-20b <span class="p">· 3.6B active, 131K ctx</span></span>
+          <span class="chip"><span class="co">Google</span>Gemma 3 1B–12B</span>
+          <span class="chip"><span class="co">Meta</span>Llama 4 Scout <span class="p">· 17B active, 10M ctx</span></span>
+          <span class="chip"><span class="co">Microsoft</span>Phi-4 <span class="p">· 14B, MIT</span></span>
+          <span class="chip"><span class="co">Apple</span>OpenELM <span class="p">· 270M–3B, on-device</span></span>
+          <span class="chip"><span class="co">DeepSeek</span>R1-Distill-Qwen 1.5B–32B</span>
+        </div>
+        <div class="note">Meta's Llama 4 Scout ships under the Llama Community License (free below 700M monthly active users) rather than Apache/MIT — flagged here since it is not fully unrestricted, but it still qualifies as open-weight for Tier I.</div>
+        <div class="note">Reference consumer hardware for this tier: AMD Ryzen AI Max+ 395 (128GB unified CPU/GPU memory, x86, independent vendor) can locally load models as large as gpt-oss-120b; Nvidia RTX 5080 (16GB VRAM) comfortably runs DeepSeek-R1-Distill up to ~14B. Pairing an AMD machine with an Nvidia machine in the same household illustrates the Section 103(b) multi-vendor requirement.</div>
+      </div>
+    </div>
+
+    <!-- TIER 2 -->
+    <div class="tier tier2">
+      <div class="tier-head">
+        <div class="tier-num">II</div>
+        <div class="tier-name">Scaled &amp; Pooled</div>
+        <span class="access-badge badge-paid">OPT-IN · PAID</span>
+        <div class="tier-who">Pooled GPUs · compute-as-a-service · Institution</div>
+      </div>
+      <div class="tier-body">
+        <div class="spec-row">
+          <div class="k">Hardware class</div>
+          <div class="v">Shared or rented GPU pools<span class="sub">e.g. Together AI-class providers; single or clustered datacenter GPUs</span></div>
+          <div class="v">30B – 500B parameters (total)<span class="sub">Total parameters; activation and context scale with pooled compute</span></div>
+        </div>
+        <div class="example-list">
+          <span class="chip"><span class="co">Alibaba</span>Qwen3-235B-A22B <span class="p">· 22B active</span></span>
+          <span class="chip"><span class="co">OpenAI</span>gpt-oss-120b <span class="p">· 5.1B active, single 80GB GPU</span></span>
+          <span class="chip"><span class="co">Mistral</span>Small 3.1 <span class="p">· 24B, text+image, 128K ctx</span></span>
+          <span class="chip"><span class="co">Google</span>Gemma 3 27B</span>
+          <span class="chip"><span class="co">Meta</span>Llama 4 Maverick <span class="p">· ~400B total, 1M ctx</span></span>
+          <span class="chip"><span class="co">DeepSeek</span>R1-Distill-Qwen-32B</span>
+          <span class="chip"><span class="co">DeepSeek</span>V4-Flash <span class="p">· 284B total / 13B active, MIT, 1M ctx</span></span>
+          <span class="chip"><span class="co">NVIDIA</span>Nemotron 3 Super <span class="p">· 120B total / 12B active, 1M ctx</span></span>
+          <span class="chip"><span class="co">MiniMax</span>M3 <span class="p">· 428B total / 23B active, 1M ctx</span></span>
+        </div>
+        <div class="note">This is the tier where access moves from owned hardware to paid-as-a-service pooling — the Act requires that pooling remain interoperable and non-exclusive to any one chip vendor. NVIDIA Nemotron is notable here: NVIDIA is both the dominant chip vendor (see Hardware Neutrality below) and, with this release, a model publisher in its own right — itself a Section 103(a) disclosure-relevant relationship.</div>
+      </div>
+    </div>
+
+    <!-- TIER 3 -->
+    <div class="tier tier3">
+      <div class="tier-head">
+        <div class="tier-num">III</div>
+        <div class="tier-name">Frontier &amp; Spatial</div>
+        <span class="access-badge badge-paid">OPT-IN · PAID</span>
+        <div class="tier-who">Thinking labs · world models · server-class research</div>
+      </div>
+      <div class="tier-body">
+        <div class="spec-row">
+          <div class="k">Hardware class</div>
+          <div class="v">Server-class / multi-node clusters<span class="sub">Beyond a single personal-device or single-GPU target</span></div>
+          <div class="v">500B+ total parameters<span class="sub">Exponential ingestion scale; spatial/world-model class</span></div>
+        </div>
+        <div class="example-list">
+          <span class="chip"><span class="co">DeepSeek</span>R1 <span class="p">· 671B total / 37B active, 128K ctx</span></span>
+          <span class="chip"><span class="co">DeepSeek</span>V4 Pro <span class="p">· 1.6T total / 49B active, MIT, 1M ctx</span></span>
+          <span class="chip"><span class="co">Z.ai</span>GLM-5.2 <span class="p">· 753B total / 40B active, MIT, 1M ctx</span></span>
+          <span class="chip"><span class="co">Moonshot AI</span>Kimi K2.6 <span class="p">· 1T total / 32B active, Modified MIT, 256K ctx</span></span>
+          <span class="chip"><span class="co">Thinking Machines Lab</span>Inkling <span class="p">· 975B total / 41B active, Apache 2.0, 1M ctx</span></span>
+          <span class="chip"><span class="co">NVIDIA</span>Nemotron 3 Ultra <span class="p">· 550B, Open MDW license</span></span>
+          <span class="chip"><span class="co">Perplexity</span>R1-1776 <span class="p">· decensored fine-tune of DeepSeek R1</span></span>
+          <span class="chip flag"><span class="co">xAI</span>Grok-1 <span class="p">· 314B, Mar 2024, unmaintained since</span></span>
+        </div>
+        <div class="example-list" style="margin-top:2px;">
+          <span class="chip"><span class="co">Meta</span>V-JEPA 2 <span class="p">· 1.2B params, world model, GitHub/HF</span></span>
+        </div>
+        <div class="note">Meta's V-JEPA 2 is a genuine open-weight world model — but at 1.2B parameters, it sits far below this tier's 500B threshold. That's not an error: JEPA-family world models use a non-autoregressive, self-supervised architecture that does not need frontier-scale parameter counts to model physical dynamics. <b>Section 105(d) of the Act classifies spatial/world models on five axes instead of parameter count alone: cumulative training compute (FLOPs, referencing the EU AI Act's 10²⁵ threshold), temporal coherence horizon, action-space complexity, modality fusion, and real-time constraint.</b> Parameter count is recorded as supplementary, not primary, for this category.</div>
+        <div class="note gap">Anthropic: no open-weight model released to date. Claude remains closed-weight only — a real gap under this standard.</div>
+        <div class="note gap">World Labs: no open-weight spatial/world model released to date. Atlas and related releases are closed product showcases — the equivalent gap on the spatial-intelligence side of this tier.</div>
+        <div class="note gap">Google DeepMind: Genie 3 is closed and restricted to a research-preview group of select academic and creative partners — not released as open weights. A third gap in this tier, alongside Anthropic and World Labs.</div>
+        <div class="note">Thinking Machines Lab (founded by former OpenAI CTO Mira Murati) released Inkling as its first model, open-weight from day one — notable since the lab could have launched closed. Kimi K3 (Moonshot AI), reported at 2.5–4T parameters, had its weights scheduled for public release July 27, 2026; exact final parameter count and license were not yet confirmed as of this snapshot and should be re-verified before citing.</div>
+        <div class="note">Grok-1 is xAI's only open-weight release and has not been updated since March 2024; xAI's current frontier work runs on hardware financed in part by a ~$2B Nvidia equity stake (Jan 2026 Series E) — see Hardware Neutrality, Section 103(a) disclosure.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hw-section">
+    <div class="section-label">Hardware neutrality — Section 103(a) disclosure</div>
+    <div class="hw-grid">
+      <div class="hw-card">
+        <div class="hw-name">NVIDIA</div>
+        <div class="hw-models">H100 · H200 · Blackwell B100/B200</div>
+        <div class="hw-note">Holds disclosed equity or committed-investment relationships with OpenAI (~$100B compute deal), xAI (~$2B, Jan 2026), Anthropic, and Intel (~$5B) — the dominant vendor across nearly every major lab.</div>
+        <span class="hw-flag">Cross-equity disclosed</span>
+      </div>
+      <div class="hw-card">
+        <div class="hw-name">AMD</div>
+        <div class="hw-models">Instinct MI300X · MI325X</div>
+        <div class="hw-note">Independent vendor. MI325X (288GB HBM3e) is positioned against Nvidia's H200/Blackwell class on memory capacity. No disclosed model-publisher cross-equity at this time.</div>
+      </div>
+      <div class="hw-card">
+        <div class="hw-name">Intel</div>
+        <div class="hw-models">Gaudi 3 · Falcon Shores</div>
+        <div class="hw-note">Independent vendor, though Intel has accepted a ~$5B Nvidia investment commitment — itself disclosable under 3.1 as a chip-to-chip cross-equity relationship.</div>
+        <span class="hw-flag">Cross-equity disclosed</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hw-section">
+    <div class="section-label">Section 104 — Bring-Your-Own-Device: Registered Sovereign Node Program</div>
+    <div class="mandate-strip" style="border-color:var(--line);">
+      <div style="background:#fff;">
+        <h3 style="color:var(--ink);">No New Purchase Required</h3>
+        <div class="m-title">Turn existing hardware into a validated Sovereign Node</div>
+        <p>Tens of millions of functional computers already sit idle or under-used in American homes. Any Covered Tier I holder can register their own PC or Mac — any chipset, any manufacturer — as a Registered Sovereign Node, part of a decentralized Internet of Sovereign Things.</p>
+      </div>
+      <div style="background:#fff;">
+        <h3 style="color:var(--ink);">Owner Control, Not Surveillance</h3>
+        <div class="m-title">Registration verifies capability, not content</div>
+        <p>Validation confirms hardware capability and a tamper-evident baseline. It grants no party — not TitleChain Foundation, not ICSN, not any compute provider — access to the owner's prompts, models, files, or usage. The Node stays a private M5POD.</p>
+      </div>
+    </div>
+    <div class="hw-grid" style="margin-top:14px;">
+      <div class="hw-card">
+        <div class="hw-name">Asahi Linux</div>
+        <div class="hw-models">Apple Silicon · M1–M4 class</div>
+        <div class="hw-note">Free, open-source native Linux port for Apple Silicon Macs. Converts an existing Mac to a fully open Sovereign Node without proprietary OS dependency.</div>
+      </div>
+      <div class="hw-card">
+        <div class="hw-name">Omarchy</div>
+        <div class="hw-models">x86 · Intel or AMD</div>
+        <div class="hw-note">Free, MIT-licensed, opinionated Arch Linux/Hyprland deployment. Standardized, reproducible base environment for a Sovereign Node on any x86 machine.</div>
+      </div>
+      <div class="hw-card">
+        <div class="hw-name">Registration path</div>
+        <div class="hw-models">M5-H0→H5 hardware classification</div>
+        <div class="hw-note">Same classification process used elsewhere in the standard, producing a device-identity and capability record consistent with ICSN Hardware Onboarding Standard RFC 0001.</div>
+      </div>
+    </div>
+    <div class="note" style="margin-top:14px;">Eligibility never depends on chipset or brand — an Apple, Intel, or AMD machine qualifies equally once it clears the minimum hardware classification. This is the mechanism that makes Tier I access real for households that already own a computer rather than a purchase requirement in disguise.</div>
+  </div>
+
+  <div class="hw-section">
+    <div class="section-label">Section 102(b) &mdash; Compute Reciprocity: the incentive to open up more models</div>
+    <div class="mandate-strip" style="border-color:var(--line);">
+      <div style="background:#fff;">
+        <h3 style="color:var(--ink);">If public compute was used</h3>
+        <div class="m-title">Reciprocity is required, not optional</div>
+        <p>A model trained using Publicly Supported Compute &mdash; a government grant, a subsidized national compute resource, preferential export treatment, or direct government contract &mdash; must have an open-weight variant released within 18 months. Modeled on the Bayh-Dole Act (35 U.S.C. Ch. 18): public benefit as the price of public support, without banning private commercialization.</p>
+      </div>
+      <div style="background:#fff;">
+        <h3 style="color:var(--ink);">If a company opens up voluntarily</h3>
+        <div class="m-title">Compliance gets cheaper, not just favored</div>
+        <p>A voluntary open-weight release earns "Registry Recognized" status: eligible for procurement consideration under Section 102(b)(4), and eligible for self-attestation in place of third-party evaluation under Section 102(b)(5) &mdash; a direct cost saving, not just a badge.</p>
+      </div>
+    </div>
+    <div class="note" style="margin-top:12px;">No provider is compelled to open a model built entirely on private compute (Section 102(a)(2)). This section applies where public support contributed to the training run and recognizes voluntary open releases.</div>
+  </div>
+
+  <div class="purpose">
+    <div>
+      <h3>Why mandate Tier I specifically</h3>
+      <p>Every major model publisher already releases something open — OpenAI, Google, Meta, Microsoft, Apple, and Alibaba all ship open-weight models today. The Act doesn't ask them to open anything new; it asks that what they already publish be guaranteed, free, to every Personal, Cooperative, and Small Business account, not offered at a vendor's discretion.</p>
+    </div>
+    <div>
+      <h3>Sovereignty by design</h3>
+      <p>Every tier runs inside a private M5POD under the holder's own authority. What downloads into that pod is chosen by the holder. Paid tiers remain available for anyone who wants more — but no one is required to pay for a baseline that already exists in the open.</p>
+    </div>
+  </div>
+
+  <div class="note" style="margin-top:0; margin-bottom:18px; padding:14px 20px; border:1px solid var(--line); border-radius:10px; font-style:normal;">
+    <b>How this connects to Appendix B (the Sovereign Intelligence Stack):</b> the tiers on this page classify by model and hardware class. Appendix B classifies the same standard by account and jurisdiction tier &mdash; Bank of Me and Bank of Us map to Tier I here, Bank of Business spans Tier I into Tier II, and Bank of Institution and Bank of Government extend through Tier II into Tier III. The two charts describe one standard from two directions.
+  </div>
+
+  <div class="foot">
+    <div class="refs">
+      Model sources: Qwen3 (github.com/QwenLM/Qwen3), OpenAI gpt-oss (openai.com/index/introducing-gpt-oss), DeepSeek-R1 and V4 (github.com/deepseek-ai), Mistral Small 3.1 (mistral.ai), Gemma 3 (ai.google.dev/gemma), Meta Llama 4, Microsoft Phi-4, Apple OpenELM, xAI Grok-1, Perplexity R1-1776, Z.ai GLM-5.2, Moonshot AI Kimi K2.6/K3, MiniMax M3, NVIDIA Nemotron 3 Super/Ultra, Thinking Machines Lab Inkling. Hardware disclosures per public funding announcements, Jan 2026. Snapshot verified Sept 13, 2026 — informative, non-normative; re-verify before production or regulatory reliance, especially for any model released after this date.
+    </div>
+    <div>TitleChain Foundation · ICSN</div>
+  </div>
+
+</div>
+</body>
+</html>

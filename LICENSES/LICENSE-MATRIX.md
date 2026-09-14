@@ -24,6 +24,7 @@ The following public assets are expressly licensed as stated:
 | `wiki-source/*.md` | All Rights Reserved (`LicenseRef-All-Rights-Reserved`) |
 | `initiatives/README.md` and `initiatives/hardware-endpoint-trust/*.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
 | `initiatives/HARDWARE-ENDPOINT-TRUST-AUDIT.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
+| `legislation/**/*.md`, `legislation/**/*.html`, and `legislation/**/*.png` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
 | `methodology/*.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
 | `datasets/*.md` and `datasets/hardware-endpoint-trust/*.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
 | `assets/public-review/hardware-endpoint-trust.svg` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`) |
