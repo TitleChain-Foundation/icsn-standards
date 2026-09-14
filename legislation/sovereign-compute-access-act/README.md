@@ -18,6 +18,23 @@ This is a public-review draft. It has not been enacted, introduced by a
 legislative office, or reviewed as the final work product of legislative
 counsel. It is not an adopted ICSN standard.
 
+## Featured visual: Open-Weight Compute Reference
+
+<p align="center">
+	<a href="appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html">
+		<img src="appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.png" width="560" alt="Open-Weight Compute Reference showing proposed personal, pooled, and frontier compute tiers, hardware classes, public-support reciprocity, and disclosure considerations">
+	</a>
+</p>
+
+Appendix A is a non-normative visual reference for reviewing the proposal's
+personal, pooled, and frontier compute tiers; open-weight model access;
+hardware capability; registered sovereign nodes; public-support reciprocity;
+and vendor-neutral disclosure requirements. Its classifications remain open
+to legal, technical, economic, security, accessibility, and implementation
+review.
+
+**[Open the full reference](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html) · [Read the official model-act text](OFFICIAL-TEXT.md) · [Submit a public comment](https://github.com/orgs/TitleChain-Foundation/discussions/38)**
+
 ## Draft v1 documents
 
 - [Official model-act text](OFFICIAL-TEXT.md)
