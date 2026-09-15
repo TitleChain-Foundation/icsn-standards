@@ -33,7 +33,7 @@ and vendor-neutral disclosure requirements. Its classifications remain open
 to legal, technical, economic, security, accessibility, and implementation
 review.
 
-**[Open the full reference](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html) · [Read the official model-act text](OFFICIAL-TEXT.md) · [Submit a public comment](https://github.com/orgs/TitleChain-Foundation/discussions/38)**
+**[View the browser-friendly reference](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html) · [View or download the full-resolution PNG](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.png) · [Read the official model-act text](OFFICIAL-TEXT.md) · [Submit a public comment](https://github.com/orgs/TitleChain-Foundation/discussions/38)**
 
 ## Draft v1 documents
 
@@ -41,8 +41,12 @@ review.
 - [Legislative transmittal sheet](COVER-SHEET.md)
 - [Founder and repository addendum](ADDENDUM.md)
 - [M5 AI Governor Commons companion](M5-AI-GOVERNOR-COMMONS-COMPANION.md)
-- [Appendix A - Open-Weight Compute Reference](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html)
+- Appendix A - Open-Weight Compute Reference:
+	[browser-friendly HTML](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html) |
+	[full-resolution PNG](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.png)
 - [Appendix B - Sovereign Intelligence Stack](appendices/SOVEREIGN-INTELLIGENCE-STACK.html)
+- Public-review media:
+	[view the Sovereign Compute Access Act carousel and download all 16 cards](media/sovereign-compute-act-carousel/README.md)
 
 ## Public review
 
