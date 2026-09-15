@@ -1,0 +1,41 @@
+{
+  "review_status": "APPROVED",
+  "approved_at": "2026-09-14T00:00:00Z",
+  "reviewer": "TitleChain Foundation public-review team",
+  "scope": "Initial Foundation seed questions in Discussion 38",
+  "takeaway": "The initial review agenda asks whether Draft v1 is legally administrable, technically measurable, economically proportionate, secure across heterogeneous hardware, and practically accessible beyond people who already own capable devices.",
+  "themes": [
+    {
+      "title": "Capability measures must fit the architecture",
+      "summary": "The spatial and world-model classification question asks whether a general-purpose training-compute threshold is a defensible proxy or whether architecture-specific, multi-factor evidence is needed.",
+      "source_comment": "https://github.com/TitleChain-Foundation/.github/discussions/38#discussioncomment-18428482"
+    },
+    {
+      "title": "State and federal enactment paths need separate analysis",
+      "summary": "The jurisdiction question asks whether state administration needs clearer territorial nexus, safe-harbor, reciprocity, or preemption language for interstate AI services.",
+      "source_comment": "https://github.com/TitleChain-Foundation/.github/discussions/38#discussioncomment-18428486"
+    },
+    {
+      "title": "Public support reciprocity needs an evidence-based clock",
+      "summary": "The economic question asks whether 18 months is proportionate to AI development cycles and how waivers, security constraints, third-party rights, and open-research alternatives should work.",
+      "source_comment": "https://github.com/TitleChain-Foundation/.github/discussions/38#discussioncomment-18428488"
+    },
+    {
+      "title": "Node assurance must remain vendor-neutral and privacy-preserving",
+      "summary": "The security question asks for a minimum tamper-evident outcome across old and new hardware without turning attestation into surveillance, lock-in, or a barrier to recovery and reuse.",
+      "source_comment": "https://github.com/TitleChain-Foundation/.github/discussions/38#discussioncomment-18428489"
+    },
+    {
+      "title": "Legal access is not the same as practical access",
+      "summary": "The accessibility question asks whether Draft v2 should address equipment, connectivity, support, disability access, language, and digital literacy without requiring centralized monitoring or compelled cloud use.",
+      "source_comment": "https://github.com/TitleChain-Foundation/.github/discussions/38#discussioncomment-18428492"
+    }
+  ],
+  "open_questions": [
+    "What evidence should replace or supplement parameter count and general-purpose FLOP thresholds for world models?",
+    "What jurisdictional limits make a state version enforceable without regulating wholly out-of-state conduct?",
+    "What reciprocity trigger and period preserve public benefit without defeating legitimate commercialization or security obligations?",
+    "What minimum node evidence is auditable, owner-controlled, recoverable, and usable across heterogeneous hardware?",
+    "What practical-access mechanisms close disability and digital-divide gaps without creating surveillance or an unfunded mandate?"
+  ]
+}

@@ -30,6 +30,9 @@ evidence, affected communities, and proposed resolution when possible.
 
 ## Public comment channels
 
+- Use the [live review observatory](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/)
+  to follow source-linked comments, initial human-reviewed takeaways, open
+  evidence questions, and current participation counts.
 - Use the [Draft v1 public-review Discussion](https://github.com/orgs/TitleChain-Foundation/discussions/38)
   for comments, questions, legislative-office engagement, and topics spanning
   multiple sections.
@@ -71,8 +74,11 @@ approval.
 - [Founder and repository addendum](ADDENDUM.md)
 - [M5 AI Governor Commons companion](M5-AI-GOVERNOR-COMMONS-COMPANION.md)
 - Appendix A - Open-Weight Compute Reference:
-  [browser-friendly HTML](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html) |
+  [rendered visual](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/open-weight-compute-reference.html) |
+  [HTML source](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html) |
   [full-resolution PNG](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.png)
-- [Appendix B - Sovereign Intelligence Stack](appendices/SOVEREIGN-INTELLIGENCE-STACK.html)
+- Appendix B - Sovereign Intelligence Stack:
+  [rendered visual](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/sovereign-intelligence-stack.html) |
+  [HTML source](appendices/SOVEREIGN-INTELLIGENCE-STACK.html)
 - Public-review media:
   [view the Sovereign Compute Access Act carousel and download all 16 cards](media/sovereign-compute-act-carousel/README.md)
