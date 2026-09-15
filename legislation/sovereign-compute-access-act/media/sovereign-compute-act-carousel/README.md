@@ -15,6 +15,7 @@ provisions are not part of the current Draft v1 official text, which ends Title
 I at Section 105.
 
 - [View the desktop carousel](index.html)
+- [Download all 16 cards as a PDF](Sovereign-Compute-Access-Act-Carousel.pdf)
 - [Read the official Draft v1 text](../../OFFICIAL-TEXT.md)
 - [Read the public-review hub](../../PUBLIC-REVIEW.md)
 - [Submit a public comment](https://github.com/orgs/TitleChain-Foundation/discussions/38)
