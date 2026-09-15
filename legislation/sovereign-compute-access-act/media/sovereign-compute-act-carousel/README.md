@@ -14,7 +14,7 @@ present **Proposed Section 106(a)-(e)** concepts for public discussion. Those
 provisions are not part of the current Draft v1 official text, which ends Title
 I at Section 105.
 
-- [View the desktop carousel](index.html)
+- [View the rendered carousel](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/media/carousel/index.html)
 - [Download all 16 cards as a PDF](Sovereign-Compute-Access-Act-Carousel.pdf)
 - [Read the official Draft v1 text](../../OFFICIAL-TEXT.md)
 - [Read the public-review hub](../../PUBLIC-REVIEW.md)

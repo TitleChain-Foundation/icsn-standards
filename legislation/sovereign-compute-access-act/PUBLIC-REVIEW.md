@@ -75,10 +75,8 @@ approval.
 - [M5 AI Governor Commons companion](M5-AI-GOVERNOR-COMMONS-COMPANION.md)
 - Appendix A - Open-Weight Compute Reference:
   [rendered visual](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/open-weight-compute-reference.html) |
-  [HTML source](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html) |
   [full-resolution PNG](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.png)
 - Appendix B - Sovereign Intelligence Stack:
-  [rendered visual](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/sovereign-intelligence-stack.html) |
-  [HTML source](appendices/SOVEREIGN-INTELLIGENCE-STACK.html)
+  [rendered visual](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/sovereign-intelligence-stack.html)
 - Public-review media:
   [view the Sovereign Compute Access Act carousel and download all 16 cards](media/sovereign-compute-act-carousel/README.md)

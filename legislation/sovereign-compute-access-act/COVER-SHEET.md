@@ -25,8 +25,8 @@ Every Personal, Cooperative, and Small Business account gets a free, unmetered, 
 ## What's attached
 
 1. **[Official bill text](OFFICIAL-TEXT.md)** - the clean, citable legislative text, formatted in standard SEC./subsection convention for review and redline.
-2. **[Appendix A - Open-Weight Compute Reference Chart](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html)** - a dated, non-normative visual reference for the model, compute, and hardware classifications discussed in Title I and section 105.
-3. **[Appendix B - Sovereign Intelligence Stack](appendices/SOVEREIGN-INTELLIGENCE-STACK.html)** - a non-normative M5 reference architecture for account and jurisdiction contexts.
+2. **[Appendix A - Open-Weight Compute Reference Chart](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/open-weight-compute-reference.html)** - a dated, non-normative visual reference for the model, compute, and hardware classifications discussed in Title I and section 105.
+3. **[Appendix B - Sovereign Intelligence Stack](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/sovereign-intelligence-stack.html)** - a non-normative M5 reference architecture for account and jurisdiction contexts.
 4. **[Addendum](ADDENDUM.md)** - submitter background, related research, and a section-by-section map from the Act to the live public standards repository.
 5. **[Public standards companion](M5-AI-GOVERNOR-COMMONS-COMPANION.md)** - proposed technical work that informs the Act's registry and hardware provisions.
 
