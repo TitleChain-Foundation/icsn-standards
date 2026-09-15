@@ -70,5 +70,9 @@ approval.
 - [Legislative transmittal sheet](COVER-SHEET.md)
 - [Founder and repository addendum](ADDENDUM.md)
 - [M5 AI Governor Commons companion](M5-AI-GOVERNOR-COMMONS-COMPANION.md)
-- [Appendix A - Open-Weight Compute Reference](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html)
+- Appendix A - Open-Weight Compute Reference:
+  [browser-friendly HTML](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.html) |
+  [full-resolution PNG](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.png)
 - [Appendix B - Sovereign Intelligence Stack](appendices/SOVEREIGN-INTELLIGENCE-STACK.html)
+- Public-review media:
+  [view the Sovereign Compute Access Act carousel and download all 16 cards](media/sovereign-compute-act-carousel/README.md)
