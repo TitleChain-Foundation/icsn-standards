@@ -132,7 +132,7 @@ def render(feed: dict[str, Any], reviewed: dict[str, Any]) -> str:
 <style>
 :root{{--ink:#201726;--paper:#fbfaf7;--line:#d8d0c4;--gold:#936915;--rose:#9b2b65;--green:#176b58}}*{{box-sizing:border-box}}body{{margin:0;background:var(--paper);color:var(--ink);font-family:"Avenir Next","Trebuchet MS",sans-serif;letter-spacing:0}}a{{color:#723057;text-underline-offset:3px}}header{{background:#fff;border-bottom:1px solid var(--line)}}.wrap{{width:min(1160px,calc(100% - 32px));margin:auto}}header .wrap{{padding:38px 0 32px}}.eyebrow,.meta{{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}}h1,h2{{font-family:Georgia,serif;font-weight:500}}h1{{font-size:clamp(2.5rem,7vw,5.6rem);line-height:.96;max-width:900px;margin:12px 0}}.lede{{max-width:760px;font-size:1.1rem;line-height:1.6}}nav{{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:22px}}main{{padding:30px 0 70px}}.notice{{background:#fff;border-left:5px solid var(--rose);padding:16px 20px}}.metrics{{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--line);margin:30px 0}}.metric{{padding:24px;border-right:1px solid var(--line)}}.metric:last-child{{border:0}}.metric strong{{display:block;font:500 2.8rem Georgia,serif}}section{{margin-top:50px}}h2{{font-size:clamp(1.8rem,4vw,3rem)}}.summary{{font-size:1.15rem;line-height:1.65;max-width:900px}}.themes{{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}}.themes article,.comment{{padding:25px 24px 28px 0;border-bottom:1px solid var(--line)}}.themes article:nth-child(odd){{border-right:1px solid var(--line)}}.themes article:nth-child(even){{padding-left:24px}}.visual{{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#18302b;color:#fff;padding:30px}}.visual img{{width:100%;background:#fff}}.visual a{{color:#f0cb7d}}.questions,.comment{{max-width:940px;line-height:1.65}}.comment .meta{{color:var(--green)}}footer{{border-top:1px solid var(--line);padding:28px 0 50px;color:#655c6d}}@media(max-width:720px){{.metrics,.themes,.visual{{grid-template-columns:1fr}}.metric,.themes article:nth-child(odd){{border-right:0}}.themes article:nth-child(even){{padding-left:0}}}}
 </style></head><body>
-<header><div class="wrap"><div class="eyebrow">TitleChain Foundation · Draft v1 public review</div><h1>Sovereign Compute Review Observatory</h1><p class="lede">A live source index and human-reviewed synthesis of comments on the Sovereign Compute Access Act. Discussion 38 remains the authoritative public record.</p><nav><a href="{DISCUSSION_URL}">Submit a comment</a><a href="https://github.com/TitleChain-Foundation/icsn-standards/blob/main/legislation/sovereign-compute-access-act/OFFICIAL-TEXT.md">Official Draft v1</a><a href="visuals/open-weight-compute-reference.html">Open-Weight Compute Reference</a><a href="visuals/sovereign-intelligence-stack.html">Sovereign Intelligence Stack</a><a href="media/carousel/index.html">Carousel</a></nav></div></header>
+<header><div class="wrap"><div class="eyebrow">TitleChain Foundation · Draft v1 public review</div><h1>Sovereign Compute Review Observatory</h1><p class="lede">A live source index and human-reviewed synthesis of comments on the Sovereign Compute Access Act. Discussion 38 remains the authoritative public record.</p><nav><a href="{DISCUSSION_URL}">Submit a comment</a><a href="https://github.com/TitleChain-Foundation/icsn-standards/blob/main/legislation/sovereign-compute-access-act/OFFICIAL-TEXT.md">Official Draft v1</a><a href="visuals/open-weight-compute-reference.html">Open-Weight Compute Reference</a><a href="visuals/sovereign-intelligence-stack.html">Sovereign Intelligence Stack</a><a href="media/open-weight-m5/index.html">Open Weights + M5 carousel</a><a href="media/carousel/index.html">Act carousel</a></nav></div></header>
 <main class="wrap"><div class="notice"><strong>Public-review intelligence, not a vote.</strong> Seed questions frame the initial agenda. Counts do not establish consensus, and summaries do not replace source comments.</div>
 <div class="metrics"><div class="metric"><strong>{feed['entry_count']}</strong>total entries</div><div class="metric"><strong>{feed['seed_count']}</strong>Foundation seed questions</div><div class="metric"><strong>{feed['independent_count']}</strong>independent responses</div></div>
 <section><div class="eyebrow">Human-reviewed synthesis</div><h2>Initial takeaways</h2><p class="summary">{html.escape(reviewed['takeaway'])}</p><div class="themes">{themes}</div><p><strong>Approved:</strong> {html.escape(reviewed['approved_at'])} · {html.escape(reviewed['reviewer'])}</p></section>
@@ -146,6 +146,7 @@ def copy_assets(root: Path, output: Path) -> None:
     act = root / "legislation" / "sovereign-compute-access-act"
     visuals = output / "visuals"
     carousel = output / "media" / "carousel"
+    open_weight_carousel = output / "media" / "open-weight-m5"
     visuals.mkdir(parents=True, exist_ok=True)
     carousel.mkdir(parents=True, exist_ok=True)
     pairs = {
@@ -158,6 +159,11 @@ def copy_assets(root: Path, output: Path) -> None:
         shutil.copy2(act / "appendices" / source, visuals / target)
     for name in ("index.html", "Sovereign-Compute-Access-Act-Carousel.pdf"):
         shutil.copy2(act / "media" / "sovereign-compute-act-carousel" / name, carousel / name)
+    shutil.copytree(
+        act / "media" / "open-weight-m5-carousel",
+        open_weight_carousel,
+        dirs_exist_ok=True,
+    )
 
 
 def main() -> int:

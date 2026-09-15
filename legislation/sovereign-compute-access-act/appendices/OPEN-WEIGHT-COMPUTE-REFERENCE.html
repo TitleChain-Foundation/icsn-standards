@@ -191,7 +191,7 @@
     </div>
     <div class="status-item">
       <div class="label">Snapshot verified</div>
-      <div class="val">Sept 13, 2026</div>
+      <div class="val">Sept 14, 2026</div>
     </div>
   </div>
 
@@ -264,6 +264,7 @@
           <span class="chip"><span class="co">Google</span>Gemma 3 1B–12B</span>
           <span class="chip"><span class="co">Meta</span>Llama 4 Scout <span class="p">· 17B active, 10M ctx</span></span>
           <span class="chip"><span class="co">Microsoft</span>Phi-4 <span class="p">· 14B, MIT</span></span>
+          <span class="chip"><span class="co">IBM</span>Granite 4.2 <span class="p">· 3B / 8B / 30B dense, Apache 2.0, 128K ctx</span></span>
           <span class="chip"><span class="co">Apple</span>OpenELM <span class="p">· 270M–3B, on-device</span></span>
           <span class="chip"><span class="co">DeepSeek</span>R1-Distill-Qwen 1.5B–32B</span>
         </div>
@@ -295,6 +296,7 @@
           <span class="chip"><span class="co">DeepSeek</span>R1-Distill-Qwen-32B</span>
           <span class="chip"><span class="co">DeepSeek</span>V4-Flash <span class="p">· 284B total / 13B active, MIT, 1M ctx</span></span>
           <span class="chip"><span class="co">NVIDIA</span>Nemotron 3 Super <span class="p">· 120B total / 12B active, 1M ctx</span></span>
+          <span class="chip"><span class="co">Cohere</span>Command A+ <span class="p">· 218B total / 25B active, Apache 2.0, 128K ctx</span></span>
           <span class="chip"><span class="co">MiniMax</span>M3 <span class="p">· 428B total / 23B active, 1M ctx</span></span>
         </div>
         <div class="note">This is the tier where access moves from owned hardware to paid-as-a-service pooling — the Act requires that pooling remain interoperable and non-exclusive to any one chip vendor. NVIDIA Nemotron is notable here: NVIDIA is both the dominant chip vendor (see Hardware Neutrality below) and, with this release, a model publisher in its own right — itself a Section 103(a) disclosure-relevant relationship.</div>
@@ -318,6 +320,7 @@
         <div class="example-list">
           <span class="chip"><span class="co">DeepSeek</span>R1 <span class="p">· 671B total / 37B active, 128K ctx</span></span>
           <span class="chip"><span class="co">DeepSeek</span>V4 Pro <span class="p">· 1.6T total / 49B active, MIT, 1M ctx</span></span>
+          <span class="chip"><span class="co">Mistral</span>Large 3 <span class="p">· 675B total / 41B active, Apache 2.0, 256K ctx</span></span>
           <span class="chip"><span class="co">Z.ai</span>GLM-5.2 <span class="p">· 753B total / 40B active, MIT, 1M ctx</span></span>
           <span class="chip"><span class="co">Moonshot AI</span>Kimi K2.6 <span class="p">· 1T total / 32B active, Modified MIT, 256K ctx</span></span>
           <span class="chip"><span class="co">Thinking Machines Lab</span>Inkling <span class="p">· 975B total / 41B active, Apache 2.0, 1M ctx</span></span>
@@ -329,10 +332,10 @@
           <span class="chip"><span class="co">Meta</span>V-JEPA 2 <span class="p">· 1.2B params, world model, GitHub/HF</span></span>
         </div>
         <div class="note">Meta's V-JEPA 2 is a genuine open-weight world model — but at 1.2B parameters, it sits far below this tier's 500B threshold. That's not an error: JEPA-family world models use a non-autoregressive, self-supervised architecture that does not need frontier-scale parameter counts to model physical dynamics. <b>Section 105(d) of the Act classifies spatial/world models on five axes instead of parameter count alone: cumulative training compute (FLOPs, referencing the EU AI Act's 10²⁵ threshold), temporal coherence horizon, action-space complexity, modality fusion, and real-time constraint.</b> Parameter count is recorded as supplementary, not primary, for this category.</div>
-        <div class="note gap">Anthropic: no open-weight model released to date. Claude remains closed-weight only — a real gap under this standard.</div>
+        <div class="note gap">Anthropic: no open-weight model released to date. Claude Opus 5 (July 24, 2026) is the closed-weight flagship; Claude Mythos 5.1 and Claude Fable 5.1 sit above it as Anthropic's closed frontier tier — the true Tier III equivalent with no open counterpart. A real gap under this standard.</div>
         <div class="note gap">World Labs: no open-weight spatial/world model released to date. Atlas and related releases are closed product showcases — the equivalent gap on the spatial-intelligence side of this tier.</div>
         <div class="note gap">Google DeepMind: Genie 3 is closed and restricted to a research-preview group of select academic and creative partners — not released as open weights. A third gap in this tier, alongside Anthropic and World Labs.</div>
-        <div class="note">Thinking Machines Lab (founded by former OpenAI CTO Mira Murati) released Inkling as its first model, open-weight from day one — notable since the lab could have launched closed. Kimi K3 (Moonshot AI), reported at 2.5–4T parameters, had its weights scheduled for public release July 27, 2026; exact final parameter count and license were not yet confirmed as of this snapshot and should be re-verified before citing.</div>
+        <div class="note">Thinking Machines Lab (founded by former OpenAI CTO Mira Murati) released Inkling as its first model, open-weight from day one — notable since the lab could have launched closed. Kimi K3 (Moonshot AI) released July 16, 2026, reported at approximately 2.8–3T total parameters. License terms should be re-verified against the current Hugging Face model card before citing exact figures.</div>
         <div class="note">Grok-1 is xAI's only open-weight release and has not been updated since March 2024; xAI's current frontier work runs on hardware financed in part by a ~$2B Nvidia equity stake (Jan 2026 Series E) — see Hardware Neutrality, Section 103(a) disclosure.</div>
       </div>
     </div>
@@ -429,7 +432,7 @@
 
   <div class="foot">
     <div class="refs">
-      Model sources: Qwen3 (github.com/QwenLM/Qwen3), OpenAI gpt-oss (openai.com/index/introducing-gpt-oss), DeepSeek-R1 and V4 (github.com/deepseek-ai), Mistral Small 3.1 (mistral.ai), Gemma 3 (ai.google.dev/gemma), Meta Llama 4, Microsoft Phi-4, Apple OpenELM, xAI Grok-1, Perplexity R1-1776, Z.ai GLM-5.2, Moonshot AI Kimi K2.6/K3, MiniMax M3, NVIDIA Nemotron 3 Super/Ultra, Thinking Machines Lab Inkling. Hardware disclosures per public funding announcements, Jan 2026. Snapshot verified Sept 13, 2026 — informative, non-normative; re-verify before production or regulatory reliance, especially for any model released after this date.
+      Model sources: Qwen3 (github.com/QwenLM/Qwen3), OpenAI gpt-oss (openai.com/index/introducing-gpt-oss), DeepSeek-R1 and V4 (github.com/deepseek-ai), Mistral Small 3.1 and Large 3 (mistral.ai), Gemma 3 (ai.google.dev/gemma), Meta Llama 4, Microsoft Phi-4, IBM Granite 4.2 (research.ibm.com), Cohere Command A+ (cohere.com), Apple OpenELM, xAI Grok-1, Perplexity R1-1776, Z.ai GLM-5.2, Moonshot AI Kimi K2.6/K3, MiniMax M3, NVIDIA Nemotron 3 Super/Ultra, Thinking Machines Lab Inkling. Hardware disclosures per public funding announcements, Jan 2026. Snapshot verified Sept 14, 2026 — informative, non-normative; re-verify before production or regulatory reliance, especially for any model released after this date.
     </div>
     <div>TitleChain Foundation · ICSN</div>
   </div>
