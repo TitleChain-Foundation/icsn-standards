@@ -157,8 +157,13 @@ def copy_assets(root: Path, output: Path) -> None:
     }
     for source, target in pairs.items():
         shutil.copy2(act / "appendices" / source, visuals / target)
-    for name in ("index.html", "Sovereign-Compute-Access-Act-Carousel.pdf"):
-        shutil.copy2(act / "media" / "sovereign-compute-act-carousel" / name, carousel / name)
+    act_carousel = act / "media" / "sovereign-compute-act-carousel"
+    for source in (
+        act_carousel / "index.html",
+        act_carousel / "Sovereign-Compute-Access-Act-Carousel.pdf",
+        *sorted(act_carousel.glob("card-*.png")),
+    ):
+        shutil.copy2(source, carousel / source.name)
     shutil.copytree(
         act / "media" / "open-weight-m5-carousel",
         open_weight_carousel,
