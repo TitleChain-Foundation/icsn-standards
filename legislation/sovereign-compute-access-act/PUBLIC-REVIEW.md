@@ -79,4 +79,5 @@ approval.
 - Appendix B - Sovereign Intelligence Stack:
   [rendered visual](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/sovereign-intelligence-stack.html)
 - Public-review media:
-  [view the Sovereign Compute Access Act carousel and download all 16 cards](media/sovereign-compute-act-carousel/README.md)
+  [view the Sovereign Compute Access Act carousel and download all 16 cards](media/sovereign-compute-act-carousel/README.md) |
+  [view the Open Weights and M5 carousel and download all 17 visuals](media/open-weight-m5-carousel/README.md)
