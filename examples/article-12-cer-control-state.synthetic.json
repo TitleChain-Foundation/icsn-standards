@@ -1,0 +1,231 @@
+{
+  "schema_version": "0.1.0",
+  "spdx_license_identifier": "Apache-2.0",
+  "snapshot_id": "urn:titlechain:snapshot:cer-demo-001",
+  "title_container_ref": "urn:titlechain:container:synthetic-asset-001",
+  "cer_ref": "urn:cer:synthetic-record-001",
+  "underlying_asset_or_right_ref": "urn:asset:synthetic-right-001",
+  "evaluated_at": "2026-09-21T00:00:00Z",
+  "applicable_law": {
+    "jurisdiction_ref": "urn:jurisdiction:synthetic-state",
+    "article_12_enactment_ref": "urn:law:synthetic-state:article-12:review-required",
+    "article_9_enactment_ref": "urn:law:synthetic-state:article-9:review-required",
+    "effective_text_version": "synthetic-review-fixture",
+    "legal_review_status": "PENDING"
+  },
+  "title_state": {
+    "status": "PENDING",
+    "authoritative_title_source_ref": "urn:record:synthetic-authoritative-source",
+    "owner_or_right_holder_refs": [],
+    "liens_claims_encumbrance_refs": [
+      "urn:claim:synthetic-underlying-lien-review"
+    ],
+    "obligation_refs": [],
+    "restriction_refs": [],
+    "notice_refs": [
+      "urn:notice:synthetic-review-pending"
+    ],
+    "standing": "PENDING",
+    "verified_by_ref": null,
+    "verified_at": null,
+    "evidence_refs": [
+      "urn:evidence:synthetic-title-review-request"
+    ]
+  },
+  "cer_control_state": {
+    "control_status": "ESTABLISHED",
+    "arrangement": "SHARED",
+    "through_another_person": true,
+    "proofs": {
+      "BENEFIT": {
+        "status": "ESTABLISHED",
+        "evidence_refs": [
+          "urn:evidence:synthetic-benefit-test"
+        ]
+      },
+      "EXCLUDE": {
+        "status": "ESTABLISHED",
+        "evidence_refs": [
+          "urn:evidence:synthetic-exclusion-test"
+        ]
+      },
+      "TRANSFER": {
+        "status": "ESTABLISHED",
+        "evidence_refs": [
+          "urn:evidence:synthetic-transfer-control-test"
+        ]
+      },
+      "IDENTIFY": {
+        "status": "ESTABLISHED",
+        "evidence_refs": [
+          "urn:evidence:synthetic-controller-identification"
+        ]
+      }
+    },
+    "controller_determinations": [
+      {
+        "person_ref": "urn:principal:synthetic-controller",
+        "status": "ESTABLISHED",
+        "proofs": {
+          "BENEFIT": {
+            "status": "ESTABLISHED",
+            "evidence_refs": [
+              "urn:evidence:synthetic-benefit-test"
+            ]
+          },
+          "EXCLUDE": {
+            "status": "ESTABLISHED",
+            "evidence_refs": [
+              "urn:evidence:synthetic-exclusion-test"
+            ]
+          },
+          "TRANSFER": {
+            "status": "ESTABLISHED",
+            "evidence_refs": [
+              "urn:evidence:synthetic-transfer-control-test"
+            ]
+          },
+          "IDENTIFY": {
+            "status": "ESTABLISHED",
+            "evidence_refs": [
+              "urn:evidence:synthetic-controller-identification"
+            ]
+          }
+        },
+        "controller_power_analysis": {
+          "person_ref": "urn:principal:synthetic-controller",
+          "relationship": "beneficial-controller-subject-to-joint-transfer-approval",
+          "BENEFIT": "INDEPENDENT",
+          "EXCLUDE": "JOINT",
+          "TRANSFER": "JOINT",
+          "IDENTIFY": "INDEPENDENT",
+          "exercise_mode": "JOINT",
+          "evidence_refs": [
+            "urn:evidence:synthetic-control-agreement"
+          ]
+        },
+        "exclusive_power_analysis": {
+          "status": "ESTABLISHED",
+          "shared_exercise_considered": true,
+          "transferor_retained_power_status": "NOT_RETAINED",
+          "evidence_refs": [
+            "urn:evidence:synthetic-exclusivity-analysis"
+          ]
+        },
+        "through_person_analysis": {
+          "applies": true,
+          "exercising_person": {
+            "person_ref": "urn:custodian:synthetic-custodian",
+            "relationship": "custodian-through-person-control-arrangement",
+            "BENEFIT": "NONE",
+            "EXCLUDE": "JOINT",
+            "TRANSFER": "JOINT",
+            "IDENTIFY": "NONE",
+            "exercise_mode": "JOINT",
+            "evidence_refs": [
+              "urn:evidence:synthetic-custody-agreement"
+            ]
+          },
+          "acknowledgement_status": "ESTABLISHED",
+          "acknowledgement_evidence_refs": [
+            "urn:evidence:synthetic-custodian-acknowledgement"
+          ]
+        },
+        "evidence_refs": [
+          "urn:evidence:synthetic-person-specific-control-determination"
+        ]
+      }
+    ]
+  },
+  "claims_state": {
+    "cer_property_claims": [
+      {
+        "claim_ref": "urn:claim:synthetic-cer-claim",
+        "status": "ASSERTED",
+        "evidence_refs": [
+          "urn:evidence:synthetic-cer-claim-notice"
+        ]
+      }
+    ],
+    "underlying_property_claims": [
+      {
+        "claim_ref": "urn:claim:synthetic-underlying-lien-review",
+        "status": "UNKNOWN",
+        "evidence_refs": [
+          "urn:evidence:synthetic-underlying-search-pending"
+        ]
+      }
+    ],
+    "separately_evaluated": true
+  },
+  "notice_state": {
+    "status": "UNKNOWN",
+    "subject_person_ref": "urn:purchaser:synthetic-proposed-recipient",
+    "applicable_notice_standard_ref": "urn:law:synthetic-state:qualifying-purchaser-notice-standard",
+    "evaluated_at": "2026-09-21T00:00:00Z",
+    "evidence_refs": [
+      "urn:evidence:synthetic-notice-review-pending"
+    ],
+    "not_applicable_basis_ref": null,
+    "article_9_filing_alone_treated_as_notice": false
+  },
+  "qualifying_purchaser_state": {
+    "status": "NOT_EVALUATED",
+    "purchaser_ref": "urn:purchaser:synthetic-proposed-recipient",
+    "value_status": "UNKNOWN",
+    "good_faith_status": "UNKNOWN",
+    "notice_state_ref": "urn:titlechain:snapshot:cer-demo-001#notice",
+    "cer_property_claim_effect": "NOT_EVALUATED",
+    "underlying_property_claim_effect": "NOT_DETERMINED_BY_CER_ANALYSIS",
+    "evidence_refs": []
+  },
+  "filing_secured_interest_state": {
+    "filing_status": "FILING_IDENTIFIED",
+    "filing_refs": [
+      "urn:filing:synthetic-ucc-record"
+    ],
+    "control_priority_analysis": "NOT_EVALUATED",
+    "control_state_ref": "urn:titlechain:snapshot:cer-demo-001#cer-control",
+    "title_state_ref": "urn:titlechain:snapshot:cer-demo-001#title"
+  },
+  "transfer_authority_state": {
+    "status": "NOT_ESTABLISHED",
+    "principal_refs": [
+      "urn:principal:synthetic-controller"
+    ],
+    "authority_refs": [],
+    "evidence_refs": [
+      "urn:evidence:synthetic-authority-review-pending"
+    ]
+  },
+  "approvals": [
+    {
+      "approver_ref": "urn:authority:synthetic-accountable-reviewer",
+      "role": "accountable-title-and-transfer-reviewer",
+      "status": "PENDING",
+      "evidence_ref": null
+    }
+  ],
+  "m5canon_six_gates": {
+    "G1_IDENTITY": "PASS",
+    "G2_ROLE_CREDENTIAL": "HOLD",
+    "G3_JURISDICTION": "HOLD",
+    "G4_DETERMINISTIC_POLICY": "HOLD",
+    "G5_ACCOUNTABLE_APPROVAL": "HOLD",
+    "G6_EVIDENCE_AUDIT": "PASS",
+    "decision": "HOLD"
+  },
+  "authoritative_record_update": {
+    "status": "NOT_REQUESTED",
+    "authoritative_record_ref": "urn:record:synthetic-authoritative-source",
+    "requested_update_ref": null,
+    "reconciliation_evidence_ref": null
+  },
+  "evidence_receipt_ref": "urn:receipt:synthetic-cer-control-snapshot-001",
+  "non_inference_acknowledgements": {
+    "cer_control_is_not_title": true,
+    "cer_claims_are_separate_from_underlying_claims": true,
+    "technical_control_is_not_transfer_authority": true,
+    "filing_control_and_title_are_separate": true
+  }
+}

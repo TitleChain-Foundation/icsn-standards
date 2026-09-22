@@ -22,6 +22,15 @@
     "titleContainerRef": {
       "type": "string"
     },
+    "article12CerStateRefs": {
+      "description": "References to separately evaluated Article 12 CER control snapshots. A reference does not merge CER control with title or transfer authority.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
     "subject": {
       "type": "object",
       "required": [

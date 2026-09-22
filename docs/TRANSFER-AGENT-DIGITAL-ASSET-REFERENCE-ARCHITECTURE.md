@@ -33,6 +33,9 @@ identity | credential | jurisdiction | policy | approval | evidence
 TITLECHAIN TITLE / RIGHT RECORD
 source + provenance + restrictions + lifecycle
                     ↓
+ARTICLE 12 CER CONTROL STATE, IF APPLICABLE
+BENEFIT | EXCLUDE | TRANSFER | IDENTIFY
+                    ↓
 REGISTERED TRANSFER AGENT'S LEGALLY AUTHORITATIVE RECORD
                     ↓
 AUTHORIZED ACTION
@@ -56,6 +59,8 @@ M5MST is the asset-minting event or TitleChain registration on WyomingChain.eth.
 ## Transfer
 
 A transfer event should independently determine who may instruct, propose, approve, and execute; which restrictions/legends apply; whether the recipient/venue is eligible; which authoritative record controls the ownership update; and what evidence proves completion.
+
+Where an Article 12 CER is implicated, control, shared/delegated power, title, CER property claims, underlying-property claims, notice, Article 9 filing/priority state, and transfer authority remain separate inputs. See the [UCC Article 12 CER control and title-state mapping](UCC-ARTICLE-12-CER-CONTROL-AND-TITLE-STATE.md).
 
 ## Correction and revocation
 

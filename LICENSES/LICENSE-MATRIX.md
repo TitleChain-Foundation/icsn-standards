@@ -32,6 +32,10 @@ The following public assets are expressly licensed as stated:
 | `schemas/hardware-endpoint-*.schema.json` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 | `examples/hardware-endpoint-*.synthetic.json` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 | `tests/validate_hardware_endpoint_package.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `docs/UCC-ARTICLE-12-CER-CONTROL-AND-TITLE-STATE.md` | Cyrus Purpose-Bound Constitutional Commons License 1.0 — Public Review Draft (`LicenseRef-CYRUS-PCCL-1.0`) |
+| `schemas/article-12-cer-control-state.schema.json` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `examples/article-12-cer-control-state.synthetic.json` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `tests/validate_article12_cer_package.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 | `requirements-validation.txt` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 
 The SPDX identifier in each expressly designated file is the controlling asset-level notice for that file.

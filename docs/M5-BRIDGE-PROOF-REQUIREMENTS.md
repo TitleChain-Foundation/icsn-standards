@@ -20,3 +20,5 @@ Private witness data may include provenance paths, credentials, Merkle proofs, a
 ## Authority boundary
 
 A cryptographically valid bridge proof does not by itself establish legal title, securities-law compliance, transfer-agent authority, or recipient eligibility. Those states remain inputs to the M5Canon/authoritative-record process.
+
+If the bridged record is asserted to be an Article 12 controllable electronic record, the bridge proof also MUST NOT merge CER control, legal title, claims in the CER, claims against underlying property, notice, filing/secured-interest state, or transfer authority. Apply the [canonical UCC Article 12 CER control and title-state mapping](UCC-ARTICLE-12-CER-CONTROL-AND-TITLE-STATE.md) at the transaction boundary.

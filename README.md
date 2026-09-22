@@ -49,6 +49,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 | SOPHIA 37-track participation map | [`docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md`](docs/SOPHIA-37-TRACK-PARTICIPATION-MAP.md) |
 | Native M5Agent public review | [Start with the agent architecture and review series](https://github.com/orgs/TitleChain-Foundation/discussions/23) |
 | Six-Gate authority control | [`docs/M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md`](docs/M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md) |
+| Article 12 CER control and title state | [`docs/UCC-ARTICLE-12-CER-CONTROL-AND-TITLE-STATE.md`](docs/UCC-ARTICLE-12-CER-CONTROL-AND-TITLE-STATE.md) |
 | M5MST asset minting + TitleChain registration | [`docs/M5MST-ASSET-MINTING-AND-TITLECHAIN-REGISTRATION.md`](docs/M5MST-ASSET-MINTING-AND-TITLECHAIN-REGISTRATION.md) |
 | Transfer-agent reference architecture | [`docs/TRANSFER-AGENT-DIGITAL-ASSET-REFERENCE-ARCHITECTURE.md`](docs/TRANSFER-AGENT-DIGITAL-ASSET-REFERENCE-ARCHITECTURE.md) |
 | Jurisdiction naming + resolution | [`docs/JURISDICTION-NAMING-RESOLUTION.md`](docs/JURISDICTION-NAMING-RESOLUTION.md) |

@@ -18,3 +18,14 @@ conclusions, or proof of deployment.
 
 All hardware examples use fictional manufacturers, models, identifiers, and
 placeholder hashes. Do not present them as measured results.
+
+## Article 12 CER control example
+
+| Example | Schema |
+| --- | --- |
+| [Shared-control transaction snapshot](article-12-cer-control-state.synthetic.json) | [Article 12 CER control state](../schemas/article-12-cer-control-state.schema.json) |
+
+The example is entirely synthetic. It intentionally leaves title, notice,
+transfer authority, approvals, and applicable-law review unresolved even though
+all four CER-control proofs are marked established. Its M5Canon decision is
+therefore `HOLD`.

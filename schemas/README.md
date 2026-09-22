@@ -24,3 +24,11 @@ See [synthetic examples](../examples/README.md) and the
 The remaining JSON files in this directory support title, authority,
 capability, custody, and role records. Their individual `$id`, version, and
 linked documentation control.
+
+## Article 12 CER control
+
+| Schema | Record |
+| --- | --- |
+| [Article 12 CER control state](article-12-cer-control-state.schema.json) | Transaction-boundary snapshot separating four-part CER control, title, claims, notice, filing, transfer authority, and M5Canon gates |
+
+See the [canonical mapping](../docs/UCC-ARTICLE-12-CER-CONTROL-AND-TITLE-STATE.md), [synthetic example](../examples/article-12-cer-control-state.synthetic.json), and [validation tool](../tests/validate_article12_cer_package.py).
