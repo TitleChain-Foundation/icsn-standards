@@ -1,0 +1,1505 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://titlechain-foundation.github.io/icsn-standards/schemas/article-12-cer-control-state.schema.json",
+  "$comment": "SPDX-License-Identifier: Apache-2.0",
+  "title": "TitleChain Article 12 CER Control State",
+  "description": "Transaction-boundary snapshot that keeps Article 12 CER control, title, claims, notice, Article 9 filing state, transfer authority, and M5Canon authorization independently evidenced.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "spdx_license_identifier",
+    "snapshot_id",
+    "title_container_ref",
+    "cer_ref",
+    "underlying_asset_or_right_ref",
+    "evaluated_at",
+    "applicable_law",
+    "title_state",
+    "cer_control_state",
+    "claims_state",
+    "notice_state",
+    "qualifying_purchaser_state",
+    "filing_secured_interest_state",
+    "transfer_authority_state",
+    "approvals",
+    "m5canon_six_gates",
+    "authoritative_record_update",
+    "evidence_receipt_ref",
+    "non_inference_acknowledgements"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "spdx_license_identifier": {
+      "const": "Apache-2.0"
+    },
+    "snapshot_id": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "title_container_ref": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "cer_ref": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "underlying_asset_or_right_ref": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "evaluated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "applicable_law": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "jurisdiction_ref",
+        "article_12_enactment_ref",
+        "article_9_enactment_ref",
+        "effective_text_version",
+        "legal_review_status"
+      ],
+      "properties": {
+        "jurisdiction_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "article_12_enactment_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "article_9_enactment_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "effective_text_version": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "legal_review_status": {
+          "enum": [
+            "PENDING",
+            "VERIFIED",
+            "DISPUTED",
+            "NOT_APPLICABLE"
+          ]
+        }
+      }
+    },
+    "title_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "authoritative_title_source_ref",
+        "owner_or_right_holder_refs",
+        "liens_claims_encumbrance_refs",
+        "obligation_refs",
+        "restriction_refs",
+        "notice_refs",
+        "standing",
+        "verified_by_ref",
+        "verified_at",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "UNKNOWN",
+            "PENDING",
+            "CLAIMED",
+            "VERIFIED",
+            "DISPUTED",
+            "RESTRICTED",
+            "SUPERSEDED"
+          ]
+        },
+        "authoritative_title_source_ref": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "owner_or_right_holder_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "liens_claims_encumbrance_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "obligation_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "restriction_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "notice_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "standing": {
+          "enum": [
+            "UNKNOWN",
+            "PENDING",
+            "CURRENT",
+            "NOT_CURRENT",
+            "DISPUTED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "verified_by_ref": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/string_array"
+        }
+      }
+    },
+    "cer_control_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "control_status",
+        "arrangement",
+        "through_another_person",
+        "proofs",
+        "controller_determinations"
+      ],
+      "properties": {
+        "control_status": {
+          "enum": [
+            "UNKNOWN",
+            "NOT_ESTABLISHED",
+            "ESTABLISHED",
+            "DISPUTED"
+          ]
+        },
+        "arrangement": {
+          "enum": [
+            "DIRECT",
+            "SHARED",
+            "DELEGATED",
+            "CUSTODIAN",
+            "TRANSFER_AGENT",
+            "THROUGH_ANOTHER_PERSON",
+            "OTHER"
+          ]
+        },
+        "through_another_person": {
+          "type": "boolean"
+        },
+        "proofs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "BENEFIT",
+            "EXCLUDE",
+            "TRANSFER",
+            "IDENTIFY"
+          ],
+          "properties": {
+            "BENEFIT": {
+              "$ref": "#/$defs/control_proof"
+            },
+            "EXCLUDE": {
+              "$ref": "#/$defs/control_proof"
+            },
+            "TRANSFER": {
+              "$ref": "#/$defs/control_proof"
+            },
+            "IDENTIFY": {
+              "$ref": "#/$defs/control_proof"
+            }
+          }
+        },
+        "controller_determinations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/controller_determination"
+          }
+        }
+      }
+    },
+    "claims_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cer_property_claims",
+        "underlying_property_claims",
+        "separately_evaluated"
+      ],
+      "properties": {
+        "cer_property_claims": {
+          "$ref": "#/$defs/claim_array"
+        },
+        "underlying_property_claims": {
+          "$ref": "#/$defs/claim_array"
+        },
+        "separately_evaluated": {
+          "const": true
+        }
+      }
+    },
+    "notice_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "subject_person_ref",
+        "applicable_notice_standard_ref",
+        "evaluated_at",
+        "evidence_refs",
+        "not_applicable_basis_ref",
+        "article_9_filing_alone_treated_as_notice"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "UNKNOWN",
+            "NO_NOTICE_DETERMINED",
+            "NOTICE_PRESENT",
+            "DISPUTED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "subject_person_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "applicable_notice_standard_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "evaluated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "not_applicable_basis_ref": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "article_9_filing_alone_treated_as_notice": {
+          "const": false
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "NOT_APPLICABLE"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "not_applicable_basis_ref": {
+                "$ref": "#/$defs/non_empty_string"
+              },
+              "evidence_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "not_applicable_basis_ref": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "qualifying_purchaser_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "purchaser_ref",
+        "value_status",
+        "good_faith_status",
+        "notice_state_ref",
+        "cer_property_claim_effect",
+        "underlying_property_claim_effect",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "NOT_EVALUATED",
+            "QUALIFIES",
+            "DOES_NOT_QUALIFY",
+            "DISPUTED"
+          ]
+        },
+        "purchaser_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "value_status": {
+          "enum": [
+            "UNKNOWN",
+            "ESTABLISHED",
+            "NOT_ESTABLISHED",
+            "DISPUTED"
+          ]
+        },
+        "good_faith_status": {
+          "enum": [
+            "UNKNOWN",
+            "ESTABLISHED",
+            "NOT_ESTABLISHED",
+            "DISPUTED"
+          ]
+        },
+        "notice_state_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "cer_property_claim_effect": {
+          "enum": [
+            "NOT_EVALUATED",
+            "TAKES_ACQUIRED_CER_RIGHTS_FREE_OF_PROPERTY_CLAIM",
+            "DOES_NOT_TAKE_FREE",
+            "DISPUTED"
+          ]
+        },
+        "underlying_property_claim_effect": {
+          "const": "NOT_DETERMINED_BY_CER_ANALYSIS"
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/string_array"
+        }
+      }
+    },
+    "filing_secured_interest_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "filing_status",
+        "filing_refs",
+        "control_priority_analysis",
+        "control_state_ref",
+        "title_state_ref"
+      ],
+      "properties": {
+        "filing_status": {
+          "enum": [
+            "UNKNOWN",
+            "NO_FILING_IDENTIFIED",
+            "FILING_IDENTIFIED",
+            "DISPUTED"
+          ]
+        },
+        "filing_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "control_priority_analysis": {
+          "enum": [
+            "NOT_EVALUATED",
+            "CONTROL_PRIORITY_INDICATED",
+            "NO_CONTROL_PRIORITY",
+            "NOT_APPLICABLE",
+            "DISPUTED"
+          ]
+        },
+        "control_state_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "title_state_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        }
+      }
+    },
+    "transfer_authority_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "principal_refs",
+        "authority_refs",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "UNKNOWN",
+            "NOT_ESTABLISHED",
+            "ESTABLISHED",
+            "RESTRICTED",
+            "REVOKED",
+            "DISPUTED"
+          ]
+        },
+        "principal_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "authority_refs": {
+          "$ref": "#/$defs/string_array"
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/string_array"
+        }
+      }
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "approver_ref",
+          "role",
+          "status",
+          "evidence_ref"
+        ],
+        "properties": {
+          "approver_ref": {
+            "$ref": "#/$defs/non_empty_string"
+          },
+          "role": {
+            "$ref": "#/$defs/non_empty_string"
+          },
+          "status": {
+            "enum": [
+              "PENDING",
+              "APPROVED",
+              "REJECTED",
+              "EXPIRED",
+              "REVOKED"
+            ]
+          },
+          "evidence_ref": {
+            "$ref": "#/$defs/nullable_string"
+          }
+        }
+      }
+    },
+    "m5canon_six_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "G1_IDENTITY",
+        "G2_ROLE_CREDENTIAL",
+        "G3_JURISDICTION",
+        "G4_DETERMINISTIC_POLICY",
+        "G5_ACCOUNTABLE_APPROVAL",
+        "G6_EVIDENCE_AUDIT",
+        "decision"
+      ],
+      "properties": {
+        "G1_IDENTITY": {
+          "$ref": "#/$defs/gate_status"
+        },
+        "G2_ROLE_CREDENTIAL": {
+          "$ref": "#/$defs/gate_status"
+        },
+        "G3_JURISDICTION": {
+          "$ref": "#/$defs/gate_status"
+        },
+        "G4_DETERMINISTIC_POLICY": {
+          "$ref": "#/$defs/gate_status"
+        },
+        "G5_ACCOUNTABLE_APPROVAL": {
+          "$ref": "#/$defs/gate_status"
+        },
+        "G6_EVIDENCE_AUDIT": {
+          "$ref": "#/$defs/gate_status"
+        },
+        "decision": {
+          "enum": [
+            "ALLOW",
+            "HOLD",
+            "DENY",
+            "ESCALATE"
+          ]
+        }
+      }
+    },
+    "authoritative_record_update": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "authoritative_record_ref",
+        "requested_update_ref",
+        "reconciliation_evidence_ref"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "NOT_REQUESTED",
+            "PENDING",
+            "COMPLETED",
+            "REJECTED",
+            "DISPUTED"
+          ]
+        },
+        "authoritative_record_ref": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "requested_update_ref": {
+          "$ref": "#/$defs/nullable_string"
+        },
+        "reconciliation_evidence_ref": {
+          "$ref": "#/$defs/nullable_string"
+        }
+      }
+    },
+    "evidence_receipt_ref": {
+      "$ref": "#/$defs/non_empty_string"
+    },
+    "non_inference_acknowledgements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cer_control_is_not_title",
+        "cer_claims_are_separate_from_underlying_claims",
+        "technical_control_is_not_transfer_authority",
+        "filing_control_and_title_are_separate"
+      ],
+      "properties": {
+        "cer_control_is_not_title": {
+          "const": true
+        },
+        "cer_claims_are_separate_from_underlying_claims": {
+          "const": true
+        },
+        "technical_control_is_not_transfer_authority": {
+          "const": true
+        },
+        "filing_control_and_title_are_separate": {
+          "const": true
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "controller_determinations": {
+                "contains": {
+                  "properties": {
+                    "status": {
+                      "const": "ESTABLISHED"
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "controller_determinations"
+            ]
+          }
+        },
+        "required": [
+          "cer_control_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "control_status": {
+                "const": "ESTABLISHED"
+              },
+              "proofs": {
+                "properties": {
+                  "BENEFIT": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "EXCLUDE": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "TRANSFER": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "IDENTIFY": {
+                    "$ref": "#/$defs/established_control_proof"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "control_status": {
+                "const": "ESTABLISHED"
+              }
+            },
+            "required": [
+              "control_status"
+            ]
+          }
+        },
+        "required": [
+          "cer_control_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "controller_determinations": {
+                "contains": {
+                  "properties": {
+                    "status": {
+                      "const": "ESTABLISHED"
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ]
+                }
+              },
+              "proofs": {
+                "properties": {
+                  "BENEFIT": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "EXCLUDE": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "TRANSFER": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "IDENTIFY": {
+                    "$ref": "#/$defs/established_control_proof"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "m5canon_six_gates": {
+            "properties": {
+              "decision": {
+                "const": "ALLOW"
+              }
+            },
+            "required": [
+              "decision"
+            ]
+          }
+        },
+        "required": [
+          "m5canon_six_gates"
+        ]
+      },
+      "then": {
+        "properties": {
+          "applicable_law": {
+            "properties": {
+              "legal_review_status": {
+                "const": "VERIFIED"
+              }
+            }
+          },
+          "cer_control_state": {
+            "properties": {
+              "control_status": {
+                "const": "ESTABLISHED"
+              }
+            }
+          },
+          "title_state": {
+            "properties": {
+              "status": {
+                "const": "VERIFIED"
+              },
+              "standing": {
+                "enum": [
+                  "CURRENT",
+                  "NOT_APPLICABLE"
+                ]
+              },
+              "authoritative_title_source_ref": {
+                "$ref": "#/$defs/non_empty_string"
+              },
+              "owner_or_right_holder_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              },
+              "verified_by_ref": {
+                "$ref": "#/$defs/non_empty_string"
+              },
+              "verified_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "evidence_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              }
+            }
+          },
+          "claims_state": {
+            "properties": {
+              "cer_property_claims": {
+                "$ref": "#/$defs/resolved_claim_array"
+              },
+              "underlying_property_claims": {
+                "$ref": "#/$defs/resolved_claim_array"
+              }
+            }
+          },
+          "notice_state": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "NO_NOTICE_DETERMINED",
+                  "NOTICE_PRESENT",
+                  "NOT_APPLICABLE"
+                ]
+              },
+              "evidence_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              }
+            }
+          },
+          "filing_secured_interest_state": {
+            "properties": {
+              "filing_status": {
+                "enum": [
+                  "NO_FILING_IDENTIFIED",
+                  "FILING_IDENTIFIED"
+                ]
+              },
+              "control_priority_analysis": {
+                "enum": [
+                  "CONTROL_PRIORITY_INDICATED",
+                  "NO_CONTROL_PRIORITY",
+                  "NOT_APPLICABLE"
+                ]
+              }
+            }
+          },
+          "transfer_authority_state": {
+            "properties": {
+              "status": {
+                "const": "ESTABLISHED"
+              },
+              "principal_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              },
+              "authority_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              },
+              "evidence_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              }
+            }
+          },
+          "approvals": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "const": "APPROVED"
+                },
+                "evidence_ref": {
+                  "$ref": "#/$defs/non_empty_string"
+                }
+              },
+              "required": [
+                "status",
+                "evidence_ref"
+              ]
+            }
+          },
+          "m5canon_six_gates": {
+            "properties": {
+              "G1_IDENTITY": {
+                "const": "PASS"
+              },
+              "G2_ROLE_CREDENTIAL": {
+                "const": "PASS"
+              },
+              "G3_JURISDICTION": {
+                "const": "PASS"
+              },
+              "G4_DETERMINISTIC_POLICY": {
+                "const": "PASS"
+              },
+              "G5_ACCOUNTABLE_APPROVAL": {
+                "const": "PASS"
+              },
+              "G6_EVIDENCE_AUDIT": {
+                "const": "PASS"
+              }
+            }
+          },
+          "authoritative_record_update": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "PENDING",
+                  "COMPLETED"
+                ]
+              },
+              "requested_update_ref": {
+                "$ref": "#/$defs/non_empty_string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "qualifying_purchaser_state": {
+            "properties": {
+              "status": {
+                "const": "QUALIFIES"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "qualifying_purchaser_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "notice_state": {
+            "properties": {
+              "status": {
+                "const": "NO_NOTICE_DETERMINED"
+              },
+              "evidence_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              }
+            }
+          },
+          "qualifying_purchaser_state": {
+            "properties": {
+              "value_status": {
+                "const": "ESTABLISHED"
+              },
+              "good_faith_status": {
+                "const": "ESTABLISHED"
+              },
+              "cer_property_claim_effect": {
+                "const": "TAKES_ACQUIRED_CER_RIGHTS_FREE_OF_PROPERTY_CLAIM"
+              },
+              "evidence_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "qualifying_purchaser_state": {
+            "properties": {
+              "cer_property_claim_effect": {
+                "const": "TAKES_ACQUIRED_CER_RIGHTS_FREE_OF_PROPERTY_CLAIM"
+              }
+            },
+            "required": [
+              "cer_property_claim_effect"
+            ]
+          }
+        },
+        "required": [
+          "qualifying_purchaser_state"
+        ]
+      },
+      "then": {
+        "properties": {
+          "applicable_law": {
+            "properties": {
+              "legal_review_status": {
+                "const": "VERIFIED"
+              }
+            }
+          },
+          "cer_control_state": {
+            "properties": {
+              "control_status": {
+                "const": "ESTABLISHED"
+              }
+            }
+          },
+          "qualifying_purchaser_state": {
+            "properties": {
+              "status": {
+                "const": "QUALIFIES"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "authoritative_record_update": {
+            "properties": {
+              "status": {
+                "const": "COMPLETED"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "authoritative_record_update"
+        ]
+      },
+      "then": {
+        "properties": {
+          "m5canon_six_gates": {
+            "properties": {
+              "decision": {
+                "const": "ALLOW"
+              }
+            }
+          },
+          "authoritative_record_update": {
+            "properties": {
+              "authoritative_record_ref": {
+                "$ref": "#/$defs/non_empty_string"
+              },
+              "requested_update_ref": {
+                "$ref": "#/$defs/non_empty_string"
+              },
+              "reconciliation_evidence_ref": {
+                "$ref": "#/$defs/non_empty_string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "through_another_person": {
+                "const": true
+              }
+            },
+            "required": [
+              "through_another_person"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "arrangement": {
+                "not": {
+                  "const": "DIRECT"
+                }
+              },
+              "controller_determinations": {
+                "contains": {
+                  "properties": {
+                    "through_person_analysis": {
+                      "properties": {
+                        "applies": {
+                          "const": true
+                        }
+                      },
+                      "required": [
+                        "applies"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "through_person_analysis"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "controller_determinations": {
+                "not": {
+                  "contains": {
+                    "properties": {
+                      "through_person_analysis": {
+                        "properties": {
+                          "applies": {
+                            "const": true
+                          }
+                        },
+                        "required": [
+                          "applies"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "through_person_analysis"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "arrangement": {
+                "const": "THROUGH_ANOTHER_PERSON"
+              }
+            },
+            "required": [
+              "arrangement"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "cer_control_state": {
+            "properties": {
+              "through_another_person": {
+                "const": true
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "non_empty_string": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nullable_string": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "string_array": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/non_empty_string"
+      },
+      "uniqueItems": true
+    },
+    "non_empty_string_array": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/non_empty_string"
+      },
+      "uniqueItems": true
+    },
+    "proof_status": {
+      "enum": [
+        "UNKNOWN",
+        "NOT_ESTABLISHED",
+        "ESTABLISHED",
+        "DISPUTED"
+      ]
+    },
+    "control_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "$ref": "#/$defs/proof_status"
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/string_array"
+        }
+      }
+    },
+    "established_control_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "const": "ESTABLISHED"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/non_empty_string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "controller_determination": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "person_ref",
+        "status",
+        "proofs",
+          "controller_power_analysis",
+        "exclusive_power_analysis",
+        "through_person_analysis",
+        "evidence_refs"
+      ],
+      "properties": {
+        "person_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "status": {
+          "$ref": "#/$defs/proof_status"
+        },
+        "proofs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "BENEFIT",
+            "EXCLUDE",
+            "TRANSFER",
+            "IDENTIFY"
+          ],
+          "properties": {
+            "BENEFIT": {
+              "$ref": "#/$defs/control_proof"
+            },
+            "EXCLUDE": {
+              "$ref": "#/$defs/control_proof"
+            },
+            "TRANSFER": {
+              "$ref": "#/$defs/control_proof"
+            },
+            "IDENTIFY": {
+              "$ref": "#/$defs/control_proof"
+            }
+          }
+        },
+        "controller_power_analysis": {
+          "$ref": "#/$defs/participant_power_analysis"
+        },
+        "exclusive_power_analysis": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "shared_exercise_considered",
+            "transferor_retained_power_status",
+            "evidence_refs"
+          ],
+          "properties": {
+            "status": {
+              "$ref": "#/$defs/proof_status"
+            },
+            "shared_exercise_considered": {
+              "type": "boolean"
+            },
+            "transferor_retained_power_status": {
+              "enum": [
+                "UNKNOWN",
+                "NOT_RETAINED",
+                "RETAINED",
+                "NOT_APPLICABLE"
+              ]
+            },
+            "evidence_refs": {
+              "$ref": "#/$defs/string_array"
+            }
+          }
+        },
+        "through_person_analysis": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "applies",
+            "exercising_person",
+            "acknowledgement_status",
+            "acknowledgement_evidence_refs"
+          ],
+          "properties": {
+            "applies": {
+              "type": "boolean"
+            },
+            "exercising_person": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/participant_power_analysis"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "acknowledgement_status": {
+              "enum": [
+                "NOT_APPLICABLE",
+                "UNKNOWN",
+                "ESTABLISHED",
+                "NOT_ESTABLISHED",
+                "DISPUTED"
+              ]
+            },
+            "acknowledgement_evidence_refs": {
+              "$ref": "#/$defs/string_array"
+            }
+          }
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/string_array"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "ESTABLISHED"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "proofs": {
+                "properties": {
+                  "BENEFIT": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "EXCLUDE": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "TRANSFER": {
+                    "$ref": "#/$defs/established_control_proof"
+                  },
+                  "IDENTIFY": {
+                    "$ref": "#/$defs/established_control_proof"
+                  }
+                }
+              },
+              "exclusive_power_analysis": {
+                "properties": {
+                  "status": {
+                    "const": "ESTABLISHED"
+                  },
+                  "transferor_retained_power_status": {
+                    "enum": [
+                      "NOT_RETAINED",
+                      "NOT_APPLICABLE"
+                    ]
+                  },
+                  "evidence_refs": {
+                    "$ref": "#/$defs/non_empty_string_array"
+                  }
+                }
+              },
+              "evidence_refs": {
+                "$ref": "#/$defs/non_empty_string_array"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "through_person_analysis": {
+                "properties": {
+                  "applies": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "applies"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "through_person_analysis": {
+                "properties": {
+                  "exercising_person": {
+                    "$ref": "#/$defs/participant_power_analysis"
+                  },
+                  "acknowledgement_status": {
+                    "const": "ESTABLISHED"
+                  },
+                  "acknowledgement_evidence_refs": {
+                    "$ref": "#/$defs/non_empty_string_array"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "power_status": {
+      "enum": [
+        "INDEPENDENT",
+        "JOINT",
+        "CONDITIONAL",
+        "NONE",
+        "UNKNOWN"
+      ]
+    },
+    "participant_power_analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "person_ref",
+        "relationship",
+        "BENEFIT",
+        "EXCLUDE",
+        "TRANSFER",
+        "IDENTIFY",
+        "exercise_mode",
+        "evidence_refs"
+      ],
+      "properties": {
+        "person_ref": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "relationship": {
+          "$ref": "#/$defs/non_empty_string"
+        },
+        "BENEFIT": {
+          "$ref": "#/$defs/power_status"
+        },
+        "EXCLUDE": {
+          "$ref": "#/$defs/power_status"
+        },
+        "TRANSFER": {
+          "$ref": "#/$defs/power_status"
+        },
+        "IDENTIFY": {
+          "$ref": "#/$defs/power_status"
+        },
+        "exercise_mode": {
+          "enum": [
+            "INDEPENDENT",
+            "JOINT",
+            "CONDITIONAL",
+            "NONE",
+            "UNKNOWN"
+          ]
+        },
+        "evidence_refs": {
+          "$ref": "#/$defs/string_array"
+        }
+      }
+    },
+    "claim_array": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_ref",
+          "status",
+          "evidence_refs"
+        ],
+        "properties": {
+          "claim_ref": {
+            "$ref": "#/$defs/non_empty_string"
+          },
+          "status": {
+            "enum": [
+              "UNKNOWN",
+              "ASSERTED",
+              "VERIFIED",
+              "DISPUTED",
+              "RELEASED",
+              "SUPERSEDED"
+            ]
+          },
+          "evidence_refs": {
+            "$ref": "#/$defs/string_array"
+          }
+        }
+      }
+    },
+    "resolved_claim_array": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_ref",
+          "status",
+          "evidence_refs"
+        ],
+        "properties": {
+          "claim_ref": {
+            "$ref": "#/$defs/non_empty_string"
+          },
+          "status": {
+            "enum": [
+              "ASSERTED",
+              "VERIFIED",
+              "RELEASED",
+              "SUPERSEDED"
+            ]
+          },
+          "evidence_refs": {
+            "$ref": "#/$defs/non_empty_string_array"
+          }
+        }
+      }
+    },
+    "gate_status": {
+      "enum": [
+        "PASS",
+        "HOLD",
+        "DENY",
+        "NOT_EVALUATED"
+      ]
+    }
+  }
+}

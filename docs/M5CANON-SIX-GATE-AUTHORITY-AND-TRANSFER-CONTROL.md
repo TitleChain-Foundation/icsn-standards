@@ -38,6 +38,8 @@ Resolve the applicable jurisdiction and authoritative source. The M5 reference i
 
 M5Canon evaluates current asset/entity state, delegation, restrictions, authorized supply, legends, limits, policy version, and other deterministic preconditions. It enforces authoritative state; it does not manufacture a legal conclusion.
 
+For a controllable electronic record, Gate 4 consumes independently evidenced title/right, Article 12 control, claims, notice, filing/secured-interest, and transfer-authority states. It MUST NOT collapse those states into one ledger or key-control result. See the [canonical UCC Article 12 CER control and title-state mapping](UCC-ARTICLE-12-CER-CONTROL-AND-TITLE-STATE.md).
+
 ## Gate 5 — Required accountable approval
 
 Where a human, issuer, board, transfer agent, custodian, regulator, or other accountable authority must approve, the action cannot proceed until the required approval is present and current.
@@ -49,6 +51,8 @@ The resulting decision/state change must create a tamper-evident, attributable r
 ## Fail-closed rule
 
 If identity, credential, standing, jurisdiction, policy, approval, or audit requirements are missing, stale, expired, revoked, or out of scope, the requested capability does not activate.
+
+**TitleChain/M5 MUST NOT infer legal title, ownership of underlying property, or transfer authority solely from possession of a private key, wallet access, token ownership, ledger state, or technical satisfaction of an Article 12 CER-control test.**
 
 ## Transfer-agent use
 
