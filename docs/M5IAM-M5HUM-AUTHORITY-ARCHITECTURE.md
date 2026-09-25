@@ -27,12 +27,12 @@ authorized action + evidence
 The reference account sequence is additive:
 
 ```text
-000-IAM      Identity & Access Management
-001-M5BOM    Bank of Me
-002-M5BOU    Bank of Us
-003-M5BOB    Bank of Business
-004-M5BOI    Bank of Institutions
-005-M5BOG    Bank of Government / Governance
+000-IAM      Identity & Access Management      (M0 — sovereign human, not yet credentialed)
+001-M5BOM    Bank of Me                        (M1-BOM — first credentialed account type)
+002-M5BOU    Bank of Us                        (M2-BOU)
+003-M5BOB    Bank of Business                  (M3-BOB)
+004-M5BOI    Bank of Institutions              (M4-BOI)
+005-M5BOG    Bank of Government / Governance   (M5-BOG)
 ```
 
 These account contexts are separate from the M1–M5 asset/economic classification model.
