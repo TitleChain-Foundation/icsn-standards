@@ -1,5 +1,11 @@
 # ICSN Standards
 
+> **TitleChain Foundation front doors:**
+> [titlechainfoundation.org](https://titlechainfoundation.org) — the Foundation ·
+> **ICSN Standards — the specifications (you are here)** ·
+> [M5 AI Sovereign Commons](https://github.com/TitleChain-Foundation/M5-AI-Sovereign-Commons) — the standards applied to real projects, SEC review and public research ·
+> [m5bank.app](https://m5bank.app) — the M5 member entry point, whitepapers and FAQ
+
 **Open specifications, schemas, conformance work, and public infrastructure for human-rooted identity, accountable agents, title/provenance, jurisdiction-aware digital systems, and portable economic evidence.**
 
 ICSN is the public standards program of the TitleChain Foundation. It publishes implementation-neutral standards and clearly labeled M5 reference architectures so governments, transfer agents, financial institutions, engineers, statisticians, economists, researchers, and other reviewers can inspect how identity, authority, title, transfer, and machine action can remain attributable and auditable as records move from paper to digital systems.
@@ -71,7 +77,7 @@ A wallet, token, API key, AI model, or namespace is never the source of its own 
 
 - **M5HUM — Human Principal.** Credentialed human sovereign. Every M5AGT is accountable to a named M5HUM.
 - **M5AGT — Autonomous Agent.** AI agent acting on behalf of a human. It cannot exceed the M5HUM's permissions.
-- **M5AST — Asset Token.** Real-world asset-backed token with one of five M1–M5 tiers on WyomingChain.eth.
+- **M5AST — Asset Token.** Real-world asset-backed token carrying one of the five M1–M5 asset classes on WyomingChain.eth.
 - **M5MST — Asset Minting.** Asset-minting event or TitleChain registration on WyomingChain.eth.
 
 An M5MST event records minting or registration; it does not itself grant transfer authority. Mint authority and transfer authority are separate capabilities.
@@ -80,13 +86,28 @@ An M5MST event records minting or registration; it does not itself grant transfe
 
 The internal M5 asset/economic state model is separate from the M5Bank account stack and separate from external legal classification:
 
-| State | Meaning |
+| Class | Meaning |
 | --- | --- |
-| **M1** | Money + Utility |
-| **M2** | Commodities |
-| **M3** | Titled / Unique / Collectible RWA |
-| **M4** | Financial Wrapper |
-| **M5** | Jurisdictional Security-State Profile |
+| **M1** | Money / Payment / Access / Utility / Fee Events |
+| **M2** | Commodity |
+| **M3** | Title / Ownership Asset |
+| **M4** | Security / Investment Instrument |
+| **M5** | Jurisdiction / Sovereign Authority State |
+
+**Account ladder: M0 → M1-BOM … M5-BOG.** The account contexts carry their own
+numbers and are separate from the asset classes above. **M0** is a sovereign
+human who holds a self-asserted `000-IAM` identifier but is not yet
+credentialed. Credentialing activates **M1-BOM** (`001-M5BOM`, Bank of Me), the
+first account type; M2-BOU, M3-BOB, M4-BOI and M5-BOG follow as separately
+authorized contexts. Write account tiers with their suffix (`M3-BOB`) so they are
+never confused with asset classes (`M3`).
+
+**Label history.** The Foundation's September 5, 2026 SEC comment used earlier
+labels: M1 Money + Utility, M2 Commodities, M3 Titled / Unique / Collectible
+RWA, M4 Financial Wrapper, M5 Jurisdictional Security-State Profile. The
+current labels above replace them. M4 is the security or investment instrument
+itself, not an opaque wrapper; where an M4 instrument depends on M3 assets or
+rights, each link is enumerated. Submitted filings are not edited.
 
 ## Repository map
 

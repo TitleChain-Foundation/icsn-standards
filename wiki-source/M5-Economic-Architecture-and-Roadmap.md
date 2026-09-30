@@ -14,7 +14,7 @@ WHAT IS THE UNDERLYING RIGHT OR ASSET
 TitleChain Title Container + M1/M2/M3 underlying class
 
 WHAT FINANCIAL / REGULATORY STATE APPLIES
-M4 financial wrapper + M5 jurisdictional security-state profile
+M4 security / investment instrument + M5 jurisdiction / sovereign authority state
 + external authoritative legal/regulatory state
 
 WHAT MAY HAPPEN NOW
@@ -34,8 +34,8 @@ The human identity floor and account contexts are additive:
 
 | Code | Context |
 | --- | --- |
-| `000-IAM` | Identity & Access Management |
-| `001-M5BOM` | Bank of Me |
+| `000-IAM` | Identity & Access Management — **M0**, a sovereign human not yet credentialed |
+| `001-M5BOM` | Bank of Me — **M1-BOM**, the first credentialed account type |
 | `002-M5BOU` | Bank of Us |
 | `003-M5BOB` | Bank of Business |
 | `004-M5BOI` | Bank of Institutions |
@@ -45,15 +45,22 @@ These are not the M1–M5 asset classes.
 
 ## M1–M5 asset/economic state model
 
-| State | Meaning |
+| Class | Meaning |
 | --- | --- |
-| **M1** | Money + Utility |
-| **M2** | Commodities |
-| **M3** | Titled / Unique / Collectible RWA |
-| **M4** | Financial Wrapper |
-| **M5** | Jurisdictional Security-State Profile |
+| **M1** | Money / Payment / Access / Utility / Fee Events |
+| **M2** | Commodity |
+| **M3** | Title / Ownership Asset |
+| **M4** | Security / Investment Instrument |
+| **M5** | Jurisdiction / Sovereign Authority State |
 
-M4/M5 are additive states/profiles. They do not erase the underlying M1/M2/M3 Title Container/class.
+**Label history.** The Foundation's September 5, 2026 SEC comment used earlier
+labels: M1 Money + Utility, M2 Commodities, M3 Titled / Unique / Collectible
+RWA, M4 Financial Wrapper, M5 Jurisdictional Security-State Profile. The
+current labels above replace them. M4 is the security or investment instrument
+itself, not an opaque wrapper; where an M4 instrument depends on M3 assets or
+rights, each link is enumerated. Submitted filings are not edited.
+
+M4/M5 are additive. They do not erase the underlying M1/M2/M3 Title Container/class; where an M4 instrument depends on M3 assets or rights, each link is enumerated.
 
 External SEC/CFTC, banking, tax, property, or other legal classifications remain separate authoritative projections. M5Canon may enforce a supplied/established legal state; it does not create a legal conclusion from an internal label.
 
