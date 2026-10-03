@@ -52,6 +52,9 @@ review.
 
 ## Public review
 
+**[Start here: questions from everyday life—no technical background needed](PEOPLES-DRAFT-PUBLIC-QUESTIONS.md).** Foundation prompts on access, pricing, limits, billing disputes, privacy incidents, and meaningful control.
+
+
 Read the [public-review hub](PUBLIC-REVIEW.md) for the review scope, comment
 channels, participation boundaries, and response lifecycle. Comments,
 corrections, legal analysis, implementation critiques, and legislative-office
