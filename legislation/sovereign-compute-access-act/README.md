@@ -50,7 +50,14 @@ review.
 	[view the Open Weights and M5 carousel and download all 17 visuals](media/open-weight-m5-carousel/README.md) |
 	[view the Sovereign Compute Access Act carousel and download all 16 cards](media/sovereign-compute-act-carousel/README.md)
 
+## Congressional outreach
+
+[Read the Foundation’s congressional outreach notice](CONGRESSIONAL-OUTREACH.md), including its reported House and Senate outreach and response status as of October 3, 2026. Outreach is not legislative introduction or endorsement.
+
 ## Public review
+
+**[Start here: questions from everyday life—no technical background needed](PEOPLES-DRAFT-PUBLIC-QUESTIONS.md).** Foundation prompts on access, pricing, limits, billing disputes, privacy incidents, and meaningful control.
+
 
 Read the [public-review hub](PUBLIC-REVIEW.md) for the review scope, comment
 channels, participation boundaries, and response lifecycle. Comments,

@@ -10,6 +10,20 @@ legislation. It has not been enacted, introduced by a legislative office, or
 reviewed as the final work product of legislative counsel. It is not an
 adopted ICSN standard.
 
+## Congressional outreach
+
+[Read the Foundation’s congressional outreach notice](CONGRESSIONAL-OUTREACH.md), including its reported House and Senate outreach and response status as of October 3, 2026. Outreach is not legislative introduction or endorsement.
+
+## Start with your experience
+
+[Start here: questions from everyday life—no technical background needed](PEOPLES-DRAFT-PUBLIC-QUESTIONS.md).
+
+These Foundation-authored prompts cover access, agent permissions, token charges,
+usage limits, budgets, billing disputes, and privacy-incident reporting. They are
+invitations to review the People’s Draft, not independent public responses or
+adopted additions to Official Draft v1. Pick one question and share an experience,
+concern, or suggested improvement without posting private information.
+
 ## What is open for review
 
 Reviewers are invited to comment on:
