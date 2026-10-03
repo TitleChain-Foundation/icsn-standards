@@ -10,6 +10,10 @@ legislation. It has not been enacted, introduced by a legislative office, or
 reviewed as the final work product of legislative counsel. It is not an
 adopted ICSN standard.
 
+## Congressional outreach
+
+[Read the Foundation’s congressional outreach notice](CONGRESSIONAL-OUTREACH.md), including its reported House and Senate outreach and response status as of October 3, 2026. Outreach is not legislative introduction or endorsement.
+
 ## Start with your experience
 
 [Start here: questions from everyday life—no technical background needed](PEOPLES-DRAFT-PUBLIC-QUESTIONS.md).
