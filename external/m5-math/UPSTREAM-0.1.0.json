@@ -6,7 +6,7 @@
   "version_label": "0.1.0",
   "copyright": "TitleChain Sovereign Purpose Trust (TitleChain Foundation); licensed by M5Capital Holdings LLC",
   "approval_boundary": "Implementation-specific M5 material, published under the M5Ecosystem Approval Boundary. It is not a TitleChain standard and does not advance any standard's status.",
-  "nash_notice": "The Nash files are published for reading and recomputing published scores only. All rights reserved; no license to implement is granted. The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust. See NASH-NOTICE.md.",
+  "nash_notice": "The Nash files are licensed under the Cyrus Purpose-Bound Constitutional Commons License 1.0, designated in LICENSES/CYRUS-COMMONS-REGISTER.csv. The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust, and is a Designated Method under the TitleChain Patent Pledge. See NASH-NOTICE.md.",
   "modified": false,
   "files": {
     "core/m5_canonical.py": {
@@ -15,11 +15,11 @@
     },
     "core/nash_score.py": {
       "sha256": "sha256:c161212185cc20ce1fca5eb5f84fe43ce1f6c635092520681cdb7cd1f81f8c31",
-      "license": "LicenseRef-All-Rights-Reserved"
+      "license": "LicenseRef-CYRUS-PCCL-1.0"
     },
     "docs/standards/M5-MATH-001.md": {
       "sha256": "sha256:b5a9ea38e54dea72d36605c0355f93a63a3b981f55bd1508249689d199c9de64",
-      "license": "Apache-2.0 except section 5 (Nash M5Score), LicenseRef-All-Rights-Reserved"
+      "license": "Apache-2.0 except section 5 (Nash M5Score), LicenseRef-CYRUS-PCCL-1.0"
     },
     "packages/m5-math/canonical.js": {
       "sha256": "sha256:c19bfd67e2b1f8e00f972ca343d0faefc9123d8b7cfd443ecf2de5879a5983e8",
@@ -27,11 +27,11 @@
     },
     "packages/m5-math/nash-score.js": {
       "sha256": "sha256:c7cc691d3d78d01c917e781be6be3630bf27077db667fa35667bffb0b53bc4aa",
-      "license": "LicenseRef-All-Rights-Reserved"
+      "license": "LicenseRef-CYRUS-PCCL-1.0"
     },
     "packages/m5-math/nash-weights.json": {
       "sha256": "sha256:b325f39c4167478a4c465f0da94021b15582913e9db05e8910afd1cb5e8d2371",
-      "license": "LicenseRef-All-Rights-Reserved"
+      "license": "LicenseRef-CYRUS-PCCL-1.0"
     },
     "packages/m5-math/receipt-verify.js": {
       "sha256": "sha256:bcbc6f1378fefd6e12d82b6f67ee1b7e25e2b7c82c58f3b56b5072f409f925f6",
@@ -43,7 +43,7 @@
     },
     "packages/m5-math/vectors/nash-score.vectors.json": {
       "sha256": "sha256:6bc001190067dabb38ad84d02e27086453312118453cd9f39779556d61c09568",
-      "license": "LicenseRef-All-Rights-Reserved"
+      "license": "LicenseRef-CYRUS-PCCL-1.0"
     },
     "schemas/transactions/m5-value-receipt.schema.json": {
       "sha256": "sha256:0d1cc2f80149f971fd31acbfa9a162046d1edb4652ae0bf8668453f529c6dab3",

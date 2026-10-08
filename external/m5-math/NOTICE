@@ -6,8 +6,9 @@ Copyright 2026 TitleChain Sovereign Purpose Trust (TitleChain Foundation); licen
 Files designated Apache-2.0 in UPSTREAM-0.1.0.json are licensed under the Apache License,
 Version 2.0 (see LICENSES/Apache-2.0.txt at the repository root).
 
-Files designated LicenseRef-All-Rights-Reserved (the Nash M5Score files, and section 5 of
-docs/standards/M5-MATH-001.md) are NOT licensed under Apache-2.0. All rights reserved.
+Files designated LicenseRef-CYRUS-PCCL-1.0 (the Nash M5Score files, and section 5 of
+docs/standards/M5-MATH-001.md) are licensed under the Cyrus Purpose-Bound Constitutional
+Commons License 1.0, not Apache-2.0, as recorded in LICENSES/CYRUS-COMMONS-REGISTER.csv.
 The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273
 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust;
 see NASH-NOTICE.md.

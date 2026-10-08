@@ -24,8 +24,8 @@ recompute M5 evidence (canonical hashes, value receipts, and Nash scores) withou
 | `core/m5_canonical.py`, `packages/m5-math/canonical.js`, `vectors/canonical-hash.vectors.json` | MATH-CANONICAL-HASH: canonical JSON and SHA-256, in Python and JavaScript, held to the same vectors | Apache-2.0 |
 | `packages/m5-math/receipt-verify.js` | Recomputes an M5 Value Receipt's split hash and verifies that its amounts add up, the CCF-5 floor, and agency payouts | Apache-2.0 |
 | `schemas/transactions/m5-value-receipt.schema.json` | M5 Value Receipt schema v1.4.0 | Apache-2.0 |
-| `docs/standards/M5-MATH-001.md` | The written rules | Apache-2.0, except section 5 (Nash M5Score), All Rights Reserved |
-| `core/nash_score.py`, `packages/m5-math/nash-score.js`, `nash-weights.json`, `vectors/nash-score.vectors.json` | Nash M5Score method, weights, and vectors (status PROPOSED, no economic consequences) | **All Rights Reserved; patented process licensed to the Trust.** Readable and recomputable; no license to implement. |
+| `docs/standards/M5-MATH-001.md` | The written rules | Apache-2.0, except section 5 (Nash M5Score), Cyrus license |
+| `core/nash_score.py`, `packages/m5-math/nash-score.js`, `nash-weights.json`, `vectors/nash-score.vectors.json` | Nash M5Score method, weights, and vectors (status PROPOSED, no economic consequences) | **Cyrus Purpose-Bound license.** Free to implement within the Cyrus Purpose Covenant; patents covered by the TitleChain Patent Pledge, Schedule A, once adopted |
 
 ## What is not included
 

@@ -4,8 +4,9 @@
 
 1. The snapshot is byte-identical to its upstream manifest, with no files
    added or removed, and no excluded (private) file is present.
-2. Every file carries a license designation, and the Nash files are marked
-   All Rights Reserved.
+2. Every file carries a license designation. The Nash files are designated
+   under the Cyrus license, each with a Cyrus Commons Register entry whose
+   hash matches the file.
 3. Nash weights are PROPOSED with no economic consequences.
 4. The Python reference reproduces every canonical-hash and Nash vector.
 5. If Node.js 18+ is available, the JavaScript twin reproduces the same
@@ -13,6 +14,7 @@
 """
 from __future__ import annotations
 
+import csv
 import hashlib
 import json
 import os
@@ -24,6 +26,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "external" / "m5-math"
+CYRUS = "LicenseRef-CYRUS-PCCL-1.0"
+REGISTER = {
+    row["repository_path"]: row["hash"]
+    for row in csv.DictReader(
+        (ROOT / "LICENSES" / "CYRUS-COMMONS-REGISTER.csv").read_text(encoding="utf-8").splitlines()
+    )
+    if row["license"] == CYRUS
+}
 NASH_FILES = {
     "core/nash_score.py",
     "packages/m5-math/nash-score.js",
@@ -87,8 +97,12 @@ def check_snapshot(errors: list[str]) -> list[Path]:
             license_id = expected[path].get("license", "")
             if not license_id:
                 errors.append(f"{version}: no license designation: {path}")
-            if path in NASH_FILES and license_id != "LicenseRef-All-Rights-Reserved":
-                errors.append(f"{version}: Nash file must be All Rights Reserved: {path}")
+            if path in NASH_FILES:
+                if license_id != CYRUS:
+                    errors.append(f"{version}: Nash file must be designated {CYRUS}: {path}")
+                repo_path = (base / path).relative_to(ROOT).as_posix()
+                if REGISTER.get(repo_path) != digest:
+                    errors.append(f"{version}: no matching Cyrus Commons Register entry: {repo_path}")
         for excluded in manifest.get("excluded", {}):
             if (base / excluded).exists() or excluded in expected:
                 errors.append(f"{version}: excluded private file is present: {excluded}")

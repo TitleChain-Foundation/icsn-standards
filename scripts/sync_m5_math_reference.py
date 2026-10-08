@@ -26,8 +26,8 @@ DEST = ROOT / "external" / "m5-math"
 VERSION = "0.1.0"
 
 APACHE = "Apache-2.0"
-NASH = "LicenseRef-All-Rights-Reserved"
-MIXED = "Apache-2.0 except section 5 (Nash M5Score), LicenseRef-All-Rights-Reserved"
+NASH = "LicenseRef-CYRUS-PCCL-1.0"
+MIXED = "Apache-2.0 except section 5 (Nash M5Score), LicenseRef-CYRUS-PCCL-1.0"
 
 FILES = {
     "core/m5_canonical.py": APACHE,
@@ -88,7 +88,7 @@ def main() -> int:
         "version_label": VERSION,
         "copyright": "TitleChain Sovereign Purpose Trust (TitleChain Foundation); licensed by M5Capital Holdings LLC",
         "approval_boundary": "Implementation-specific M5 material, published under the M5Ecosystem Approval Boundary. It is not a TitleChain standard and does not advance any standard's status.",
-        "nash_notice": "The Nash files are published for reading and recomputing published scores only. All rights reserved; no license to implement is granted. The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust. See NASH-NOTICE.md.",
+        "nash_notice": "The Nash files are licensed under the Cyrus Purpose-Bound Constitutional Commons License 1.0, designated in LICENSES/CYRUS-COMMONS-REGISTER.csv. The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust, and is a Designated Method under the TitleChain Patent Pledge. See NASH-NOTICE.md.",
         "modified": False,
         "files": dict(sorted(files.items())),
         "excluded": EXCLUDED,
