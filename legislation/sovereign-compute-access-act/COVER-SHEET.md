@@ -34,7 +34,7 @@ As of June 3, 2026, 33 jurisdictions, including the District of Columbia, have e
 
 ## About the submitter
 
-Co-inventor, U.S. Patents 11,720,888 (2023) and 12,518,273 (2026), "Decentralized Title Transfer and Validation of Assets." Co-author, "Trustworthy AI Inference Systems: An Industry Research View" (arXiv:2008.04449, 2020, revised 2023). U.S. Air Force AI Chip Finalist (2019) — one of 10 finalists in a national challenge to design an ASIC/FPGA "AI Chip" demonstrating a 100x compute-edge improvement with built-in blockchain provenance. Recipient, U.S. Air Force ABMS/JADC2 IDIQ contract FA8612-20-D-0006 ($950M ceiling vehicle). Helped Intel and Avast expand the Private AI Collaborative Research Institute (2020). Has presented, testified, or provided technical input in settings involving state legislatures, federal stakeholders, defense programs, and financial regulators.
+Inventor, U.S. Patents 11,720,888 (2023) and 12,518,273 (2026), "Decentralized Title Transfer and Validation of Assets." Co-author, "Trustworthy AI Inference Systems: An Industry Research View" (arXiv:2008.04449, 2020, revised 2023). U.S. Air Force AI Chip Finalist (2019) — one of 10 finalists in a national challenge to design an ASIC/FPGA "AI Chip" demonstrating a 100x compute-edge improvement with built-in blockchain provenance. Recipient, U.S. Air Force ABMS/JADC2 IDIQ contract FA8612-20-D-0006 ($950M ceiling vehicle). Helped Intel and Avast expand the Private AI Collaborative Research Institute (2020). Has presented, testified, or provided technical input in settings involving state legislatures, federal stakeholders, defense programs, and financial regulators.
 
 ## Public standards, live now
 
