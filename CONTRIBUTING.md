@@ -58,4 +58,4 @@ Do not contribute material you do not have the right to submit.
 
 This repository has adopted an explicit asset-level licensing framework. Apache 2.0 and CC BY 4.0 apply only where expressly designated. The Cyrus Purpose-Bound Constitutional Commons License 1.0 remains a **Public Review Draft for the people's review** and applies only where expressly designated. Otherwise, rights are reserved.
 
-Before contributing, review [LICENSE.md](LICENSE.md), [LICENSES/LICENSE-MATRIX.md](LICENSES/LICENSE-MATRIX.md) and any designation attached to the material you are changing. Submitting a contribution does not by itself change that material's license designation.
+Before contributing, review [IP-POLICY.md](IP-POLICY.md), [LICENSE.md](LICENSE.md), [LICENSES/LICENSE-MATRIX.md](LICENSES/LICENSE-MATRIX.md) and any designation attached to the material you are changing. Submitting a contribution does not by itself change that material's license designation.
