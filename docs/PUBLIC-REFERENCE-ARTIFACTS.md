@@ -38,6 +38,7 @@ The following are public Draft artifacts in the ICSN standards repository. Each 
 | [M5 Consent Event JSON Schema](../schemas/m5-consent-event.schema.json) | JSON Schema | Public review | Permission and restriction lifecycle |
 | [M5 Authorization Decision Receipt JSON Schema](../schemas/m5-authorization-decision-receipt.schema.json) | JSON Schema | Public review | Per-action principal, agent, purpose, jurisdiction, approval, and evidence receipt |
 | [M5AGT Credentialed Operations](../M5AGENT_OPERATIONS.md) | Operating policy | Public review | Bounded delegated machine authority |
+| [M5Canon Six-Gate Machine-Readable Reference Package](../schemas/m5canon/README.md) and [JSON Schema](../schemas/m5canon/m5canon-six-gate-evaluation.schema.json) | Integration model and JSON Schema | Public review | Gate-by-gate pre-activation evaluation mapping authority inputs to the existing authorization-decision receipt |
 | [RFC 0001 — Hardware Onboarding Standard](../rfcs/0001-hardware-onboarding-standard.md) | Draft RFC | Draft | Illustrative title-rights and provenance record lifecycle |
 | [M5Ecosystem Approval Boundary](../M5ECOSYSTEM-APPROVAL-BOUNDARY.md) | Boundary statement | Published | Separates the public commons from restricted or production implementations |
 
@@ -73,6 +74,8 @@ The following are public Draft artifacts in the ICSN standards repository. Each 
 - [M5Canon Six-Gate Authority and Transfer Control](M5CANON-SIX-GATE-AUTHORITY-AND-TRANSFER-CONTROL.md)
 - [M5AGT Credentialed Operations](../M5AGENT_OPERATIONS.md)
 - [M5 Authorization Decision Receipt JSON Schema](../schemas/m5-authorization-decision-receipt.schema.json)
+- [M5Canon Six-Gate Machine-Readable Reference Package](../schemas/m5canon/README.md)
+- [M5Canon Six-Gate Evaluation JSON Schema](../schemas/m5canon/m5canon-six-gate-evaluation.schema.json)
 
 ### Origination and transfer authority
 

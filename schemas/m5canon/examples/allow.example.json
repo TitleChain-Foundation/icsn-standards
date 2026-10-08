@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "evaluation_id": "urn:m5:canon:evaluation:allow-001",
+  "timestamp": "2026-10-07T16:00:00Z",
+  "principal_ref": "urn:tcid:pseudonymous:principal-001",
+  "agent_ref": "urn:m5agt:agent-001",
+  "operation": "propose_transfer",
+  "resource_ref": "urn:titlechain:asset:example-001",
+  "purpose": "execute_scoped_transfer_workflow",
+  "jurisdiction_ref": "urn:m5:jurisdiction:us-wy",
+  "policy_version": "m5canon-2026-10",
+  "authority_record_ref": "urn:m5:authority:record-001",
+  "delegation_ref": "urn:m5:delegation:001",
+  "gates": {
+    "g1_principal_identity": {
+      "decision": "pass",
+      "evidence_refs": [
+        "urn:m5:evidence:identity-001"
+      ],
+      "reason_code": "PRINCIPAL_RESOLVED"
+    },
+    "g2_role_credential": {
+      "decision": "pass",
+      "evidence_refs": [
+        "urn:m5:authority:record-001"
+      ],
+      "reason_code": "ROLE_CREDENTIAL_CURRENT_AND_IN_SCOPE"
+    },
+    "g3_jurisdiction": {
+      "decision": "pass",
+      "evidence_refs": [
+        "urn:m5:jurisdiction:us-wy"
+      ],
+      "reason_code": "JURISDICTION_RESOLVED"
+    },
+    "g4_policy": {
+      "decision": "pass",
+      "evidence_refs": [
+        "urn:m5:policy:m5canon-2026-10"
+      ],
+      "reason_code": "POLICY_PRECONDITIONS_SATISFIED"
+    },
+    "g5_approval": {
+      "decision": "pass",
+      "evidence_refs": [
+        "urn:m5:approval:001"
+      ],
+      "reason_code": "ACCOUNTABLE_APPROVAL_PRESENT"
+    },
+    "g6_evidence_anchor": {
+      "decision": "pass",
+      "evidence_refs": [
+        "urn:m5:provenance:anchor-001"
+      ],
+      "reason_code": "AUDIT_EVIDENCE_COMMITTABLE"
+    }
+  },
+  "overall_decision": "allow",
+  "authorization_receipt_ref": "urn:m5:receipt:authorization-001",
+  "provenance_refs": [
+    "urn:m5:provenance:anchor-001"
+  ]
+}
