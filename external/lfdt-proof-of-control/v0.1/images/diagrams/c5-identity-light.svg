@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="320" viewBox="0 0 1040 320" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="317" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="317" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">C5 · IDENTITY</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">Every action has a principal</text>
+<rect x="34" y="110" width="210" height="108" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(54,124) scale(0.8)" fill="none" stroke="#4a463f" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8 m-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0"/><path d="M5.5 20 C5.5 15.8 8.4 13.8 12 13.8 C15.6 13.8 18.5 15.8 18.5 20"/></g>
+<text x="86" y="142" font-size="15" fill="#4a463f" text-anchor="start" font-weight="700">Principal</text>
+<text x="54" y="176" font-size="12" fill="#4a463f" text-anchor="start">person or</text>
+<text x="54" y="193" font-size="12" fill="#4a463f" text-anchor="start">organization</text>
+<rect x="314" y="110" width="260" height="108" rx="14" fill="url(#gLime)" stroke="#8fae00" stroke-width="1.5" filter="url(#fGlow)"/>
+<g transform="translate(334,124) scale(0.8)" fill="none" stroke="#1a2000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 15 m-4 0 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0"/><path d="M12.5 11.5 L20 4 M17 7 L19.5 9.5 M14.5 9.5 L16.5 11.5"/></g>
+<text x="366" y="142" font-size="15" fill="#1a2000" text-anchor="start" font-weight="700">Delegation token</text>
+<text x="334" y="176" font-size="12" fill="#1a2000" text-anchor="start">signed · short-lived · scoped</text>
+<rect x="644" y="110" width="180" height="108" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(664,124) scale(0.8)" fill="none" stroke="#4a463f" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 L6 13.5 H11 L10 21 L18 10 H13 Z"/></g>
+<text x="692" y="142" font-size="15" fill="#4a463f" text-anchor="start" font-weight="700">Agent</text>
+<text x="664" y="176" font-size="12" fill="#4a463f" text-anchor="start">cryptographic</text>
+<text x="664" y="193" font-size="12" fill="#4a463f" text-anchor="start">identity</text>
+<rect x="894" y="110" width="112" height="108" rx="14" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(916,122) scale(0.7)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/><path d="M9 12 L11.4 14.4 L15.6 9.6"/></g>
+<text x="950" y="174" font-size="14.5" fill="#141414" text-anchor="middle" font-weight="700">Action</text>
+<text x="950" y="196" font-size="11" fill="#6b665f" text-anchor="middle">recorded ✓</text>
+<line x1="250" y1="164" x2="308" y2="164" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="309,164 299,158.5 299,169.5" fill="#8a857c"/>
+<line x1="580" y1="164" x2="638" y2="164" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="639,164 629,158.5 629,169.5" fill="#8a857c"/>
+<line x1="830" y1="164" x2="888" y2="164" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="889,164 879,158.5 879,169.5" fill="#8a857c"/>
+<path d="M950 226 Q 544.5 281.0 139 244" fill="none" stroke="#8a857c" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<line x1="139" y1="254" x2="139" y2="228" stroke="#8a857c" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<polygon points="139,227 133.5,237 144.5,237" fill="#8a857c"/>
+<text x="545" y="284" font-size="11" fill="#6b665f" text-anchor="middle">traces back — accountability</text>
+<text x="520.0" y="300" font-size="12.5" fill="#6b665f" text-anchor="middle">every action traces back to a legitimate principal — no anonymous authority (C5.1)</text>
+</svg>

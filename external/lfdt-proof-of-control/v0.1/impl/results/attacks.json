@@ -1,0 +1,90 @@
+[
+  {
+    "id": "A1",
+    "attack": "Snapshot substitution",
+    "requirement": "C7.1.4 complete mediation",
+    "without_requirement": "attack SUCCEEDS: evidence attests the benign action while the malicious action executed (1 executed, 0 refused)",
+    "with_requirement": "refused: action does not match evidenced snapshot (0 executed, 1 refused)",
+    "note": "Proposition 1: without a check binding the executed request to the evidenced snapshot, the adversary wins with probability 1."
+  },
+  {
+    "id": "A2",
+    "attack": "Log alteration",
+    "requirement": "C7.3.1 hash chain + signatures",
+    "without_requirement": "attack SUCCEEDS: an unsigned operator log can be edited with no detectable trace (baseline: no signature, no chain)",
+    "with_requirement": "detected: invalid signature at record 2",
+    "note": ""
+  },
+  {
+    "id": "A3",
+    "attack": "Omission of an inconvenient step",
+    "requirement": "C7.6.2 sequence continuity",
+    "without_requirement": "attack SUCCEEDS: with unsequenced records, a dropped step is indistinguishable from a step that never happened",
+    "with_requirement": "detected: sequence gap: expected step 3, found 4 (omission detected)",
+    "note": ""
+  },
+  {
+    "id": "A4",
+    "attack": "Head truncation",
+    "requirement": "C7.6.6 bounded anchoring interval",
+    "without_requirement": "attack SUCCEEDS without anchoring: a truncated prefix is internally consistent (verifier says: chain verified)",
+    "with_requirement": "detected: truncation detected: anchor covers 8 steps, only 5 presented",
+    "note": "Anchor at index 8 contradicts a 5-record presentation; the undetectable window is bounded by the anchoring interval."
+  },
+  {
+    "id": "A5",
+    "attack": "Split-view / equivocation",
+    "requirement": "C7.3.3 gossip / witness quorum",
+    "without_requirement": "attack SUCCEEDS: each verifier independently validates its own chain; both are internally consistent and neither can tell",
+    "with_requirement": "detected: equivocation detected at index 3: 9e86989313e7 != bc4e75001912",
+    "note": "Theorem 2: two validly signed roots at a common index with distinct values are non-repudiable, attributable proof of equivocation."
+  },
+  {
+    "id": "A6",
+    "attack": "Path-composition escalation",
+    "requirement": "C4.1.7 path-aware authorization",
+    "without_requirement": "attack SUCCEEDS: read=ALLOW, egress=ALLOW \u2014 both individually within grant, exfiltration path completes",
+    "with_requirement": "blocked: read=ALLOW, egress=DENY (egress after reading confidential data exceeds permitted egress class)",
+    "note": "The classical information-flow pattern: read-then-send, where no single action violates the grant."
+  },
+  {
+    "id": "A7",
+    "attack": "Capability replay",
+    "requirement": "Theorem 1 check (iii) nonce freshness",
+    "without_requirement": "attack SUCCEEDS: a bearer token without single-use semantics can be replayed for a second effect",
+    "with_requirement": "refused on replay: first=executed, second=nonce replay",
+    "note": ""
+  },
+  {
+    "id": "A8",
+    "attack": "Evidence-pipeline failure",
+    "requirement": "C7.6.1/C7.6.3 fail closed",
+    "without_requirement": "attack SUCCEEDS: a system that logs best-effort keeps acting while its evidence pipeline is down (fail-open by omission)",
+    "with_requirement": "refused: verdict=FAIL_CLOSED, executed=False, failure recorded=1",
+    "note": ""
+  },
+  {
+    "id": "A9",
+    "attack": "Mid-history rewrite by a key-holding operator",
+    "requirement": "C7.3.5 anchored root compared, consistency proof required",
+    "without_requirement": "attack SUCCEEDS: replaying the rewritten history finds nothing wrong (verifier says: chain verified: 8 records) \u2014 every signature is valid and every link matches, because the operator recomputed them",
+    "with_requirement": "detected: history rewritten: the chain presented at step 8 has head 058366468ce1, but accf0a8d3043 was anchored",
+    "note": "found while building the Merkle experiment: the verifier compared the anchor's step count but never its root"
+  },
+  {
+    "id": "A10",
+    "attack": "Substitution past an unconfigured mediation check",
+    "requirement": "C7.1.4 the binding check fails closed",
+    "without_requirement": "attack SUCCEEDS: the endpoint sets enforce=True, verifies the signature, the measurement, the resource and the nonce - and still executes a different request, because the one check that binds the action defaulted to accept when unconfigured",
+    "with_requirement": "refused: action does not match evidenced snapshot",
+    "note": "found by reading the reference implementation for this review: a security check whose default is accept reports success while providing nothing"
+  },
+  {
+    "id": "A11",
+    "attack": "Capability paired with the wrong evidence record",
+    "requirement": "C7.1.4 capability cross-bound to its record",
+    "without_requirement": "attack SUCCEEDS: both objects verify on their own, so a ticket can be presented next to a record it was never issued with and the reconciliation still balances",
+    "with_requirement": "detected: capability names step 0, record is step 1",
+    "note": ""
+  }
+]

@@ -31,3 +31,5 @@ jobs:
         run: python3 tests/validate_hardware_endpoint_package.py
       - name: Validate Article 12 CER control schema and example
         run: python3 tests/validate_article12_cer_package.py
+      - name: Validate Proof-of-Control snapshot, RFC 0002 and crosswalk
+        run: python3 tests/validate_proof_of_control_profile.py

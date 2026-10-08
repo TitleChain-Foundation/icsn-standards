@@ -1,0 +1,25 @@
+{
+  "iss": "https://verifier.trusted-attestation.org",
+  "iat": 1773532800,
+  "nonce": "0x8f93e2a110c49b",
+  "eat_profile": "https://standards.org/poc/v1",
+  "poc_claims": {
+    "agent_id": "did:web:enterprise.com:agents:finance-agent-04",
+    "initiating_user": "user:auth0|84f12a9e",
+    "agbom_digest": "sha256:7f8a...5f6a",
+    "interception_point": "PRE_CALL_TOOL_INVOCATION",
+    "step_index": 3,
+    "merkle_root": "0x2c3d...2c3d",
+    "policy_bundle_hash": "sha256:e3b0...b855",
+    "target_resource": "api.bank.com/v1/payments",
+    "canonical_snapshot_hash": "sha256:a4b3...a1b2",
+    "verdict": "ALLOW"
+  },
+  "submods": {
+    "hardware_attestation": {
+      "platform": "INTEL_TDX",
+      "mr_config": "0x1a2b3c4d5e6f...",
+      "attestation_signature": "0x30440220..."
+    }
+  }
+}

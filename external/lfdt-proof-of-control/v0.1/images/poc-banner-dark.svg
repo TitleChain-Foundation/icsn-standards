@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150" role="img" aria-label="Proof-of-Control: an open standard for verifying what AI agents did">
+  <g transform="translate(28,16)">
+    <path d="M56 0 L112 22 V64 C112 92 88 108 56 118 C24 108 0 92 0 64 V22 Z" fill="#cfff04"/>
+    <path d="M56 6 L106 26 V63 C106 87 85 102 56 111 C27 102 6 87 6 63 V26 Z" fill="none" stroke="#0a0a0a" stroke-opacity="0.3" stroke-width="2"/>
+    <path d="M33 58 L50 75 L82 41" fill="none" stroke="#0a0a0a" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="170" y="70" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="44" font-weight="700" fill="#f0edea">Proof-of-Control</text>
+  <text x="170" y="103" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="19" fill="#8f8a82">An open standard for verifying what AI agents did &#183; v1.0</text>
+  <text x="170" y="128" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#cfff04">Verify, rather than promise, what your agents did &#8212; advancedaisociety.org</text>
+</svg>

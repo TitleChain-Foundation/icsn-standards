@@ -37,6 +37,11 @@ The following public assets are expressly licensed as stated:
 | `examples/article-12-cer-control-state.synthetic.json` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 | `tests/validate_article12_cer_package.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 | `requirements-validation.txt` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `external/lfdt-proof-of-control/v0.1/**` | Upstream [Apache License 2.0](../external/lfdt-proof-of-control/v0.1/LICENSE.md) (`Apache-2.0`), © Advanced AI Society and the Proof-of-Control contributors; redistributed unmodified. No right to the "Proof-of-Control Certified" mark. |
+| `external/lfdt-proof-of-control/README.md`, `external/lfdt-proof-of-control/NOTICE`, `external/lfdt-proof-of-control/UPSTREAM-*.json` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `rfcs/0002-proof-of-control-legal-entity-agent-profile.md` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`), so it can be contributed to the Proof-of-Control Standard unchanged |
+| `conformance/proof-of-control/**` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `scripts/sync_lfdt_proof_of_control.py`, `scripts/build_poc_crosswalk.py`, `tests/validate_proof_of_control_profile.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 
 The SPDX identifier in each expressly designated file is the controlling asset-level notice for that file.
 

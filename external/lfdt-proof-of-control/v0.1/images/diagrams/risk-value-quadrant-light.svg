@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="500" viewBox="0 0 780 500" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="777" height="497" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="777" height="497" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">WHY VERIFICATION MATTERS</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">The agent risk-to-value bind</text>
+<rect x="150" y="104" width="280" height="150" rx="14" fill="url(#gRed)" stroke="#d94a52" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="290.0" y="175.0" font-size="17" fill="#8c1119" text-anchor="middle" font-weight="700">Failed deployment</text>
+<text x="290.0" y="199.0" font-size="12" fill="#8c1119" text-anchor="middle">risk realized, value lost</text>
+<rect x="440" y="104" width="280" height="150" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="580.0" y="175.0" font-size="17" fill="#4a463f" text-anchor="middle" font-weight="700">Unleash</text>
+<text x="580.0" y="199.0" font-size="12" fill="#4a463f" text-anchor="middle">value, but unquantifiable risk</text>
+<rect x="150" y="264" width="280" height="150" rx="14" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="290.0" y="335.0" font-size="17" fill="#141414" text-anchor="middle" font-weight="700">Constrain</text>
+<text x="290.0" y="359.0" font-size="12" fill="#141414" text-anchor="middle">safe, but can't do the job</text>
+<rect x="440" y="264" width="280" height="150" rx="14" fill="url(#gLime)" stroke="#8fae00" stroke-width="1.5" filter="url(#fGlow)"/>
+<text x="580.0" y="335.0" font-size="17" fill="#1a2000" text-anchor="middle" font-weight="700">Proof-of-Control</text>
+<text x="580.0" y="359.0" font-size="12" fill="#1a2000" text-anchor="middle">value up, risk down</text>
+<line x1="118" y1="446" x2="118" y2="88" stroke="#a09a91" stroke-width="2" stroke-linecap="round"/>
+<polygon points="118,87 112.5,97 123.5,97" fill="#a09a91"/>
+<text x="102" y="254" font-size="11.5" fill="#6b665f" text-anchor="middle" transform="rotate(-90 102 254)">risk</text>
+<line x1="118" y1="446" x2="736" y2="446" stroke="#a09a91" stroke-width="2" stroke-linecap="round"/>
+<polygon points="737,446 727,440.5 727,451.5" fill="#a09a91"/>
+<text x="435" y="468" font-size="11" fill="#6b665f" text-anchor="middle">value</text>
+<text x="390.0" y="478" font-size="12.5" fill="#6b665f" text-anchor="middle">Proof-of-Control breaks the bind — value up and risk down at once</text>
+</svg>

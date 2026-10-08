@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="897" height="427" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="897" height="427" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">WHAT KEEPING THE EVIDENCE COSTS</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">A 1,000-agent fleet, 100 actions each per day</text>
+<rect x="110" y="104" width="640" height="244" rx="10" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.2"/>
+<line x1="110.0" y1="104" x2="110.0" y2="348" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="110.0" y="366" font-size="10.5" fill="#6b665f" text-anchor="middle">1y</text>
+<line x1="252.2" y1="104" x2="252.2" y2="348" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="252.22222222222223" y="366" font-size="10.5" fill="#6b665f" text-anchor="middle">3y</text>
+<line x1="394.4" y1="104" x2="394.4" y2="348" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="394.44444444444446" y="366" font-size="10.5" fill="#6b665f" text-anchor="middle">5y</text>
+<line x1="536.7" y1="104" x2="536.7" y2="348" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="536.6666666666666" y="366" font-size="10.5" fill="#6b665f" text-anchor="middle">7y</text>
+<line x1="750.0" y1="104" x2="750.0" y2="348" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="750.0" y="366" font-size="10.5" fill="#6b665f" text-anchor="middle">10y</text>
+<line x1="110" y1="348.0" x2="750" y2="348.0" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="352.0" font-size="10.5" fill="#6b665f" text-anchor="end">0 TB</text>
+<line x1="110" y1="287.0" x2="750" y2="287.0" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="291.0" font-size="10.5" fill="#6b665f" text-anchor="end">1 TB</text>
+<line x1="110" y1="226.0" x2="750" y2="226.0" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="230.0" font-size="10.5" fill="#6b665f" text-anchor="end">2 TB</text>
+<line x1="110" y1="165.0" x2="750" y2="165.0" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="169.0" font-size="10.5" fill="#6b665f" text-anchor="end">3 TB</text>
+<line x1="110" y1="104.0" x2="750" y2="104.0" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="108.0" font-size="10.5" fill="#6b665f" text-anchor="end">4 TB</text>
+<text x="430.0" y="388" font-size="11.5" fill="#6b665f" text-anchor="middle">retention period</text>
+<text x="64" y="226.0" font-size="11.5" fill="#6b665f" text-anchor="middle" transform="rotate(-90 64 226.0)">stored evidence</text>
+<path d="M110.0 345.0 L252.2 339.1 L394.4 333.1 L536.7 327.2 L750.0 318.2" fill="none" stroke="#6b665f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="110.0" cy="345.0" r="3.4" fill="#6b665f"/>
+<circle cx="252.2" cy="339.1" r="3.4" fill="#6b665f"/>
+<circle cx="394.4" cy="333.1" r="3.4" fill="#6b665f"/>
+<circle cx="536.7" cy="327.2" r="3.4" fill="#6b665f"/>
+<circle cx="750.0" cy="318.2" r="3.4" fill="#6b665f"/>
+<path d="M110.0 324.0 L252.2 276.1 L394.4 228.2 L536.7 180.3 L750.0 108.5" fill="none" stroke="#7a9900" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="110.0" cy="324.0" r="3.4" fill="#7a9900"/>
+<circle cx="252.2" cy="276.1" r="3.4" fill="#7a9900"/>
+<circle cx="394.4" cy="228.2" r="3.4" fill="#7a9900"/>
+<circle cx="536.7" cy="180.3" r="3.4" fill="#7a9900"/>
+<circle cx="750.0" cy="108.5" r="3.4" fill="#7a9900"/>
+<path d="M110.0 323.5 L252.2 274.4 L394.4 225.4 L536.7 176.3 L750.0 102.7" fill="none" stroke="#d94a52" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<circle cx="110.0" cy="323.5" r="3.4" fill="#d94a52"/>
+<circle cx="252.2" cy="274.4" r="3.4" fill="#d94a52"/>
+<circle cx="394.4" cy="225.4" r="3.4" fill="#d94a52"/>
+<circle cx="536.7" cy="176.3" r="3.4" fill="#d94a52"/>
+<circle cx="750.0" cy="102.7" r="3.4" fill="#d94a52"/>
+<line x1="150" y1="130" x2="176" y2="130" stroke="#6b665f" stroke-width="2.8" stroke-linecap="round"/>
+<text x="184" y="134" font-size="11.5" fill="#141414" text-anchor="start">Ed25519 (classical)</text>
+<line x1="150" y1="150" x2="176" y2="150" stroke="#7a9900" stroke-width="2.8" stroke-linecap="round"/>
+<text x="184" y="154" font-size="11.5" fill="#141414" text-anchor="start">ML-DSA-44 (post-quantum)</text>
+<line x1="150" y1="170" x2="176" y2="170" stroke="#d94a52" stroke-width="2.8" stroke-linecap="round" stroke-dasharray="7 5"/>
+<text x="184" y="174" font-size="11.5" fill="#141414" text-anchor="start">hybrid</text>
+<text x="450" y="400" font-size="12" fill="#6b665f" text-anchor="middle">seven years of post-quantum evidence for the whole fleet is 2.65 TB — the 38x multiplier is affordable</text>
+</svg>

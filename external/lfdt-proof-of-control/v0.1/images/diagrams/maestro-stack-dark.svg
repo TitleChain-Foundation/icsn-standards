@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a26"/><stop offset="1" stop-color="#22211e"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#c6f500"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3608"/><stop offset="1" stop-color="#1e2704"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#361417"/><stop offset="1" stop-color="#280f12"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222222"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#cfff04" flood-opacity="0.55"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="757" height="617" rx="20" fill="url(#gPanel)" stroke="#2c2c2c" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="757" height="617" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#cfff04">THE SYSTEM SURFACE — C9</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#f0edea">Seven MAESTRO layers; every claim states where it applies</text>
+<rect x="60" y="100" width="640" height="54" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="92" y="133" font-size="15" fill="#f0edea" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">L7</text>
+<text x="126" y="126" font-size="14.5" fill="#f0edea" text-anchor="start" font-weight="700">Agent Ecosystem</text>
+<text x="126" y="144" font-size="11" fill="#9d978e" text-anchor="start">marketplaces · registries · other agents</text>
+<rect x="60" y="166" width="640" height="54" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="92" y="199" font-size="15" fill="#f0edea" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">L6</text>
+<text x="126" y="192" font-size="14.5" fill="#f0edea" text-anchor="start" font-weight="700">Security, Governance &amp; Compliance</text>
+<text x="126" y="210" font-size="11" fill="#9d978e" text-anchor="start">policy · change management · audit</text>
+<rect x="60" y="232" width="640" height="54" rx="14" fill="url(#gLime)" stroke="#e3ff66" stroke-width="1.5" filter="url(#fGlow)"/>
+<text x="92" y="265" font-size="15" fill="#131800" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">L5</text>
+<text x="126" y="258" font-size="14.5" fill="#131800" text-anchor="start" font-weight="700">Evaluation &amp; Observability</text>
+<text x="126" y="276" font-size="11" fill="#131800" text-anchor="start">tamper-evident logging · forensics</text>
+<g transform="translate(654,247) scale(0.8)" fill="none" stroke="#131800" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 H14 L18 7.5 V20.5 H7 Z"/><path d="M14 3.5 V7.5 H18"/><path d="M9.5 12 H15.5 M9.5 15 H15.5 M9.5 18 H13"/></g>
+<rect x="60" y="298" width="640" height="54" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="92" y="331" font-size="15" fill="#f0edea" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">L4</text>
+<text x="126" y="324" font-size="14.5" fill="#f0edea" text-anchor="start" font-weight="700">Deployment &amp; Infrastructure</text>
+<text x="126" y="342" font-size="11" fill="#9d978e" text-anchor="start">containers · networks · secrets · TEEs</text>
+<rect x="60" y="364" width="640" height="54" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="92" y="397" font-size="15" fill="#f0edea" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">L3</text>
+<text x="126" y="390" font-size="14.5" fill="#f0edea" text-anchor="start" font-weight="700">Agent Framework</text>
+<text x="126" y="408" font-size="11" fill="#9d978e" text-anchor="start">planning · tools · workflows · memory</text>
+<rect x="60" y="430" width="640" height="54" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="92" y="463" font-size="15" fill="#f0edea" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">L2</text>
+<text x="126" y="456" font-size="14.5" fill="#f0edea" text-anchor="start" font-weight="700">Data Operations</text>
+<text x="126" y="474" font-size="11" fill="#9d978e" text-anchor="start">ingestion · embeddings · RAG</text>
+<rect x="60" y="496" width="640" height="54" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="92" y="529" font-size="15" fill="#f0edea" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">L1</text>
+<text x="126" y="522" font-size="14.5" fill="#f0edea" text-anchor="start" font-weight="700">Foundation Model</text>
+<text x="126" y="540" font-size="11" fill="#9d978e" text-anchor="start">weights · serving · behavioral policy</text>
+<text x="380.0" y="596" font-size="12.5" fill="#9d978e" text-anchor="middle">L5 highlighted: without tamper-evident records, no post-hoc proof is possible</text>
+</svg>

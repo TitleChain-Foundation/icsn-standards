@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="500" viewBox="0 0 1040 500" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="497" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="497" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">HOW THE STANDARD IS ORGANIZED</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">The specification, the case, and the crosswalks</text>
+<rect x="34" y="96" width="564" height="340" rx="14" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="64" y="128" font-size="11" fill="#6b665f" text-anchor="start" font-weight="700" letter-spacing="1.5">THE STANDARD — NORMATIVE · 0.1/en/</text>
+<rect x="58" y="146" width="512" height="78" rx="14" fill="url(#gTint)" stroke="#a9c920" stroke-width="1.5"/>
+<text x="82" y="178" font-size="14.5" fill="#3a4900" text-anchor="start" font-weight="700">C1–C6 · The six domains</text>
+<text x="82" y="200" font-size="11" fill="#3a4900" text-anchor="start">Provenance · Privacy · Portability · Authorization · Identity · Security</text>
+<rect x="58" y="240" width="512" height="78" rx="14" fill="url(#gTint)" stroke="#a9c920" stroke-width="1.5"/>
+<text x="82" y="272" font-size="14.5" fill="#3a4900" text-anchor="start" font-weight="700">C7–C10 · Cross-cutting requirements</text>
+<text x="82" y="294" font-size="11" fill="#3a4900" text-anchor="start">Evidence generation · Verifiability Tiers · System surface · Conformance</text>
+<rect x="58" y="334" width="512" height="78" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5"/>
+<text x="82" y="366" font-size="14.5" fill="#4a463f" text-anchor="start" font-weight="700">Appendices A–E</text>
+<text x="82" y="388" font-size="11" fill="#4a463f" text-anchor="start">Glossary · Mechanisms · Threat model · Open issues · Audit checklist</text>
+<path d="M604 185 H622 M604 279 H622 M604 373 H622 M622 171 V373" fill="none" stroke="#8a857c" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<line x1="622" y1="171" x2="668" y2="171" stroke="#8a857c" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<polygon points="669,171 659,165.5 659,176.5" fill="#8a857c"/>
+<line x1="622" y1="361" x2="668" y2="361" stroke="#8a857c" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<polygon points="669,361 659,355.5 659,366.5" fill="#8a857c"/>
+<rect x="676" y="96" width="330" height="150" rx="14" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(952,112) scale(0.9)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 H14 L18 7.5 V20.5 H7 Z"/><path d="M14 3.5 V7.5 H18"/><path d="M9.5 12 H15.5 M9.5 15 H15.5 M9.5 18 H13"/></g>
+<text x="702" y="130" font-size="11" fill="#6b665f" text-anchor="start" font-weight="700" letter-spacing="1.5">THE CASE — docs/</text>
+<text x="702" y="158" font-size="14.5" fill="#141414" text-anchor="start" font-weight="700">Companion documents</text>
+<text x="702" y="182" font-size="11.5" fill="#6b665f" text-anchor="start">Introduction · Why verification matters</text>
+<text x="702" y="199" font-size="11.5" fill="#6b665f" text-anchor="start">Use cases · Roadmap · Governance</text>
+<text x="702" y="216" font-size="11.5" fill="#6b665f" text-anchor="start">Research basis · The Smart Leash</text>
+<rect x="676" y="286" width="330" height="150" rx="14" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(952,302) scale(0.9)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12 m-8.5 0 a8.5 8.5 0 1 0 17 0 a8.5 8.5 0 1 0 -17 0"/><path d="M12 3.5 C8.6 8 8.6 16 12 20.5 C15.4 16 15.4 8 12 3.5 M3.5 12 H20.5"/></g>
+<text x="702" y="320" font-size="11" fill="#6b665f" text-anchor="start" font-weight="700" letter-spacing="1.5">CROSSWALKS — mappings/</text>
+<text x="702" y="348" font-size="14.5" fill="#141414" text-anchor="start" font-weight="700">Coverage mapping</text>
+<text x="702" y="372" font-size="11.5" fill="#6b665f" text-anchor="start">NIST · ISO 42001 · OWASP · EU AI Act</text>
+<text x="702" y="389" font-size="11.5" fill="#6b665f" text-anchor="start">SOC 2 · AARM · ATLAS · Zero Trust</text>
+<text x="702" y="406" font-size="11.5" fill="#6b665f" text-anchor="start">Rubric · coding sheet · reproducible</text>
+<text x="520.0" y="476" font-size="12.5" fill="#6b665f" text-anchor="middle">the normative core is under change control; the case and the crosswalks travel with it</text>
+</svg>

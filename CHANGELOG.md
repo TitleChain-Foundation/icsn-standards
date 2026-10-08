@@ -6,6 +6,8 @@ This file records material public releases of the ICSN standards workspace. Stan
 
 ### Added
 
+- Pinned, unmodified snapshot of the LFDT Proof-of-Control Standard Working Draft v0.1 (Apache-2.0) with a SHA-256 file manifest and sync script.
+- RFC 0002 Draft: Proof-of-Control Profile for Legal-Entity Agents Under an Accountable Human, adopting all 127 Proof-of-Control v0.1 requirements and adding 22, with a machine-readable crosswalk and validation test.
 - Public Review Draft of the proposed canonical TitleChain Article 12 CER control mapping, machine-readable transaction-boundary schema, synthetic shared-control snapshot, and fail-closed conformance checks separating control, title, claims, notice, filing, and transfer authority.
 - Sovereign Compute Access Act Draft v1 model-legislation package for public review and comment.
 - Planned DUNA commons-governance roadmap, clearly marked as future/not yet activated.

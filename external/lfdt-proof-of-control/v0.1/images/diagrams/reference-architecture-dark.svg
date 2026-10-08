@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="760" viewBox="0 0 1040 760" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a26"/><stop offset="1" stop-color="#22211e"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#c6f500"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3608"/><stop offset="1" stop-color="#1e2704"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#361417"/><stop offset="1" stop-color="#280f12"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222222"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#cfff04" flood-opacity="0.55"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="757" rx="20" fill="url(#gPanel)" stroke="#2c2c2c" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="757" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#cfff04">REFERENCE ARCHITECTURE</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#f0edea">From intercepted action to checkable proof</text>
+<rect x="120" y="96" width="560" height="74" rx="14" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(142,110) scale(0.75)" fill="none" stroke="#d4cfc7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 L6 13.5 H11 L10 21 L18 10 H13 Z"/></g>
+<text x="172" y="128" font-size="15" fill="#d4cfc7" text-anchor="start" font-weight="700">Agent host / runtime</text>
+<text x="172" y="150" font-size="11.5" fill="#d4cfc7" text-anchor="start">plans · calls tools · delegates sub-tasks</text>
+<rect x="871.0" y="108" width="135.0" height="24" rx="12" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5"/>
+<text x="938.5" y="124" font-size="9.5" fill="#d4cfc7" text-anchor="middle" font-weight="700" letter-spacing="1.1">RATS · ATTESTER</text>
+<line x1="400" y1="170" x2="400" y2="196" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="400,197 394.5,187 405.5,187" fill="#8d877e"/>
+<rect x="120" y="200" width="560" height="74" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(142,214) scale(0.75)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17 A8.6 8.6 0 1 1 20 17"/><path d="M12 15.5 L16.2 9"/></g>
+<text x="172" y="232" font-size="15" fill="#f0edea" text-anchor="start" font-weight="700">ACS lifecycle interception point</text>
+<text x="172" y="254" font-size="11" fill="#9d978e" text-anchor="start">task init · context · plan · pre/post-tool · memory · delegation · completion</text>
+<rect x="848.8" y="212" width="157.20000000000002" height="24" rx="12" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5"/>
+<text x="927.4" y="228" font-size="9.5" fill="#d4cfc7" text-anchor="middle" font-weight="700" letter-spacing="1.1">TARGET ENVIRONMENT</text>
+<line x1="400" y1="274" x2="400" y2="300" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="400,301 394.5,291 405.5,291" fill="#8d877e"/>
+<text x="416" y="292" font-size="11" fill="#9d978e" text-anchor="start">canonical state snapshot — path · identity · proposed action</text>
+<rect x="120" y="304" width="560" height="224" rx="14" fill="url(#gGate)" stroke="#cfff04" stroke-width="1.5" filter="url(#fGlow)"/>
+<g transform="translate(142,318) scale(0.8)" fill="none" stroke="#e3ff66" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/><path d="M9 12 L11.4 14.4 L15.6 9.6"/></g>
+<text x="174" y="336" font-size="15" fill="#e3ff66" text-anchor="start" font-weight="700">Hardware TEE enclave</text>
+<rect x="146" y="356" width="508" height="34" rx="8" fill="url(#gCard)" stroke="#454545" stroke-width="1.5"/>
+<text x="164" y="378" font-size="11.5" fill="#f0edea" text-anchor="start" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">1  verify signed Rego policy bundle</text>
+<rect x="146" y="398" width="508" height="34" rx="8" fill="url(#gCard)" stroke="#454545" stroke-width="1.5"/>
+<text x="164" y="420" font-size="11.5" fill="#f0edea" text-anchor="start" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">2  evaluate snapshot → ALLOW · DENY · MODIFY · ESCALATE</text>
+<rect x="146" y="440" width="508" height="34" rx="8" fill="url(#gCard)" stroke="#454545" stroke-width="1.5"/>
+<text x="164" y="462" font-size="11.5" fill="#f0edea" text-anchor="start" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">3  append signed Merkle leaf  L_t = H(L_t-1 || H(snap) || verdict)</text>
+<rect x="146" y="482" width="508" height="34" rx="8" fill="url(#gCard)" stroke="#454545" stroke-width="1.5"/>
+<text x="164" y="504" font-size="11.5" fill="#f0edea" text-anchor="start" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">4  sign Entity Attestation Token (EAT / CWT)</text>
+<rect x="826.6" y="316" width="179.4" height="24" rx="12" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5"/>
+<text x="916.3" y="332" font-size="9.5" fill="#d4cfc7" text-anchor="middle" font-weight="700" letter-spacing="1.1">ATTESTING ENVIRONMENT</text>
+<line x1="400" y1="528" x2="400" y2="556" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="400,557 394.5,547 405.5,547" fill="#8d877e"/>
+<text x="416" y="548" font-size="11" fill="#9d978e" text-anchor="start">Evidence — signed EAT over the Merkle chain</text>
+<rect x="922.8" y="536" width="83.2" height="24" rx="12" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5"/>
+<text x="964.4" y="552" font-size="9.5" fill="#d4cfc7" text-anchor="middle" font-weight="700" letter-spacing="1.1">EVIDENCE</text>
+<rect x="120" y="560" width="320" height="108" rx="14" fill="url(#gLime)" stroke="#e3ff66" stroke-width="1.5" filter="url(#fGlow)"/>
+<g transform="translate(140,574) scale(0.75)" fill="none" stroke="#131800" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 C6 7 18 7 21 12 C18 17 6 17 3 12 Z"/><path d="M12 12 m-2.4 0 a2.4 2.4 0 1 0 4.8 0 a2.4 2.4 0 1 0 -4.8 0"/></g>
+<text x="170" y="592" font-size="15" fill="#131800" text-anchor="start" font-weight="700">Verifier</text>
+<text x="140" y="620" font-size="11.5" fill="#131800" text-anchor="start">compares evidence to published</text>
+<text x="140" y="637" font-size="11.5" fill="#131800" text-anchor="start">reference values → attestation result</text>
+<rect x="500" y="560" width="340" height="108" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(520,574) scale(0.75)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11 H18 V20 H6 Z"/><path d="M8.5 11 V8 A3.5 3.5 0 0 1 15.5 8 V11"/></g>
+<text x="550" y="592" font-size="15" fill="#f0edea" text-anchor="start" font-weight="700">Relying party</text>
+<text x="520" y="620" font-size="11.5" fill="#9d978e" text-anchor="start">API gateway or service — requires a valid</text>
+<text x="520" y="637" font-size="11.5" fill="#9d978e" text-anchor="start">result before executing the tool request</text>
+<line x1="444" y1="614" x2="496" y2="614" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="497,614 487,608.5 487,619.5" fill="#8d877e"/>
+<rect x="922.8" y="572" width="83.2" height="24" rx="12" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5"/>
+<text x="964.4" y="588" font-size="9.5" fill="#d4cfc7" text-anchor="middle" font-weight="700" letter-spacing="1.1">VERIFIER</text>
+<rect x="885.8" y="604" width="120.2" height="24" rx="12" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5"/>
+<text x="945.9" y="620" font-size="9.5" fill="#d4cfc7" text-anchor="middle" font-weight="700" letter-spacing="1.1">RELYING PARTY</text>
+<text x="520.0" y="734" font-size="12.5" fill="#9d978e" text-anchor="middle">policy evaluation, evidence signing, and history live inside the enclave — the operator can run the agent, but cannot forge its record</text>
+</svg>

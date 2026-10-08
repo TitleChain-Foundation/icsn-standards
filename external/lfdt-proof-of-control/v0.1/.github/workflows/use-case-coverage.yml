@@ -1,0 +1,30 @@
+name: Use-case stories
+
+on:
+  push:
+    paths:
+      - 'docs/use-cases/**'
+      - 'tools/generate_use_case_coverage.py'
+      - 'tools/validate_use_cases.py'
+      - 'tools/test_validate_use_cases.py'
+  pull_request:
+    paths:
+      - 'docs/use-cases/**'
+      - 'tools/generate_use_case_coverage.py'
+      - 'tools/validate_use_cases.py'
+      - 'tools/test_validate_use_cases.py'
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify the coverage index matches the submissions
+        run: python3 tools/generate_use_case_coverage.py --check
+      - name: Validate the documented shape of every story
+        run: python3 tools/validate_use_cases.py
+      - name: Run the validator's regression tests
+        run: python3 -m unittest tools.test_validate_use_cases -v
