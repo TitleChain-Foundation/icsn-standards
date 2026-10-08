@@ -1,0 +1,44 @@
+{
+  "version": "0.1.0",
+  "status": "PROPOSED",
+  "economic_consequences_enabled": false,
+  "approved_by": null,
+  "approved_at": null,
+  "description": "Nash M5Score weights. Weighted by how hard each signal is to fake: verified, system-observed signals count most; opinion signals are capped. PROPOSED: scores are computed and published for transparency but drive no fees, rebates or penalties until approved.",
+  "scale": 1000,
+  "default_score": 500,
+  "prior": {
+    "alpha": 1,
+    "beta": 1,
+    "note": "Beta-reputation prior; a component with no signals scores scale*alpha/(alpha+beta) = 500."
+  },
+  "weights_bps": {
+    "settlement_reliability": 3000,
+    "attestation_integrity": 2000,
+    "information_symmetry": 1500,
+    "reciprocity": 1500,
+    "externality": 1000,
+    "governance_participation": 1000
+  },
+  "decay": {
+    "positive_half_life_days": 30,
+    "negative_half_life_days": 180,
+    "fixed_point_bits": 32,
+    "daily_factor_q32": {
+      "30": 4196870107,
+      "180": 4278459963
+    },
+    "algorithm": "weight(age_days) = Q32 square-and-multiply of daily_factor, flooring (>> 32) after every multiplication; age_days = floor((as_of - signal_at) seconds / 86400)."
+  },
+  "db_projection": {
+    "m5_nash_score_history.nash_score": "m5score / 10 (exact, one decimal place, 0.0-100.0)"
+  },
+  "tier_thresholds": null,
+  "tier_status": "UNSET: PLATINUM/GOLD/GOLD_CONDITIONAL/SILVER/WATCH thresholds require Chief Sovereign Architect approval; REMOVE remains the manual exclusion registry.",
+  "roles": {
+    "agent": "NASH",
+    "score_computed_by": "GREEN",
+    "holder_notes_checked_by": "PAINE"
+  },
+  "recalibration": "Recalibrate from observed evidence as a new version; prior versions remain published."
+}

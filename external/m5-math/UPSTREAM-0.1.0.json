@@ -1,0 +1,60 @@
+{
+  "name": "M5-MATH-001 public reference (implementation-specific)",
+  "repository": "M5Ecosystem (private)",
+  "commit": "9c1bc47085ba4405912c15703a75439d860a1fa9",
+  "committed_at": "2026-10-08T09:32:38-07:00",
+  "version_label": "0.1.0",
+  "copyright": "M5Capital Holdings, Inc.",
+  "approval_boundary": "Implementation-specific M5 material, published under the M5Ecosystem Approval Boundary. It is not a TitleChain standard and does not advance any standard's status.",
+  "nash_notice": "The Nash files are published for reading and recomputing published scores only. All rights reserved, including patent rights; no license to implement is granted. See NASH-NOTICE.md.",
+  "modified": false,
+  "files": {
+    "core/m5_canonical.py": {
+      "sha256": "sha256:6559c8e08df9cc4ebea3d3a10f56e84f6950ea742ebbe17f4fe660a472e0f558",
+      "license": "Apache-2.0"
+    },
+    "core/nash_score.py": {
+      "sha256": "sha256:c161212185cc20ce1fca5eb5f84fe43ce1f6c635092520681cdb7cd1f81f8c31",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    "docs/standards/M5-MATH-001.md": {
+      "sha256": "sha256:b5a9ea38e54dea72d36605c0355f93a63a3b981f55bd1508249689d199c9de64",
+      "license": "Apache-2.0 except section 5 (Nash M5Score), LicenseRef-All-Rights-Reserved"
+    },
+    "packages/m5-math/canonical.js": {
+      "sha256": "sha256:c19bfd67e2b1f8e00f972ca343d0faefc9123d8b7cfd443ecf2de5879a5983e8",
+      "license": "Apache-2.0"
+    },
+    "packages/m5-math/nash-score.js": {
+      "sha256": "sha256:c7cc691d3d78d01c917e781be6be3630bf27077db667fa35667bffb0b53bc4aa",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    "packages/m5-math/nash-weights.json": {
+      "sha256": "sha256:b325f39c4167478a4c465f0da94021b15582913e9db05e8910afd1cb5e8d2371",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    "packages/m5-math/receipt-verify.js": {
+      "sha256": "sha256:bcbc6f1378fefd6e12d82b6f67ee1b7e25e2b7c82c58f3b56b5072f409f925f6",
+      "license": "Apache-2.0"
+    },
+    "packages/m5-math/vectors/canonical-hash.vectors.json": {
+      "sha256": "sha256:11432772a56598233f9c8d7e1363865fe41cf9b8c1269ca2d99fb34f2438e573",
+      "license": "Apache-2.0"
+    },
+    "packages/m5-math/vectors/nash-score.vectors.json": {
+      "sha256": "sha256:6bc001190067dabb38ad84d02e27086453312118453cd9f39779556d61c09568",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    "schemas/transactions/m5-value-receipt.schema.json": {
+      "sha256": "sha256:0d1cc2f80149f971fd31acbfa9a162046d1edb4652ae0bf8668453f529c6dab3",
+      "license": "Apache-2.0"
+    }
+  },
+  "excluded": {
+    "packages/m5-math/M5-MATH-MANIFEST.json": "contains private commercial wallet-split shares",
+    "packages/m5-math/m5-math.test.js": "depends on sample receipts that contain private wallet-split shares",
+    "packages/m5-math/package.json": "private package metadata",
+    "tests/test_m5_math_manifest.py": "verifies the private manifest",
+    "tests/test_nash_score.py": "private test suite; the commons test recomputes the same vectors"
+  }
+}

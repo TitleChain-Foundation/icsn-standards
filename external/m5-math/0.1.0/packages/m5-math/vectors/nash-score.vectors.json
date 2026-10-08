@@ -1,0 +1,1686 @@
+{
+  "description": "Nash M5Score vectors (MATH-NASH-*). Produced by core/nash_score.py; packages/m5-math/nash-score.js must match every value and record_hash exactly.",
+  "weights_version": "0.1.0",
+  "decay": [
+    {
+      "half_life_days": 30,
+      "age_days": 0,
+      "weight_q32": 4294967296
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 1,
+      "weight_q32": 4196870107
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 29,
+      "weight_q32": 2197678682
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 30,
+      "weight_q32": 2147483631
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 31,
+      "weight_q32": 2098435036
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 90,
+      "weight_q32": 536870898
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 180,
+      "weight_q32": 67108860
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 365,
+      "weight_q32": 934174
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 1000,
+      "weight_q32": 0
+    },
+    {
+      "half_life_days": 30,
+      "age_days": 3650,
+      "weight_q32": 0
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 0,
+      "weight_q32": 4294967296
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 1,
+      "weight_q32": 4278459963
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 29,
+      "weight_q32": 3841143927
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 30,
+      "weight_q32": 3826380824
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 31,
+      "weight_q32": 3811674463
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 90,
+      "weight_q32": 3037000419
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 180,
+      "weight_q32": 2147483532
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 365,
+      "weight_q32": 1053265546
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 1000,
+      "weight_q32": 91321043
+    },
+    {
+      "half_life_days": 180,
+      "age_days": 3650,
+      "weight_q32": 3378
+    }
+  ],
+  "cases": [
+    {
+      "name": "no-history",
+      "as_of": "2026-10-07T12:00:00Z",
+      "previous_record_hash": null,
+      "signals": [],
+      "expected": {
+        "m5score": 500,
+        "components": {
+          "settlement_reliability": 500,
+          "attestation_integrity": 500,
+          "information_symmetry": 500,
+          "reciprocity": 500,
+          "externality": 500,
+          "governance_participation": 500
+        },
+        "record_hash": "sha256:574c672e664f9c7f7c7d56e298061a3520c047d87bafc71004f0e2cba20fd390"
+      }
+    },
+    {
+      "name": "perfect-settlement-200",
+      "as_of": "2026-10-07T12:00:00Z",
+      "previous_record_hash": null,
+      "signals": [
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R000"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R001"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R002"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R003"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R004"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R005"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R006"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R007"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R008"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R009"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R010"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R011"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R012"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R013"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R014"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R015"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R016"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R017"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R018"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R019"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R020"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R021"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R022"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R023"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R024"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R025"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R026"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R027"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R028"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R029"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R030"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R031"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R032"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R033"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R034"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R035"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R036"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R037"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R038"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R039"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R040"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R041"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R042"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R043"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R044"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R045"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R046"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R047"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R048"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R049"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R050"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R051"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R052"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R053"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R054"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R055"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R056"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R057"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R058"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R059"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R060"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R061"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R062"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R063"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R064"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R065"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R066"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R067"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R068"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R069"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R070"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R071"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R072"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R073"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R074"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R075"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R076"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R077"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R078"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R079"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R080"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R081"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R082"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R083"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R084"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R085"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R086"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R087"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R088"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R089"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R090"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R091"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R092"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R093"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R094"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R095"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R096"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R097"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R098"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R099"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R100"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R101"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R102"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R103"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R104"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R105"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R106"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R107"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R108"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R109"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R110"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R111"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R112"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R113"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R114"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R115"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R116"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R117"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R118"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R119"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R120"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R121"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R122"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R123"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R124"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R125"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R126"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R127"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R128"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R129"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R130"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R131"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R132"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R133"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R134"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R135"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R136"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R137"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R138"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R139"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R140"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R141"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R142"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R143"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R144"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R145"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R146"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R147"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R148"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R149"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R150"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R151"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R152"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R153"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R154"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R155"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R156"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R157"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R158"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R159"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R160"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R161"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R162"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R163"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R164"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R165"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R166"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R167"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R168"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R169"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R170"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R171"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R172"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R173"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R174"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R175"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R176"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R177"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R178"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R179"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R180"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R181"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R182"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R183"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R184"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R185"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R186"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R187"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R188"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R189"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R190"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R191"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R192"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R193"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R194"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R195"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R196"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R197"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R198"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-07T11:00:00Z",
+          "source_ref": "R199"
+        }
+      ],
+      "expected": {
+        "m5score": 648,
+        "components": {
+          "settlement_reliability": 995,
+          "attestation_integrity": 500,
+          "information_symmetry": 500,
+          "reciprocity": 500,
+          "externality": 500,
+          "governance_participation": 500
+        },
+        "record_hash": "sha256:bd76b26439a2b9b98ffdb41e2e9cd689a66c5bc7a5628d98fc840ff1673e0144"
+      }
+    },
+    {
+      "name": "mixed-history",
+      "as_of": "2026-10-07T12:00:00Z",
+      "previous_record_hash": null,
+      "signals": [
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-05T11:00:00Z",
+          "source_ref": "R-001"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-08-28T11:00:00Z",
+          "source_ref": "R-002"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "BAD",
+          "at": "2026-07-09T11:00:00Z",
+          "source_ref": "R-003"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "information_symmetry",
+          "polarity": "BAD",
+          "at": "2026-09-27T11:00:00Z",
+          "source_ref": "R-004"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "information_symmetry",
+          "polarity": "GOOD",
+          "at": "2026-10-06T11:00:00Z",
+          "source_ref": "R-005"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "reciprocity",
+          "polarity": "GOOD",
+          "at": "2026-10-02T11:00:00Z",
+          "source_ref": "R-001"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "reciprocity",
+          "polarity": "BAD",
+          "at": "2025-10-07T11:00:00Z",
+          "source_ref": "R-006"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "attestation_integrity",
+          "polarity": "GOOD",
+          "at": "2026-10-04T11:00:00Z",
+          "source_ref": "BOB-VERIFY-1"
+        }
+      ],
+      "expected": {
+        "m5score": 570,
+        "components": {
+          "settlement_reliability": 579,
+          "attestation_integrity": 659,
+          "information_symmetry": 501,
+          "reciprocity": 602,
+          "externality": 500,
+          "governance_participation": 500
+        },
+        "record_hash": "sha256:334d019d56a5cf9e773c9390e8fd8240009f61347358e2375ac290e43c4f134d"
+      }
+    },
+    {
+      "name": "old-bad-signal-decayed",
+      "as_of": "2026-10-07T12:00:00Z",
+      "previous_record_hash": null,
+      "signals": [
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "BAD",
+          "at": "2024-01-11T11:00:00Z",
+          "source_ref": "R-OLD"
+        }
+      ],
+      "expected": {
+        "m5score": 498,
+        "components": {
+          "settlement_reliability": 494,
+          "attestation_integrity": 500,
+          "information_symmetry": 500,
+          "reciprocity": 500,
+          "externality": 500,
+          "governance_participation": 500
+        },
+        "record_hash": "sha256:f634b102f0afdb5de0a5770875b805263e29cd34b8b5483803bce01aed6d929b"
+      }
+    },
+    {
+      "name": "triggered-review",
+      "as_of": "2026-10-07T12:00:00Z",
+      "previous_record_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "signals": [
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-10-05T11:00:00Z",
+          "source_ref": "R-001"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "GOOD",
+          "at": "2026-08-28T11:00:00Z",
+          "source_ref": "R-002"
+        },
+        {
+          "subject": "wallet:sample-seller",
+          "component": "settlement_reliability",
+          "polarity": "BAD",
+          "at": "2026-07-09T11:00:00Z",
+          "source_ref": "R-003"
+        }
+      ],
+      "expected": {
+        "m5score": 523,
+        "components": {
+          "settlement_reliability": 579,
+          "attestation_integrity": 500,
+          "information_symmetry": 500,
+          "reciprocity": 500,
+          "externality": 500,
+          "governance_participation": 500
+        },
+        "record_hash": "sha256:9c7cec7cefd20b4e1872c6febb7f25e895ad326a210568291a33db263b014273"
+      }
+    }
+  ]
+}
