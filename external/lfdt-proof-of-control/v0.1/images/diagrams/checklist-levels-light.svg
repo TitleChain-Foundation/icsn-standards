@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="380" viewBox="0 0 860 380" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="857" height="377" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="857" height="377" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">THE AUDIT CHECKLIST</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">127 requirements by level</text>
+<text x="284" y="129.5" font-size="12.5" fill="#141414" text-anchor="end" font-weight="700">L1 · Recorded</text>
+<rect x="300" y="104" width="334" height="42" rx="9" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5"/>
+<text x="650" y="130.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">35</text>
+<text x="284" y="189.5" font-size="12.5" fill="#141414" text-anchor="end" font-weight="700">L2 · Attested</text>
+<rect x="300" y="164" width="430" height="42" rx="9" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5"/>
+<text x="746" y="190.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">45</text>
+<text x="284" y="249.5" font-size="12.5" fill="#141414" text-anchor="end" font-weight="700">L3 · Trust-minimized</text>
+<rect x="300" y="224" width="334" height="42" rx="9" fill="url(#gTint)" stroke="#a9c920" stroke-width="1.5"/>
+<text x="650" y="250.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">35</text>
+<text x="284" y="309.5" font-size="12.5" fill="#141414" text-anchor="end" font-weight="700">L4 · Self-Enforcing / Continuous</text>
+<rect x="300" y="284" width="114" height="42" rx="9" fill="url(#gLime)" stroke="#8fae00" stroke-width="1.5" filter="url(#fGlow)"/>
+<text x="430" y="310.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">12</text>
+<text x="430.0" y="356" font-size="12.5" fill="#6b665f" text-anchor="middle">levels are cumulative and align 1:1 with the Verifiability Tiers — Level 3 is the binary threshold</text>
+</svg>

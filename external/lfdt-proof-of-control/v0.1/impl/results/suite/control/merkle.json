@@ -1,0 +1,165 @@
+{
+  "record_bytes": 1227,
+  "m1_inclusion": [
+    {
+      "n": 10,
+      "chain_replay_us": 11.16,
+      "proof_verify_us": 2.676,
+      "speedup": 4.2,
+      "proof_hashes": 4,
+      "proof_bytes": 128,
+      "bytes_fetched_chain": 12270,
+      "bytes_fetched_tree": 1355,
+      "fetch_reduction": 0.889568
+    },
+    {
+      "n": 100,
+      "chain_replay_us": 107.02,
+      "proof_verify_us": 4.579,
+      "speedup": 23.4,
+      "proof_hashes": 7,
+      "proof_bytes": 224,
+      "bytes_fetched_chain": 122700,
+      "bytes_fetched_tree": 1451,
+      "fetch_reduction": 0.988174
+    },
+    {
+      "n": 1000,
+      "chain_replay_us": 1059.95,
+      "proof_verify_us": 6.357,
+      "speedup": 166.7,
+      "proof_hashes": 10,
+      "proof_bytes": 320,
+      "bytes_fetched_chain": 1227000,
+      "bytes_fetched_tree": 1547,
+      "fetch_reduction": 0.998739
+    },
+    {
+      "n": 10000,
+      "chain_replay_us": 10573.34,
+      "proof_verify_us": 8.776,
+      "speedup": 1204.8,
+      "proof_hashes": 14,
+      "proof_bytes": 448,
+      "bytes_fetched_chain": 12270000,
+      "bytes_fetched_tree": 1675,
+      "fetch_reduction": 0.999863
+    },
+    {
+      "n": 100000,
+      "chain_replay_us": 105880.23,
+      "proof_verify_us": 11.034,
+      "speedup": 9596.1,
+      "proof_hashes": 17,
+      "proof_bytes": 544,
+      "bytes_fetched_chain": 122700000,
+      "bytes_fetched_tree": 1771,
+      "fetch_reduction": 0.999986
+    }
+  ],
+  "m2_consistency": [
+    {
+      "old": 1000,
+      "new": 1001,
+      "proof_hashes": 7,
+      "proof_bytes": 224,
+      "verify_us": 7.136,
+      "rewrite_detected": true
+    },
+    {
+      "old": 1000,
+      "new": 2000,
+      "proof_hashes": 9,
+      "proof_bytes": 288,
+      "verify_us": 8.566,
+      "rewrite_detected": true
+    },
+    {
+      "old": 1000,
+      "new": 100000,
+      "proof_hashes": 15,
+      "proof_bytes": 480,
+      "verify_us": 12.917,
+      "rewrite_detected": true
+    },
+    {
+      "old": 50000,
+      "new": 100000,
+      "proof_hashes": 14,
+      "proof_bytes": 448,
+      "verify_us": 12.607,
+      "rewrite_detected": true
+    }
+  ],
+  "m3_hot_path": [
+    {
+      "n": 10,
+      "chain_append_us": 1.112,
+      "tree_append_root_us": 4.405,
+      "added_us": 3.293,
+      "added_fraction_of_signing": 0.03851
+    },
+    {
+      "n": 100,
+      "chain_append_us": 1.1,
+      "tree_append_root_us": 4.47,
+      "added_us": 3.371,
+      "added_fraction_of_signing": 0.03943
+    },
+    {
+      "n": 1000,
+      "chain_append_us": 1.082,
+      "tree_append_root_us": 4.61,
+      "added_us": 3.528,
+      "added_fraction_of_signing": 0.04127
+    },
+    {
+      "n": 10000,
+      "chain_append_us": 1.087,
+      "tree_append_root_us": 5.205,
+      "added_us": 4.118,
+      "added_fraction_of_signing": 0.04816
+    },
+    {
+      "n": 100000,
+      "chain_append_us": 1.077,
+      "tree_append_root_us": 5.674,
+      "added_us": 4.597,
+      "added_fraction_of_signing": 0.05377
+    }
+  ],
+  "m4_audit_budget": {
+    "log_records": 36500000,
+    "tree_depth": 26,
+    "rows": [
+      {
+        "sample": 1,
+        "log_records": 36500000,
+        "chain_bytes": 44785500000,
+        "tree_bytes": 2059,
+        "ratio": 21751092.8
+      },
+      {
+        "sample": 100,
+        "log_records": 36500000,
+        "chain_bytes": 44785500000,
+        "tree_bytes": 205900,
+        "ratio": 217510.9
+      },
+      {
+        "sample": 10000,
+        "log_records": 36500000,
+        "chain_bytes": 44785500000,
+        "tree_bytes": 20590000,
+        "ratio": 2175.1
+      },
+      {
+        "sample": 1000000,
+        "log_records": 36500000,
+        "chain_bytes": 44785500000,
+        "tree_bytes": 2059000000,
+        "ratio": 21.8
+      }
+    ]
+  }
+}

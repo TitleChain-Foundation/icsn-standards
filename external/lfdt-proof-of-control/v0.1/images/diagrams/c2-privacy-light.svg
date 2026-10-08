@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="360" viewBox="0 0 1040 360" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="357" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="357" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">C2 · PRIVACY</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">Evidence without exposure</text>
+<rect x="34" y="110" width="380" height="120" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(54,124) scale(0.8)" fill="none" stroke="#4a463f" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5 m-7 0 a7 2.6 0 1 0 14 0 a7 2.6 0 1 0 -14 0"/><path d="M5 4.5 V18 A7 2.6 0 0 0 19 18 V4.5"/><path d="M5 11.2 A7 2.6 0 0 0 19 11.2"/></g>
+<text x="86" y="142" font-size="15" fill="#4a463f" text-anchor="start" font-weight="700">What the agent touched</text>
+<text x="54" y="174" font-size="12" fill="#4a463f" text-anchor="start">customer record · full payload</text>
+<text x="54" y="192" font-size="12" fill="#4a463f" text-anchor="start">protected data — stays inside</text>
+<line x1="520" y1="96" x2="520" y2="252" stroke="#8a857c" stroke-width="2" stroke-dasharray="8 6" stroke-linecap="round"/>
+<text x="520" y="88" font-size="11" fill="#6b665f" text-anchor="middle">the disclosure boundary</text>
+<rect x="626" y="110" width="380" height="120" rx="14" fill="url(#gLime)" stroke="#8fae00" stroke-width="1.5" filter="url(#fGlow)"/>
+<g transform="translate(646,124) scale(0.8)" fill="none" stroke="#1a2000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 H14 L18 7.5 V20.5 H7 Z"/><path d="M14 3.5 V7.5 H18"/><path d="M9.5 12 H15.5 M9.5 15 H15.5 M9.5 18 H13"/></g>
+<text x="678" y="142" font-size="15" fill="#1a2000" text-anchor="start" font-weight="700">What the evidence shows</text>
+<text x="646" y="174" font-size="12" fill="#1a2000" text-anchor="start" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">digest a41f…9c · 3 fields read</text>
+<text x="646" y="192" font-size="12" fill="#1a2000" text-anchor="start">policy held ✓ — no payload</text>
+<line x1="420" y1="150" x2="620" y2="150" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="621,150 611,144.5 611,155.5" fill="#8a857c"/>
+<text x="440" y="138" font-size="11" fill="#6b665f" text-anchor="start">derived evidence only</text>
+<rect x="360" y="266" width="320" height="44" rx="22" fill="url(#gRed)" stroke="#d94a52" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="520" y="293" font-size="13" fill="#8c1119" text-anchor="middle" font-weight="700">raw payload ✕ never crosses</text>
+<text x="520.0" y="338" font-size="12.5" fill="#6b665f" text-anchor="middle">privacy evidence proves the rules held without re-leaking the data they protect (C2.1–C2.3)</text>
+</svg>

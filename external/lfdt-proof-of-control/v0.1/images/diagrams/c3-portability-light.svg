@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="340" viewBox="0 0 1040 340" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="337" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="337" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">C3 · PORTABILITY</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">The chain survives the crossing</text>
+<rect x="34" y="100" width="372" height="168" rx="14" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(56,112) scale(0.7)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12 m-8.5 0 a8.5 8.5 0 1 0 17 0 a8.5 8.5 0 1 0 -17 0"/><path d="M12 3.5 C8.6 8 8.6 16 12 20.5 C15.4 16 15.4 8 12 3.5 M3.5 12 H20.5"/></g>
+<text x="84" y="129" font-size="12.5" fill="#6b665f" text-anchor="start" font-weight="700">Cloud A · attestation domain A</text>
+<rect x="58" y="152" width="96" height="88" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5"/>
+<text x="106" y="186" font-size="11" fill="#4a463f" text-anchor="middle">record</text>
+<text x="106" y="210" font-size="15" fill="#4a463f" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">41</text>
+<line x1="158" y1="196" x2="166" y2="196" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="167,196 157,190.5 157,201.5" fill="#8a857c"/>
+<rect x="170" y="152" width="96" height="88" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5"/>
+<text x="218" y="186" font-size="11" fill="#4a463f" text-anchor="middle">record</text>
+<text x="218" y="210" font-size="15" fill="#4a463f" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">42</text>
+<line x1="270" y1="196" x2="278" y2="196" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="279,196 269,190.5 269,201.5" fill="#8a857c"/>
+<rect x="282" y="152" width="96" height="88" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5"/>
+<text x="330" y="186" font-size="11" fill="#4a463f" text-anchor="middle">record</text>
+<text x="330" y="210" font-size="15" fill="#4a463f" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">43</text>
+<rect x="634" y="100" width="372" height="168" rx="14" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(656,112) scale(0.7)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12 m-8.5 0 a8.5 8.5 0 1 0 17 0 a8.5 8.5 0 1 0 -17 0"/><path d="M12 3.5 C8.6 8 8.6 16 12 20.5 C15.4 16 15.4 8 12 3.5 M3.5 12 H20.5"/></g>
+<text x="684" y="129" font-size="12.5" fill="#6b665f" text-anchor="start" font-weight="700">Cloud B · attestation domain B</text>
+<rect x="658" y="152" width="96" height="88" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5"/>
+<text x="706" y="186" font-size="11" fill="#4a463f" text-anchor="middle">record</text>
+<text x="706" y="210" font-size="15" fill="#4a463f" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">44</text>
+<line x1="758" y1="196" x2="766" y2="196" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="767,196 757,190.5 757,201.5" fill="#8a857c"/>
+<rect x="770" y="152" width="96" height="88" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5"/>
+<text x="818" y="186" font-size="11" fill="#4a463f" text-anchor="middle">record</text>
+<text x="818" y="210" font-size="15" fill="#4a463f" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">45</text>
+<line x1="870" y1="196" x2="878" y2="196" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="879,196 869,190.5 869,201.5" fill="#8a857c"/>
+<rect x="882" y="152" width="96" height="88" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5"/>
+<text x="930" y="186" font-size="11" fill="#4a463f" text-anchor="middle">record</text>
+<text x="930" y="210" font-size="15" fill="#4a463f" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">46</text>
+<rect x="456" y="152" width="128" height="88" rx="14" fill="url(#gLime)" stroke="#8fae00" stroke-width="1.5" filter="url(#fGlow)"/>
+<text x="520" y="188" font-size="12.5" fill="#1a2000" text-anchor="middle" font-weight="700">signed</text>
+<text x="520" y="208" font-size="12.5" fill="#1a2000" text-anchor="middle" font-weight="700">linking record</text>
+<line x1="412" y1="196" x2="450" y2="196" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="451,196 441,190.5 441,201.5" fill="#8a857c"/>
+<line x1="590" y1="196" x2="628" y2="196" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="629,196 619,190.5 619,201.5" fill="#8a857c"/>
+<text x="520.0" y="314" font-size="12.5" fill="#6b665f" text-anchor="middle">when evidence crosses vendors or jurisdictions, a signed link binds the two chains — no unverifiable gap at the boundary (C3.2)</text>
+</svg>

@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["framework","overall_assessment","systemic_issues","proposed_changes","clause_citation_errors"],
+  "properties": {
+    "framework": {"type": "string"},
+    "overall_assessment": {"type": "string"},
+    "systemic_issues": {"type": "array", "items": {"type": "string"}},
+    "proposed_changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["requirement_id","current_match","proposed_match","proposed_clause","proposed_rationale","confidence","reason"],
+        "properties": {
+          "requirement_id": {"type": "string"},
+          "current_match": {"type": "string", "enum": ["EM","PM","NM"]},
+          "proposed_match": {"type": "string", "enum": ["EM","PM","NM"]},
+          "proposed_clause": {"type": "string"},
+          "proposed_rationale": {"type": "string"},
+          "confidence": {"type": "string", "enum": ["high","medium","low"]},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "clause_citation_errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["requirement_id","cited","problem"],
+        "properties": {
+          "requirement_id": {"type": "string"},
+          "cited": {"type": "string"},
+          "problem": {"type": "string"}
+        }
+      }
+    }
+  }
+}

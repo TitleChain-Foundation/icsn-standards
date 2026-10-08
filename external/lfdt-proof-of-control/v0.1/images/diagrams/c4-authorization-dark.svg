@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="400" viewBox="0 0 1040 400" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a26"/><stop offset="1" stop-color="#22211e"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#c6f500"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3608"/><stop offset="1" stop-color="#1e2704"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#361417"/><stop offset="1" stop-color="#280f12"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222222"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#cfff04" flood-opacity="0.55"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="397" rx="20" fill="url(#gPanel)" stroke="#2c2c2c" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="397" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#cfff04">C4 · AUTHORIZATION</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#f0edea">The envelope and the gateway</text>
+<rect x="34" y="100" width="640" height="220" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(54,114) scale(0.7)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11 H18 V20 H6 Z"/><path d="M8.5 11 V8 A3.5 3.5 0 0 1 15.5 8 V11"/></g>
+<text x="82" y="131" font-size="11" fill="#9d978e" text-anchor="start" font-weight="700" letter-spacing="1.2">GRANTED AUTHORITY — SCOPE · LIMITS · EXPIRY</text>
+<rect x="60" y="156" width="286" height="50" rx="14" fill="url(#gTint)" stroke="#a5c614" stroke-width="1.5"/>
+<text x="80" y="186" font-size="12.5" fill="#dfff5e" text-anchor="start" font-weight="700">read customer record ✓</text>
+<rect x="366" y="156" width="286" height="50" rx="14" fill="url(#gTint)" stroke="#a5c614" stroke-width="1.5"/>
+<text x="386" y="186" font-size="12.5" fill="#dfff5e" text-anchor="start" font-weight="700">issue refund within limit ✓</text>
+<rect x="60" y="222" width="286" height="50" rx="14" fill="url(#gTint)" stroke="#a5c614" stroke-width="1.5"/>
+<text x="80" y="252" font-size="12.5" fill="#dfff5e" text-anchor="start" font-weight="700">call registered tools ✓</text>
+<text x="366" y="252" font-size="11" fill="#9d978e" text-anchor="start">every decision recorded</text>
+<rect x="716" y="120" width="12" height="200" rx="6" fill="url(#gGate)" stroke="#cfff04" filter="url(#fGlow)"/>
+<text x="722" y="342" font-size="11" fill="#9d978e" text-anchor="middle">interception gateway</text>
+<line x1="680" y1="220" x2="710" y2="220" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="711,220 701,214.5 701,225.5" fill="#8d877e"/>
+<line x1="734" y1="170" x2="762" y2="170" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="763,170 753,164.5 753,175.5" fill="#8d877e"/>
+<rect x="768" y="138" width="238" height="62" rx="14" fill="url(#gTint)" stroke="#a5c614" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="788" y="164" font-size="13" fill="#dfff5e" text-anchor="start" font-weight="700">in-scope action</text>
+<text x="788" y="184" font-size="12" fill="#dfff5e" text-anchor="start">executes · recorded ✓</text>
+<line x1="734" y1="268" x2="762" y2="268" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="763,268 753,262.5 753,273.5" fill="#8d877e"/>
+<rect x="768" y="238" width="238" height="62" rx="14" fill="url(#gRed)" stroke="#ff6568" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="788" y="264" font-size="13" fill="#ffb3b5" text-anchor="start" font-weight="700">export database</text>
+<text x="788" y="284" font-size="12" fill="#ffb3b5" text-anchor="start">✕ blocked + evidenced</text>
+<text x="520.0" y="374" font-size="12.5" fill="#9d978e" text-anchor="middle">in-scope actions execute and are recorded; out-of-scope actions stop at the gateway — both leave evidence (C4.1)</text>
+</svg>

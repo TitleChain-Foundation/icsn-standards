@@ -1,0 +1,346 @@
+{
+  "SECURITY": {
+    "reviewer_lens": "Security: threat model, formal claims/proofs, attack harness, and security argument.",
+    "summary": "Weak reject. The central observation\u2014attestation of a host-supplied snapshot does not establish what was executed\u2014is important and clearly explained (\u00a75.3), and the paper correctly identifies anchoring/equivocation as separate from local log integrity (\u00a77.2). However, the claimed Tier-3/4 security argument does not survive its stated attacker model or its own implementation limitation. Theorem 1 proves only a narrow, idealized far-end ticket check, while the proposed alternatives explicitly retain host-controlled paths; Theorem 2 assumes the key fact it needs about communication; and the \u201cTEE\u201d implementation cannot test the adversary that the claims are about. Several claims also treat public verification as eliminating trust despite relying on vendor attestation roots, reference-value publication, policy registries, endpoint parsing/canonicalization, and enforcement at the relying party. These are fundamental gaps for a top security venue, not merely missing evaluation polish.",
+    "overall_rating": "2-weak-reject",
+    "confidence": "high",
+    "strengths": [
+      "\u00a75.3 and Proposition 1 make a valuable and correct distinction between an attested decision over a snapshot and mediation of the actual side effect.",
+      "\u00a77.2 appropriately separates execution fidelity (P2), append/truncation behavior (P3), and split-view equivocation (P4), rather than claiming that a hash chain solves all three.",
+      "The paper candidly states that its enclave is an in-process stand-in (\u00a79, \u00a79.6, \u00a710.1) and identifies the A9 root-versus-length verification bug.",
+      "The attack table usefully tests negative cases and maps them to stated defenses, even though it is not sufficient evidence for the claimed hostile-host security guarantee.",
+      "The discussion of declassification in \u00a7\u00a79.4\u20139.5 is unusually honest that path-aware authorization is not automatically useful or secure."
+    ],
+    "weaknesses": [
+      {
+        "severity": "blocking",
+        "claim": "The Tier 3/4 claim conflicts with the stated trust assumptions. \u00a74.2 says, \u201cAt Tier 3, there is nobody left to trust,\u201d and \u00a77.4 says Tier 3 is obtained by \u201cadding independent anchoring, so nobody has to take the vendor\u2019s word about which code ran.\u201d Yet \u00a77.1 assumes (C1) that the chip vendor does not \u201cvouch for a lie,\u201d P1 explicitly requires (C1), and \u00a710.1 concedes \u201cEverything above Tier 2 rests on (A1), (B1), (C1).\u201d",
+        "where": "\u00a74.2; \u00a77.1\u2013\u00a77.4; \u00a710.1; Figure 1.",
+        "why_it_matters": "Remote attestation normally establishes a statement through an endorsement/certificate and verifier reference-value supply chain. Publishing a root does not independently establish an enclave measurement or remove trust in vendor roots, revocation, provisioning, or the party that publishes golden measurements and policy registry entries. Thus the advertised binary threshold is not defined coherently and is materially misleading.",
+        "suggested_fix": "Define tiers in terms of explicit trust assumptions and distinguish public verifiability from trustlessness. Either retain hardware/vendor/reference-value trust in Tier 3 or provide a precise independent-verification construction and proof. Update all prose, Figure 1, and conformance claims accordingly."
+      },
+      {
+        "severity": "blocking",
+        "claim": "Theorem 1 does not prove the stated execution-fidelity property under its actual system model. It assumes a \u201ccompliant relying party R\u201d that checks a request against H(\u03c3snap), but Definition 1 requires \u03c3snap to \u201cdescribe[] exactly e\u201d; no syntax/semantics relation between a snapshot and effect is defined. The proof silently treats hash equality as semantic equality. It also does not bind the agent, policy identity/version, ticket issuance time/expiry, operation idempotency semantics, response, or all effect-relevant request context.",
+        "where": "\u00a77.3, Definition 1, Definition 2, Theorem 1 and proof sketch; \u00a75.5\u2013\u00a75.6.",
+        "why_it_matters": "Canonical byte equality can bind only an agreed request representation, not an external API\u2019s semantics. Real endpoints have defaults, server-side state, redirects, retries, content negotiation, aliases, concurrent requests, and effects induced by a request body or credentials. A ticket can therefore authenticate a different semantic effect while all listed checks pass. The formal result is at best an authenticity result for a narrowly specified request message.",
+        "suggested_fix": "Specify an effect model and a deterministic request-to-effect relation, including endpoint parsing and relevant server state, or weaken the theorem to message-level authorization. Bind a unique operation identifier, audience, expiry, policy/agent/session identity, and response/effect receipt; prove the revised game with explicit replay and concurrency assumptions."
+      },
+      {
+        "severity": "blocking",
+        "claim": "Theorem 1\u2019s reduction is incomplete and its assumptions are inconsistent with \u00a75.3. The construction uses c=SignkE(H(\u03c3snap)||r||nonce), but Theorem 1 requires that a valid ticket be accompanied by an allow token; that linkage is not cryptographically included in c. It also invokes collision resistance where a second-preimage/preimage-style binding property is needed for a fixed signed digest. Finally, \u00a75.3 says options 1 and 3 \u201cshrink the problem rather than removing it,\u201d while later Tier-4 prose presents the ticket construction as if it covered the architecture generally.",
+        "where": "\u00a75.3; \u00a77.3 Theorem 1/proof; \u00a77.4.",
+        "why_it_matters": "A proof cannot transfer from the narrow ticket design to deployments using proxy/egress mediation, and an unbound allow token leaves room for substitution across otherwise matching ticket fields. Incorrect hash assumptions invalidate the stated reduction as written.",
+        "suggested_fix": "Make ticket and decision token one signed, domain-separated object or cryptographically cross-bind them. State the exact hash assumption required. Give separate properties/theorems for each of the three mediation options, with residual trusted components made part of the theorem statement and tier assignment."
+      },
+      {
+        "severity": "major",
+        "claim": "Theorem 2 claims \u201cDetection probability is 1\u201d from verifiers exchanging pairs, but its assumptions do not guarantee comparison. Assumption (D1) only says the attacker cannot \u201ccut every verifier off from every other verifier\u201d; it does not establish eventual delivery, a connected honest pair that received conflicting views, witness availability, or ledger safety. The proof additionally assumes both verifiers hold signed totals at the same index, although histories presented at different lengths need consistency proofs or a common checkpoint.",
+        "where": "\u00a77.1(D1); \u00a77.3 Definition 3 and Theorem 2; \u00a79.10.",
+        "why_it_matters": "Asynchronous gossip can be delayed indefinitely, selectively partitioned, or fail to compare the conflicting heads. A split view can remain undetected even with some network connectivity. Detectability, attributable evidence after comparison, and prevention are different guarantees.",
+        "suggested_fix": "State a network/eventual-gossip model, define which honest parties receive which signed tree heads, and prove conditional eventual detection. For unequal tree sizes, require and verify RFC 9162-style consistency proofs. Report detection latency/probability under a concrete gossip/witness deployment rather than probability 1."
+      },
+      {
+        "severity": "major",
+        "claim": "The attacker model says the adversary \u201cowns the operating system, the container, the orchestration, and the network\u201d (\u00a77.1), but the implementation tests cannot exercise this adversary: its \u201cenclave is an in-process object whose key is never handed out\u201d (\u00a79). In that process model, a host adversary can inspect memory, patch the verifier/proxy, invoke methods directly, or extract/replace the key; \u201cnever handed out\u201d is not isolation.",
+        "where": "\u00a77.1; \u00a79 opening paragraph; \u00a79.1/Table 5; \u00a79.6; \u00a710.1.",
+        "why_it_matters": "A1, A8, and the claimed fail-closed/effect mediation guarantees are demonstrated only against a cooperative process-level harness, not a compromised host. This is not simply missing TEE-transition latency; it removes the security boundary on which P1/P2 rest.",
+        "suggested_fix": "Do not claim security validation against the \u00a77.1 hostile-host adversary from these experiments. Before acceptance, deploy on at least one real TEE with the private key non-exportable, place the enforcement path outside host control or use a real ticket-checking endpoint, and run host compromise/patch/key-extraction/bypass tests. Separate protocol-unit tests from end-to-end security evidence."
+      },
+      {
+        "severity": "major",
+        "claim": "The claim that every consequential action is mediated is asserted rather than established. \u00a75 says \u201cEvery time\u201d an action matters, and \u00a75.1 lists eight lifecycle hooks, but neither gives a completeness argument for tool invocation paths, direct sockets, shell commands, filesystem/device effects, DNS, subprocesses, cloud credentials, indirect side effects, or subagents. \u00a76.1 acknowledges channels \u201cwe never intercept\u201d are outside scope, which substantially narrows the claimed P2.",
+        "where": "\u00a75\u2013\u00a75.3; \u00a76.1; \u00a77.2 P2; Table 4 row \u201cEvery action goes through it.\u201d",
+        "why_it_matters": "Complete mediation is the central security precondition. A malicious or compromised runtime can cause an effect through any uninstrumented channel; a tool call can also induce uncontrolled downstream effects. Enumerating lifecycle callbacks is not proof that the OS/network capability surface is closed.",
+        "suggested_fix": "Define the protected effect surface and a trusted I/O architecture that denies all non-gateway channels. Provide a completeness argument and an adversarial bypass evaluation. Narrow claims to the explicitly mediated endpoints if universal mediation is not achievable."
+      },
+      {
+        "severity": "major",
+        "claim": "The P3 anchoring argument overlooks rollback and freshness. \u00a77.2 says bounded publication \u201cfixes\u201d hidden recent history, but a compromised host can replay old valid attestation, policy, registry, or published-root state to a relying party lacking trusted time/monotonic counters. The token\u2019s nonce is described as a relying-party challenge (\u00a75.5), yet a continuous log/third-party audit cannot generally obtain a fresh verifier nonce for each historic record.",
+        "where": "\u00a75.5 verification steps and Table 1; \u00a77.2 P3; \u00a79.8\u2013\u00a79.9.",
+        "why_it_matters": "TEE attestation and sealed state are commonly vulnerable to rollback without a trusted monotonic/freshness source. Per-action anchoring/batching also create windows in which a crash or rollback erases records. The paper's \u0394 arithmetic assumes a reliably live, non-equivocating publication service, which is neither modeled nor evaluated.",
+        "suggested_fix": "Model rollback, crash, clock, key rotation, and publication-service compromise. Bind roots to externally witnessed sequence numbers/timestamps and require freshness semantics appropriate to online authorization versus retrospective audit. Evaluate recovery and replay attacks."
+      },
+      {
+        "severity": "major",
+        "claim": "\u00a79.1/Table 5 overstates the attack evidence: \u201cAll nine are refused or caught when [the requirement] is there.\u201d These are single hand-authored demonstrations, not evidence that the stated cryptographic, TEE, endpoint, and distributed-systems properties hold. A9 additionally changes the threat model mid-paper: \u00a79.10 says \u201cthe operator running the enclave can [sign],\u201d whereas \u00a77.1/eq. (3) premise key secrecy outside the enclave.",
+        "where": "\u00a79.1/Table 5; \u00a77.1; \u00a76 eq. (3); \u00a79.10.",
+        "why_it_matters": "The harness does not test malformed EAT/CBOR/JWT inputs, parser differentials, concurrent replay, ticket mix-and-match, gateway bypass, rollback, endpoint canonicalization, witness partition/collusion, or malicious-host behavior. The ambiguous signing-key ownership makes the A9 conclusion difficult to interpret.",
+        "suggested_fix": "Publish a precise attack-harness threat model and test oracle. Add adversarial/fuzz/property tests for the signed-wire format and ticket verifier, concurrency/replay tests, and end-to-end hostile-host/network tests. Clarify whether A9 uses a compromised enclave key, an operator-controlled anchoring key, or a different signing role."
+      },
+      {
+        "severity": "minor",
+        "claim": "The related-work treatment is too narrow around the core problem. It credits reference monitors, IFC, CT, capabilities, and generic confidential computing, but omits or under-credits trusted-path/I/O and execution-binding work needed to reason about the actual effect channel, as well as the substantial TEE rollback, Iago/host-interface, side-channel, and remote-attestation verification literature. The statement in \u00a73, \u201cas far as we can tell, nobody has applied [transparency results] to agent evidence,\u201d is broad and unsupported.",
+        "where": "\u00a73; \u00a75.3; \u00a77.3\u2013\u00a77.5; references [19], [20], [33], [34].",
+        "why_it_matters": "The paper presents known capability-mediated authorization and transparency mechanisms as a new architecture without adequately positioning the hard, known systems-security problems. This makes the novelty and assumptions difficult to assess.",
+        "suggested_fix": "Expand related work with primary literature on trusted I/O paths and endpoint capabilities, attested channels/secure RPC, TEE rollback and hostile-host interfaces, TEE side channels, and transparency gossip/witness threat models. Precisely delimit the novelty to the agent-specific composition/specification if that is the contribution."
+      }
+    ],
+    "required_experiments": [
+      {
+        "experiment": "End-to-end deployment on a real TDX or SEV-SNP system with a non-exportable attestation/signing key, an external ticket-checking relying party, and a host attacker that can patch the runtime, inspect process memory, alter network routing, and bypass lifecycle hooks.",
+        "what_it_would_show": "Whether P1/P2 and fail-closed behavior survive the hostile-host adversary actually stated in \u00a77.1, rather than an in-process cooperative model.",
+        "why_reviewers_will_ask": "The current implementation explicitly lacks the trust boundary required by all central security claims.",
+        "effort": "large"
+      },
+      {
+        "experiment": "Formalize and mechanize or rigorously prove Theorem 1 for a message-level API model, including canonical parsing, ticket/token cross-binding, audience, expiry, single-use concurrency, retries/idempotency, and a stated hash assumption. Separately analyze each \u00a75.3 mediation option.",
+        "what_it_would_show": "The exact security guarantee and which deployments genuinely obtain it.",
+        "why_reviewers_will_ask": "The present theorem equates a snapshot digest with an external effect without a semantics model and overgeneralizes beyond tickets.",
+        "effort": "large"
+      },
+      {
+        "experiment": "Run an adversarial endpoint and wire-format test suite: ambiguous JSON/CBOR, duplicate keys, Unicode/URL/DNS normalization, defaults and redirects, request/body/header mismatches, concurrent ticket reuse, ticket mix-and-match, replay after restart, and differential parsing between gateway and relying party.",
+        "what_it_would_show": "Whether a signed canonical request actually binds the effect the endpoint performs.",
+        "why_reviewers_will_ask": "This is the concrete attack surface omitted by the formal fidelity proof and Table 5.",
+        "effort": "medium"
+      },
+      {
+        "experiment": "Evaluate equivocation detection under a specified gossip/witness design with partitions, delayed delivery, unequal-size tree heads, verifier churn, and colluding witnesses; report conditional detection coverage and latency rather than a universal probability-1 result.",
+        "what_it_would_show": "Whether the P4 construction provides eventual detection under realistic distributed-system assumptions.",
+        "why_reviewers_will_ask": "Theorem 2 assumes comparison and equal indices without stating the network conditions needed for either.",
+        "effort": "medium"
+      },
+      {
+        "experiment": "Implement rollback/crash/restart experiments with real attested state and external anchoring: roll an attester back before/after publication, replay old roots and policies, lose an unsigned batch, and attempt verification with stale reference values.",
+        "what_it_would_show": "The actual P3 blind window and whether publication/freshness claims withstand common TEE state attacks.",
+        "why_reviewers_will_ask": "\u0394 bounds only one omission mode; rollback and stale attestation are unmodeled.",
+        "effort": "medium"
+      }
+    ],
+    "detailed_comments": [
+      "The strongest part is the paper's negative result: \u00a75.3 correctly says an authentic statement about a host-supplied snapshot is not evidence of execution. This should be the paper's central, narrowly scoped contribution; the later tier and theorem claims currently outrun it.",
+      "Table 4's row \u201cA stranger can check it: Yes (Tier 3+)\u201d is not accurate without enumerating and trusting attestation roots, measurement/reference-value publishers, policy registries, anchoring/witness services, and the relying party\u2019s ticket verifier. Public availability of artifacts does not eliminate these assumptions.",
+      "The sentence in \u00a75.5, \u201cYou never ask the operator for anything,\u201d is false under the stated design unless availability, authenticity, versioning, and access to every published reference value/root/policy are independently guaranteed. A verifier may not ask the operator directly, but it still trusts or depends on a supply chain.",
+      "P1 is also overstated: measurement plus a bundle hash does not show that the policy was applied to a truthful or complete machine state. The host controls snapshot construction, and relevant state may be omitted or stale even before the subsequent effect-channel issue.",
+      "\u00a76.2 commits H(\u03c6t), but no theorem states or proves that \u03c6t was correctly initialized and updated from a complete ordered event stream. A host-controlled source can cause the enclave to fold a selectively supplied history unless the actual effect path is serialized through the same stateful enforcement point.",
+      "The A6 policy result shows only that the authors' synthetic label policy blocks their synthetic read-then-send traces. It should not be characterized as an attack defense generally: permitted message content, encoding, covert channels, tool semantics, and attacker-controlled declassification are all decisive.",
+      "The use of \u201cMerkle root\u201d is technically confusing because Equation (1) is a linear hash chain, while the RFC 6962 tree is later added. Table 1 lists both chain_head and merkle_root though the example token omits chain_head and tree_size. The standard needs a single unambiguous transcript/leaf construction and a proof that chain and tree commit to identical ordered leaves.",
+      "The claim in \u00a79.7 that the \u201chash chain ... [is] already post-quantum\u201d is conditional on the selected hash, its output length, domain separation, and the relevant collision versus preimage property. This should not be stated as an unconditional property of the construction."
+    ],
+    "questions_for_authors": [
+      "What exact independently trusted mechanism lets a Tier-3 verifier validate a TEE measurement while not trusting the chip vendor, the endorsement chain, or the publisher of the golden measurement?",
+      "What is the formal semantics of \u201c\u03c3snap describes exactly e,\u201d and which request fields, server-side state, redirects, credential interpretation, and downstream side effects are included?",
+      "For each of the three \u00a75.3 mediation options, which principals can bypass or reconfigure the mediation point under the \u00a77.1 adversary, and what tier does that option qualify for?",
+      "Who controls each signing key in A9, the enclave, the anchor, and the tree-head publication system? The paper currently gives incompatible answers.",
+      "What network and participation assumptions make Theorem 2's detection probability 1, especially when verifiers observe different tree sizes or never directly exchange conflicting heads?"
+    ]
+  },
+  "EMPIRICAL": {
+    "reviewer_lens": "Empirical evaluation: measurements, benchmarks, statistics, baselines, and whether reported numbers support the conclusions.",
+    "summary": "Weak reject. The paper is unusually candid that its TEE is modeled, but its central empirical claims are nevertheless drawn from single-process Python microbenchmarks and synthetic workflows. The evaluation does not establish deployable overhead, scalability, security under the stated OS-compromise adversary, or the claimed utility/security tradeoff. Several reported numbers are internally inconsistent or insufficiently defined.",
+    "overall_rating": "2-weak-reject",
+    "confidence": "high",
+    "strengths": [
+      "Section 9 explicitly discloses important limitations, including no real TEE, no IPC/network costs, synthetic workflows, and a non-comparable pure-Python ML-DSA timing.",
+      "The authors test the specific design failures they discuss (notably A1 and A9), rather than merely asserting that cryptographic logging prevents attacks.",
+      "Section 9.5 correctly revisits an initially favorable declassification result after recognizing that the attacker should be able to use the same declassification point.",
+      "The Merkle inclusion-proof experiment identifies a practical auditability benefit over replaying a linear chain, assuming the storage and anchoring system is correctly implemented."
+    ],
+    "weaknesses": [
+      {
+        "severity": "blocking",
+        "claim": "The measured implementation does not exercise the security boundary or deployment path needed for the paper's central claims, yet Sections 9.1-9.3 use it to support efficacy and overhead conclusions.",
+        "where": "Section 9 opening paragraph; Section 9.1/Table 5; Section 9.2/Table 6; Section 10.1(1).",
+        "why_it_matters": "The paper states: \"the enclave is an in-process object whose key is never handed out.\" Under the threat model in Section 7.1, the attacker owns the OS, container, orchestration, and network. An in-process object cannot model resistance to that attacker; nor does it measure attestation, enclave entry/exit, protected credential access, gateway IPC, remote ticket verification, or public-root publication. Thus \"All nine are refused or caught when it is there\" establishes only behavior of a cooperative harness, not the claimed end-to-end property against the stated adversary. Likewise 201 \u00b5s is not a lower bound on a deployed system in a useful end-to-end sense: it omits several mandatory deployment components, not just an enclave transition.",
+        "suggested_fix": "This is required for acceptance. Evaluate an end-to-end prototype on at least one actual TEE platform (e.g., TDX or SEV-SNP) with a separately deployed relying-party/gateway process and an adversarial host. Report action latency and throughput including attestation/key provisioning as applicable, enclave crossings, IPC/networking, ticket verification, durable evidence storage, and anchoring. Re-run A1, A7, A8, and A9 with host-level adversarial control, clearly separating attacks that are genuinely tested from assumptions delegated to hardware."
+      },
+      {
+        "severity": "major",
+        "claim": "The headline performance claim is overgeneralized from an under-specified single-core microbenchmark.",
+        "where": "Abstract: \"The software costs 201 \u00b5s per action, about one percent of our budget\"; Section 9.2/Table 6; Section 9.6.",
+        "why_it_matters": "The 15 ms budget has no workload, service-level objective, or baseline justification. Table 6 is measured on an Apple M2 Max, Python 3.11, one core, after 5,000 iterations, but gives means and percentiles without repetitions, dispersion across runs, CPU-frequency controls, hardware/software versions, benchmark harness details, or confidence intervals. It also reports only isolated interception logic, not an agent framework, tool request, remote verifier, persistence, or TEE. The sentence \"there is 74 times more room than we are using, and that room is what a real enclave transition would eat into\" is speculation, not evidence; it does not establish that all omitted costs fit the budget.",
+        "suggested_fix": "Provide reproducible benchmark methodology and raw/repeated-run results, with medians, tail latencies, confidence intervals, and CPU/memory utilization. Compare baseline agent-tool execution, enforcement-only, evidence-only, and full PoC configurations on representative real agent frameworks and local/remote tools. State and justify a workload-specific latency budget rather than treating 15 ms as universal."
+      },
+      {
+        "severity": "major",
+        "claim": "The path-awareness/declassification results do not support a general claim about practical utility, and the reported values are inconsistent across sections.",
+        "where": "Abstract: \"refuses 42% of perfectly legitimate work\"; Section 9.4; Section 9.5/Figure 6; Section 10.2.",
+        "why_it_matters": "The experiment uses only 2,000 randomized synthetic workflows and supplies no generator, policy, action distribution, ground-truth labeling procedure, number of seeds, intervals, or error analysis. Section 9.4 reports 42% false rejection, while the supposedly more realistic experiment in Section 9.5 begins at 44.8% and reports only 71.7% attack detection at zero declassification; the paper does not explain whether these are different workloads or why the headline selects 42%. The claim that trusted redaction produces both zero false rejections and 100% detection is built into the workload semantics\u2014\"it really removes the content\"\u2014rather than demonstrated against realistic redaction failures, semantic leakage, alternate channels, or attacker-controlled tool output. The paper admits in Section 9.6 that privacy-preserving options are unimplemented, further limiting this result.",
+        "suggested_fix": "This is required for acceptance if utility is retained as a main contribution. Evaluate on released, naturally occurring agent traces/tasks with independently defined legitimate and attack outcomes; publish generators/traces where feasible. Use multiple policies and domains, report seed-level variance and confusion matrices, define detection precisely, and include adversarial attempts to exploit imperfect or bypassable redaction. Explain or correct the 42% versus 44.8% discrepancy."
+      },
+      {
+        "severity": "major",
+        "claim": "The scalability results do not measure the distributed/concurrent system that the standard needs.",
+        "where": "Section 9.3/Table 7; Section 9.6, especially \"Everything is measured on one core with one log\"; Section 9.8; Section 9.10.",
+        "why_it_matters": "Table 7 measures only 0.208-0.209 \u00b5s policy evaluation over a synthetic bounded summary, not complete action processing. The actual architecture has serial hash-chain dependencies, signatures, tree maintenance, durable stores, root publication, verifiers, sub-agents, and cross-agent delegation. The authors themselves identify that a single global log caps throughput and that per-agent logs complicate delegation, but then still claim a monitor that \"survives a long-running agent\" and use a one-core rate to derive deployment guidance. No contention, crash/recovery, storage backpressure, proof generation under load, or multi-agent ordering experiment is reported.",
+        "suggested_fix": "Benchmark multi-agent, concurrent logs and a durable storage backend under sustained load; report throughput/latency as log cardinality, agents, verifier load, tree size, anchor interval, and failure/recovery conditions vary. Include the cross-agent/delegation ordering design chosen by the standard, or narrow the scalability claims to a single-agent in-memory prototype."
+      },
+      {
+        "severity": "major",
+        "claim": "The batching result is unclear and appears incompatible with the per-action ticket architecture and baseline throughput figures.",
+        "where": "Section 9.9/Figure 9: \"Batching 128 actions under one signature makes each action 64 times cheaper\u2014from 85.7 \u00b5s to 1.3 \u00b5s\" and \"from 11,663 to 745,573 actions per second.\"",
+        "why_it_matters": "Table 6 reports 201.47 \u00b5s for a whole action, i.e., 4,963 actions/s, while Section 9.9 switches to 85.7 \u00b5s and 11,663 actions/s without clearly saying that it is measuring signing only. More importantly, Theorem 1 requires a request-bound enclave-signed ticket at the relying party for each allowed effect. Batching one signature across 128 actions cannot replace those individual ticket signatures without changing the mechanism and its security/freshness window. The stated 64x rather than 128x reduction also signals an unexplained accounting change. This figure cannot support the conclusion that signing cost is readily removable.",
+        "suggested_fix": "Define exactly what is signed per action in every configuration, include ticket signing/verification and all remaining per-action work, and present apples-to-apples end-to-end throughput. If batching changes the security construction, state the modified security property and test its failure windows rather than presenting it as a transparent optimization."
+      },
+      {
+        "severity": "minor",
+        "claim": "The Merkle-proof data and derived transfer claim conflict internally.",
+        "where": "Abstract: \"a 123 MB download into a 544-byte proof\"; Section 9.10/Table 9; Figure 10 caption and plot.",
+        "why_it_matters": "At 100,000 records, Table 9 calls the proof 544 B, but Figure 10 labels the inclusion-proof transfer as 1,771 B. The text says 123 MB is \"about 69,000 times more data,\" which corresponds roughly to 1,771 B, not 544 B (for which the ratio is about 226,000x). The difference may be raw sibling hashes versus a serialized request/response, but this is never defined. Consequently the abstract's precise number is not reproducible.",
+        "suggested_fix": "Reconcile Table 9, Figure 10, and the abstract. Report raw cryptographic proof size separately from complete wire bytes, including token, leaf, root, tree size, signatures, and serialization; calculate each ratio from the same quantity."
+      },
+      {
+        "severity": "minor",
+        "claim": "The post-quantum storage extrapolation is not reproducible from Table 8 and is presented more broadly than measured.",
+        "where": "Section 9.7/Table 8 and Figure 7.",
+        "why_it_matters": "Table 8 gives 1.34 GB versus 10.76 GB per million actions (about 8x), whereas Figure 7 gives 0.24 TB versus 2.65 TB for the specified 255.5 million-action, seven-year fleet (about 11x). Multiplying the Table 8 classical rate by that action count yields roughly 0.34 TB, not 0.24 TB, and multiplying the ML-DSA-44 rate yields roughly 2.75 TB, not 2.65 TB. The text also says CBOR \"halves every figure\" without reporting a CBOR table or explaining which fields are stored and deduplicated. These discrepancies undermine the claimed storage economics.",
+        "suggested_fix": "Publish the calculation sheet and byte-level record layouts for JSON and CBOR, distinguish decimal/binary units, include retained anchors/keys/proofs/indexes, and reconcile Figure 7 with Table 8. Keep performance claims about ML-DSA out of scope unless measured with comparable optimized implementations."
+      }
+    ],
+    "required_experiments": [
+      {
+        "experiment": "End-to-end real-TEE deployment with a separate relying party/gateway and a host-compromise attack harness.",
+        "what_it_would_show": "Whether the claimed P2/Tier-4 construction works when the OS is adversarial, and real latency/throughput including enclave, IPC/network, ticket, persistence, and anchoring costs.",
+        "why_reviewers_will_ask": "The current in-process key object explicitly does not instantiate the paper's principal trust boundary or deployment path.",
+        "effort": "large"
+      },
+      {
+        "experiment": "Trace-based path-policy evaluation on real agent workloads with independently labeled benign tasks, attacks, declassification/redaction outcomes, and multiple seeds/policies.",
+        "what_it_would_show": "Whether false-rejection and detection rates generalize beyond the custom synthetic generator, and whether verified declassification remains robust when attackers can invoke and abuse it.",
+        "why_reviewers_will_ask": "The 42%/44.8% utility conclusion is a central headline but is currently unreplicated, under-specified, and based on synthetic workflows.",
+        "effort": "large"
+      },
+      {
+        "experiment": "Concurrent multi-agent durability/scalability evaluation with durable logs, root publishing, proof serving, verifier load, failures, and recovery.",
+        "what_it_would_show": "The attainable throughput and tail latency of the actual logging architecture, including the global-versus-per-agent ordering tradeoff.",
+        "why_reviewers_will_ask": "One-core in-memory microbenchmarks cannot establish scalability for a standard intended for multi-agent execution and delegation.",
+        "effort": "large"
+      },
+      {
+        "experiment": "Reproduce all reported size/throughput figures from published byte layouts and benchmark scripts, including a corrected batching configuration.",
+        "what_it_would_show": "Whether Table 8/Figure 7, Table 9/Figure 10, and Section 9.9 measure consistent quantities and preserve the claimed protocol guarantees.",
+        "why_reviewers_will_ask": "The present numerical discrepancies are material and make headline claims non-reproducible.",
+        "effort": "medium"
+      }
+    ],
+    "detailed_comments": [
+      "Section 9.2 should not call 201 \u00b5s \"the software\" cost. It is the cost of a subset of software in a one-process, no-TEE, no-network benchmark. A lower bound on a component is useful, but it must be labeled as such throughout the abstract, conclusion, and figures.",
+      "The attack evaluation is a nine-row functional test table, not an empirical security evaluation. For deterministic attacks, success/failure counts are less important than a precise attacker implementation, configuration, and evidence that the defense cannot be bypassed through the omitted boundary. The phrase \"All nine work\" overstates what a harness can establish when the assumed TEE is not present.",
+      "Section 9.3's flat bounded-summary curve is consistent with the construction in Section 6.2, but it only validates a trivial constant-size implementation on one policy. It does not validate the broader statement that checking a real agent's path \"costs the same whether the path is ten steps or five thousand.\" External verification is explicitly linear (190 \u00b5s per record), and the policy expressiveness restriction may require larger summaries or approximations.",
+      "The sentence in Section 9.6, \"the breakdown between components is the part that will hold up,\" is unsupported. Relative cost shares change substantially with TEE transitions, remote service checks, serialization, persistent writes, and optimized/native implementations; the paper supplies no sensitivity analysis.",
+      "Section 9.8's anchoring guidance derives a blind window from an isolated one-core action rate. In a distributed deployment, publication latency/availability and externally visible effects\u2014not merely root-signing CPU time\u2014determine the exposure window. The recommendation to publish per irreversible action should be evaluated against an actual external anchor/witness, not an in-memory append.",
+      "Section 9.10's inclusion proof establishes membership in a tree rooted at a trusted anchored tree head. It does not alone establish that the action happened, that the root was timely anchored, or that the log is complete/non-equivocating. The section often uses \"genuine\" and \"was in the log\" in a way that can blur these distinct guarantees; measurements should state exactly which verification inputs were transferred and trusted.\u3011\u3010\u3002],",
+      "questions_for_authors=["
+    ],
+    "questions_for_authors": [
+      "What exactly constitutes the 15 ms budget, and which real deployment workload or service-level objective makes it the relevant denominator?",
+      "Why do Section 9.4's 42% result and Section 9.5's 44.8% starting false-rejection result differ, and why does the abstract report the former?",
+      "At 100,000 records, is the inclusion proof 544 B or 1,771 B? What bytes account for the difference, and which value underlies the 69,000x claim?",
+      "How can Section 9.9 batch signatures without eliminating or altering the per-effect, request-bound signed ticket required by Theorem 1?",
+      "Please provide the arithmetic and exact encoding assumptions reconciling Table 8's per-million-action sizes with Figure 7's seven-year storage totals."
+    ]
+  },
+  "STANDARDS": {
+    "reviewer_lens": "Standards specification, coverage-mapping methodology, related work, reproducibility, and deployability/adoption.",
+    "summary": "Weak reject. The paper identifies an important distinction between attesting a policy decision and binding that decision to an effect, and its insistence on canonical artifacts and negative vectors is directionally right. However, it is not yet a reviewable or adoptable open standard: the normative 125 requirements, conformance algorithms, disclosure format, trust-anchor rules, and public artifacts needed to reproduce its central claims are absent from the paper. Its Tier-3/4 trust taxonomy is internally inconsistent with its own vendor-rooted TEE assumptions, and the comparison study explicitly concedes that Table 3 is a one-coder, coarse, one-direction sketch. The claimed standards-integration roadmap is aspirational rather than evidence of implementer commitment or interoperability.",
+    "overall_rating": "2-weak-reject",
+    "confidence": "high",
+    "strengths": [
+      "Section 5.3 correctly identifies snapshot substitution as a decisive gap: an attested decision does not establish that the host performed the described action. The ticket construction is a useful and practically legible specification direction.",
+      "Section 5.6 recognizes a real interoperability failure mode\u2014ambiguous serialization and duplicate-key parsing\u2014and usefully calls for CDDL/JSON Schema, a canonical form, and positive and negative test vectors.",
+      "Section 8.4 is unusually candid that the framework comparison lacks independent coding, agreement statistics, and a reverse comparison. This is good scientific disclosure, even though it prevents the table from supporting the advertised gap claim.",
+      "Section 9.6 identifies concrete implementation limitations, including one-process measurements, absent TEE hardware, unspecified multi-log/delegation semantics, provisional CBOR allocations, and a canonicalization discrepancy.",
+      "The paper does not overclaim that path-aware authorization establishes agent correctness, fairness, or wisdom (Section 6)."
+    ],
+    "weaknesses": [
+      {
+        "severity": "blocking",
+        "claim": "The Tier-3/Tier-4 definition contradicts the stated trust model. Section 4.2 says, \u201cAt Tier 3, there is nobody left to trust; anyone can check the evidence with published tools,\u201d while Section 7.1 assumes \u201c(C1) get the chip vendor to vouch for a lie\u201d cannot happen, Section 10.1 says \u201cEverything above Tier 2 rests on (A1), (B1), (C1),\u201d and Section 7.4 claims that \u201cYou get to Tier 3 by adding independent anchoring, so nobody has to take the vendor\u2019s word about which code ran.\u201d",
+        "where": "Sections 4.2, 7.1, 7.4, and 10.1.",
+        "why_it_matters": "Anchoring a TEE-produced statement can make its history publicly auditable; it does not independently establish the hardware measurement, key provenance, or correctness of the chip-vendor attestation root. Thus it cannot remove C1. A standard whose primary procurement threshold is based on this distinction is unsound or, at minimum, materially underspecified.",
+        "suggested_fix": "Redefine tiers in terms of explicit trust assumptions. For example, distinguish public verifiability of evidence from trust independence of its roots, and require every conformance claim to enumerate hardware vendor, endorsement-key, verifier, transparency-log, witness, and relying-party assumptions. Do not label vendor-rooted TEE evidence \u201ctrust no one.\u201d"
+      },
+      {
+        "severity": "blocking",
+        "claim": "The paper claims an \u201copen standard with six domains of verification covering 125 testable requirements\u201d (Abstract), but the requirements, their identifiers except fragments such as C7.3.5, normative language, applicability conditions, and pass/fail procedures are not presented. Referring to an unspecified repository is inadequate for a self-contained security evaluation.",
+        "where": "Abstract; Sections 1, 4, 5.6, 8, and 10.2.",
+        "why_it_matters": "Neither the coverage results nor conformance, security, and adoption claims can be assessed without the actual normative corpus. \u201cTestable\u201d is particularly unsubstantiated: many requirements may require judgment, unavailable source material, or a trusted test harness. Implementers cannot determine the minimal conforming profile or mutually interoperable behavior.",
+        "suggested_fix": "Include the complete normative requirements as an artifact with immutable version/commit hash; provide a requirements-to-test mapping, applicability/profile rules, error handling, conformance claim syntax, and a machine-runnable conformance suite. In the paper, tabulate each domain\u2019s requirement classes and representative normative requirements."
+      },
+      {
+        "severity": "major",
+        "claim": "The coverage numbers are presented prominently despite the paper conceding that their evidentiary basis is insufficient. Section 8.3 says, \u201cThe thin Exact column is the finding,\u201d but Section 8.4 says \u201cOne person coded it. There is no measure of agreement at all\u201d and \u201cThe grain is coarser than it looks.\u201d Section 8.2\u2019s cross-model exercise is not an independent coding study and accepts 31 proposed changes under an ad hoc rule that itself cannot validate semantic equivalence.",
+        "where": "Sections 8.1\u20138.4; Table 3; Figure 4.",
+        "why_it_matters": "Table 3/Figure 4 support the paper\u2019s novelty and standards-gap narrative, but the authors explicitly show they cannot support precise coverage values or the \u201cessentially anywhere\u201d conclusion. A model review neither supplies expert independence nor Cohen\u2019s kappa; its treatment of \u201cExact\u201d rows as structurally impossible is also circular because the new standard defines the artifacts being sought.",
+        "suggested_fix": "Before acceptance, conduct preregistered two-or-more independent expert codings using frozen versions of all frameworks; report per-framework and per-domain agreement, disagreements, adjudication, source clause citations, and sensitivity analyses for Exact-only versus Exact+Partial. Include a reverse mapping of requirements in incumbent frameworks absent from PoC."
+      },
+      {
+        "severity": "major",
+        "claim": "The specification does not resolve the semantics it needs for organization-scale deployment. Section 9.6 admits, \u201cThe standard does not yet say which you must build\u201d regarding global versus per-agent logs, even though delegation and cross-agent ordering are central. Section 5.2 merely says \u201cChains of sub-agents are handled with several verifiers,\u201d without defining causality, identity/tenant boundaries, failure handling, key rotation, revocation, policy updates, retries, idempotency, or a canonical cross-log ordering model.",
+        "where": "Sections 5.2, 6.2, 7.2, 9.6, and Appendix B.",
+        "why_it_matters": "These are not implementation details. They determine whether a delegation chain has a meaningful path, whether tickets can be safely retried, how a verifier handles policy evolution, and whether independently operated organizations can make compatible claims. An adopter cannot use this specification to design a multi-agent or cross-organizational deployment.",
+        "suggested_fix": "Define conformance profiles at least for single-agent/single-domain, multi-agent/single-operator, and cross-organization deployments. Specify delegation evidence, log partitioning and ordering semantics, ticket lifetime/retry rules, revocation and rollback behavior, key and policy lifecycle, and verifier behavior under partitions."
+      },
+      {
+        "severity": "major",
+        "claim": "Claims of reproducibility are not adequately supported by the paper. It repeatedly states that artifacts are \u201cpublic\u201d or \u201copen source\u201d (e.g., Sections 8.1, 9, and 10.2), but supplies no stable repository URL, commit/tag, artifact manifest, license, build instructions, benchmark configuration, raw results, hardware/software dependency lockfiles, or independent implementation result. \u201cThe code is open source in the specification repository\u201d is not a reproducibility package.",
+        "where": "Sections 8.1\u20138.2, 9, 9.1\u20139.10, and 10.2.",
+        "why_it_matters": "The standard\u2019s key claims concern exact bytes, validators, attack outcomes, and microbenchmarks. Those require versioned artifacts and repeatable execution, not a general website reference. A reference implementation validating its own output is useful regression testing but is not interoperability evidence.",
+        "suggested_fix": "Submit an archival artifact with DOI and commit hash containing the normative specification, vectors, generators, validator, attack harness, raw data, environment capture, and one-command reproduction. Require at least two independently developed validators/issuers to pass vectors and exchange evidence."
+      },
+      {
+        "severity": "major",
+        "claim": "The related-work treatment under-credits and incompletely situates the proposed evidence architecture. Section 3 treats transparency primarily as Certificate Transparency/CHAINIAC, but omits directly relevant standardized or deployed supply-chain and general-purpose transparency ecosystems such as in-toto attestations, Sigstore/Rekor, IETF SCITT, and timestamping/notarization systems. The provenance discussion cites SLSA and C2PA but does not compare their attestation envelopes, identity, log, and verifier models to the proposed claims.",
+        "where": "Section 3; Sections 4.1 and 5.4\u20135.6; Table 4.",
+        "why_it_matters": "The claimed contribution is a composition of attestation, signed statements, append-only publication, supply-chain provenance, and verification. Omitting mature adjacent systems makes Table 4\u2019s \u201cclosest things\u201d characterization and the novelty claim unreliable, and risks duplicating existing protocol machinery with incompatible formats.",
+        "suggested_fix": "Add a property-by-property comparison with SCITT, in-toto/SLSA, Sigstore/Rekor, RFC 3161/Roughtime-style time anchoring, and relevant authorization-token/capability standards. State precisely which components are reused, extended, or intentionally incompatible."
+      },
+      {
+        "severity": "major",
+        "claim": "The practical claim that all consequential actions can be mediated is not scoped to a deployable enforcement boundary. Section 5 says \u201cEvery time the agent is about to do something that matters, we stop it,\u201d while Section 5.3 recognizes channels outside that boundary; Section 7.5 concedes that arbitrary third-party and legacy endpoints only obtain weaker guarantees. Yet the standard does not define how an organization inventories consequential effects or quantifies coverage of unmediated paths.",
+        "where": "Sections 5, 5.1, 5.3, 7.5, and Table 4.",
+        "why_it_matters": "A real organization has direct network paths, service credentials, queues, databases, cloud control planes, human handoffs, side effects triggered by reads, and tools that execute composite workflows. Without a scope/discovery/coverage requirement, a Tier claim can be made over a convenient subset while excluding the meaningful effects.",
+        "suggested_fix": "Require an effect inventory, explicit enforcement-boundary declaration, coverage metric, and negative disclosure listing excluded channels and their credentials. Validate these requirements in a realistic deployment with bypass attempts across direct, asynchronous, delegated, and legacy paths."
+      },
+      {
+        "severity": "minor",
+        "claim": "The paper\u2019s standards process and adoption assertions are unsupported. Appendix A says PoC \u201cprovides\u201d realizations for named ISO/IETF/NIST workstreams and Appendix B forecasts \u201cSDO balloting,\u201d \u201cRFC publication,\u201d and deployment in regulated sectors on a 24-month schedule, but presents no charter, liaison, implementer commitments, working-group adoption, or governance process for allocating protocol identifiers.",
+        "where": "Appendices A and B; Section 10.2.",
+        "why_it_matters": "A working draft may propose an integration path, but projected ratification is not evidence that the specification is adoptable or aligned with SDO processes. In particular, private-use CBOR keys pending IANA registration (Section 9.6) show that important interoperability governance is unresolved.",
+        "suggested_fix": "Frame these as proposals, not integration facts. Document governance, versioning, IPR/licensing, security disclosure, registry ownership, change control, and concrete multi-organization adopter/implementer feedback."
+      }
+    ],
+    "required_experiments": [
+      {
+        "experiment": "Run a preregistered independent coverage study with at least two qualified coders per framework, frozen source versions, clause-level citations, Cohen\u2019s kappa (and per-domain agreement), third-party adjudication, and a reverse PoC-gap analysis.",
+        "what_it_would_show": "Whether Table 3\u2019s numerical coverage and claimed evidence-verifiability gap survive independent assessment.",
+        "why_reviewers_will_ask": "The paper itself calls the existing one-coder comparison a sketch; it cannot bear a central novelty claim.",
+        "effort": "medium"
+      },
+      {
+        "experiment": "Implement the complete normative profile independently in at least two stacks and exchange issued EAT/CWT and JSON evidence, tickets, inclusion/consistency proofs, policy updates, malformed inputs, and all published vectors; publish failures and fixes.",
+        "what_it_would_show": "Whether the claimed canonicalization, schema, and test vectors actually produce interoperable implementations rather than one reference implementation agreeing with itself.",
+        "why_reviewers_will_ask": "Interoperability is a core claimed contribution, and no independent implementation is reported.",
+        "effort": "large"
+      },
+      {
+        "experiment": "Deploy the ticket/effect-binding construction on a real multi-service agent workflow with a real TDX or SEV-SNP environment, an API gateway, asynchronous jobs, delegated subagents, retries, and at least one legacy/third-party endpoint. Measure end-to-end latency, availability under evidence/log/witness failure, throughput, and the fraction of consequential effects actually mediated.",
+        "what_it_would_show": "Whether the design is operationally viable and whether the stated coverage and fail-closed properties hold outside the in-process software stand-in.",
+        "why_reviewers_will_ask": "The primary security and performance claims depend on the trust boundary that Section 9 explicitly did not deploy.",
+        "effort": "large"
+      },
+      {
+        "experiment": "Evaluate the tier taxonomy against explicit trust-root compromise scenarios: vendor-root misissuance, attestation verifier compromise, rollback/revocation failure, log/witness collusion, and relying-party implementation divergence. For each, state whether Tier 3 or 4 remains justified.",
+        "what_it_would_show": "Whether public auditability/anchoring can truly remove the trust assumptions asserted in the Tier definition.",
+        "why_reviewers_will_ask": "The current Tier-3 claim conflicts directly with C1 and is foundational to the proposed procurement threshold.",
+        "effort": "medium"
+      }
+    ],
+    "detailed_comments": [
+      "The paper\u2019s most useful standards insight is that a signed observation is not automatically evidence of an external side effect. Section 5.3 should be promoted into a sharply scoped normative profile, but its three alternatives should not be presented as equivalent: the paper itself says options 1 and 3 retain host/transport assumptions, while only option 2 withstands the stated fully compromised-host model.",
+      "Table 1 is incomplete or inconsistent as rendered: the text in Section 5.4 defines a chain link L_t and Section 5.5 says history carries a running total, while the table includes chain_head and tree_size but Listing 1 omits both. It is unclear whether the listed EAT is conforming, illustrative but incomplete, or stale. An interoperability profile needs mandatory/optional status, encodings, duplicate-claim handling, issuer/key binding, protected-header rules, and deterministic verification errors.",
+      "Section 5.5\u2019s statement \u201cYou never ask the operator for anything\u201d is too strong. Verifiers need trustworthy published reference values, policy registries, roots, availability of anchoring infrastructure, and often attestation endorsement/collateral. Those sources may be operator-controlled or otherwise trusted; the standard must specify their authenticity and availability model.",
+      "The statement in Section 8.3 that \u201cif no existing framework requires operator-independent evidence, the Exact column should be close to empty\u201d embeds the authors\u2019 novel definition in the result. It may be a valid design choice, but it does not establish that incumbent frameworks have a meaningful control gap rather than a differing abstraction boundary.",
+      "Table 4\u2019s row \u201cEveryone sees one history\u201d gives transparency logs \u201cYes (with gossip)\u201d but Section 7.3 correctly says gossip detects rather than prevents equivocation and only after information exchange. The table should say detection under stated participation/connectivity assumptions, not \u201cYes.\u201d",
+      "The standard uses RFC 2119 terminology (Section 4) but does not provide the document structure normally needed to make it normative: terminology, applicability, requirements, conformance targets, registries, version negotiation, and IANA considerations. A research paper can omit full specification prose only if the immutable companion specification is made available as an artifact.",
+      "Section 9.10\u2019s Merkle proof result establishes inclusion in an anchored tree, not that the named action was authorized or occurred. The prose is mostly careful, but headings such as \u201cChecking one record\u201d and the surrounding audit narrative should explicitly preserve this distinction, especially given the paper\u2019s broader evidentiary thesis."
+    ],
+    "questions_for_authors": [
+      "What exact trust assumption is removed by \u201cindependent anchoring\u201d in Section 7.4, and how can Tier 3 be \u201ctrust: no one\u201d if acceptance depends on a chip-vendor-rooted attestation key and the paper retains C1?",
+      "Where is the versioned normative corpus of C1\u2013C10, including the 125 requirement texts, profiles, conformance algorithms, and disclosure schema, and which exact revision was used for Tables 3\u20134 and the implementation?",
+      "What is the minimum deployable profile for an organization with external SaaS tools, queues, retries, and subagents, and how must it disclose the percentage or class of consequential effects outside ticket-checked enforcement?",
+      "Which independent implementers or adopters have tested the claimed JSON/CBOR interoperability, and what governance owns the profile URI, key allocations, test-vector signing keys, reference values, and future policy/schema changes?"
+    ]
+  }
+}

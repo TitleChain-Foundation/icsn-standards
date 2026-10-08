@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="476" viewBox="0 0 900 476" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="897" height="473" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="897" height="473" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">CHECKING ONE RECORD</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">What an auditor must download to verify a single action</text>
+<rect x="110" y="104" width="640" height="258" rx="10" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.2"/>
+<line x1="110.0" y1="104" x2="110.0" y2="362" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="110.0" y="380" font-size="10.5" fill="#6b665f" text-anchor="middle">10</text>
+<line x1="270.0" y1="104" x2="270.0" y2="362" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="270.0" y="380" font-size="10.5" fill="#6b665f" text-anchor="middle">100</text>
+<line x1="430.0" y1="104" x2="430.0" y2="362" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="430.0" y="380" font-size="10.5" fill="#6b665f" text-anchor="middle">1,000</text>
+<line x1="590.0" y1="104" x2="590.0" y2="362" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="590.0" y="380" font-size="10.5" fill="#6b665f" text-anchor="middle">10,000</text>
+<line x1="750.0" y1="104" x2="750.0" y2="362" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="750.0" y="380" font-size="10.5" fill="#6b665f" text-anchor="middle">100,000</text>
+<line x1="110" y1="362.0" x2="750" y2="362.0" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="366.0" font-size="10.5" fill="#6b665f" text-anchor="end">100 B</text>
+<line x1="110" y1="280.1" x2="750" y2="280.1" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="284.10862662849047" font-size="10.5" fill="#6b665f" text-anchor="end">10 kB</text>
+<line x1="110" y1="198.2" x2="750" y2="198.2" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="202.21725325698097" font-size="10.5" fill="#6b665f" text-anchor="end">1 MB</text>
+<line x1="110" y1="116.3" x2="750" y2="116.3" stroke="#dcd6cd" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="120.3258798854715" font-size="10.5" fill="#6b665f" text-anchor="end">100 MB</text>
+<text x="430.0" y="402" font-size="11.5" fill="#6b665f" text-anchor="middle">records in the log</text>
+<text x="64" y="233.0" font-size="11.5" fill="#6b665f" text-anchor="middle" transform="rotate(-90 64 233.0)">bytes fetched to check one record</text>
+<path d="M110.0 276.5 L270.0 235.5 L430.0 194.6 L590.0 153.6 L750.0 112.7" fill="none" stroke="#d94a52" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<circle cx="110.0" cy="276.5" r="3.4" fill="#d94a52"/>
+<circle cx="270.0" cy="235.5" r="3.4" fill="#d94a52"/>
+<circle cx="430.0" cy="194.6" r="3.4" fill="#d94a52"/>
+<circle cx="590.0" cy="153.6" r="3.4" fill="#d94a52"/>
+<circle cx="750.0" cy="112.7" r="3.4" fill="#d94a52"/>
+<path d="M110.0 315.7 L270.0 314.4 L430.0 313.3 L590.0 311.9 L750.0 310.9" fill="none" stroke="#7a9900" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="110.0" cy="315.7" r="3.4" fill="#7a9900"/>
+<circle cx="270.0" cy="314.4" r="3.4" fill="#7a9900"/>
+<circle cx="430.0" cy="313.3" r="3.4" fill="#7a9900"/>
+<circle cx="590.0" cy="311.9" r="3.4" fill="#7a9900"/>
+<circle cx="750.0" cy="310.9" r="3.4" fill="#7a9900"/>
+<line x1="150" y1="132" x2="176" y2="132" stroke="#7a9900" stroke-width="2.8" stroke-linecap="round"/>
+<text x="184" y="136" font-size="11.5" fill="#141414" text-anchor="start">inclusion proof (Merkle tree)</text>
+<line x1="150" y1="152" x2="176" y2="152" stroke="#d94a52" stroke-width="2.8" stroke-linecap="round" stroke-dasharray="7 5"/>
+<text x="184" y="156" font-size="11.5" fill="#141414" text-anchor="start">replay the whole chain</text>
+<text x="740.0" y="102.68807825631868" font-size="10.5" fill="#6b665f" text-anchor="end">123 MB</text>
+<text x="740.0" y="330.8908338781676" font-size="10.5" fill="#6b665f" text-anchor="end">1,771 B</text>
+<text x="450" y="430" font-size="12" fill="#6b665f" text-anchor="middle">at 100,000 records the chain costs 123 MB and the proof costs 1.8 kB - a 69,000-fold difference</text>
+<text x="450" y="450" font-size="11" fill="#a09a91" text-anchor="middle">the gap widens with every record added, because one line is linear and the other is logarithmic</text>
+</svg>

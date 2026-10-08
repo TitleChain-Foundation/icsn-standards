@@ -1,0 +1,1787 @@
+{
+  "profile": "TitleChain Foundation RFC 0002",
+  "base_standard": "LFDT Proof-of-Control Standard v0.1",
+  "base_commit": "b8fb01277873d4c176d6cefd5f5e172ae1c3e2c7",
+  "license": "Apache-2.0",
+  "status_values": {
+    "profile_disposition": [
+      "ADOPTED",
+      "ADOPTED_AND_EXTENDED"
+    ],
+    "m5_implementation": [
+      "IMPLEMENTED",
+      "PARTIAL",
+      "GAP",
+      "NOT_APPLICABLE",
+      "NOT_ASSESSED"
+    ]
+  },
+  "le_requirements": [
+    {
+      "id": "LE1.1",
+      "level": 1,
+      "title": "Agent, legal entity, accountable human and role authority on every record",
+      "extends": [
+        "5.1.1"
+      ]
+    },
+    {
+      "id": "LE1.2",
+      "level": 2,
+      "title": "Accountable human's role authority validated before a grant",
+      "extends": [
+        "4.1.1",
+        "5.1.2"
+      ]
+    },
+    {
+      "id": "LE1.3",
+      "level": 2,
+      "title": "Signed human -> entity role -> agent chain with scope intersection",
+      "extends": [
+        "4.2.2",
+        "4.2.3"
+      ]
+    },
+    {
+      "id": "LE1.4",
+      "level": 1,
+      "title": "Agents are never principals and cannot over-delegate",
+      "extends": [
+        "4.2.3"
+      ]
+    },
+    {
+      "id": "LE1.5",
+      "level": 2,
+      "title": "Human or entity revokes without agent or provider consent",
+      "extends": [
+        "4.1.2"
+      ]
+    },
+    {
+      "id": "LE1.6",
+      "level": 2,
+      "title": "Grants revoked or reaffirmed when the accountable human's role ends",
+      "extends": [
+        "4.2.2"
+      ]
+    },
+    {
+      "id": "LE2.1",
+      "level": 2,
+      "title": "Key rotation leaves identifiers unchanged, with linking record",
+      "extends": [
+        "6.3.2"
+      ]
+    },
+    {
+      "id": "LE2.2",
+      "level": 2,
+      "title": "A compromised key alone cannot move title, roles or delegations",
+      "extends": [
+        "6.3.3"
+      ]
+    },
+    {
+      "id": "LE2.3",
+      "level": 2,
+      "title": "Verification distinguishes event-time, deprecated and compromised-after",
+      "extends": [
+        "6.3.4",
+        "6.3.5"
+      ]
+    },
+    {
+      "id": "LE3.1",
+      "level": 3,
+      "title": "Pseudonymous subject with evidence of a valid entity delegation",
+      "extends": [
+        "4.2.4"
+      ]
+    },
+    {
+      "id": "LE3.2",
+      "level": 2,
+      "title": "Pseudonym linkage held by the principal; disclosure conditions declared",
+      "extends": [
+        "10.2.1"
+      ]
+    },
+    {
+      "id": "LE3.3",
+      "level": 2,
+      "title": "Scores over pseudonymous subjects use a published method",
+      "extends": [
+        "7.5.1"
+      ]
+    },
+    {
+      "id": "LE4.1",
+      "level": 2,
+      "title": "Protected records stay in the principal-controlled store",
+      "extends": [
+        "1.4.1",
+        "2.1.2",
+        "2.4.1"
+      ]
+    },
+    {
+      "id": "LE4.2",
+      "level": 2,
+      "title": "Exportable verification bundle, verifiable offline",
+      "extends": [
+        "3.2.1",
+        "8.1.5"
+      ]
+    },
+    {
+      "id": "LE4.3",
+      "level": 3,
+      "title": "Signed linking record across a provider move",
+      "extends": [
+        "3.2.2"
+      ]
+    },
+    {
+      "id": "LE5.1",
+      "level": 2,
+      "title": "Computation manifest; records cite manifest and parameter digests",
+      "extends": [
+        "7.7.1",
+        "10.1.5"
+      ]
+    },
+    {
+      "id": "LE5.2",
+      "level": 2,
+      "title": "Time-triggered events stamped at their deadline",
+      "extends": [
+        "7.2.1"
+      ]
+    },
+    {
+      "id": "LE5.3",
+      "level": 2,
+      "title": "Canonical numbers representable identically in every language",
+      "extends": [
+        "7.7.2",
+        "7.7.4"
+      ]
+    },
+    {
+      "id": "LE5.4",
+      "level": 3,
+      "title": "Two independent implementations held to shared vectors",
+      "extends": [
+        "7.7.4"
+      ]
+    },
+    {
+      "id": "LE6.1",
+      "level": 2,
+      "title": "Accountable-human approval for consequential actions",
+      "extends": [
+        "4.1.6"
+      ]
+    },
+    {
+      "id": "LE6.2",
+      "level": 2,
+      "title": "Reversible, hash-chained settlement hold",
+      "extends": [
+        "7.3.1"
+      ]
+    },
+    {
+      "id": "LE6.3",
+      "level": 1,
+      "title": "Automated responses record their rule and trigger",
+      "extends": [
+        "4.1.2"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "poc_id": "1.1.1",
+      "chapter": "C1",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.1.2",
+      "chapter": "C1",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.1.3",
+      "chapter": "C1",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.1.4",
+      "chapter": "C1",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.1.5",
+      "chapter": "C1",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.2.1",
+      "chapter": "C1",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.2.2",
+      "chapter": "C1",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.2.3",
+      "chapter": "C1",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.2.4",
+      "chapter": "C1",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.3.1",
+      "chapter": "C1",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.3.2",
+      "chapter": "C1",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.4.1",
+      "chapter": "C1",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE4.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "1.4.2",
+      "chapter": "C1",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.1.1",
+      "chapter": "C2",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.1.2",
+      "chapter": "C2",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE4.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.1.3",
+      "chapter": "C2",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.2.1",
+      "chapter": "C2",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.2.2",
+      "chapter": "C2",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.2.3",
+      "chapter": "C2",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.2.4",
+      "chapter": "C2",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.2.5",
+      "chapter": "C2",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.3.1",
+      "chapter": "C2",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.3.2",
+      "chapter": "C2",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.3.3",
+      "chapter": "C2",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.4.1",
+      "chapter": "C2",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE4.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "2.4.2",
+      "chapter": "C2",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "3.1.1",
+      "chapter": "C3",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "3.1.2",
+      "chapter": "C3",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "3.2.1",
+      "chapter": "C3",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE4.2"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "3.2.2",
+      "chapter": "C3",
+      "level": 3,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE4.3"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "3.2.3",
+      "chapter": "C3",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.1.1",
+      "chapter": "C4",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE1.2"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.1.2",
+      "chapter": "C4",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE1.5",
+        "LE6.3"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.1.3",
+      "chapter": "C4",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.1.4",
+      "chapter": "C4",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.1.5",
+      "chapter": "C4",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.1.6",
+      "chapter": "C4",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE6.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "Settlement and adjudication events record the acting party and decision; the actor is not yet cryptographically authenticated."
+      }
+    },
+    {
+      "poc_id": "4.1.7",
+      "chapter": "C4",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.1.8",
+      "chapter": "C4",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.2.1",
+      "chapter": "C4",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.2.2",
+      "chapter": "C4",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE1.3",
+        "LE1.6"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.2.3",
+      "chapter": "C4",
+      "level": 3,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE1.3",
+        "LE1.4"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "4.2.4",
+      "chapter": "C4",
+      "level": 3,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE3.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "5.1.1",
+      "chapter": "C5",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE1.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "5.1.2",
+      "chapter": "C5",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE1.2"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "5.1.3",
+      "chapter": "C5",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "5.1.4",
+      "chapter": "C5",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "5.2.1",
+      "chapter": "C5",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "5.2.2",
+      "chapter": "C5",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.1.1",
+      "chapter": "C6",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.1.2",
+      "chapter": "C6",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.1.3",
+      "chapter": "C6",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.1.4",
+      "chapter": "C6",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.2.1",
+      "chapter": "C6",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.2.2",
+      "chapter": "C6",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.2.3",
+      "chapter": "C6",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.3.1",
+      "chapter": "C6",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.3.2",
+      "chapter": "C6",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE2.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.3.3",
+      "chapter": "C6",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE2.2"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "6.3.4",
+      "chapter": "C6",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE2.3"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "Digests carry an explicit 'sha256:' algorithm label and M5-CRP-001 defines a migration path; evidence is not yet signed."
+      }
+    },
+    {
+      "poc_id": "6.3.5",
+      "chapter": "C6",
+      "level": 3,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE2.3"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.1.1",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.1.2",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.1.3",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.1.4",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.1.5",
+      "chapter": "C7",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.2.1",
+      "chapter": "C7",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE5.2"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "Events are written when applied, stamped with the event time or, for automatic events, the deadline; no transaction-level capture yet."
+      }
+    },
+    {
+      "poc_id": "7.2.2",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.2.3",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.2.4",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.3.1",
+      "chapter": "C7",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE6.2"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "Settlement events are hash-chained from an opening hash and verify_event_chain detects modification, insertion and reordering; scheduled verification is not configured."
+      }
+    },
+    {
+      "poc_id": "7.3.2",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.3.3",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.3.4",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.3.5",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.4.1",
+      "chapter": "C7",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.5.1",
+      "chapter": "C7",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE3.3"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.5.2",
+      "chapter": "C7",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.6.1",
+      "chapter": "C7",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.6.2",
+      "chapter": "C7",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.6.3",
+      "chapter": "C7",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.6.4",
+      "chapter": "C7",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.6.5",
+      "chapter": "C7",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.6.6",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "7.7.1",
+      "chapter": "C7",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE5.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "M5 Value Receipt JSON Schema covers every field and receipts validate against it. Implemented in a private repository; publication to the public commons is required for external verification."
+      }
+    },
+    {
+      "poc_id": "7.7.2",
+      "chapter": "C7",
+      "level": 2,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE5.3"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "Canonical JSON fixes key order, number formatting and escaping (M5-MATH-001 MATH-CANONICAL-HASH); the meaning of an absent field is not yet stated."
+      }
+    },
+    {
+      "poc_id": "7.7.3",
+      "chapter": "C7",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "Every digest carries the 'sha256:' identifier; verifiers do not yet reject unlabeled digests."
+      }
+    },
+    {
+      "poc_id": "7.7.4",
+      "chapter": "C7",
+      "level": 3,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE5.3",
+        "LE5.4"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "Published canonical-hash vectors, matched by Python and JavaScript, include rejected cases; not every negative vector names its tested reason."
+      }
+    },
+    {
+      "poc_id": "7.7.5",
+      "chapter": "C7",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "GAP",
+        "note": "The JSON parser resolves duplicate keys last-wins; rejection is not implemented."
+      }
+    },
+    {
+      "poc_id": "8.1.1",
+      "chapter": "C8",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.1.2",
+      "chapter": "C8",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.1.3",
+      "chapter": "C8",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.1.4",
+      "chapter": "C8",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.1.5",
+      "chapter": "C8",
+      "level": 3,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE4.2"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.1.6",
+      "chapter": "C8",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.1.7",
+      "chapter": "C8",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.1.8",
+      "chapter": "C8",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "PARTIAL",
+        "note": "A receipt verifier (receipt-verify.js) exists. Implemented in a private repository; publication to the public commons is required for external verification."
+      }
+    },
+    {
+      "poc_id": "8.2.1",
+      "chapter": "C8",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.2.2",
+      "chapter": "C8",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.3.1",
+      "chapter": "C8",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.3.2",
+      "chapter": "C8",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.3.3",
+      "chapter": "C8",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.3.4",
+      "chapter": "C8",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "8.3.5",
+      "chapter": "C8",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "9.1.1",
+      "chapter": "C9",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "9.1.2",
+      "chapter": "C9",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "9.1.3",
+      "chapter": "C9",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "9.2.1",
+      "chapter": "C9",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "9.2.2",
+      "chapter": "C9",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "9.2.3",
+      "chapter": "C9",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.1.1",
+      "chapter": "C10",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.1.2",
+      "chapter": "C10",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.1.3",
+      "chapter": "C10",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.1.4",
+      "chapter": "C10",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.1.5",
+      "chapter": "C10",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE5.1"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.1.6",
+      "chapter": "C10",
+      "level": 1,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.1.7",
+      "chapter": "C10",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.1.8",
+      "chapter": "C10",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.2.1",
+      "chapter": "C10",
+      "level": 1,
+      "profile_disposition": "ADOPTED_AND_EXTENDED",
+      "extended_by": [
+        "LE3.2"
+      ],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.2.2",
+      "chapter": "C10",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.3.1",
+      "chapter": "C10",
+      "level": 2,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.3.2",
+      "chapter": "C10",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.3.3",
+      "chapter": "C10",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.3.4",
+      "chapter": "C10",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.3.5",
+      "chapter": "C10",
+      "level": 4,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.3.6",
+      "chapter": "C10",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    },
+    {
+      "poc_id": "10.3.7",
+      "chapter": "C10",
+      "level": 3,
+      "profile_disposition": "ADOPTED",
+      "extended_by": [],
+      "m5_implementation": {
+        "label": "implementation-specific, external, subject to separate terms",
+        "status": "NOT_ASSESSED",
+        "note": null
+      }
+    }
+  ]
+}

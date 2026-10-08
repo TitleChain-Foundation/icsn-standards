@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="300" viewBox="0 0 1040 300" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="297" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="297" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">C1 · PROVENANCE</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">The chain of custody</text>
+<rect x="34" y="110" width="250" height="120" rx="14" fill="url(#gWarm)" stroke="#c6bfb4" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(54,124) scale(0.8)" fill="none" stroke="#4a463f" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5 m-7 0 a7 2.6 0 1 0 14 0 a7 2.6 0 1 0 -14 0"/><path d="M5 4.5 V18 A7 2.6 0 0 0 19 18 V4.5"/><path d="M5 11.2 A7 2.6 0 0 0 19 11.2"/></g>
+<text x="86" y="142" font-size="15.5" fill="#4a463f" text-anchor="start" font-weight="700">Origin</text>
+<text x="54" y="174" font-size="12" fill="#4a463f" text-anchor="start">training data · inputs</text>
+<text x="54" y="192" font-size="12" fill="#4a463f" text-anchor="start">signed at source</text>
+<rect x="384" y="110" width="280" height="120" rx="14" fill="url(#gCard)" stroke="#dcd6cd" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(404,124) scale(0.8)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 H14 L18 7.5 V20.5 H7 Z"/><path d="M14 3.5 V7.5 H18"/><path d="M9.5 12 H15.5 M9.5 15 H15.5 M9.5 18 H13"/></g>
+<text x="436" y="142" font-size="15.5" fill="#141414" text-anchor="start" font-weight="700">Model state</text>
+<text x="404" y="174" font-size="12" fill="#6b665f" text-anchor="start" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">sha256: 9f2c…e1</text>
+<text x="404" y="192" font-size="12" fill="#6b665f" text-anchor="start">matches signed manifest ✓</text>
+<rect x="764" y="110" width="242" height="120" rx="14" fill="url(#gLime)" stroke="#8fae00" stroke-width="1.5" filter="url(#fGlow)"/>
+<g transform="translate(784,124) scale(0.8)" fill="none" stroke="#1a2000" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/><path d="M9 12 L11.4 14.4 L15.6 9.6"/></g>
+<text x="816" y="142" font-size="15.5" fill="#1a2000" text-anchor="start" font-weight="700">Action record</text>
+<text x="784" y="174" font-size="12" fill="#1a2000" text-anchor="start">what ran, on what, when</text>
+<text x="784" y="192" font-size="12" fill="#1a2000" text-anchor="start">custody chain complete ✓</text>
+<line x1="290" y1="170" x2="376" y2="170" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="377,170 367,164.5 367,175.5" fill="#8a857c"/>
+<g transform="translate(303.0,136) scale(0.62)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5 L14.5 9.5"/><path d="M12.5 7 L14.5 5 A3.5 3.5 0 0 1 19.5 10 L17.5 12"/><path d="M11.5 17 L9.5 19 A3.5 3.5 0 0 1 4.5 14 L6.5 12"/></g>
+<text x="339.0" y="152" font-size="10.5" fill="#6b665f" text-anchor="start">hash link</text>
+<line x1="670" y1="170" x2="756" y2="170" stroke="#8a857c" stroke-width="2" stroke-linecap="round"/>
+<polygon points="757,170 747,164.5 747,175.5" fill="#8a857c"/>
+<g transform="translate(683.0,136) scale(0.62)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5 L14.5 9.5"/><path d="M12.5 7 L14.5 5 A3.5 3.5 0 0 1 19.5 10 L17.5 12"/><path d="M11.5 17 L9.5 19 A3.5 3.5 0 0 1 4.5 14 L6.5 12"/></g>
+<text x="719.0" y="152" font-size="10.5" fill="#6b665f" text-anchor="start">hash link</text>
+<text x="520.0" y="274" font-size="12.5" fill="#6b665f" text-anchor="middle">an immutable chain from origin to action — a reviewer can walk it end-to-end without trusting the operator (C1.1–C1.2)</text>
+</svg>

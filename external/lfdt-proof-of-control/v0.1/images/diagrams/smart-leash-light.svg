@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="330" viewBox="0 0 1180 330" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1177" height="327" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1177" height="327" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">THE SMART LEASH</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">trust me → trust my auditor → trust the math → the leash locks itself</text>
+<defs><linearGradient id="gLeash" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a09a91"/><stop offset="0.35" stop-color="#d94a52"/><stop offset="0.65" stop-color="#c6bfb4"/><stop offset="1" stop-color="#7a9900"/></linearGradient></defs><rect x="76" y="122" width="990" height="5" rx="2.5" fill="url(#gLeash)"/>
+<polygon points="1082,124.5 1064,117 1064,132" fill="#7a9900"/>
+<circle cx="144" cy="124" r="20" fill="#efece6" stroke="#c6bfb4" stroke-width="2.5"/>
+<text x="144" y="130" font-size="13.5" fill="#4a463f" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">I</text>
+<g transform="translate(34,162) scale(0.72)" fill="none" stroke="#c6bfb4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8 m-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0"/><path d="M5.5 20 C5.5 15.8 8.4 13.8 12 13.8 C15.6 13.8 18.5 15.8 18.5 20"/></g>
+<text x="60" y="176" font-size="10.5" fill="#c6bfb4" text-anchor="start" font-weight="700" letter-spacing="1.2">PREREQUISITE</text>
+<text x="34" y="202" font-size="15.5" fill="#141414" text-anchor="start" font-weight="700">Whose dog is this?</text>
+<text x="34" y="226" font-size="11.5" fill="#6b665f" text-anchor="start">Collar tag and owner registration:</text>
+<text x="34" y="243" font-size="11.5" fill="#6b665f" text-anchor="start">identity, provenance, liability.</text>
+<circle cx="432" cy="124" r="20" fill="#ffeced" stroke="#d94a52" stroke-width="2.5"/>
+<text x="432" y="130" font-size="13.5" fill="#8c1119" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">T1</text>
+<g transform="translate(322,162) scale(0.72)" fill="none" stroke="#d94a52" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 H14 L18 7.5 V20.5 H7 Z"/><path d="M14 3.5 V7.5 H18"/></g>
+<text x="348" y="176" font-size="10.5" fill="#d94a52" text-anchor="start" font-weight="700" letter-spacing="1.2">TIER 1 · ASSERTION</text>
+<text x="322" y="202" font-size="15.5" fill="#141414" text-anchor="start" font-weight="700">The owner's word</text>
+<text x="322" y="226" font-size="11.5" fill="#6b665f" text-anchor="start">“My dog is friendly and stays in the</text>
+<text x="322" y="243" font-size="11.5" fill="#6b665f" text-anchor="start">yard.” They also write the incident report.</text>
+<circle cx="720" cy="124" r="20" fill="#efece6" stroke="#c6bfb4" stroke-width="2.5"/>
+<text x="720" y="130" font-size="13.5" fill="#4a463f" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">T2</text>
+<g transform="translate(610,162) scale(0.72)" fill="none" stroke="#c6bfb4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 C6 7 18 7 21 12 C18 17 6 17 3 12 Z"/><path d="M12 12 m-2.4 0 a2.4 2.4 0 1 0 4.8 0 a2.4 2.4 0 1 0 -4.8 0"/></g>
+<text x="636" y="176" font-size="10.5" fill="#c6bfb4" text-anchor="start" font-weight="700" letter-spacing="1.2">TIER 2 · ATTESTATION</text>
+<text x="610" y="202" font-size="15.5" fill="#141414" text-anchor="start" font-weight="700">The inspector's badge</text>
+<text x="610" y="226" font-size="11.5" fill="#6b665f" text-anchor="start">A yearly paper stamp. It can't stop</text>
+<text x="610" y="243" font-size="11.5" fill="#6b665f" text-anchor="start">the dog jumping the fence today.</text>
+<circle cx="1008" cy="124" r="20" fill="#cfff04" stroke="#8fae00" stroke-width="2.5" filter="url(#fGlow)"/>
+<text x="1008" y="130" font-size="13.5" fill="#1a2000" text-anchor="middle" font-weight="700" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">✓</text>
+<g transform="translate(898,162) scale(0.72)" fill="none" stroke="#7a9900" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/><path d="M9 12 L11.4 14.4 L15.6 9.6"/></g>
+<text x="924" y="176" font-size="10.5" fill="#7a9900" text-anchor="start" font-weight="700" letter-spacing="1.2">TIER 3–4 · PROOF-OF-CONTROL</text>
+<text x="898" y="202" font-size="15.5" fill="#141414" text-anchor="start" font-weight="700">The smart, tamper-evident leash</text>
+<text x="898" y="226" font-size="11.5" fill="#6b665f" text-anchor="start">Anyone can verify the proof — and the</text>
+<text x="898" y="243" font-size="11.5" fill="#6b665f" text-anchor="start">leash locks before the boundary is crossed.</text>
+<text x="590.0" y="304" font-size="12.5" fill="#6b665f" text-anchor="middle">as you move right — verifiability rises, trust required falls</text>
+</svg>

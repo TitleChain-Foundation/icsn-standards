@@ -1,0 +1,171 @@
+{
+  "model": "coverage = fraction of workflows with a declassification point before egress; the monitor cannot distinguish genuine redaction from a sham, so attackers use the points too",
+  "workflows_per_point": 3000,
+  "malicious_rate": 0.3,
+  "frontier": [
+    {
+      "coverage": 0.0,
+      "false_rejection_rate": 0.4477,
+      "detection_rate": 0.717,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.1,
+      "false_rejection_rate": 0.4018,
+      "detection_rate": 0.6449,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.2,
+      "false_rejection_rate": 0.3531,
+      "detection_rate": 0.5817,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.3,
+      "false_rejection_rate": 0.3,
+      "detection_rate": 0.5118,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.4,
+      "false_rejection_rate": 0.2622,
+      "detection_rate": 0.4284,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.5,
+      "false_rejection_rate": 0.2186,
+      "detection_rate": 0.3484,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.6,
+      "false_rejection_rate": 0.1708,
+      "detection_rate": 0.2852,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.7,
+      "false_rejection_rate": 0.1249,
+      "detection_rate": 0.2187,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.8,
+      "false_rejection_rate": 0.0819,
+      "detection_rate": 0.133,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.9,
+      "false_rejection_rate": 0.0407,
+      "detection_rate": 0.0598,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 1.0,
+      "false_rejection_rate": 0.0,
+      "detection_rate": 0.0,
+      "benign_n": 2113,
+      "malicious_n": 887
+    }
+  ],
+  "frontier_verified": [
+    {
+      "coverage": 0.0,
+      "false_rejection_rate": 0.4477,
+      "detection_rate": 0.717,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.25,
+      "false_rejection_rate": 0.3308,
+      "detection_rate": 0.7892,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.5,
+      "false_rejection_rate": 0.2186,
+      "detection_rate": 0.8636,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 0.75,
+      "false_rejection_rate": 0.1032,
+      "detection_rate": 0.9436,
+      "benign_n": 2113,
+      "malicious_n": 887
+    },
+    {
+      "coverage": 1.0,
+      "false_rejection_rate": 0.0,
+      "detection_rate": 1.0,
+      "benign_n": 2113,
+      "malicious_n": 887
+    }
+  ],
+  "exchange_rate_detection_per_frr": 1.602,
+  "best_joint_point": {
+    "coverage": 0.0,
+    "false_rejection_rate": 0.4477,
+    "detection_rate": 0.717,
+    "benign_n": 2113,
+    "malicious_n": 887
+  },
+  "label_bound_sensitivity": [
+    {
+      "coverage": 0.5,
+      "false_rejection_rate": 0.2186,
+      "detection_rate": 0.3484,
+      "benign_n": 2113,
+      "malicious_n": 887,
+      "label_bound": 1
+    },
+    {
+      "coverage": 0.5,
+      "false_rejection_rate": 0.2186,
+      "detection_rate": 0.3484,
+      "benign_n": 2113,
+      "malicious_n": 887,
+      "label_bound": 2
+    },
+    {
+      "coverage": 0.5,
+      "false_rejection_rate": 0.2186,
+      "detection_rate": 0.3484,
+      "benign_n": 2113,
+      "malicious_n": 887,
+      "label_bound": 4
+    },
+    {
+      "coverage": 0.5,
+      "false_rejection_rate": 0.2186,
+      "detection_rate": 0.3484,
+      "benign_n": 2113,
+      "malicious_n": 887,
+      "label_bound": 8
+    },
+    {
+      "coverage": 0.5,
+      "false_rejection_rate": 0.2186,
+      "detection_rate": 0.3484,
+      "benign_n": 2113,
+      "malicious_n": 887,
+      "label_bound": 16
+    }
+  ]
+}

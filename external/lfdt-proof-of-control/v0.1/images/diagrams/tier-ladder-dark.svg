@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="620" viewBox="0 0 860 620" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a26"/><stop offset="1" stop-color="#22211e"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#c6f500"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3608"/><stop offset="1" stop-color="#1e2704"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#361417"/><stop offset="1" stop-color="#280f12"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222222"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#cfff04" flood-opacity="0.55"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="857" height="617" rx="20" fill="url(#gPanel)" stroke="#2c2c2c" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="857" height="617" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#cfff04">THE VERIFIABILITY TIERS</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#f0edea">Graded by who you must trust — not by whether cryptography is used</text>
+<rect x="150" y="104" width="600" height="84" rx="14" fill="url(#gLime)" stroke="#e3ff66" stroke-width="1.5" filter="url(#fGlow)"/>
+<text x="184" y="142" font-size="12.5" fill="#131800" text-anchor="start" font-weight="700" letter-spacing="1.5">TIER 4</text>
+<text x="184" y="164" font-size="9" fill="#131800" text-anchor="start" letter-spacing="1.0">PROOF-OF-CONTROL</text>
+<text x="420" y="142" font-size="17" fill="#131800" text-anchor="start" font-weight="700">Self-Enforcing</text>
+<text x="420" y="164" font-size="11.5" fill="#131800" text-anchor="start">trust: the protocol itself — cannot run otherwise</text>
+<g transform="translate(702,134) scale(0.95)" fill="none" stroke="#131800" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/><path d="M9 12 L11.4 14.4 L15.6 9.6"/></g>
+<rect x="150" y="206" width="600" height="84" rx="14" fill="url(#gTint)" stroke="#a5c614" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="184" y="244" font-size="12.5" fill="#dfff5e" text-anchor="start" font-weight="700" letter-spacing="1.5">TIER 3</text>
+<text x="184" y="266" font-size="9" fill="#dfff5e" text-anchor="start" letter-spacing="1.0">PROOF-OF-CONTROL</text>
+<text x="420" y="244" font-size="17" fill="#dfff5e" text-anchor="start" font-weight="700">Trust-minimized</text>
+<text x="420" y="266" font-size="11.5" fill="#dfff5e" text-anchor="start">trust: the mechanism and the parties it rests on</text>
+<g transform="translate(702,236) scale(0.95)" fill="none" stroke="#dfff5e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/><path d="M9 12 L11.4 14.4 L15.6 9.6"/></g>
+<rect x="150" y="366" width="600" height="84" rx="14" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="184" y="404" font-size="12.5" fill="#d4cfc7" text-anchor="start" font-weight="700" letter-spacing="1.5">TIER 2</text>
+<text x="184" y="426" font-size="9" fill="#d4cfc7" text-anchor="start" letter-spacing="1.0">NOT PROOF-OF-CONTROL</text>
+<text x="420" y="404" font-size="17" fill="#d4cfc7" text-anchor="start" font-weight="700">Attestation</text>
+<text x="420" y="426" font-size="11.5" fill="#d4cfc7" text-anchor="start">trust: a third party or qualified auditor</text>
+<g transform="translate(702,396) scale(0.95)" fill="none" stroke="#d4cfc7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/></g>
+<rect x="150" y="468" width="600" height="84" rx="14" fill="url(#gRed)" stroke="#ff6568" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="184" y="506" font-size="12.5" fill="#ffb3b5" text-anchor="start" font-weight="700" letter-spacing="1.5">TIER 1</text>
+<text x="184" y="528" font-size="9" fill="#ffb3b5" text-anchor="start" letter-spacing="1.0">NOT PROOF-OF-CONTROL</text>
+<text x="420" y="506" font-size="17" fill="#ffb3b5" text-anchor="start" font-weight="700">Assertion</text>
+<text x="420" y="528" font-size="11.5" fill="#ffb3b5" text-anchor="start">trust: the operator's word</text>
+<g transform="translate(702,498) scale(0.95)" fill="none" stroke="#ffb3b5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/></g>
+<line x1="104" y1="556" x2="104" y2="162" stroke="#6a665f" stroke-width="2" stroke-linecap="round"/>
+<polygon points="104,161 98.5,171 109.5,171" fill="#6a665f"/>
+<text x="88" y="360" font-size="11.5" fill="#9d978e" text-anchor="middle" transform="rotate(-90 88 360)">less trust required</text>
+<line x1="150" y1="322" x2="750" y2="322" stroke="#cfff04" stroke-width="3" stroke-dasharray="10 7" stroke-linecap="round"/>
+<rect x="288" y="300" width="324" height="44" rx="22" fill="url(#gInk)" stroke="#cfff04" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="450" y="327" font-size="13.5" fill="#0a0a0a" text-anchor="middle" font-weight="700" letter-spacing="1.2">THE BINARY THRESHOLD</text>
+<text x="430.0" y="586" font-size="12.5" fill="#9d978e" text-anchor="middle">below: authenticated documentation — above: mechanism-generated evidence</text>
+</svg>

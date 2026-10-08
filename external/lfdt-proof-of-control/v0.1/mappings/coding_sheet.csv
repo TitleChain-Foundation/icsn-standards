@@ -1,0 +1,1017 @@
+poc_requirement_id,poc_section,source_framework,match_type,framework_clause,rationale,coder_id
+1.1.1,C1.1,CSA_AARM,NM,—,Artifact provenance outside runtime-enforcement scope,seed-01
+1.1.1,C1.1,EU_AI_Act,PM,Art. 11; Annex IV,Art 11/Annex IV technical documentation identifies the model and versions; no cryptographic digest binding or signed manifests,seed-01
+1.1.1,C1.1,ISO_42001,PM,Annex A.4; Cl. 7.5,Annex A resources/data controls require model documentation and versioning; no digest binding,seed-01
+1.1.1,C1.1,MITRE_ATLAS,PM,Verify ML Artifacts (AML.M0014); code-signing mitigations,Mitigations for ML supply chain compromise (verify ML artifacts) cover provenance checking; no signed-manifest requirement,seed-01
+1.1.1,C1.1,NIST_AI_RMF,PM,MAP 2.3; GOVERN 1.6,MAP function calls for provenance and documentation of models; no cryptographic binding,seed-01
+1.1.1,C1.1,NIST_SP_800_207,NM,—,Artifact provenance outside ZTA scope,seed-01
+1.1.1,C1.1,OWASP_AISVS,EM,AISVS C6,"C6 supply chain requires model provenance, signing and verification comparable in scope and specificity",seed-01
+1.1.1,C1.1,SOC_2,PM,CC8.1,CC8 change management and system-component inventory identify what runs; no model digests or signed manifests,seed-01
+1.1.2,C1.1,CSA_AARM,NM,—,Artifact provenance outside runtime-enforcement scope,seed-01
+1.1.2,C1.1,EU_AI_Act,PM,Art. 11; Annex IV,Art 11/Annex IV technical documentation identifies the model and versions; no cryptographic digest binding or signed manifests,seed-01
+1.1.2,C1.1,ISO_42001,PM,Annex A.4; Cl. 7.5,Annex A resources/data controls require model documentation and versioning; no digest binding,seed-01
+1.1.2,C1.1,MITRE_ATLAS,PM,Verify ML Artifacts (AML.M0014); code-signing mitigations,Mitigations for ML supply chain compromise (verify ML artifacts) cover provenance checking; no signed-manifest requirement,seed-01
+1.1.2,C1.1,NIST_AI_RMF,PM,MAP 2.3; GOVERN 1.6,MAP function calls for provenance and documentation of models; no cryptographic binding,seed-01
+1.1.2,C1.1,NIST_SP_800_207,NM,—,Artifact provenance outside ZTA scope,seed-01
+1.1.2,C1.1,OWASP_AISVS,EM,AISVS C6,"C6 supply chain requires model provenance, signing and verification comparable in scope and specificity",seed-01
+1.1.2,C1.1,SOC_2,PM,CC8.1,CC8 change management and system-component inventory identify what runs; no model digests or signed manifests,seed-01
+1.1.3,C1.1,CSA_AARM,NM,—,Artifact provenance outside runtime-enforcement scope,seed-01
+1.1.3,C1.1,EU_AI_Act,PM,Art. 11; Annex IV,Art 11/Annex IV technical documentation identifies the model and versions; no cryptographic digest binding or signed manifests,seed-01
+1.1.3,C1.1,ISO_42001,PM,Annex A.4; Cl. 7.5,Annex A resources/data controls require model documentation and versioning; no digest binding,seed-01
+1.1.3,C1.1,MITRE_ATLAS,PM,Verify ML Artifacts (AML.M0014); code-signing mitigations,Mitigations for ML supply chain compromise (verify ML artifacts) cover provenance checking; no signed-manifest requirement,seed-01
+1.1.3,C1.1,NIST_AI_RMF,PM,MAP 2.3; GOVERN 1.6,MAP function calls for provenance and documentation of models; no cryptographic binding,seed-01
+1.1.3,C1.1,NIST_SP_800_207,NM,—,Artifact provenance outside ZTA scope,seed-01
+1.1.3,C1.1,OWASP_AISVS,EM,AISVS C6,"C6 supply chain requires model provenance, signing and verification comparable in scope and specificity",seed-01
+1.1.3,C1.1,SOC_2,PM,CC8.1,CC8 change management and system-component inventory identify what runs; no model digests or signed manifests,seed-01
+1.1.4,C1.1,CSA_AARM,NM,—,Artifact provenance outside runtime-enforcement scope,seed-01
+1.1.4,C1.1,EU_AI_Act,PM,Art. 11; Annex IV,Art 11/Annex IV technical documentation identifies the model and versions; no cryptographic digest binding or signed manifests,seed-01
+1.1.4,C1.1,ISO_42001,PM,Annex A.4; Cl. 7.5,Annex A resources/data controls require model documentation and versioning; no digest binding,seed-01
+1.1.4,C1.1,MITRE_ATLAS,PM,Verify ML Artifacts (AML.M0014); code-signing mitigations,Mitigations for ML supply chain compromise (verify ML artifacts) cover provenance checking; no signed-manifest requirement,seed-01
+1.1.4,C1.1,NIST_AI_RMF,PM,MAP 2.3; GOVERN 1.6,MAP function calls for provenance and documentation of models; no cryptographic binding,seed-01
+1.1.4,C1.1,NIST_SP_800_207,NM,—,Artifact provenance outside ZTA scope,seed-01
+1.1.4,C1.1,OWASP_AISVS,EM,AISVS C6,"C6 supply chain requires model provenance, signing and verification comparable in scope and specificity",seed-01
+1.1.4,C1.1,SOC_2,PM,CC8.1,CC8 change management and system-component inventory identify what runs; no model digests or signed manifests,seed-01
+1.1.5,C1.1,CSA_AARM,NM,—,Artifact provenance outside runtime-enforcement scope,seed-01
+1.1.5,C1.1,EU_AI_Act,PM,Art. 11; Annex IV,Art 11/Annex IV technical documentation identifies the model and versions; no cryptographic digest binding or signed manifests,seed-01
+1.1.5,C1.1,ISO_42001,PM,Annex A.4; Cl. 7.5,Annex A resources/data controls require model documentation and versioning; no digest binding,seed-01
+1.1.5,C1.1,MITRE_ATLAS,PM,Verify ML Artifacts (AML.M0014); code-signing mitigations,Mitigations for ML supply chain compromise (verify ML artifacts) cover provenance checking; no signed-manifest requirement,seed-01
+1.1.5,C1.1,NIST_AI_RMF,PM,MAP 2.3; GOVERN 1.6,MAP function calls for provenance and documentation of models; no cryptographic binding,seed-01
+1.1.5,C1.1,NIST_SP_800_207,NM,—,Artifact provenance outside ZTA scope,seed-01
+1.1.5,C1.1,OWASP_AISVS,EM,AISVS C6,"C6 supply chain requires model provenance, signing and verification comparable in scope and specificity",seed-01
+1.1.5,C1.1,SOC_2,PM,CC8.1,CC8 change management and system-component inventory identify what runs; no model digests or signed manifests,seed-01
+1.2.1,C1.2,CSA_AARM,NM,—,Outside scope,seed-01
+1.2.1,C1.2,EU_AI_Act,PM,Art. 10,Art 10 data governance covers data provenance practices; no hash-linked custody chain to the action record,seed-01
+1.2.1,C1.2,ISO_42001,PM,Annex A.7,Data management controls cover provenance and quality records; no hash-linked custody,seed-01
+1.2.1,C1.2,MITRE_ATLAS,PM,Sanitize Training Data (AML.M0007),Data-provenance mitigations against poisoning; no custody chain to actions,seed-01
+1.2.1,C1.2,NIST_AI_RMF,PM,MAP 2.3; MEASURE 2.8,MAP/MEASURE cover data documentation and lineage practices; no hash-linked custody chain,seed-01
+1.2.1,C1.2,NIST_SP_800_207,NM,—,Outside scope,seed-01
+1.2.1,C1.2,OWASP_AISVS,PM,AISVS C1; C8,C1 training-data traceability and C8 memory provenance cover lineage; no custody chain to the action record,seed-01
+1.2.1,C1.2,SOC_2,NM,—,Data lineage/custody chains not addressed,seed-01
+1.2.2,C1.2,CSA_AARM,NM,—,Outside scope,seed-01
+1.2.2,C1.2,EU_AI_Act,PM,Art. 10,Art 10 data governance covers data provenance practices; no hash-linked custody chain to the action record,seed-01
+1.2.2,C1.2,ISO_42001,PM,Annex A.7,Data management controls cover provenance and quality records; no hash-linked custody,seed-01
+1.2.2,C1.2,MITRE_ATLAS,PM,Sanitize Training Data (AML.M0007),Data-provenance mitigations against poisoning; no custody chain to actions,seed-01
+1.2.2,C1.2,NIST_AI_RMF,PM,MAP 2.3; MEASURE 2.8,MAP/MEASURE cover data documentation and lineage practices; no hash-linked custody chain,seed-01
+1.2.2,C1.2,NIST_SP_800_207,NM,—,Outside scope,seed-01
+1.2.2,C1.2,OWASP_AISVS,PM,AISVS C1; C8,C1 training-data traceability and C8 memory provenance cover lineage; no custody chain to the action record,seed-01
+1.2.2,C1.2,SOC_2,NM,—,Data lineage/custody chains not addressed,seed-01
+1.2.3,C1.2,CSA_AARM,NM,—,Outside scope,seed-01
+1.2.3,C1.2,EU_AI_Act,PM,Art. 10,Art 10 data governance covers data provenance practices; no hash-linked custody chain to the action record,seed-01
+1.2.3,C1.2,ISO_42001,PM,Annex A.7,Data management controls cover provenance and quality records; no hash-linked custody,seed-01
+1.2.3,C1.2,MITRE_ATLAS,PM,Sanitize Training Data (AML.M0007),Data-provenance mitigations against poisoning; no custody chain to actions,seed-01
+1.2.3,C1.2,NIST_AI_RMF,PM,MAP 2.3; MEASURE 2.8,MAP/MEASURE cover data documentation and lineage practices; no hash-linked custody chain,seed-01
+1.2.3,C1.2,NIST_SP_800_207,NM,—,Outside scope,seed-01
+1.2.3,C1.2,OWASP_AISVS,PM,AISVS C1; C8,C1 training-data traceability and C8 memory provenance cover lineage; no custody chain to the action record,seed-01
+1.2.3,C1.2,SOC_2,NM,—,Data lineage/custody chains not addressed,seed-01
+1.2.4,C1.2,CSA_AARM,NM,—,Outside scope,seed-01
+1.2.4,C1.2,EU_AI_Act,PM,Art. 10,Art 10 data governance covers data provenance practices; no hash-linked custody chain to the action record,seed-01
+1.2.4,C1.2,ISO_42001,PM,Annex A.7,Data management controls cover provenance and quality records; no hash-linked custody,seed-01
+1.2.4,C1.2,MITRE_ATLAS,PM,Sanitize Training Data (AML.M0007),Data-provenance mitigations against poisoning; no custody chain to actions,seed-01
+1.2.4,C1.2,NIST_AI_RMF,PM,MAP 2.3; MEASURE 2.8,MAP/MEASURE cover data documentation and lineage practices; no hash-linked custody chain,seed-01
+1.2.4,C1.2,NIST_SP_800_207,NM,—,Outside scope,seed-01
+1.2.4,C1.2,OWASP_AISVS,PM,AISVS C1; C8,C1 training-data traceability and C8 memory provenance cover lineage; no custody chain to the action record,seed-01
+1.2.4,C1.2,SOC_2,NM,—,Data lineage/custody chains not addressed,seed-01
+1.3.1,C1.3,CSA_AARM,NM,—,Outside scope,seed-01
+1.3.1,C1.3,EU_AI_Act,NM,—,No provision on compute-substrate identification or attestation,seed-01
+1.3.1,C1.3,ISO_42001,NM,—,Substrate attestation not addressed,seed-01
+1.3.1,C1.3,MITRE_ATLAS,NM,—,Substrate attestation not addressed,seed-01
+1.3.1,C1.3,NIST_AI_RMF,NM,—,Compute-substrate attestation not addressed,seed-01
+1.3.1,C1.3,NIST_SP_800_207,NM,—,Outside scope,seed-01
+1.3.1,C1.3,OWASP_AISVS,NM,—,Substrate attestation not addressed,seed-01
+1.3.1,C1.3,SOC_2,NM,—,Substrate attestation not addressed,seed-01
+1.3.2,C1.3,CSA_AARM,NM,—,Outside scope,seed-01
+1.3.2,C1.3,EU_AI_Act,NM,—,No provision on compute-substrate identification or attestation,seed-01
+1.3.2,C1.3,ISO_42001,NM,—,Substrate attestation not addressed,seed-01
+1.3.2,C1.3,MITRE_ATLAS,NM,—,Substrate attestation not addressed,seed-01
+1.3.2,C1.3,NIST_AI_RMF,NM,—,Compute-substrate attestation not addressed,seed-01
+1.3.2,C1.3,NIST_SP_800_207,NM,—,Outside scope,seed-01
+1.3.2,C1.3,OWASP_AISVS,NM,—,Substrate attestation not addressed,seed-01
+1.3.2,C1.3,SOC_2,NM,—,Substrate attestation not addressed,seed-01
+1.4.1,C1.4,CSA_AARM,NM,—,Outside scope,seed-01
+1.4.1,C1.4,EU_AI_Act,NM,—,No provision on privacy-preserving provenance evidence,seed-01
+1.4.1,C1.4,ISO_42001,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.1,C1.4,MITRE_ATLAS,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.1,C1.4,NIST_AI_RMF,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.1,C1.4,NIST_SP_800_207,NM,—,Outside scope,seed-01
+1.4.1,C1.4,OWASP_AISVS,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.1,C1.4,SOC_2,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.2,C1.4,CSA_AARM,NM,—,Outside scope,seed-01
+1.4.2,C1.4,EU_AI_Act,NM,—,No provision on privacy-preserving provenance evidence,seed-01
+1.4.2,C1.4,ISO_42001,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.2,C1.4,MITRE_ATLAS,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.2,C1.4,NIST_AI_RMF,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.2,C1.4,NIST_SP_800_207,NM,—,Outside scope,seed-01
+1.4.2,C1.4,OWASP_AISVS,NM,—,Privacy-preserving provenance not addressed,seed-01
+1.4.2,C1.4,SOC_2,NM,—,Privacy-preserving provenance not addressed,seed-01
+2.1.1,C2.1,CSA_AARM,PM,Runtime gateway — data-action gating,Runtime gating of data-touching actions produces access records; operator-run audit trail,seed-01
+2.1.1,C2.1,EU_AI_Act,PM,Art. 12,Art 12 automatic event recording covers data-access logging; used-vs-disclosed distinction and non-exposure of content not required,seed-01
+2.1.1,C2.1,ISO_42001,PM,Annex A.7; Cl. 7.5,AIMS records and data management cover access documentation; no evidence-content constraints,seed-01
+2.1.1,C2.1,MITRE_ATLAS,PM,AML.M0024 — AI Telemetry Logging,"ATLAS directs deployed AI systems to log data access, agentic intermediate actions and decisions, and tool use. It does not prescribe the Proof-of-Control field set, cryptographic evidence, or open verification.",codex-review-01
+2.1.1,C2.1,NIST_AI_RMF,PM,MEASURE 2.10,MEASURE privacy risk and GOVERN accountability cover access recording; no used-vs-disclosed evidence model,seed-01
+2.1.1,C2.1,NIST_SP_800_207,PM,PEP logging (§3),Policy enforcement point logging records resource access; no evidence-content model,seed-01
+2.1.1,C2.1,OWASP_AISVS,PM,AISVS C5; C12,C5 access control and C12 monitoring cover access logging; no used-vs-disclosed evidence model,seed-01
+2.1.1,C2.1,SOC_2,PM,CC6.1; P-series,CC6/CC7 access logging and privacy criteria cover access records; no used-vs-disclosed model,seed-01
+2.1.2,C2.1,CSA_AARM,PM,Runtime gateway — data-action gating,Runtime gating of data-touching actions produces access records; operator-run audit trail,seed-01
+2.1.2,C2.1,EU_AI_Act,PM,Art. 12,Art 12 automatic event recording covers data-access logging; used-vs-disclosed distinction and non-exposure of content not required,seed-01
+2.1.2,C2.1,ISO_42001,PM,Annex A.7; Cl. 7.5,AIMS records and data management cover access documentation; no evidence-content constraints,seed-01
+2.1.2,C2.1,MITRE_ATLAS,NM,—,Privacy evidence outside ATLAS scope,seed-01
+2.1.2,C2.1,NIST_AI_RMF,PM,MEASURE 2.10,MEASURE privacy risk and GOVERN accountability cover access recording; no used-vs-disclosed evidence model,seed-01
+2.1.2,C2.1,NIST_SP_800_207,PM,PEP logging (§3),Policy enforcement point logging records resource access; no evidence-content model,seed-01
+2.1.2,C2.1,OWASP_AISVS,PM,AISVS C5; C12,C5 access control and C12 monitoring cover access logging; no used-vs-disclosed evidence model,seed-01
+2.1.2,C2.1,SOC_2,PM,CC6.1; P-series,CC6/CC7 access logging and privacy criteria cover access records; no used-vs-disclosed model,seed-01
+2.1.3,C2.1,CSA_AARM,PM,Runtime gateway — data-action gating,Runtime gating of data-touching actions produces access records; operator-run audit trail,seed-01
+2.1.3,C2.1,EU_AI_Act,PM,Art. 12,Art 12 automatic event recording covers data-access logging; used-vs-disclosed distinction and non-exposure of content not required,seed-01
+2.1.3,C2.1,ISO_42001,PM,Annex A.7; Cl. 7.5,AIMS records and data management cover access documentation; no evidence-content constraints,seed-01
+2.1.3,C2.1,MITRE_ATLAS,PM,AML.M0024 — AI Telemetry Logging,"Logging AI inputs/outputs, data access, and tool use is relevant to distinguishing information used from information disclosed, but ATLAS does not require separate queryable fields or verifiable evidence.",codex-review-01
+2.1.3,C2.1,NIST_AI_RMF,PM,MEASURE 2.10,MEASURE privacy risk and GOVERN accountability cover access recording; no used-vs-disclosed evidence model,seed-01
+2.1.3,C2.1,NIST_SP_800_207,PM,PEP logging (§3),Policy enforcement point logging records resource access; no evidence-content model,seed-01
+2.1.3,C2.1,OWASP_AISVS,PM,AISVS C5; C12,C5 access control and C12 monitoring cover access logging; no used-vs-disclosed evidence model,seed-01
+2.1.3,C2.1,SOC_2,PM,CC6.1; P-series,CC6/CC7 access logging and privacy criteria cover access records; no used-vs-disclosed model,seed-01
+2.2.1,C2.2,CSA_AARM,PM,Policy evaluation at the action boundary,Policy enforcement at the action boundary covers purpose/consent policy checks at runtime,seed-01
+2.2.1,C2.2,EU_AI_Act,PM,Art. 10,Art 10 data governance plus GDPR interplay covers purpose/consent obligations; runtime enforcement evidence not required,seed-01
+2.2.1,C2.2,ISO_42001,PM,Annex A.5; Annex A.7,Data management and impact-assessment controls cover purpose and consent obligations,seed-01
+2.2.1,C2.2,MITRE_ATLAS,NM,—,Consent/purpose enforcement outside scope,seed-01
+2.2.1,C2.2,NIST_AI_RMF,PM,GOVERN 1.1; MANAGE 1.3,GOVERN/MANAGE address privacy values and controls; runtime enforcement evidence not required,seed-01
+2.2.1,C2.2,NIST_SP_800_207,PM,Policy Engine (§3),Policy engine evaluates per-request context including data policies,seed-01
+2.2.1,C2.2,OWASP_AISVS,PM,AISVS C1,Data-governance requirements touch consent and minimization; runtime enforcement evidence not central,seed-01
+2.2.1,C2.2,SOC_2,PM,P2.1; P4.1,"Privacy criteria P-series require consent, purpose limitation and retention controls at the organizational level",seed-01
+2.2.2,C2.2,CSA_AARM,PM,Policy evaluation at the action boundary,Policy enforcement at the action boundary covers purpose/consent policy checks at runtime,seed-01
+2.2.2,C2.2,EU_AI_Act,PM,Art. 10,Art 10 data governance plus GDPR interplay covers purpose/consent obligations; runtime enforcement evidence not required,seed-01
+2.2.2,C2.2,ISO_42001,PM,Annex A.5; Annex A.7,Data management and impact-assessment controls cover purpose and consent obligations,seed-01
+2.2.2,C2.2,MITRE_ATLAS,NM,—,Consent/purpose enforcement outside scope,seed-01
+2.2.2,C2.2,NIST_AI_RMF,PM,GOVERN 1.1; MANAGE 1.3,GOVERN/MANAGE address privacy values and controls; runtime enforcement evidence not required,seed-01
+2.2.2,C2.2,NIST_SP_800_207,PM,Policy Engine (§3),Policy engine evaluates per-request context including data policies,seed-01
+2.2.2,C2.2,OWASP_AISVS,PM,AISVS C1,Data-governance requirements touch consent and minimization; runtime enforcement evidence not central,seed-01
+2.2.2,C2.2,SOC_2,PM,P2.1; P4.1,"Privacy criteria P-series require consent, purpose limitation and retention controls at the organizational level",seed-01
+2.2.3,C2.2,CSA_AARM,PM,Policy evaluation at the action boundary,Policy enforcement at the action boundary covers purpose/consent policy checks at runtime,seed-01
+2.2.3,C2.2,EU_AI_Act,PM,Art. 10,Art 10 data governance plus GDPR interplay covers purpose/consent obligations; runtime enforcement evidence not required,seed-01
+2.2.3,C2.2,ISO_42001,PM,Annex A.5; Annex A.7,Data management and impact-assessment controls cover purpose and consent obligations,seed-01
+2.2.3,C2.2,MITRE_ATLAS,PM,AML.M0026 — Privileged AI Agent Permissions Configuration; AML.M0028 — AI Agent Tools Permissions Configuration,"These mitigations require least-privilege controls on an agent and on its tool access. They do not require query rewriting/field allow-lists, enforcement-event records, or the grade of evidence Proof-of-Control requires.",codex-review-01
+2.2.3,C2.2,NIST_AI_RMF,PM,GOVERN 1.1; MANAGE 1.3,GOVERN/MANAGE address privacy values and controls; runtime enforcement evidence not required,seed-01
+2.2.3,C2.2,NIST_SP_800_207,PM,Policy Engine (§3),Policy engine evaluates per-request context including data policies,seed-01
+2.2.3,C2.2,OWASP_AISVS,PM,AISVS C1,Data-governance requirements touch consent and minimization; runtime enforcement evidence not central,seed-01
+2.2.3,C2.2,SOC_2,PM,P2.1; P4.1,"Privacy criteria P-series require consent, purpose limitation and retention controls at the organizational level",seed-01
+2.2.4,C2.2,CSA_AARM,PM,Policy evaluation at the action boundary,Policy enforcement at the action boundary covers purpose/consent policy checks at runtime,seed-01
+2.2.4,C2.2,EU_AI_Act,PM,Art. 10,Art 10 data governance plus GDPR interplay covers purpose/consent obligations; runtime enforcement evidence not required,seed-01
+2.2.4,C2.2,ISO_42001,PM,Annex A.5; Annex A.7,Data management and impact-assessment controls cover purpose and consent obligations,seed-01
+2.2.4,C2.2,MITRE_ATLAS,NM,—,Consent/purpose enforcement outside scope,seed-01
+2.2.4,C2.2,NIST_AI_RMF,PM,GOVERN 1.1; MANAGE 1.3,GOVERN/MANAGE address privacy values and controls; runtime enforcement evidence not required,seed-01
+2.2.4,C2.2,NIST_SP_800_207,PM,Policy Engine (§3),Policy engine evaluates per-request context including data policies,seed-01
+2.2.4,C2.2,OWASP_AISVS,PM,AISVS C1,Data-governance requirements touch consent and minimization; runtime enforcement evidence not central,seed-01
+2.2.4,C2.2,SOC_2,PM,P2.1; P4.1,"Privacy criteria P-series require consent, purpose limitation and retention controls at the organizational level",seed-01
+2.2.5,C2.2,CSA_AARM,PM,Policy evaluation at the action boundary,Policy enforcement at the action boundary covers purpose/consent policy checks at runtime,seed-01
+2.2.5,C2.2,EU_AI_Act,PM,Art. 10,Art 10 data governance plus GDPR interplay covers purpose/consent obligations; runtime enforcement evidence not required,seed-01
+2.2.5,C2.2,ISO_42001,PM,Annex A.5; Annex A.7,Data management and impact-assessment controls cover purpose and consent obligations,seed-01
+2.2.5,C2.2,MITRE_ATLAS,NM,—,Consent/purpose enforcement outside scope,seed-01
+2.2.5,C2.2,NIST_AI_RMF,PM,GOVERN 1.1; MANAGE 1.3,GOVERN/MANAGE address privacy values and controls; runtime enforcement evidence not required,seed-01
+2.2.5,C2.2,NIST_SP_800_207,PM,Policy Engine (§3),Policy engine evaluates per-request context including data policies,seed-01
+2.2.5,C2.2,OWASP_AISVS,PM,AISVS C1,Data-governance requirements touch consent and minimization; runtime enforcement evidence not central,seed-01
+2.2.5,C2.2,SOC_2,PM,P2.1; P4.1,"Privacy criteria P-series require consent, purpose limitation and retention controls at the organizational level",seed-01
+2.3.1,C2.3,CSA_AARM,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.3.1,C2.3,EU_AI_Act,NM,—,"No provision on ZK proofs, selective disclosure, or commitments",seed-01
+2.3.1,C2.3,ISO_42001,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.3.1,C2.3,MITRE_ATLAS,NM,—,Outside scope,seed-01
+2.3.1,C2.3,NIST_AI_RMF,PM,MEASURE 2.10,RMF profiles reference privacy-enhancing technologies; no verifiable-evidence requirement,seed-01
+2.3.1,C2.3,NIST_SP_800_207,NM,—,Not addressed,seed-01
+2.3.1,C2.3,OWASP_AISVS,NM,—,ZK/selective-disclosure mechanisms not addressed,seed-01
+2.3.1,C2.3,SOC_2,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.3.2,C2.3,CSA_AARM,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.3.2,C2.3,EU_AI_Act,NM,—,"No provision on ZK proofs, selective disclosure, or commitments",seed-01
+2.3.2,C2.3,ISO_42001,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.3.2,C2.3,MITRE_ATLAS,NM,—,Outside scope,seed-01
+2.3.2,C2.3,NIST_AI_RMF,PM,MEASURE 2.10,RMF profiles reference privacy-enhancing technologies; no verifiable-evidence requirement,seed-01
+2.3.2,C2.3,NIST_SP_800_207,NM,—,Not addressed,seed-01
+2.3.2,C2.3,OWASP_AISVS,NM,—,ZK/selective-disclosure mechanisms not addressed,seed-01
+2.3.2,C2.3,SOC_2,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.3.3,C2.3,CSA_AARM,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.3.3,C2.3,EU_AI_Act,NM,—,"No provision on ZK proofs, selective disclosure, or commitments",seed-01
+2.3.3,C2.3,ISO_42001,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.3.3,C2.3,MITRE_ATLAS,NM,—,Outside scope,seed-01
+2.3.3,C2.3,NIST_AI_RMF,PM,MEASURE 2.10,RMF profiles reference privacy-enhancing technologies; no verifiable-evidence requirement,seed-01
+2.3.3,C2.3,NIST_SP_800_207,NM,—,Not addressed,seed-01
+2.3.3,C2.3,OWASP_AISVS,NM,—,ZK/selective-disclosure mechanisms not addressed,seed-01
+2.3.3,C2.3,SOC_2,NM,—,Cryptographic privacy mechanisms not addressed,seed-01
+2.4.1,C2.4,CSA_AARM,NM,—,Evidence-store handling not addressed,seed-01
+2.4.1,C2.4,EU_AI_Act,NM,—,No provision reconciling erasure obligations with tamper-evident records,seed-01
+2.4.1,C2.4,ISO_42001,NM,—,Erasure-vs-immutability reconciliation not addressed,seed-01
+2.4.1,C2.4,MITRE_ATLAS,NM,—,Outside scope,seed-01
+2.4.1,C2.4,NIST_AI_RMF,NM,—,Evidence-store handling of protected data not addressed,seed-01
+2.4.1,C2.4,NIST_SP_800_207,NM,—,Not addressed,seed-01
+2.4.1,C2.4,OWASP_AISVS,NM,—,Evidence-store minimization not addressed,seed-01
+2.4.1,C2.4,SOC_2,PM,P4.2–P4.3,P4 disposal and retention criteria address deletion; no reconciliation with tamper-evident chains,seed-01
+2.4.2,C2.4,CSA_AARM,NM,—,Evidence-store handling not addressed,seed-01
+2.4.2,C2.4,EU_AI_Act,NM,—,No provision reconciling erasure obligations with tamper-evident records,seed-01
+2.4.2,C2.4,ISO_42001,NM,—,Erasure-vs-immutability reconciliation not addressed,seed-01
+2.4.2,C2.4,MITRE_ATLAS,NM,—,Outside scope,seed-01
+2.4.2,C2.4,NIST_AI_RMF,NM,—,Evidence-store handling of protected data not addressed,seed-01
+2.4.2,C2.4,NIST_SP_800_207,NM,—,Not addressed,seed-01
+2.4.2,C2.4,OWASP_AISVS,NM,—,Evidence-store minimization not addressed,seed-01
+2.4.2,C2.4,SOC_2,PM,P4.2–P4.3,P4 disposal and retention criteria address deletion; no reconciliation with tamper-evident chains,seed-01
+3.1.1,C3.1,CSA_AARM,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.1,C3.1,EU_AI_Act,NM,—,No boundary-crossing evidence provision,seed-01
+3.1.1,C3.1,ISO_42001,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.1,C3.1,MITRE_ATLAS,NM,—,Outside scope,seed-01
+3.1.1,C3.1,NIST_AI_RMF,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.1,C3.1,NIST_SP_800_207,PM,Tenets 2–3 (§2.1),"No implicit trust across boundaries; every crossing is re-evaluated, though not evidenced for third parties",seed-01
+3.1.1,C3.1,OWASP_AISVS,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.1,C3.1,SOC_2,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.2,C3.1,CSA_AARM,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.2,C3.1,EU_AI_Act,NM,—,No boundary-crossing evidence provision,seed-01
+3.1.2,C3.1,ISO_42001,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.2,C3.1,MITRE_ATLAS,NM,—,Outside scope,seed-01
+3.1.2,C3.1,NIST_AI_RMF,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.2,C3.1,NIST_SP_800_207,PM,Tenets 2–3 (§2.1),"No implicit trust across boundaries; every crossing is re-evaluated, though not evidenced for third parties",seed-01
+3.1.2,C3.1,OWASP_AISVS,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.1.2,C3.1,SOC_2,NM,—,Boundary-crossing evidence not addressed,seed-01
+3.2.1,C3.2,CSA_AARM,NM,—,Not addressed,seed-01
+3.2.1,C3.2,EU_AI_Act,NM,—,No cross-environment evidence-continuity provision,seed-01
+3.2.1,C3.2,ISO_42001,NM,—,Evidence continuity not addressed,seed-01
+3.2.1,C3.2,MITRE_ATLAS,NM,—,Outside scope,seed-01
+3.2.1,C3.2,NIST_AI_RMF,NM,—,Evidence continuity across environments not addressed,seed-01
+3.2.1,C3.2,NIST_SP_800_207,NM,—,Evidence continuity not addressed,seed-01
+3.2.1,C3.2,OWASP_AISVS,NM,—,Evidence continuity not addressed,seed-01
+3.2.1,C3.2,SOC_2,NM,—,Evidence continuity not addressed,seed-01
+3.2.2,C3.2,CSA_AARM,NM,—,Not addressed,seed-01
+3.2.2,C3.2,EU_AI_Act,NM,—,No cross-environment evidence-continuity provision,seed-01
+3.2.2,C3.2,ISO_42001,NM,—,Evidence continuity not addressed,seed-01
+3.2.2,C3.2,MITRE_ATLAS,NM,—,Outside scope,seed-01
+3.2.2,C3.2,NIST_AI_RMF,NM,—,Evidence continuity across environments not addressed,seed-01
+3.2.2,C3.2,NIST_SP_800_207,NM,—,Evidence continuity not addressed,seed-01
+3.2.2,C3.2,OWASP_AISVS,NM,—,Evidence continuity not addressed,seed-01
+3.2.2,C3.2,SOC_2,NM,—,Evidence continuity not addressed,seed-01
+3.2.3,C3.2,CSA_AARM,NM,—,Not addressed,seed-01
+3.2.3,C3.2,EU_AI_Act,NM,—,No cross-environment evidence-continuity provision,seed-01
+3.2.3,C3.2,ISO_42001,NM,—,Evidence continuity not addressed,seed-01
+3.2.3,C3.2,MITRE_ATLAS,NM,—,Outside scope,seed-01
+3.2.3,C3.2,NIST_AI_RMF,NM,—,Evidence continuity across environments not addressed,seed-01
+3.2.3,C3.2,NIST_SP_800_207,NM,—,Evidence continuity not addressed,seed-01
+3.2.3,C3.2,OWASP_AISVS,NM,—,Evidence continuity not addressed,seed-01
+3.2.3,C3.2,SOC_2,NM,—,Evidence continuity not addressed,seed-01
+4.1.1,C4.1,CSA_AARM,PM,R5 Tamper-evident Receipts; R9 Least Privilege Enforcement (SHOULD),"R5 records the policy context used in each evaluation and R9 scopes credentials per action, but AARM requires no record of the granted permission set, its scope and its expiry written before the first action executes under it.",joseruiz1571
+4.1.1,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
+4.1.1,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
+4.1.1,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
+4.1.1,C4.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 3.2,GOVERN roles/authority and MANAGE controls cover authority definition; no evidenced per-action evaluation,seed-01
+4.1.1,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
+4.1.1,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
+4.1.1,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
+4.1.2,C4.1,CSA_AARM,PM,R3 Policy Evaluation with Intent Alignment; R5 Tamper-evident Receipts,"R3 requires every intercepted action to be evaluated against policy and R5 requires the decision and the policy context to be recorded, but AARM never defines policy context and never requires the record to name the permission matched or the denial reason.",joseruiz1571
+4.1.2,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
+4.1.2,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
+4.1.2,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
+4.1.2,C4.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 3.2,GOVERN roles/authority and MANAGE controls cover authority definition; no evidenced per-action evaluation,seed-01
+4.1.2,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
+4.1.2,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
+4.1.2,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
+4.1.3,C4.1,CSA_AARM,EM,"R1 Pre-execution Interception; R4 Five Authorization Decisions (ALLOW, DENY, MODIFY, STEP_UP, DEFER); R5 Tamper-evident Receipts","R1 stops the action before execution rather than flagging it, R4 supplies DENY as a decision, and R5 records the original action and the decision, so the block and its rejection record match in scope and specificity.",joseruiz1571
+4.1.3,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
+4.1.3,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
+4.1.3,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
+4.1.3,C4.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 3.2,GOVERN roles/authority and MANAGE controls cover authority definition; no evidenced per-action evaluation,seed-01
+4.1.3,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
+4.1.3,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
+4.1.3,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
+4.1.4,C4.1,CSA_AARM,PM,R3 Policy Evaluation with Intent Alignment,"R3 evaluates the intercepted action itself at execution time, but AARM has no registered tool schema, no structural validation of call parameters against one, and no stored parameter digest.",joseruiz1571
+4.1.4,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
+4.1.4,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
+4.1.4,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
+4.1.4,C4.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 3.2,GOVERN roles/authority and MANAGE controls cover authority definition; no evidenced per-action evaluation,seed-01
+4.1.4,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
+4.1.4,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
+4.1.4,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
+4.1.5,C4.1,CSA_AARM,PM,R9 Least Privilege Enforcement (SHOULD),"R9 scopes credentials to the minimum necessary for each action rather than session-wide, but it is a SHOULD in the Extended tier and imposes no expiry or per-task issuance requirement.",joseruiz1571
+4.1.5,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
+4.1.5,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
+4.1.5,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
+4.1.5,C4.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 3.2,GOVERN roles/authority and MANAGE controls cover authority definition; no evidenced per-action evaluation,seed-01
+4.1.5,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
+4.1.5,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
+4.1.5,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
+4.1.6,C4.1,CSA_AARM,PM,R4 Five Authorization Decisions (STEP_UP); R5 Tamper-evident Receipts,"STEP_UP requires human approval before execution but carries no recording obligation anywhere in the spec, so of the four fields this requirement names AARM reaches only the timestamp and the policy engine's own decision, never the approver's authenticated identity or the exact content presented.",joseruiz1571
+4.1.6,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
+4.1.6,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
+4.1.6,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
+4.1.6,C4.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 3.2,GOVERN roles/authority and MANAGE controls cover authority definition; no evidenced per-action evaluation,seed-01
+4.1.6,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
+4.1.6,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
+4.1.6,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
+4.1.7,C4.1,CSA_AARM,PM,R2 Context Accumulation; R3 Policy Evaluation with Intent Alignment,"R2 puts prior actions in the session into the context available at each decision and R3 evaluates against it, but AARM's unit is the session thread rather than the execution path and it never states that a composed sequence cannot exceed the authority of its steps.",joseruiz1571
+4.1.7,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
+4.1.7,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
+4.1.7,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
+4.1.7,C4.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 3.2,GOVERN roles/authority and MANAGE controls cover authority definition; no evidenced per-action evaluation,seed-01
+4.1.7,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
+4.1.7,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
+4.1.7,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
+4.1.8,C4.1,CSA_AARM,NM,—,"No AARM requirement pins approval thresholds to the original grant; R2 does the opposite by accumulating prior actions and tool output into the evaluation context, and R7 semantic distance tracking is a SHOULD aimed at intent drift rather than at authorization state.",joseruiz1571
+4.1.8,C4.1,EU_AI_Act,PM,Art. 9; Art. 14,Art 14 human oversight and Art 9 risk controls require authority limits and oversight; gateway-blocked rejection evidence not required,seed-01
+4.1.8,C4.1,ISO_42001,PM,Annex A.9,Human oversight and resource-authority controls; no evidenced per-action evaluation,seed-01
+4.1.8,C4.1,MITRE_ATLAS,PM,Control Access to ML Models and Data (AML.M0005),Least-privilege and access-control mitigations for ML systems; no evidenced gateway decisions,seed-01
+4.1.8,C4.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 3.2,GOVERN roles/authority and MANAGE controls cover authority definition; no evidenced per-action evaluation,seed-01
+4.1.8,C4.1,NIST_SP_800_207,EM,"Tenets 3, 4, 6; PEP (§3)",Per-request access evaluation at the PEP with least privilege matches authority-and-scope enforcement,seed-01
+4.1.8,C4.1,OWASP_AISVS,EM,AISVS C9,"C9 agentic security requires tool authorization, schema validation and least-privilege comparable in scope",seed-01
+4.1.8,C4.1,SOC_2,PM,CC6.1–CC6.3,CC6 logical access requires authorization controls; no evidenced per-action gateway decisions,seed-01
+4.2.1,C4.2,CSA_AARM,PM,Authority evaluation at the boundary,Authority evaluation at the boundary partially covers delegation checks,seed-01
+4.2.1,C4.2,EU_AI_Act,NM,—,No delegation-chain provisions,seed-01
+4.2.1,C4.2,ISO_42001,NM,—,Delegation chains not addressed,seed-01
+4.2.1,C4.2,MITRE_ATLAS,PM,AML.M0027 — Single-User AI Agent Permissions Configuration; AML.M0028 — AI Agent Tools Permissions Configuration,"ATLAS calls for delegated access from the user and for tools to receive the calling agent's permissions, identities, and restrictions. It does not specify signed-token validation or recording validation outcomes.",codex-review-01
+4.2.1,C4.2,NIST_AI_RMF,NM,—,Delegation chains not addressed,seed-01
+4.2.1,C4.2,NIST_SP_800_207,PM,Tenet 4,Dynamic authorization covers authority scoping; delegation chains not addressed,seed-01
+4.2.1,C4.2,OWASP_AISVS,PM,AISVS C9.4,C9.4 agent identity and credential requirements partially cover delegation validity,seed-01
+4.2.1,C4.2,SOC_2,NM,—,Delegation chains not addressed,seed-01
+4.2.2,C4.2,CSA_AARM,PM,Authority evaluation at the boundary,Authority evaluation at the boundary partially covers delegation checks,seed-01
+4.2.2,C4.2,EU_AI_Act,NM,—,No delegation-chain provisions,seed-01
+4.2.2,C4.2,ISO_42001,NM,—,Delegation chains not addressed,seed-01
+4.2.2,C4.2,MITRE_ATLAS,NM,—,Delegation chains not addressed,seed-01
+4.2.2,C4.2,NIST_AI_RMF,NM,—,Delegation chains not addressed,seed-01
+4.2.2,C4.2,NIST_SP_800_207,PM,Tenet 4,Dynamic authorization covers authority scoping; delegation chains not addressed,seed-01
+4.2.2,C4.2,OWASP_AISVS,PM,AISVS C9.4,C9.4 agent identity and credential requirements partially cover delegation validity,seed-01
+4.2.2,C4.2,SOC_2,NM,—,Delegation chains not addressed,seed-01
+4.2.3,C4.2,CSA_AARM,PM,Authority evaluation at the boundary,Authority evaluation at the boundary partially covers delegation checks,seed-01
+4.2.3,C4.2,EU_AI_Act,NM,—,No delegation-chain provisions,seed-01
+4.2.3,C4.2,ISO_42001,NM,—,Delegation chains not addressed,seed-01
+4.2.3,C4.2,MITRE_ATLAS,PM,AML.M0027 — Single-User AI Agent Permissions Configuration,ATLAS states that an agent acting for a user should not receive permissions the user would not receive. It does not mandate structural scope intersection or logged rejection events.,codex-review-01
+4.2.3,C4.2,NIST_AI_RMF,NM,—,Delegation chains not addressed,seed-01
+4.2.3,C4.2,NIST_SP_800_207,PM,Tenet 4,Dynamic authorization covers authority scoping; delegation chains not addressed,seed-01
+4.2.3,C4.2,OWASP_AISVS,PM,AISVS C9.4,C9.4 agent identity and credential requirements partially cover delegation validity,seed-01
+4.2.3,C4.2,SOC_2,NM,—,Delegation chains not addressed,seed-01
+4.2.4,C4.2,CSA_AARM,PM,Authority evaluation at the boundary,Authority evaluation at the boundary partially covers delegation checks,seed-01
+4.2.4,C4.2,EU_AI_Act,NM,—,No delegation-chain provisions,seed-01
+4.2.4,C4.2,ISO_42001,NM,—,Delegation chains not addressed,seed-01
+4.2.4,C4.2,MITRE_ATLAS,NM,—,Delegation chains not addressed,seed-01
+4.2.4,C4.2,NIST_AI_RMF,NM,—,Delegation chains not addressed,seed-01
+4.2.4,C4.2,NIST_SP_800_207,PM,Tenet 4,Dynamic authorization covers authority scoping; delegation chains not addressed,seed-01
+4.2.4,C4.2,OWASP_AISVS,PM,AISVS C9.4,C9.4 agent identity and credential requirements partially cover delegation validity,seed-01
+4.2.4,C4.2,SOC_2,NM,—,Delegation chains not addressed,seed-01
+5.1.1,C5.1,CSA_AARM,PM,Agent identity as authorization input,Agent identity as an input to runtime authorization; no principal-binding tokens,seed-01
+5.1.1,C5.1,EU_AI_Act,PM,Art. 12; Art. 50,Art 12 traceability and Art 50 disclosure touch actor identification; no cryptographic principal-to-agent binding,seed-01
+5.1.1,C5.1,ISO_42001,PM,Cl. 5.3; Annex A.3,"Roles, responsibilities and accountability controls; no cryptographic binding",seed-01
+5.1.1,C5.1,MITRE_ATLAS,PM,AML.M0005,Access-control mitigations imply authenticated actors; no principal binding,seed-01
+5.1.1,C5.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 4.1,GOVERN accountability requires attributable actors; no cryptographic principal binding,seed-01
+5.1.1,C5.1,NIST_SP_800_207,PM,Tenet 6,Strong authentication of all subjects and devices; principal-to-agent intent binding not addressed,seed-01
+5.1.1,C5.1,OWASP_AISVS,PM,AISVS C5; C9.4,C9.4 agent identity credentials and rotation; principal-to-agent intent binding is specific to Proof-of-Control,seed-01
+5.1.1,C5.1,SOC_2,PM,CC6.1–CC6.2,CC6 identification and authentication of users/systems; no principal-to-agent binding,seed-01
+5.1.2,C5.1,CSA_AARM,PM,Agent identity as authorization input,Agent identity as an input to runtime authorization; no principal-binding tokens,seed-01
+5.1.2,C5.1,EU_AI_Act,PM,Art. 12; Art. 50,Art 12 traceability and Art 50 disclosure touch actor identification; no cryptographic principal-to-agent binding,seed-01
+5.1.2,C5.1,ISO_42001,PM,Cl. 5.3; Annex A.3,"Roles, responsibilities and accountability controls; no cryptographic binding",seed-01
+5.1.2,C5.1,MITRE_ATLAS,PM,AML.M0005,Access-control mitigations imply authenticated actors; no principal binding,seed-01
+5.1.2,C5.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 4.1,GOVERN accountability requires attributable actors; no cryptographic principal binding,seed-01
+5.1.2,C5.1,NIST_SP_800_207,PM,Tenet 6,Strong authentication of all subjects and devices; principal-to-agent intent binding not addressed,seed-01
+5.1.2,C5.1,OWASP_AISVS,PM,AISVS C5; C9.4,C9.4 agent identity credentials and rotation; principal-to-agent intent binding is specific to Proof-of-Control,seed-01
+5.1.2,C5.1,SOC_2,PM,CC6.1–CC6.2,CC6 identification and authentication of users/systems; no principal-to-agent binding,seed-01
+5.1.3,C5.1,CSA_AARM,PM,Agent identity as authorization input,Agent identity as an input to runtime authorization; no principal-binding tokens,seed-01
+5.1.3,C5.1,EU_AI_Act,PM,Art. 12; Art. 50,Art 12 traceability and Art 50 disclosure touch actor identification; no cryptographic principal-to-agent binding,seed-01
+5.1.3,C5.1,ISO_42001,PM,Cl. 5.3; Annex A.3,"Roles, responsibilities and accountability controls; no cryptographic binding",seed-01
+5.1.3,C5.1,MITRE_ATLAS,PM,AML.M0005,Access-control mitigations imply authenticated actors; no principal binding,seed-01
+5.1.3,C5.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 4.1,GOVERN accountability requires attributable actors; no cryptographic principal binding,seed-01
+5.1.3,C5.1,NIST_SP_800_207,PM,Tenet 6,Strong authentication of all subjects and devices; principal-to-agent intent binding not addressed,seed-01
+5.1.3,C5.1,OWASP_AISVS,PM,AISVS C5; C9.4,C9.4 agent identity credentials and rotation; principal-to-agent intent binding is specific to Proof-of-Control,seed-01
+5.1.3,C5.1,SOC_2,PM,CC6.1–CC6.2,CC6 identification and authentication of users/systems; no principal-to-agent binding,seed-01
+5.1.4,C5.1,CSA_AARM,PM,Agent identity as authorization input,Agent identity as an input to runtime authorization; no principal-binding tokens,seed-01
+5.1.4,C5.1,EU_AI_Act,PM,Art. 12; Art. 50,Art 12 traceability and Art 50 disclosure touch actor identification; no cryptographic principal-to-agent binding,seed-01
+5.1.4,C5.1,ISO_42001,PM,Cl. 5.3; Annex A.3,"Roles, responsibilities and accountability controls; no cryptographic binding",seed-01
+5.1.4,C5.1,MITRE_ATLAS,PM,AML.M0005,Access-control mitigations imply authenticated actors; no principal binding,seed-01
+5.1.4,C5.1,NIST_AI_RMF,PM,GOVERN 2.1; GOVERN 4.1,GOVERN accountability requires attributable actors; no cryptographic principal binding,seed-01
+5.1.4,C5.1,NIST_SP_800_207,PM,Tenet 6,Strong authentication of all subjects and devices; principal-to-agent intent binding not addressed,seed-01
+5.1.4,C5.1,OWASP_AISVS,PM,AISVS C5; C9.4,C9.4 agent identity credentials and rotation; principal-to-agent intent binding is specific to Proof-of-Control,seed-01
+5.1.4,C5.1,SOC_2,PM,CC6.1–CC6.2,CC6 identification and authentication of users/systems; no principal-to-agent binding,seed-01
+5.2.1,C5.2,CSA_AARM,NM,—,Inter-agent identity not addressed,seed-01
+5.2.1,C5.2,EU_AI_Act,NM,—,No inter-agent identity provisions,seed-01
+5.2.1,C5.2,ISO_42001,NM,—,Inter-agent identity not addressed,seed-01
+5.2.1,C5.2,MITRE_ATLAS,NM,—,Inter-agent identity not addressed,seed-01
+5.2.1,C5.2,NIST_AI_RMF,NM,—,Inter-agent identity not addressed,seed-01
+5.2.1,C5.2,NIST_SP_800_207,PM,Tenet 2,Mutual authentication between services covers inter-agent message authenticity,seed-01
+5.2.1,C5.2,OWASP_AISVS,PM,AISVS C9; C10,C9/C10 inter-agent and MCP security cover authenticated agent communication,seed-01
+5.2.1,C5.2,SOC_2,NM,—,Inter-agent identity not addressed,seed-01
+5.2.2,C5.2,CSA_AARM,NM,—,Inter-agent identity not addressed,seed-01
+5.2.2,C5.2,EU_AI_Act,NM,—,No inter-agent identity provisions,seed-01
+5.2.2,C5.2,ISO_42001,NM,—,Inter-agent identity not addressed,seed-01
+5.2.2,C5.2,MITRE_ATLAS,NM,—,Inter-agent identity not addressed,seed-01
+5.2.2,C5.2,NIST_AI_RMF,NM,—,Inter-agent identity not addressed,seed-01
+5.2.2,C5.2,NIST_SP_800_207,PM,Tenet 2,Mutual authentication between services covers inter-agent message authenticity,seed-01
+5.2.2,C5.2,OWASP_AISVS,PM,AISVS C9; C10,C9/C10 inter-agent and MCP security cover authenticated agent communication,seed-01
+5.2.2,C5.2,SOC_2,NM,—,Inter-agent identity not addressed,seed-01
+6.1.1,C6.1,CSA_AARM,PM,Runtime control enforcement,Runtime control enforcement covers controls-held aims; environment attestation not addressed,seed-01
+6.1.1,C6.1,EU_AI_Act,PM,Art. 15,Art 15 accuracy/robustness/cybersecurity requires environment controls; attestation vs golden values not required,seed-01
+6.1.1,C6.1,ISO_42001,PM,Cl. 8 (via ISO/IEC 27001 alignment),Security controls via ISO 27001 alignment cover environment integrity; attestation not required,seed-01
+6.1.1,C6.1,MITRE_ATLAS,PM,Adversarial Input Detection (AML.M0015); vulnerability scanning,Mitigations for environment hardening and adversarial input detection; attestation not required,seed-01
+6.1.1,C6.1,NIST_AI_RMF,PM,MEASURE 2.7,MEASURE secure-and-resilient characteristic covers environment integrity aims; attestation not required,seed-01
+6.1.1,C6.1,NIST_SP_800_207,PM,Tenet 5,Device posture and integrity monitoring inform access decisions; not openly verifiable,seed-01
+6.1.1,C6.1,OWASP_AISVS,PM,AISVS C4,C4 infrastructure requirements cover environment hardening; attestation evidence not required,seed-01
+6.1.1,C6.1,SOC_2,PM,CC7.1–CC7.2,CC6/CC7 operations monitoring cover control operation; attestation vs reference values not required,seed-01
+6.1.2,C6.1,CSA_AARM,PM,Runtime control enforcement,Runtime control enforcement covers controls-held aims; environment attestation not addressed,seed-01
+6.1.2,C6.1,EU_AI_Act,PM,Art. 15,Art 15 accuracy/robustness/cybersecurity requires environment controls; attestation vs golden values not required,seed-01
+6.1.2,C6.1,ISO_42001,PM,Cl. 8 (via ISO/IEC 27001 alignment),Security controls via ISO 27001 alignment cover environment integrity; attestation not required,seed-01
+6.1.2,C6.1,MITRE_ATLAS,PM,Adversarial Input Detection (AML.M0015); vulnerability scanning,Mitigations for environment hardening and adversarial input detection; attestation not required,seed-01
+6.1.2,C6.1,NIST_AI_RMF,PM,MEASURE 2.7,MEASURE secure-and-resilient characteristic covers environment integrity aims; attestation not required,seed-01
+6.1.2,C6.1,NIST_SP_800_207,PM,Tenet 5,Device posture and integrity monitoring inform access decisions; not openly verifiable,seed-01
+6.1.2,C6.1,OWASP_AISVS,PM,AISVS C4,C4 infrastructure requirements cover environment hardening; attestation evidence not required,seed-01
+6.1.2,C6.1,SOC_2,PM,CC7.1–CC7.2,CC6/CC7 operations monitoring cover control operation; attestation vs reference values not required,seed-01
+6.1.3,C6.1,CSA_AARM,PM,Runtime control enforcement,Runtime control enforcement covers controls-held aims; environment attestation not addressed,seed-01
+6.1.3,C6.1,EU_AI_Act,PM,Art. 15,Art 15 accuracy/robustness/cybersecurity requires environment controls; attestation vs golden values not required,seed-01
+6.1.3,C6.1,ISO_42001,PM,Cl. 8 (via ISO/IEC 27001 alignment),Security controls via ISO 27001 alignment cover environment integrity; attestation not required,seed-01
+6.1.3,C6.1,MITRE_ATLAS,PM,Adversarial Input Detection (AML.M0015); vulnerability scanning,Mitigations for environment hardening and adversarial input detection; attestation not required,seed-01
+6.1.3,C6.1,NIST_AI_RMF,PM,MEASURE 2.7,MEASURE secure-and-resilient characteristic covers environment integrity aims; attestation not required,seed-01
+6.1.3,C6.1,NIST_SP_800_207,PM,Tenet 5,Device posture and integrity monitoring inform access decisions; not openly verifiable,seed-01
+6.1.3,C6.1,OWASP_AISVS,PM,AISVS C4,C4 infrastructure requirements cover environment hardening; attestation evidence not required,seed-01
+6.1.3,C6.1,SOC_2,PM,CC7.1–CC7.2,CC6/CC7 operations monitoring cover control operation; attestation vs reference values not required,seed-01
+6.1.4,C6.1,CSA_AARM,PM,Runtime control enforcement,Runtime control enforcement covers controls-held aims; environment attestation not addressed,seed-01
+6.1.4,C6.1,EU_AI_Act,PM,Art. 15,Art 15 accuracy/robustness/cybersecurity requires environment controls; attestation vs golden values not required,seed-01
+6.1.4,C6.1,ISO_42001,PM,Cl. 8 (via ISO/IEC 27001 alignment),Security controls via ISO 27001 alignment cover environment integrity; attestation not required,seed-01
+6.1.4,C6.1,MITRE_ATLAS,PM,Adversarial Input Detection (AML.M0015); vulnerability scanning,Mitigations for environment hardening and adversarial input detection; attestation not required,seed-01
+6.1.4,C6.1,NIST_AI_RMF,PM,MEASURE 2.7,MEASURE secure-and-resilient characteristic covers environment integrity aims; attestation not required,seed-01
+6.1.4,C6.1,NIST_SP_800_207,PM,Tenet 5,Device posture and integrity monitoring inform access decisions; not openly verifiable,seed-01
+6.1.4,C6.1,OWASP_AISVS,PM,AISVS C4,C4 infrastructure requirements cover environment hardening; attestation evidence not required,seed-01
+6.1.4,C6.1,SOC_2,PM,CC7.1–CC7.2,CC6/CC7 operations monitoring cover control operation; attestation vs reference values not required,seed-01
+6.2.1,C6.2,CSA_AARM,NM,—,Isolation proof not addressed,seed-01
+6.2.1,C6.2,EU_AI_Act,PM,Art. 15,Art 15 cybersecurity covers isolation expectations generally; no proof-of-isolation requirement,seed-01
+6.2.1,C6.2,ISO_42001,NM,—,Isolation proof not addressed,seed-01
+6.2.1,C6.2,MITRE_ATLAS,PM,Execution-restriction / sandboxing mitigations,Sandboxing/restricting execution mitigations align with isolation requirements,seed-01
+6.2.1,C6.2,NIST_AI_RMF,PM,MEASURE 2.7,Secure-and-resilient characteristic covers isolation expectations generally,seed-01
+6.2.1,C6.2,NIST_SP_800_207,NM,—,Isolation proof not addressed,seed-01
+6.2.1,C6.2,OWASP_AISVS,EM,AISVS C4; C9,C4/C9 sandboxing requirements for code execution match isolation-proof scope,seed-01
+6.2.1,C6.2,SOC_2,NM,—,Isolation proof not addressed,seed-01
+6.2.2,C6.2,CSA_AARM,NM,—,Isolation proof not addressed,seed-01
+6.2.2,C6.2,EU_AI_Act,PM,Art. 15,Art 15 cybersecurity covers isolation expectations generally; no proof-of-isolation requirement,seed-01
+6.2.2,C6.2,ISO_42001,NM,—,Isolation proof not addressed,seed-01
+6.2.2,C6.2,MITRE_ATLAS,PM,Execution-restriction / sandboxing mitigations,Sandboxing/restricting execution mitigations align with isolation requirements,seed-01
+6.2.2,C6.2,NIST_AI_RMF,PM,MEASURE 2.7,Secure-and-resilient characteristic covers isolation expectations generally,seed-01
+6.2.2,C6.2,NIST_SP_800_207,NM,—,Isolation proof not addressed,seed-01
+6.2.2,C6.2,OWASP_AISVS,EM,AISVS C4; C9,C4/C9 sandboxing requirements for code execution match isolation-proof scope,seed-01
+6.2.2,C6.2,SOC_2,NM,—,Isolation proof not addressed,seed-01
+6.2.3,C6.2,CSA_AARM,NM,—,Isolation proof not addressed,seed-01
+6.2.3,C6.2,EU_AI_Act,PM,Art. 15,Art 15 cybersecurity covers isolation expectations generally; no proof-of-isolation requirement,seed-01
+6.2.3,C6.2,ISO_42001,NM,—,Isolation proof not addressed,seed-01
+6.2.3,C6.2,MITRE_ATLAS,PM,Execution-restriction / sandboxing mitigations,Sandboxing/restricting execution mitigations align with isolation requirements,seed-01
+6.2.3,C6.2,NIST_AI_RMF,PM,MEASURE 2.7,Secure-and-resilient characteristic covers isolation expectations generally,seed-01
+6.2.3,C6.2,NIST_SP_800_207,NM,—,Isolation proof not addressed,seed-01
+6.2.3,C6.2,OWASP_AISVS,EM,AISVS C4; C9,C4/C9 sandboxing requirements for code execution match isolation-proof scope,seed-01
+6.2.3,C6.2,SOC_2,NM,—,Isolation proof not addressed,seed-01
+6.3.1,C6.3,CSA_AARM,NM,—,Key lifecycle not addressed,seed-01
+6.3.1,C6.3,EU_AI_Act,NM,—,No key-lifecycle provisions,seed-01
+6.3.1,C6.3,ISO_42001,PM,ISO/IEC 27001 cryptographic controls (adjunct),27001-aligned cryptographic control expectations (key management) without evidence-key specificity,seed-01
+6.3.1,C6.3,MITRE_ATLAS,NM,—,Key lifecycle not addressed,seed-01
+6.3.1,C6.3,NIST_AI_RMF,NM,—,Key lifecycle not addressed (delegated to security control catalogs),seed-01
+6.3.1,C6.3,NIST_SP_800_207,NM,—,Key lifecycle not addressed at this level,seed-01
+6.3.1,C6.3,OWASP_AISVS,PM,AISVS C4; C5,C4/C5 key-management expectations; evidence-key custody is specific to Proof-of-Control,seed-01
+6.3.1,C6.3,SOC_2,PM,CC6.1,CC6.1 encryption and key management expectations; not evidence-key custody,seed-01
+6.3.2,C6.3,CSA_AARM,NM,—,Key lifecycle not addressed,seed-01
+6.3.2,C6.3,EU_AI_Act,NM,—,No key-lifecycle provisions,seed-01
+6.3.2,C6.3,ISO_42001,PM,ISO/IEC 27001 cryptographic controls (adjunct),27001-aligned cryptographic control expectations (key management) without evidence-key specificity,seed-01
+6.3.2,C6.3,MITRE_ATLAS,NM,—,Key lifecycle not addressed,seed-01
+6.3.2,C6.3,NIST_AI_RMF,NM,—,Key lifecycle not addressed (delegated to security control catalogs),seed-01
+6.3.2,C6.3,NIST_SP_800_207,NM,—,Key lifecycle not addressed at this level,seed-01
+6.3.2,C6.3,OWASP_AISVS,PM,AISVS C4; C5,C4/C5 key-management expectations; evidence-key custody is specific to Proof-of-Control,seed-01
+6.3.2,C6.3,SOC_2,PM,CC6.1,CC6.1 encryption and key management expectations; not evidence-key custody,seed-01
+6.3.3,C6.3,CSA_AARM,NM,—,Key lifecycle not addressed,seed-01
+6.3.3,C6.3,EU_AI_Act,NM,—,No key-lifecycle provisions,seed-01
+6.3.3,C6.3,ISO_42001,PM,ISO/IEC 27001 cryptographic controls (adjunct),27001-aligned cryptographic control expectations (key management) without evidence-key specificity,seed-01
+6.3.3,C6.3,MITRE_ATLAS,NM,—,Key lifecycle not addressed,seed-01
+6.3.3,C6.3,NIST_AI_RMF,NM,—,Key lifecycle not addressed (delegated to security control catalogs),seed-01
+6.3.3,C6.3,NIST_SP_800_207,NM,—,Key lifecycle not addressed at this level,seed-01
+6.3.3,C6.3,OWASP_AISVS,PM,AISVS C4; C5,C4/C5 key-management expectations; evidence-key custody is specific to Proof-of-Control,seed-01
+6.3.3,C6.3,SOC_2,PM,CC6.1,CC6.1 encryption and key management expectations; not evidence-key custody,seed-01
+6.3.4,C6.3,CSA_AARM,NM,—,Key lifecycle not addressed,seed-01
+6.3.4,C6.3,EU_AI_Act,NM,—,No key-lifecycle provisions,seed-01
+6.3.4,C6.3,ISO_42001,PM,ISO/IEC 27001 cryptographic controls (adjunct),27001-aligned cryptographic control expectations (key management) without evidence-key specificity,seed-01
+6.3.4,C6.3,MITRE_ATLAS,NM,—,Key lifecycle not addressed,seed-01
+6.3.4,C6.3,NIST_AI_RMF,NM,—,Key lifecycle not addressed (delegated to security control catalogs),seed-01
+6.3.4,C6.3,NIST_SP_800_207,NM,—,Key lifecycle not addressed at this level,seed-01
+6.3.4,C6.3,OWASP_AISVS,PM,AISVS C4; C5,C4/C5 key-management expectations; evidence-key custody is specific to Proof-of-Control,seed-01
+6.3.4,C6.3,SOC_2,PM,CC6.1,CC6.1 encryption and key management expectations; not evidence-key custody,seed-01
+6.3.5,C6.3,CSA_AARM,NM,—,Key lifecycle not addressed,seed-01
+6.3.5,C6.3,EU_AI_Act,NM,—,No key-lifecycle provisions,seed-01
+6.3.5,C6.3,ISO_42001,PM,ISO/IEC 27001 cryptographic controls (adjunct),27001-aligned cryptographic control expectations (key management) without evidence-key specificity,seed-01
+6.3.5,C6.3,MITRE_ATLAS,NM,—,Key lifecycle not addressed,seed-01
+6.3.5,C6.3,NIST_AI_RMF,NM,—,Key lifecycle not addressed (delegated to security control catalogs),seed-01
+6.3.5,C6.3,NIST_SP_800_207,NM,—,Key lifecycle not addressed at this level,seed-01
+6.3.5,C6.3,OWASP_AISVS,PM,AISVS C4; C5,C4/C5 key-management expectations; evidence-key custody is specific to Proof-of-Control,seed-01
+6.3.5,C6.3,SOC_2,PM,CC6.1,CC6.1 encryption and key management expectations; not evidence-key custody,seed-01
+7.1.1,C7.1,CSA_AARM,PM,R1 Pre-execution Interception,"R1 forbids any action bypassing the control plane, but it is architecture-neutral and AARM section 6.2 expressly recognizes SDK instrumentation that may miss non-instrumented paths, so a gateway running out-of-process from the agent is not required.",joseruiz1571
+7.1.1,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
+7.1.1,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
+7.1.1,C7.1,MITRE_ATLAS,NM,—,No evidence-generation concept,seed-01
+7.1.1,C7.1,NIST_AI_RMF,NM,—,No action-interception evidence concept,seed-01
+7.1.1,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
+7.1.1,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
+7.1.1,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
+7.1.2,C7.1,CSA_AARM,PM,R5 Tamper-evident Receipts; R6 Identity Binding,"R5 requires one tamper-evident receipt per evaluated action and R6 binds it to an agent identity, but AARM requires no before, during and after records, no independent signature on each, and no shared action ID linking them.",joseruiz1571
+7.1.2,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
+7.1.2,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
+7.1.2,C7.1,MITRE_ATLAS,NM,—,No evidence-generation concept,seed-01
+7.1.2,C7.1,NIST_AI_RMF,NM,—,No action-interception evidence concept,seed-01
+7.1.2,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
+7.1.2,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
+7.1.2,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
+7.1.3,C7.1,CSA_AARM,NM,—,"AARM orders interception before execution but places no ordering or durability requirement on the receipt, so evidence emission is never a precondition of action release.",joseruiz1571
+7.1.3,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
+7.1.3,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
+7.1.3,C7.1,MITRE_ATLAS,NM,—,No evidence-generation concept,seed-01
+7.1.3,C7.1,NIST_AI_RMF,NM,—,No action-interception evidence concept,seed-01
+7.1.3,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
+7.1.3,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
+7.1.3,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
+7.1.4,C7.1,CSA_AARM,NM,—,"AARM has no attestation, capability-binding or attested-egress requirement; section 6.1 Protocol Gateway is one of four recognized architectures, not a requirement to mediate the effect channel inside the policy-evaluation trust boundary.",joseruiz1571
+7.1.4,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
+7.1.4,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
+7.1.4,C7.1,MITRE_ATLAS,PM,AML.M0028 — AI Agent Tools Permissions Configuration; AML.M0032 — Segmentation of AI Agent Components,"ATLAS covers applying inherited permissions/restrictions to tools and enforcing boundaries around tools and data sources. It does not require attested mediation, action-bound capabilities, or matching evidence.",codex-review-01
+7.1.4,C7.1,NIST_AI_RMF,NM,—,No action-interception evidence concept,seed-01
+7.1.4,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
+7.1.4,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
+7.1.4,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
+7.1.5,C7.1,CSA_AARM,NM,—,"AARM grades conformance as Core or Extended by requirements satisfied and has no notion of evidence tiers, so it imposes nothing on what a conformance claim may assert about executed actions.",joseruiz1571
+7.1.5,C7.1,EU_AI_Act,NM,—,No action-interception or evidence-at-boundary concept,seed-01
+7.1.5,C7.1,ISO_42001,NM,—,No action-interception concept,seed-01
+7.1.5,C7.1,MITRE_ATLAS,NM,—,No evidence-generation concept,seed-01
+7.1.5,C7.1,NIST_AI_RMF,NM,—,No action-interception evidence concept,seed-01
+7.1.5,C7.1,NIST_SP_800_207,PM,PEP (§3),The PEP mediates all access like the interception gateway; evidence emission is not required,seed-01
+7.1.5,C7.1,OWASP_AISVS,PM,AISVS C9,C9 requires mediated tool access; out-of-band evidence-emitting gateway is specific to Proof-of-Control,seed-01
+7.1.5,C7.1,SOC_2,NM,—,No interception-gateway concept,seed-01
+7.2.1,C7.2,CSA_AARM,PM,Execution-time audit trail,"Enforcement produces execution-time records; operator-run, not operator-independent",seed-01
+7.2.1,C7.2,EU_AI_Act,PM,Art. 12,Art 12 requires automatic recording of events over the lifetime; no operator-independent time anchoring,seed-01
+7.2.1,C7.2,ISO_42001,PM,Cl. 7.5.3,Documented-information controls require contemporaneous records; operator-produced,seed-01
+7.2.1,C7.2,MITRE_ATLAS,PM,AML.M0024 — AI Telemetry Logging,"ATLAS calls for logging deployed-model inputs/outputs and agent intermediate actions, decisions, data access, and tool use. It does not require recording inside the same transaction or rule out later reconstruction.",codex-review-01
+7.2.1,C7.2,NIST_AI_RMF,PM,MEASURE 2.8; MANAGE 4.1,MEASURE documentation and test records are contemporaneous practices; no mechanism-generated evidence,seed-01
+7.2.1,C7.2,NIST_SP_800_207,PM,Tenet 7,Continuous monitoring produces execution-time logs; operator-produced,seed-01
+7.2.1,C7.2,OWASP_AISVS,PM,AISVS C12,C12 logging requires event-time records; operator-produced,seed-01
+7.2.1,C7.2,SOC_2,PM,CC7.2,CC7.2 audit logging is contemporaneous; operator-produced,seed-01
+7.2.2,C7.2,CSA_AARM,PM,Execution-time audit trail,"Enforcement produces execution-time records; operator-run, not operator-independent",seed-01
+7.2.2,C7.2,EU_AI_Act,PM,Art. 12,Art 12 requires automatic recording of events over the lifetime; no operator-independent time anchoring,seed-01
+7.2.2,C7.2,ISO_42001,PM,Cl. 7.5.3,Documented-information controls require contemporaneous records; operator-produced,seed-01
+7.2.2,C7.2,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.2.2,C7.2,NIST_AI_RMF,PM,MEASURE 2.8; MANAGE 4.1,MEASURE documentation and test records are contemporaneous practices; no mechanism-generated evidence,seed-01
+7.2.2,C7.2,NIST_SP_800_207,PM,Tenet 7,Continuous monitoring produces execution-time logs; operator-produced,seed-01
+7.2.2,C7.2,OWASP_AISVS,PM,AISVS C12,C12 logging requires event-time records; operator-produced,seed-01
+7.2.2,C7.2,SOC_2,PM,CC7.2,CC7.2 audit logging is contemporaneous; operator-produced,seed-01
+7.2.3,C7.2,CSA_AARM,NM,—,No hardware-attestation freshness obligation,seed-01
+7.2.3,C7.2,EU_AI_Act,NM,—,Logging duties do not reach attestation staleness,seed-01
+7.2.3,C7.2,ISO_42001,NM,—,No attestation refresh requirement,seed-01
+7.2.3,C7.2,MITRE_ATLAS,NM,—,Mitigation catalogue; attestation lifecycle out of scope,seed-01
+7.2.3,C7.2,NIST_AI_RMF,NM,—,Not addressed,seed-01
+7.2.3,C7.2,NIST_SP_800_207,PM,Sec. 3.3; Tenet 5,"Device posture must be continually reassessed rather than trusted once; the periodicity is architectural guidance, not an attestation-refresh obligation",seed-01
+7.2.3,C7.2,OWASP_AISVS,NM,—,No attestation freshness requirement,seed-01
+7.2.3,C7.2,SOC_2,NM,—,Not addressed,seed-01
+7.2.4,C7.2,CSA_AARM,NM,—,Agent identity binding addressed; attestation-to-key binding is not,seed-01
+7.2.4,C7.2,EU_AI_Act,NM,—,Not addressed,seed-01
+7.2.4,C7.2,ISO_42001,NM,—,Not addressed,seed-01
+7.2.4,C7.2,MITRE_ATLAS,NM,—,Out of scope,seed-01
+7.2.4,C7.2,NIST_AI_RMF,NM,—,Not addressed,seed-01
+7.2.4,C7.2,NIST_SP_800_207,NM,—,No attestation report-data binding requirement,seed-01
+7.2.4,C7.2,OWASP_AISVS,PM,AISVS C6,Key-management expectations cover custody; binding a key into an attestation report body is not required,seed-01
+7.2.4,C7.2,SOC_2,NM,—,Not addressed,seed-01
+7.3.1,C7.3,CSA_AARM,PM,Gateway receipts,Tamper-evident receipts at the gateway; trust remains rooted in the deployment operator,seed-01
+7.3.1,C7.3,EU_AI_Act,PM,Art. 12; Art. 19,Art 12/19 logging and retention imply record integrity; evidence remains operator-produced (Tier 1 in Proof-of-Control terms),seed-01
+7.3.1,C7.3,ISO_42001,PM,Cl. 7.5.3,Records control protects integrity of documented information; not mechanism-generated,seed-01
+7.3.1,C7.3,MITRE_ATLAS,PM,ML event-logging mitigations,Logging-of-ML-events mitigation supports detection; integrity mechanisms unspecified,seed-01
+7.3.1,C7.3,NIST_AI_RMF,PM,MEASURE 2.8,Traceability and documentation expectations; records remain operator-produced,seed-01
+7.3.1,C7.3,NIST_SP_800_207,NM,—,Tamper-evidence of records not required,seed-01
+7.3.1,C7.3,OWASP_AISVS,PM,AISVS C12,C12 log protection; mechanism-generated tamper-evidence not required,seed-01
+7.3.1,C7.3,SOC_2,PM,CC7.2,Log protection expectations; signatures/chains not required and operator remains trusted,seed-01
+7.3.2,C7.3,CSA_AARM,PM,Gateway receipts,Tamper-evident receipts at the gateway; trust remains rooted in the deployment operator,seed-01
+7.3.2,C7.3,EU_AI_Act,PM,Art. 12; Art. 19,Art 12/19 logging and retention imply record integrity; evidence remains operator-produced (Tier 1 in Proof-of-Control terms),seed-01
+7.3.2,C7.3,ISO_42001,PM,Cl. 7.5.3,Records control protects integrity of documented information; not mechanism-generated,seed-01
+7.3.2,C7.3,MITRE_ATLAS,PM,ML event-logging mitigations,Logging-of-ML-events mitigation supports detection; integrity mechanisms unspecified,seed-01
+7.3.2,C7.3,NIST_AI_RMF,PM,MEASURE 2.8,Traceability and documentation expectations; records remain operator-produced,seed-01
+7.3.2,C7.3,NIST_SP_800_207,NM,—,Tamper-evidence of records not required,seed-01
+7.3.2,C7.3,OWASP_AISVS,PM,AISVS C12,C12 log protection; mechanism-generated tamper-evidence not required,seed-01
+7.3.2,C7.3,SOC_2,PM,CC7.2,Log protection expectations; signatures/chains not required and operator remains trusted,seed-01
+7.3.3,C7.3,CSA_AARM,PM,Gateway receipts,Tamper-evident receipts at the gateway; trust remains rooted in the deployment operator,seed-01
+7.3.3,C7.3,EU_AI_Act,PM,Art. 12; Art. 19,Art 12/19 logging and retention imply record integrity; evidence remains operator-produced (Tier 1 in Proof-of-Control terms),seed-01
+7.3.3,C7.3,ISO_42001,PM,Cl. 7.5.3,Records control protects integrity of documented information; not mechanism-generated,seed-01
+7.3.3,C7.3,MITRE_ATLAS,PM,ML event-logging mitigations,Logging-of-ML-events mitigation supports detection; integrity mechanisms unspecified,seed-01
+7.3.3,C7.3,NIST_AI_RMF,PM,MEASURE 2.8,Traceability and documentation expectations; records remain operator-produced,seed-01
+7.3.3,C7.3,NIST_SP_800_207,NM,—,Tamper-evidence of records not required,seed-01
+7.3.3,C7.3,OWASP_AISVS,PM,AISVS C12,C12 log protection; mechanism-generated tamper-evidence not required,seed-01
+7.3.3,C7.3,SOC_2,PM,CC7.2,Log protection expectations; signatures/chains not required and operator remains trusted,seed-01
+7.3.4,C7.3,CSA_AARM,NM,—,Receipt integrity addressed; per-record proof against a published root not required,seed-01
+7.3.4,C7.3,EU_AI_Act,PM,Art. 12; Art. 19,Logs must be traceable and available to authorities; the retrieval and proof mechanism is unspecified,seed-01
+7.3.4,C7.3,ISO_42001,NM,—,Records control does not reach proof structure,seed-01
+7.3.4,C7.3,MITRE_ATLAS,NM,—,Adversary-technique catalogue; log structure out of scope,seed-01
+7.3.4,C7.3,NIST_AI_RMF,PM,MEASURE 2.8,Traceability expectation; no requirement that one record be provable in isolation,seed-01
+7.3.4,C7.3,NIST_SP_800_207,NM,—,No evidence-log structure requirements,seed-01
+7.3.4,C7.3,OWASP_AISVS,PM,AISVS C12,Log protection and integrity; inclusion proofs not required,seed-01
+7.3.4,C7.3,SOC_2,PM,CC7.2,Evidence must be retrievable for the auditor; the cost and mechanism of retrieval are unspecified,seed-01
+7.3.5,C7.3,CSA_AARM,NM,—,No append-only proof obligation,seed-01
+7.3.5,C7.3,EU_AI_Act,PM,Art. 12,Automatic recording over the system lifetime implies logs are not rewritten; no verification mechanism named,seed-01
+7.3.5,C7.3,ISO_42001,PM,Cl. 7.5.3,Protection of documented information from unintended alteration; no cryptographic consistency check,seed-01
+7.3.5,C7.3,MITRE_ATLAS,NM,—,Out of scope,seed-01
+7.3.5,C7.3,NIST_AI_RMF,NM,—,No log-consistency requirement,seed-01
+7.3.5,C7.3,NIST_SP_800_207,NM,—,No log-consistency requirement,seed-01
+7.3.5,C7.3,OWASP_AISVS,PM,AISVS C12,Tamper detection expected; rewriting by a key-holding operator is not addressed,seed-01
+7.3.5,C7.3,SOC_2,PM,CC7.2,"Change and log integrity controls; operator remains inside the trust boundary, which is the case this requirement targets",seed-01
+7.4.1,C7.4,CSA_AARM,NM,—,No trust-assumption disclosure,seed-01
+7.4.1,C7.4,EU_AI_Act,PM,Art. 13,Art 13 transparency to deployers discloses capabilities and limitations; no trust-assumption disclosure,seed-01
+7.4.1,C7.4,ISO_42001,PM,Annex A.8,Transparency and reporting controls; no trust-assumption format,seed-01
+7.4.1,C7.4,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.4.1,C7.4,NIST_AI_RMF,PM,GOVERN 4.2; MAP 4.1,Transparency and documentation of limitations align with disclosure; no standardized trust-assumption format,seed-01
+7.4.1,C7.4,NIST_SP_800_207,NM,—,Not addressed,seed-01
+7.4.1,C7.4,OWASP_AISVS,NM,—,No trust-assumption disclosure,seed-01
+7.4.1,C7.4,SOC_2,NM,—,No trust-assumption disclosure analog,seed-01
+7.5.1,C7.5,CSA_AARM,NM,—,Not addressed,seed-01
+7.5.1,C7.5,EU_AI_Act,NM,—,No determinism-boundary or claims-discipline provision,seed-01
+7.5.1,C7.5,ISO_42001,PM,Cl. 9.1,42001 adopts the verification/validation distinction Proof-of-Control builds on; no claims-review requirement,seed-01
+7.5.1,C7.5,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.5.1,C7.5,NIST_AI_RMF,PM,MEASURE 2.5,RMF's validity/reliability framing distinguishes measured facts from aspirations; no claims-discipline requirement,seed-01
+7.5.1,C7.5,NIST_SP_800_207,NM,—,Not addressed,seed-01
+7.5.1,C7.5,OWASP_AISVS,NM,—,No determinism-boundary analog,seed-01
+7.5.1,C7.5,SOC_2,NM,—,No determinism-boundary analog,seed-01
+7.5.2,C7.5,CSA_AARM,NM,—,Not addressed,seed-01
+7.5.2,C7.5,EU_AI_Act,NM,—,No determinism-boundary or claims-discipline provision,seed-01
+7.5.2,C7.5,ISO_42001,PM,Cl. 9.1,42001 adopts the verification/validation distinction Proof-of-Control builds on; no claims-review requirement,seed-01
+7.5.2,C7.5,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.5.2,C7.5,NIST_AI_RMF,PM,MEASURE 2.5,RMF's validity/reliability framing distinguishes measured facts from aspirations; no claims-discipline requirement,seed-01
+7.5.2,C7.5,NIST_SP_800_207,NM,—,Not addressed,seed-01
+7.5.2,C7.5,OWASP_AISVS,NM,—,No determinism-boundary analog,seed-01
+7.5.2,C7.5,SOC_2,NM,—,No determinism-boundary analog,seed-01
+7.6.1,C7.6,CSA_AARM,PM,Deny/failure decisions,Deny/failure decisions at the gateway cover failure events; fail-closed evidence gating unspecified,seed-01
+7.6.1,C7.6,EU_AI_Act,PM,Art. 19,Art 19 log retention covers retention duty; fail-closed and omission-detectability not addressed,seed-01
+7.6.1,C7.6,ISO_42001,PM,Cl. 7.5.3,Records retention and control of documented information; fail-closed not addressed,seed-01
+7.6.1,C7.6,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.6.1,C7.6,NIST_AI_RMF,PM,MANAGE 2.3; MANAGE 4.1,MANAGE incident response and monitoring cover failure handling; fail-closed evidence gating not addressed,seed-01
+7.6.1,C7.6,NIST_SP_800_207,PM,Deny-by-default posture (§2),Deny-by-default posture parallels fail-closed; evidence-pipeline gating unspecified,seed-01
+7.6.1,C7.6,OWASP_AISVS,PM,AISVS C12,C12 monitoring/alerting covers pipeline failures; fail-closed evidence gating not required,seed-01
+7.6.1,C7.6,SOC_2,PM,CC7.3–CC7.5,CC7 monitoring and incident handling cover pipeline failures; omission-detectability not addressed,seed-01
+7.6.2,C7.6,CSA_AARM,PM,Deny/failure decisions,Deny/failure decisions at the gateway cover failure events; fail-closed evidence gating unspecified,seed-01
+7.6.2,C7.6,EU_AI_Act,PM,Art. 19,Art 19 log retention covers retention duty; fail-closed and omission-detectability not addressed,seed-01
+7.6.2,C7.6,ISO_42001,PM,Cl. 7.5.3,Records retention and control of documented information; fail-closed not addressed,seed-01
+7.6.2,C7.6,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.6.2,C7.6,NIST_AI_RMF,PM,MANAGE 2.3; MANAGE 4.1,MANAGE incident response and monitoring cover failure handling; fail-closed evidence gating not addressed,seed-01
+7.6.2,C7.6,NIST_SP_800_207,PM,Deny-by-default posture (§2),Deny-by-default posture parallels fail-closed; evidence-pipeline gating unspecified,seed-01
+7.6.2,C7.6,OWASP_AISVS,PM,AISVS C12,C12 monitoring/alerting covers pipeline failures; fail-closed evidence gating not required,seed-01
+7.6.2,C7.6,SOC_2,PM,CC7.3–CC7.5,CC7 monitoring and incident handling cover pipeline failures; omission-detectability not addressed,seed-01
+7.6.3,C7.6,CSA_AARM,PM,Deny/failure decisions,Deny/failure decisions at the gateway cover failure events; fail-closed evidence gating unspecified,seed-01
+7.6.3,C7.6,EU_AI_Act,PM,Art. 19,Art 19 log retention covers retention duty; fail-closed and omission-detectability not addressed,seed-01
+7.6.3,C7.6,ISO_42001,PM,Cl. 7.5.3,Records retention and control of documented information; fail-closed not addressed,seed-01
+7.6.3,C7.6,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.6.3,C7.6,NIST_AI_RMF,PM,MANAGE 2.3; MANAGE 4.1,MANAGE incident response and monitoring cover failure handling; fail-closed evidence gating not addressed,seed-01
+7.6.3,C7.6,NIST_SP_800_207,PM,Deny-by-default posture (§2),Deny-by-default posture parallels fail-closed; evidence-pipeline gating unspecified,seed-01
+7.6.3,C7.6,OWASP_AISVS,PM,AISVS C12,C12 monitoring/alerting covers pipeline failures; fail-closed evidence gating not required,seed-01
+7.6.3,C7.6,SOC_2,PM,CC7.3–CC7.5,CC7 monitoring and incident handling cover pipeline failures; omission-detectability not addressed,seed-01
+7.6.4,C7.6,CSA_AARM,PM,Deny/failure decisions,Deny/failure decisions at the gateway cover failure events; fail-closed evidence gating unspecified,seed-01
+7.6.4,C7.6,EU_AI_Act,PM,Art. 19,Art 19 log retention covers retention duty; fail-closed and omission-detectability not addressed,seed-01
+7.6.4,C7.6,ISO_42001,PM,Cl. 7.5.3,Records retention and control of documented information; fail-closed not addressed,seed-01
+7.6.4,C7.6,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.6.4,C7.6,NIST_AI_RMF,PM,MANAGE 2.3; MANAGE 4.1,MANAGE incident response and monitoring cover failure handling; fail-closed evidence gating not addressed,seed-01
+7.6.4,C7.6,NIST_SP_800_207,PM,Deny-by-default posture (§2),Deny-by-default posture parallels fail-closed; evidence-pipeline gating unspecified,seed-01
+7.6.4,C7.6,OWASP_AISVS,PM,AISVS C12,C12 monitoring/alerting covers pipeline failures; fail-closed evidence gating not required,seed-01
+7.6.4,C7.6,SOC_2,PM,CC7.3–CC7.5,CC7 monitoring and incident handling cover pipeline failures; omission-detectability not addressed,seed-01
+7.6.5,C7.6,CSA_AARM,PM,Deny/failure decisions,Deny/failure decisions at the gateway cover failure events; fail-closed evidence gating unspecified,seed-01
+7.6.5,C7.6,EU_AI_Act,PM,Art. 19,Art 19 log retention covers retention duty; fail-closed and omission-detectability not addressed,seed-01
+7.6.5,C7.6,ISO_42001,PM,Cl. 7.5.3,Records retention and control of documented information; fail-closed not addressed,seed-01
+7.6.5,C7.6,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.6.5,C7.6,NIST_AI_RMF,PM,MANAGE 2.3; MANAGE 4.1,MANAGE incident response and monitoring cover failure handling; fail-closed evidence gating not addressed,seed-01
+7.6.5,C7.6,NIST_SP_800_207,PM,Deny-by-default posture (§2),Deny-by-default posture parallels fail-closed; evidence-pipeline gating unspecified,seed-01
+7.6.5,C7.6,OWASP_AISVS,PM,AISVS C12,C12 monitoring/alerting covers pipeline failures; fail-closed evidence gating not required,seed-01
+7.6.5,C7.6,SOC_2,PM,CC7.3–CC7.5,CC7 monitoring and incident handling cover pipeline failures; omission-detectability not addressed,seed-01
+7.6.6,C7.6,CSA_AARM,PM,Deny/failure decisions,Deny/failure decisions at the gateway cover failure events; fail-closed evidence gating unspecified,seed-01
+7.6.6,C7.6,EU_AI_Act,PM,Art. 19,Art 19 log retention covers retention duty; fail-closed and omission-detectability not addressed,seed-01
+7.6.6,C7.6,ISO_42001,PM,Cl. 7.5.3,Records retention and control of documented information; fail-closed not addressed,seed-01
+7.6.6,C7.6,MITRE_ATLAS,NM,—,Not addressed,seed-01
+7.6.6,C7.6,NIST_AI_RMF,PM,MANAGE 2.3; MANAGE 4.1,MANAGE incident response and monitoring cover failure handling; fail-closed evidence gating not addressed,seed-01
+7.6.6,C7.6,NIST_SP_800_207,PM,Deny-by-default posture (§2),Deny-by-default posture parallels fail-closed; evidence-pipeline gating unspecified,seed-01
+7.6.6,C7.6,OWASP_AISVS,PM,AISVS C12,C12 monitoring/alerting covers pipeline failures; fail-closed evidence gating not required,seed-01
+7.6.6,C7.6,SOC_2,PM,CC7.3–CC7.5,CC7 monitoring and incident handling cover pipeline failures; omission-detectability not addressed,seed-01
+7.7.1,C7.7,CSA_AARM,PM,Receipt schema,A receipt format is described; no published schema an outside verifier can validate against,seed-01
+7.7.1,C7.7,EU_AI_Act,PM,Art. 11; Annex IV,Technical documentation must be machine-processable for authorities; no evidence-token schema,seed-01
+7.7.1,C7.7,ISO_42001,PM,Cl. 7.5.2,Documented information must have suitable format and identification; not a validatable schema,seed-01
+7.7.1,C7.7,MITRE_ATLAS,NM,—,Out of scope,seed-01
+7.7.1,C7.7,NIST_AI_RMF,PM,GOVERN 4.2,Documentation expectations; no machine-readable evidence format,seed-01
+7.7.1,C7.7,NIST_SP_800_207,NM,—,Out of scope,seed-01
+7.7.1,C7.7,OWASP_AISVS,PM,AISVS C12,Structured logging expected; no published claim-set schema,seed-01
+7.7.1,C7.7,SOC_2,NM,—,No evidence-format requirement,seed-01
+7.7.2,C7.7,CSA_AARM,NM,—,Canonicalization unaddressed,seed-01
+7.7.2,C7.7,EU_AI_Act,NM,—,Canonicalization unaddressed,seed-01
+7.7.2,C7.7,ISO_42001,NM,—,Canonicalization unaddressed,seed-01
+7.7.2,C7.7,MITRE_ATLAS,NM,—,Out of scope,seed-01
+7.7.2,C7.7,NIST_AI_RMF,NM,—,Canonicalization unaddressed,seed-01
+7.7.2,C7.7,NIST_SP_800_207,NM,—,Out of scope,seed-01
+7.7.2,C7.7,OWASP_AISVS,NM,—,Canonicalization unaddressed,seed-01
+7.7.2,C7.7,SOC_2,NM,—,Canonicalization unaddressed,seed-01
+7.7.3,C7.7,CSA_AARM,NM,—,Algorithm agility not addressed,seed-01
+7.7.3,C7.7,EU_AI_Act,NM,—,Algorithm agility not addressed,seed-01
+7.7.3,C7.7,ISO_42001,PM,Cl. 8.1 (A.8 cryptography),Cryptographic controls must be documented; per-record algorithm identification not required,seed-01
+7.7.3,C7.7,MITRE_ATLAS,NM,—,Out of scope,seed-01
+7.7.3,C7.7,NIST_AI_RMF,NM,—,Not addressed,seed-01
+7.7.3,C7.7,NIST_SP_800_207,PM,Sec. 5.4,Cryptographic agility discussed for the enterprise; not for evidence records,seed-01
+7.7.3,C7.7,OWASP_AISVS,PM,AISVS C6,Cryptographic-agility expectations; not tied to evidence records,seed-01
+7.7.3,C7.7,SOC_2,NM,—,Not addressed,seed-01
+7.7.4,C7.7,CSA_AARM,NM,—,Interoperability conformance testing not required,seed-01
+7.7.4,C7.7,EU_AI_Act,NM,—,"Conformity assessment covers the system, not evidence-format interoperability",seed-01
+7.7.4,C7.7,ISO_42001,NM,—,No interoperability test-vector obligation,seed-01
+7.7.4,C7.7,MITRE_ATLAS,NM,—,Out of scope,seed-01
+7.7.4,C7.7,NIST_AI_RMF,NM,—,No interoperability test-vector obligation,seed-01
+7.7.4,C7.7,NIST_SP_800_207,NM,—,Out of scope,seed-01
+7.7.4,C7.7,OWASP_AISVS,NM,—,No interoperability test-vector obligation,seed-01
+7.7.4,C7.7,SOC_2,NM,—,No interoperability test-vector obligation,seed-01
+7.7.5,C7.7,CSA_AARM,NM,—,Parser behaviour unaddressed,seed-01
+7.7.5,C7.7,EU_AI_Act,NM,—,Parser behaviour unaddressed,seed-01
+7.7.5,C7.7,ISO_42001,NM,—,Parser behaviour unaddressed,seed-01
+7.7.5,C7.7,MITRE_ATLAS,NM,—,Out of scope,seed-01
+7.7.5,C7.7,NIST_AI_RMF,NM,—,Parser behaviour unaddressed,seed-01
+7.7.5,C7.7,NIST_SP_800_207,NM,—,Out of scope,seed-01
+7.7.5,C7.7,OWASP_AISVS,PM,AISVS C3,Input-validation expectations reach parsing generally; evidence-parser ambiguity not addressed,seed-01
+7.7.5,C7.7,SOC_2,NM,—,Parser behaviour unaddressed,seed-01
+8.1.1,C8.1,CSA_AARM,NM,—,No verifiability grading,seed-01
+8.1.1,C8.1,EU_AI_Act,NM,—,No evidence-verifiability grading concept,seed-01
+8.1.1,C8.1,ISO_42001,NM,—,No verifiability grading,seed-01
+8.1.1,C8.1,MITRE_ATLAS,NM,—,No verifiability grading,seed-01
+8.1.1,C8.1,NIST_AI_RMF,NM,—,No evidence-verifiability grading,seed-01
+8.1.1,C8.1,NIST_SP_800_207,NM,—,No verifiability grading,seed-01
+8.1.1,C8.1,OWASP_AISVS,NM,—,No evidence-verifiability grading,seed-01
+8.1.1,C8.1,SOC_2,NM,—,No verifiability grading,seed-01
+8.1.2,C8.1,CSA_AARM,NM,—,No verifiability grading,seed-01
+8.1.2,C8.1,EU_AI_Act,NM,—,No evidence-verifiability grading concept,seed-01
+8.1.2,C8.1,ISO_42001,NM,—,No verifiability grading,seed-01
+8.1.2,C8.1,MITRE_ATLAS,NM,—,No verifiability grading,seed-01
+8.1.2,C8.1,NIST_AI_RMF,NM,—,No evidence-verifiability grading,seed-01
+8.1.2,C8.1,NIST_SP_800_207,NM,—,No verifiability grading,seed-01
+8.1.2,C8.1,OWASP_AISVS,NM,—,No evidence-verifiability grading,seed-01
+8.1.2,C8.1,SOC_2,NM,—,No verifiability grading,seed-01
+8.1.3,C8.1,CSA_AARM,NM,—,No verifiability grading,seed-01
+8.1.3,C8.1,EU_AI_Act,NM,—,No evidence-verifiability grading concept,seed-01
+8.1.3,C8.1,ISO_42001,NM,—,No verifiability grading,seed-01
+8.1.3,C8.1,MITRE_ATLAS,NM,—,No verifiability grading,seed-01
+8.1.3,C8.1,NIST_AI_RMF,NM,—,No evidence-verifiability grading,seed-01
+8.1.3,C8.1,NIST_SP_800_207,NM,—,No verifiability grading,seed-01
+8.1.3,C8.1,OWASP_AISVS,NM,—,No evidence-verifiability grading,seed-01
+8.1.3,C8.1,SOC_2,NM,—,No verifiability grading,seed-01
+8.1.4,C8.1,CSA_AARM,NM,—,No verifiability grading,seed-01
+8.1.4,C8.1,EU_AI_Act,NM,—,No evidence-verifiability grading concept,seed-01
+8.1.4,C8.1,ISO_42001,NM,—,No verifiability grading,seed-01
+8.1.4,C8.1,MITRE_ATLAS,NM,—,No verifiability grading,seed-01
+8.1.4,C8.1,NIST_AI_RMF,NM,—,No evidence-verifiability grading,seed-01
+8.1.4,C8.1,NIST_SP_800_207,NM,—,No verifiability grading,seed-01
+8.1.4,C8.1,OWASP_AISVS,NM,—,No evidence-verifiability grading,seed-01
+8.1.4,C8.1,SOC_2,NM,—,No verifiability grading,seed-01
+8.1.5,C8.1,CSA_AARM,NM,—,No verifiability grading,seed-01
+8.1.5,C8.1,EU_AI_Act,NM,—,No evidence-verifiability grading concept,seed-01
+8.1.5,C8.1,ISO_42001,NM,—,No verifiability grading,seed-01
+8.1.5,C8.1,MITRE_ATLAS,NM,—,No verifiability grading,seed-01
+8.1.5,C8.1,NIST_AI_RMF,NM,—,No evidence-verifiability grading,seed-01
+8.1.5,C8.1,NIST_SP_800_207,NM,—,No verifiability grading,seed-01
+8.1.5,C8.1,OWASP_AISVS,NM,—,No evidence-verifiability grading,seed-01
+8.1.5,C8.1,SOC_2,NM,—,No verifiability grading,seed-01
+8.1.6,C8.1,CSA_AARM,NM,—,No verifiability grading,seed-01
+8.1.6,C8.1,EU_AI_Act,NM,—,No evidence-verifiability grading concept,seed-01
+8.1.6,C8.1,ISO_42001,NM,—,No verifiability grading,seed-01
+8.1.6,C8.1,MITRE_ATLAS,NM,—,No verifiability grading,seed-01
+8.1.6,C8.1,NIST_AI_RMF,NM,—,No evidence-verifiability grading,seed-01
+8.1.6,C8.1,NIST_SP_800_207,NM,—,No verifiability grading,seed-01
+8.1.6,C8.1,OWASP_AISVS,NM,—,No evidence-verifiability grading,seed-01
+8.1.6,C8.1,SOC_2,NM,—,No verifiability grading,seed-01
+8.1.7,C8.1,CSA_AARM,NM,—,No verifiability grading,seed-01
+8.1.7,C8.1,EU_AI_Act,NM,—,No evidence-verifiability grading concept,seed-01
+8.1.7,C8.1,ISO_42001,NM,—,No verifiability grading,seed-01
+8.1.7,C8.1,MITRE_ATLAS,NM,—,No verifiability grading,seed-01
+8.1.7,C8.1,NIST_AI_RMF,NM,—,No evidence-verifiability grading,seed-01
+8.1.7,C8.1,NIST_SP_800_207,NM,—,No verifiability grading,seed-01
+8.1.7,C8.1,OWASP_AISVS,NM,—,No evidence-verifiability grading,seed-01
+8.1.7,C8.1,SOC_2,NM,—,No verifiability grading,seed-01
+8.1.8,C8.1,CSA_AARM,NM,—,No verifiability grading,seed-01
+8.1.8,C8.1,EU_AI_Act,NM,—,No evidence-verifiability grading concept,seed-01
+8.1.8,C8.1,ISO_42001,NM,—,No verifiability grading,seed-01
+8.1.8,C8.1,MITRE_ATLAS,NM,—,No verifiability grading,seed-01
+8.1.8,C8.1,NIST_AI_RMF,NM,—,No evidence-verifiability grading,seed-01
+8.1.8,C8.1,NIST_SP_800_207,NM,—,No verifiability grading,seed-01
+8.1.8,C8.1,OWASP_AISVS,NM,—,No evidence-verifiability grading,seed-01
+8.1.8,C8.1,SOC_2,NM,—,No verifiability grading,seed-01
+8.2.1,C8.2,CSA_AARM,NM,—,No mechanism-fit rule,seed-01
+8.2.1,C8.2,EU_AI_Act,NM,—,No mechanism-to-requirement fit rule,seed-01
+8.2.1,C8.2,ISO_42001,NM,—,No mechanism-fit rule,seed-01
+8.2.1,C8.2,MITRE_ATLAS,NM,—,No mechanism-fit rule,seed-01
+8.2.1,C8.2,NIST_AI_RMF,NM,—,No mechanism-fit rule,seed-01
+8.2.1,C8.2,NIST_SP_800_207,NM,—,No mechanism-fit rule,seed-01
+8.2.1,C8.2,OWASP_AISVS,NM,—,No mechanism-fit rule,seed-01
+8.2.1,C8.2,SOC_2,NM,—,No mechanism-fit rule,seed-01
+8.2.2,C8.2,CSA_AARM,NM,—,No mechanism-fit rule,seed-01
+8.2.2,C8.2,EU_AI_Act,NM,—,No mechanism-to-requirement fit rule,seed-01
+8.2.2,C8.2,ISO_42001,NM,—,No mechanism-fit rule,seed-01
+8.2.2,C8.2,MITRE_ATLAS,NM,—,No mechanism-fit rule,seed-01
+8.2.2,C8.2,NIST_AI_RMF,NM,—,No mechanism-fit rule,seed-01
+8.2.2,C8.2,NIST_SP_800_207,NM,—,No mechanism-fit rule,seed-01
+8.2.2,C8.2,OWASP_AISVS,NM,—,No mechanism-fit rule,seed-01
+8.2.2,C8.2,SOC_2,NM,—,No mechanism-fit rule,seed-01
+8.3.1,C8.3,CSA_AARM,NM,—,No self-enforcement concept,seed-01
+8.3.1,C8.3,EU_AI_Act,NM,—,No self-enforcing execution concept,seed-01
+8.3.1,C8.3,ISO_42001,NM,—,No self-enforcement concept,seed-01
+8.3.1,C8.3,MITRE_ATLAS,NM,—,No self-enforcement concept,seed-01
+8.3.1,C8.3,NIST_AI_RMF,NM,—,No self-enforcing execution concept,seed-01
+8.3.1,C8.3,NIST_SP_800_207,NM,—,No self-enforcement concept,seed-01
+8.3.1,C8.3,OWASP_AISVS,NM,—,No self-enforcement concept,seed-01
+8.3.1,C8.3,SOC_2,NM,—,No self-enforcement concept,seed-01
+8.3.2,C8.3,CSA_AARM,NM,—,No self-enforcement concept,seed-01
+8.3.2,C8.3,EU_AI_Act,NM,—,No self-enforcing execution concept,seed-01
+8.3.2,C8.3,ISO_42001,NM,—,No self-enforcement concept,seed-01
+8.3.2,C8.3,MITRE_ATLAS,NM,—,No self-enforcement concept,seed-01
+8.3.2,C8.3,NIST_AI_RMF,NM,—,No self-enforcing execution concept,seed-01
+8.3.2,C8.3,NIST_SP_800_207,NM,—,No self-enforcement concept,seed-01
+8.3.2,C8.3,OWASP_AISVS,NM,—,No self-enforcement concept,seed-01
+8.3.2,C8.3,SOC_2,NM,—,No self-enforcement concept,seed-01
+8.3.3,C8.3,CSA_AARM,NM,—,No self-enforcement concept,seed-01
+8.3.3,C8.3,EU_AI_Act,NM,—,No self-enforcing execution concept,seed-01
+8.3.3,C8.3,ISO_42001,NM,—,No self-enforcement concept,seed-01
+8.3.3,C8.3,MITRE_ATLAS,NM,—,No self-enforcement concept,seed-01
+8.3.3,C8.3,NIST_AI_RMF,NM,—,No self-enforcing execution concept,seed-01
+8.3.3,C8.3,NIST_SP_800_207,NM,—,No self-enforcement concept,seed-01
+8.3.3,C8.3,OWASP_AISVS,NM,—,No self-enforcement concept,seed-01
+8.3.3,C8.3,SOC_2,NM,—,No self-enforcement concept,seed-01
+8.3.4,C8.3,CSA_AARM,NM,—,No self-enforcement concept,seed-01
+8.3.4,C8.3,EU_AI_Act,NM,—,No self-enforcing execution concept,seed-01
+8.3.4,C8.3,ISO_42001,NM,—,No self-enforcement concept,seed-01
+8.3.4,C8.3,MITRE_ATLAS,NM,—,No self-enforcement concept,seed-01
+8.3.4,C8.3,NIST_AI_RMF,NM,—,No self-enforcing execution concept,seed-01
+8.3.4,C8.3,NIST_SP_800_207,NM,—,No self-enforcement concept,seed-01
+8.3.4,C8.3,OWASP_AISVS,NM,—,No self-enforcement concept,seed-01
+8.3.4,C8.3,SOC_2,NM,—,No self-enforcement concept,seed-01
+8.3.5,C8.3,CSA_AARM,NM,—,No self-enforcement concept,seed-01
+8.3.5,C8.3,EU_AI_Act,NM,—,No self-enforcing execution concept,seed-01
+8.3.5,C8.3,ISO_42001,NM,—,No self-enforcement concept,seed-01
+8.3.5,C8.3,MITRE_ATLAS,NM,—,No self-enforcement concept,seed-01
+8.3.5,C8.3,NIST_AI_RMF,NM,—,No self-enforcing execution concept,seed-01
+8.3.5,C8.3,NIST_SP_800_207,NM,—,No self-enforcement concept,seed-01
+8.3.5,C8.3,OWASP_AISVS,NM,—,No self-enforcement concept,seed-01
+8.3.5,C8.3,SOC_2,NM,—,No self-enforcement concept,seed-01
+9.1.1,C9.1,CSA_AARM,NM,—,Not addressed,seed-01
+9.1.1,C9.1,EU_AI_Act,NM,—,No system-surface location requirement,seed-01
+9.1.1,C9.1,ISO_42001,PM,Cl. 4.3,AIMS scoping requires defining system boundaries; not per-claim layer fields,seed-01
+9.1.1,C9.1,MITRE_ATLAS,NM,—,Not addressed,seed-01
+9.1.1,C9.1,NIST_AI_RMF,PM,MAP 1.1,MAP requires system context/scope mapping; not per-claim stack location,seed-01
+9.1.1,C9.1,NIST_SP_800_207,NM,—,Not addressed,seed-01
+9.1.1,C9.1,OWASP_AISVS,NM,—,No stack-location fields for claims,seed-01
+9.1.1,C9.1,SOC_2,NM,—,No stack-location requirement,seed-01
+9.1.2,C9.1,CSA_AARM,NM,—,Not addressed,seed-01
+9.1.2,C9.1,EU_AI_Act,NM,—,No system-surface location requirement,seed-01
+9.1.2,C9.1,ISO_42001,PM,Cl. 4.3,AIMS scoping requires defining system boundaries; not per-claim layer fields,seed-01
+9.1.2,C9.1,MITRE_ATLAS,NM,—,Not addressed,seed-01
+9.1.2,C9.1,NIST_AI_RMF,PM,MAP 1.1,MAP requires system context/scope mapping; not per-claim stack location,seed-01
+9.1.2,C9.1,NIST_SP_800_207,NM,—,Not addressed,seed-01
+9.1.2,C9.1,OWASP_AISVS,NM,—,No stack-location fields for claims,seed-01
+9.1.2,C9.1,SOC_2,NM,—,No stack-location requirement,seed-01
+9.1.3,C9.1,CSA_AARM,NM,—,Not addressed,seed-01
+9.1.3,C9.1,EU_AI_Act,NM,—,No system-surface location requirement,seed-01
+9.1.3,C9.1,ISO_42001,PM,Cl. 4.3,AIMS scoping requires defining system boundaries; not per-claim layer fields,seed-01
+9.1.3,C9.1,MITRE_ATLAS,NM,—,Not addressed,seed-01
+9.1.3,C9.1,NIST_AI_RMF,PM,MAP 1.1,MAP requires system context/scope mapping; not per-claim stack location,seed-01
+9.1.3,C9.1,NIST_SP_800_207,NM,—,Not addressed,seed-01
+9.1.3,C9.1,OWASP_AISVS,NM,—,No stack-location fields for claims,seed-01
+9.1.3,C9.1,SOC_2,NM,—,No stack-location requirement,seed-01
+9.2.1,C9.2,CSA_AARM,NM,—,Not addressed,seed-01
+9.2.1,C9.2,EU_AI_Act,NM,—,No per-layer evidence coverage requirement,seed-01
+9.2.1,C9.2,ISO_42001,NM,—,Layer-matched evidence not addressed,seed-01
+9.2.1,C9.2,MITRE_ATLAS,NM,—,Not addressed,seed-01
+9.2.1,C9.2,NIST_AI_RMF,NM,—,Per-layer evidence coverage not addressed,seed-01
+9.2.1,C9.2,NIST_SP_800_207,NM,—,Not addressed,seed-01
+9.2.1,C9.2,OWASP_AISVS,PM,AISVS C12,C12 expects monitoring coverage across components; not layer-matched evidence,seed-01
+9.2.1,C9.2,SOC_2,PM,CC7.2,CC7 expects logging coverage of in-scope systems; not layer-matched evidence,seed-01
+9.2.2,C9.2,CSA_AARM,NM,—,Not addressed,seed-01
+9.2.2,C9.2,EU_AI_Act,NM,—,No per-layer evidence coverage requirement,seed-01
+9.2.2,C9.2,ISO_42001,NM,—,Layer-matched evidence not addressed,seed-01
+9.2.2,C9.2,MITRE_ATLAS,NM,—,Not addressed,seed-01
+9.2.2,C9.2,NIST_AI_RMF,NM,—,Per-layer evidence coverage not addressed,seed-01
+9.2.2,C9.2,NIST_SP_800_207,NM,—,Not addressed,seed-01
+9.2.2,C9.2,OWASP_AISVS,PM,AISVS C12,C12 expects monitoring coverage across components; not layer-matched evidence,seed-01
+9.2.2,C9.2,SOC_2,PM,CC7.2,CC7 expects logging coverage of in-scope systems; not layer-matched evidence,seed-01
+9.2.3,C9.2,CSA_AARM,NM,—,Not addressed,seed-01
+9.2.3,C9.2,EU_AI_Act,NM,—,No per-layer evidence coverage requirement,seed-01
+9.2.3,C9.2,ISO_42001,NM,—,Layer-matched evidence not addressed,seed-01
+9.2.3,C9.2,MITRE_ATLAS,NM,—,Not addressed,seed-01
+9.2.3,C9.2,NIST_AI_RMF,NM,—,Per-layer evidence coverage not addressed,seed-01
+9.2.3,C9.2,NIST_SP_800_207,NM,—,Not addressed,seed-01
+9.2.3,C9.2,OWASP_AISVS,PM,AISVS C12,C12 expects monitoring coverage across components; not layer-matched evidence,seed-01
+9.2.3,C9.2,SOC_2,PM,CC7.2,CC7 expects logging coverage of in-scope systems; not layer-matched evidence,seed-01
+10.1.1,C10.1,CSA_AARM,PM,CSA conformance regime,CSA conformance regime with independent review partially parallels claim requirements,seed-01
+10.1.1,C10.1,EU_AI_Act,PM,"Art. 43; Art. 47; Annex V, point 7",The Act provides conformity-assessment routes and an EU declaration; Annex V identifies a notified body and certificate only where applicable. It does not require one of Proof-of-Control's three named stages or identify a continuous-monitoring regime in the statement.,codex-review-01
+10.1.1,C10.1,ISO_42001,PM,Cl. 4.3; Cl. 6.1.3 d),"Scope and the statement of applicability provide partial management-system conformance documentation, but do not require Proof-of-Control’s three claim stages or identification of an assessor/monitoring regime.",codex-review-01
+10.1.1,C10.1,MITRE_ATLAS,NM,—,No conformance regime,seed-01
+10.1.1,C10.1,NIST_AI_RMF,PM,GOVERN 4.2,GOVERN transparency artifacts and RMF profiles resemble scoped claims; no standardized statement,seed-01
+10.1.1,C10.1,NIST_SP_800_207,NM,—,No conformance-claim regime,seed-01
+10.1.1,C10.1,OWASP_AISVS,NM,—,Verification levels exist but no conformance-statement regime,seed-01
+10.1.1,C10.1,SOC_2,PM,Management assertion; SOC 2 system description,"A SOC 2 engagement includes management's assertion and a scoped system description, but does not require the claim to declare one of Proof-of-Control's stages or name a continuous-monitoring regime.",codex-review-01
+10.1.2,C10.1,CSA_AARM,PM,CSA conformance regime,CSA conformance regime with independent review partially parallels claim requirements,seed-01
+10.1.2,C10.1,EU_AI_Act,NM,—,No AI Act provision requires a declaration to list Proof-of-Control domains C1–C6 or prohibits unlisted domains from appearing in Proof-of-Control marketing.,codex-review-01
+10.1.2,C10.1,ISO_42001,PM,Cl. 4.3; Cl. 6.1.3 d),"The statement of applicability identifies applicable controls, but it does not require Proof-of-Control C1–C6 domain listings or restrict all marketing claims for omitted domains.",codex-review-01
+10.1.2,C10.1,MITRE_ATLAS,NM,—,No conformance regime,seed-01
+10.1.2,C10.1,NIST_AI_RMF,PM,GOVERN 4.2,GOVERN transparency artifacts and RMF profiles resemble scoped claims; no standardized statement,seed-01
+10.1.2,C10.1,NIST_SP_800_207,NM,—,No conformance-claim regime,seed-01
+10.1.2,C10.1,OWASP_AISVS,NM,—,Verification levels exist but no conformance-statement regime,seed-01
+10.1.2,C10.1,SOC_2,PM,SOC 2 system description,"A system description identifies the system and scoped services, but it does not require a closed list of Proof-of-Control C1–C6 domains or prohibit unlisted domains from product marketing.",codex-review-01
+10.1.3,C10.1,CSA_AARM,PM,CSA conformance regime,CSA conformance regime with independent review partially parallels claim requirements,seed-01
+10.1.3,C10.1,EU_AI_Act,NM,—,The Act does not require every asserted fact in an EU declaration to resolve to a claim-register evidence stream.,codex-review-01
+10.1.3,C10.1,ISO_42001,NM,—,ISO/IEC 42001 does not require every published verifiable fact to resolve to an evidence stream in a claim register.,codex-review-01
+10.1.3,C10.1,MITRE_ATLAS,NM,—,No conformance regime,seed-01
+10.1.3,C10.1,NIST_AI_RMF,PM,GOVERN 4.2,GOVERN transparency artifacts and RMF profiles resemble scoped claims; no standardized statement,seed-01
+10.1.3,C10.1,NIST_SP_800_207,NM,—,No conformance-claim regime,seed-01
+10.1.3,C10.1,OWASP_AISVS,NM,—,Verification levels exist but no conformance-statement regime,seed-01
+10.1.3,C10.1,SOC_2,PM,Management assertion; SOC 2 examination evidence,"Management assertions and auditor procedures concern support for the report, but SOC 2 does not require every asserted fact to resolve to a named evidence stream in a claim register.",codex-review-01
+10.1.4,C10.1,CSA_AARM,PM,CSA conformance regime,CSA conformance regime with independent review partially parallels claim requirements,seed-01
+10.1.4,C10.1,EU_AI_Act,PM,Art. 47; Annex V; Art. 11 and Annex IV,"Annex V requires system identification and declaration metadata, while technical documentation contains substantial system information. Neither requires Proof-of-Control domains, per-claim evidence properties/tier, mechanisms for each claim, or trust-assumption disclosure in the statement.",codex-review-01
+10.1.4,C10.1,ISO_42001,PM,Cl. 4.3; Cl. 6.1.3 d),"ISO/IEC 42001 scope and applicability documentation partially address system boundary and controls, but not Proof-of-Control tiers, mechanisms, evidence properties, or trust-assumption disclosures.",codex-review-01
+10.1.4,C10.1,MITRE_ATLAS,NM,—,No conformance regime,seed-01
+10.1.4,C10.1,NIST_AI_RMF,PM,GOVERN 4.2,GOVERN transparency artifacts and RMF profiles resemble scoped claims; no standardized statement,seed-01
+10.1.4,C10.1,NIST_SP_800_207,NM,—,No conformance-claim regime,seed-01
+10.1.4,C10.1,OWASP_AISVS,NM,—,Verification levels exist but no conformance-statement regime,seed-01
+10.1.4,C10.1,SOC_2,PM,SOC 2 system description,"The system description covers identification, boundaries, components, and certain system information. It does not require Proof-of-Control domains, per-claim evidence properties, tiers, mechanisms, or a trust-assumption disclosure.",codex-review-01
+10.1.5,C10.1,CSA_AARM,PM,CSA conformance regime,CSA conformance regime with independent review partially parallels claim requirements,seed-01
+10.1.5,C10.1,EU_AI_Act,PM,"Art. 47; Annex V, point 8","Annex V requires place and date of issue and signature metadata, but does not require citation of the exact version of the external Proof-of-Control standard.",codex-review-01
+10.1.5,C10.1,ISO_42001,PM,Cl. 7.5.2; Cl. 7.5.3,"Documented information is identified and controlled, but ISO/IEC 42001 does not require a public conformance statement to cite the exact version of Proof-of-Control or its claim date.",codex-review-01
+10.1.5,C10.1,MITRE_ATLAS,NM,—,No conformance regime,seed-01
+10.1.5,C10.1,NIST_AI_RMF,PM,GOVERN 4.2,GOVERN transparency artifacts and RMF profiles resemble scoped claims; no standardized statement,seed-01
+10.1.5,C10.1,NIST_SP_800_207,NM,—,No conformance-claim regime,seed-01
+10.1.5,C10.1,OWASP_AISVS,NM,—,Verification levels exist but no conformance-statement regime,seed-01
+10.1.5,C10.1,SOC_2,PM,Management assertion; SOC 2 report period/date,"SOC 2 reports and assertions identify a date or period, but do not require citation of the exact version of a conformance standard.",codex-review-01
+10.1.6,C10.1,CSA_AARM,PM,CSA conformance regime,CSA conformance regime with independent review partially parallels claim requirements,seed-01
+10.1.6,C10.1,EU_AI_Act,PM,"Art. 11; Annex IV, sections 1–2","Technical documentation addresses intended purpose and system design/context, but it does not require a conformance statement to enumerate action classes excluded from scope and give a rationale for each exclusion.",codex-review-01
+10.1.6,C10.1,ISO_42001,PM,Cl. 4.3,"The AIMS scope is relevant to defining organizational boundaries, but it does not require enumerated agent-action classes, exclusions, and a rationale for each exclusion.",codex-review-01
+10.1.6,C10.1,MITRE_ATLAS,NM,—,No conformance regime,seed-01
+10.1.6,C10.1,NIST_AI_RMF,PM,GOVERN 4.2,GOVERN transparency artifacts and RMF profiles resemble scoped claims; no standardized statement,seed-01
+10.1.6,C10.1,NIST_SP_800_207,NM,—,No conformance-claim regime,seed-01
+10.1.6,C10.1,OWASP_AISVS,NM,—,Verification levels exist but no conformance-statement regime,seed-01
+10.1.6,C10.1,SOC_2,PM,SOC 2 system description,"System boundaries and components are central to the system description, but SOC 2 does not require classes of agent actions or an enumerated, reasoned list of excluded action classes.",codex-review-01
+10.1.7,C10.1,CSA_AARM,PM,CSA conformance regime,CSA conformance regime with independent review partially parallels claim requirements,seed-01
+10.1.7,C10.1,EU_AI_Act,PM,Art. 47(1),"The EU declaration is required to be machine-readable, but the Act does not require a public comparison schema, publication for insurers/assessors, or machine-readable per-claim data.",codex-review-01
+10.1.7,C10.1,ISO_42001,NM,—,"ISO/IEC 42001 documented-information controls do not require public, machine-readable conformance claims or a published schema.",codex-review-01
+10.1.7,C10.1,MITRE_ATLAS,NM,—,No conformance regime,seed-01
+10.1.7,C10.1,NIST_AI_RMF,PM,GOVERN 4.2,GOVERN transparency artifacts and RMF profiles resemble scoped claims; no standardized statement,seed-01
+10.1.7,C10.1,NIST_SP_800_207,NM,—,No conformance-claim regime,seed-01
+10.1.7,C10.1,OWASP_AISVS,NM,—,Verification levels exist but no conformance-statement regime,seed-01
+10.1.7,C10.1,SOC_2,NM,—,SOC 2 does not require that the statement or per-claim data be publicly published in a documented machine-readable schema or be programmatically comparable across implementations.,codex-review-01
+10.1.8,C10.1,CSA_AARM,PM,CSA conformance regime,CSA conformance regime with independent review partially parallels claim requirements,seed-01
+10.1.8,C10.1,EU_AI_Act,NM,—,The Act does not require automated operational discovery to reconcile a declared inventory or require shadow agent deployments to become recorded findings.,codex-review-01
+10.1.8,C10.1,ISO_42001,NM,—,ISO/IEC 42001 does not require automated inventory discovery reconciliation or recording undeclared agent deployments as shadow-system findings.,codex-review-01
+10.1.8,C10.1,MITRE_ATLAS,NM,—,No conformance regime,seed-01
+10.1.8,C10.1,NIST_AI_RMF,PM,GOVERN 4.2,GOVERN transparency artifacts and RMF profiles resemble scoped claims; no standardized statement,seed-01
+10.1.8,C10.1,NIST_SP_800_207,NM,—,No conformance-claim regime,seed-01
+10.1.8,C10.1,OWASP_AISVS,NM,—,Verification levels exist but no conformance-statement regime,seed-01
+10.1.8,C10.1,SOC_2,PM,CC7.2; CC8.1,"Monitoring and change-management controls are partial analogs to discovering and managing operational systems. They do not require scheduled reconciliation of declared inventory against automated discovery, nor recorded shadow-agent findings.",codex-review-01
+10.2.1,C10.2,CSA_AARM,NM,—,No trust-assumption disclosure,seed-01
+10.2.1,C10.2,EU_AI_Act,PM,Art. 13,Art 13 requires disclosing limitations and residual risks to deployers; not categorized trust assumptions,seed-01
+10.2.1,C10.2,ISO_42001,PM,Cl. 6.1; Statement of Applicability,Statement of applicability and risk treatment disclose residuals; not categorized trust assumptions,seed-01
+10.2.1,C10.2,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.2.1,C10.2,NIST_AI_RMF,PM,MANAGE 1.4,MANAGE requires documenting residual risk; not categorized trust assumptions,seed-01
+10.2.1,C10.2,NIST_SP_800_207,NM,—,Not addressed,seed-01
+10.2.1,C10.2,OWASP_AISVS,NM,—,No trust-assumption disclosure,seed-01
+10.2.1,C10.2,SOC_2,PM,Subservice organizations & CUECs,Subservice-organization and complementary-control disclosures are a partial analog to trust-assumption disclosure,seed-01
+10.2.2,C10.2,CSA_AARM,NM,—,No trust-assumption disclosure,seed-01
+10.2.2,C10.2,EU_AI_Act,PM,Art. 13,Art 13 requires disclosing limitations and residual risks to deployers; not categorized trust assumptions,seed-01
+10.2.2,C10.2,ISO_42001,PM,Cl. 6.1; Statement of Applicability,Statement of applicability and risk treatment disclose residuals; not categorized trust assumptions,seed-01
+10.2.2,C10.2,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.2.2,C10.2,NIST_AI_RMF,PM,MANAGE 1.4,MANAGE requires documenting residual risk; not categorized trust assumptions,seed-01
+10.2.2,C10.2,NIST_SP_800_207,NM,—,Not addressed,seed-01
+10.2.2,C10.2,OWASP_AISVS,NM,—,No trust-assumption disclosure,seed-01
+10.2.2,C10.2,SOC_2,PM,Subservice organizations & CUECs,Subservice-organization and complementary-control disclosures are a partial analog to trust-assumption disclosure,seed-01
+10.3.1,C10.3,CSA_AARM,PM,Continuous runtime enforcement,Continuous runtime enforcement aligns with continuous-operation intent,seed-01
+10.3.1,C10.3,EU_AI_Act,PM,Art. 72,Art 72 post-market monitoring requires ongoing surveillance; not per-action evidence validation,seed-01
+10.3.1,C10.3,ISO_42001,PM,Cl. 9.2–9.3; Cl. 10,Internal audit and continual improvement provide ongoing checking; not per-action validation,seed-01
+10.3.1,C10.3,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.3.1,C10.3,NIST_AI_RMF,PM,MANAGE 4.1,MANAGE continuous monitoring aligns in intent; per-action near-real-time validation not specified,seed-01
+10.3.1,C10.3,NIST_SP_800_207,PM,Tenet 7; CDM integration,Continuous diagnostics and mitigation align with continuous-operation intent,seed-01
+10.3.1,C10.3,OWASP_AISVS,PM,AISVS C12,C12 continuous monitoring aligns in intent; not tier-validated per-action evidence,seed-01
+10.3.1,C10.3,SOC_2,PM,Type II operating-effectiveness period,Type II covers a period with operating effectiveness; not per-action near-real-time validation,seed-01
+10.3.2,C10.3,CSA_AARM,PM,Continuous runtime enforcement,Continuous runtime enforcement aligns with continuous-operation intent,seed-01
+10.3.2,C10.3,EU_AI_Act,PM,Art. 72,Art 72 post-market monitoring requires ongoing surveillance; not per-action evidence validation,seed-01
+10.3.2,C10.3,ISO_42001,PM,Cl. 9.2–9.3; Cl. 10,Internal audit and continual improvement provide ongoing checking; not per-action validation,seed-01
+10.3.2,C10.3,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.3.2,C10.3,NIST_AI_RMF,PM,MANAGE 4.1,MANAGE continuous monitoring aligns in intent; per-action near-real-time validation not specified,seed-01
+10.3.2,C10.3,NIST_SP_800_207,PM,Tenet 7; CDM integration,Continuous diagnostics and mitigation align with continuous-operation intent,seed-01
+10.3.2,C10.3,OWASP_AISVS,PM,AISVS C12,C12 continuous monitoring aligns in intent; not tier-validated per-action evidence,seed-01
+10.3.2,C10.3,SOC_2,PM,Type II operating-effectiveness period,Type II covers a period with operating effectiveness; not per-action near-real-time validation,seed-01
+10.3.3,C10.3,CSA_AARM,PM,Continuous runtime enforcement,Continuous runtime enforcement aligns with continuous-operation intent,seed-01
+10.3.3,C10.3,EU_AI_Act,PM,Art. 72,Art 72 post-market monitoring requires ongoing surveillance; not per-action evidence validation,seed-01
+10.3.3,C10.3,ISO_42001,PM,Cl. 9.2–9.3; Cl. 10,Internal audit and continual improvement provide ongoing checking; not per-action validation,seed-01
+10.3.3,C10.3,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.3.3,C10.3,NIST_AI_RMF,PM,MANAGE 4.1,MANAGE continuous monitoring aligns in intent; per-action near-real-time validation not specified,seed-01
+10.3.3,C10.3,NIST_SP_800_207,PM,Tenet 7; CDM integration,Continuous diagnostics and mitigation align with continuous-operation intent,seed-01
+10.3.3,C10.3,OWASP_AISVS,PM,AISVS C12,C12 continuous monitoring aligns in intent; not tier-validated per-action evidence,seed-01
+10.3.3,C10.3,SOC_2,PM,Type II operating-effectiveness period,Type II covers a period with operating effectiveness; not per-action near-real-time validation,seed-01
+10.3.4,C10.3,CSA_AARM,PM,Continuous runtime enforcement,Continuous runtime enforcement aligns with continuous-operation intent,seed-01
+10.3.4,C10.3,EU_AI_Act,PM,Art. 72,Art 72 post-market monitoring requires ongoing surveillance; not per-action evidence validation,seed-01
+10.3.4,C10.3,ISO_42001,PM,Cl. 9.2–9.3; Cl. 10,Internal audit and continual improvement provide ongoing checking; not per-action validation,seed-01
+10.3.4,C10.3,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.3.4,C10.3,NIST_AI_RMF,PM,MANAGE 4.1,MANAGE continuous monitoring aligns in intent; per-action near-real-time validation not specified,seed-01
+10.3.4,C10.3,NIST_SP_800_207,PM,Tenet 7; CDM integration,Continuous diagnostics and mitigation align with continuous-operation intent,seed-01
+10.3.4,C10.3,OWASP_AISVS,PM,AISVS C12,C12 continuous monitoring aligns in intent; not tier-validated per-action evidence,seed-01
+10.3.4,C10.3,SOC_2,PM,Type II operating-effectiveness period,Type II covers a period with operating effectiveness; not per-action near-real-time validation,seed-01
+10.3.5,C10.3,CSA_AARM,PM,Continuous runtime enforcement,Continuous runtime enforcement aligns with continuous-operation intent,seed-01
+10.3.5,C10.3,EU_AI_Act,PM,Art. 72,Art 72 post-market monitoring requires ongoing surveillance; not per-action evidence validation,seed-01
+10.3.5,C10.3,ISO_42001,PM,Cl. 9.2–9.3; Cl. 10,Internal audit and continual improvement provide ongoing checking; not per-action validation,seed-01
+10.3.5,C10.3,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.3.5,C10.3,NIST_AI_RMF,PM,MANAGE 4.1,MANAGE continuous monitoring aligns in intent; per-action near-real-time validation not specified,seed-01
+10.3.5,C10.3,NIST_SP_800_207,PM,Tenet 7; CDM integration,Continuous diagnostics and mitigation align with continuous-operation intent,seed-01
+10.3.5,C10.3,OWASP_AISVS,PM,AISVS C12,C12 continuous monitoring aligns in intent; not tier-validated per-action evidence,seed-01
+10.3.5,C10.3,SOC_2,PM,Type II operating-effectiveness period,Type II covers a period with operating effectiveness; not per-action near-real-time validation,seed-01
+10.3.6,C10.3,CSA_AARM,PM,Continuous runtime enforcement,Continuous runtime enforcement aligns with continuous-operation intent,seed-01
+10.3.6,C10.3,EU_AI_Act,PM,Art. 72,Art 72 post-market monitoring requires ongoing surveillance; not per-action evidence validation,seed-01
+10.3.6,C10.3,ISO_42001,PM,Cl. 9.2–9.3; Cl. 10,Internal audit and continual improvement provide ongoing checking; not per-action validation,seed-01
+10.3.6,C10.3,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.3.6,C10.3,NIST_AI_RMF,PM,MANAGE 4.1,MANAGE continuous monitoring aligns in intent; per-action near-real-time validation not specified,seed-01
+10.3.6,C10.3,NIST_SP_800_207,PM,Tenet 7; CDM integration,Continuous diagnostics and mitigation align with continuous-operation intent,seed-01
+10.3.6,C10.3,OWASP_AISVS,PM,AISVS C12,C12 continuous monitoring aligns in intent; not tier-validated per-action evidence,seed-01
+10.3.6,C10.3,SOC_2,PM,Type II operating-effectiveness period,Type II covers a period with operating effectiveness; not per-action near-real-time validation,seed-01
+10.3.7,C10.3,CSA_AARM,PM,Continuous runtime enforcement,Continuous runtime enforcement aligns with continuous-operation intent,seed-01
+10.3.7,C10.3,EU_AI_Act,PM,Art. 72,Art 72 post-market monitoring requires ongoing surveillance; not per-action evidence validation,seed-01
+10.3.7,C10.3,ISO_42001,PM,Cl. 9.2–9.3; Cl. 10,Internal audit and continual improvement provide ongoing checking; not per-action validation,seed-01
+10.3.7,C10.3,MITRE_ATLAS,NM,—,Not addressed,seed-01
+10.3.7,C10.3,NIST_AI_RMF,PM,MANAGE 4.1,MANAGE continuous monitoring aligns in intent; per-action near-real-time validation not specified,seed-01
+10.3.7,C10.3,NIST_SP_800_207,PM,Tenet 7; CDM integration,Continuous diagnostics and mitigation align with continuous-operation intent,seed-01
+10.3.7,C10.3,OWASP_AISVS,PM,AISVS C12,C12 continuous monitoring aligns in intent; not tier-validated per-action evidence,seed-01
+10.3.7,C10.3,SOC_2,PM,Type II operating-effectiveness period,Type II covers a period with operating effectiveness; not per-action near-real-time validation,seed-01

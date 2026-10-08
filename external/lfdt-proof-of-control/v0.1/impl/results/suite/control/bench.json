@@ -1,0 +1,124 @@
+{
+  "environment": {
+    "platform": "Linux-6.17.0-1022-gcp-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "note": "latencies exclude TEE transition costs; the attesting environment is modelled in-process"
+  },
+  "b1_latency": {
+    "components": [
+      {
+        "component": "canonicalization + digest",
+        "n": 5000,
+        "mean_us": 6.3,
+        "median_us": 6.17,
+        "p95_us": 6.82,
+        "p99_us": 10.71,
+        "max_us": 17.41
+      },
+      {
+        "component": "policy evaluation",
+        "n": 5000,
+        "mean_us": 0.89,
+        "median_us": 0.86,
+        "p95_us": 1.12,
+        "p99_us": 1.21,
+        "max_us": 12.12
+      },
+      {
+        "component": "Ed25519 signing",
+        "n": 5000,
+        "mean_us": 36.26,
+        "median_us": 35.83,
+        "p95_us": 40.04,
+        "p99_us": 41.96,
+        "max_us": 68.04
+      },
+      {
+        "component": "chain append",
+        "n": 5000,
+        "mean_us": 1.23,
+        "median_us": 1.07,
+        "p95_us": 2.02,
+        "p99_us": 2.98,
+        "max_us": 17.46
+      },
+      {
+        "component": "end-to-end gateway step",
+        "n": 5000,
+        "mean_us": 152.31,
+        "median_us": 150.71,
+        "p95_us": 160.81,
+        "p99_us": 168.95,
+        "max_us": 956.01
+      }
+    ],
+    "throughput_steps_per_s": 6565
+  },
+  "b2_scaling": [
+    {
+      "path_length": 10,
+      "bounded_summary_us": 0.356,
+      "naive_full_path_us": 11.77
+    },
+    {
+      "path_length": 50,
+      "bounded_summary_us": 0.36,
+      "naive_full_path_us": 59.011
+    },
+    {
+      "path_length": 100,
+      "bounded_summary_us": 0.353,
+      "naive_full_path_us": 120.931
+    },
+    {
+      "path_length": 500,
+      "bounded_summary_us": 0.356,
+      "naive_full_path_us": 618.683
+    },
+    {
+      "path_length": 1000,
+      "bounded_summary_us": 0.353,
+      "naive_full_path_us": 1241.966
+    },
+    {
+      "path_length": 5000,
+      "bounded_summary_us": 0.356,
+      "naive_full_path_us": 6161.414
+    }
+  ],
+  "b3_verification": [
+    {
+      "records": 100,
+      "verify_ms": 13.2,
+      "per_record_us": 131.99
+    },
+    {
+      "records": 1000,
+      "verify_ms": 131.24,
+      "per_record_us": 131.24
+    },
+    {
+      "records": 5000,
+      "verify_ms": 655.3,
+      "per_record_us": 131.06
+    }
+  ],
+  "b4_utility": {
+    "no_declassification": {
+      "benign_sequences": 1373,
+      "benign_refused": 579,
+      "false_rejection_rate": 0.4217,
+      "malicious_sequences": 627,
+      "malicious_blocked": 468,
+      "detection_rate": 0.7464
+    },
+    "with_declassification": {
+      "benign_sequences": 1407,
+      "benign_refused": 0,
+      "false_rejection_rate": 0.0,
+      "malicious_sequences": 593,
+      "malicious_blocked": 426,
+      "detection_rate": 0.7184
+    }
+  }
+}

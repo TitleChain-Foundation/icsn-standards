@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a26"/><stop offset="1" stop-color="#22211e"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#c6f500"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3608"/><stop offset="1" stop-color="#1e2704"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#361417"/><stop offset="1" stop-color="#280f12"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222222"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#cfff04" flood-opacity="0.55"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="427" rx="20" fill="url(#gPanel)" stroke="#2c2c2c" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="427" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#cfff04">EVIDENCE GENERATION — C7</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#f0edea">No side effect without evidence</text>
+<rect x="34" y="120" width="200" height="100" rx="14" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(54,134) scale(0.8)" fill="none" stroke="#d4cfc7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 L6 13.5 H11 L10 21 L18 10 H13 Z"/></g>
+<text x="84" y="152" font-size="15.5" fill="#d4cfc7" text-anchor="start" font-weight="700">Agent</text>
+<text x="54" y="182" font-size="12" fill="#d4cfc7" text-anchor="start">plans an action</text>
+<rect x="330" y="100" width="250" height="140" rx="14" fill="url(#gGate)" stroke="#cfff04" stroke-width="1.5" filter="url(#fGlow)"/>
+<g transform="translate(344,114) scale(0.85)" fill="none" stroke="#e3ff66" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/><path d="M9 12 L11.4 14.4 L15.6 9.6"/></g>
+<text x="374" y="132" font-size="15.5" fill="#e3ff66" text-anchor="start" font-weight="700">Action Interception</text>
+<text x="374" y="151" font-size="15.5" fill="#e3ff66" text-anchor="start" font-weight="700">Gateway</text>
+<text x="344" y="182" font-size="11.5" fill="#e3ff66" text-anchor="start" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">out-of-band · C7.1</text>
+<text x="344" y="205" font-size="11.5" fill="#e3ff66" text-anchor="start">evidence written before the</text>
+<text x="344" y="221" font-size="11.5" fill="#e3ff66" text-anchor="start">action is released</text>
+<rect x="790" y="120" width="160" height="100" rx="14" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="810" y="152" font-size="15" fill="#d4cfc7" text-anchor="start" font-weight="700">Tool / effect</text>
+<text x="810" y="176" font-size="12" fill="#d4cfc7" text-anchor="start">executes</text>
+<rect x="330" y="290" width="250" height="106" rx="14" fill="url(#gLime)" stroke="#e3ff66" stroke-width="1.5" filter="url(#fGlow)"/>
+<g transform="translate(344,302) scale(0.8)" fill="none" stroke="#131800" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 H14 L18 7.5 V20.5 H7 Z"/><path d="M14 3.5 V7.5 H18"/><path d="M9.5 12 H15.5 M9.5 15 H15.5 M9.5 18 H13"/></g>
+<text x="374" y="320" font-size="15.5" fill="#131800" text-anchor="start" font-weight="700">Evidence</text>
+<text x="344" y="348" font-size="11.5" fill="#131800" text-anchor="start">binary · contemporaneous</text>
+<text x="344" y="364" font-size="11.5" fill="#131800" text-anchor="start">tamper-evident · transparent</text>
+<rect x="700" y="290" width="300" height="106" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(716,302) scale(0.8)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 C6 7 18 7 21 12 C18 17 6 17 3 12 Z"/><path d="M12 12 m-2.4 0 a2.4 2.4 0 1 0 4.8 0 a2.4 2.4 0 1 0 -4.8 0"/></g>
+<text x="746" y="320" font-size="15" fill="#f0edea" text-anchor="start" font-weight="700">Any verifier</text>
+<text x="716" y="348" font-size="11.5" fill="#9d978e" text-anchor="start">auditor · insurer · regulator</text>
+<text x="716" y="364" font-size="11.5" fill="#9d978e" text-anchor="start">no privileged access</text>
+<line x1="240" y1="170" x2="322" y2="170" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="323,170 313,164.5 313,175.5" fill="#8d877e"/>
+<text x="281" y="158" font-size="11" fill="#9d978e" text-anchor="middle">action</text>
+<line x1="586" y1="152" x2="782" y2="152" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="783,152 773,146.5 773,157.5" fill="#8d877e"/>
+<text x="684" y="140" font-size="11" fill="#9d978e" text-anchor="middle">authorized</text>
+<path d="M784 194 Q 687.0 220.0 590 194" fill="none" stroke="#8d877e" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<polygon points="587,194 598,188.5 598,199.5" fill="#8d877e"/>
+<text x="688" y="236" font-size="11" fill="#9d978e" text-anchor="middle">result</text>
+<line x1="455" y1="246" x2="455" y2="282" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="455,283 449.5,273 460.5,273" fill="#8d877e"/>
+<text x="475" y="258" font-size="11" fill="#9d978e" text-anchor="start">before · during · after</text>
+<text x="475" y="274" font-size="11" fill="#ff6568" text-anchor="start">out of scope: rejected + evidenced</text>
+<line x1="586" y1="343" x2="694" y2="343" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="695,343 685,337.5 685,348.5" fill="#8d877e"/>
+</svg>

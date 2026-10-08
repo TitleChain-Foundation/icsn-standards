@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a26"/><stop offset="1" stop-color="#22211e"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#c6f500"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3608"/><stop offset="1" stop-color="#1e2704"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#361417"/><stop offset="1" stop-color="#280f12"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222222"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#cfff04" flood-opacity="0.55"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1117" height="427" rx="20" fill="url(#gPanel)" stroke="#2c2c2c" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1117" height="427" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#cfff04">THE STANDARD AT A GLANCE</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#f0edea">From six domains to a checkable claim</text>
+<rect x="34" y="96" width="250" height="262" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="159" y="124" font-size="11" fill="#9d978e" text-anchor="middle" font-weight="700" letter-spacing="1.5">WHAT — C1–C6</text>
+<g transform="translate(52,138) scale(0.78)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5 L14.5 9.5"/><path d="M12.5 7 L14.5 5 A3.5 3.5 0 0 1 19.5 10 L17.5 12"/><path d="M11.5 17 L9.5 19 A3.5 3.5 0 0 1 4.5 14 L6.5 12"/></g>
+<text x="78" y="152" font-size="13" fill="#f0edea" text-anchor="start" font-weight="700">Provenance</text>
+<g transform="translate(52,174) scale(0.78)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 C6 7 18 7 21 12 C18 17 6 17 3 12 Z"/><path d="M12 12 m-2.4 0 a2.4 2.4 0 1 0 4.8 0 a2.4 2.4 0 1 0 -4.8 0"/></g>
+<text x="78" y="188" font-size="13" fill="#f0edea" text-anchor="start" font-weight="700">Privacy</text>
+<g transform="translate(52,210) scale(0.78)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12 m-8.5 0 a8.5 8.5 0 1 0 17 0 a8.5 8.5 0 1 0 -17 0"/><path d="M12 3.5 C8.6 8 8.6 16 12 20.5 C15.4 16 15.4 8 12 3.5 M3.5 12 H20.5"/></g>
+<text x="78" y="224" font-size="13" fill="#f0edea" text-anchor="start" font-weight="700">Portability</text>
+<g transform="translate(52,246) scale(0.78)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 11 H18 V20 H6 Z"/><path d="M8.5 11 V8 A3.5 3.5 0 0 1 15.5 8 V11"/></g>
+<text x="78" y="260" font-size="13" fill="#f0edea" text-anchor="start" font-weight="700">Authorization</text>
+<g transform="translate(52,282) scale(0.78)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8 m-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0"/><path d="M5.5 20 C5.5 15.8 8.4 13.8 12 13.8 C15.6 13.8 18.5 15.8 18.5 20"/></g>
+<text x="78" y="296" font-size="13" fill="#f0edea" text-anchor="start" font-weight="700">Identity</text>
+<g transform="translate(52,318) scale(0.78)" fill="none" stroke="#cfff04" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 6 V12 C20 17 16.5 20 12 21.5 C7.5 20 4 17 4 12 V6 Z"/><path d="M9 12 L11.4 14.4 L15.6 9.6"/></g>
+<text x="78" y="332" font-size="13" fill="#f0edea" text-anchor="start" font-weight="700">Security</text>
+<rect x="330" y="128" width="230" height="176" rx="14" fill="url(#gGate)" stroke="#cfff04" stroke-width="1.5" filter="url(#fGlow)"/>
+<g transform="translate(430,142) scale(1.0)" fill="none" stroke="#e3ff66" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 L6 13.5 H11 L10 21 L18 10 H13 Z"/></g>
+<text x="445" y="188" font-size="10.5" fill="#e3ff66" text-anchor="middle" font-weight="700" letter-spacing="1.5">HOW — C7</text>
+<text x="445" y="210" font-size="15.5" fill="#e3ff66" text-anchor="middle" font-weight="700">Action Interception</text>
+<text x="445" y="229" font-size="15.5" fill="#e3ff66" text-anchor="middle" font-weight="700">Gateway</text>
+<text x="445" y="255" font-size="11" fill="#e3ff66" text-anchor="middle">binary · contemporaneous</text>
+<text x="445" y="271" font-size="11" fill="#e3ff66" text-anchor="middle">tamper-evident · transparent</text>
+<rect x="606" y="128" width="210" height="176" rx="14" fill="url(#gTint)" stroke="#a5c614" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(700,142) scale(1.0)" fill="none" stroke="#dfff5e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17 A8.6 8.6 0 1 1 20 17"/><path d="M12 15.5 L16.2 9"/></g>
+<text x="711" y="188" font-size="10.5" fill="#dfff5e" text-anchor="middle" font-weight="700" letter-spacing="1.5">HOW MUCH — C8</text>
+<text x="711" y="210" font-size="15.5" fill="#dfff5e" text-anchor="middle" font-weight="700">Verifiability</text>
+<text x="711" y="229" font-size="15.5" fill="#dfff5e" text-anchor="middle" font-weight="700">Tiers 1–4</text>
+<text x="711" y="255" font-size="11" fill="#dfff5e" text-anchor="middle">binary threshold</text>
+<text x="711" y="271" font-size="11" fill="#dfff5e" text-anchor="middle">at Tier 3</text>
+<rect x="862" y="128" width="224" height="176" rx="14" fill="url(#gLime)" stroke="#e3ff66" stroke-width="1.5" filter="url(#fShadow)"/>
+<g transform="translate(962,142) scale(1.0)" fill="none" stroke="#131800" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 H14 L18 7.5 V20.5 H7 Z"/><path d="M14 3.5 V7.5 H18"/><path d="M9.5 12 H15.5 M9.5 15 H15.5 M9.5 18 H13"/></g>
+<text x="974" y="188" font-size="10.5" fill="#131800" text-anchor="middle" font-weight="700" letter-spacing="1.5">CHECKED — C10</text>
+<text x="974" y="211" font-size="13" fill="#131800" text-anchor="middle" font-weight="700">Self-Declared</text>
+<text x="974" y="233" font-size="13" fill="#131800" text-anchor="middle" font-weight="700">Third-Party Assessed</text>
+<text x="974" y="255" font-size="13" fill="#131800" text-anchor="middle" font-weight="700">Continuously</text>
+<text x="974" y="273" font-size="13" fill="#131800" text-anchor="middle" font-weight="700">Monitored</text>
+<line x1="290" y1="216" x2="324" y2="216" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="325,216 315,210.5 315,221.5" fill="#8d877e"/>
+<line x1="566" y1="216" x2="600" y2="216" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="601,216 591,210.5 591,221.5" fill="#8d877e"/>
+<line x1="822" y1="216" x2="856" y2="216" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="857,216 847,210.5 847,221.5" fill="#8d877e"/>
+<rect x="330" y="334" width="756" height="40" rx="14" fill="url(#gWarm)" stroke="#5c5850" stroke-width="1.5"/>
+<text x="708" y="359" font-size="12" fill="#d4cfc7" text-anchor="middle" font-weight="700">WHERE — C9 · every claim locates its evidence on MAESTRO Layers 1–7</text>
+<line x1="445" y1="310" x2="445" y2="328" stroke="#8d877e" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<polygon points="445,329 439.5,319 450.5,319" fill="#8d877e"/>
+<line x1="711" y1="310" x2="711" y2="328" stroke="#8d877e" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<polygon points="711,329 705.5,319 716.5,319" fill="#8d877e"/>
+<line x1="974" y1="310" x2="974" y2="328" stroke="#8d877e" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<polygon points="974,329 968.5,319 979.5,319" fill="#8d877e"/>
+<text x="560.0" y="406" font-size="12.5" fill="#9d978e" text-anchor="middle">a claim = domains × evidence × tier × stage — checkable by anyone</text>
+</svg>

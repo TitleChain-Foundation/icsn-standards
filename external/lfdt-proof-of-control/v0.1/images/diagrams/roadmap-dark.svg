@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="440" viewBox="0 0 1180 440" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a26"/><stop offset="1" stop-color="#22211e"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#c6f500"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3608"/><stop offset="1" stop-color="#1e2704"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#361417"/><stop offset="1" stop-color="#280f12"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222222"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#cfff04" flood-opacity="0.55"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1177" height="437" rx="20" fill="url(#gPanel)" stroke="#2c2c2c" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1177" height="437" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#cfff04">IMPLEMENTATION ROADMAP</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#f0edea">Three phases, twenty-four months, three conformance stages</text>
+<defs><linearGradient id="gTime" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6a665f"/><stop offset="1" stop-color="#cfff04"/></linearGradient></defs><rect x="48" y="118" width="1084" height="5" rx="2.5" fill="url(#gTime)"/>
+<circle cx="48" cy="120" r="5" fill="#9d978e"/>
+<text x="48" y="102" font-size="10.5" fill="#9d978e" text-anchor="middle">M1</text>
+<circle cx="406" cy="120" r="5" fill="#9d978e"/>
+<text x="406" y="102" font-size="10.5" fill="#9d978e" text-anchor="middle">M6</text>
+<circle cx="778" cy="120" r="5" fill="#9d978e"/>
+<text x="778" y="102" font-size="10.5" fill="#9d978e" text-anchor="middle">M12</text>
+<circle cx="1132" cy="120" r="5" fill="#9d978e"/>
+<text x="1132" y="102" font-size="10.5" fill="#9d978e" text-anchor="middle">M24</text>
+<rect x="48" y="148" width="340" height="196" rx="14" fill="url(#gCard)" stroke="#454545" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="74" y="180" font-size="10.5" fill="#f0edea" text-anchor="start" font-weight="700" letter-spacing="1.4">PHASE 1 · MONTHS 1–6</text>
+<text x="74" y="206" font-size="16" fill="#f0edea" text-anchor="start" font-weight="700">Foundational infrastructure</text>
+<text x="74" y="232" font-size="11.5" fill="#f0edea" text-anchor="start">HSM key management and signing</text>
+<text x="74" y="251" font-size="11.5" fill="#f0edea" text-anchor="start">provenance signing · tamper-evident logs</text>
+<text x="74" y="270" font-size="11.5" fill="#f0edea" text-anchor="start">TEE runtime attestation</text>
+<rect x="72" y="296" width="292" height="30" rx="15" fill="url(#gInk)" stroke="#cfff04" stroke-width="1.5"/>
+<text x="218.0" y="315" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="700" letter-spacing="1">SELF-DECLARED READINESS</text>
+<rect x="420" y="148" width="340" height="196" rx="14" fill="url(#gTint)" stroke="#a5c614" stroke-width="1.5" filter="url(#fShadow)"/>
+<text x="446" y="180" font-size="10.5" fill="#dfff5e" text-anchor="start" font-weight="700" letter-spacing="1.4">PHASE 2 · MONTHS 7–12</text>
+<text x="446" y="206" font-size="16" fill="#dfff5e" text-anchor="start" font-weight="700">Expanded proof coverage</text>
+<text x="446" y="232" font-size="11.5" fill="#dfff5e" text-anchor="start">provenance chains on pipelines and RAG</text>
+<text x="446" y="251" font-size="11.5" fill="#dfff5e" text-anchor="start">tool-schema and workflow verification</text>
+<text x="446" y="270" font-size="11.5" fill="#dfff5e" text-anchor="start">ZKP privacy compliance · PKI agent identity</text>
+<rect x="444" y="296" width="292" height="30" rx="15" fill="url(#gInk)" stroke="#cfff04" stroke-width="1.5"/>
+<text x="590.0" y="315" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="700" letter-spacing="1">THIRD-PARTY ASSESSED READINESS</text>
+<rect x="792" y="148" width="340" height="196" rx="14" fill="url(#gLime)" stroke="#e3ff66" stroke-width="1.5" filter="url(#fGlow)"/>
+<text x="818" y="180" font-size="10.5" fill="#131800" text-anchor="start" font-weight="700" letter-spacing="1.4">PHASE 3 · MONTHS 13–24</text>
+<text x="818" y="206" font-size="16" fill="#131800" text-anchor="start" font-weight="700">Ecosystem integration</text>
+<text x="818" y="232" font-size="11.5" fill="#131800" text-anchor="start">cross-layer evidence aggregation</text>
+<text x="818" y="251" font-size="11.5" fill="#131800" text-anchor="start">delegation-chain verification</text>
+<text x="818" y="270" font-size="11.5" fill="#131800" text-anchor="start">cross-org proof interoperability · MPC gates</text>
+<rect x="816" y="296" width="292" height="30" rx="15" fill="url(#gInk)" stroke="#cfff04" stroke-width="1.5"/>
+<text x="962.0" y="315" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="700" letter-spacing="1">CONTINUOUSLY MONITORED READINESS</text>
+<line x1="394" y1="246" x2="414" y2="246" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="415,246 405,240.5 405,251.5" fill="#8d877e"/>
+<line x1="766" y1="246" x2="786" y2="246" stroke="#8d877e" stroke-width="2" stroke-linecap="round"/>
+<polygon points="787,246 777,240.5 777,251.5" fill="#8d877e"/>
+<text x="590.0" y="414" font-size="12.5" fill="#9d978e" text-anchor="middle">each phase brings the organization to readiness for one conformance stage (C10) — Version 1.0 of the standard targets February 1, 2027</text>
+</svg>

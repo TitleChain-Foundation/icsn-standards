@@ -1,0 +1,2431 @@
+{
+  "deferred_changes": [
+    {
+      "requirement_id": "1.2.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "CC7.2",
+      "proposed_rationale": "CC7.2 requires monitoring system components for anomalies, which can include collecting and reviewing operational records. It does not require recording every agent input, source identifier, or timestamp, so it is only partial.",
+      "confidence": "high",
+      "reason": "The current NM overlooks SOC 2's general operational-monitoring/logging analog.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "1.3.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "CC7.2",
+      "proposed_rationale": "Monitoring system components is a partial analog to identifying the environment involved in an execution. SOC 2 does not require a per-execution host/cluster identity or image digest.",
+      "confidence": "medium",
+      "reason": "The clause supports component monitoring, but not the required execution-record granularity.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "1.4.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "P3.1",
+      "proposed_rationale": "The Privacy criteria's collection/minimization objective is a partial analog to retaining minimized rather than raw personal data. It does not prescribe provenance records, digests, commitments, or schema-enforced derivations.",
+      "confidence": "medium",
+      "reason": "The privacy-minimization topic is relevant, though the PoC evidence mechanism is absent.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "3.1.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "CC6.6",
+      "proposed_rationale": "CC6.6 addresses restricting the transmission, movement, and removal of information outside defined system boundaries. It does not require a record for every organization, jurisdiction, or compute-boundary crossing.",
+      "confidence": "high",
+      "reason": "SOC 2 directly addresses controlled information movement across boundaries.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "3.2.3",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "P6.1",
+      "proposed_rationale": "P6.1 addresses disclosures of personal information consistent with commitments and criteria, providing a partial privacy/disclosure analog. It does not require pairwise jurisdictional analysis, re-proving, or redaction of evidence before transfer.",
+      "confidence": "medium",
+      "reason": "The disclosure-control topic is covered, but not PoC's evidence-transfer mechanics.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "4.2.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "CC6.3",
+      "proposed_rationale": "CC6.3 requires authorization of access based on roles or other authorization attributes. It does not require signed authorization tokens or retention of per-execution validation results.",
+      "confidence": "high",
+      "reason": "Authorization before access is a direct partial analog.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "4.2.2",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "CC6.3",
+      "proposed_rationale": "CC6.3 partially addresses delegated/authorized access through authorization attributes, but does not prescribe a cryptographically signed delegation chain back to an originating principal.",
+      "confidence": "medium",
+      "reason": "This is a broad authorization analog, not support for the required chain-validation design.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "4.2.3",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "CC6.3",
+      "proposed_rationale": "Role- or attribute-based authorization is a partial analog to preventing a delegate from receiving inappropriate authority. SOC 2 does not require structural scope intersection or logging attempted privilege escalation.",
+      "confidence": "medium",
+      "reason": "The subject matter is authorization containment, but the required mechanism is absent.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "5.2.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "CC6.1",
+      "proposed_rationale": "CC6.1 requires logical access security measures to protect the system. It is a partial analog to authenticating and protecting communications, but does not mandate agent message signatures, rejection, or logging.",
+      "confidence": "medium",
+      "reason": "General logical-access protection is relevant but materially weaker than the PoC requirement.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "6.2.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "CC6.1; CC7.1",
+      "proposed_rationale": "Logical access protections and vulnerability-management processes partially address isolating risky code and tools. SOC 2 does not require a sandbox per invocation, recorded isolation configuration, or sandbox-escape event records.",
+      "confidence": "medium",
+      "reason": "SOC 2 has a general secure-operation analog, not the specified isolation proof.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "7.4.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "System Description\u2014subservice organization disclosures and complementary user entity controls (CUECs)",
+      "proposed_rationale": "SOC 2 report descriptions disclose reliance on subservice organizations and CUECs, which is a partial analog to identifying external dependencies and assumptions. It is not a per-evidence-mechanism disclosure of hardware, mathematical, and ceremony assumptions.",
+      "confidence": "high",
+      "reason": "The sheet itself recognizes this partial analogy at 10.2 but codes the closely related requirement as NM.",
+      "framework": "SOC_2",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "1.2.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (Article 10 is limited to training, validation and testing data sets)",
+      "proposed_rationale": "The Act does not require recording operational prompts, retrieved documents, memory reads, or tool outputs at ingestion with source identifiers and timestamps.",
+      "confidence": "high",
+      "reason": "Article 10 is data-set governance for model development, not runtime agent-input lineage.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.2.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (Article 10 is limited to training, validation and testing data sets)",
+      "proposed_rationale": "No AI Act provision requires an operational input-to-action custody chain, hash links, or reviewer-walkable lineage.",
+      "confidence": "high",
+      "reason": "The cited provision does not govern action records or runtime inputs.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.2.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (Article 10 is limited to training, validation and testing data sets)",
+      "proposed_rationale": "Article 10 does not require transformation logs for chunking, embedding, redaction, or enrichment of data feeding a deployed agent.",
+      "confidence": "high",
+      "reason": "Development-data governance is not an append-only runtime processing-log obligation.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "2.2.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "The AI Act does not require per-access consent evaluation, denial logging, or execution-record evidence. GDPR consent rules cannot be imported as an AI Act clause.",
+      "confidence": "high",
+      "reason": "Article 10 does not impose runtime consent enforcement.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "2.2.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "The Act does not require each access to carry a declared purpose or require purpose-mismatched accesses to be blocked and logged.",
+      "confidence": "high",
+      "reason": "This is a data-protection access-control requirement, not an Article 10 data-governance duty.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "2.2.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "No cited AI Act provision requires query scoping, field allow-lists, query rewriting, or records of their runtime enforcement.",
+      "confidence": "high",
+      "reason": "Article 10 does not regulate deployed-agent query authorization.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "2.2.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "The Act does not require machine-enforced license or residency rules, region pinning, or recorded per-execution rule evaluations.",
+      "confidence": "high",
+      "reason": "Article 10 contains no such runtime constraint.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "2.2.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "The Act does not require logging a deidentification method/version or blocking and logging re-identification joins.",
+      "confidence": "high",
+      "reason": "The cited Article 10 provisions do not establish this operational control.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "9.2.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "Art. 12",
+      "proposed_rationale": "For high-risk AI, Article 12 requires automatic event recording over the system lifetime to enable traceability. It does not require tamper-evident logging or coverage of every system in a PoC claim scope.",
+      "confidence": "high",
+      "reason": "This is a genuine, though much weaker, logging analogue that the NM code misses.",
+      "framework": "EU_AI_Act",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "10.3.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "Article 72 requires a post-market monitoring system and plan, but does not require periodic third-party reassessment of the monitoring pipeline or publication of the report to relying parties.",
+      "confidence": "high",
+      "reason": "The independent-assessment and report-availability elements have no Article 72 analogue.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.7",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "Article 72 does not require evaluation of automated validators for structured execution-trace parsing, nor disclosure of those evaluation results to an assessor.",
+      "confidence": "high",
+      "reason": "General post-market monitoring is not a validator-competence requirement.",
+      "framework": "EU_AI_Act",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.3.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "Annex A.4.5",
+      "proposed_rationale": "The AI-system and computing-resources control is relevant to identifying and documenting the environment/resources used. It does not require an execution record, host identity, or an image digest, so it is only partial.",
+      "confidence": "medium",
+      "reason": "Annex A.4.5 is the ISO/IEC 42001 control area for AI system and computing resources; it supports a governance-level analogy, not substrate attestation.",
+      "framework": "ISO_42001",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "6.1.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "ISO/IEC 42001 clause 8 requires operational planning and control of the AIMS; it does not require a control-to-evidence mapping, named evidence streams, or a conformance-claim register.",
+      "confidence": "high",
+      "reason": "The cited \u201cISO/IEC 27001 alignment\u201d is not an ISO/IEC 42001 requirement imposing this mapping.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "No ISO/IEC 42001 clause requires per-tool-invocation records with arguments, result status, and timestamp.",
+      "confidence": "high",
+      "reason": "Clause 8 is operational planning/control, not a runtime audit-log content requirement.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "ISO/IEC 42001 does not require TEE/remote attestation, signed startup reports, golden-reference comparison, or recorded mismatch alerts.",
+      "confidence": "high",
+      "reason": "The cited ISO/IEC 27001 alignment does not create a normative ISO/IEC 42001 attestation obligation.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "ISO/IEC 42001 does not require hardware-rooted attestation of dependencies in a control-to-evidence claim mapping.",
+      "confidence": "high",
+      "reason": "Neither clause 8 nor general management-system alignment reaches this technical requirement.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.3.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "ISO/IEC 42001 does not require evidence-signing keys to be hardware-generated or non-exportable.",
+      "confidence": "high",
+      "reason": "\u201cISO/IEC 27001 cryptographic controls (adjunct)\u201d is not a specific ISO/IEC 42001 clause and does not establish evidence-key/HSM requirements.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.3.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "ISO/IEC 42001 does not require evidence-key rotation records, much less signed links between old and new keys.",
+      "confidence": "high",
+      "reason": "The cited adjunct is not a normative framework clause covering this requirement.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.3.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "ISO/IEC 42001 does not prescribe evidence-signing-key compromise response, evidence re-grading, relying-party notification, or annual exercise.",
+      "confidence": "high",
+      "reason": "Generic AIMS corrective-action requirements are not an analogous evidence-key lifecycle control.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.3.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "ISO/IEC 42001 does not require algorithm identifiers in every evidence record or a cryptographic migration path for published evidence.",
+      "confidence": "high",
+      "reason": "The claimed ISO/IEC 27001 adjunct does not impose per-record evidence syntax.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.3.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "ISO/IEC 42001 does not require post-quantum/hybrid signatures or re-anchoring based on a signature scheme\u2019s projected lifetime.",
+      "confidence": "high",
+      "reason": "This is a specialized long-term cryptographic-validity requirement with no analogous ISO/IEC 42001 provision.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.5.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "Clause 9.1 requires monitoring, measurement, analysis, and evaluation of the AIMS; it does not constrain an evidence schema to observable facts or prohibit quality/correctness/intent fields.",
+      "confidence": "high",
+      "reason": "The stated verification/validation distinction is not a clause 9.1 schema or claims-rule requirement.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.5.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "Clause 9.1 does not require public-claim review or prohibit claims that PoC evidence establishes correctness, fairness, or intent.",
+      "confidence": "high",
+      "reason": "The cited clause concerns performance evaluation, not external product-claim governance.",
+      "framework": "ISO_42001",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.4.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.10",
+      "proposed_rationale": "AI RMF requires privacy risk to be examined and documented. That is relevant to minimizing exposure of sensitive payloads in records, but it does not require provenance records, commitments, digests, or any externally verifiable mechanism.",
+      "confidence": "high",
+      "reason": "The present NM overlooks the framework's explicit privacy outcome; the PoC-specific provenance mechanism remains absent.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "1.4.2",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.10",
+      "proposed_rationale": "Privacy risk examination is relevant to confidential-data disclosure. It does not require selective disclosure, hash-based verification, or external verification without disclosure.",
+      "confidence": "high",
+      "reason": "This is a privacy-topic partial match, not a cryptographic-verification match.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "2.4.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.10",
+      "proposed_rationale": "Privacy-risk examination is relevant to retaining minimized or derived protected-data forms, but AI RMF does not impose an evidence-pipeline schema or require hashes, commitments, or selective disclosures.",
+      "confidence": "high",
+      "reason": "The framework addresses the privacy objective at a risk-management level.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "2.4.2",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "GOVERN 1.1; MEASURE 2.10",
+      "proposed_rationale": "Applicable privacy/legal obligations and privacy risks must be managed and documented. This is relevant to deletion-request handling, but does not require crypto-shredding, tamper-evident retention, or a demonstrated post-deletion verification chain.",
+      "confidence": "high",
+      "reason": "The requirement has a substantial privacy-compliance component even though its specified evidence mechanism is absent.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "6.3.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.7",
+      "proposed_rationale": "AI system security and resilience are evaluated and documented. Hardware-backed, non-exportable key custody is a relevant security control, but AI RMF does not prescribe HSM-backed evidence or attestation keys.",
+      "confidence": "high",
+      "reason": "This aligns with the sheet's existing PM treatment of other execution-environment security controls.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "6.3.2",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.7",
+      "proposed_rationale": "Key rotation is a relevant security-resilience practice, but AI RMF neither mandates rotation schedules nor signed linkage between old and new evidence keys.",
+      "confidence": "high",
+      "reason": "The framework's security outcome supports only a broad partial match.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "6.3.3",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.7; MANAGE 4.1",
+      "proposed_rationale": "Security evaluation and post-deployment incident-response/recovery monitoring are relevant to key compromise. AI RMF does not require key-ID evidence queries, claim re-grading, relying-party notification, or annual exercises.",
+      "confidence": "high",
+      "reason": "There is relevant security and recovery coverage, but no PoC evidence-lifecycle requirement.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "6.3.4",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.7",
+      "proposed_rationale": "Cryptographic agility and algorithm identification are security-resilience concerns, but AI RMF does not prescribe algorithm-labelled evidence records or a published migration path.",
+      "confidence": "high",
+      "reason": "A broad security partial match is more consistent than NM.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "6.3.5",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.7",
+      "proposed_rationale": "Long-term signature strength is relevant to security resilience, but AI RMF does not require post-quantum/hybrid signatures, re-anchoring, or re-signing retained evidence.",
+      "confidence": "medium",
+      "reason": "The clause is broad rather than a key-lifecycle provision, so the relationship is only partial.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "7.6.4",
+      "current_match": "PM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.7",
+      "proposed_rationale": "Use MEASURE 2.7 rather than MANAGE 2.3; MANAGE 4.1 as the closest AI RMF basis. Access control and access logging are security-resilience concerns, though AI RMF does not mandate RBAC or evidence-read audit trails.",
+      "confidence": "high",
+      "reason": "The match type is defensible, but the current cited clauses do not support the stated access-control rationale.",
+      "framework": "NIST_AI_RMF",
+      "direction": "same"
+    },
+    {
+      "requirement_id": "9.1.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "MAP 1.1 requires documented deployment context; it does not define a MAESTRO layer taxonomy, a per-claim layer field, or validation/rejection of missing fields.",
+      "confidence": "high",
+      "reason": "Context mapping is not an analogous claim-register validation requirement.",
+      "framework": "NIST_AI_RMF",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "9.2.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "MEASURE 2.7",
+      "proposed_rationale": "Security and resilience must be evaluated and documented, which can encompass logging controls across scoped systems. AI RMF does not require tamper-evident logging, a source inventory, or complete coverage.",
+      "confidence": "medium",
+      "reason": "This is a broad security-control partial match and is inconsistent with the PM treatment of C7.3 tamper-evident logging.",
+      "framework": "NIST_AI_RMF",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "10.1.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "GOVERN 4.2 requires documentation and communication of AI risks and impacts, not a published conformance statement classified as Self-Declared, Third-Party Assessed, or Continuously Monitored.",
+      "confidence": "high",
+      "reason": "No AI RMF outcome establishes this assurance-stage taxonomy.",
+      "framework": "NIST_AI_RMF",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "GOVERN 4.2 does not define PoC domains or restrict marketing claims to domains listed in a statement.",
+      "confidence": "high",
+      "reason": "The cited impact-documentation outcome does not reach a claim-domain/marketing-control requirement.",
+      "framework": "NIST_AI_RMF",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "GOVERN 4.2 does not require each asserted fact to resolve to an evidence stream in a claim register.",
+      "confidence": "high",
+      "reason": "Impact documentation is not an evidence-traceability regime.",
+      "framework": "NIST_AI_RMF",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AI RMF does not prescribe a conformance-statement field set containing system identity, domains, Tiers, mechanisms, and trust assumptions.",
+      "confidence": "high",
+      "reason": "The claimed schema is PoC-specific.",
+      "framework": "NIST_AI_RMF",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "GOVERN 4.2 does not require a statement to cite a standard version and claim date.",
+      "confidence": "high",
+      "reason": "No analogous versioned-conformance-claim requirement exists.",
+      "framework": "NIST_AI_RMF",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.7",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "GOVERN 4.2 does not require publication of a machine-readable, comparable conformance format or schema.",
+      "confidence": "high",
+      "reason": "Documentation of impacts is not interoperability of assurance claims.",
+      "framework": "NIST_AI_RMF",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.1.1",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C6.1.3; C6.2.1-C6.2.2",
+      "proposed_rationale": "AISVS requires integrity-verifiable third-party artifacts and a signed, machine-readable AI BOM, but not a weight/configuration digest in every execution record.",
+      "confidence": "high",
+      "reason": "The cited chapter is relevant, but no AISVS requirement has PoC's per-output execution-record obligation.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.1.2",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C6.1.3; C6.2.2",
+      "proposed_rationale": "AISVS addresses artifact integrity verification and signing before deployment, not load-time comparison with a signed manifest or recording pass/fail results per execution.",
+      "confidence": "high",
+      "reason": "The mechanism and audit-record scope are materially narrower in AISVS.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.1.3",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C6.1.2-C6.1.3; C6.2.2",
+      "proposed_rationale": "Approved sources, integrity-verifiable artifacts, and signed AI BOMs are adjacent, but AISVS does not require an end-to-end signature chain across weights, fine-tuning, and serving configuration, nor deployment blocking on chain failure.",
+      "confidence": "high",
+      "reason": "Relevant supply-chain controls exist, but not the stated chain-validation control.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.1.4",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C9.3.7; C6.1.1",
+      "proposed_rationale": "AISVS requires an approved registry/allow-list before invocation and malicious-code scanning before model import. It does not require attestation-based admission for all models, tools, and plugins or rejection-event records.",
+      "confidence": "high",
+      "reason": "The cited C6 chapter alone does not support the claimed equivalence.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.1.5",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C6.2.1-C6.2.2",
+      "proposed_rationale": "AISVS requires a published, machine-readable AI BOM and signing, but not SLSA/in-toto provenance or external validation of a build chain without operator assistance.",
+      "confidence": "high",
+      "reason": "Publication is adjacent; independently checkable provenance is absent.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "1.2.1",
+      "current_match": "PM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C12.5.4",
+      "proposed_rationale": "Every ingested document must be tagged at write time with source, writer identity, and timestamp. This is a better partial match than C1/C8, though it omits prompts, tool outputs, and action linkage.",
+      "confidence": "high",
+      "reason": "Match type is retained, but the current cited clauses do not support the rationale.",
+      "framework": "OWASP_AISVS",
+      "direction": "same"
+    },
+    {
+      "requirement_id": "1.2.3",
+      "current_match": "PM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C12.5.1",
+      "proposed_rationale": "AISVS requires dataset lineage including transformations, augmentations, and merges, but not an append-only hash-linked log with process versions and input/output digests.",
+      "confidence": "high",
+      "reason": "Match type is retained with a precise, applicable citation.",
+      "framework": "OWASP_AISVS",
+      "direction": "same"
+    },
+    {
+      "requirement_id": "1.3.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C4.1.3; C4.2.3",
+      "proposed_rationale": "AISVS requires workload attestation before model loading and GPU hardware attestation before each workload. It does not require substrate identity in the execution record, so this is partial.",
+      "confidence": "high",
+      "reason": "The sheet misses direct attestation controls.",
+      "framework": "OWASP_AISVS",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "1.3.2",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C4.1.3; C4.2.3",
+      "proposed_rationale": "AISVS requires workload and hardware attestation, but does not require external validation against published reference values.",
+      "confidence": "high",
+      "reason": "The attestation topic is covered, but external-verifier requirements are absent.",
+      "framework": "OWASP_AISVS",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "1.4.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C8.2.1; C1.2.3",
+      "proposed_rationale": "AISVS requires sensitive fields to be masked, tokenized, or dropped before embedding, and sensitive label information to be redacted, anonymized, or encrypted. It does not impose PoC's provenance-record schema.",
+      "confidence": "high",
+      "reason": "There is direct, though narrower, data-minimization coverage.",
+      "framework": "OWASP_AISVS",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "2.2.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS has access-control and data-purpose controls, but no requirement to evaluate each access against a consent record or record approvals and denials in an execution record.",
+      "confidence": "high",
+      "reason": "C1 contains no consent-enforcement requirement.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.1",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C9.5.1",
+      "proposed_rationale": "AISVS requires runtime fine-grained action authorization, but not a pre-action execution record containing the grant, scope, and expiry.",
+      "confidence": "high",
+      "reason": "Authorization is covered; PoC's evidence timing and contents are not.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.2",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C9.5.1; C9.5.3",
+      "proposed_rationale": "AISVS requires runtime policy authorization outside the model, but not a per-action evaluation record naming the matched permission or denial reason.",
+      "confidence": "high",
+      "reason": "The cited chapter does not establish PoC-grade decision evidence.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.3",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C9.3.8; C9.5.1",
+      "proposed_rationale": "AISVS requires automated containment for policy violations and runtime authorization, but does not specify an interception gateway or parameterized rejection records.",
+      "confidence": "high",
+      "reason": "Blocking is adjacent; the required enforcement/evidence architecture is absent.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.4",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C10.4.3-C10.4.4",
+      "proposed_rationale": "For MCP servers, AISVS requires rejection of unrecognized or oversized parameters and strict schema validation. It does not require all agent tool-call parameters to be validated or retain a validated parameter digest.",
+      "confidence": "high",
+      "reason": "The direct partial match is MCP-specific and lacks PoC evidence requirements.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.5",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C5.2.6; C9.5.2",
+      "proposed_rationale": "AISVS addresses just-in-time, expiring privileged access and scope-limited propagated tokens, but not task-bound credential issuance and prohibition of all standing broad-scope runtime credentials.",
+      "confidence": "high",
+      "reason": "Both scope and expiry are adjacent but not equivalent.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.6",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C12.4.2; C9.2.8",
+      "proposed_rationale": "AISVS requires logs of security-critical actions including approver identity, timestamp, parameters, and decisions, and cryptographically binds approvals to action context. It does not require the complete PoC approval record for every approval or override.",
+      "confidence": "high",
+      "reason": "This is a close but incomplete control match.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.7",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C9.2.10; C9.5.1",
+      "proposed_rationale": "AISVS requires multi-step/multi-agent approval gates to apply the highest-impact classification and requires fine-grained authorization. It does not require path-state-aware authorization for every invocation.",
+      "confidence": "high",
+      "reason": "The specific upstream-context rule is absent.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.8",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C9.5.3",
+      "proposed_rationale": "AISVS requires authorization decisions to be made by application logic or a policy engine rather than the AI model. It does not specifically prevent diagnostic or advisory output from elevating later authorization state.",
+      "confidence": "high",
+      "reason": "The cited C9 chapter is not equivalent to the stated anti-escalation property.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "5.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS requires agent cryptographic identities and environment attestation separately, but no AISVS clause binds an agent credential to an attested enclave or TPM so it is unusable from an unattested environment.",
+      "confidence": "high",
+      "reason": "Combining separate controls would invent the required credential-binding property.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS C4 concerns infrastructure security. It does not require a conformance claim, control-to-evidence mapping, or evidence stream for each declared control.",
+      "confidence": "high",
+      "reason": "There is no analogous claim-register or evidence-mapping provision.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.2.1",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C4.1.1; C9.3.1",
+      "proposed_rationale": "AISVS requires model and tool/plugin sandboxing, but not per-execution isolation-configuration records or recorded sandbox-escape events.",
+      "confidence": "high",
+      "reason": "Isolation is covered; PoC evidence requirements are absent.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.2.2",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C4.1.3-C4.1.4; C4.2.2-C4.2.3",
+      "proposed_rationale": "AISVS requires confidential inference and workload/GPU attestation, but not attestation an external party can validate against published reference values.",
+      "confidence": "high",
+      "reason": "The external-verifier condition prevents Exact coverage.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.2.3",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AISVS v1.0 C4.2.2-C4.2.3",
+      "proposed_rationale": "AISVS covers hardware-enforced TEE isolation and attestation before workloads, but not on-chip compliance gating or continuous attestation validation during operation.",
+      "confidence": "high",
+      "reason": "The required operational gating/continuity is absent.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.2.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS C12 contains no external timestamp-authority, transparency-log, consensus-time, or periodic anchoring requirement.",
+      "confidence": "high",
+      "reason": "Ordinary logging is not an analogous external-time-anchor control.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.3.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS contains no anti-equivocation mechanism such as gossip, witness co-signing, public-ledger anchoring, or divergent-history detection.",
+      "confidence": "high",
+      "reason": "C12 does not require log protection of this kind.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.3.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS has no Merkle inclusion-proof, published-root, or independently retrievable proof requirement.",
+      "confidence": "high",
+      "reason": "The cited C12 chapter does not address inclusion proofs.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.3.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS has no append-only consistency-proof or anchored-root comparison requirement.",
+      "confidence": "high",
+      "reason": "Neither C12 nor another cited AISVS control reaches this property.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS C12 does not require per-source monotonic sequences, chaining, or detection of missing evidence records from a gap.",
+      "confidence": "high",
+      "reason": "Monitoring/alerting is not a sequence-completeness control.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS contains no requirement to refuse in-scope actions when evidence generation or storage is unavailable, nor a fail-closed evidence-pipeline test.",
+      "confidence": "high",
+      "reason": "C12 does not make evidence generation a gate.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS does not require role-based access to an evidence store together with logging every evidence read.",
+      "confidence": "high",
+      "reason": "The current C12 rationale asserts controls absent from the chapter.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS does not require an evidence-retention period in a conformance claim or reconciliation of store retention to the claim period.",
+      "confidence": "high",
+      "reason": "No analogous evidence-retention requirement was identified.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.6",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS has no external root anchoring, declared anchoring interval, or missed-deadline alert requirement.",
+      "confidence": "high",
+      "reason": "C12's alerting controls do not establish anchoring.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.7.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS C6 requires signed AI BOMs, but neither C6 nor another AISVS clause requires every digest/signature to carry an algorithm identifier or rejection of unidentified digests.",
+      "confidence": "high",
+      "reason": "The stated cryptographic-agility rationale is unsupported by AISVS 1.0.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "9.2.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS does not use MAESTRO layer placement or require evidence to be generated at the layer where a control is enforced.",
+      "confidence": "high",
+      "reason": "Component monitoring coverage is not an analogous layer-to-evidence mapping rule.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "9.2.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS does not require hash-linked cross-layer evidence bundles.",
+      "confidence": "high",
+      "reason": "C12 has no cross-layer aggregation or verifiable-bundle control.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS C12 requires particular logging and monitoring controls, not reconciliation of all gateway action counts to all evidence-record counts with zero unexplained difference.",
+      "confidence": "high",
+      "reason": "This is a PoC coverage-completeness metric, not AISVS continuous monitoring.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS has no Tier model and no requirement for an automated validator to validate every evidence record against a claimed Tier.",
+      "confidence": "high",
+      "reason": "The claim is structurally specific to PoC.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS does not require periodic third-party reassessment of a monitoring pipeline or publication of its report to relying parties.",
+      "confidence": "high",
+      "reason": "C12 does not specify independent reassessment.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.6",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AISVS does not define, calculate, or publish proof coverage over in-scope actions.",
+      "confidence": "high",
+      "reason": "This is not a logging or monitoring analogue.",
+      "framework": "OWASP_AISVS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.7",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (no analogous ATLAS mitigation)",
+      "proposed_rationale": "ATLAS has agent permission configuration mitigations, but none requires authorization decisions to incorporate upstream parameters and carried state to prevent composition-based authority expansion.",
+      "confidence": "high",
+      "reason": "Generic least privilege is not an analogue for path-aware authorization.",
+      "framework": "MITRE_ATLAS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.8",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (no analogous ATLAS mitigation)",
+      "proposed_rationale": "No ATLAS mitigation addresses prevention of authorization-state escalation caused by diagnostic, advisory, or audit-tool outputs.",
+      "confidence": "high",
+      "reason": "The cited at-rest access-control mitigation does not reach this state-propagation property.",
+      "framework": "MITRE_ATLAS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "5.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (no analogous ATLAS mitigation)",
+      "proposed_rationale": "ATLAS identity/access mitigations do not bind an agent credential to a TEE/TPM-attested environment or require refusing use outside a passing attestation.",
+      "confidence": "high",
+      "reason": "Authentication or access control is not hardware-backed environment binding.",
+      "framework": "MITRE_ATLAS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (no analogous ATLAS mitigation)",
+      "proposed_rationale": "ATLAS does not define a conformance claim, control-to-evidence mapping, or a requirement that every declared control have a named operating evidence stream.",
+      "confidence": "high",
+      "reason": "Adversarial-input detection and vulnerability scanning do not concern assurance-claim structure.",
+      "framework": "MITRE_ATLAS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (no analogous ATLAS mitigation)",
+      "proposed_rationale": "ATLAS does not require TEE/remote attestation, signed reports, golden-reference comparison, or recorded mismatch alerts.",
+      "confidence": "high",
+      "reason": "AML.M0015 concerns malicious inputs before the model, not runtime attestation.",
+      "framework": "MITRE_ATLAS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (no analogous ATLAS mitigation)",
+      "proposed_rationale": "ATLAS contains no requirement for hardware-rooted attestation coverage of dependencies in an evidence mapping.",
+      "confidence": "high",
+      "reason": "The cited mitigation has no hardware-attestation or claim-mapping content.",
+      "framework": "MITRE_ATLAS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.2.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (no analogous ATLAS mitigation)",
+      "proposed_rationale": "ATLAS segmentation/sandboxing guidance does not require confidential computing or externally validatable attestation against published reference values.",
+      "confidence": "high",
+      "reason": "Sandbox isolation is not confidential-compute attestation.",
+      "framework": "MITRE_ATLAS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.2.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014 (no analogous ATLAS mitigation)",
+      "proposed_rationale": "ATLAS does not address on-chip compliance enforcement that gates execution or continuous validation of its attestation.",
+      "confidence": "high",
+      "reason": "The claimed hardware self-enforcement is outside the scope of ATLAS sandboxing guidance.",
+      "framework": "MITRE_ATLAS",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.1.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "AML.M0032 \u2014 Segmentation of AI Agent Components",
+      "proposed_rationale": "ATLAS directs security boundaries around agent tools and data sources through API access, container isolation, code-execution sandboxing, and tool-invocation rate limiting. It does not require a separate, non-bypassable Action Interception Gateway or evidence generation.",
+      "confidence": "high",
+      "reason": "The current NM misses a direct partial analogue for tool-boundary enforcement.",
+      "framework": "MITRE_ATLAS",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "1.2.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R2 \u2014 Context accumulation",
+      "proposed_rationale": "R2 requires context about stated intent, prior actions, and the conversation/task thread; AARM\u2019s conformance test further expects prior actions and data classifications to be available to policy evaluation. It does not require every steering input to be captured at ingestion with a source identifier and timestamp.",
+      "confidence": "high",
+      "reason": "This is a real, relevant context-recording obligation, but it falls short of PoC\u2019s comprehensive input-lineage record.",
+      "framework": "CSA_AARM",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "1.2.2",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R2 \u2014 Context accumulation; R5 \u2014 Tamper-evident receipts",
+      "proposed_rationale": "AARM requires accumulated session context to be available at each decision and requires a tamper-evident receipt containing relevant evaluation context. It does not require hash-linked input-to-action custody chains that an outside reviewer can walk.",
+      "confidence": "high",
+      "reason": "Relevant context/action linkage exists, but the specified cryptographic custody-chain property does not.",
+      "framework": "CSA_AARM",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "4.1.1",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R3 \u2014 Policy evaluation with intent alignment; R5 \u2014 Tamper-evident receipts",
+      "proposed_rationale": "AARM evaluates actions and records action, decision, timestamp, and policy context. It does not require a pre-action record of a granted permission set, scope, and expiry.",
+      "confidence": "high",
+      "reason": "The cited decision capability is adjacent, not equivalent.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.2",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R3 \u2014 Policy evaluation with intent alignment; R5 \u2014 Tamper-evident receipts",
+      "proposed_rationale": "AARM evaluates every intercepted action and receipts its decision/context, but does not require matching a named permission or recording a per-action permission/denial rationale in the PoC form.",
+      "confidence": "high",
+      "reason": "Runtime authorization is covered; the required authorization-evaluation record is not.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.3",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R1 \u2014 Pre-execution interception; R4 \u2014 Five authorization decisions; R5 \u2014 Tamper-evident receipts",
+      "proposed_rationale": "R1/R4 support blocking denied actions before execution and R5 requires receipts. AARM does not require a gateway architecture specifically, nor a rejection record containing attempted parameters.",
+      "confidence": "high",
+      "reason": "The block/receipt topic is partial, not an exact match.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.4",
+      "current_match": "EM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM contains no requirement to validate tool-call arguments against registered schemas, reject out-of-schema calls, or store a validated parameter digest.",
+      "confidence": "high",
+      "reason": "Generic interception does not create an analogous schema-validation obligation.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.5",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R9 \u2014 Least privilege enforcement",
+      "proposed_rationale": "R9 calls for credential and tool-access scoping at action execution. It does not require per-task issuance, expiry binding, short-lived tokens, or prohibition of all standing broad credentials.",
+      "confidence": "high",
+      "reason": "R9 is the appropriate partial analogue.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.6",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R4 \u2014 Five authorization decisions; R5 \u2014 Tamper-evident receipts",
+      "proposed_rationale": "STEP_UP supports human approval and receipts include the decision and timestamp. AARM does not require the approver\u2019s authenticated identity or the exact material presented for approval.",
+      "confidence": "high",
+      "reason": "Human approval is addressed, but PoC\u2019s audit-record fields are not.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.7",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R2 \u2014 Context accumulation; R3 \u2014 Policy evaluation with intent alignment",
+      "proposed_rationale": "AARM requires prior actions and task/session context in policy evaluation and expressly addresses compositional risk. It does not require upstream parameters and carried state to be included in every authorization evaluation in the stated path-aware form.",
+      "confidence": "high",
+      "reason": "A substantive partial overlap exists, but not exact scope.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.8",
+      "current_match": "EM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM does not require preservation of an original authorization grant or prohibit diagnostic/advisory/audit outputs from influencing later authorization state.",
+      "confidence": "high",
+      "reason": "Neither interception nor generic intent alignment reaches this non-escalation rule.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.2.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM does not specify zero-knowledge credentials, confidential delegation chains, or proof-based delegation verification.",
+      "confidence": "high",
+      "reason": "Authority evaluation is not an analogue for confidential-chain proofs.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "5.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "R6 cryptographically binds a receipt to an agent identity; it says nothing about TEE/TPM attestation or binding a credential to an attested execution environment.",
+      "confidence": "high",
+      "reason": "This is an environment-attestation requirement absent from AARM.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM has no TEE/remote-attestation, signed startup report, golden-reference comparison, or mismatch-alerting requirement.",
+      "confidence": "high",
+      "reason": "Runtime control enforcement is not environment attestation.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM does not specify hardware-rooted attestation or dependency coverage for a control-to-evidence mapping.",
+      "confidence": "high",
+      "reason": "No relevant AARM requirement exists.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.1.1",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R1 \u2014 Pre-execution interception",
+      "proposed_rationale": "R1 requires no action to bypass the control plane, but AARM expressly permits SDK instrumentation and vendor integration as architectures. It does not require a separate gateway process/service or establish the agent\u2019s lack of all direct network/credential paths.",
+      "confidence": "high",
+      "reason": "R1 matches bypass-resistant interception, not PoC\u2019s prescribed separation architecture.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.1.2",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R5 \u2014 Tamper-evident receipts",
+      "proposed_rationale": "R5 requires one tamper-evident receipt per evaluated action with action, decision, timestamp, and policy context. It does not require three before/during/after records, independent signatures, or a common action ID.",
+      "confidence": "high",
+      "reason": "Receipt generation is relevant but materially less specific.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.1.3",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R1 \u2014 Pre-execution interception; R5 \u2014 Tamper-evident receipts",
+      "proposed_rationale": "AARM requires interception before execution and a receipt for each evaluated action, but does not require durable receipt emission as a precondition to forwarding the action.",
+      "confidence": "high",
+      "reason": "The ordering and durability requirement is absent.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.1.4",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "AARM v1.0 R1 \u2014 Pre-execution interception",
+      "proposed_rationale": "R1 requires the control plane to intercept agent actions before target execution. It does not require any of PoC\u2019s three effect-channel trust-boundary designs or an action-bound capability.",
+      "confidence": "high",
+      "reason": "The effect-mediation detail makes this only partial.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.1.5",
+      "current_match": "EM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM has no PoC tier model and no rule limiting evidence claims to Tier 1\u20132 when effect-channel mediation is absent.",
+      "confidence": "high",
+      "reason": "R1 is a runtime-interception requirement, not a conditional PoC-claim rule.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.2.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "R5 requires a receipt timestamp but does not require RFC 3161, transparency-log, consensus, or any other timestamp source outside operator control.",
+      "confidence": "high",
+      "reason": "An ordinary receipt timestamp is not a partial implementation of external time anchoring.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.3.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM requires tamper-evident receipts, not gossip, witness co-signing, a single-history ledger, or another anti-equivocation mechanism.",
+      "confidence": "high",
+      "reason": "Individual receipt integrity does not address divergent-history presentation.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM does not require monotonic receipt sequence numbers, chained sequence continuity, or detection of missing records by gaps.",
+      "confidence": "high",
+      "reason": "Deny/failure decisions do not concern sequence completeness.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM has no evidence-store RBAC or mandatory logging of reads of evidence.",
+      "confidence": "high",
+      "reason": "No relevant storage-access requirement exists.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM has no evidence-retention-period or retention-policy requirement.",
+      "confidence": "high",
+      "reason": "Runtime deny/failure behavior does not address retention.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.6",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM does not require external chain-root anchoring, a maximum anchoring interval, or missed-anchor alerts.",
+      "confidence": "high",
+      "reason": "No external anchoring feature is specified.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM conformance is Core or Extended based on R1\u2013R6/R1\u2013R9; it does not use PoC C1\u2013C6 domains or restrict marketing claims by unlisted domains.",
+      "confidence": "high",
+      "reason": "The claimed CSA conformance regime is not analogous.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM\u2019s specification itself has a version/date, but it does not require each implementer\u2019s conformance statement to cite an exact standard version and claim date.",
+      "confidence": "high",
+      "reason": "Document metadata is not an implementer claim-field obligation.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.6",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM does not require a published system-boundary statement, in-scope action classes, or justified exclusions.",
+      "confidence": "high",
+      "reason": "No conformance clause reaches these disclosure fields.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.1.8",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM has no system-inventory reconciliation, automated deployment discovery, or shadow-agent finding requirement.",
+      "confidence": "high",
+      "reason": "This is outside AARM\u2019s nine requirements.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM requires conformance testing, but not an automated continuous validator that evaluates every receipt against PoC Tier requirements or logs validator outcomes.",
+      "confidence": "high",
+      "reason": "Testing protocol is not continuous PoC-tier validation.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM does not require monitoring alerts, bounded alert windows, acknowledgments, or alert-to-acknowledgment metrics.",
+      "confidence": "high",
+      "reason": "Continuous runtime enforcement does not supply operational alerting requirements.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.6",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM requires receipts for evaluated actions but does not require computing or publishing proof-coverage ratios.",
+      "confidence": "high",
+      "reason": "No coverage-decay metric is specified.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "10.3.7",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "AARM does not require evaluation of automated validators for structured-trace parsing competence or disclosure of those results to an assessor.",
+      "confidence": "high",
+      "reason": "This research-driven validation-evaluation requirement is absent.",
+      "framework": "CSA_AARM",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "2.1.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not require privacy-minimized evidence contents or periodic scanning of an evidence store for protected content.",
+      "confidence": "high",
+      "reason": "Connection monitoring or access decisions do not address evidence-store schemas, protected-content exclusion, or scans.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "2.1.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not define execution-record fields distinguishing data used from data disclosed.",
+      "confidence": "high",
+      "reason": "Its PEP/PE model concerns access decisions and connections, not agent data-flow provenance.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "2.2.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not address deidentification-method records or blocking and logging re-identification joins.",
+      "confidence": "high",
+      "reason": "Generic enterprise policy input to a policy engine is not a deidentification or re-identification control.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.1",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a73, Policy Engine and Policy Administrator; \u00a72.1, Tenets 3, 4, and 6",
+      "proposed_rationale": "The policy engine grants, denies, or revokes resource access and logs its decision; the policy administrator may generate session-specific credentials. This is related authority enforcement, but not a requirement to write permission set, scope, and expiry to an execution record before an action.",
+      "confidence": "high",
+      "reason": "The cited concepts exist, but do not impose PoC\u2019s record-content and timing requirements.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.2",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a72.1, Tenets 3 and 4; \u00a73, Policy Engine",
+      "proposed_rationale": "Per-session and dynamic resource-access decisions partially cover evaluation at access time, but SP 800-207 does not require a per-action record naming the matched permission or denial reason.",
+      "confidence": "high",
+      "reason": "The policy engine logs approved or denied decisions, not PoC\u2019s required action-level authorization explanation.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.3",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a73, Policy Administrator and Policy Enforcement Point",
+      "proposed_rationale": "The PA can direct a PEP to establish or shut down a communication path. It does not require an interception gateway for every agent action or rejection records containing attempted parameters.",
+      "confidence": "high",
+      "reason": "The cited architecture partially supports enforcement and blocking, but not PoC\u2019s gateway and audit-record specifics.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.4",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a72.1, Tenets 3 and 4; \u00a73, Policy Engine",
+      "proposed_rationale": "Dynamic authorization of individual resource requests is related, but SP 800-207 does not require registered tool schemas, parameter validation, or parameter digests in execution records.",
+      "confidence": "high",
+      "reason": "The current EM treats generic access control as equivalent to tool-call schema validation.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.5",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a73, Policy Administrator; \u00a72.1, Tenets 3 and 4",
+      "proposed_rationale": "The PA may generate session-specific credentials and access is per-session and dynamic. SP 800-207 does not require credentials per task, task-bound scope and expiry, or elimination of all broad standing credentials.",
+      "confidence": "high",
+      "reason": "Session-specific credentials are only a partial analogue.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.6",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a73, Policy Engine",
+      "proposed_rationale": "The policy engine logs access decisions, which is a limited analogue to recording authorization decisions. SP 800-207 does not prescribe human overrides or approval records containing identity, exact presented content, and timestamp.",
+      "confidence": "high",
+      "reason": "No cited tenet or \u00a73 component addresses the required human-approval evidence.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.7",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a72.1, Tenet 4; \u00a73.3, Trust Algorithm",
+      "proposed_rationale": "Dynamic authorization and contextual trust-algorithm inputs are related, but SP 800-207 does not require authorization context to carry upstream invocation parameters and state across an agent execution path.",
+      "confidence": "high",
+      "reason": "The requirement is specifically about composed-call/path authorization, absent from the publication.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.1.8",
+      "current_match": "EM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a72.1, Tenet 4; \u00a73.3, Trust Algorithm",
+      "proposed_rationale": "Dynamic authorization is a broad partial analogue, but SP 800-207 does not prevent diagnostic or advisory output from increasing later authorization state.",
+      "confidence": "high",
+      "reason": "No cited provision governs authority escalation through accumulated execution context.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.2.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not specify delegation chains, per-hop delegator signatures, or validation back to an originating principal.",
+      "confidence": "high",
+      "reason": "Dynamic authorization is not delegation-chain verification.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.2.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not define delegated-permission intersection, delegation issuance, or escalation-rejection records.",
+      "confidence": "high",
+      "reason": "Least privilege and dynamic authorization do not establish a structural non-escalation rule for delegates.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "4.2.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not address confidential delegation chains or zero-knowledge credential presentations.",
+      "confidence": "high",
+      "reason": "There is no analogous delegation-proof mechanism.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "5.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "Device posture monitoring does not require an identity credential to be hardware-bound to an attested enclave or TPM, nor prevent its use outside an attested environment.",
+      "confidence": "high",
+      "reason": "SP 800-207 discusses device security posture, not attestation-bound private-key custody.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not define a conformance claim, a control-to-evidence mapping, or evidence streams for declared controls.",
+      "confidence": "high",
+      "reason": "Tenet 5 concerns device integrity and posture, not assurance-case evidence mapping.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not require tool-invocation records with arguments or digests, result status, and timestamps.",
+      "confidence": "high",
+      "reason": "Device posture monitoring is not agent-tool execution logging.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.1.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not require hardware-rooted attestation to cover dependencies named by a higher-layer control-to-evidence mapping.",
+      "confidence": "high",
+      "reason": "Neither the attestation mechanism nor the mapping construct is specified.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "6.2.1",
+      "current_match": "NM",
+      "proposed_match": "PM",
+      "proposed_clause": "\u00a73.2, Application Sandboxes",
+      "proposed_rationale": "SP 800-207 explicitly describes approved, vetted applications running in a sandbox and a PEP refusing requests from other applications. It does not require per-execution isolation-configuration records or sandbox-escape event records.",
+      "confidence": "high",
+      "reason": "This is a genuine, though incomplete, analogue that the NM coding misses.",
+      "framework": "NIST_SP_800_207",
+      "direction": "upgrade"
+    },
+    {
+      "requirement_id": "7.2.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not require timestamps to be externally anchored by a timestamp authority, transparency log, or consensus system.",
+      "confidence": "high",
+      "reason": "Continuous monitoring does not provide an operator-independent time anchor.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.1",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not require monitoring evidence-pipeline failures or recording them in a secondary durable log.",
+      "confidence": "high",
+      "reason": "General access-control failure handling is not an evidence-pipeline resilience requirement.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.2",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not require evidence-source sequence numbers or gap detection.",
+      "confidence": "high",
+      "reason": "No logging-chain structure is specified.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not make evidence generation a condition of action release or require a fail-closed evidence-store test.",
+      "confidence": "high",
+      "reason": "Per-request authorization is distinct from proof-pipeline availability gating.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.4",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not define an evidence store, its role-based access rules, or audit logging for evidence reads.",
+      "confidence": "high",
+      "reason": "The cited generic posture does not reach evidence custody.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.5",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not impose claim-linked evidence retention periods or evidence-store retention policy.",
+      "confidence": "high",
+      "reason": "No conformance-claim or evidence-retention regime is defined.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.6.6",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not require externally anchored chain roots, maximum anchoring intervals, or missed-deadline alerts.",
+      "confidence": "high",
+      "reason": "No transparency-log or external-anchoring requirement exists.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    },
+    {
+      "requirement_id": "7.7.3",
+      "current_match": "PM",
+      "proposed_match": "NM",
+      "proposed_clause": "\u2014",
+      "proposed_rationale": "SP 800-207 does not require algorithm identifiers on evidence digests or signatures, or rejection of unidentified digests.",
+      "confidence": "high",
+      "reason": "The cited \u00a75.4 is not a cryptographic-agility requirement for evidence records.",
+      "framework": "NIST_SP_800_207",
+      "direction": "downgrade"
+    }
+  ],
+  "citation_errors": [
+    {
+      "requirement_id": "1.1.1",
+      "cited": "CC8.1",
+      "problem": "CC8.1 is change management. The rationale's assertion that it provides a \u201csystem-component inventory\u201d is not an express CC8.1 requirement.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "1.1.2",
+      "cited": "CC8.1",
+      "problem": "CC8.1 does not require load-time digest comparison, signed manifests, or execution-record results; the cited clause supports only a broad change-management analogy.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "2.1.1",
+      "cited": "CC6.1; P-series",
+      "problem": "\u201cP-series\u201d is not a clause citation. CC6.1 is a logical-access criterion and does not itself require every data read/write to be logged with the stated fields.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "2.1.2",
+      "cited": "CC6.1; P-series",
+      "problem": "\u201cP-series\u201d is non-specific, and CC6.1 does not prescribe privacy-evidence content or periodic scans of an evidence store.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "2.1.3",
+      "cited": "CC6.1; P-series",
+      "problem": "Neither the non-specific \u201cP-series\u201d label nor CC6.1 requires a used-versus-disclosed data distinction in execution records.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "6.3.1",
+      "cited": "CC6.1",
+      "problem": "CC6.1 is not an explicit encryption or key-management criterion and does not require HSM generation, non-exportability, or an evidence-key inventory.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "7.2.1",
+      "cited": "CC7.2",
+      "problem": "CC7.2 addresses monitoring for anomalies; it does not state that audit logging is contemporaneous or that records are written in the transaction they describe.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "7.3.1",
+      "cited": "CC7.2",
+      "problem": "CC7.2 does not contain a log-protection, hash-chain, Merkle-tree, signature, or chain-verification requirement.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "7.6.1",
+      "cited": "CC7.3\u2013CC7.5",
+      "problem": "These criteria address evaluation of security events, incident response, and recovery. They do not specifically require monitored evidence-pipeline failures or a secondary durable failure log.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "7.6.4",
+      "cited": "CC7.3\u2013CC7.5",
+      "problem": "The cited incident-handling criteria do not require role-based access to an evidence store or an access record for every evidence read.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "7.6.5",
+      "cited": "CC7.3\u2013CC7.5",
+      "problem": "The cited incident-handling criteria do not require a stated evidence-retention period configured in a store policy.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "9.2.1",
+      "cited": "CC7.2",
+      "problem": "CC7.2 does not expressly require logging coverage for every in-scope system; the reference to \u201clayer-matched evidence\u201d is also outside the clause's subject.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "10.1.1",
+      "cited": "System description & management assertion",
+      "problem": "This is not a Common Criteria clause identifier. Those report elements do not require declaration of a PoC conformance stage.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "10.1.7",
+      "cited": "System description & management assertion",
+      "problem": "Neither report element requires public machine-readable publication, a schema, or programmatic comparison of claims.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "10.3.1",
+      "cited": "Type II operating-effectiveness period",
+      "problem": "A Type II period is an engagement/report characteristic, not a SOC 2 control criterion. It does not require a tamper-evident evidence store or availability of chain-verification results.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "10.3.2",
+      "cited": "Type II operating-effectiveness period",
+      "problem": "Type II testing does not require complete per-action evidence coverage or reconciliation with zero unexplained difference.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "10.3.5",
+      "cited": "Type II operating-effectiveness period",
+      "problem": "A Type II report does not itself impose a defined recurring reassessment cycle or require its availability to all relying parties.",
+      "framework": "SOC_2"
+    },
+    {
+      "requirement_id": "2.1.1\u20132.1.3",
+      "cited": "Art. 12",
+      "problem": "Article 12 requires automatic recording of events to enable traceability for high-risk AI; it does not specifically require logging every data read/write, datastore/object references, or used-versus-disclosed fields.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "2.2.1\u20132.2.5",
+      "cited": "Art. 10; \u201cGDPR interplay\u201d",
+      "problem": "Article 10 governs training, validation, and testing data-set governance. It does not require runtime consent, purpose, minimization, residency, license, or deidentification enforcement. \u201cGDPR interplay\u201d is not an AI Act clause and cannot support the asserted requirement.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "4.1.1\u20134.1.5, 4.1.7\u20134.1.8",
+      "cited": "Art. 9; Art. 14",
+      "problem": "Article 9 establishes risk management and Article 14 requires appropriate human oversight. Neither requires agent permission sets, per-action authorization checks, interception-gateway blocking, schema validation, task-bound credentials, path-aware authorization, or anti-escalation rules. The rationale's assertion that these articles \u201crequire authority limits\u201d is unsupported.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "5.1.1\u20135.1.4",
+      "cited": "Art. 12; Art. 50",
+      "problem": "Article 12 is a traceability/logging duty and Article 50 is a transparency duty for certain AI systems (including informing people they interact with AI). Neither establishes cryptographic principal-to-agent binding, agent authentication, delegation tokens, or attested credential binding. Article 50 does not generally require actor identification.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "6.1.2",
+      "cited": "Art. 15",
+      "problem": "Article 15 addresses accuracy, robustness and cybersecurity. It does not require an execution record for every tool invocation with arguments/digests, result status, and timestamp. Article 12 is the closer, still partial, logging citation.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "7.3.1\u20137.3.4",
+      "cited": "Art. 12; Art. 19",
+      "problem": "Automatic event logging and retention do not \u201cimply record integrity.\u201d Neither article requires hash chains, Merkle roots or inclusion proofs, signatures with independent key custody, or anti-equivocation mechanisms.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "7.3.5",
+      "cited": "Art. 12",
+      "problem": "Recording events over the lifetime of a system does not imply logs are append-only or that published roots receive consistency-proof verification.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "7.6.1\u20137.6.4, 7.6.6",
+      "cited": "Art. 19",
+      "problem": "Article 19 concerns retention by providers of logs automatically generated under Article 12. It does not require pipeline-failure alerts, secondary logs, monotonic sequences, fail-closed operation, evidence-store RBAC/access logs, or external root anchoring.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "7.6.5",
+      "cited": "Art. 19",
+      "problem": "Article 19 can support a limited retention analogue, but it does not require the retention period to appear in a conformance claim or be configured as a store policy covering the claim period.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "7.7.1",
+      "cited": "Art. 11; Annex IV",
+      "problem": "Technical documentation under Article 11/Annex IV is not a requirement to publish a machine-readable evidence-claim schema or validate deployed evidence output against it. Article 47(1), not Article 11, is the provision that expressly calls for a machine-readable EU declaration.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "10.1.1\u201310.1.8",
+      "cited": "Art. 43; Art. 47\u201348",
+      "problem": "Article 48 concerns CE marking, not the contents or publication of a conformance statement. Article 47 requires a machine-readable EU declaration kept available to competent authorities, not a published PoC-style, scoped, versioned claim register. Annex V supplies the declaration fields.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "10.3.1\u201310.3.7",
+      "cited": "Art. 72",
+      "problem": "Article 72 requires a post-market monitoring system and plan, but it does not prescribe per-action tamper-evident evidence validation, complete action/evidence reconciliation, validator logging, bounded alert acknowledgement, proof-coverage publication, independent reassessment, or structured-trace-validator testing.",
+      "framework": "EU_AI_Act"
+    },
+    {
+      "requirement_id": "6.1.1\u20136.1.4",
+      "cited": "Cl. 8 (via ISO/IEC 27001 alignment)",
+      "problem": "ISO/IEC 42001 clause 8 is operational planning and control. \u201cVia ISO/IEC 27001 alignment\u201d is not a cited ISO/IEC 42001 clause and does not require environment integrity attestations, tool-call logging, or control-to-evidence mappings.",
+      "framework": "ISO_42001"
+    },
+    {
+      "requirement_id": "6.3.1\u20136.3.5",
+      "cited": "ISO/IEC 27001 cryptographic controls (adjunct)",
+      "problem": "This is not an ISO/IEC 42001 clause citation. It cannot substantiate claims about hardware-backed evidence keys, signed rotation links, evidence-key incident handling, per-record algorithm labels, or post-quantum migration.",
+      "framework": "ISO_42001"
+    },
+    {
+      "requirement_id": "7.5.1\u20137.5.2",
+      "cited": "Cl. 9.1",
+      "problem": "Clause 9.1 concerns monitoring, measurement, analysis and evaluation; it does not adopt a verification/validation-based restriction on evidence-schema fields or public claims.",
+      "framework": "ISO_42001"
+    },
+    {
+      "requirement_id": "10.1.1\u201310.1.8",
+      "cited": "Cl. 4.3; Statement of Applicability",
+      "problem": "The statement of applicability is specifically required as documented information in clause 6.1.3 d), not clause 4.3. Neither provision requires the PoC-specific public claim fields asserted in the rationales.",
+      "framework": "ISO_42001"
+    },
+    {
+      "requirement_id": "1.1.1\u20131.1.5",
+      "cited": "Annex A.4; Cl. 7.5",
+      "problem": "\u201cAnnex A.4\u201d is a control-group heading, not a specific control citation. The cited documentation clauses do not themselves require model documentation/versioning to be cryptographically bound to execution records.",
+      "framework": "ISO_42001"
+    },
+    {
+      "requirement_id": "1.2.1\u20131.2.4",
+      "cited": "Annex A.7",
+      "problem": "\u201cAnnex A.7\u201d is a control-group heading rather than a particular data control. The rationale should identify the actual data-provenance/quality control relied on, if any.",
+      "framework": "ISO_42001"
+    },
+    {
+      "requirement_id": "1.1.1\u20131.1.5",
+      "cited": "MAP 2.3; GOVERN 1.6",
+      "problem": "MAP 2.3 is scientific-integrity and TEVV/data-selection documentation, not model provenance. GOVERN 1.6 is an AI-system inventory outcome, not provenance or artifact documentation. MAP 4.1 and GOVERN 6.1 are the closer supply-chain/third-party clauses, although neither mandates cryptographic provenance.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "1.2.1\u20131.2.4",
+      "cited": "MAP 2.3; MEASURE 2.8",
+      "problem": "Neither clause requires data lineage. MAP 2.3 addresses TEVV and data-collection/selection considerations; MEASURE 2.8 addresses examination and documentation of transparency/accountability risks.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "2.1.1\u20132.1.3",
+      "cited": "MEASURE 2.10",
+      "problem": "MEASURE 2.10 requires privacy risk to be examined and documented. It does not require access recording, nor does it distinguish data used from data disclosed.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "2.2.1\u20132.2.5",
+      "cited": "GOVERN 1.1; MANAGE 1.3",
+      "problem": "GOVERN 1.1 addresses legal/regulatory requirements and MANAGE 1.3 requires development/planning/documentation of responses to high-priority risks. Neither requires runtime consent checks, purpose checks, data minimization query constraints, residency enforcement, or per-access records.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "2.3.1\u20132.3.3",
+      "cited": "MEASURE 2.10",
+      "problem": "MEASURE 2.10 contains no requirement for privacy-enhancing technologies, zero-knowledge proofs, commitments, anchoring consent, or verifiable computation. The rationale's assertion that RMF profiles reference PETs is not the Core clause's requirement.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "4.1.1\u20134.1.8",
+      "cited": "GOVERN 2.1; GOVERN 3.2",
+      "problem": "GOVERN 2.1 concerns organizational roles, responsibilities, and communications for AI-risk management. GOVERN 3.2 concerns roles and responsibilities for human-AI configurations and oversight. Neither addresses runtime agent authorization, scopes, credentials, tool schemas, or action-level enforcement records.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "5.1.1\u20135.1.4",
+      "cited": "GOVERN 2.1; GOVERN 4.1",
+      "problem": "GOVERN 2.1 does not require attributable actors or principal binding; GOVERN 4.1 is a safety-first/critical-thinking culture outcome. Neither requires agent identity credentials, delegation tokens, or attested credential custody.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "7.2.1\u20137.2.2",
+      "cited": "MEASURE 2.8; MANAGE 4.1",
+      "problem": "MEASURE 2.8 is not a documentation-record timing requirement, and MANAGE 4.1 is a post-deployment monitoring-plan outcome. Neither requires transactionally contemporaneous evidence or external timestamp anchoring.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "7.3.1\u20137.3.4",
+      "cited": "MEASURE 2.8",
+      "problem": "MEASURE 2.8 does not require traceability controls, hash chains, signatures, anti-equivocation measures, Merkle inclusion proofs, or verifier access to published roots.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "7.5.1\u20137.5.2",
+      "cited": "MEASURE 2.5",
+      "problem": "MEASURE 2.5 requires the deployed AI system to be demonstrated valid and reliable and its generalizability limitations documented. It does not distinguish measured facts from aspirations or impose a PoC claims-discipline review.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "7.6.1\u20137.6.6",
+      "cited": "MANAGE 2.3; MANAGE 4.1",
+      "problem": "MANAGE 2.3 concerns response/recovery from previously unknown risks, and MANAGE 4.1 covers post-deployment monitoring plans. Neither requires evidence-pipeline failure logging, sequence numbers, fail-closed action gating, RBAC, retention configuration, or external root anchoring.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "10.1.1\u201310.1.8",
+      "cited": "GOVERN 4.2",
+      "problem": "GOVERN 4.2 requires teams to document and communicate AI risks and potential impacts. It does not establish transparency artifacts, RMF profiles, a conformance-statement format, claim domains, machine-readable publication, or automated inventory reconciliation. GOVERN 1.6 is the closer clause for the inventory aspect of 10.1.8; MAP 1.1 is closer for system boundary/context in 10.1.6.",
+      "framework": "NIST_AI_RMF"
+    },
+    {
+      "requirement_id": "1.1.1-1.1.5",
+      "cited": "AISVS C6",
+      "problem": "This is a chapter, not a requirement citation. C6.1.3 covers integrity-verifiable third-party artifacts; C6.2.1-C6.2.2 cover a machine-readable signed AI BOM. None says C6 requires execution-record model provenance, end-to-end signature chains, attestation-based admission, or external build-chain verification.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "1.2.1-1.2.4",
+      "cited": "AISVS C1; C8",
+      "problem": "C1 is training-data integrity and traceability; C8 is RAG/memory access control, sanitization, and retention. C8 has no \"memory provenance\" requirement, and neither citation supports a custody chain to an action record. Better adjacent clauses are C12.5.4 for ingestion tags and C12.5.1 for transformation lineage.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "2.2.1-2.2.5",
+      "cited": "AISVS C1",
+      "problem": "C1 does not contain a consent-record evaluation requirement, runtime purpose enforcement, query-constraint logging, data-residency enforcement, or re-identification-attempt blocking. C1.1.1 and C1.1.2 are about training-data minimization, inventory, license, and intended-use constraints.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "4.1.1-4.1.8",
+      "cited": "AISVS C9",
+      "problem": "The chapter-level citation obscures divergent controls. The relevant clauses are C9.5.1-C9.5.3 for runtime authorization and C9.2.10 for multi-step approval impact. AISVS C9 does not require pre-action execution records, per-decision evidence, an interception gateway, parameter digests, or the two stated research-driven anti-escalation properties.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "4.2.1-4.2.4",
+      "cited": "AISVS C9.4",
+      "problem": "C9.4 is Agent and Orchestrator Identity. It requires a unique cryptographic agent identity, cryptographic action binding, credential rotation, and state integrity\u2014not delegation-token validation, signed delegation-hop chains, scope intersection, or zero-knowledge delegation proofs. C9.5.2 and C9.5.5 are the nearer delegation citations.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "5.1.1-5.1.4",
+      "cited": "AISVS C5; C9.4",
+      "problem": "C9.4.1 supports cryptographic agent identity and downstream authentication, but neither chapter requires principal-to-agent execution records, per-tool delegation tokens, credential-validation event logs, or binding credentials to attested hardware.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "6.1.1-6.1.4",
+      "cited": "AISVS C4",
+      "problem": "C4 contains sandboxing, workload attestation, confidential inference, and hardware controls. It does not contain a claim register, control-to-evidence mapping, tool-invocation logging, signed-attestation-record retention, or dependency-complete attestation mapping.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "6.2.1-6.2.3",
+      "cited": "AISVS C4; C9",
+      "problem": "C4.1.1/C9.3.1 support sandboxing, and C4.1.3-C4.2.3 support attestation and confidential execution. They do not establish PoC's per-execution evidence, external validation against published reference values, or continuously validated hardware gating.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "7.3.1-7.3.5",
+      "cited": "AISVS C12",
+      "problem": "C12 does not state log protection, hash chaining, signatures by inaccessible mechanism keys, anti-equivocation, inclusion proofs, published roots, or consistency proofs. C12.5.3 only requires immutable audit records for model changes; it does not rescue the broader rationale.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "7.6.1-7.6.6",
+      "cited": "AISVS C12",
+      "problem": "C12 has detection/alerting controls but no evidence-pipeline failure log, sequence-completeness, fail-closed action gating, evidence-store read logging, retention-policy/claim reconciliation, or external-root anchoring requirement.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "7.7.3",
+      "cited": "AISVS C6",
+      "problem": "C6.2.2 requires signed AI BOMs, but does not state cryptographic agility, explicit algorithm identifiers on every digest/signature, or rejection of unidentified digests.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "9.2.1-9.2.3",
+      "cited": "AISVS C12",
+      "problem": "C12 does not require component-wide logging coverage inventories, MAESTRO-layer matching, or hash-linked multi-layer evidence bundles. C12.1.1 is the nearest general logging clause, not a layer-coverage requirement.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "10.3.1-10.3.7",
+      "cited": "AISVS C12",
+      "problem": "AISVS C12 is a monitoring/logging chapter, not a PoC continuous-conformance regime. It contains no tier validation, complete action/evidence reconciliation, proof-coverage publication, monitoring-pipeline third-party reassessment, or validator trace-parsing evaluation requirement.",
+      "framework": "OWASP_AISVS"
+    },
+    {
+      "requirement_id": "1.1.1\u20131.1.5",
+      "cited": "Verify ML Artifacts (AML.M0014)",
+      "problem": "The current ATLAS name is 'Verify AI Artifacts,' not 'Verify ML Artifacts.' AML.M0014 verifies checksums/signatures of AI artifacts; the additional unspecific phrase 'code-signing mitigations' should be cited separately as AML.M0013 if relied on.",
+      "framework": "MITRE_ATLAS"
+    },
+    {
+      "requirement_id": "1.2.1\u20131.2.4",
+      "cited": "Sanitize Training Data (AML.M0007)",
+      "problem": "AML.M0007 detects/remediates poisoned training data and filters ingestion. It does not establish data provenance, custody chains, transformation histories, or external lineage access. Current ATLAS clauses AML.M0023/M0025 are the relevant provenance citations, and AML.M0024 is relevant to runtime input logging.",
+      "framework": "MITRE_ATLAS"
+    },
+    {
+      "requirement_id": "4.1.1\u20134.1.8",
+      "cited": "Control Access to ML Models and Data (AML.M0005)",
+      "problem": "The actual title is 'Control Access to AI Models and Data at Rest.' It concerns internal registries, production models, and training-data access\u2014not runtime action-by-action authorization, tool-schema validation, human approvals, or path-aware authorization. AML.M0026\u2013AML.M0029 and AML.M0033 are the relevant current partial clauses for several of these rows.",
+      "framework": "MITRE_ATLAS"
+    },
+    {
+      "requirement_id": "5.1.1\u20135.1.4",
+      "cited": "AML.M0005",
+      "problem": "AML.M0005 does not require authenticated actors, principal binding, cryptographic agent credentials, delegation tokens, or attested credential environments. The rationale's implication is unsupported by the cited clause.",
+      "framework": "MITRE_ATLAS"
+    },
+    {
+      "requirement_id": "6.1.1\u20136.1.4",
+      "cited": "Adversarial Input Detection (AML.M0015); vulnerability scanning",
+      "problem": "AML.M0015 detects/blocks adversarial inputs before the model. It is not an environment-hardening, vulnerability-scanning, attestation, or evidence-mapping control. Vulnerability Scanning is AML.M0016, but it still does not supply the claimed attestation or claim-mapping coverage.",
+      "framework": "MITRE_ATLAS"
+    },
+    {
+      "requirement_id": "6.1.2",
+      "cited": "Adversarial Input Detection (AML.M0015); vulnerability scanning",
+      "problem": "Neither cited item requires tool-invocation records. The applicable current partial clause is AML.M0024 AI Telemetry Logging, which expressly calls for logging agent tool use but does not prescribe the full PoC field set.",
+      "framework": "MITRE_ATLAS"
+    },
+    {
+      "requirement_id": "6.2.1\u20136.2.3",
+      "cited": "Execution-restriction / sandboxing mitigations",
+      "problem": "This is not an ATLAS clause identifier or title. The auditable current citation is AML.M0032 Segmentation of AI Agent Components; it supports sandboxing/segmentation only, not confidential-compute or hardware-attestation requirements.",
+      "framework": "MITRE_ATLAS"
+    },
+    {
+      "requirement_id": "7.3.1\u20137.3.3",
+      "cited": "ML event-logging mitigations",
+      "problem": "This is not a specific ATLAS citation. AML.M0024 AI Telemetry Logging is the identifiable current logging mitigation, but it contains no hash-chain, signature-custody, equivocation-resistance, or external-verification requirement.",
+      "framework": "MITRE_ATLAS"
+    },
+    {
+      "requirement_id": "2.1.1\u20132.1.3",
+      "cited": "Runtime gateway \u2014 data-action gating",
+      "problem": "Not an AARM v1.0 clause or named requirement. The relevant real clauses, where partial overlap is intended, are R2 (context accumulation), R5 (tamper-evident receipts), and potentially R9 (least privilege).",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "2.2.1\u20132.2.5",
+      "cited": "Policy evaluation at the action boundary",
+      "problem": "Not an AARM clause title. The closest real citation is R3, but R3 requires policy plus intent alignment; it does not specifically require consent, purpose, residency, licensing, query minimization, or de-identification controls.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "4.1.1\u20134.1.8",
+      "cited": "Action interception: approve / modify / defer / deny",
+      "problem": "Not a valid clause identifier or title. AARM R1 covers interception and R4 defines ALLOW, DENY, MODIFY, STEP_UP, and DEFER; the citation omits ALLOW and STEP_UP and does not establish the additional PoC authorization-record requirements.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "4.2.1\u20134.2.4",
+      "cited": "Authority evaluation at the boundary",
+      "problem": "No such AARM v1.0 requirement exists. R3 is policy evaluation with intent alignment; it does not prescribe token signature/expiry/audience checks or delegation-chain validation.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "5.1.1\u20135.1.4",
+      "cited": "Agent identity as authorization input",
+      "problem": "Not an AARM clause. R6 requires cryptographic binding of each action receipt to an agent identity; it does not state that identity is an authorization input, nor mandate principal delegation tokens or environment attestation.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "6.1.1\u20136.1.4",
+      "cited": "Runtime control enforcement",
+      "problem": "Not an AARM clause. It cannot support claims about control-to-evidence mappings, tool invocation fields, or hardware/remote attestation.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "7.1.1\u20137.1.5",
+      "cited": "The AARM runtime gateway",
+      "problem": "Not a normative AARM clause. AARM \u00a76.1 describes a Protocol Gateway as one recognized architecture, while \u00a76 also permits SDK instrumentation, Kernel eBPF, and Vendor Integration; R1\u2014not a mandatory gateway architecture\u2014is the actual interception requirement.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "7.2.1\u20137.2.2",
+      "cited": "Execution-time audit trail",
+      "problem": "Not an AARM v1.0 clause. R5 requires an action receipt with a timestamp, but does not require transactional contemporaneity or external timestamp anchoring.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "7.3.1\u20137.3.3",
+      "cited": "Gateway receipts",
+      "problem": "Not a clause. The actual citation is R5, which requires tamper-evident action receipts; it does not specify a gateway, hash chains, Merkle structures, key custody, or anti-equivocation.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "7.6.1\u20137.6.6",
+      "cited": "Deny/failure decisions",
+      "problem": "No AARM clause by this name. R4 defines DENY and DEFER decisions, and the R1 test requires no fail-open when the AARM system is unavailable; neither governs evidence-pipeline failures, retention, evidence-store access, sequence completeness, or anchoring.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "7.7.1",
+      "cited": "Receipt schema",
+      "problem": "No AARM v1.0 normative receipt-schema clause is identified. R8 only SHOULD export telemetry in a standard interoperable format; it does not require a published claim-set schema or deployed-output schema validation.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "10.1.1\u201310.1.8",
+      "cited": "CSA conformance regime",
+      "problem": "Not an AARM clause. AARM \u00a75 defines Core/Extended conformance and an evidence package reviewed by the working group; it does not define the asserted PoC conformance-statement fields, domains, or machine-readable public claims.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "10.3.1\u201310.3.7",
+      "cited": "Continuous runtime enforcement",
+      "problem": "Not an AARM v1.0 requirement. R1/R5 impose runtime interception and receipts, but no AARM clause mandates continuous evidence-store validation, alerts, reassessment cycles, coverage publication, or validator-quality evaluation.",
+      "framework": "CSA_AARM"
+    },
+    {
+      "requirement_id": "2.1.1",
+      "cited": "PEP logging (\u00a73)",
+      "problem": "\u00a73 describes the PEP as enabling, monitoring, and terminating connections; it does not prescribe PEP logging of resource-access fields. The policy engine, not the PEP description, is stated to log grant/deny decisions.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "2.2.5",
+      "cited": "Policy Engine (\u00a73)",
+      "problem": "The policy-engine description covers enterprise policy and grant/deny/revoke decisions. It does not mention deidentification methods, re-identification joins, or their logging.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "3.1.1",
+      "cited": "Tenets 2\u20133 (\u00a72.1)",
+      "problem": "Tenet 2 requires securing communications and Tenet 3 makes access to individual enterprise resources per-session. Neither says boundary crossings are re-evaluated or recorded; \u201cno implicit trust across boundaries\u201d is not what these tenets state.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "3.1.2",
+      "cited": "Tenets 2\u20133 (\u00a72.1)",
+      "problem": "These tenets do not require destination-side digest/signature verification or recording results at both ends of a crossing.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "4.1.4",
+      "cited": "Tenets 3, 4, 6; PEP (\u00a73)",
+      "problem": "The cited provisions concern per-session/dynamic access and authentication. They do not require a registered tool schema, parameter validation, rejection of out-of-schema calls, or a parameter digest.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "4.1.6",
+      "cited": "Tenets 3, 4, 6; PEP (\u00a73)",
+      "problem": "None of these provisions requires human approval or override evidence, authenticated approver identity, exact approval content, or timestamps.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "4.1.7",
+      "cited": "Tenets 3, 4, 6; PEP (\u00a73)",
+      "problem": "No cited provision requires path-aware authorization across a chain of invocations or carrying upstream parameters and state.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "4.1.8",
+      "cited": "Tenets 3, 4, 6; PEP (\u00a73)",
+      "problem": "No cited provision prevents authorization-state escalation from diagnostic, advisory, or audit outputs.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "5.2.1",
+      "cited": "Tenet 2",
+      "problem": "Tenet 2 requires communications to be secured regardless of network location. It does not require agent-to-agent message signatures, receiver-side signature rejection, or logging.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "6.1.1",
+      "cited": "Tenet 5",
+      "problem": "Tenet 5 requires monitoring and measuring asset integrity and security posture. It does not require a conformance claim, declared-control inventory, or control-to-evidence mapping.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "6.1.2",
+      "cited": "Tenet 5",
+      "problem": "Device/asset integrity monitoring does not require records of agent tool identifiers, arguments, results, and timestamps.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "7.6.1",
+      "cited": "Deny-by-default posture (\u00a72)",
+      "problem": "This is not an identified SP 800-207 clause that imposes evidence-pipeline fail-closed behavior, secondary logs, or alerts.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "7.6.6",
+      "cited": "Deny-by-default posture (\u00a72)",
+      "problem": "This citation does not support external chain-root anchoring, a maximum anchoring interval, or missed-anchor alerts.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "7.7.3",
+      "cited": "Sec. 5.4",
+      "problem": "\u00a75.4 is a ZTA deployment/use-case subsection, not a requirement for cryptographic agility or algorithm identifiers in evidence records.",
+      "framework": "NIST_SP_800_207"
+    },
+    {
+      "requirement_id": "10.3.5",
+      "cited": "Tenet 7; CDM integration",
+      "problem": "Tenet 7 concerns collection of information on the current state of assets and ongoing improvement of protections. It does not require periodic third-party reassessment of a monitoring pipeline or publication of the report to relying parties.",
+      "framework": "NIST_SP_800_207"
+    }
+  ],
+  "systemic": {
+    "SOC_2": {
+      "assessment": "The sheet is broadly conservative on cryptographic, externally verifiable PoC properties, but it misses several SOC 2 partial analogs for logging, transmission, privacy, authorization, and monitoring. Its most material overcoding is the blanket EM treatment of C10.1: SOC 2 system descriptions and management assertions are not equivalent to a public, machine-readable PoC conformance claim.",
+      "issues": [
+        "NM is applied too strictly to requirements that have a clear SOC 2 control-topic analog, even though SOC 2 does not provide PoC-grade cryptographic or operator-independent evidence. These should generally be PM, not NM.",
+        "C10.1.1\u2013C10.1.8 are uniformly overgraded as EM. A SOC 2 system description and management assertion are report elements, not a PoC claim register, tier declaration, public machine-readable claim, or automated deployment-discovery regime.",
+        "Several rationales characterize CC7.2 as an audit-logging requirement. CC7.2 concerns monitoring for anomalies; it does not itself require contemporaneous audit records, hash chains, signatures, or external anchoring.",
+        "Several citations use non-specific labels rather than clauses (for example, \u201cP-series,\u201d \u201cSystem description & management assertion,\u201d and \u201cType II operating-effectiveness period\u201d), making the coding sheet difficult to audit."
+      ]
+    },
+    "EU_AI_Act": {
+      "assessment": "The sheet is materially over-generous in C10 and in runtime consent/authorization mappings. Articles 10, 12, 14, 19, and 72 impose bounded high-risk-AI duties; they do not generally prescribe agent-runtime enforcement or operator-independent proof mechanisms.",
+      "issues": [
+        "Article 10 is repeatedly treated as a runtime privacy/consent/access-control provision. It governs training, validation, and testing data governance for high-risk systems, not per-query consent, purpose, residency, or deidentification enforcement.",
+        "Article 12's general automatic-event logging duty is repeatedly described as requiring specific data-access fields, integrity mechanisms, or identity bindings that it does not specify.",
+        "C10.1 is systematically overcoded EM. Article 47 and Annex V require a machine-readable EU declaration for high-risk AI, but do not require PoC domains, tiers, evidence streams, trust disclosures, public publication, or claim-register reconciliation.",
+        "Several rationales infer tamper evidence or resilience from Article 19 retention. Retention of automatically generated logs is not a requirement for hash chains, signatures, failure logging, RBAC, sequence-gap detection, or fail-closed operation.",
+        "The sheet does not consistently state that the cited duties apply only to high-risk AI systems (with separately scoped GPAI obligations), which further broadens otherwise limited analogies."
+      ]
+    },
+    "ISO_42001": {
+      "assessment": "The sheet is generally conservative on cryptographic-proof requirements, but it materially overstates equivalence in C10 and relies repeatedly on broad Annex headings or non-normative ISO/IEC 27001 adjacency rather than a requirement in ISO/IEC 42001.",
+      "issues": [
+        "C10.1 is systematically overgraded: an ISO/IEC 42001 scope and statement of applicability are not a Proof-of-Control conformance statement with tiers, evidence streams, public machine-readable publication, marketing restrictions, or discovery reconciliation.",
+        "Many citations name an Annex section heading (for example, \u201cAnnex A.4\u201d or \u201cAnnex A.7\u201d) rather than an applicable control. This makes the claimed coverage difficult to audit and sometimes masks that the cited material is only resource/data governance.",
+        "C6.1 and C6.3 improperly treat general ISO/IEC 27001 alignment as though ISO/IEC 42001 itself imposed specific environment-attestation or evidence-key requirements.",
+        "Several C4.1 rationales are copied across requirements that concern materially different subjects, including human oversight, runtime authorization, tool-schema validation, credentials, and path-aware authorization."
+      ]
+    },
+    "NIST_AI_RMF": {
+      "assessment": "The sheet is broadly over-generous in treating general AI-risk documentation, role definitions, and impact assessments as partial matches for highly specific PoC claim/conformance requirements. Conversely, several NM entries omit AI RMF's broad privacy and security-resilience outcomes, which support PM\u2014not cryptographic evidence requirements.",
+      "issues": [
+        "MAP 2.3 and GOVERN 1.6 are repeatedly described as model provenance clauses. MAP 2.3 addresses scientific integrity and TEVV/data-selection considerations; GOVERN 1.6 addresses AI-system inventory. Neither requires provenance, artifact digests, or cryptographic binding.",
+        "MEASURE 2.8 is repeatedly described as data-lineage, contemporaneous-record, or tamper-evident-log guidance. Its actual outcome is examination and documentation of transparency and accountability risks.",
+        "The C4 authority rows cite GOVERN 2.1 and GOVERN 3.2 as though they govern runtime authorization. They concern organizational roles/communications and human-AI oversight roles, respectively; neither requires action-level permission evaluation.",
+        "The C10.1 series consistently treats GOVERN 4.2 impact-risk documentation as a standardized public conformance-statement regime. AI RMF has no such conformance-statement or PoC-marketing scheme.",
+        "Security-resilience treatment is inconsistent: C6.1/C6.2 and C7.3 receive PM from MEASURE 2.7/2.8, while closely related key-lifecycle and evidence-store access-control rows are NM."
+      ]
+    },
+    "OWASP_AISVS": {
+      "assessment": "The sheet substantially overstates AISVS as Exact. AISVS 1.0 contains useful adjacent controls for supply-chain integrity, agent authorization, sandboxing, logging, and attestation, but it does not require PoC's execution-bound, independently verifiable cryptographic evidence. Several NM rows also miss concrete AISVS controls.",
+      "issues": [
+        "Chapter labels such as \"AISVS C6\", \"C9\", and \"C12\" are repeatedly used as if they were individual clauses. AISVS requirements are numbered Cx.y.z; chapter-level citations conceal substantial scope differences and are not auditable citations.",
+        "The C1/C8 rationale is materially inaccurate: C1 concerns training data, while C8 contains RAG access, sanitization, and retention controls\u2014not a general memory-provenance or custody-chain requirement.",
+        "The C12 rationale repeatedly asserts \"log protection\", continuous monitoring, or pipeline-failure coverage that AISVS C12 does not state. C12.1 requires logging and a structured inference-event schema, but does not require protected evidence stores, hash chains, anchoring, sequence completeness, retention, or fail-closed evidence generation.",
+        "All C4/C9 EM ratings conflate implementation security controls with PoC evidence properties. AISVS can require authorization, sandboxing, TEEs, or approval binding while remaining silent about execution records, independently checkable evidence, published reference values, and continuous proof validation.",
+        "Several true partial matches are cited too broadly or against the wrong chapter: AISVS has more precise clauses for ingestion lineage (C12.5.4), transformations (C12.5.1), agent identity (C9.4.1), authorization tokens (C9.5.2), action authorization (C9.5.1), and structured logging (C12.1.3)."
+      ]
+    },
+    "MITRE_ATLAS": {
+      "assessment": "The sheet substantially understates newer ATLAS agent mitigations (AML.M0023\u2013AML.M0033), while several PMs are based on generic logging/access-control concepts that do not reach the stated PoC requirement. No ATLAS mitigation provides PoC\u2019s operator-independent cryptographic evidence or external verifiability.",
+      "issues": [
+        "The sheet appears to use an older, incomplete mitigation set. It misses AML.M0023 AI Bill of Materials, AML.M0024 AI Telemetry Logging, AML.M0025 Maintain AI Dataset Provenance, and the agent-specific AML.M0026\u2013AML.M0033 mitigations; this causes several false NMs.",
+        "AML.M0005 is repeatedly characterized as runtime least-privilege or agent authorization. Its actual scope is access to AI models and data at rest, not per-action authorization, delegation, credentials, or execution records.",
+        "AML.M0015 is repeatedly used for environment hardening and tool-invocation evidence. It is Adversarial Input Detection; it does not require vulnerability scanning, runtime attestation, control-to-evidence mapping, or tool logs.",
+        "Several entries use generic labels rather than stable ATLAS identifiers (for example, 'Execution-restriction / sandboxing mitigations' and 'ML event-logging mitigations'). This makes the coding sheet hard to audit and conceals the applicable current clauses."
+      ]
+    },
+    "CSA_AARM": {
+      "assessment": "The sheet substantially overstates AARM\u2019s coverage. AARM v1.0 has only R1\u2013R9; it does require pre-execution interception, context accumulation, policy evaluation, tamper-evident per-action receipts, cryptographic agent-identity binding, and least-privilege scoping. It does not require operator-independent public evidence, hardware attestation, provenance, external anchoring, or most of the highly specific receipt and authorization properties asserted here.",
+      "issues": [
+        "The sheet uses descriptive labels as though they were AARM clauses. The actual normative identifiers are R1\u2013R9 (and architecture descriptions in \u00a76); labels such as \u201cAction interception: approve / modify / defer / deny\u201d and \u201cRuntime gateway \u2014 data-action gating\u201d are not AARM v1.0 clause identifiers.",
+        "C4 and C7 are systematically graded too generously: generic runtime interception, policy decisions, and tamper-evident receipts were repeatedly marked EM despite PoC requiring specific fields, durable/evidence ordering, effect-channel mediation, independent verification, or cryptographic mechanisms absent from AARM.",
+        "Several NM rows miss the meaningful but partial overlap in R2 context accumulation. This supports context/input and custody topics, but not PoC\u2019s hash-linked, externally verifiable provenance.",
+        "AARM\u2019s signed/tamper-evident receipts are operator-controlled runtime evidence. They do not satisfy PoC Tier-3/4 properties such as external timestamps, public Merkle roots, anti-equivocation, independent attestation, or proof-gated operation."
+      ]
+    },
+    "NIST_SP_800_207": {
+      "assessment": "The sheet substantially overstates SP 800-207\u2019s coverage of agent-specific evidence, cryptographic proof, and evidence-custody requirements. Its strongest relevant coverage is dynamic, per-request access control; that supports partial, not exact, matches where PoC additionally requires detailed execution records or independently verifiable evidence.",
+      "issues": [
+        "C4.1 is systematically overgraded: generic zero-trust access decisions, least privilege, and authentication are repeatedly called EM despite PoC requiring action-specific records, tool semantics, approval content, or path-aware authorization.",
+        "Several rows treat generic monitoring or access control as if it required a cryptographically protected evidence pipeline. SP 800-207 is an architectural document; it does not require externally verifiable, hash-linked, signed, anchored evidence.",
+        "\u201cPEP logging (\u00a73)\u201d is used as a stock citation, but \u00a73 describes a PEP as enabling, monitoring, and terminating connections. The publication expressly says the policy engine logs access decisions; it does not prescribe PEP audit-record fields.",
+        "\u201cDeny-by-default posture (\u00a72)\u201d is also used as a stock citation for evidence-store resilience and retention. It is not an identified SP 800-207 clause imposing those evidence-pipeline requirements.",
+        "The sheet is appropriately conservative for provenance, transparency-log, conformance-regime, and Tier-3/4 proof requirements, except that it misses the explicit Application Sandboxes discussion in \u00a73.2."
+      ]
+    }
+  }
+}

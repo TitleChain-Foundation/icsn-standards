@@ -1,0 +1,196 @@
+{
+  "e2_scaling_deep": [
+    {
+      "path_length": 10,
+      "bounded_us": 0.25,
+      "naive_us": 6.04
+    },
+    {
+      "path_length": 100,
+      "bounded_us": 0.25,
+      "naive_us": 65.42
+    },
+    {
+      "path_length": 1000,
+      "bounded_us": 0.208,
+      "naive_us": 655.6
+    },
+    {
+      "path_length": 5000,
+      "bounded_us": 0.208,
+      "naive_us": 3374.65
+    },
+    {
+      "path_length": 10000,
+      "bounded_us": 0.208,
+      "naive_us": 7032.83
+    },
+    {
+      "path_length": 50000,
+      "bounded_us": 0.208,
+      "naive_us": 33545.92
+    }
+  ],
+  "e3_anchoring": {
+    "publication_us": 85.67,
+    "action_rate_per_s": 4989,
+    "rows": [
+      {
+        "delta_s": 0.001,
+        "exposure_actions": 5,
+        "publish_overhead_fraction": 0.085666
+      },
+      {
+        "delta_s": 0.01,
+        "exposure_actions": 50,
+        "publish_overhead_fraction": 0.0085666
+      },
+      {
+        "delta_s": 0.1,
+        "exposure_actions": 499,
+        "publish_overhead_fraction": 0.00085666
+      },
+      {
+        "delta_s": 1.0,
+        "exposure_actions": 4989,
+        "publish_overhead_fraction": 8.5666e-05
+      },
+      {
+        "delta_s": 10.0,
+        "exposure_actions": 49886,
+        "publish_overhead_fraction": 8.567e-06
+      },
+      {
+        "delta_s": 60.0,
+        "exposure_actions": 299316,
+        "publish_overhead_fraction": 1.428e-06
+      },
+      {
+        "delta_s": 3600.0,
+        "exposure_actions": 17958964,
+        "publish_overhead_fraction": 2.4e-08
+      }
+    ]
+  },
+  "e4_batch_signing": {
+    "rows": [
+      {
+        "batch": 1,
+        "us_per_action": 85.74,
+        "steps_per_s": 11663,
+        "worst_case_unsigned_delay_us": 0.0
+      },
+      {
+        "batch": 2,
+        "us_per_action": 42.57,
+        "steps_per_s": 23490,
+        "worst_case_unsigned_delay_us": 42.6
+      },
+      {
+        "batch": 4,
+        "us_per_action": 21.81,
+        "steps_per_s": 45859,
+        "worst_case_unsigned_delay_us": 65.4
+      },
+      {
+        "batch": 8,
+        "us_per_action": 11.09,
+        "steps_per_s": 90134,
+        "worst_case_unsigned_delay_us": 77.7
+      },
+      {
+        "batch": 16,
+        "us_per_action": 6.04,
+        "steps_per_s": 165588,
+        "worst_case_unsigned_delay_us": 90.6
+      },
+      {
+        "batch": 32,
+        "us_per_action": 3.2,
+        "steps_per_s": 312449,
+        "worst_case_unsigned_delay_us": 99.2
+      },
+      {
+        "batch": 64,
+        "us_per_action": 1.99,
+        "steps_per_s": 503150,
+        "worst_case_unsigned_delay_us": 125.2
+      },
+      {
+        "batch": 128,
+        "us_per_action": 1.34,
+        "steps_per_s": 745573,
+        "worst_case_unsigned_delay_us": 170.3
+      }
+    ],
+    "speedup_128": 63.99
+  },
+  "e5_retention": {
+    "fleet": {
+      "agents": 1000,
+      "actions_per_agent_day": 100
+    },
+    "record_bytes": {
+      "Ed25519": 1336,
+      "ML-DSA-44": 10760,
+      "Hybrid": 11016
+    },
+    "record_bytes_cbor": {
+      "Ed25519": 664,
+      "ML-DSA-44": 5376,
+      "Hybrid": 5504
+    },
+    "rows": [
+      {
+        "years": 1,
+        "actions": 36500000,
+        "Ed25519": 0.049,
+        "Ed25519_cbor": 0.024,
+        "ML-DSA-44": 0.393,
+        "ML-DSA-44_cbor": 0.196,
+        "Hybrid": 0.402,
+        "Hybrid_cbor": 0.201
+      },
+      {
+        "years": 3,
+        "actions": 109500000,
+        "Ed25519": 0.146,
+        "Ed25519_cbor": 0.073,
+        "ML-DSA-44": 1.178,
+        "ML-DSA-44_cbor": 0.589,
+        "Hybrid": 1.206,
+        "Hybrid_cbor": 0.603
+      },
+      {
+        "years": 5,
+        "actions": 182500000,
+        "Ed25519": 0.244,
+        "Ed25519_cbor": 0.121,
+        "ML-DSA-44": 1.964,
+        "ML-DSA-44_cbor": 0.981,
+        "Hybrid": 2.01,
+        "Hybrid_cbor": 1.004
+      },
+      {
+        "years": 7,
+        "actions": 255500000,
+        "Ed25519": 0.341,
+        "Ed25519_cbor": 0.17,
+        "ML-DSA-44": 2.749,
+        "ML-DSA-44_cbor": 1.374,
+        "Hybrid": 2.815,
+        "Hybrid_cbor": 1.406
+      },
+      {
+        "years": 10,
+        "actions": 365000000,
+        "Ed25519": 0.488,
+        "Ed25519_cbor": 0.242,
+        "ML-DSA-44": 3.927,
+        "ML-DSA-44_cbor": 1.962,
+        "Hybrid": 4.021,
+        "Hybrid_cbor": 2.009
+      }
+    ]
+  }
+}

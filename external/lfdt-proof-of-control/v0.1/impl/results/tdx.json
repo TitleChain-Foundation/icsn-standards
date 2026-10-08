@@ -1,0 +1,97 @@
+{
+  "host": {
+    "kernel": "6.17.0-1021-gcp",
+    "cpu_model": "Intel TDX",
+    "tdx_guest_device": true,
+    "dmesg_tdx": [
+      "[    0.000000] tdx: Guest detected",
+      "[    0.000000] tdx: Attributes: SEPT_VE_DISABLE",
+      "[    0.000000] tdx: TD_CTLS: PENDING_VE_DISABLE ENUM_TOPOLOGY VIRT_CPUID2 REDUCE_VE",
+      "[    1.493420] process: using TDX aware idle routine",
+      "[    1.493420] Memory Encryption Features active: Intel TDX",
+      "[    1.493420] smpboot: CPU0: Intel TDX (family: 0x6, model: 0x8f, stepping: 0x8)"
+    ],
+    "machine_type": "c3-standard-4"
+  },
+  "quote": {
+    "provider": "tdx_guest",
+    "quote_bytes": 8000,
+    "mrtd": "c1ee9c16e3afc506cfe042c5b846a368528f3b37618eafb27469bc114cf914e9222c91618470e7f2b28ac360968270a5",
+    "rtmr": [
+      "57a95fa179066a5c198d6def08bf13a50f6ae7a0b495843beaca458f53d5f737b6c4b3d20695da665f94e3ce5d6bbd3c",
+      "87b9897e5920f2fea11444a196f4b9ed560dba7073c90450579dc0218c343a14392d0299162769856f33643d1c3271aa",
+      "1c090b44d85d1c6e834045136b8fd736f557d03733b195769cdbff86a911c54436216b5390ef20bd809f1252d54b6012",
+      "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "tdattributes": "0000001000000000",
+    "xfam": "e702060000000000",
+    "reportdata": "448b09868219f1d17aa7be38a9ccfabc1d5c8c486c72644b6b6c816560fe4f0ae954af053aa884401d65777f459cabce3df16d8d48d032ca6aa1f035354ff72d"
+  },
+  "binding_sound": true,
+  "quote_cost": {
+    "n": 20,
+    "mean_us": 39498.9,
+    "median_us": 39504.1,
+    "min_us": 38868.8,
+    "p95_us": 40075.5,
+    "max_us": 40301.5
+  },
+  "step_in_td": {
+    "mean_us": 162.33,
+    "median_us": 156.66,
+    "p95_us": 193.29,
+    "p99_us": 207.11,
+    "throughput_per_s": 6160
+  },
+  "step_with_fresh_quote_us": 39666.4,
+  "quote_share": 0.9959,
+  "amortized_us": {
+    "1": 39666.43,
+    "10": 4112.74,
+    "100": 557.37,
+    "1000": 201.83
+  },
+  "trust_chain": [
+    {
+      "party": "Intel",
+      "assumption": "the TDX module and CPU behave as specified, and the Provisioning Certification Key is not misissued"
+    },
+    {
+      "party": "Intel PCS / DCAP collateral",
+      "assumption": "the certificate chain and TCB info fetched to check the quote are authentic"
+    },
+    {
+      "party": "the Quoting Enclave",
+      "assumption": "signs TD reports honestly"
+    },
+    {
+      "party": "Google",
+      "assumption": "the host does not exfiltrate TD memory through a channel outside the TDX threat model, and supplies the vTPM/firmware measured into RTMRs"
+    },
+    {
+      "party": "whoever publishes reference values",
+      "assumption": "the MRTD you compare against is the MRTD of the code you think it is"
+    }
+  ],
+  "control_no_tdx": {
+    "machine": "c3-standard-4 (same shape, TDX disabled)",
+    "cpu": "Intel(R) Xeon(R) Platinum 8481C CPU @ 2.70GHz",
+    "mean_us": 152.88,
+    "median_us": 152.78,
+    "p95_us": 161.69,
+    "p99_us": 170.81,
+    "throughput_per_s": 6541
+  },
+  "td_overhead": {
+    "absolute_us": 9.45,
+    "fraction": 0.0618,
+    "note": "same machine type and CPU, TDX on vs off. This isolates the cost of running inside a trust domain from the cost of attesting."
+  },
+  "attestation_vs_compute": {
+    "quote_us": 39504.1,
+    "td_overhead_us": 9.45,
+    "ratio": 4180,
+    "budget_ms": 15,
+    "quotes_per_budget": 0.38
+  }
+}

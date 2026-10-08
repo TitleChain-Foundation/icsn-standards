@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="612" viewBox="0 0 1040 612" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f5f3ef"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f8f6f3"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efece6"/><stop offset="1" stop-color="#e6e2da"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e4ff5c"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8ffd8"/><stop offset="1" stop-color="#eeffa8"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeced"/><stop offset="1" stop-color="#ffdcde"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#0a0a0a"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.16"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.22"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#0a0a0a" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="1037" height="609" rx="20" fill="url(#gPanel)" stroke="#e3ded7" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="1037" height="609" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#7a9900">REGULATORY COVERAGE</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#141414">How much of Proof-of-Control each framework already addresses</text>
+<rect x="34" y="92" width="14" height="14" rx="4" fill="#7a9900" stroke="#dcd6cd"/>
+<text x="56" y="104" font-size="11.5" fill="#6b665f" text-anchor="start">exact match</text>
+<rect x="152.4" y="92" width="14" height="14" rx="4" fill="#cfff04" stroke="#dcd6cd"/>
+<text x="174.4" y="104" font-size="11.5" fill="#6b665f" text-anchor="start">partial match</text>
+<rect x="283.6" y="92" width="14" height="14" rx="4" fill="#e6e2da" stroke="#dcd6cd"/>
+<text x="305.6" y="104" font-size="11.5" fill="#6b665f" text-anchor="start">gap — only PoC covers it</text>
+<text x="34" y="124" font-size="11" fill="#a09a91" text-anchor="start">coverage = (exact + partial) / 127 requirements</text>
+<text x="304" y="169.5" font-size="12.5" fill="#141414" text-anchor="end">OWASP AISVS</text>
+<clipPath id="clip0"><rect x="320" y="148" width="560" height="34" rx="9"/></clipPath>
+<rect x="320" y="148" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#c6bfb4"/>
+<rect x="320" y="148" width="70.6" height="34" fill="#7a9900" clip-path="url(#clip0)"/>
+<rect x="390.6" y="148" width="277.8" height="34" fill="#cfff04" clip-path="url(#clip0)"/>
+<text x="898" y="170.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">62%</text>
+<text x="304" y="219.5" font-size="12.5" fill="#141414" text-anchor="end">NIST AI RMF</text>
+<clipPath id="clip1"><rect x="320" y="198" width="560" height="34" rx="9"/></clipPath>
+<rect x="320" y="198" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#c6bfb4"/>
+<rect x="320.0" y="198" width="330.7" height="34" fill="#cfff04" clip-path="url(#clip1)"/>
+<text x="898" y="220.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">59%</text>
+<text x="304" y="269.5" font-size="12.5" fill="#141414" text-anchor="end">ISO/IEC 42001</text>
+<clipPath id="clip2"><rect x="320" y="248" width="560" height="34" rx="9"/></clipPath>
+<rect x="320" y="248" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#c6bfb4"/>
+<rect x="320.0" y="248" width="317.5" height="34" fill="#cfff04" clip-path="url(#clip2)"/>
+<text x="898" y="270.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">57%</text>
+<text x="304" y="319.5" font-size="12.5" fill="#141414" text-anchor="end">SOC 2</text>
+<clipPath id="clip3"><rect x="320" y="298" width="560" height="34" rx="9"/></clipPath>
+<rect x="320" y="298" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#c6bfb4"/>
+<rect x="320.0" y="298" width="299.8" height="34" fill="#cfff04" clip-path="url(#clip3)"/>
+<text x="898" y="320.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">54%</text>
+<text x="304" y="369.5" font-size="12.5" fill="#141414" text-anchor="end">EU AI Act</text>
+<clipPath id="clip4"><rect x="320" y="348" width="560" height="34" rx="9"/></clipPath>
+<rect x="320" y="348" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#c6bfb4"/>
+<rect x="320.0" y="348" width="286.6" height="34" fill="#cfff04" clip-path="url(#clip4)"/>
+<text x="898" y="370.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">51%</text>
+<text x="304" y="419.5" font-size="12.5" fill="#141414" text-anchor="end">CSA AARM</text>
+<clipPath id="clip5"><rect x="320" y="398" width="560" height="34" rx="9"/></clipPath>
+<rect x="320" y="398" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#c6bfb4"/>
+<rect x="320" y="398" width="4.4" height="34" fill="#7a9900" clip-path="url(#clip5)"/>
+<rect x="324.4" y="398" width="242.5" height="34" fill="#cfff04" clip-path="url(#clip5)"/>
+<text x="898" y="420.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">44%</text>
+<text x="304" y="469.5" font-size="12.5" fill="#141414" text-anchor="end">Zero Trust (NIST SP 800-207)</text>
+<clipPath id="clip6"><rect x="320" y="448" width="560" height="34" rx="9"/></clipPath>
+<rect x="320" y="448" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#c6bfb4"/>
+<rect x="320" y="448" width="35.3" height="34" fill="#7a9900" clip-path="url(#clip6)"/>
+<rect x="355.3" y="448" width="202.8" height="34" fill="#cfff04" clip-path="url(#clip6)"/>
+<text x="898" y="470.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">43%</text>
+<text x="304" y="519.5" font-size="12.5" fill="#141414" text-anchor="end">MITRE ATLAS</text>
+<clipPath id="clip7"><rect x="320" y="498" width="560" height="34" rx="9"/></clipPath>
+<rect x="320" y="498" width="560" height="34" rx="9" fill="url(#gWarm)" stroke="#c6bfb4"/>
+<rect x="320.0" y="498" width="167.6" height="34" fill="#cfff04" clip-path="url(#clip7)"/>
+<text x="898" y="520.0" font-size="14" fill="#141414" text-anchor="start" font-weight="700">30%</text>
+<text x="520.0" y="588" font-size="12.5" fill="#6b665f" text-anchor="middle">the uncovered remainder — evidence gradability, the binary threshold, trust-assumption disclosure — is the gap Proof-of-Control exists to close</text>
+</svg>

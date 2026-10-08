@@ -1,0 +1,13 @@
+---
+    title: "Open Verification: the Proof-of-Control Standard for Agents"
+    subtitle: "Working Draft v0.1.4 — for public comment until October 30, 2026"
+    date: August 2026
+    titlepage: true
+    titlepage-rule-height: 0
+    table-use-row-colors: true
+    toc: true
+    toc-own-page: true
+    geometry: "left=2cm,right=2cm,top=3cm,bottom=3cm"
+    mainfont: "Source Serif 4"
+    sansfont: "Source Sans 3"
+---

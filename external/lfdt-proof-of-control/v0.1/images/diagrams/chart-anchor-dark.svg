@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440" font-family="Montserrat,'Source Sans 3',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="gPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#171717"/><stop offset="1" stop-color="#0e0e0e"/></linearGradient>
+<linearGradient id="gCard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#242424"/><stop offset="1" stop-color="#1b1b1b"/></linearGradient>
+<linearGradient id="gWarm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2a26"/><stop offset="1" stop-color="#22211e"/></linearGradient>
+<linearGradient id="gLime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#c6f500"/></linearGradient>
+<linearGradient id="gTint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a3608"/><stop offset="1" stop-color="#1e2704"/></linearGradient>
+<linearGradient id="gRed" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#361417"/><stop offset="1" stop-color="#280f12"/></linearGradient>
+<linearGradient id="gInk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3ff66"/><stop offset="1" stop-color="#cfff04"/></linearGradient>
+<linearGradient id="gGate" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#222222"/><stop offset="1" stop-color="#151515"/></linearGradient>
+<filter id="fShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#000000" flood-opacity="0.55"/></filter>
+<filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%"><feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#cfff04" flood-opacity="0.55"/></filter>
+<pattern id="pGrid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.05"/></pattern>
+</defs>
+<rect x="1.5" y="1.5" width="897" height="437" rx="20" fill="url(#gPanel)" stroke="#2c2c2c" stroke-width="1.5"/>
+<rect x="1.5" y="1.5" width="897" height="437" rx="20" fill="url(#pGrid)"/>
+<text x="34" y="42" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="#cfff04">THE ANCHORING INTERVAL</text>
+<text x="34" y="70" font-size="19" font-weight="700" letter-spacing="-0.2" fill="#f0edea">How much history you can hide, versus what publishing costs</text>
+<rect x="110" y="104" width="640" height="250" rx="10" fill="url(#gCard)" stroke="#454545" stroke-width="1.2"/>
+<line x1="110.0" y1="104" x2="110.0" y2="354" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="110.0" y="372" font-size="10.5" fill="#9d978e" text-anchor="middle">1ms</text>
+<line x1="305.2" y1="104" x2="305.2" y2="354" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="305.2319923997102" y="372" font-size="10.5" fill="#9d978e" text-anchor="middle">100ms</text>
+<line x1="402.8" y1="104" x2="402.8" y2="354" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="402.84798859956527" y="372" font-size="10.5" fill="#9d978e" text-anchor="middle">1s</text>
+<line x1="576.4" y1="104" x2="576.4" y2="354" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="576.4239942997826" y="372" font-size="10.5" fill="#9d978e" text-anchor="middle">1min</text>
+<line x1="750.0" y1="104" x2="750.0" y2="354" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="750.0" y="372" font-size="10.5" fill="#9d978e" text-anchor="middle">1h</text>
+<line x1="110" y1="354.0" x2="750" y2="354.0" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="358.0" font-size="10.5" fill="#9d978e" text-anchor="end">1</text>
+<line x1="110" y1="285.5" x2="750" y2="285.5" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="289.516512013107" font-size="10.5" fill="#9d978e" text-anchor="end">100</text>
+<line x1="110" y1="217.0" x2="750" y2="217.0" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="221.03302402621392" font-size="10.5" fill="#9d978e" text-anchor="end">10k</text>
+<line x1="110" y1="148.5" x2="750" y2="148.5" stroke="#454545" stroke-width="0.8" stroke-dasharray="3 4"/>
+<text x="100" y="152.54953603932088" font-size="10.5" fill="#9d978e" text-anchor="end">1M+</text>
+<text x="430.0" y="394" font-size="11.5" fill="#9d978e" text-anchor="middle">anchoring interval Δ</text>
+<text x="64" y="229.0" font-size="11.5" fill="#9d978e" text-anchor="middle" transform="rotate(-90 64 229.0)">actions inside the blind window</text>
+<path d="M110.0 330.1 L207.6 295.8 L305.2 261.6 L402.8 227.4 L500.5 193.1 L576.4 166.5 L750.0 105.6" fill="none" stroke="#cfff04" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="110.0" cy="330.1" r="3.4" fill="#cfff04"/>
+<circle cx="207.6" cy="295.8" r="3.4" fill="#cfff04"/>
+<circle cx="305.2" cy="261.6" r="3.4" fill="#cfff04"/>
+<circle cx="402.8" cy="227.4" r="3.4" fill="#cfff04"/>
+<circle cx="500.5" cy="193.1" r="3.4" fill="#cfff04"/>
+<circle cx="576.4" cy="166.5" r="3.4" fill="#cfff04"/>
+<circle cx="750.0" cy="105.6" r="3.4" fill="#cfff04"/>
+<text x="122.0" y="350.06604805242785" font-size="10" fill="#9d978e" text-anchor="start">8.6% overhead</text>
+<text x="414.84798859956527" y="247.3735683138064" font-size="10" fill="#9d978e" text-anchor="start">0.009%</text>
+<text x="738.0" y="127.6007575579651" font-size="10" fill="#9d978e" text-anchor="end">0.0000024%</text>
+<text x="118" y="122" font-size="10" fill="#6a665f" text-anchor="start">publishing overhead shown at three points</text>
+<text x="450" y="408" font-size="12" fill="#9d978e" text-anchor="middle">exposure and cost are exactly inverse: pick the window you can afford to lose</text>
+</svg>
