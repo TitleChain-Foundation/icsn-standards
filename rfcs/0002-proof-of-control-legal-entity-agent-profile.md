@@ -79,7 +79,7 @@ A conforming implementation MUST meet every PoC v0.1 requirement at its claimed 
 every requirement below at or under that Level. Levels follow PoC: 1 Recorded, 2 Attested,
 3 Verifiable, 4 Enforced.
 
-### LE1 Layered principal binding
+### LE1 Three-party principal binding
 
 *Extends C5.1 and C4.2. Answers Appendix D issue 1: Identity supplies the three
 authenticated parties; Authorization evaluates the chain between them.*
@@ -150,7 +150,7 @@ exported bundle on an offline machine. LE4.3 — walk one linking record across 
 | **LE5.1** | **Verify that** every value an evidence record computes (a fee, split, score, or deadline) is defined in a published, machine-readable computation manifest with formula, units, and rounding, and that each record cites the digest of the manifest and of every parameter file used. | 2 | 7.7.1, 10.1.5 |
 | **LE5.2** | **Verify that** a time-triggered event is timestamped at the deadline it fires on rather than when it was processed, so that replaying the same history produces byte-identical records. | 2 | 7.2.1 |
 | **LE5.3** | **Verify that** the canonical serialization admits only number forms that every supported language represents identically and rejects all others. | 2 | 7.7.2, 7.7.4 |
-| **LE5.4** | **Verify that** each manifest computation has at least two independent implementations held to one set of published vectors, including negative vectors. | 3 | 7.7.4 |
+| **LE5.4** | **Verify that** each manifest computation has at least two separate implementations held to one set of published vectors, including negative vectors. | 3 | 7.7.4 |
 
 **Auditor evidence:** LE5.1 — recompute one record's values from the cited manifest and confirm
 the digests. LE5.2 — process the same history at two different times and compare records.
