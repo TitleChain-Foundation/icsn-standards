@@ -14,6 +14,7 @@ recompute M5 evidence (canonical hashes, value receipts, and Nash scores) withou
 | Upstream commit | `9c1bc47085ba4405912c15703a75439d860a1fa9` (M5Ecosystem, private) |
 | File manifest | [`UPSTREAM-0.1.0.json`](UPSTREAM-0.1.0.json) — SHA-256 and license of every file |
 | Copyright | © 2026 M5Capital Holdings, Inc. |
+| Patents | The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), held by TitleChain Foundation in the TitleChain Sovereign Purpose Trust |
 | Licenses | Mixed; see below and [`NASH-NOTICE.md`](NASH-NOTICE.md) |
 
 ## What is included
@@ -24,7 +25,7 @@ recompute M5 evidence (canonical hashes, value receipts, and Nash scores) withou
 | `packages/m5-math/receipt-verify.js` | Recomputes an M5 Value Receipt's split hash and verifies that its amounts add up, the CCF-5 floor, and agency payouts | Apache-2.0 |
 | `schemas/transactions/m5-value-receipt.schema.json` | M5 Value Receipt schema v1.4.0 | Apache-2.0 |
 | `docs/standards/M5-MATH-001.md` | The written rules | Apache-2.0, except section 5 (Nash M5Score), All Rights Reserved |
-| `core/nash_score.py`, `packages/m5-math/nash-score.js`, `nash-weights.json`, `vectors/nash-score.vectors.json` | Nash M5Score method, weights, and vectors (status PROPOSED, no economic consequences) | **All Rights Reserved, including patent rights.** Readable and recomputable; no license to implement. |
+| `core/nash_score.py`, `packages/m5-math/nash-score.js`, `nash-weights.json`, `vectors/nash-score.vectors.json` | Nash M5Score method, weights, and vectors (status PROPOSED, no economic consequences) | **All Rights Reserved; patented process held in the Trust.** Readable and recomputable; no license to implement. |
 
 ## What is not included
 

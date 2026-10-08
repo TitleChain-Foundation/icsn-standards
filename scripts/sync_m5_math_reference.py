@@ -88,7 +88,7 @@ def main() -> int:
         "version_label": VERSION,
         "copyright": "M5Capital Holdings, Inc.",
         "approval_boundary": "Implementation-specific M5 material, published under the M5Ecosystem Approval Boundary. It is not a TitleChain standard and does not advance any standard's status.",
-        "nash_notice": "The Nash files are published for reading and recomputing published scores only. All rights reserved, including patent rights; no license to implement is granted. See NASH-NOTICE.md.",
+        "nash_notice": "The Nash files are published for reading and recomputing published scores only. All rights reserved; no license to implement is granted. The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), held by TitleChain Foundation in the TitleChain Sovereign Purpose Trust. See NASH-NOTICE.md.",
         "modified": False,
         "files": dict(sorted(files.items())),
         "excluded": EXCLUDED,
