@@ -112,4 +112,4 @@ this Pledge.
 
 | Method | Reference | Designated |
 | --- | --- | --- |
-| *(none yet)* | | |
+| **Nash M5Score**: the scoring method (signal decay, Beta-reputation component scores, and weighted composite) and its published weights and test vectors, in every version the Trust publishes | M5-MATH-001 section 5; `external/m5-math/` in this repository | On adoption of this Pledge |
