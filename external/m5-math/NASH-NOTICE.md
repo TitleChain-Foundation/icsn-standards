@@ -1,6 +1,6 @@
 # Nash M5Score — rights reserved notice
 
-Code and documentation copyright © 2026 M5Capital Holdings, Inc. All rights reserved.
+Code and documentation copyright © 2026 TitleChain Sovereign Purpose Trust (TitleChain Foundation), licensed by M5Capital Holdings LLC. All rights reserved.
 
 **Patents.** The Nash scoring process is part of the TitleChain patented process for
 decentralized title transfer, which scores an asset's provenance. Under that process, a unique
@@ -10,9 +10,7 @@ U.S. Patent No. 11,720,888 (issued August 2023) and its continuation, U.S. Paten
 No. 12,518,273 (issued January 2026), both titled *Decentralized Title Transfer and Validation of
 Assets*.
 
-These patents are held by TitleChain Foundation in the TitleChain Sovereign Purpose Trust. The
-Trust holds them so that the process stays protected for everyone it serves and can never be
-captured by any company, sponsor, or vendor.
+These patents are owned by Pamela Norton and licensed exclusively and irrevocably to the TitleChain Sovereign Purpose Trust, established by TitleChain Foundation, which holds the license so the process stays protected for everyone it serves and can never be captured by any company, sponsor, vendor, or licensee. Erise IP manages the filings with the USPTO.
 
 These files are published so that anyone can **read** the method and **recompute** a published
 Nash score to verify it:
