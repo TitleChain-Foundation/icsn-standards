@@ -24,7 +24,7 @@ so people can build on it, and the core is held in trust so no one can capture i
 | Code, tooling, schemas, validators, conformance tests, and anything contributed to the Linux Foundation, LF Decentralized Trust, or Proof-of-Control | [Apache License 2.0](LICENSES/Apache-2.0.txt) | The Linux Foundation standard; anyone may build, fork, and ship |
 | Explanatory documents, research, and model legislation, including the Sovereign Compute Access Act | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) | Anyone may copy and adapt the text with attribution |
 | Constitutional principles and the normative core of the standards | [Cyrus Purpose-Bound Constitutional Commons License](LICENSES/Cyrus-Purpose-Bound-Constitutional-Commons-License-1.0.md) | Free to study, implement, and build on, within a purpose covenant against capture |
-| Patents | [TitleChain Patent Pledge](LICENSES/TitleChain-Patent-Pledge-1.0.md) | Royalty-free promise not to sue anyone implementing the published standards, ending for anyone who attacks or captures them. Schedule A also covers the Nash M5Score |
+| Patents | [TitleChain Patent Pledge](LICENSES/TitleChain-Patent-Pledge-1.0.md) | Royalty-free promise not to sue anyone implementing the published standards, ending for anyone who attacks or captures them. Schedule A also covers the M5Nash Score |
 | Names, marks, and certification | Not licensed | Anyone may implement; only conformant, authorized implementations may use the names |
 | Trade secrets and unpublished code | Never publicly licensed | Held in confidence by the Trust, disclosed only to the licensee under written confidentiality |
 
