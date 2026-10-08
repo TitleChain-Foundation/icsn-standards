@@ -58,6 +58,15 @@ The Pledge is:
 - **open to everyone**, including competitors of M5Capital Holdings LLC and implementers who
   never use M5.
 
+### Linux Foundation specifications
+
+For the Proof-of-Control Standard, and any other specification hosted by the Linux Foundation or
+LF Decentralized Trust to which a Pledgor has contributed, the Pledge covers every implementation
+of that specification, whether or not it keeps the Cyrus Purpose Covenant. For those
+implementations, only Section 6, paragraph 1 can end the Pledge for a party. This keeps those
+specifications free to implement, as their governance requires, and adds to any patent grant a
+Pledgor makes under the specification's own license.
+
 ## 5. What the Pledge does not cover
 
 The Pledge does not license or cover:
@@ -79,7 +88,8 @@ The Pledge ends as to a party, and its affiliates, if that party:
 
 1. **attacks the commons**: makes an Assertion of any patent against a Pledgor, TitleChain
    Foundation, or any person or entity, based on a Covered Implementation; or
-2. **captures the standards**: materially breaches the Cyrus Purpose Covenant, including by
+2. **captures the standards**: except for implementations of a Linux Foundation specification
+   (Section 4), materially breaches the Cyrus Purpose Covenant, including by
    Capture as that license defines it, and does not cure the breach within a reasonable
    period after written notice, where the breach can be cured (Cyrus License Section 12).
 
