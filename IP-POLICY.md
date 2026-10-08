@@ -1,8 +1,7 @@
-# Intellectual Property Policy — Public Review Draft
+# Intellectual Property Policy
 
 > Public explanatory summary. If this page conflicts with an executed legal instrument, the
-> instrument controls. It is a draft until adopted by the Trustee of the TitleChain Sovereign
-> Purpose Trust.
+> instrument controls. Adopted 2026-10-08 by Pamela Norton, Founder.
 
 TitleChain Foundation supports open standards, open-weight models, and chain-agnostic
 infrastructure, and contributes to the Linux Foundation and LF Decentralized Trust, including

@@ -7,7 +7,7 @@
 | General educational material, explanatory documentation and diagrams | Reserved until designated | CC BY 4.0 (`CC-BY-4.0`) |
 | Member data, wallets, vaults, credentials, keys, financial records, production systems, private agent controls, sensitive threat models and vulnerabilities | Reserved | All Rights Reserved |
 | Names, logos, seals, certification marks and other brand assets | Reserved | No trademark or certification rights granted |
-| Patent rights | Reserved | Only through a separate express patent grant, such as the [TitleChain Patent Pledge](TitleChain-Patent-Pledge-1.0.md) once adopted |
+| Patent rights | Reserved | Only through a separate express patent grant, such as the [TitleChain Patent Pledge](TitleChain-Patent-Pledge-1.0.md) |
 
 ## Express designations
 
@@ -42,7 +42,7 @@ The following public assets are expressly licensed as stated:
 | `rfcs/0002-proof-of-control-legal-entity-agent-profile.md` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`), so it can be contributed to the Proof-of-Control Standard unchanged |
 | `conformance/proof-of-control/**` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 | `scripts/sync_lfdt_proof_of_control.py`, `scripts/build_poc_crosswalk.py`, `tests/validate_proof_of_control_profile.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
-| `IP-POLICY.md` and `LICENSES/TitleChain-Patent-Pledge-1.0.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`); the Pledge is a Public Review Draft and grants no patent rights until adopted and signed |
+| `IP-POLICY.md` and `LICENSES/TitleChain-Patent-Pledge-1.0.md` | [Creative Commons Attribution 4.0 International](CC-BY-4.0.txt) (`CC-BY-4.0`); the Pledge was adopted 2026-10-08 and grants patent rights from the date its signed copy is recorded in the Cyrus Commons Register |
 
 The SPDX identifier in each expressly designated file is the controlling asset-level notice for that file.
 

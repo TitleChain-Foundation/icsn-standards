@@ -1,8 +1,8 @@
-# TitleChain Patent Pledge, Version 1.0 — Public Review Draft
+# TitleChain Patent Pledge, Version 1.0
 
-> **Not in effect.** This is a public review draft. It takes effect only when the Trustee of the
-> TitleChain Sovereign Purpose Trust adopts it and the Patent Owner signs it, and the signed,
-> dated version is recorded in the Cyrus Commons Register. Until then it grants no rights.
+> **Adopted 2026-10-08** by Pamela Norton, Founder and Patent Owner. The Pledge takes effect on
+> the date the signed copy is recorded in the Cyrus Commons Register
+> (`LICENSES/CYRUS-COMMONS-REGISTER.csv`). Until then it grants no rights.
 
 ## 1. Purpose
 
