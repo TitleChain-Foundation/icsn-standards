@@ -1,0 +1,91 @@
+{
+  "description": "Canonical JSON + SHA-256 vectors (MATH-CANONICAL-HASH). Both core/m5_canonical.py and packages/m5-math/canonical.js must reproduce canonical_json and sha256 exactly.",
+  "cases": [
+    {
+      "name": "integers and integral floats",
+      "value": {
+        "b": 5.0,
+        "a": 5,
+        "c": -0.0
+      },
+      "canonical_json": "{\"a\":5,\"b\":5,\"c\":0}",
+      "sha256": "sha256:71c1efb8504b6419247fc4fe500edc51e920a8408ae653c33382c92af12abe1f"
+    },
+    {
+      "name": "decimal fractions",
+      "value": [
+        0.1,
+        33.3333,
+        2.5,
+        0.125,
+        99.99
+      ],
+      "canonical_json": "[\"0.1\",\"33.3333\",\"2.5\",\"0.125\",\"99.99\"]",
+      "sha256": "sha256:6f8f1728494599c4d8ceb7ee56cd516c93e8e60e36caa5487162f0b401771020"
+    },
+    {
+      "name": "tiny and exponent values",
+      "value": [
+        1e-07,
+        1.5e-05,
+        123456.789
+      ],
+      "canonical_json": "[\"0.0000001\",\"0.000015\",\"123456.789\"]",
+      "sha256": "sha256:f2ae4636ebc35862e6b74388f4a500a288289497b4ea54f64b4fde6d0188248d"
+    },
+    {
+      "name": "negative tiny values (exponent sign regression)",
+      "value": [
+        -1e-07,
+        -2.5e-09,
+        1.23e-10,
+        -0.5
+      ],
+      "canonical_json": "[\"-0.0000001\",\"-0.0000000025\",\"0.000000000123\",\"-0.5\"]",
+      "sha256": "sha256:d4699a34ec3bb1361d304ec6d8f9435fb98ea4b503c8428b121d7efaceba06f6"
+    },
+    {
+      "name": "nested and sorted keys",
+      "value": {
+        "z": {
+          "y": [
+            1,
+            {
+              "b": true,
+              "a": null
+            }
+          ]
+        },
+        "a": "text"
+      },
+      "canonical_json": "{\"a\":\"text\",\"z\":{\"y\":[1,{\"a\":null,\"b\":true}]}}",
+      "sha256": "sha256:ee6bff6f5274987286b21b3d753f20639e931eb5d10a2e930637787b275d5e96"
+    },
+    {
+      "name": "unicode text",
+      "value": {
+        "name": "ALA Affordable Living — LA",
+        "emoji": "✓"
+      },
+      "canonical_json": "{\"emoji\":\"✓\",\"name\":\"ALA Affordable Living — LA\"}",
+      "sha256": "sha256:926d6308e7f0b3def810836d0c9baab84c02e01dffd18cb047ffdb9ca7bb7e56"
+    },
+    {
+      "name": "max safe integer",
+      "value": [
+        9007199254740991,
+        -9007199254740991,
+        0
+      ],
+      "canonical_json": "[9007199254740991,-9007199254740991,0]",
+      "sha256": "sha256:b80bd42d5351670aefcf3e66750d64961095073307e52f6d6b3554d97ed6578f"
+    }
+  ],
+  "rejected": [
+    {
+      "name": "above max safe integer",
+      "value_python": "2**53",
+      "reason": "integers must be within +/-(2**53 - 1)"
+    }
+  ]
+}
