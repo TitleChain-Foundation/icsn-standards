@@ -1,7 +1,7 @@
 /**
- * Nash M5Score: JavaScript twin of core/nash_score.py (M5-MATH-001
- * MATH-NASH-DECAY, MATH-NASH-COMPONENT, MATH-NASH-COMPOSITE). Integer-only
- * (BigInt); both implementations are held to vectors/nash-score.vectors.json.
+ * M5Nash Score: JavaScript twin of core/m5nash_score.py (M5-MATH-001
+ * MATH-M5NASH-DECAY, MATH-M5NASH-COMPONENT, MATH-M5NASH-COMPOSITE). Integer-only
+ * (BigInt); both implementations are held to vectors/m5nash-score.vectors.json.
  */
 import { readFileSync } from "fs";
 import { join, dirname } from "path";
@@ -21,10 +21,10 @@ const Q_BITS = 32n;
 const Q = 1n << Q_BITS;
 const SECONDS_PER_DAY = 86400;
 
-export class NashScoreError extends Error {}
+export class M5NashScoreError extends Error {}
 
 export function loadWeights() {
-  const weights = JSON.parse(readFileSync(join(HERE, "nash-weights.json"), "utf-8"));
+  const weights = JSON.parse(readFileSync(join(HERE, "m5nash-weights.json"), "utf-8"));
   validateWeights(weights);
   return weights;
 }
@@ -33,22 +33,22 @@ export function validateWeights(weights) {
   const bps = weights.weights_bps;
   const keys = Object.keys(bps).sort();
   if (keys.join() !== [...COMPONENTS].sort().join()) {
-    throw new NashScoreError("weights must cover exactly the six Nash components");
+    throw new M5NashScoreError("weights must cover exactly the six M5Nash components");
   }
   if (Object.values(bps).some((v) => !Number.isInteger(v) || v < 0)) {
-    throw new NashScoreError("weights must be non-negative integers");
+    throw new M5NashScoreError("weights must be non-negative integers");
   }
   if (Object.values(bps).reduce((a, b) => a + b, 0) !== 10000) {
-    throw new NashScoreError("weights must sum to 10000 bps");
+    throw new M5NashScoreError("weights must sum to 10000 bps");
   }
   if (weights.prior.alpha < 1 || weights.prior.beta < 1) {
-    throw new NashScoreError("prior alpha and beta must be at least 1");
+    throw new M5NashScoreError("prior alpha and beta must be at least 1");
   }
-  if (weights.decay.fixed_point_bits !== 32) throw new NashScoreError("decay must use 32-bit fixed point");
+  if (weights.decay.fixed_point_bits !== 32) throw new M5NashScoreError("decay must use 32-bit fixed point");
 }
 
 export function decayWeight(ageDays, dailyFactorQ32) {
-  if (ageDays < 0) throw new NashScoreError("signals cannot be in the future");
+  if (ageDays < 0) throw new M5NashScoreError("signals cannot be in the future");
   let result = Q;
   let base = BigInt(dailyFactorQ32);
   let exponent = BigInt(ageDays);
@@ -61,7 +61,7 @@ export function decayWeight(ageDays, dailyFactorQ32) {
 }
 
 function parseUtc(text) {
-  if (!/(Z|[+-]\d\d:\d\d)$/.test(text)) throw new NashScoreError("times must be timezone-aware");
+  if (!/(Z|[+-]\d\d:\d\d)$/.test(text)) throw new M5NashScoreError("times must be timezone-aware");
   return new Date(text);
 }
 
@@ -71,7 +71,7 @@ export function utcIso(date) {
 
 export function ageInDays(signalAt, asOf) {
   const seconds = Math.trunc((parseUtc(asOf) - parseUtc(signalAt)) / 1000);
-  if (seconds < 0) throw new NashScoreError("signals cannot be in the future");
+  if (seconds < 0) throw new M5NashScoreError("signals cannot be in the future");
   return Math.floor(seconds / SECONDS_PER_DAY);
 }
 
@@ -90,12 +90,12 @@ export function computeM5Score({ subject, signals, asOf, weights = null, previou
   validateWeights(w);
   const seen = new Set();
   for (const signal of signals) {
-    if (signal.subject !== subject) throw new NashScoreError("all signals must belong to the scored subject");
-    if (!COMPONENTS.includes(signal.component)) throw new NashScoreError(`unknown component ${signal.component}`);
-    if (!["GOOD", "BAD"].includes(signal.polarity)) throw new NashScoreError(`unknown polarity ${signal.polarity}`);
-    if (!signal.source_ref) throw new NashScoreError("every signal needs a source_ref");
+    if (signal.subject !== subject) throw new M5NashScoreError("all signals must belong to the scored subject");
+    if (!COMPONENTS.includes(signal.component)) throw new M5NashScoreError(`unknown component ${signal.component}`);
+    if (!["GOOD", "BAD"].includes(signal.polarity)) throw new M5NashScoreError(`unknown polarity ${signal.polarity}`);
+    if (!signal.source_ref) throw new M5NashScoreError("every signal needs a source_ref");
     const key = `${signal.source_ref}\u0000${signal.component}`;
-    if (seen.has(key)) throw new NashScoreError(`duplicate signal for ${signal.source_ref} / ${signal.component}`);
+    if (seen.has(key)) throw new M5NashScoreError(`duplicate signal for ${signal.source_ref} / ${signal.component}`);
     seen.add(key);
   }
   const factors = {
@@ -132,7 +132,7 @@ export function computeM5Score({ subject, signals, asOf, weights = null, previou
     subject,
     as_of: utcIso(parseUtc(asOf)),
     m5score,
-    nash_score_db: `${Math.floor(m5score / 10)}.${m5score % 10}`,
+    m5nash_score_db: `${Math.floor(m5score / 10)}.${m5score % 10}`,
     components,
     weights_version: w.version,
     weights_status: w.status,
@@ -140,7 +140,7 @@ export function computeM5Score({ subject, signals, asOf, weights = null, previou
     economic_consequences_enabled: w.economic_consequences_enabled,
     trust_tier: null,
     event_type: previousRecordHash ? "TRIGGERED_REVIEW" : "GENESIS",
-    event_authority: "NASH_AGENT",
+    event_authority: "M5NASH_AGENT",
     computed_by: w.roles.score_computed_by,
     signals: ordered,
     signals_sha256: canonicalSha256(ordered),

@@ -1,36 +1,36 @@
 {
   "name": "M5-MATH-001 public reference (implementation-specific)",
   "repository": "M5Ecosystem (private)",
-  "commit": "9c1bc47085ba4405912c15703a75439d860a1fa9",
-  "committed_at": "2026-10-08T09:32:38-07:00",
+  "commit": "ac68847627795dfee226d302f8e57fa62a21fdca",
+  "committed_at": "2026-10-08T13:06:03-07:00",
   "version_label": "0.1.0",
   "copyright": "TitleChain Sovereign Purpose Trust (TitleChain Foundation); licensed by M5Capital Holdings LLC",
   "approval_boundary": "Implementation-specific M5 material, published under the M5Ecosystem Approval Boundary. It is not a TitleChain standard and does not advance any standard's status.",
-  "nash_notice": "The Nash files are licensed under the Cyrus Purpose-Bound Constitutional Commons License 1.0, designated in LICENSES/CYRUS-COMMONS-REGISTER.csv. The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust, and is a Designated Method under the TitleChain Patent Pledge. See NASH-NOTICE.md.",
+  "m5nash_notice": "The M5Nash files are licensed under the Cyrus Purpose-Bound Constitutional Commons License 1.0, designated in LICENSES/CYRUS-COMMONS-REGISTER.csv. The M5Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust, and is a Designated Method under the TitleChain Patent Pledge. See M5NASH-NOTICE.md.",
   "modified": false,
   "files": {
     "core/m5_canonical.py": {
       "sha256": "sha256:6559c8e08df9cc4ebea3d3a10f56e84f6950ea742ebbe17f4fe660a472e0f558",
       "license": "Apache-2.0"
     },
-    "core/nash_score.py": {
-      "sha256": "sha256:c161212185cc20ce1fca5eb5f84fe43ce1f6c635092520681cdb7cd1f81f8c31",
+    "core/m5nash_score.py": {
+      "sha256": "sha256:c3f1fddc9a5e1a5203d11320237998435642cea01804bff6c311d9e3ddb9471c",
       "license": "LicenseRef-CYRUS-PCCL-1.0"
     },
     "docs/standards/M5-MATH-001.md": {
-      "sha256": "sha256:b5a9ea38e54dea72d36605c0355f93a63a3b981f55bd1508249689d199c9de64",
-      "license": "Apache-2.0 except section 5 (Nash M5Score), LicenseRef-CYRUS-PCCL-1.0"
+      "sha256": "sha256:b7b471475635cace735ff8e3023ac97bf4eab8c1ae3366af4d18af8bd8eccf6d",
+      "license": "Apache-2.0 except section 5 (M5Nash Score), LicenseRef-CYRUS-PCCL-1.0"
     },
     "packages/m5-math/canonical.js": {
       "sha256": "sha256:c19bfd67e2b1f8e00f972ca343d0faefc9123d8b7cfd443ecf2de5879a5983e8",
       "license": "Apache-2.0"
     },
-    "packages/m5-math/nash-score.js": {
-      "sha256": "sha256:c7cc691d3d78d01c917e781be6be3630bf27077db667fa35667bffb0b53bc4aa",
+    "packages/m5-math/m5nash-score.js": {
+      "sha256": "sha256:9b5854c35a921185595988566d220e300f180f48aa95c72692ca9f0167ea0cf7",
       "license": "LicenseRef-CYRUS-PCCL-1.0"
     },
-    "packages/m5-math/nash-weights.json": {
-      "sha256": "sha256:b325f39c4167478a4c465f0da94021b15582913e9db05e8910afd1cb5e8d2371",
+    "packages/m5-math/m5nash-weights.json": {
+      "sha256": "sha256:ef8d7cb3900929815259a24e977a7f6757a67902648fb8b19bf4bb3480ffa7c5",
       "license": "LicenseRef-CYRUS-PCCL-1.0"
     },
     "packages/m5-math/receipt-verify.js": {
@@ -41,8 +41,8 @@
       "sha256": "sha256:11432772a56598233f9c8d7e1363865fe41cf9b8c1269ca2d99fb34f2438e573",
       "license": "Apache-2.0"
     },
-    "packages/m5-math/vectors/nash-score.vectors.json": {
-      "sha256": "sha256:6bc001190067dabb38ad84d02e27086453312118453cd9f39779556d61c09568",
+    "packages/m5-math/vectors/m5nash-score.vectors.json": {
+      "sha256": "sha256:1c0acbad3acacb78f72adf2bde97f7ade6c7be9dd36cedba5b2b8e813b6e8952",
       "license": "LicenseRef-CYRUS-PCCL-1.0"
     },
     "schemas/transactions/m5-value-receipt.schema.json": {
@@ -55,6 +55,6 @@
     "packages/m5-math/m5-math.test.js": "depends on sample receipts that contain private wallet-split shares",
     "packages/m5-math/package.json": "private package metadata",
     "tests/test_m5_math_manifest.py": "verifies the private manifest",
-    "tests/test_nash_score.py": "private test suite; the commons test recomputes the same vectors"
+    "tests/test_m5nash_score.py": "private test suite; the commons test recomputes the same vectors"
   }
 }

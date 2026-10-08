@@ -26,8 +26,8 @@ DEST = ROOT / "external" / "m5-math"
 VERSION = "0.1.0"
 
 APACHE = "Apache-2.0"
-NASH = "LicenseRef-CYRUS-PCCL-1.0"
-MIXED = "Apache-2.0 except section 5 (Nash M5Score), LicenseRef-CYRUS-PCCL-1.0"
+M5NASH = "LicenseRef-CYRUS-PCCL-1.0"
+MIXED = "Apache-2.0 except section 5 (M5Nash Score), LicenseRef-CYRUS-PCCL-1.0"
 
 FILES = {
     "core/m5_canonical.py": APACHE,
@@ -36,10 +36,10 @@ FILES = {
     "packages/m5-math/vectors/canonical-hash.vectors.json": APACHE,
     "schemas/transactions/m5-value-receipt.schema.json": APACHE,
     "docs/standards/M5-MATH-001.md": MIXED,
-    "core/nash_score.py": NASH,
-    "packages/m5-math/nash-score.js": NASH,
-    "packages/m5-math/nash-weights.json": NASH,
-    "packages/m5-math/vectors/nash-score.vectors.json": NASH,
+    "core/m5nash_score.py": M5NASH,
+    "packages/m5-math/m5nash-score.js": M5NASH,
+    "packages/m5-math/m5nash-weights.json": M5NASH,
+    "packages/m5-math/vectors/m5nash-score.vectors.json": M5NASH,
 }
 
 EXCLUDED = {
@@ -47,7 +47,7 @@ EXCLUDED = {
     "packages/m5-math/m5-math.test.js": "depends on sample receipts that contain private wallet-split shares",
     "packages/m5-math/package.json": "private package metadata",
     "tests/test_m5_math_manifest.py": "verifies the private manifest",
-    "tests/test_nash_score.py": "private test suite; the commons test recomputes the same vectors",
+    "tests/test_m5nash_score.py": "private test suite; the commons test recomputes the same vectors",
 }
 
 
@@ -88,7 +88,7 @@ def main() -> int:
         "version_label": VERSION,
         "copyright": "TitleChain Sovereign Purpose Trust (TitleChain Foundation); licensed by M5Capital Holdings LLC",
         "approval_boundary": "Implementation-specific M5 material, published under the M5Ecosystem Approval Boundary. It is not a TitleChain standard and does not advance any standard's status.",
-        "nash_notice": "The Nash files are licensed under the Cyrus Purpose-Bound Constitutional Commons License 1.0, designated in LICENSES/CYRUS-COMMONS-REGISTER.csv. The Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust, and is a Designated Method under the TitleChain Patent Pledge. See NASH-NOTICE.md.",
+        "m5nash_notice": "The M5Nash files are licensed under the Cyrus Purpose-Bound Constitutional Commons License 1.0, designated in LICENSES/CYRUS-COMMONS-REGISTER.csv. The M5Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust, and is a Designated Method under the TitleChain Patent Pledge. See M5NASH-NOTICE.md.",
         "modified": False,
         "files": dict(sorted(files.items())),
         "excluded": EXCLUDED,

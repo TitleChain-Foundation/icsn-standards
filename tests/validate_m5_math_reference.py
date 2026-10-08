@@ -4,11 +4,11 @@
 
 1. The snapshot is byte-identical to its upstream manifest, with no files
    added or removed, and no excluded (private) file is present.
-2. Every file carries a license designation. The Nash files are designated
+2. Every file carries a license designation. The M5Nash files are designated
    under the Cyrus license, each with a Cyrus Commons Register entry whose
    hash matches the file.
-3. Nash weights are PROPOSED with no economic consequences.
-4. The Python reference reproduces every canonical-hash and Nash vector.
+3. M5Nash weights are PROPOSED with no economic consequences.
+4. The Python reference reproduces every canonical-hash and M5Nash vector.
 5. If Node.js 18+ is available, the JavaScript twin reproduces the same
    vectors byte for byte (required in CI).
 """
@@ -34,11 +34,11 @@ REGISTER = {
     )
     if row["license"] == CYRUS
 }
-NASH_FILES = {
-    "core/nash_score.py",
-    "packages/m5-math/nash-score.js",
-    "packages/m5-math/nash-weights.json",
-    "packages/m5-math/vectors/nash-score.vectors.json",
+M5NASH_FILES = {
+    "core/m5nash_score.py",
+    "packages/m5-math/m5nash-score.js",
+    "packages/m5-math/m5nash-weights.json",
+    "packages/m5-math/vectors/m5nash-score.vectors.json",
 }
 
 NODE_CHECK = r"""
@@ -49,19 +49,19 @@ const base = process.argv[1];
 const pkg = join(base, "packages", "m5-math");
 const load = (name) => import(pathToFileURL(join(pkg, name)).href);
 const { canonicalJson, canonicalSha256 } = await load("canonical.js");
-const { computeM5Score, decayWeight, loadWeights } = await load("nash-score.js");
+const { computeM5Score, decayWeight, loadWeights } = await load("m5nash-score.js");
 const vectors = (name) => JSON.parse(readFileSync(join(pkg, "vectors", name), "utf-8"));
 const errors = [];
 for (const c of vectors("canonical-hash.vectors.json").cases) {
   if (canonicalJson(c.value) !== c.canonical_json) errors.push(`canonical json: ${c.name}`);
   if (canonicalSha256(c.value) !== c.sha256) errors.push(`canonical sha256: ${c.name}`);
 }
-const nash = vectors("nash-score.vectors.json");
-for (const v of nash.decay) {
+const m5nash = vectors("m5nash-score.vectors.json");
+for (const v of m5nash.decay) {
   const factor = loadWeights().decay.daily_factor_q32[String(v.half_life_days)];
   if (decayWeight(v.age_days, factor) !== BigInt(v.weight_q32)) errors.push(`decay ${v.half_life_days}d @ ${v.age_days}`);
 }
-for (const c of nash.cases) {
+for (const c of m5nash.cases) {
   const record = computeM5Score({
     subject: "wallet:sample-seller",
     signals: c.signals,
@@ -97,9 +97,9 @@ def check_snapshot(errors: list[str]) -> list[Path]:
             license_id = expected[path].get("license", "")
             if not license_id:
                 errors.append(f"{version}: no license designation: {path}")
-            if path in NASH_FILES:
+            if path in M5NASH_FILES:
                 if license_id != CYRUS:
-                    errors.append(f"{version}: Nash file must be designated {CYRUS}: {path}")
+                    errors.append(f"{version}: M5Nash file must be designated {CYRUS}: {path}")
                 repo_path = (base / path).relative_to(ROOT).as_posix()
                 if REGISTER.get(repo_path) != digest:
                     errors.append(f"{version}: no matching Cyrus Commons Register entry: {repo_path}")
@@ -116,7 +116,7 @@ def check_python(base: Path, errors: list[str]) -> None:
     sys.path.insert(0, str(base))
     try:
         from core.m5_canonical import canonical_json, canonical_sha256
-        from core.nash_score import NashSignal, compute_m5score, decay_weight, load_weights
+        from core.m5nash_score import M5NashSignal, compute_m5score, decay_weight, load_weights
     finally:
         sys.path.pop(0)
 
@@ -136,19 +136,19 @@ def check_python(base: Path, errors: list[str]) -> None:
 
     weights = load_weights()
     if weights.get("status") != "PROPOSED" or weights.get("economic_consequences_enabled") is not False:
-        errors.append("nash-weights.json must be PROPOSED with economic_consequences_enabled false")
+        errors.append("m5nash-weights.json must be PROPOSED with economic_consequences_enabled false")
 
     def at(text: str) -> datetime:
         return datetime.fromisoformat(text.replace("Z", "+00:00"))
 
-    nash = json.loads((vectors / "nash-score.vectors.json").read_text(encoding="utf-8"))
-    for item in nash["decay"]:
+    m5nash = json.loads((vectors / "m5nash-score.vectors.json").read_text(encoding="utf-8"))
+    for item in m5nash["decay"]:
         factor = weights["decay"]["daily_factor_q32"][str(item["half_life_days"])]
         if decay_weight(item["age_days"], factor) != item["weight_q32"]:
             errors.append(f"python decay {item['half_life_days']}d @ {item['age_days']}")
-    for case in nash["cases"]:
+    for case in m5nash["cases"]:
         signals = [
-            NashSignal(s["subject"], s["component"], s["polarity"], at(s["at"]), s["source_ref"])
+            M5NashSignal(s["subject"], s["component"], s["polarity"], at(s["at"]), s["source_ref"])
             for s in case["signals"]
         ]
         record = compute_m5score(

@@ -247,7 +247,7 @@ No implementation is normative. One implementation is mapped in the crosswalk, l
 | Principal-controlled store | M5POD |
 | Computation manifest (LE5) | M5-MATH-001 manifest, receipts citing its SHA-256 |
 | Reversible hold (LE6.2) | CCF-5 settlement hold with hash-chained events |
-| Pseudonymous scoring (LE3.3) | Nash M5Score over wallet identifiers (weights PROPOSED) |
+| Pseudonymous scoring (LE3.3) | M5Nash Score over wallet identifiers (weights PROPOSED) |
 
 The crosswalk records M5 status only where it was checked against code; all other entries are
 `NOT_ASSESSED`.

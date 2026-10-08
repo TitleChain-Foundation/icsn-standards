@@ -1,5 +1,5 @@
 {
-  "description": "Nash M5Score vectors (MATH-NASH-*). Produced by core/nash_score.py; packages/m5-math/nash-score.js must match every value and record_hash exactly.",
+  "description": "M5Nash Score vectors (MATH-M5NASH-*). Produced by core/m5nash_score.py; packages/m5-math/m5nash-score.js must match every value and record_hash exactly.",
   "weights_version": "0.1.0",
   "decay": [
     {
@@ -119,7 +119,7 @@
           "externality": 500,
           "governance_participation": 500
         },
-        "record_hash": "sha256:574c672e664f9c7f7c7d56e298061a3520c047d87bafc71004f0e2cba20fd390"
+        "record_hash": "sha256:3a0edf57b57a134bcab28e5c1574475320fd5ee309db7432c93ce60f7ac49356"
       }
     },
     {
@@ -1538,7 +1538,7 @@
           "externality": 500,
           "governance_participation": 500
         },
-        "record_hash": "sha256:bd76b26439a2b9b98ffdb41e2e9cd689a66c5bc7a5628d98fc840ff1673e0144"
+        "record_hash": "sha256:afe4f55d16ef11f80efd9bd512e226a5a047e6f8924d013ebb544b66917e9783"
       }
     },
     {
@@ -1613,7 +1613,7 @@
           "externality": 500,
           "governance_participation": 500
         },
-        "record_hash": "sha256:334d019d56a5cf9e773c9390e8fd8240009f61347358e2375ac290e43c4f134d"
+        "record_hash": "sha256:35436552fd6756578de1536804c259754945d43d146e4c0e11a53db40d5f7acd"
       }
     },
     {
@@ -1639,7 +1639,7 @@
           "externality": 500,
           "governance_participation": 500
         },
-        "record_hash": "sha256:f634b102f0afdb5de0a5770875b805263e29cd34b8b5483803bce01aed6d929b"
+        "record_hash": "sha256:d806bb3a2db7edee1863882a8e83346851781f5f8c723f5fb10e315d77fafd07"
       }
     },
     {
@@ -1679,7 +1679,7 @@
           "externality": 500,
           "governance_participation": 500
         },
-        "record_hash": "sha256:9c7cec7cefd20b4e1872c6febb7f25e895ad326a210568291a33db263b014273"
+        "record_hash": "sha256:6bc6e48ea85679d41a328c7755a7c2ed0813f99f9f04d326f369126103fb4fe9"
       }
     }
   ]

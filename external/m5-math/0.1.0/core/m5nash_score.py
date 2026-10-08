@@ -1,10 +1,10 @@
-"""Nash M5Score: deterministic, integer-only reference implementation.
+"""M5Nash Score: deterministic, integer-only reference implementation.
 
-M5-MATH-001 entries MATH-NASH-DECAY, MATH-NASH-COMPONENT and
-MATH-NASH-COMPOSITE. Weights and constants live in
-packages/m5-math/nash-weights.json; the JavaScript twin is
-packages/m5-math/nash-score.js and both are held to
-packages/m5-math/vectors/nash-score.vectors.json.
+M5-MATH-001 entries MATH-M5NASH-DECAY, MATH-M5NASH-COMPONENT and
+MATH-M5NASH-COMPOSITE. Weights and constants live in
+packages/m5-math/m5nash-weights.json; the JavaScript twin is
+packages/m5-math/m5nash-score.js and both are held to
+packages/m5-math/vectors/m5nash-score.vectors.json.
 
     weight(d)  = Q32 power of the published daily factor for the signal's
                  half-life (30 days good, 180 days bad), flooring after
@@ -14,7 +14,7 @@ packages/m5-math/vectors/nash-score.vectors.json.
                  signals (a component with no signals scores 500)
     m5score    = floor(sum(weight_bps[c] * component[c]) / 10000)
 
-Roles: NASH is the scoring agent, GREEN computes and records the score,
+Roles: M5NASH is the scoring agent, GREEN computes and records the score,
 PAINE checks holder notes before they become signals.
 """
 
@@ -29,7 +29,7 @@ from typing import Any, Mapping, Sequence
 from core.m5_canonical import canonical_sha256, file_sha256, parse_utc, require_utc, utc_iso
 
 WEIGHTS_PATH = (
-    Path(__file__).resolve().parents[1] / "packages" / "m5-math" / "nash-weights.json"
+    Path(__file__).resolve().parents[1] / "packages" / "m5-math" / "m5nash-weights.json"
 )
 COMPONENTS = (
     "settlement_reliability",
@@ -45,12 +45,12 @@ Q = 1 << Q_BITS
 SECONDS_PER_DAY = 86_400
 
 
-class NashScoreError(ValueError):
-    """Raised when a Nash input or rule is invalid."""
+class M5NashScoreError(ValueError):
+    """Raised when a M5Nash input or rule is invalid."""
 
 
 @dataclass(frozen=True)
-class NashSignal:
+class M5NashSignal:
     subject: str
     component: str
     polarity: str
@@ -76,26 +76,26 @@ def load_weights(path: Path = WEIGHTS_PATH) -> dict[str, Any]:
 def validate_weights(weights: Mapping[str, Any]) -> None:
     bps = weights["weights_bps"]
     if set(bps) != set(COMPONENTS):
-        raise NashScoreError("weights must cover exactly the six Nash components")
+        raise M5NashScoreError("weights must cover exactly the six M5Nash components")
     if any(not isinstance(value, int) or value < 0 for value in bps.values()):
-        raise NashScoreError("weights must be non-negative integers")
+        raise M5NashScoreError("weights must be non-negative integers")
     if sum(bps.values()) != 10_000:
-        raise NashScoreError("weights must sum to 10000 bps")
+        raise M5NashScoreError("weights must sum to 10000 bps")
     prior = weights["prior"]
     if prior["alpha"] < 1 or prior["beta"] < 1:
-        raise NashScoreError("prior alpha and beta must be at least 1")
+        raise M5NashScoreError("prior alpha and beta must be at least 1")
     decay = weights["decay"]
     if decay["fixed_point_bits"] != Q_BITS:
-        raise NashScoreError("decay must use 32-bit fixed point")
+        raise M5NashScoreError("decay must use 32-bit fixed point")
     for key in ("positive_half_life_days", "negative_half_life_days"):
         if str(decay[key]) not in decay["daily_factor_q32"]:
-            raise NashScoreError(f"missing daily factor for {key}")
+            raise M5NashScoreError(f"missing daily factor for {key}")
 
 
 def decay_weight(age_days: int, daily_factor_q32: int) -> int:
     """Q32 weight of a signal ``age_days`` old (square-and-multiply, floor)."""
     if age_days < 0:
-        raise NashScoreError("signals cannot be in the future")
+        raise M5NashScoreError("signals cannot be in the future")
     result = Q
     base = daily_factor_q32
     exponent = age_days
@@ -112,7 +112,7 @@ def age_in_days(signal_at: datetime, as_of: datetime) -> int:
         (require_utc(as_of, "as_of") - require_utc(signal_at, "signal time")).total_seconds()
     )
     if seconds < 0:
-        raise NashScoreError("signals cannot be in the future")
+        raise M5NashScoreError("signals cannot be in the future")
     return seconds // SECONDS_PER_DAY
 
 
@@ -123,22 +123,22 @@ def component_score(good_q: int, bad_q: int, weights: Mapping[str, Any]) -> int:
     return (scale * (good_q + alpha * Q)) // (good_q + bad_q + (alpha + beta) * Q)
 
 
-def _validate_signals(signals: Sequence[NashSignal], subject: str) -> None:
+def _validate_signals(signals: Sequence[M5NashSignal], subject: str) -> None:
     seen = set()
     for signal in signals:
         if signal.subject != subject:
-            raise NashScoreError("all signals must belong to the scored subject")
+            raise M5NashScoreError("all signals must belong to the scored subject")
         if signal.component not in COMPONENTS:
-            raise NashScoreError(f"unknown component {signal.component}")
+            raise M5NashScoreError(f"unknown component {signal.component}")
         if signal.polarity not in POLARITIES:
-            raise NashScoreError(f"unknown polarity {signal.polarity}")
+            raise M5NashScoreError(f"unknown polarity {signal.polarity}")
         if not signal.source_ref:
-            raise NashScoreError("every signal needs a source_ref")
+            raise M5NashScoreError("every signal needs a source_ref")
         key = (signal.source_ref, signal.component)
         if key in seen:
             # One signal per source per component: a single sale cannot be
             # counted twice toward the same component.
-            raise NashScoreError(
+            raise M5NashScoreError(
                 f"duplicate signal for {signal.source_ref} / {signal.component}"
             )
         seen.add(key)
@@ -147,7 +147,7 @@ def _validate_signals(signals: Sequence[NashSignal], subject: str) -> None:
 def compute_m5score(
     *,
     subject: str,
-    signals: Sequence[NashSignal],
+    signals: Sequence[M5NashSignal],
     as_of: datetime,
     weights: Mapping[str, Any] | None = None,
     previous_record_hash: str | None = None,
@@ -189,7 +189,7 @@ def compute_m5score(
         "subject": subject,
         "as_of": utc_iso(as_of),
         "m5score": m5score,
-        "nash_score_db": f"{m5score // 10}.{m5score % 10}",
+        "m5nash_score_db": f"{m5score // 10}.{m5score % 10}",
         "components": components,
         "weights_version": weights["version"],
         "weights_status": weights["status"],
@@ -197,7 +197,7 @@ def compute_m5score(
         "economic_consequences_enabled": weights["economic_consequences_enabled"],
         "trust_tier": None,
         "event_type": "TRIGGERED_REVIEW" if previous_record_hash else "GENESIS",
-        "event_authority": "NASH_AGENT",
+        "event_authority": "M5NASH_AGENT",
         "computed_by": weights["roles"]["score_computed_by"],
         "signals": ordered,
         "signals_sha256": canonical_sha256(ordered),
@@ -216,8 +216,8 @@ def signals_from_settlement(
     seller_subject: str,
     buyer_rating: int | None = None,
     holder_note: Mapping[str, Any] | None = None,
-) -> list[NashSignal]:
-    """Translate a closed settlement into seller Nash signals.
+) -> list[M5NashSignal]:
+    """Translate a closed settlement into seller M5Nash signals.
 
     - Released with no adjudicated refund, or an adjudicator RELEASE:
       settlement_reliability GOOD.
@@ -234,7 +234,7 @@ def signals_from_settlement(
     """
     ref = settlement["receipt_id"]
     events = settlement["events"]
-    signals: list[NashSignal] = []
+    signals: list[M5NashSignal] = []
 
     def at(event: Mapping[str, Any]) -> datetime:
         return parse_utc(event["at"])
@@ -250,39 +250,39 @@ def signals_from_settlement(
         None,
     )
     if upheld is not None:
-        signals.append(NashSignal(seller_subject, "information_symmetry", "BAD", at(upheld), ref))
+        signals.append(M5NashSignal(seller_subject, "information_symmetry", "BAD", at(upheld), ref))
     if settlement["state"] == "RELEASED" and upheld is None:
-        signals.append(NashSignal(seller_subject, "settlement_reliability", "GOOD", at(closing), ref))
+        signals.append(M5NashSignal(seller_subject, "settlement_reliability", "GOOD", at(closing), ref))
     if closing is not None and closing["kind"] == "NON_DELIVERY_DEADLINE":
-        signals.append(NashSignal(seller_subject, "settlement_reliability", "BAD", at(closing), ref))
+        signals.append(M5NashSignal(seller_subject, "settlement_reliability", "BAD", at(closing), ref))
 
     if buyer_rating is not None:
         if settlement["state"] != "RELEASED":
-            raise NashScoreError("ratings count only on released sales")
+            raise M5NashScoreError("ratings count only on released sales")
         if buyer_rating not in range(1, 6):
-            raise NashScoreError("rating must be 1 to 5")
+            raise M5NashScoreError("rating must be 1 to 5")
         if buyer_rating >= 4:
-            signals.append(NashSignal(seller_subject, "reciprocity", "GOOD", at(closing), ref))
+            signals.append(M5NashSignal(seller_subject, "reciprocity", "GOOD", at(closing), ref))
         elif buyer_rating <= 2:
-            signals.append(NashSignal(seller_subject, "reciprocity", "BAD", at(closing), ref))
+            signals.append(M5NashSignal(seller_subject, "reciprocity", "BAD", at(closing), ref))
 
     if holder_note is not None:
         if holder_note["titlechain_record"] != ref:
-            raise NashScoreError("holder note is for a different record")
+            raise M5NashScoreError("holder note is for a different record")
         if holder_note["holder"] != settlement["buyer_account"]:
-            raise NashScoreError("holder note must come from the buyer")
+            raise M5NashScoreError("holder note must come from the buyer")
         if upheld is None and holder_note["matches_listing"] is not None:
             note_at = parse_utc(holder_note["at"])
             polarity = "GOOD" if holder_note["matches_listing"] else "BAD"
-            signals.append(NashSignal(seller_subject, "information_symmetry", polarity, note_at, ref))
+            signals.append(M5NashSignal(seller_subject, "information_symmetry", polarity, note_at, ref))
     return signals
 
 
 def attestation_signal(
     *, subject: str, active_business_verified: bool, verified_at: datetime, source_ref: str
-) -> NashSignal:
+) -> M5NashSignal:
     """Registry verification of an active business: GOOD if active, else BAD."""
-    return NashSignal(
+    return M5NashSignal(
         subject,
         "attestation_integrity",
         "GOOD" if active_business_verified else "BAD",
