@@ -1,0 +1,274 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spec.titlechain.org/schemas/m5canon/m5canon-six-gate-evaluation-v1.schema.json",
+  "title": "M5Canon Six-Gate Evaluation",
+  "description": "Public reference evaluation object for deterministic pre-activation authority checks. Schema validity does not itself establish legal authority, title, regulatory status, or production conformance.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "evaluation_id",
+    "timestamp",
+    "principal_ref",
+    "agent_ref",
+    "operation",
+    "resource_ref",
+    "purpose",
+    "gates",
+    "overall_decision"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "evaluation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "principal_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "operation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jurisdiction_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "policy_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authority_record_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "delegation_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "g1_principal_identity",
+        "g2_role_credential",
+        "g3_jurisdiction",
+        "g4_policy",
+        "g5_approval",
+        "g6_evidence_anchor"
+      ],
+      "properties": {
+        "g1_principal_identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "decision",
+            "evidence_refs",
+            "reason_code"
+          ],
+          "properties": {
+            "decision": {
+              "enum": [
+                "pass",
+                "fail"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "reason_code": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "g2_role_credential": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "decision",
+            "evidence_refs",
+            "reason_code"
+          ],
+          "properties": {
+            "decision": {
+              "enum": [
+                "pass",
+                "fail"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "reason_code": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "g3_jurisdiction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "decision",
+            "evidence_refs",
+            "reason_code"
+          ],
+          "properties": {
+            "decision": {
+              "enum": [
+                "pass",
+                "fail"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "reason_code": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "g4_policy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "decision",
+            "evidence_refs",
+            "reason_code"
+          ],
+          "properties": {
+            "decision": {
+              "enum": [
+                "pass",
+                "fail"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "reason_code": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "g6_evidence_anchor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "decision",
+            "evidence_refs",
+            "reason_code"
+          ],
+          "properties": {
+            "decision": {
+              "enum": [
+                "pass",
+                "fail"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "reason_code": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "g5_approval": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "decision",
+            "evidence_refs",
+            "reason_code"
+          ],
+          "properties": {
+            "decision": {
+              "enum": [
+                "pass",
+                "fail",
+                "not_required"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "reason_code": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "overall_decision": {
+      "enum": [
+        "allow",
+        "deny"
+      ]
+    },
+    "authorization_receipt_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
