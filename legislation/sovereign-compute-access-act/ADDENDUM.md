@@ -14,7 +14,7 @@ Prepared for: legislative offices, fellowship/grant reviewers, and public-common
 
 **Pamela Norton** — Founder, M5Capital Holdings LLC and M5 Economics; Founder & Executive Director, TitleChain Foundation; steward, ICSN (Internet Cooperative for Sovereign Networks).
 
-**Patents.** Co-inventor, U.S. Patents 11,720,888 (issued August 2023) and 12,518,273 (issued January 2026), *"Decentralized Title Transfer and Validation of Assets"* — covering provenance, authentication, ownership history, trust anchors, and state/transaction recording for physical and digital assets. Both patents formally list Pamela Norton and Eric Wallace as co-inventors, as issued.
+**Patents.** Inventor, U.S. Patents 11,720,888 (issued August 2023) and 12,518,273 (issued January 2026), *"Decentralized Title Transfer and Validation of Assets"* — covering provenance, authentication, ownership history, trust anchors, and state/transaction recording for physical and digital assets. Pamela Norton is the inventor on the current filings. Eric Wallace is honored for his part in the origination of the work; the recognition is honorary, and he has no role in TitleChain Foundation, M5Capital Holdings LLC, or any related entity.
 
 **Research record.** Co-author, *"Trustworthy AI Inference Systems: An Industry Research View"* (arXiv:2008.04449, 2020; revised 2023) — an industry research paper on the design, deployment, and operation of trustworthy AI inference systems, covering security and privacy-enhancing technologies.
 
@@ -106,7 +106,7 @@ Section numbers below match the [official bill text](OFFICIAL-TEXT.md).
 
 | Term | What it refers to |
 |---|---|
-| **Pamela Norton** | Founder of M5Capital Holdings LLC and M5 Economics; Founder & Executive Director of TitleChain Foundation; steward of ICSN. Co-inventor of both issued patents. |
+| **Pamela Norton** | Founder of M5Capital Holdings LLC and M5 Economics; Founder & Executive Director of TitleChain Foundation; steward of ICSN. Inventor of both patents. |
 | **TitleChain Foundation** | The standards-stewarding entity (a Wyoming 1,000-Year Sovereign Purpose Trust). Publishes and governs the ICSN standards repository. |
 | **ICSN** | Internet Cooperative for Sovereign Networks — the open standards program stewarded by TitleChain Foundation. ICSN v1.0 was adopted August 28, 2026. Publishes implementation-neutral standards, distinct from any single company's product. |
 | **M5 / M5Ecosystem** | The private engineering implementation and economic substrate built beneath the public standards — one test implementation of ICSN's architecture, not the standard itself and not required for participation in the public standards process. |
