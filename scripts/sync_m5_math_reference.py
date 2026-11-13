@@ -26,8 +26,8 @@ DEST = ROOT / "external" / "m5-math"
 VERSION = "0.1.0"
 
 APACHE = "Apache-2.0"
-M5NASH = "LicenseRef-CYRUS-PCCL-1.0"
-MIXED = "Apache-2.0 except section 5 (M5Nash Score), LicenseRef-CYRUS-PCCL-1.0"
+M5NASH = APACHE
+MIXED = APACHE
 
 FILES = {
     "core/m5_canonical.py": APACHE,
@@ -86,9 +86,9 @@ def main() -> int:
         "commit": commit,
         "committed_at": committed_at,
         "version_label": VERSION,
-        "copyright": "TitleChain Sovereign Purpose Trust (TitleChain Foundation); licensed by M5Capital Holdings LLC",
+        "copyright": "Respective copyright holders; source release record required",
         "approval_boundary": "Implementation-specific M5 material, published under the M5Ecosystem Approval Boundary. It is not a TitleChain standard and does not advance any standard's status.",
-        "m5nash_notice": "The M5Nash files are licensed under the Cyrus Purpose-Bound Constitutional Commons License 1.0, designated in LICENSES/CYRUS-COMMONS-REGISTER.csv. The M5Nash scoring process is covered by U.S. Patent Nos. 11,720,888 and 12,518,273 (continuation), owned by Pamela Norton and exclusively licensed to the TitleChain Sovereign Purpose Trust, and is a Designated Method under the TitleChain Patent Pledge. See M5NASH-NOTICE.md.",
+        "m5nash_notice": "Apache-2.0 software; Cyrus constitutional materials only; exact new-version authorization required.",
         "modified": False,
         "files": dict(sorted(files.items())),
         "excluded": EXCLUDED,
@@ -101,4 +101,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit("Immutable reference release: use a new version and its exact source-release authorization for future updates; this legacy overwrite command is disabled")

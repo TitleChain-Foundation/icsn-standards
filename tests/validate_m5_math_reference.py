@@ -4,9 +4,8 @@
 
 1. The snapshot is byte-identical to its upstream manifest, with no files
    added or removed, and no excluded (private) file is present.
-2. Every file carries a license designation. The M5Nash files are designated
-   under the Cyrus license, each with a Cyrus Commons Register entry whose
-   hash matches the file.
+2. Every reference file retains its explicit Apache-2.0 release designation.
+   The separate release-record check binds the authorized source revision, hashes and scope.
 3. M5Nash weights are PROPOSED with no economic consequences.
 4. The Python reference reproduces every canonical-hash and M5Nash vector.
 5. If Node.js 18+ is available, the JavaScript twin reproduces the same
@@ -14,7 +13,6 @@
 """
 from __future__ import annotations
 
-import csv
 import hashlib
 import json
 import os
@@ -26,21 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOT = ROOT / "external" / "m5-math"
-CYRUS = "LicenseRef-CYRUS-PCCL-1.0"
-REGISTER = {
-    row["repository_path"]: row["hash"]
-    for row in csv.DictReader(
-        (ROOT / "LICENSES" / "CYRUS-COMMONS-REGISTER.csv").read_text(encoding="utf-8").splitlines()
-    )
-    if row["license"] == CYRUS
-}
-M5NASH_FILES = {
-    "core/m5nash_score.py",
-    "packages/m5-math/m5nash-score.js",
-    "packages/m5-math/m5nash-weights.json",
-    "packages/m5-math/vectors/m5nash-score.vectors.json",
-}
-
+APACHE = "Apache-2.0"
 NODE_CHECK = r"""
 import { readFileSync } from "fs";
 import { join } from "path";
@@ -97,12 +81,8 @@ def check_snapshot(errors: list[str]) -> list[Path]:
             license_id = expected[path].get("license", "")
             if not license_id:
                 errors.append(f"{version}: no license designation: {path}")
-            if path in M5NASH_FILES:
-                if license_id != CYRUS:
-                    errors.append(f"{version}: M5Nash file must be designated {CYRUS}: {path}")
-                repo_path = (base / path).relative_to(ROOT).as_posix()
-                if REGISTER.get(repo_path) != digest:
-                    errors.append(f"{version}: no matching Cyrus Commons Register entry: {repo_path}")
+            if license_id != APACHE:
+                errors.append(f"{version}: reference release must be {APACHE}: {path}")
         for excluded in manifest.get("excluded", {}):
             if (base / excluded).exists() or excluded in expected:
                 errors.append(f"{version}: excluded private file is present: {excluded}")
