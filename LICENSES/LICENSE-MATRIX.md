@@ -42,6 +42,7 @@ The following public assets are expressly licensed as stated:
 | `rfcs/0002-proof-of-control-legal-entity-agent-profile.md` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`), so it can be contributed to the Proof-of-Control Standard unchanged |
 | `conformance/proof-of-control/**` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 | `scripts/sync_lfdt_proof_of_control.py`, `scripts/build_poc_crosswalk.py`, `tests/validate_proof_of_control_profile.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
+| `external/m5-math/README.md`, `external/m5-math/NOTICE`, `external/m5-math/M5NASH-NOTICE.md`, `external/m5-math/UPSTREAM-*.json`, `scripts/sync_m5_math_reference.py`, `tests/validate_m5_math_reference.py` | [Apache License 2.0](Apache-2.0.txt) (`Apache-2.0`) |
 
 The SPDX identifier in each expressly designated file is the controlling asset-level notice for that file.
 
@@ -61,3 +62,11 @@ Repository visibility, public discussion, contribution, reference to M5,
 TitleChain Foundation, CYRUS, the TitleChain Sovereign Purpose Trust, or use of
 the words “public,” “open,” “standard,” or “commons” does not create an implied
 license.
+
+| `rfcs/0003-m5-math-versioned-specification.md` | Apache-2.0; new Draft standards proposal. Existing snapshot designations remain separately under review. |
+
+## M5-MATH reference release
+
+| Material | License and scope |
+|---|---|
+| All ten `external/m5-math/0.1.0/` files listed by hash in `external/m5-math/UPSTREAM-0.1.0.json` | Apache-2.0, including M5Nash software, vectors, schema and mathematical specification; user-directed release record in `external/m5-math/SOURCE-RELEASE-AUTHORIZATION.json`. Respective ownership and upstream notices preserved. No Cyrus conditions apply. |

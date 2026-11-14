@@ -15,3 +15,7 @@ Current totals: 127 requirements adopted, 26 extended; M5 has 9 `PARTIAL`, 1 `GA
 Regenerate with `python3 scripts/build_poc_crosswalk.py`.
 `python3 tests/validate_proof_of_control_profile.py` checks that the snapshot is unmodified,
 the crosswalk is current and complete, and RFC 0002's requirement tables match it.
+
+## Current-source review — November 14, 2026
+
+[Upstream refresh report](reviews/UPSTREAM_REVIEW_2026-11-14.md) and [127-row source comparison / working-document topic mapping](reviews/UPSTREAM_REVIEW_2026-11-14.json). All 127 GitHub requirement texts and levels are unchanged at current head 54a7bc67140b39c9107216cd390dd47c1d42946d. The original frozen crosswalk and its assessment results remain intact. The differently organized Google Doc is reviewed separately; comments and WG proposals are not treated as adopted requirements.

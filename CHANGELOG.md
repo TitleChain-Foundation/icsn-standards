@@ -7,6 +7,7 @@ This file records material public releases of the ICSN standards workspace. Stan
 ### Added
 
 - Pinned, unmodified snapshot of the LFDT Proof-of-Control Standard Working Draft v0.1 (Apache-2.0) with a SHA-256 file manifest and sync script.
+- Implementation-specific M5-MATH-001 v0.1.0 public reference: pinned, unmodified snapshot of canonical hashing, the M5 Value Receipt schema and verifier (Apache-2.0), and the M5Nash Score method, weights and vectors (Cyrus Purpose-Bound license; patents covered by the TitleChain Patent Pledge, Schedule A, once adopted), with a validation test that recomputes every vector in Python and JavaScript.
 - RFC 0002 Draft: Proof-of-Control Profile for Legal-Entity Agents Under an Accountable Human, adopting all 127 Proof-of-Control v0.1 requirements and adding 22, with a machine-readable crosswalk and validation test.
 - Public Review Draft of the proposed canonical TitleChain Article 12 CER control mapping, machine-readable transaction-boundary schema, synthetic shared-control snapshot, and fail-closed conformance checks separating control, title, claims, notice, filing, and transfer authority.
 - Sovereign Compute Access Act Draft v1 model-legislation package for public review and comment.
