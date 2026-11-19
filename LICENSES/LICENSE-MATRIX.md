@@ -7,7 +7,7 @@
 | General educational material, explanatory documentation and diagrams | Reserved until designated | CC BY 4.0 (`CC-BY-4.0`) |
 | Member data, wallets, vaults, credentials, keys, financial records, production systems, private agent controls, sensitive threat models and vulnerabilities | Reserved | All Rights Reserved |
 | Names, logos, seals, certification marks and other brand assets | Reserved | No trademark or certification rights granted |
-| Patent rights | Reserved | Only through a separate express patent grant |
+| Patent rights | No blanket additional grant | Preserve Apache-2.0 section 3 and any other applicable effective grant; withdrawn PR 85 supplies none |
 
 ## Express designations
 
@@ -70,3 +70,7 @@ license.
 | Material | License and scope |
 |---|---|
 | All ten `external/m5-math/0.1.0/` files listed by hash in `external/m5-math/UPSTREAM-0.1.0.json` | Apache-2.0, including M5Nash software, vectors, schema and mathematical specification; user-directed release record in `external/m5-math/SOURCE-RELEASE-AUTHORIZATION.json`. Respective ownership and upstream notices preserved. No Cyrus conditions apply. |
+
+## Preservation rule
+
+Existing express Apache, CC BY, MIT and upstream permissions remain controlling within their scope. No new Cyrus designation is made by this update. Proposed/unsigned instruments do not establish ownership or additional patent grants. See [IP-POLICY.md](../IP-POLICY.md).
