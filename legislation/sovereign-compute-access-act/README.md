@@ -2,7 +2,8 @@
 
 # Sovereign Compute Access Act
 
-**Draft v1 - published September 13, 2026, for public review and comment.**
+**Draft v2 - published November 18, 2026, for public review and comment.**
+**Draft v1 published September 13, 2026.**
 
 > Americans should not be required to rent intelligence they can lawfully
 > possess and operate for themselves.
@@ -12,7 +13,12 @@ unmetered access to open-weight artificial intelligence for individuals,
 cooperatives, and small businesses, including local execution on hardware they
 already own. It also proposes human-rooted limits on agent authority,
 state-primary administration, vendor neutrality, public disclosures, and
-anti-capture safeguards.
+anti-capture safeguards. Draft v2 adds agent-verification provisions
+incorporating the open
+[LFDT Proof-of-Control Standard](../../external/lfdt-proof-of-control/README.md),
+stewarded by the Advanced AI Society as a Linux Foundation Decentralized Trust
+community lab, and the
+[ICSN RFC 0002 Legal-Entity Agent Profile](../../rfcs/0002-proof-of-control-legal-entity-agent-profile.md).
 
 This is a public-review draft. It has not been enacted, introduced by a
 legislative office, or reviewed as the final work product of legislative
@@ -35,9 +41,9 @@ review.
 
 **[View the rendered reference](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/visuals/open-weight-compute-reference.html) · [View or download the full-resolution PNG](appendices/OPEN-WEIGHT-COMPUTE-REFERENCE.png) · [Open the live review observatory](https://titlechain-foundation.github.io/icsn-standards/sovereign-compute-review/) · [Submit a public comment](https://github.com/orgs/TitleChain-Foundation/discussions/38)**
 
-## Draft v1 documents
+## Draft documents
 
-- [Official model-act text](OFFICIAL-TEXT.md)
+- [Official model-act text (Draft v2)](OFFICIAL-TEXT.md)
 - [Legislative transmittal sheet](COVER-SHEET.md)
 - [Founder and repository addendum](ADDENDUM.md)
 - [M5 AI Governor Commons companion](M5-AI-GOVERNOR-COMMONS-COMPANION.md)

@@ -2,7 +2,7 @@
 
 # THE SOVEREIGN COMPUTE ACCESS ACT
 
-**Model Legislation - Draft v1 for Public Review and Comment**
+**Model Legislation - Draft v2 for Public Review and Comment**
 
 ---
 

@@ -6,6 +6,7 @@ This file records material public releases of the ICSN standards workspace. Stan
 
 ### Added
 
+- Sovereign Compute Access Act Draft v2: agent-verification provisions incorporating the LFDT Proof-of-Control Standard (Advanced AI Society / Linux Foundation Decentralized Trust) and the ICSN RFC 0002 Legal-Entity Agent Profile into sections 2, 3, 105(f), 203, 302(d), and 304(a) of the model act.
 - Pinned, unmodified snapshot of the LFDT Proof-of-Control Standard Working Draft v0.1 (Apache-2.0) with a SHA-256 file manifest and sync script.
 - RFC 0002 Draft: Proof-of-Control Profile for Legal-Entity Agents Under an Accountable Human, adopting all 127 Proof-of-Control v0.1 requirements and adding 22, with a machine-readable crosswalk and validation test.
 - Public Review Draft of the proposed canonical TitleChain Article 12 CER control mapping, machine-readable transaction-boundary schema, synthetic shared-control snapshot, and fail-closed conformance checks separating control, title, claims, notice, filing, and transfer authority.
