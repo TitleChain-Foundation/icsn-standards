@@ -15,6 +15,21 @@ LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 SKIP_PREFIXES = ("http://", "https://", "mailto:", "#")
 
 
+def excluded_snapshot_targets() -> set[Path]:
+    """Files a vendored snapshot links to but deliberately does not publish.
+
+    Each external/*/UPSTREAM-*.json may list upstream paths under "excluded"
+    with a reason; links from that snapshot to those paths are expected to be
+    missing.
+    """
+    targets: set[Path] = set()
+    for manifest_path in ROOT.glob("external/*/UPSTREAM-*.json"):
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        base = manifest_path.parent / manifest["version_label"]
+        targets.update((base / path).resolve() for path in manifest.get("excluded", {}))
+    return targets
+
+
 def validate_json() -> list[str]:
     errors: list[str] = []
     for path in ROOT.rglob("*.json"):
@@ -29,6 +44,7 @@ def validate_json() -> list[str]:
 
 def validate_markdown_links() -> list[str]:
     errors: list[str] = []
+    excluded = excluded_snapshot_targets()
     for path in ROOT.rglob("*.md"):
         if ".git" in path.parts:
             continue
@@ -48,7 +64,7 @@ def validate_markdown_links() -> list[str]:
             except ValueError:
                 errors.append(f"{path.relative_to(ROOT)}: link escapes repository: {raw}")
                 continue
-            if not resolved.exists():
+            if not resolved.exists() and resolved not in excluded:
                 errors.append(f"{path.relative_to(ROOT)}: missing link target: {raw}")
     return errors
 

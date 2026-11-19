@@ -1,0 +1,506 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:m5:schema:value-receipt:v1",
+  "title": "M5 Value Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "currency",
+    "precision",
+    "gross_value_micros",
+    "transaction_costs",
+    "total_transaction_cost_micros",
+    "collected_m5_fee_revenue_micros",
+    "fee_revenue_distributions",
+    "ccf",
+    "goods",
+    "net_settled_micros",
+    "source_jurisdiction",
+    "destination_jurisdiction",
+    "applied_jurisdiction_rule_refs",
+    "inputs",
+    "final_wallet_split_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.4.0"
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3,12}$"
+    },
+    "precision": {
+      "const": "micros"
+    },
+    "gross_value_micros": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "transaction_costs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/transactionCost"
+      }
+    },
+    "total_transaction_cost_micros": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "collected_m5_fee_revenue_micros": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "fee_revenue_distributions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/feeRevenueDistribution"
+      }
+    },
+    "ccf": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ccf_rule",
+        "ccf_minimum_pct",
+        "ccf_allocation_pct",
+        "ccf_basis",
+        "amount_micros",
+        "destination",
+        "rounding",
+        "funded_by",
+        "operator_jurisdiction",
+        "pool_zip",
+        "zip_source",
+        "overlay_amount_micros",
+        "overlay_rule_refs",
+        "total_community_amount_micros",
+        "agency_selection",
+        "payouts"
+      ],
+      "properties": {
+        "ccf_rule": {
+          "const": "CCF-5"
+        },
+        "ccf_minimum_pct": {
+          "const": 5
+        },
+        "ccf_allocation_pct": {
+          "const": 5
+        },
+        "ccf_basis": {
+          "const": "COLLECTED_M5_FEE_REVENUE"
+        },
+        "amount_micros": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "destination": {
+          "type": "string",
+          "pattern": "^community\\.[a-z0-9]+\\.[0-9]{5}$"
+        },
+        "rounding": {
+          "const": "CEILING_TO_MICRO"
+        },
+        "funded_by": {
+          "const": "m5capital_platform_ops"
+        },
+        "operator_jurisdiction": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}(?:-[A-Z0-9]{2,})+$"
+        },
+        "pool_zip": {
+          "type": "string",
+          "pattern": "^[0-9]{5}$"
+        },
+        "zip_source": {
+          "enum": [
+            "ENTITY",
+            "DESIGNATED"
+          ]
+        },
+        "overlay_amount_micros": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "overlay_rule_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^M5JFR-[A-Z0-9-]+$"
+          },
+          "uniqueItems": true
+        },
+        "total_community_amount_micros": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "agency_selection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "selected_by",
+            "max_agencies_per_member"
+          ],
+          "properties": {
+            "selected_by": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "max_agencies_per_member": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "payouts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "payee_type",
+              "agency_id",
+              "name",
+              "m5bank_account",
+              "destination",
+              "status",
+              "hold_reason",
+              "pct_of_ccf",
+              "amount_micros"
+            ],
+            "properties": {
+              "payee_type": {
+                "enum": [
+                  "AGENCY",
+                  "POOL"
+                ]
+              },
+              "agency_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "m5bank_account": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "destination": {
+                "type": "string",
+                "minLength": 1
+              },
+              "status": {
+                "enum": [
+                  "DIRECT",
+                  "ESCROW"
+                ]
+              },
+              "hold_reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pct_of_ccf": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 100
+              },
+              "amount_micros": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "net_settled_micros": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_jurisdiction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "destination_jurisdiction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "applied_jurisdiction_rule_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^M5JFR-[A-Z0-9-]+$"
+      },
+      "uniqueItems": true
+    },
+    "final_wallet_split_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "goods": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classification",
+        "sale_terms",
+        "returns",
+        "sales_tax_treatment",
+        "sales_tax_micros",
+        "sales_tax_note",
+        "settlement_hold"
+      ],
+      "properties": {
+        "classification": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sales_tax_treatment": {
+          "enum": [
+            "NOT_APPLIED",
+            "NOT_DETERMINED"
+          ]
+        },
+        "sales_tax_micros": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sales_tax_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "settlement_hold": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "scope",
+                "release_days_after_delivery",
+                "non_delivery_refund_days_after_sale",
+                "accepted_claims"
+              ],
+              "properties": {
+                "scope": {
+                  "const": "ENTIRE_SETTLEMENT"
+                },
+                "release_days_after_delivery": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "non_delivery_refund_days_after_sale": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "accepted_claims": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "NOT_AS_DESCRIBED",
+                      "WRONG_ITEM",
+                      "COUNTERFEIT_OR_MISREPRESENTED"
+                    ]
+                  },
+                  "uniqueItems": true
+                }
+              }
+            }
+          ]
+        },
+        "sale_terms": {
+          "enum": [
+            null,
+            "STANDARD",
+            "AS_IS_FINAL_SALE"
+          ]
+        },
+        "returns": {
+          "enum": [
+            null,
+            "CLAIM_BASED",
+            "NONE"
+          ]
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "math_manifest_sha256",
+        "wallet_split_templates_sha256",
+        "jurisdiction_fee_registry_sha256",
+        "zip_state_reference_sha256",
+        "settlement_hold_policy_sha256",
+        "community_pool_registry_sha256"
+      ],
+      "properties": {
+        "math_manifest_sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "wallet_split_templates_sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "jurisdiction_fee_registry_sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "zip_state_reference_sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "settlement_hold_policy_sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "community_pool_registry_sha256": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        }
+      },
+      "description": "SHA-256 of every rule file the receipt was computed under (M5-MATH-001)."
+    }
+  },
+  "$defs": {
+    "transactionCost": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cost_id",
+        "cost_type",
+        "fee_rate_bps",
+        "fixed_amount_micros",
+        "fee_basis",
+        "amount_micros",
+        "authority_ref",
+        "revenue_class"
+      ],
+      "properties": {
+        "cost_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cost_type": {
+          "enum": [
+            "M5_PROTOCOL",
+            "M5_SETTLEMENT",
+            "M5_EVENT",
+            "THIRD_PARTY_PROVIDER",
+            "SOURCE_JURISDICTION",
+            "DESTINATION_JURISDICTION",
+            "CER_TITLE_REGULATORY",
+            "ADJUDICATION"
+          ]
+        },
+        "fee_rate_bps": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "fixed_amount_micros": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "fee_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "amount_micros": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "authority_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revenue_class": {
+          "enum": [
+            "M5_FEE_REVENUE",
+            "THIRD_PARTY_OR_JURISDICTION_CHARGE"
+          ]
+        }
+      }
+    },
+    "feeRevenueDistribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "distribution_id",
+        "destination_type",
+        "destination",
+        "fee_revenue_allocation_pct",
+        "basis",
+        "amount_micros",
+        "rule_ref"
+      ],
+      "properties": {
+        "distribution_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "destination_type": {
+          "enum": [
+            "SERVICE_OPERATOR",
+            "M5CAPITAL",
+            "TITLECHAIN_FOUNDATION_REGISTRY",
+            "COMMUNITY_COMMONS",
+            "ADJUDICATION",
+            "PROVIDER",
+            "RESERVE",
+            "OTHER_AUTHORIZED"
+          ]
+        },
+        "destination": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fee_revenue_allocation_pct": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "basis": {
+          "const": "COLLECTED_M5_FEE_REVENUE"
+        },
+        "amount_micros": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rule_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
