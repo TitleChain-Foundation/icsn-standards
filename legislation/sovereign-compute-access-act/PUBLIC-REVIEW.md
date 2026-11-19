@@ -2,13 +2,16 @@
 
 # Sovereign Compute Access Act Public Review
 
-**Draft v1 - open for public review and comment.**
+**Draft v2 - open for public review and comment.**
 
 This page is the public-review hub for the
 [Sovereign Compute Access Act](OFFICIAL-TEXT.md). The proposal is model
 legislation. It has not been enacted, introduced by a legislative office, or
 reviewed as the final work product of legislative counsel. It is not an
-adopted ICSN standard.
+adopted ICSN standard. Draft v2, published November 18, 2026, adds
+agent-verification provisions based on the LFDT Proof-of-Control Standard and
+the ICSN RFC 0002 Legal-Entity Agent Profile; the Draft v1 text and its review
+record remain available in the repository history.
 
 ## Congressional outreach
 
